@@ -1,0 +1,40 @@
+# 에피소드 설정 — 형식은 docs/story-format.md
+id: "{{ID}}"
+slug: {{SLUG}}
+status: draft            # draft → script_ok → voice_ok → conti_ok → assets_in → done
+working_title: ""        # 예: 폼페이는 왜 길 한가운데 커다란 돌을 놓았을까?
+title_lines: ["", ""]    # 화면 고정 제목 두 줄 (첫 줄 흰색, 둘째 줄 노란색)
+hook: ""                 # 첫 문장의 반응어 (topics.md 에 기록)
+caption_keywords: []     # 자막에서 노란색으로 강조할 단어 3~6개
+
+# style: 3d-cartoon      # 이번 편만 화풍을 바꿀 때
+# sfx_volume: 0.12       # 이번 편 Grok 효과음 크기 (0 = 제거)
+# extra_tail_seconds: 0  # 마지막 여운 추가
+
+characters:
+  - id: hero
+    name: ""             # 한국어 이름 (콘티 표시용)
+    name_en: ""          # 프롬프트에 들어가는 영어 이름
+    description: ""      # 영어 외형 묘사: 나이대, 옷, 머리, 특징
+    note: ""             # 한국어 메모
+
+scenes:
+  - id: s01
+    source: grok         # grok (움직임) | still (정지 이미지 + 느린 줌)
+    lines:
+      - ""               # 대사. 자막을 직접 나누려면 {text: "...", captions: ["...", "... / ..."]}
+    visual: ""           # 장면 설명 (한국어)
+    image_prompt: ""     # ChatGPT 장면 프롬프트 (영어, 화풍 문구는 자동으로 붙음)
+    characters: [hero]
+    motion_prompt: ""    # Grok 동작 프롬프트 (영어, 한 가지 동작)
+    camera: ""           # 예: slow push in / static / slow pan right
+    # trim_start: 0.0    # 클립 앞부분 건너뛰기 (초)
+    # sfx_volume: 0.12   # 이 장면만 효과음 크기
+
+sources: []              # "제목 — URL"
+accuracy_notes: []       # 단정하지 않는 것, 재구성인 부분
+
+youtube:
+  titles: []             # 추천 제목 2~3개
+  description: ""        # 2~4문장, 재구성 애니메이션임을 밝힘
+  hashtags: []

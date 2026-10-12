@@ -1,0 +1,20 @@
+# 화풍 프리셋: 음영 있는 잉크 일러스트 (checkvalve 레포에서 이집트·폼페이에 승인된 화풍)
+# 화풍 교체 예시용. episode.yaml 에 `style: ink-illustration` 으로 쓰면 적용된다.
+
+name: ink-illustration
+label: 잉크 일러스트
+image_prefix: >-
+  Warm realistic-shaded ink illustration, fine linework with soft painted shading,
+  textured paper feel, gold, bronze, linen and limestone textures, gentle natural light,
+  vertical 9:16 composition.
+image_suffix: >-
+  Main action in the middle of the frame, key subjects inside the central 80% of the width,
+  keep the top fifth of the image calm and simple for a title.
+  No text, no letters, no captions, no logos, no watermark, no modern objects.
+character_sheet_template: >-
+  Character reference sheet of {description}. Full body, front view and three-quarter view,
+  neutral pose, plain paper background, same outfit in both views.
+motion_suffix: >-
+  Keep the character, outfit and background consistent with the image. Smooth natural motion.
+  Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+palette_note: "따뜻한 금속·린넨·석회암 색"

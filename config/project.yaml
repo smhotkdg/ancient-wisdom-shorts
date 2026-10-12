@@ -1,0 +1,95 @@
+# 공통 설정 — 모든 에피소드에 적용된다.
+# 에피소드(episode.yaml)는 대본·장면·제목 글자만 정하고, 아래 좌표·크기·음량은 덮어쓰지 않는다.
+# (예외: audio.sfx_volume, style 은 에피소드에서 바꿀 수 있다)
+
+canvas:
+  width: 1080
+  height: 1920
+  fps: 24
+  video_bitrate: 7000000      # 7 Mbps (기존 레포와 동일)
+  audio_bitrate: 192k
+
+style:
+  default: 3d-cartoon         # styles/<이름>.yaml — 에피소드에서 바꿀 수 있음
+
+voice:
+  provider: typecast
+  name_kor: 필재
+  voice_type: original
+  model: ssfm-v30
+  tempo: 1.0                  # Typecast 생성 속도 (자연 속도)
+  format: wav
+  rate_after: 0.94            # 생성 후 피치 유지 감속 (기존 레포 확정값). 1.0이면 감속 없음
+  fallback_allowed: false     # 필재를 다른 목소리로 몰래 바꾸지 않는다
+  chars_per_second_raw: 6.2   # 길이 추정용 (공백 제외 글자 / 원음 초)
+  max_script_chars: 1500
+
+duration:
+  target_seconds: [45, 60]    # 최종 영상 길이 목표
+  lead_in_seconds: 0.15       # 첫 대사 전 여백
+  tail_seconds_min: 1.2       # 마지막 대사 후 여운 (최소)
+  rule: "음성을 먼저 측정하고 화면을 맞춘다. 대사를 빨리 감거나 자르지 않는다. 길면 영상을 늘린다."
+
+audio:
+  voice_volume: 1.0
+  sfx_volume: 0.12            # Grok 클립 원음(효과음). 0이면 제거. 에피소드에서 덮어쓰기 가능
+  bgm_volume: 0.06            # assets/bgm/ 에 파일이 있을 때만 사용
+  bgm_file: ""                # 예: assets/bgm/calm.mp3 (비우면 BGM 없음)
+  fade_out_seconds: 0.6
+  loudness_lufs: -14          # 최종 음량 정규화 (쇼츠 표준). null 이면 끔
+
+clips:
+  # Grok/이미지 소스를 장면 길이에 맞추는 규칙
+  max_slowdown: 1.35          # 클립이 짧으면 최대 이만큼 느리게 늘림
+  still_motion: slow_zoom     # 이미지만 있는 장면: slow_zoom | pan_left | pan_right | none
+  still_zoom_max: 1.08        # 정지 이미지 확대 상한 (강한 줌 금지)
+  upscale_sharpen: 0.3        # 720p → 1080p 확대 후 약한 선명화 (0이면 끔)
+  grok_lengths: [6, 10]       # Grok 웹에서 고를 수 있는 길이(초) — 콘티 권장 길이 계산용
+  scene_max_seconds: 10.0     # 이보다 긴 장면은 콘티 단계에서 나눈다
+
+# ── 텍스트 레이아웃 v6 (2026-10-11 사용자 승인, 기존 레포와 동일) ──
+layout:
+  version: 6
+  title:
+    enabled: true             # 영상 내내 같은 제목 블록 하나
+    center: [540, 260]
+    band_y: [100, 440]
+    font_weight: black
+    font_px: 108
+    min_font_px: 84
+    max_width: 0.87
+    max_lines: 2
+    line_gap_px: 18
+    italic_shear: 0.10
+    outline_px: 14
+    colors: ["#FFFFFF", "#FFD400"]   # 첫 줄 흰색, 둘째 줄 노란색
+    shadow: {offset_px: 6, blur_px: 8, opacity: 0.65}
+  caption:
+    center: [540, 1360]       # 한 줄/두 줄 모두 블록 중심 동일
+    band_y: [1230, 1470]
+    font_weight: bold
+    font_px: 64
+    max_width: 0.74
+    max_lines: 2
+    max_chars: 28
+    max_words: 7
+    line_gap_px: 12
+    outline_px: 8
+    color: "#FFFFFF"
+    keyword_color: "#FFD400"
+    shadow: {offset_px: 4, blur_px: 6, opacity: 0.60}
+  background_panel: none      # 자막·제목 뒤 패널/띠/박스/블러 금지
+  progress_chips: none        # 상단 단계별 텍스트·진행 칩 금지
+  safe_zones:
+    top_px: 90                # 위 90px 텍스트 금지
+    bottom_px: 440            # 아래 440px 텍스트 금지
+    right_column: [960, 900, 1080, 1920]
+  action_focus: [0, 620, 1080, 1240]   # 핵심 동작이 보여야 하는 영역
+  horizontal_centering:
+    required: true
+    tolerance_px: 2           # 각 줄의 실제 픽셀(외곽선 포함) 좌우 여백 차 2px 이내 — 렌더 후 검수
+
+fonts:
+  # 위에서부터 찾는다. fonts/ 폴더에 직접 넣어도 된다 (Git 제외).
+  black: [NotoSansKR-Black, NotoSansCJKkr-Black, NotoSansCJK-Black, NotoSansKR-VariableFont, malgunbd]
+  bold:  [NotoSansKR-Bold,  NotoSansCJKkr-Bold,  NotoSansCJK-Bold,  NotoSansKR-VariableFont, malgunbd]

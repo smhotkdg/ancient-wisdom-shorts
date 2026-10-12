@@ -1,0 +1,23 @@
+# 화풍 프리셋: 3D 카툰 (현재 기본값)
+# 다른 화풍으로 바꾸려면 이 파일을 복사해 새 이름으로 만들고 config/project.yaml 의 style.default
+# 또는 episode.yaml 의 style 을 바꾼다. 프롬프트 앞/뒤에 자동으로 붙는다.
+
+name: 3d-cartoon
+label: 3D 카툰
+image_prefix: >-
+  Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions,
+  large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight,
+  tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field,
+  simple uncluttered background, vertical 9:16 composition.
+image_suffix: >-
+  Main action in the middle of the frame, key subjects inside the central 80% of the width,
+  keep the top fifth of the image calm and simple (sky or plain wall) for a title.
+  No text, no letters, no captions, no logos, no watermark, no modern objects.
+character_sheet_template: >-
+  Character reference sheet of {description}. Full body, front view and three-quarter view
+  side by side, neutral pose, plain light background, same outfit in both views.
+motion_suffix: >-
+  Keep the character's face, outfit and the background consistent with the image.
+  Smooth natural motion, no sudden cuts. Natural ambient sound effects only:
+  no speech, no voices, no music, no text on screen.
+palette_note: "따뜻한 모래색·하늘색·흙색 중심, 채도 중간"

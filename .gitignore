@@ -1,0 +1,22 @@
+# 비밀
+.env
+
+# 미디어·빌드 결과 (로컬 전용)
+episodes/*/audio/
+episodes/*/images/
+episodes/*/clips/
+episodes/*/build/
+episodes/*/output/*
+!episodes/*/output/youtube.txt
+episodes/_selftest/
+
+# 폰트·BGM 파일은 각 PC에 둔다
+fonts/*
+!fonts/README.md
+assets/bgm/*
+!assets/bgm/README.md
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
