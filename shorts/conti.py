@@ -82,13 +82,30 @@ button.copy{border:1px solid var(--line);background:var(--card);color:var(--ink)
 .files{font:12.5px ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}.files b{color:var(--ink)}
 .note{color:var(--warn);font-size:13px}
 footer{margin-top:24px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:13px}footer ul{margin:4px 0 10px;padding-left:18px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab .n{font-weight:500;opacity:.7;margin-left:4px}
+.panel[hidden]{display:none}
+.bulk{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.bulk p{margin:0;color:var(--muted);font-size:14px}
+button.copy.big{font-size:14px;font-weight:700;padding:7px 16px;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button.copy.big.ok{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(440px,100%),1fr));gap:10px}
+.list .p pre{max-height:none}
+.list .h b{color:var(--ink);font-size:13px}
+.hidden-src{display:none}
 @media (max-width:420px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
 """
 
 JS = """
-function copyText(btn){const pre=btn.closest('.p').querySelector('pre');const t=pre.innerText;
-const done=()=>{btn.textContent='복사됨';btn.classList.add('ok');setTimeout(()=>{btn.textContent='복사';btn.classList.remove('ok')},1400)};
+function copyText(btn){const pre=btn.dataset.target?document.getElementById(btn.dataset.target):btn.closest('.p').querySelector('pre');const t=pre.textContent;
+const label=btn.textContent;const done=()=>{btn.textContent='복사됨';btn.classList.add('ok');setTimeout(()=>{btn.textContent=label;btn.classList.remove('ok')},1400)};
 try{navigator.clipboard.writeText(t).then(done,()=>fallback(t,done))}catch(e){fallback(t,done)}}
+function showTab(id){document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===id?'true':'false'));
+document.querySelectorAll('.panel').forEach(p=>{p.hidden=p.dataset.panel!==id});try{localStorage.setItem('conti-tab',id)}catch(e){}}
+document.addEventListener('DOMContentLoaded',()=>{let t='scenes';try{t=localStorage.getItem('conti-tab')||'scenes'}catch(e){}
+if(!document.querySelector('.panel[data-panel="'+t+'"]'))t='scenes';showTab(t)});
 function fallback(t,done){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');done()}catch(e){}a.remove()}
 """
 
@@ -96,6 +113,51 @@ function fallback(t,done){const a=document.createElement('textarea');a.value=t;d
 def _prompt_box(label: str, text: str) -> str:
     return (f'<div class="p"><div class="h"><span>{_e(label)}</span>'
             f'<button class="copy" onclick="copyText(this)">복사</button></div><pre>{_e(text)}</pre></div>')
+
+
+def collect(ep: Episode, plan: dict) -> tuple[list[dict], list[dict]]:
+    """GPT 이미지 프롬프트(캐릭터 + 장면)와 Grok 프롬프트를 순서대로 모은다."""
+    chars = {c["id"]: c for c in ep.data.get("characters") or []}
+    gpt, grok = [], []
+    for c in chars.values():
+        gpt.append({"key": f"char_{c['id']}", "label": f"캐릭터: {c.get('name') or c['id']}",
+                    "save": f"images/char_{c['id']}.png", "attach": "", "text": character_prompt(ep, c)})
+    for sc in ep.scenes:
+        sid = sc["id"]
+        att = [f"char_{c}.png" for c in sc.get("characters") or [] if c in chars]
+        gpt.append({"key": sid, "label": sid.upper(), "save": f"images/{sid}.png",
+                    "attach": ", ".join(att), "text": image_prompt(ep, sc)})
+        if (sc.get("source") or "grok") == "grok":
+            L, _ = grok_length(ep, plan[sid]["duration"])
+            grok.append({"key": sid, "label": sid.upper(), "seconds": L, "upload": f"images/{sid}.png",
+                         "save": f"clips/{sid}.mp4", "text": motion_prompt(ep, sc)})
+    return gpt, grok
+
+
+def gpt_header(it: dict) -> str:
+    att = f" · 첨부: {it['attach']}" if it["attach"] else ""
+    return f"[{it['label']}] 저장: {it['save']}{att}"
+
+
+def grok_header(it: dict) -> str:
+    return f"[{it['label']}] {it['seconds']}초 · 업로드: {it['upload']} · 저장: {it['save']}"
+
+
+def bundle(items: list[dict], header) -> str:
+    return "\n\n".join(f"{header(it)}\n{it['text']}" for it in items) + "\n"
+
+
+def _collection(pid: str, title: str, hint: str, items: list[dict], header) -> str:
+    src_id = f"all-{pid}"
+    out = [f"<div class='panel' data-panel='{pid}' hidden>",
+           f"<div class='bulk'><p><b>{_e(title)} {len(items)}개</b> · {_e(hint)}</p>"
+           f"<button class='copy big' data-target='{src_id}' onclick='copyText(this)'>전체 복사</button></div>",
+           f"<pre class='hidden-src' id='{src_id}'>{_e(bundle(items, header))}</pre><div class='list'>"]
+    for it in items:
+        out.append(f'<div class="p"><div class="h"><span><b>{_e(it["label"])}</b> {_e(header(it).split("] ", 1)[1])}</span>'
+                   f'<button class="copy" onclick="copyText(this)">복사</button></div><pre>{_e(it["text"])}</pre></div>')
+    out.append("</div></div>")
+    return "".join(out)
 
 
 def build(ep: Episode) -> str:
@@ -129,6 +191,17 @@ def build(ep: Episode) -> str:
     out.append("<li>장면 이미지: 캐릭터 이미지를 첨부하고 프롬프트 붙여넣기 → <code>images/sNN.png</code></li>")
     out.append("<li>Grok: 장면 이미지를 올리고 동작 프롬프트, 권장 길이로 생성 → <code>clips/sNN.mp4</code></li>")
     out.append("<li>파일을 에피소드 폴더에 넣고 알려주기 → 합성</li></ol>")
+
+    gpt_items, grok_items = collect(ep, plan)
+    out.append("<nav class='tabs' role='tablist'>"
+               "<button class='tab' role='tab' data-tab='scenes' onclick=\"showTab('scenes')\">장면별 보기</button>"
+               f"<button class='tab' role='tab' data-tab='gpt' onclick=\"showTab('gpt')\">GPT 이미지 모음<span class='n'>{len(gpt_items)}</span></button>"
+               f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button></nav>")
+    out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "캐릭터 시트부터 순서대로. 첨부 표시가 있으면 그 이미지를 함께 올리세요.",
+                           gpt_items, gpt_header))
+    out.append(_collection("grok", "Grok 영상 프롬프트", "장면 이미지를 올리고 표시된 길이로 생성하세요.",
+                           grok_items, grok_header))
+    out.append("<div class='panel' data-panel='scenes'>")
 
     if chars:
         out.append("<h2>캐릭터</h2><div class='grid'>")
@@ -165,7 +238,7 @@ def build(ep: Episode) -> str:
             out.append(f"<div class='note'>{_e(note)}</div>")
         files = f"<b>images/{sid}.png</b>" + (f" · <b>clips/{sid}.mp4</b>" if src == "grok" else "")
         out.append(f"<div class='files'>저장: {files}</div></div>")
-    out.append("</div>")
+    out.append("</div></div>")
 
     srcs, notes = ep.data.get("sources") or [], ep.data.get("accuracy_notes") or []
     if srcs or notes:
@@ -187,4 +260,8 @@ def write(ep: Episode) -> str:
                                     "motion": motion_prompt(ep, s) if (s.get("source") or "grok") == "grok" else None}
                           for s in ep.scenes}}
     (ep.dir / "prompts.json").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding="utf-8")
+    timing = ep.timing() or estimate(ep)
+    gpt_items, grok_items = collect(ep, {s["id"]: s for s in timing["scenes"]})
+    (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header), encoding="utf-8")
+    (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
     return str(path)

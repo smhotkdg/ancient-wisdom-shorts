@@ -14,7 +14,7 @@
 | 1. 주제 찾기·팩트 체크 | Claude | 후보 2~3개 → 사용자 선택 |
 | 2. 대본·장면 설계 | Claude | `episodes/NNN-slug/episode.yaml` |
 | 3. 필재 음성 | Claude (`aw.py tts`) | `audio/raw.wav` → 타이밍 |
-| 4. 한 장 콘티 | Claude (`aw.py conti`) | `conti.html` (프롬프트 복사 버튼) |
+| 4. 한 장 콘티 | Claude (`aw.py conti`) | `conti.html` (장면별 / GPT 모음 / Grok 모음 탭, 전체 복사) + `prompts-chatgpt.txt`, `prompts-grok.txt` |
 | 5. 이미지·영상 생성 | **사용자** — ChatGPT 이미지, Grok 영상 | `images/sNN.png`, `clips/sNN.mp4` |
 | 6. 최종 합성·검수 | Claude (`aw.py compose`) | `output/final.mp4` + 검수 + 유튜브 문구 |
 
@@ -51,7 +51,7 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 10. **매 영상마다 유튜브 추천 제목·설명 문구**를 함께 낸다 (`episode.yaml`의 `youtube` → `output/youtube.txt`).
 11. **Grok 클립 원음은 효과음으로만 작게** 남긴다 (기본 `audio.sfx_volume: 0.12`, 에피소드·장면별로 바꿀 수 있음). 말소리·음악이 섞인 클립은 그 장면만 `sfx_volume: 0`.
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`, 기본 3d-cartoon). 프롬프트에 화풍 문구를 직접 박아 넣지 않는다.
-13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `output/youtube.txt`는 올린다.
+13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `output/youtube.txt`는 올린다.
 14. 납품 전 `output/check/final-sheet.jpg`(360px 폭 장면 모음)를 직접 보고 자막이 핵심 동작을 가리지 않는지 확인한다.
 
 ## 환경 메모
