@@ -15,19 +15,20 @@ from .timing import estimate
 def image_prompt(ep: Episode, scene: dict) -> str:
     st = ep.style
     chars = {c["id"]: c for c in ep.data.get("characters") or []}
-    parts = [st["image_prefix"].strip(), str(scene.get("image_prompt", "")).strip()]
+    # 장면 내용을 맨 앞에 둔다 (콘티에서 바로 보이게). 화풍 문구는 뒤에.
+    parts = [str(scene.get("image_prompt", "")).strip()]
     used = [chars[c] for c in scene.get("characters") or [] if c in chars]
     if used:
         names = ", ".join(f"{c.get('name_en') or c['id']} (attached reference image char_{c['id']}.png)" for c in used)
         parts.append(f"Characters: {names} — keep their faces, proportions and outfits exactly as in the references.")
-    parts.append(st["image_suffix"].strip())
+    parts += [st["image_prefix"].strip(), st["image_suffix"].strip()]
     return " ".join(p for p in parts if p)
 
 
 def character_prompt(ep: Episode, char: dict) -> str:
     st = ep.style
     sheet = st["character_sheet_template"].format(description=char.get("description", "").strip())
-    return f"{st['image_prefix'].strip()} {sheet} No text, no letters, no watermark."
+    return f"{sheet} {st['image_prefix'].strip()} No text, no letters, no watermark."
 
 
 def motion_prompt(ep: Episode, scene: dict) -> str:
@@ -63,11 +64,13 @@ header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-co
 h1{margin:0;font-size:26px;line-height:1.25;font-weight:800;letter-spacing:-.01em}h1 .y{color:var(--accent)}
 .meta{display:flex;flex-wrap:wrap;gap:6px}.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:13px;white-space:nowrap}
 .hook{margin:6px 0 0;color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:0 0 18px;padding:0;list-style:none;counter-reset:s}
+code{word-break:break-all}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:8px;margin:0 0 18px;padding:0;list-style:none;counter-reset:s}
 .steps li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px 10px 40px;position:relative;font-size:14px}
 .steps li:before{counter-increment:s;content:counter(s);position:absolute;left:12px;top:10px;width:20px;height:20px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:12px;display:grid;place-items:center;font-weight:700}
 h2{font-size:17px;margin:22px 0 10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:12px}
+footer li{word-break:break-all}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.sid{font-weight:800;font-size:18px}.time{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px}
 .badge{margin-left:auto;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--accent);color:var(--accent-ink)}.badge.still{background:var(--chip);color:var(--ink);border:1px solid var(--line)}

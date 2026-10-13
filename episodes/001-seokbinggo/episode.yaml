@@ -1,0 +1,185 @@
+# 001 석빙고 — 냉장고 없이 여름까지 얼음을 지킨 방법
+id: "001"
+slug: seokbinggo
+status: script_ok
+working_title: 냉장고도 없던 조선은 어떻게 여름까지 얼음을 지켰을까?
+title_lines: ["냉장고도 없는데", "여름까지 얼음을?"]
+hook: 멘탈이 나가버렸습니다
+caption_keywords: [석빙고, 반지하, 짚, 왕겨, 환기구, 배수구]
+
+characters:
+  - id: keeper
+    name: 빙고지기
+    name_en: Joseon ice-storage keeper
+    description: >-
+      a round-faced, friendly Korean man in his 40s from the Joseon era, short neat beard,
+      light beige cotton hanbok jacket and loose trousers with rolled-up sleeves,
+      dark horsehair headband with a small topknot, straw sandals
+    note: 장면 내내 같은 인물. 표정이 큰 3D 카툰 주인공
+
+scenes:
+  - id: s01
+    source: grok
+    lines:
+      - text: "조선 사람들은 멘탈이 나가버렸습니다."
+        captions: ["조선 사람들은 / 멘탈이 나가버렸습니다"]
+      - "겨울에 힘들게 떠 온 얼음이, 여름도 되기 전에 다 녹아버렸거든요."
+    visual: 녹아서 물웅덩이가 된 얼음 앞에서 빙고지기가 머리를 감싸 쥔다
+    image_prompt: >-
+      The keeper stands in a wooden storehouse, clutching his head in despair beside a pile of
+      melting ice blocks that have turned into a large puddle, water dripping, summer light through the door.
+    characters: [keeper]
+    motion_prompt: >-
+      The keeper grabs his head and sways in despair while the ice blocks keep melting and
+      water drips and spreads across the floor.
+    camera: static, slight slow push in
+
+  - id: s02
+    source: grok
+    lines:
+      - text: "그래서 만든 게 돌로 지은 얼음 창고, 석빙고입니다."
+        captions: ["그래서 만든 게", "돌로 지은 얼음 창고 / 석빙고입니다"]
+    visual: 잔디 덮인 낮은 언덕 모양의 석빙고, 빙고지기가 지게에 얼음을 지고 돌 입구로 내려간다
+    image_prompt: >-
+      Exterior of a Korean seokbinggo stone ice storehouse in winter: a long low grassy mound with a
+      granite stone entrance on the front, stone steps going down, three small stone vent caps on the ridge
+      of the mound. The keeper carries ice blocks on an A-frame backpack (jige) toward the entrance.
+    characters: [keeper]
+    motion_prompt: >-
+      The keeper walks toward the stone entrance carrying ice blocks on his A-frame backpack and steps down
+      into the doorway. Light snow falls.
+    camera: slow pan following the keeper
+
+  - id: s03
+    source: grok
+    lines:
+      - "냉장고도 없이, 어떻게 여름까지 얼음을 지켰을까요?"
+    visual: 한여름 뙤약볕 아래 같은 석빙고, 아지랑이가 피어오른다
+    image_prompt: >-
+      The same grassy seokbinggo mound in hot midsummer, harsh bright sun, cicada-season trees,
+      heat haze above the ground, the keeper wiping sweat in the shade beside the entrance.
+    characters: [keeper]
+    motion_prompt: >-
+      Heat haze shimmers above the ground, leaves sway, the keeper fans himself and wipes sweat from his brow.
+    camera: static
+
+  - id: s04
+    source: grok
+    lines:
+      - "먼저, 땅을 파고 반지하로 지었습니다."
+      - "땅속은 바깥보다 온도가 일정하거든요."
+    visual: 측면 단면도 — 석빙고가 땅속에 반쯤 묻혀 있고, 아치형 돌 천장이 보인다
+    image_prompt: >-
+      Side cross-section cutaway diagram of the seokbinggo: the long stone chamber sunk halfway into the earth,
+      soil layers around it, arched granite ceiling ribs, stone steps going down from the entrance,
+      ice blocks stacked inside. Clean educational illustration, no labels.
+    motion_prompt: >-
+      The camera slowly glides along the cutaway; the soil layers stay still while a soft cool blue glow
+      settles inside the underground chamber.
+    camera: slow horizontal glide
+
+  - id: s05
+    source: still
+    still_motion: slow_zoom
+    lines:
+      - text: "지붕은 진흙과 잔디로 두껍게 덮어, 햇볕을 막았고요."
+        captions: ["지붕은 진흙과 잔디로 / 두껍게 덮어", "햇볕을 막았고요"]
+    visual: 지붕 단면 확대 — 화강암 천장 위 두꺼운 진흙층, 맨 위 잔디. 햇빛이 잔디에서 막힌다
+    image_prompt: >-
+      Close-up cross-section of the seokbinggo roof: granite stone ceiling at the bottom, a thick layer of
+      clay above it, and grass on top. Bright sunbeams hit the grass surface and stop there, while the stone
+      ceiling below stays cool and shaded. Clean educational illustration, no labels.
+
+  - id: s06
+    source: grok
+    lines:
+      - text: "얼음 사이에는 짚과 왕겨를 채웠습니다. 열을 막는 천연 단열재죠."
+        captions: ["얼음 사이에는 / 짚과 왕겨를 채웠습니다", "열을 막는 천연 단열재죠"]
+    visual: 석빙고 내부, 빙고지기가 쌓인 얼음 블록 사이에 왕겨와 짚을 채워 넣는다
+    image_prompt: >-
+      Inside the dim stone chamber with arched granite ribs, the keeper packs straw and rice husks
+      between neatly stacked ice blocks. Cool bluish light from the entrance.
+    characters: [keeper]
+    motion_prompt: >-
+      The keeper scoops rice husks and stuffs straw into the gaps between the ice blocks, patting them down.
+    camera: slow push in
+
+  - id: s07
+    source: grok
+    lines:
+      - "그런데 꽁꽁 막아 두면, 더운 공기가 안에 갇히지 않을까요?"
+    visual: 내부 단면, 천장 쪽에 붉은빛 더운 공기가 고여 일렁인다. 빙고지기가 천장을 올려다보며 고민
+    image_prompt: >-
+      Cross-section of the inside of the stone chamber: a soft orange-red warm haze gathers under the
+      arched ceiling, ice stacked below, the keeper looking up at the ceiling with a worried face.
+      Clean educational illustration, no labels.
+    characters: [keeper]
+    motion_prompt: >-
+      The orange warm haze swirls slowly under the ceiling; the keeper scratches his head, looking up.
+    camera: static
+
+  - id: s08
+    source: grok
+    lines:
+      - "그래서 천장에 환기구를 뚫었습니다."
+      - "더운 공기는 위로 빠져나가고, 찬 공기는 아래에 남죠."
+    visual: 같은 단면 — 천장의 환기구로 붉은 공기가 빠져나가고, 바닥 쪽엔 푸른 냉기가 깔린다
+    image_prompt: >-
+      Same cross-section of the stone chamber with three chimney-like stone vents through the roof mound.
+      Orange warm air rises out through the vents while pale blue cold air settles low around the ice.
+      Clean educational illustration, no labels, no arrows with text.
+    motion_prompt: >-
+      Orange warm air flows upward and escapes through the roof vents; pale blue cold mist sinks and spreads
+      along the floor around the ice blocks.
+    camera: static
+
+  - id: s09
+    source: grok
+    lines:
+      - "바닥은 비스듬히 기울여, 녹은 물이 배수구로 빠지게 했고요."
+    visual: 바닥 클로즈업 — 비스듬한 돌바닥 위로 물줄기가 흘러 가운데 배수구로 빠진다
+    image_prompt: >-
+      Close-up of the sloped stone floor inside the seokbinggo: a thin stream of meltwater runs down the gentle
+      slope into a drain channel in the middle of the floor, ice blocks with straw at the edge of the frame.
+    motion_prompt: >-
+      A thin stream of meltwater trickles down the sloped stone floor and disappears into the central drain.
+    camera: slow tilt down along the stream
+
+  - id: s10
+    source: grok
+    lines:
+      - "흙과 돌, 짚과 바람으로 만든 냉장고였던 셈이죠."
+      - "1700년대에 쌓은 경주 석빙고는, 지금도 볼 수 있습니다."
+    visual: 여름날 빙고지기가 석빙고에서 꺼낸 얼음을 들고 활짝 웃는다 → 같은 언덕의 평화로운 전경
+    image_prompt: >-
+      Bright summer day in front of the grassy seokbinggo mound, the keeper proudly holds up a clear block of
+      ice with a big smile, cool mist coming off the ice, blue sky.
+    characters: [keeper]
+    motion_prompt: >-
+      The keeper lifts the ice block and grins; cool mist drifts from the ice; the camera slowly pulls back to
+      show the whole grassy mound.
+    camera: slow pull back
+
+sources:
+  - "국가유산청 국가유산포털 — 보물 경주 석빙고 (축조 1738년 석비·이맛돌 기록, 환기구 3곳, 경사 바닥과 중앙 배수구) — http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1123700660000"
+  - "위키백과 — 경주 석빙고 (길이 18.8m, 홍예 5개, 환기구 3곳, 바닥 경사·배수구; 국가유산포털·현장 안내문 인용) — https://ko.wikipedia.org/wiki/경주_석빙고"
+  - "생글생글(한국경제) — 석빙고의 과학 원리 (반지하, 진흙·잔디 지붕, 짚·왕겨 단열, 환기구) — https://sgsg.hankyung.com/article/202206178886m"
+  - "경주석빙고의 정량적 훼손도 평가와 미기상환경 분석 (KoreaScience) — https://koreascience.or.kr/article/CFKO200622219297226.page"
+
+accuracy_notes:
+  - "현존 경주 석빙고는 1738년(영조 14) 돌로 쌓았다는 석비·이맛돌 기록이 있는 조선 건물. 신라 지증왕 때(505) 얼음 저장 기록과 연결해 '1500년 된 석빙고'라고 하지 않는다."
+  - "'멘탈이 나가버렸습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "내부 온도·얼음 보존 기간 수치는 쓰지 않는다. '여름까지'는 겨울 저장·여름 사용이라는 일반 설명 수준."
+  - "더운 공기·찬 공기 색 표현과 단면도는 설명용. 실제 환기구 3곳은 중심에서 북쪽으로 치우쳐 있다."
+  - "빙고지기 인물과 장면은 재구성."
+
+youtube:
+  titles:
+    - 냉장고도 없던 조선, 여름까지 얼음을 어떻게 지켰을까?
+    - 돌로 만든 조선의 냉장고, 석빙고의 비밀
+    - 한여름에 얼음이 있었다고? 석빙고의 과학
+  description: >-
+    겨울에 떠 온 얼음을 한여름까지 지켜야 했던 조선 사람들. 땅을 파고 반지하로 짓고, 진흙과 잔디로 지붕을 덮고,
+    짚과 왕겨로 얼음을 감싸고, 천장 환기구로 더운 공기를 내보냈습니다.
+    국가유산청 자료를 바탕으로 경주 석빙고의 구조를 재구성한 애니메이션입니다.
+  hashtags: [석빙고, 조선, 한국사, 과학, 쇼츠]
