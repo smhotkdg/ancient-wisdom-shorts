@@ -1,0 +1,128 @@
+{
+  "characters": {
+    "artisan": "Character reference sheet of a wiry, cheerful Persian well-digger in his 50s, sun-tanned skin, short grey beard, light cloth head wrap, loose sand-colored tunic with rolled-up sleeves, a coil of rope over one shoulder, small clay oil lamp on his belt. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark.",
+    "villager": "Character reference sheet of a small Persian village boy about 8 years old, big curious eyes, short curly black hair, simple off-white tunic, carrying an empty clay water jar. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A dry desert village of mud-brick houses under a harsh sun, cracked earth, villagers clutching their heads in frustration beside empty clay jars, the village boy holding an empty jar and staring at distant blue mountains on the horizon. Characters: village boy (attached reference image char_villager.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The villagers clutch their heads and sigh; the boy lifts his empty jar and turns to look at the far mountains. Dust blows across the cracked ground. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly rises over the boy and drifts toward the far mountains across the shimmering desert. Camera: slow rise and push toward the mountains. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A long shallow open water channel cutting across the desert from the mountains toward the village, a thin trickle of water shrinking and drying out under a blazing sun, heat haze rising, the channel bed cracked and empty near the village. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The thin trickle of water in the open channel shrinks and vanishes into the dry cracked bed as heat haze shimmers above it. Camera: slow pan along the channel toward the village. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The qanat digger arrives at the edge of the village, rope over his shoulder and a small oil lamp on his belt, confidently pointing toward the distant mountains while the village boy looks up at him with hope. Characters: Persian qanat digger (attached reference image char_artisan.png), village boy (attached reference image char_villager.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "The digger smiles, plants his feet and points firmly toward the mountains; the boy's face lights up. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s03-2.mp4",
+          "seconds": 6,
+          "motion": "The digger pulls the rope tight on his shoulder, raises an eyebrow and gives a sly confident grin. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "Side cross-section of the ground at the foot of the mountains: a deep vertical well shaft reaching down into a blue underground water layer, the digger at the top lowering a bucket on a rope with a simple wooden winch. Clean educational illustration, no labels. Characters: Persian qanat digger (attached reference image char_artisan.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The digger turns the wooden winch; the bucket rises from the deep shaft full of water glinting in the light, while the blue underground water layer shimmers softly. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Long side cross-section from the mountain foot to the village: a narrow tunnel running underground from the bottom of the mother well with a very gentle downward slope toward the village, the ground surface above it dry desert. Clean educational illustration, no labels. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "Water begins to flow from the mother well into the tunnel and slowly travels along the gentle slope toward the village. Camera: slow horizontal glide along the tunnel. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "Water flows along the tunnel by itself and spills out of the outlet into the village channel. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Cross-section close-up: blazing sun and shimmering heat on the dry ground surface, and just below, inside the dark cool tunnel, clear water flowing steadily. Clean educational illustration, no labels. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "Heat shimmers on the surface above while the clear water keeps flowing calmly through the dark tunnel below. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "Inside a narrow dark earthen tunnel, the digger kneels with a short pick, a small oil lamp beside him flickering weakly, he wipes sweat and looks ahead into the darkness. Characters: Persian qanat digger (attached reference image char_artisan.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "The oil lamp flame flickers and shrinks; the digger wipes sweat from his brow and peers into the darkness ahead. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Side cross-section of the tunnel with a row of vertical shafts rising from it to the surface at regular intervals; at one shaft a basket of dirt is hauled up by rope, sunlight and fresh air stream down another shaft into the tunnel. Clean educational illustration, no labels. Characters: Persian qanat digger (attached reference image char_artisan.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "A basket full of dirt is pulled up a shaft by rope while dust drifts upward; beams of light pour down the shafts. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "The windlass turns, the basket rises and dumps earth onto the ring mound; a breeze blows dust as the digger takes a deep breath at the shaft mouth. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "High aerial view of a desert: a long dotted line of round crater-like shaft openings running straight from the foot of the mountains to a green village oasis, each opening ringed with a mound of earth. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly glides along the dotted line of shaft openings from the mountains toward the green village. Camera: slow aerial glide. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "A green village oasis: clear water flowing out of the tunnel mouth into a channel among date palms and fields, the village boy happily filling his clay jar and the digger smiling beside him. Characters: Persian qanat digger (attached reference image char_artisan.png), village boy (attached reference image char_villager.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "Water pours from the tunnel mouth; the boy fills his jar, laughs and splashes; the digger nods with a proud smile. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

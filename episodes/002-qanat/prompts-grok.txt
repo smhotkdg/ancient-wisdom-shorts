@@ -1,0 +1,41 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–4.2초
+The villagers clutch their heads and sigh; the boy lifts his empty jar and turns to look at the far mountains. Dust blows across the cracked ground. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 4.2–7.3초
+The camera slowly rises over the boy and drifts toward the far mountains across the shimmering desert. Camera: slow rise and push toward the mountains. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.3–12.3초
+The thin trickle of water in the open channel shrinks and vanishes into the dry cracked bed as heat haze shimmers above it. Camera: slow pan along the channel toward the village. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03-1] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.3–15.1초
+The digger smiles, plants his feet and points firmly toward the mountains; the boy's face lights up. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03-2] 6초 · 업로드: images/s03-2.png · 저장: clips/s03-2.mp4 · 구간 15.1–19.2초
+The digger pulls the rope tight on his shoulder, raises an eyebrow and gives a sly confident grin. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 19.2–24.2초
+The digger turns the wooden winch; the bucket rises from the deep shaft full of water glinting in the light, while the blue underground water layer shimmers softly. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 24.2–29.0초
+Water begins to flow from the mother well into the tunnel and slowly travels along the gentle slope toward the village. Camera: slow horizontal glide along the tunnel. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 29.0–31.5초
+Water flows along the tunnel by itself and spills out of the outlet into the village channel. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 31.5–35.7초
+Heat shimmers on the surface above while the clear water keeps flowing calmly through the dark tunnel below. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 35.7–40.6초
+The oil lamp flame flickers and shrinks; the digger wipes sweat from his brow and peers into the darkness ahead. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 40.6–45.5초
+A basket full of dirt is pulled up a shaft by rope while dust drifts upward; beams of light pour down the shafts. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 45.5–49.3초
+The windlass turns, the basket rises and dumps earth onto the ring mound; a breeze blows dust as the digger takes a deep breath at the shaft mouth. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 49.3–54.7초
+The camera slowly glides along the dotted line of shaft openings from the mountains toward the green village. Camera: slow aerial glide. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 54.7–60.7초
+Water pours from the tunnel mouth; the boy fills his jar, laughs and splashes; the digger nods with a proud smile. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
