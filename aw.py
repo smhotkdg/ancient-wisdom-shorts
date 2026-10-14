@@ -13,6 +13,7 @@
   python aw.py conti <ep>              한 장 콘티 conti.html 만들기
   python aw.py animatic <ep>           이미지(없으면 설명 카드)로 가편집 → 검수
   python aw.py compose <ep>            최종 합성 → 검수
+  python aw.py youtube <ep>            유튜브 제목·설명만 다시 만들기 (output/youtube.txt)
   python aw.py verify <ep>             검수만 다시
   python aw.py status <ep>             무엇이 준비됐고 무엇이 빠졌는지
   python aw.py selftest                가짜 소스로 전체 흐름 시험
@@ -121,6 +122,13 @@ def cmd_story(a):
     say("스토리 점검 통과" if res["pass"] else "스토리 보강 필요 — .claude/skills/shorts-story/SKILL.md 참고")
 
 
+def cmd_youtube(a):
+    from shorts.compose import _youtube
+    ep = load_episode(resolve_ep(a.ep))
+    _youtube(ep)
+    say((ep.output_dir / "youtube.txt").read_text(encoding="utf-8"))
+
+
 def cmd_check_voice(_):
     from shorts import typecast
     say(str(typecast.check(load_project())))
@@ -216,7 +224,7 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("doctor").set_defaults(fn=cmd_doctor)
     s = sub.add_parser("new"); s.add_argument("slug"); s.add_argument("--id"); s.set_defaults(fn=cmd_new)
-    for name, fn in (("script", cmd_script), ("captions", cmd_captions), ("story", cmd_story), ("timing", cmd_timing),
+    for name, fn in (("script", cmd_script), ("captions", cmd_captions), ("story", cmd_story), ("youtube", cmd_youtube), ("timing", cmd_timing),
                      ("conti", cmd_conti), ("status", cmd_status)):
         s = sub.add_parser(name); s.add_argument("ep"); s.set_defaults(fn=fn)
     sub.add_parser("check-voice").set_defaults(fn=cmd_check_voice)

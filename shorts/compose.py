@@ -333,13 +333,25 @@ def _srt(events: list[dict]) -> str:
                      for i, e in enumerate(events, 1))
 
 
-def _youtube(ep: Episode) -> None:
+def youtube_text(ep: Episode) -> str:
+    """유튜브 업로드용 문구: 추천 제목 + 설명(재미있는 본문 → 댓글 질문 → 재구성 안내) + 해시태그."""
     yt = ep.data.get("youtube") or {}
-    if not yt:
-        return
     lines = ["[추천 제목]"] + [f"- {t}" for t in yt.get("titles") or []]
-    lines += ["", "[설명]", (yt.get("description") or "").strip()]
+    body = [(yt.get("description") or "").strip()]
+    if yt.get("comment_question"):
+        body.append("💬 " + yt["comment_question"].strip())
+    disc = ((ep.project.get("youtube") or {}).get("disclaimer") or "").strip()
+    if disc:
+        body.append(disc)
     tags = yt.get("hashtags") or []
     if tags:
-        lines += ["", " ".join(t if t.startswith("#") else "#" + t for t in tags)]
-    (ep.output_dir / "youtube.txt").write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+        body.append(" ".join(t if t.startswith("#") else "#" + t for t in tags))
+    lines += ["", "[설명] (아래를 그대로 붙여 넣기)", "\n\n".join(b for b in body if b)]
+    return "\n".join(lines).strip() + "\n"
+
+
+def _youtube(ep: Episode) -> None:
+    if not ep.data.get("youtube"):
+        return
+    ep.output_dir.mkdir(parents=True, exist_ok=True)
+    (ep.output_dir / "youtube.txt").write_text(youtube_text(ep), encoding="utf-8")

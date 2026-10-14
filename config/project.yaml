@@ -95,3 +95,7 @@ fonts:
   # 위에서부터 찾는다. fonts/ 폴더에 직접 넣어도 된다 (Git 제외).
   black: [NotoSansKR-Black, NotoSansCJKkr-Black, NotoSansCJK-Black, NotoSansKR-VariableFont, malgunbd]
   bold:  [NotoSansKR-Bold,  NotoSansCJKkr-Bold,  NotoSansCJK-Bold,  NotoSansKR-VariableFont, malgunbd]
+
+youtube:
+  # youtube.txt 설명 끝에 자동으로 붙는 문구 (에피소드 설명에는 재미있는 부분만 쓴다)
+  disclaimer: "※ 실제 유적·연구 자료를 바탕으로 인물과 장면을 재구성한 애니메이션입니다."

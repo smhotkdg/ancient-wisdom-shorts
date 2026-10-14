@@ -73,6 +73,37 @@ def grok_plan(ep: Episode, timing: dict) -> list[dict]:
     return out
 
 
+def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str:
+    """로컬 Claude Code 에 붙여 넣을 합성 지시문 (에피소드마다 자동 생성)."""
+    eid = ep.data.get("id") or ep.slug
+    rel = f"episodes/{ep.dir.name}"
+    n_chars = len(ep.script_text())
+    chars = ep.data.get("characters") or []
+    n_img = len(chars) + len(ep.scenes) + sum(1 for g in grok_items if g["upload"] != f"images/{g['scene']}.png")
+    focus = ", ".join(ep.data.get("caption_keywords") or []) or "핵심 동작"
+    return f"""{rel} 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
+
+0. git pull
+1. python aw.py status {eid} — 이미지 {n_img}장, Grok 클립 {len(grok_items)}개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
+2. 음성(audio/raw.wav)이 없으면: 대본 {n_chars}자 = Typecast 크레딧 약 {n_chars}. 실행해도 되는지 나에게 먼저 묻고, 승인 후 python aw.py tts {eid}.
+   네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
+3. python aw.py conti {eid} — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
+4. python aw.py compose {eid}
+5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
+   - 모든 제목·자막 줄은 외곽선 포함 실제 픽셀 기준 좌우 여백 차 2px 이내
+   - 영상 소스는 가운데 기준 대칭 크롭 (좌우 여백 동일)
+   - 렌더 후 측정으로 확인. 하나라도 실패하면 원인을 고치고 다시 합성. 실패한 채로 납품하지 않는다.
+6. output/check/final-sheet.jpg 를 직접 보고 확인:
+   - 자막·제목이 핵심 장면({focus})을 가리지 않는지
+   - 클립에 말소리·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
+   - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
+   - 고친 뒤 다시 compose
+7. python aw.py youtube {eid} — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
+8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과.
+9. episode.yaml status: done, docs/topics.md 의 {eid} 상태를 "완성"으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).
+"""
+
+
 def _e(s) -> str:
     return html.escape(str(s or ""), quote=True)
 
@@ -224,10 +255,16 @@ def build(ep: Episode) -> str:
                "(같은 장면 두 번째 클립은 <code>clips/sNN-2.mp4</code>)</li>")
     out.append("<li>파일을 에피소드 폴더에 넣고 알려주기 → 합성</li></ol>")
 
+    cc = claude_code_prompt(ep, timing, grok_items)
     out.append("<nav class='tabs' role='tablist'>"
                "<button class='tab' role='tab' data-tab='scenes' onclick=\"showTab('scenes')\">장면별 보기</button>"
                f"<button class='tab' role='tab' data-tab='gpt' onclick=\"showTab('gpt')\">GPT 이미지 모음<span class='n'>{len(gpt_items)}</span></button>"
-               f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button></nav>")
+               f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button>"
+               "<button class='tab' role='tab' data-tab='cc' onclick=\"showTab('cc')\">Claude Code</button></nav>")
+    out.append("<div class='panel' data-panel='cc' hidden><div class='bulk'><p><b>로컬 Claude Code 합성 지시문</b> · "
+               "이미지·클립을 폴더에 넣은 뒤 레포 폴더에서 Claude Code 를 열고 붙여 넣으세요.</p>"
+               "<button class='copy big' data-target='cc-src' onclick='copyText(this)'>복사</button></div>"
+               f"<div class='p'><pre id='cc-src' style='max-height:none'>{_e(cc)}</pre></div></div>")
     out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "캐릭터 시트부터 순서대로. 첨부 표시가 있으면 그 이미지를 함께 올리세요.",
                            gpt_items, gpt_header))
     out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
@@ -300,4 +337,5 @@ def write(ep: Episode) -> str:
     (ep.dir / "prompts.json").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding="utf-8")
     (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header), encoding="utf-8")
     (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
+    (ep.dir / "claude-code.txt").write_text(claude_code_prompt(ep, timing, grok_items), encoding="utf-8")
     return str(path)

@@ -57,7 +57,9 @@ python aw.py conti <ep>          # episodes/NNN-slug/conti.html
 - **GPT 이미지 모음** — 캐릭터 시트 + 장면 이미지 프롬프트를 순서대로, 저장 파일명·첨부할 캐릭터 이미지 표시, "전체 복사"
 - **Grok 영상 모음** — Grok 장면만, 권장 길이·업로드할 이미지·저장 파일명 표시, "전체 복사"
 
-같은 내용이 `prompts-chatgpt.txt`, `prompts-grok.txt`로도 저장된다.
+- **Claude Code** — 이 에피소드 합성용 로컬 Claude Code 지시문 (가로 중앙 정렬 검수 포함), 복사 버튼
+
+같은 내용이 `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`로도 저장된다.
 
 ## 4. 이미지·영상 생성 (사용자)
 

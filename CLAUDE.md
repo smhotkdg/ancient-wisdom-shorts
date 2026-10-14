@@ -14,7 +14,7 @@
 | 1. 주제 찾기·팩트 체크 | Claude | 후보 2~3개 → 사용자 선택 |
 | 2. 대본·장면 설계 | Claude — **스토리형** (`.claude/skills/shorts-story`) → `aw.py story` 점검 | `episodes/NNN-slug/episode.yaml` |
 | 3. 필재 음성 | Claude (`aw.py tts`) | `audio/raw.wav` → 타이밍 |
-| 4. 한 장 콘티 | Claude (`aw.py conti`) | `conti.html` (장면별 / GPT 모음 / Grok 모음 탭, 전체 복사) + `prompts-chatgpt.txt`, `prompts-grok.txt` |
+| 4. 한 장 콘티 | Claude (`aw.py conti`) | `conti.html` (장면별 / GPT 모음 / Grok 모음 / Claude Code 탭, 전체 복사) + `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt` |
 | 5. 이미지·영상 생성 | **사용자** — ChatGPT 이미지, Grok 영상 | `images/sNN.png`, `clips/sNN.mp4` |
 | 6. 최종 합성·검수 | Claude (`aw.py compose`) | `output/final.mp4` + 검수 + 유튜브 문구 |
 
@@ -34,6 +34,7 @@ python aw.py voice <ep> --file F   # 다른 곳에서 받은 음성 사용
 python aw.py conti <ep>        # 한 장 콘티
 python aw.py animatic <ep>     # 가편집 + 검수
 python aw.py compose <ep>      # 최종 합성 + 검수
+python aw.py youtube <ep>      # 유튜브 제목·설명만 다시 만들기
 python aw.py status <ep>       # 준비 상태
 python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0)
 ```
@@ -50,10 +51,11 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 7. **가로 중앙 정렬 필수**: 모든 제목·자막 줄은 외곽선 포함 실제 픽셀 기준 좌우 여백 차 2px 이내. 렌더 후 `verify`가 오버레이를 다시 측정해 확인한다. 실패하면 납품하지 않는다. 영상 소스도 가운데 기준으로 대칭 크롭한다.
 8. **자막 배경 없음**: 패널·띠·박스·블러 금지. 상단 진행 칩·단계 제목·부품 라벨 금지. 화면 텍스트는 고정 제목 + 대사 자막뿐.
 9. **자막은 대본의 모든 단어를** 의미 단위로 보여 준다. 자동 나눔이 어색하면 `episode.yaml`의 `captions`로 직접 쓴다.
-10. **매 영상마다 유튜브 추천 제목·설명 문구**를 함께 낸다 (`episode.yaml`의 `youtube` → `output/youtube.txt`).
+10. **매 영상마다 유튜브 추천 제목·설명 문구**를 함께 낸다 (`episode.yaml`의 `youtube` → `output/youtube.txt`, `aw.py youtube`). 설명은 재미있게: 이모지+궁금증 첫 줄 → 맛보기 → 오늘과 연결 + 댓글 질문. 재구성 안내는 자동으로 붙는다.
+10-1. **콘티를 줄 때 로컬 Claude Code 합성 지시문도 함께** 준다. `aw.py conti`가 콘티의 "Claude Code" 탭과 `claude-code.txt`로 자동 생성한다 (가로 중앙 정렬 검수 포함).
 11. **Grok 클립 원음은 효과음으로만 작게** 남긴다 (기본 `audio.sfx_volume: 0.12`, 에피소드·장면별로 바꿀 수 있음). 말소리·음악이 섞인 클립은 그 장면만 `sfx_volume: 0`.
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`, 기본 3d-cartoon). 프롬프트에 화풍 문구를 직접 박아 넣지 않는다.
-13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `output/youtube.txt`는 올린다.
+13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다.
 14. 납품 전 `output/check/final-sheet.jpg`(360px 폭 장면 모음)를 직접 보고 자막이 핵심 동작을 가리지 않는지 확인한다.
 
 ## 환경 메모

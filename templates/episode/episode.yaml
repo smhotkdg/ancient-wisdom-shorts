@@ -45,5 +45,7 @@ accuracy_notes: []       # 단정하지 않는 것, 재구성인 부분
 
 youtube:
   titles: []             # 추천 제목 2~3개
-  description: ""        # 2~4문장, 재구성 애니메이션임을 밝힘
+  description: |-       # 재미있게: 이모지+궁금증 첫 줄 → 맛보기 2~4줄 → 오늘과 연결 (shorts-story 스킬)
+
+  comment_question: ""   # 댓글 유도 질문 하나 (재구성 안내 문구는 자동으로 붙음)
   hashtags: []
