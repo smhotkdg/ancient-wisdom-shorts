@@ -109,6 +109,25 @@ class Episode:
 SCENE_ID = re.compile(r"^s\d{2}$")
 
 
+def clip_parts(scene: dict) -> list[dict]:
+    """Grok 장면의 클립 목록. 1번은 장면 자체의 motion_prompt, 2번부터 extra_clips.
+
+    파일명: clips/s01.mp4, clips/s01-2.mp4, clips/s01-3.mp4 …
+    """
+    if (scene.get("source") or "grok") != "grok":
+        return []
+    keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in")
+    sid = scene["id"]
+    parts = [{"n": 1, "file": f"{sid}.mp4", "image": sid, "own_image": False, **{k: scene.get(k) for k in keys}}]
+    for i, extra in enumerate(scene.get("extra_clips") or [], start=2):
+        own = bool(extra.get("image_prompt"))   # 자기 이미지가 있으면 images/s01-2.png 에서 시작
+        parts.append({"n": i, "file": f"{sid}-{i}.mp4", "image": f"{sid}-{i}" if own else sid, "own_image": own,
+                      "image_prompt": extra.get("image_prompt"),
+                      "characters": extra.get("characters", scene.get("characters")),
+                      **{k: extra.get(k) for k in keys}})
+    return parts
+
+
 def load_episode(path: str | Path) -> Episode:
     d = Path(path).resolve()
     if d.is_file():

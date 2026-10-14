@@ -30,9 +30,19 @@ scenes:
       melting ice blocks that have turned into a large puddle, water dripping, summer light through the door.
     characters: [keeper]
     motion_prompt: >-
-      The keeper grabs his head and sways in despair while the ice blocks keep melting and
-      water drips and spreads across the floor.
-    camera: static, slight slow push in
+      The keeper grabs his head with both hands and sways in despair, mouth wide open in shock.
+      The ice beside him keeps dripping.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a pile of ice blocks melting on the wooden floor of the same storehouse: water running off
+          their rounded edges, a wide puddle spreading, the keeper's slumped figure blurred in the background,
+          warm summer light through the door.
+        characters: [keeper]
+        motion_prompt: >-
+          Water keeps running off the melting ice and the puddle slowly spreads across the floor; a block slumps
+          and slides a little. The keeper in the background drops his shoulders.
+        camera: slow push in toward the ice
 
   - id: s02
     source: grok
@@ -74,13 +84,21 @@ scenes:
       soil layers around it, arched granite ceiling ribs, stone steps going down from the entrance,
       ice blocks stacked inside. Clean educational illustration, no labels.
     motion_prompt: >-
-      The camera slowly glides along the cutaway; the soil layers stay still while a soft cool blue glow
-      settles inside the underground chamber.
+      The camera slowly glides along the cutaway from the entrance steps toward the back of the chamber;
+      the soil layers and stone stay still while a soft cool blue glow settles inside.
     camera: slow horizontal glide
+    extra_clips:
+      - image_prompt: >-
+          The same side cross-section of the seokbinggo, wider view including a blazing summer sun in the sky:
+          the ground surface glows warm orange from the heat, while the half-buried stone chamber below stays a
+          calm cool blue. Clean educational illustration, no labels.
+        motion_prompt: >-
+          The sun's heat shimmers on the surface and the topsoil glow pulses warm orange, while the
+          underground chamber below stays a calm, steady cool blue.
+        camera: static
 
   - id: s05
-    source: still
-    still_motion: slow_zoom
+    source: grok
     lines:
       - text: "지붕은 진흙과 잔디로 두껍게 덮어, 햇볕을 막았고요."
         captions: ["지붕은 진흙과 잔디로 / 두껍게 덮어", "햇볕을 막았고요"]
@@ -89,6 +107,10 @@ scenes:
       Close-up cross-section of the seokbinggo roof: granite stone ceiling at the bottom, a thick layer of
       clay above it, and grass on top. Bright sunbeams hit the grass surface and stop there, while the stone
       ceiling below stays cool and shaded. Clean educational illustration, no labels.
+    motion_prompt: >-
+      Bright sunbeams keep falling on the grass on top of the roof; the grass sways gently in a light breeze,
+      while the clay layer and the stone ceiling below stay still and cool.
+    camera: very slow push in
 
   - id: s06
     source: grok
@@ -129,9 +151,17 @@ scenes:
       Orange warm air rises out through the vents while pale blue cold air settles low around the ice.
       Clean educational illustration, no labels, no arrows with text.
     motion_prompt: >-
-      Orange warm air flows upward and escapes through the roof vents; pale blue cold mist sinks and spreads
-      along the floor around the ice blocks.
+      Orange warm air under the ceiling begins to drift upward and slips out through the three roof vents.
     camera: static
+    extra_clips:
+      - image_prompt: >-
+          Closer cross-section of the lower part of the stone chamber: pale blue cold mist pooling low around the
+          straw-packed ice blocks on the floor, a faint orange warm haze high above near the vents.
+          Clean educational illustration, no labels.
+        motion_prompt: >-
+          Pale blue cold mist sinks and spreads slowly along the floor around the ice blocks, while the faint
+          orange haze above keeps rising away out of frame.
+        camera: slow tilt down to the ice
 
   - id: s09
     source: grok
@@ -156,9 +186,17 @@ scenes:
       ice with a big smile, cool mist coming off the ice, blue sky.
     characters: [keeper]
     motion_prompt: >-
-      The keeper lifts the ice block and grins; cool mist drifts from the ice; the camera slowly pulls back to
-      show the whole grassy mound.
-    camera: slow pull back
+      The keeper lifts the clear ice block high and grins proudly; cool mist drifts off the ice.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Wide high view of the whole grassy seokbinggo mound with its granite entrance and three stone vent caps,
+          under a clear blue summer sky, green trees around, the small figure of the keeper waving by the entrance.
+        characters: [keeper]
+        motion_prompt: >-
+          The camera slowly rises and pulls back over the grassy mound; clouds drift, grass sways, the small
+          keeper waves by the entrance.
+        camera: slow pull back and rise
 
 sources:
   - "국가유산청 국가유산포털 — 보물 경주 석빙고 (축조 1738년 석비·이맛돌 기록, 환기구 3곳, 경사 바닥과 중앙 배수구) — http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1123700660000"

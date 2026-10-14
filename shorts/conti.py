@@ -8,8 +8,8 @@ from __future__ import annotations
 import html
 import json
 
-from .common import Episode
-from .timing import estimate
+from .common import Episode, clip_parts
+from .timing import estimate, part_bounds
 
 
 def image_prompt(ep: Episode, scene: dict) -> str:
@@ -32,6 +32,7 @@ def character_prompt(ep: Episode, char: dict) -> str:
 
 
 def motion_prompt(ep: Episode, scene: dict) -> str:
+    """scene 또는 clip_parts() 의 한 항목."""
     parts = [str(scene.get("motion_prompt", "")).strip()]
     if scene.get("camera"):
         parts.append(f"Camera: {scene['camera']}.")
@@ -39,15 +40,37 @@ def motion_prompt(ep: Episode, scene: dict) -> str:
     return " ".join(p for p in parts if p)
 
 
-def grok_length(ep: Episode, seconds: float) -> tuple[int | None, str]:
+def grok_length(ep: Episode, seconds: float) -> tuple[int, str]:
+    """클립 구간 길이 → (Grok 생성 길이, 알림)."""
     lengths = sorted(ep.project["clips"]["grok_lengths"])
     for L in lengths:
         if seconds <= L + 0.05:
             return L, ""
-    slow = float(ep.project["clips"]["max_slowdown"])
-    if seconds <= lengths[-1] * slow:
-        return lengths[-1], f"{lengths[-1]}초 클립을 최대 {slow}배 느리게 늘려 맞춥니다"
-    return lengths[-1], "장면이 너무 깁니다 — 장면을 나누는 것을 권장합니다"
+    L = lengths[-1]
+    slow = float(ep.project["clips"].get("plan_slowdown", 1.2))
+    if seconds <= L * slow:
+        return L, f"{L}초 클립을 {seconds / L:.2f}배 느리게 늘려 맞춥니다"
+    return L, (f"구간 {seconds:.1f}초 — {L}초 클립 하나로는 부족합니다. "
+               f"episode.yaml 에 extra_clips 를 추가해 클립을 나누세요")
+
+
+def grok_plan(ep: Episode, timing: dict) -> list[dict]:
+    """Grok 클립마다 구간·길이·파일명·프롬프트."""
+    out = []
+    for sc in ep.scenes:
+        parts = clip_parts(sc)
+        if not parts:
+            continue
+        bounds = part_bounds(ep, timing, sc, len(parts))
+        multi = len(parts) > 1
+        for part, (a, b) in zip(parts, bounds):
+            L, note = grok_length(ep, b - a)
+            out.append({"scene": sc["id"], "n": part["n"],
+                        "label": f"{sc['id'].upper()}-{part['n']}" if multi else sc["id"].upper(),
+                        "start": a, "end": b, "seconds": L, "note": note,
+                        "upload": f"images/{part['image']}.png", "save": f"clips/{part['file']}",
+                        "text": motion_prompt(ep, part)})
+    return out
 
 
 def _e(s) -> str:
@@ -115,10 +138,10 @@ def _prompt_box(label: str, text: str) -> str:
             f'<button class="copy" onclick="copyText(this)">복사</button></div><pre>{_e(text)}</pre></div>')
 
 
-def collect(ep: Episode, plan: dict) -> tuple[list[dict], list[dict]]:
+def collect(ep: Episode, timing: dict) -> tuple[list[dict], list[dict]]:
     """GPT 이미지 프롬프트(캐릭터 + 장면)와 Grok 프롬프트를 순서대로 모은다."""
     chars = {c["id"]: c for c in ep.data.get("characters") or []}
-    gpt, grok = [], []
+    gpt = []
     for c in chars.values():
         gpt.append({"key": f"char_{c['id']}", "label": f"캐릭터: {c.get('name') or c['id']}",
                     "save": f"images/char_{c['id']}.png", "attach": "", "text": character_prompt(ep, c)})
@@ -127,11 +150,13 @@ def collect(ep: Episode, plan: dict) -> tuple[list[dict], list[dict]]:
         att = [f"char_{c}.png" for c in sc.get("characters") or [] if c in chars]
         gpt.append({"key": sid, "label": sid.upper(), "save": f"images/{sid}.png",
                     "attach": ", ".join(att), "text": image_prompt(ep, sc)})
-        if (sc.get("source") or "grok") == "grok":
-            L, _ = grok_length(ep, plan[sid]["duration"])
-            grok.append({"key": sid, "label": sid.upper(), "seconds": L, "upload": f"images/{sid}.png",
-                         "save": f"clips/{sid}.mp4", "text": motion_prompt(ep, sc)})
-    return gpt, grok
+        for part in clip_parts(sc):
+            if part["own_image"]:
+                patt = [f"char_{c}.png" for c in part.get("characters") or [] if c in chars]
+                patt.append(f"{sid}.png (같은 장소·조명 유지)")
+                gpt.append({"key": part["image"], "label": part["image"].upper(), "save": f"images/{part['image']}.png",
+                            "attach": ", ".join(patt), "text": image_prompt(ep, part)})
+    return gpt, grok_plan(ep, timing)
 
 
 def gpt_header(it: dict) -> str:
@@ -140,7 +165,8 @@ def gpt_header(it: dict) -> str:
 
 
 def grok_header(it: dict) -> str:
-    return f"[{it['label']}] {it['seconds']}초 · 업로드: {it['upload']} · 저장: {it['save']}"
+    return (f"[{it['label']}] {it['seconds']}초 · 업로드: {it['upload']} · 저장: {it['save']}"
+            f" · 구간 {it['start']:.1f}–{it['end']:.1f}초")
 
 
 def bundle(items: list[dict], header) -> str:
@@ -170,7 +196,12 @@ def build(ep: Episode) -> str:
     title_lines = ep.data.get("title_lines") or [ep.data.get("working_title", ep.slug)]
     t_html = "<br>".join(f'<span class="{"y" if i else ""}">{_e(t)}</span>' for i, t in enumerate(title_lines))
     total = timing["video_duration"]
-    grok_count = sum(1 for s in ep.scenes if (s.get("source") or "grok") == "grok")
+    gpt_items, grok_items = collect(ep, timing)
+    grok_by_scene: dict[str, list[dict]] = {}
+    for g in grok_items:
+        grok_by_scene.setdefault(g["scene"], []).append(g)
+    grok_count = len(grok_items)
+    max_clip = max(ep.project["clips"]["grok_lengths"])
     chars = ep.data.get("characters") or []
 
     out = [f"<!doctype html><html lang='ko'><head><meta charset='utf-8'>"
@@ -183,23 +214,23 @@ def build(ep: Episode) -> str:
     out.append("</div><div class='meta'>")
     out.append(f"<span class='chip'>{_e(ep.slug)}</span><span class='chip'>화풍: {_e(ep.style.get('label'))}</span>")
     out.append(f"<span class='chip'>{'실측' if measured else '추정'} {total:.1f}초</span>")
-    out.append(f"<span class='chip'>장면 {len(ep.scenes)} · Grok {grok_count}</span></div></header>")
+    out.append(f"<span class='chip'>장면 {len(ep.scenes)} · Grok 클립 {grok_count}개 (최대 {max_clip}초)</span></div></header>")
 
     out.append("<ol class='steps'>")
     if chars:
         out.append("<li><b>캐릭터 기준 이미지</b>를 먼저 만들고 <code>images/char_아이디.png</code> 로 저장</li>")
     out.append("<li>장면 이미지: 캐릭터 이미지를 첨부하고 프롬프트 붙여넣기 → <code>images/sNN.png</code></li>")
-    out.append("<li>Grok: 장면 이미지를 올리고 동작 프롬프트, 권장 길이로 생성 → <code>clips/sNN.mp4</code></li>")
+    out.append(f"<li>Grok: 장면 이미지를 올리고 동작 프롬프트, {max_clip}초로 생성 → <code>clips/sNN.mp4</code> "
+               "(같은 장면 두 번째 클립은 <code>clips/sNN-2.mp4</code>)</li>")
     out.append("<li>파일을 에피소드 폴더에 넣고 알려주기 → 합성</li></ol>")
 
-    gpt_items, grok_items = collect(ep, plan)
     out.append("<nav class='tabs' role='tablist'>"
                "<button class='tab' role='tab' data-tab='scenes' onclick=\"showTab('scenes')\">장면별 보기</button>"
                f"<button class='tab' role='tab' data-tab='gpt' onclick=\"showTab('gpt')\">GPT 이미지 모음<span class='n'>{len(gpt_items)}</span></button>"
                f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button></nav>")
     out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "캐릭터 시트부터 순서대로. 첨부 표시가 있으면 그 이미지를 함께 올리세요.",
                            gpt_items, gpt_header))
-    out.append(_collection("grok", "Grok 영상 프롬프트", "장면 이미지를 올리고 표시된 길이로 생성하세요.",
+    out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
                            grok_items, grok_header))
     out.append("<div class='panel' data-panel='scenes'>")
 
@@ -220,11 +251,10 @@ def build(ep: Episode) -> str:
         p = plan[sid]
         src = sc.get("source") or "grok"
         out.append("<div class='card'>")
-        if src == "grok":
-            L, note = grok_length(ep, p["duration"])
-            badge = f"<span class='badge'>Grok {L}초</span>"
+        gs = grok_by_scene.get(sid, [])
+        if gs:
+            badge = f"<span class='badge'>Grok {gs[0]['seconds']}초" + (f" ×{len(gs)}" if len(gs) > 1 else "") + "</span>"
         else:
-            note = ""
             badge = "<span class='badge still'>정지 이미지</span>"
         out.append(f"<div class='top'><span class='sid'>{sid.upper()}</span>"
                    f"<span class='time'>{p['start']:.1f}–{p['end']:.1f}초 · {p['duration']:.1f}초</span>{badge}</div>")
@@ -232,11 +262,16 @@ def build(ep: Episode) -> str:
         if sc.get("visual"):
             out.append(f"<div class='vis'>{_e(sc['visual'])}</div>")
         out.append(_prompt_box("ChatGPT 이미지", image_prompt(ep, sc)))
-        if src == "grok":
-            out.append(_prompt_box("Grok 영상", motion_prompt(ep, sc)))
-        if note:
-            out.append(f"<div class='note'>{_e(note)}</div>")
-        files = f"<b>images/{sid}.png</b>" + (f" · <b>clips/{sid}.mp4</b>" if src == "grok" else "")
+        for part in clip_parts(sc):
+            if part["own_image"]:
+                out.append(_prompt_box(f"ChatGPT 이미지 {part['image'].upper()} (새 이미지)", image_prompt(ep, part)))
+        for g in gs:
+            rng = f" · {g['start']:.1f}–{g['end']:.1f}초" if len(gs) > 1 else ""
+            out.append(_prompt_box(f"Grok 영상 {g['label']}{rng}", g["text"]))
+            if g["note"]:
+                out.append(f"<div class='note'>{_e(g['label'])}: {_e(g['note'])}</div>")
+        extra_imgs = "".join(f" · <b>images/{p['image']}.png</b>" for p in clip_parts(sc) if p["own_image"])
+        files = f"<b>images/{sid}.png</b>{extra_imgs}" + "".join(f" · <b>{_e(g['save'])}</b>" for g in gs)
         out.append(f"<div class='files'>저장: {files}</div></div>")
     out.append("</div></div>")
 
@@ -255,13 +290,14 @@ def build(ep: Episode) -> str:
 def write(ep: Episode) -> str:
     path = ep.dir / "conti.html"
     path.write_text(build(ep), encoding="utf-8")
+    timing = ep.timing() or estimate(ep)
+    gpt_items, grok_items = collect(ep, timing)
     prompts = {"characters": {c["id"]: character_prompt(ep, c) for c in ep.data.get("characters") or []},
                "scenes": {s["id"]: {"image": image_prompt(ep, s),
-                                    "motion": motion_prompt(ep, s) if (s.get("source") or "grok") == "grok" else None}
+                                    "clips": [{"file": g["save"], "seconds": g["seconds"], "motion": g["text"]}
+                                              for g in grok_items if g["scene"] == s["id"]]}
                           for s in ep.scenes}}
     (ep.dir / "prompts.json").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding="utf-8")
-    timing = ep.timing() or estimate(ep)
-    gpt_items, grok_items = collect(ep, {s["id"]: s for s in timing["scenes"]})
     (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header), encoding="utf-8")
     (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
     return str(path)

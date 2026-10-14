@@ -183,12 +183,13 @@ def cmd_status(a):
     say(f"  {mark(ep.raw_voice)} 음성   {mark(ep.timing_path)} 타이밍   {mark(ep.dir / 'conti.html')} 콘티")
     for c in ep.data.get("characters") or []:
         say(f"  {mark(ep.images_dir / ('char_' + c['id'] + '.png'))} 캐릭터 char_{c['id']}.png")
+    from shorts.common import clip_parts
     for sc in ep.scenes:
         sid = sc["id"]
         img = any((ep.images_dir / f"{sid}{e}").exists() for e in (".png", ".jpg", ".jpeg", ".webp"))
-        clip = (ep.clips_dir / f"{sid}.mp4").exists()
-        need_clip = (sc.get("source") or "grok") == "grok"
-        say(f"  {sid}  이미지 {'✓' if img else '·'}  " + (f"클립 {'✓' if clip else '·'}" if need_clip else "(정지 장면)"))
+        parts = clip_parts(sc)
+        clips = "  ".join(f"{p['file']} {'✓' if (ep.clips_dir / p['file']).exists() else '·'}" for p in parts)
+        say(f"  {sid}  이미지 {'✓' if img else '·'}  " + (clips if parts else "(정지 장면)"))
     say(f"  {mark(ep.output_dir / 'animatic.mp4')} 애니매틱   {mark(ep.output_dir / 'final.mp4')} 최종")
 
 

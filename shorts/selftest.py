@@ -51,6 +51,9 @@ scenes:
     visual: 썰매가 젖은 모래 위로 미끄러진다
     image_prompt: The sledge slides smoothly over dark wet sand pulled by workers.
     motion_prompt: Workers pull and the sledge glides forward.
+    extra_clips:
+      - motion_prompt: Close view of the sledge runners gliding on wet sand.
+        punch_in: 1.1
 youtube:
   titles: ["시험용 제목"]
   description: 시험용 설명
@@ -111,9 +114,10 @@ def selftest():
     _image(ep.images_dir / "s03.png", "s03", (120, 180, 110))
     _image(ep.images_dir / "char_worker.png", "char", (180, 180, 180))
     # Grok 대신: 720×1280 4초 테스트 패턴 + 효과음 (장면보다 짧게 → 감속/정지 처리 시험)
-    run(["ffmpeg", "-y", "-f", "lavfi", "-i", "testsrc2=size=720x1280:rate=24:duration=4",
-         "-f", "lavfi", "-i", "sine=frequency=660:duration=4", "-shortest",
-         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", ep.clips_dir / "s02.mp4"])
+    for name, freq in (("s02.mp4", 660), ("s03-2.mp4", 440)):   # s03-1 은 일부러 비움 → 이미지 대체 시험
+        run(["ffmpeg", "-y", "-f", "lavfi", "-i", "testsrc2=size=720x1280:rate=24:duration=6",
+             "-f", "lavfi", "-i", f"sine=frequency={freq}:duration=6", "-shortest",
+             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", ep.clips_dir / name])
     from .compose import compose
     from .conti import write as write_conti
     from .timing import build_timing

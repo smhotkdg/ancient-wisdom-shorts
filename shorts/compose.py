@@ -17,11 +17,11 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 from .captions import build_captions, time_chunks
-from .common import (Episode, ShortsError, has_audio, media_duration, need_tool, run, say,
+from .common import (Episode, ShortsError, clip_parts, has_audio, media_duration, need_tool, run, say,
                      write_json)
 from .fonts import load_font
 from .textrender import render_block
-from .timing import estimate
+from .timing import estimate, part_bounds
 
 ENC_MID = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-pix_fmt", "yuv420p",
            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2"]
@@ -34,30 +34,44 @@ def _canvas(ep: Episode) -> tuple[int, int, int]:
 
 # ── 장면 소스 ─────────────────────────────────────────────
 
-def find_sources(ep: Episode, animatic: bool) -> tuple[dict, list[str]]:
-    out, missing = {}, []
+def _scene_image(ep: Episode, sid: str) -> Path | None:
+    for ext in (".png", ".jpg", ".jpeg", ".webp"):
+        p = ep.images_dir / f"{sid}{ext}"
+        if p.exists():
+            return p
+    return None
+
+
+def plan_segments(ep: Episode, timing: dict, animatic: bool) -> tuple[list[dict], list[str]]:
+    """장면을 렌더 단위(세그먼트)로 나눈다. Grok 장면은 클립 수만큼, 나머지는 하나."""
+    segs, notes = [], []
     for sc in ep.scenes:
         sid = sc["id"]
-        clip = ep.clips_dir / f"{sid}.mp4"
-        img = None
-        for ext in (".png", ".jpg", ".jpeg", ".webp"):
-            p = ep.images_dir / f"{sid}{ext}"
-            if p.exists():
-                img = p
-                break
-        want_clip = (sc.get("source") or "grok") == "grok"
-        if not animatic and want_clip and clip.exists():
-            out[sid] = ("clip", clip)
-        elif img is not None:
-            out[sid] = ("still", img)
-            if not animatic and want_clip:
-                missing.append(f"{sid}: clips/{sid}.mp4 없음 → 이미지로 대신합니다")
+        img = _scene_image(ep, sid)
+        parts = clip_parts(sc)
+        if parts and not animatic:
+            bounds = part_bounds(ep, timing, sc, len(parts))
+            for part, (a, b) in zip(parts, bounds):
+                clip = ep.clips_dir / part["file"]
+                img = _scene_image(ep, part["image"]) or _scene_image(ep, sid)
+                tag = f"{sid}-{part['n']}" if len(parts) > 1 else sid
+                if clip.exists():
+                    segs.append({"scene": sc, "tag": tag, "kind": "clip", "path": clip, "part": part, "start": a, "end": b})
+                elif img is not None:
+                    segs.append({"scene": sc, "tag": tag, "kind": "still", "path": img, "part": part, "start": a, "end": b})
+                    notes.append(f"{tag}: clips/{part['file']} 없음 → 이미지로 대신합니다")
+                else:
+                    notes.append(f"{tag}: images/{sid}.png 와 clips/{part['file']} 가 모두 없습니다")
+            continue
+        plan = {p["id"]: p for p in timing["scenes"]}[sid]
+        a, b = float(plan["start"]), float(plan["end"])
+        if img is not None:
+            segs.append({"scene": sc, "tag": sid, "kind": "still", "path": img, "part": None, "start": a, "end": b})
         elif animatic:
-            out[sid] = ("card", None)
+            segs.append({"scene": sc, "tag": sid, "kind": "card", "path": None, "part": None, "start": a, "end": b})
         else:
-            out[sid] = ("missing", None)
-            missing.append(f"{sid}: images/{sid}.png 와 clips/{sid}.mp4 가 모두 없습니다")
-    return out, missing
+            notes.append(f"{sid}: images/{sid}.png 가 없습니다 (모두 없습니다)")
+    return segs, notes
 
 
 def _placeholder(ep: Episode, sc: dict, lines: list[str]) -> Image.Image:
@@ -122,9 +136,12 @@ def _render_frames(base: Image.Image, out: Path, duration: float, ep: Episode, m
 
 
 def _render_clip(ep: Episode, sc: dict, clip: Path, duration: float, out: Path) -> dict:
+    """sc: 장면 또는 클립 설정 (trim_start, sfx_volume, punch_in)."""
     W, H, fps = _canvas(ep)
     cfg = ep.project["clips"]
     trim = float(sc.get("trim_start") or 0.0)
+    z = max(1.0, float(sc.get("punch_in") or 1.0))
+    SW, SH = int(round(W * z / 2)) * 2, int(round(H * z / 2)) * 2
     avail = media_duration(clip) - trim
     if avail <= 0.2:
         raise ShortsError(f"{sc['id']}: trim_start 가 클립 길이보다 깁니다")
@@ -132,7 +149,7 @@ def _render_clip(ep: Episode, sc: dict, clip: Path, duration: float, out: Path) 
     freeze = max(0.0, duration - avail * k)
     sharpen = float(cfg.get("upscale_sharpen", 0.0))
     vf = (f"[0:v]setpts={k:.5f}*PTS,fps={fps},"
-          f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1"
+          f"scale={SW}:{SH}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1"
           + (f",unsharp=5:5:{sharpen}:5:5:0" if sharpen > 0 else "")
           + f",tpad=stop_mode=clone:stop_duration={freeze + 0.5:.3f},trim=end_frame={int(round(duration * fps))},"
           f"setpts=PTS-STARTPTS,format=yuv420p[v]")
@@ -165,7 +182,7 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
         timing = estimate(ep)
         say("  (음성이 없어 추정 타이밍으로 애니매틱을 만듭니다 — 내레이션 없음)")
 
-    sources, notes = find_sources(ep, animatic)
+    segs, notes = plan_segments(ep, timing, animatic)
     bad = [n for n in notes if "모두 없습니다" in n]
     if bad:
         raise ShortsError("소스 파일이 없습니다:\n  " + "\n  ".join(bad))
@@ -175,27 +192,32 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     tag = "animatic" if animatic else "final"
     work = ep.build_dir / tag
     work.mkdir(parents=True, exist_ok=True)
+    for old in work.glob("scene_*.mkv"):
+        old.unlink()
     lines_by_scene: dict[str, list[str]] = {}
     for l in ep.lines:
         lines_by_scene.setdefault(l.scene, []).append(l.text)
 
     report = {"mode": tag, "scenes": []}
     parts = []
-    # 장면 경계를 프레임 격자에 맞춰 누적 오차를 없앤다
-    frame_bounds = [int(round(float(p["start"]) * fps)) for p in timing["scenes"]]
-    frame_bounds.append(int(round(float(timing["video_duration"]) * fps)))
-    for k, (sc, plan) in enumerate(zip(ep.scenes, timing["scenes"])):
-        sid = sc["id"]
-        dur = (frame_bounds[k + 1] - frame_bounds[k]) / fps
-        kind, path = sources[sid]
-        out = work / f"scene_{sid}.mkv"
-        info = {"id": sid, "kind": kind, "duration": dur, "source": str(path.relative_to(ep.dir)) if path else None}
-        say(f"  {sid} {dur:5.2f}초  {kind}")
-        if kind == "clip":
-            info.update(_render_clip(ep, sc, path, dur, out))
+    # 세그먼트 경계를 프레임 격자에 맞춰 누적 오차를 없앤다
+    total_frames = int(round(float(timing["video_duration"]) * fps))
+    fb = [int(round(g["start"] * fps)) for g in segs] + [total_frames]
+    by_scene: dict[str, dict] = {}
+    for k, g in enumerate(segs):
+        sc, sid = g["scene"], g["scene"]["id"]
+        dur = (fb[k + 1] - fb[k]) / fps
+        out = work / f"scene_{g['tag']}.mkv"
+        info = {"tag": g["tag"], "kind": g["kind"], "duration": round(dur, 3),
+                "source": str(g["path"].relative_to(ep.dir)) if g["path"] else None}
+        say(f"  {g['tag']:6s} {dur:5.2f}초  {g['kind']}")
+        if g["kind"] == "clip":
+            settings = {"sfx_volume": sc.get("sfx_volume"),
+                        **{k2: v for k2, v in (g["part"] or {}).items() if v is not None}}
+            info.update(_render_clip(ep, settings, g["path"], dur, out))
         else:
-            if kind == "still":
-                base = Image.open(path).convert("RGB")
+            if g["kind"] == "still":
+                base = Image.open(g["path"]).convert("RGB")
                 motion = sc.get("still_motion") or ep.project["clips"]["still_motion"]
             else:
                 base = _placeholder(ep, sc, lines_by_scene[sid])
@@ -203,7 +225,10 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
             _render_frames(base, out, dur, ep, motion)
             info["motion"] = motion
         parts.append(out)
-        report["scenes"].append(info)
+        entry = by_scene.setdefault(sid, {"id": sid, "duration": 0.0, "segments": []})
+        entry["duration"] = round(entry["duration"] + dur, 3)
+        entry["segments"].append(info)
+    report["scenes"] = list(by_scene.values())
 
     concat = work / "concat.txt"
     concat.write_text("".join(f"file '{p.resolve().as_posix()}'\n" for p in parts), encoding="utf-8")

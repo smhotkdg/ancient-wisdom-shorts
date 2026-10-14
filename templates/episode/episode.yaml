@@ -30,6 +30,11 @@ scenes:
     camera: ""           # 예: slow push in / static / slow pan right
     # trim_start: 0.0    # 클립 앞부분 건너뛰기 (초)
     # sfx_volume: 0.12   # 이 장면만 효과음 크기
+    # extra_clips:       # 6초를 넘는 장면 — 두 번째 클립 (images/s01-2.png → clips/s01-2.mp4)
+    #   - image_prompt: ""
+    #     characters: [hero]
+    #     motion_prompt: ""
+    #     camera: ""
 
 sources: []              # "제목 — URL"
 accuracy_notes: []       # 단정하지 않는 것, 재구성인 부분

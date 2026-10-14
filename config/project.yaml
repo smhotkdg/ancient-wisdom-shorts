@@ -44,8 +44,10 @@ clips:
   still_motion: slow_zoom     # 이미지만 있는 장면: slow_zoom | pan_left | pan_right | none
   still_zoom_max: 1.08        # 정지 이미지 확대 상한 (강한 줌 금지)
   upscale_sharpen: 0.3        # 720p → 1080p 확대 후 약한 선명화 (0이면 끔)
-  grok_lengths: [6, 10]       # Grok 웹에서 고를 수 있는 길이(초) — 콘티 권장 길이 계산용
-  scene_max_seconds: 10.0     # 이보다 긴 장면은 콘티 단계에서 나눈다
+  grok_lengths: [6]           # Grok 클립 길이(초) — 클립 하나는 최대 6초 (2026-10-14 사용자)
+  plan_slowdown: 1.2          # 콘티 계획 시 클립 하나가 덮을 수 있는 최대 감속 (6초 → 7.2초)
+  # 6초 클립 하나로 부족한 장면은 episode.yaml 의 extra_clips 로 같은 이미지에서 클립을 더 만든다
+  # (clips/s01.mp4, clips/s01-2.mp4 …). 대사 수 = 클립 수이면 문장 사이 쉼에서 컷이 바뀐다.
 
 # ── 텍스트 레이아웃 v6 (2026-10-11 사용자 승인, 기존 레포와 동일) ──
 layout:

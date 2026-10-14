@@ -161,6 +161,22 @@ def scene_plan(ep: Episode, timing: dict) -> list[dict]:
     return plan
 
 
+def part_bounds(ep: Episode, timing: dict, scene: dict, n_parts: int) -> list[tuple[float, float]]:
+    """장면 안 클립 구간(영상 시간). 클립 수 = 대사 수이면 문장 사이 쉼 가운데에서 나눈다."""
+    plan = {s["id"]: s for s in timing["scenes"]}[scene["id"]]
+    s0, s1 = float(plan["start"]), float(plan["end"])
+    if n_parts <= 1:
+        return [(s0, s1)]
+    lead = float(timing["lead_in"])
+    lines = [timing["lines"][i] for i in plan["lines"]]
+    if len(lines) == n_parts:
+        cuts = [lead + l["end"] + l["pause_after"] / 2 for l in lines[:-1]]
+    else:
+        cuts = [s0 + (s1 - s0) * k / n_parts for k in range(1, n_parts)]
+    edges = [s0, *cuts, s1]
+    return [(round(a, 3), round(b, 3)) for a, b in zip(edges, edges[1:])]
+
+
 def build_timing(ep: Episode) -> dict:
     if not ep.raw_voice.exists():
         raise ShortsError(f"음성이 없습니다: {ep.raw_voice}  (python aw.py tts 또는 python aw.py voice --file ...)")
