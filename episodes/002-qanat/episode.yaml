@@ -1,7 +1,7 @@
 # 002 카나트 — 사막까지 물을 끌어온 지하 수로
 id: "002"
 slug: qanat
-status: script_ok
+status: done
 working_title: 페르시아 사람들은 어떻게 사막 한가운데까지 물을 끌어왔을까?
 title_lines: ["사막 한가운데", "물이 흐른다고?"]
 hook: 머리를 쥐어뜯었습니다
@@ -203,6 +203,7 @@ scenes:
     motion_prompt: >-
       Water pours from the tunnel mouth; the boy fills his jar, laughs and splashes; the digger nods with a proud smile.
     camera: slow pull back
+    sfx_volume: 0    # 클립에 아이 웃음소리(목소리)가 섞여 있음
 
 sources:
   - "UNESCO World Heritage — The Persian Qanat (2016 등재; 어미 우물, 일정 간격 수직 갱도로 흙 제거·환기, 거의 수평의 완만한 경사 터널, 중력으로 흐름, 길이는 흔히 수 킬로미터) — https://whc.unesco.org/en/list/1506"
