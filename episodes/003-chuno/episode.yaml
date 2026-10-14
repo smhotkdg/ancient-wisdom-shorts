@@ -1,0 +1,230 @@
+# 003 추뇨 — 감자를 몇 년씩 보관한 안데스의 방법
+id: "003"
+slug: chuno
+status: script_ok
+working_title: 안데스 사람들은 어떻게 감자를 몇 년씩 보관했을까?
+title_lines: ["감자를 몇 년이나", "보관했다고?"]
+hook: 속이 터졌습니다
+caption_keywords: [감자, 추뇨, 서리, 햇볕, 맨발, 라마]
+
+story:
+  hero: 농부
+
+characters:
+  - id: farmer
+    name: 안데스 농부
+    name_en: Andean potato farmer
+    description: >-
+      a cheerful, sturdy Andean potato farmer woman in her 30s, rosy cheeks, two long black braids,
+      a wide-brimmed brown felt hat, a colorful hand-woven striped wool shawl over a red sweater,
+      a full dark skirt, simple sandals
+    note: 이야기 주인공. 장면 내내 같은 인물
+  - id: llama
+    name: 라마
+    name_en: pack llama
+    description: >-
+      a fluffy white-and-brown pack llama with big friendly eyes and colorful woven tassels on its ears
+    note: 주인공 곁의 조연. 마지막 운반 장면
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - "안데스의 농부는 속이 터졌습니다."
+      - "애써 캔 감자가, 몇 달 만에 줄줄이 썩어버렸거든요."
+    visual: 돌창고 안 썩어 가는 감자 더미 앞에서 농부가 이마를 짚고 한숨
+    image_prompt: >-
+      Inside a small stone storehouse in the high Andes, the farmer stands over a pile of potatoes that are
+      sprouting, wrinkling and rotting, one hand on her forehead in frustration, a basket at her feet,
+      cold mountain light through the doorway.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer picks up a soft rotten potato, grimaces, and drops it back on the pile with a big sigh.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the rotting potato pile in the stone storehouse: wrinkled, sprouting, soft potatoes with dark
+          spots, a few flies buzzing, the farmer's hands holding an empty basket at the edge of the frame.
+        characters: [farmer]
+        motion_prompt: >-
+          Sprouts sway slightly, a potato slumps and rolls off the pile, a fly buzzes around; the hands drop the
+          empty basket.
+        camera: slow push in toward the pile
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "높은 산 위에서, 감자는 겨울을 버틸 귀한 식량이었는데 말이죠."
+        captions: ["높은 산 위에서", "감자는 겨울을 버틸 / 귀한 식량이었는데 말이죠"]
+    visual: 해발 높은 고원의 감자밭, 멀리 눈 덮인 봉우리, 농부가 바구니 가득 감자를 캔다
+    image_prompt: >-
+      A high Andean plateau potato field under a huge blue sky with snowy peaks in the distance, the farmer
+      kneeling and filling a woven basket with freshly dug potatoes of many colors, the llama standing nearby.
+    characters: [farmer, llama]
+    motion_prompt: >-
+      The farmer digs up a cluster of potatoes and lifts them proudly into the basket; the llama chews and
+      flicks its ears; clouds drift over the peaks.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그때 농부는 혹독한 겨울 밤 추위를 떠올렸습니다."
+        captions: ["그때 농부는 혹독한 / 겨울 밤 추위를 떠올렸습니다"]
+      - "이 추위로, 감자를 지킬 수 있을까요?"
+    visual: 별이 가득한 밤, 하얀 서리가 내린 고원에서 농부가 입김을 내뿜으며 생각한다
+    image_prompt: >-
+      A freezing, clear night on the Andean plateau under a sky full of stars, white frost covering the ground,
+      the farmer wrapped in her shawl breathing out a puff of white breath, looking at the frosty ground with
+      a sudden thoughtful expression.
+    characters: [farmer]
+    motion_prompt: >-
+      Frost crystals sparkle on the ground; the farmer's white breath drifts; she narrows her eyes, thinking.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a single potato lying on the frosty ground at night, white ice crystals growing over its skin,
+          starlight glinting, the farmer's curious face blurred in the background.
+        characters: [farmer]
+        motion_prompt: >-
+          Ice crystals slowly spread and sparkle over the potato's skin; the farmer leans in closer, curious.
+        camera: very slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "해가 지면, 감자를 땅 위에 펼쳐 밤새 꽁꽁 얼렸습니다."
+        captions: ["해가 지면", "감자를 땅 위에 펼쳐 / 밤새 꽁꽁 얼렸습니다"]
+    visual: 해 질 녘 고원, 농부가 짚 위에 감자를 줄지어 펼친다
+    image_prompt: >-
+      Sunset on the high plateau, the farmer spreading rows of potatoes on a bed of dry grass on the open ground,
+      long shadows, the sky turning orange and purple.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer spreads the last potatoes in a neat row; the sun sinks and frost begins to creep over the
+      potatoes as the light turns blue.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - "낮에는 햇볕에 녹이고, 밤이면 다시 얼리고. 이걸 며칠이나 반복했죠."
+    visual: 같은 감자 줄 — 밤엔 하얗게 서리, 낮엔 햇볕에 녹아 촉촉 (낮밤이 바뀌는 타임랩스)
+    image_prompt: >-
+      Close-up of the rows of potatoes on dry grass on the plateau, half of the frame at frosty night covered in
+      white ice crystals, the other half in bright morning sun with the potatoes thawed and glistening.
+      No people.
+    motion_prompt: >-
+      Time-lapse: the sun rises and the frost on the potatoes melts into glistening droplets, then night falls
+      and white frost spreads over them again.
+    camera: static
+
+  - id: s06
+    beat: twist
+    lines:
+      - "그런데 흐물흐물해진 감자 속 물기는, 어떻게 뺐을까요?"
+    visual: 농부가 말랑해진 감자를 손가락으로 눌러 보고 갸웃
+    image_prompt: >-
+      Close-up of the farmer crouching and pressing a soft, squishy thawed potato between her fingers, water
+      beading on its skin, her eyebrows raised in a puzzled look, the potato rows behind her.
+    characters: [farmer]
+    motion_prompt: >-
+      She squeezes the potato, a little water drips out, and she tilts her head, puzzled.
+    camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - "농부는 맨발로 감자를 꾹꾹 밟았습니다. 물이 쭉 빠지고, 껍질까지 벗겨졌죠."
+    visual: 신발을 벗은 농부가 감자 더미 위를 꾹꾹 밟는다, 물이 빠져나오고 껍질이 벗겨진다
+    image_prompt: >-
+      The farmer, barefoot with her skirt hitched up, stomping on a pile of thawed potatoes on a stone surface,
+      water squirting out from under her feet and potato peels coming off, a happy determined face.
+    characters: [farmer]
+    motion_prompt: >-
+      She stomps rhythmically on the potatoes; water squirts out and peels slip off under her bare feet; she grins.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up at ground level of bare feet pressing down on the soft potatoes, water squeezing out and
+          splashing, loose potato peels scattered on the stone.
+        characters: [farmer]
+        motion_prompt: >-
+          A bare foot presses down slowly; water squeezes out of the potatoes and peels slide off.
+        camera: low static close-up
+
+  - id: s08
+    beat: resolve
+    lines:
+      - "이걸 햇볕에 바싹 말리면, 가볍고 단단한 추뇨가 됩니다. 몇 년을 둬도 끄떡없었죠."
+    visual: 햇볕 아래 쭈글쭈글 말라 가는 감자, 농부가 돌처럼 가벼워진 추뇨를 흔들어 보인다
+    image_prompt: >-
+      Bright sun on the plateau, rows of small shriveled dark chuño drying on the dry grass, the farmer holding up
+      one light, wrinkled chuño between two fingers and smiling proudly.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer tosses the light chuño up and catches it with a satisfied smile; the dried rows sit still in the sun.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A cool stone storehouse with woven sacks and baskets full of dark shriveled chuño stacked high, tidy and
+          dry, the farmer tying one sack shut.
+        characters: [farmer]
+        motion_prompt: >-
+          The farmer ties the sack, pats it and steps back to admire the full stacks of chuño.
+        camera: slow pull back
+
+  - id: s09
+    beat: info
+    lines:
+      - "그래서 라마 등에 싣고, 산 아래 마을까지 날랐고요."
+    visual: 추뇨 자루를 실은 라마 행렬이 산길을 내려간다, 농부가 앞장선다
+    image_prompt: >-
+      A caravan of pack llamas carrying woven sacks of chuño walking down a winding mountain trail toward a
+      valley far below, the farmer leading the first llama by a rope.
+    characters: [farmer, llama]
+    motion_prompt: >-
+      The llama caravan walks steadily down the trail; tassels swing; the farmer looks back and waves them on.
+    camera: slow pan following the caravan
+
+  - id: s10
+    beat: info
+    lines:
+      - "최근엔 잉카 유적의 항아리 속에서, 500년 된 추뇨까지 나왔습니다."
+    visual: 발굴 현장, 흙바닥에 묻힌 깨진 항아리 바닥에서 쭈글쭈글한 추뇨 두 덩이가 보인다
+    image_prompt: >-
+      An archaeological dig in a dry coastal valley: a broken clay pot sunk into a dirt floor of an ancient adobe
+      room, and at its bottom two small shriveled lumps of ancient chuño, a soft brush and trowel beside it,
+      warm afternoon light. No people faces.
+    motion_prompt: >-
+      A soft brush sweeps dust away from the two ancient chuño lumps at the bottom of the pot; dust drifts in the light.
+    camera: slow push in
+
+sources:
+  - "Archaeology (미국고고학회) — Preserved Potatoes Discovered in Inca Site in Southern Peru (2026-06; 페루 아카리 계곡 탐보 비에호, 약 500년 된 추뇨 2점, 바닥에 묻힌 토기 항아리, 밤 서리·낮 햇볕 반복 후 밟아 말림) — https://archaeology.org/news/2026/06/16/preserved-potatoes-discovered-in-inca-site-in-southern-peru/"
+  - "Live Science — 500-year-old freeze-dried potato snacks discovered in Inca storage room in Peru (해발 약 3,600m 이상에서만 제조, 수십 년 보관, 라마 행렬로 운반, Valdez & Bettcher, Journal of Field Archaeology 2026-05-01) — https://www.livescience.com/archaeology/500-year-old-freeze-dried-potato-snacks-discovered-in-inca-storage-room-in-peru"
+  - "International Potato Center (CIP) — Finding new markets for a pre-Columbian potato product in Peru (6~8월 건조한 겨울, 밤마다 얼림, 맨발로 밟아 물기를 짜고 껍질을 벗김, 햇볕 건조, 고지대 감자는 쓴맛) — https://cipotato.org/blog/new-markets-pre-columbian-potato/"
+
+accuracy_notes:
+  - "농부·라마 인물과 감정, 대사는 설명용 재구성. 특정 인물의 실제 이야기가 아니다."
+  - "'속이 터졌습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "'몇 달 만에 썩었다'는 생감자가 오래 못 간다는 일반적 상황의 극적 표현. 특정 기간 수치가 아니다."
+  - "실제 공정에는 쓴맛을 빼려고 물에 몇 주 담그는 과정(흰 추뇨·툰타)도 있으나 영상은 서리·햇볕·밟기·건조만 보여 준다."
+  - "'몇 년을 둬도 끄떡없었다'는 근거(수년~수십 년 보관) 범위 안의 표현."
+  - "발견 연구는 2026년 5월 Journal of Field Archaeology 발표(2024년 발굴). 발견지는 산 아래 해안 계곡의 잉카 지방 거점."
+
+youtube:
+  titles:
+    - 감자를 몇 년이나 보관했다고? 안데스의 천연 동결건조
+    - 맨발로 감자를 밟은 이유, 잉카의 저장 비법 추뇨
+    - 500년 된 감자가 나왔다? 추뇨의 비밀
+  description: |-
+    🥔 애써 캔 감자가 몇 달 만에 다 썩어버린다면?
+
+    안데스의 농부는 냉장고 대신 '겨울 밤'을 썼습니다.
+    밤에는 서리에 꽁꽁, 낮에는 햇볕에 사르르. 그리고 맨발로 꾹꾹 밟기 👣
+
+    그렇게 만든 추뇨는 가볍고 단단해서 몇 년을 둬도 끄떡없었죠.
+    최근엔 잉카 유적의 항아리 속에서 500년 된 추뇨까지 나왔어요 😮
+  comment_question: 여러분 집에서 가장 오래 보관해 본 음식은 무엇인가요?
+  hashtags: [추뇨, 잉카, 안데스, 감자, 쇼츠]
