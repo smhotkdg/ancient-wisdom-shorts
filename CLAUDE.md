@@ -27,7 +27,7 @@ python aw.py doctor            # 이 PC 환경 점검
 python aw.py new <slug>        # 새 에피소드
 python aw.py script <ep>       # 대본 글자 수·예상 길이
 python aw.py captions <ep>     # 자막 나눔 미리보기
-python aw.py story <ep>        # 스토리 구조 점검 (주인공·시도·실패·깨달음·보상)
+python aw.py story <ep>        # 스토리형 대본 점검 (주인공·전환어·나열 여부·구조 순서)
 python aw.py check-voice       # Typecast 인증·필재 확인 (크레딧 0)
 python aw.py tts <ep>          # 필재 생성 (크레딧 사용) → 타이밍
 python aw.py voice <ep> --file F   # 다른 곳에서 받은 음성 사용
@@ -41,7 +41,7 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 ## 반드시 지킬 것
 
 1. **팩트 체크**: 주제마다 신뢰할 근거 2개 이상(대학·박물관·학술지·공공기관). 전승과 검증된 사실을 구분하고 `accuracy_notes`에 적는다. 확인 안 된 수치·인용을 만들지 않는다. → [fact-check.md](docs/fact-check.md)
-2. **대본은 스토리형**: 원리를 나열하지 않고 주인공 한 명이 시도 → 실패 → 깨달음 → 보상으로 풀어 간다 ([shorts-story 스킬](.claude/skills/shorts-story/SKILL.md)). 시도 순서·감정은 재구성임을 `accuracy_notes`에 적고, 지어낸 기록·이름·날짜는 쓰지 않는다. `aw.py story`가 통과해야 음성을 만든다.
+2. **대본은 스토리형, 영상 구조는 그대로**: 훅→문제→질문→해결→반전→마무리→정보 구조와 제작 방식은 유지하고, 내레이션을 주인공 한 명이 겪는 이야기로 쓴다 (나열 금지, [shorts-story 스킬](.claude/skills/shorts-story/SKILL.md)). 인물·감정은 재구성임을 `accuracy_notes`에 적고, 지어낸 기록·이름·날짜는 쓰지 않는다. `aw.py story`로 점검한 뒤 음성을 만든다.
 2-1. **훅은 현대 화자의 연출**이다. "멘탈이 나가버렸습니다"를 당시 기록이나 실제 발언처럼 쓰지 않는다. 같은 반응어를 연달아 쓰지 않는다(사용 기록: [topics.md](docs/topics.md)).
 3. **목소리는 Typecast 필재 original + ssfm-v30만** 쓴다. voice_id는 매번 인증된 목록에서 다시 찾고, 다른 목소리로 몰래 바꾸지 않는다.
 4. **유료 생성 전 알리기**: `tts`는 대본 글자 수만큼 Typecast 크레딧을 쓴다. 생성 전에 글자 수를 말하고 승인받는다. 기존 음성은 덮어쓰지 않는다(`--force`는 승인 후). 네트워크 오류로 결과가 불명확하면 자동으로 다시 생성하지 않는다.

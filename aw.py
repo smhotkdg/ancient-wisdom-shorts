@@ -5,7 +5,7 @@
   python aw.py new <slug> [--id 001]   새 에피소드 폴더 만들기
   python aw.py script <ep>             대본·글자 수·예상 길이
   python aw.py captions <ep>           화면 자막 나눔 미리보기
-  python aw.py story <ep>              스토리 구조 점검 (주인공·시도·실패·깨달음·보상)
+  python aw.py story <ep>              스토리형 대본 점검 (주인공·전환어·나열 여부·구조 순서)
   python aw.py check-voice             Typecast 인증과 필재 확인 (생성 없음, 크레딧 0)
   python aw.py tts <ep> [--force]      필재 음성 생성(크레딧 사용) → 타이밍
   python aw.py voice <ep> --file F     다른 곳에서 받은 음성 가져오기 → 타이밍

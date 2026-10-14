@@ -2,8 +2,7 @@
 
 ## 스토리형 구조 (기본)
 
-주인공 한 명의 7비트 이야기로 쓴다 → [shorts-story 스킬](../.claude/skills/shorts-story/SKILL.md), 점검은 `python aw.py story <ep>`.
-아래 표는 비트를 사실 흐름으로 본 예시다.
+아래 구조는 그대로 두고, 내레이션을 주인공 한 명이 겪는 이야기로 쓴다 → [shorts-story 스킬](../.claude/skills/shorts-story/SKILL.md), 점검은 `python aw.py story <ep>`.
 
 ## 구조 (45~60초)
 

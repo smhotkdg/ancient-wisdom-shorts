@@ -13,12 +13,6 @@ caption_keywords: []     # 자막에서 노란색으로 강조할 단어 3~6개
 
 story:                   # 스토리형 대본 — .claude/skills/shorts-story/SKILL.md
   hero: ""               # 주인공 역할 이름 (대본에 등장)
-  goal: ""
-  stakes: ""
-  attempts: []           # - {try: "", result: fail|partial|success, why: ""}
-  insight: ""
-  payoff: ""
-  today: ""
 
 characters:
   - id: hero
@@ -29,7 +23,7 @@ characters:
 
 scenes:
   - id: s01
-    beat: hook           # hook | goal | try | fail | partial | insight | payoff | today
+    beat: hook           # hook | problem | question | solution | twist | resolve | info
     source: grok         # grok (움직임) | still (정지 이미지 + 느린 줌)
     lines:
       - ""               # 대사. 자막을 직접 나누려면 {text: "...", captions: ["...", "... / ..."]}
