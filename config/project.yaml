@@ -49,19 +49,19 @@ clips:
   # 6초 클립 하나로 부족한 장면은 episode.yaml 의 extra_clips 로 같은 이미지에서 클립을 더 만든다
   # (clips/s01.mp4, clips/s01-2.mp4 …). 대사 수 = 클립 수이면 문장 사이 쉼에서 컷이 바뀐다.
 
-# ── 텍스트 레이아웃 v6 (2026-10-11 사용자 승인, 기존 레포와 동일) ──
+# ── 텍스트 레이아웃 v7 (v6 기반, 2026-10-14 사용자: 제목 흰 줄을 노란 줄 쪽으로 내림) ──
 layout:
-  version: 6
+  version: 7
   title:
     enabled: true             # 영상 내내 같은 제목 블록 하나
-    center: [540, 260]
+    center: [540, 279]        # v6 260 → 279: 노란 둘째 줄 위치는 그대로, 흰 첫 줄만 38px 아래로
     band_y: [100, 440]
     font_weight: black
     font_px: 108
     min_font_px: 84
     max_width: 0.87
     max_lines: 2
-    line_gap_px: 18
+    line_gap_px: -20          # v6 18 → -20: 두 줄 사이 실제 간격 74px → 36px
     italic_shear: 0.10
     outline_px: 14
     colors: ["#FFFFFF", "#FFD400"]   # 첫 줄 흰색, 둘째 줄 노란색

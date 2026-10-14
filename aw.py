@@ -5,6 +5,7 @@
   python aw.py new <slug> [--id 001]   새 에피소드 폴더 만들기
   python aw.py script <ep>             대본·글자 수·예상 길이
   python aw.py captions <ep>           화면 자막 나눔 미리보기
+  python aw.py story <ep>              스토리 구조 점검 (주인공·시도·실패·깨달음·보상)
   python aw.py check-voice             Typecast 인증과 필재 확인 (생성 없음, 크레딧 0)
   python aw.py tts <ep> [--force]      필재 음성 생성(크레딧 사용) → 타이밍
   python aw.py voice <ep> --file F     다른 곳에서 받은 음성 가져오기 → 타이밍
@@ -109,6 +110,17 @@ def cmd_captions(a):
             say("      " + "  /  ".join(c))
 
 
+def cmd_story(a):
+    from shorts.story import check
+    res = check(load_episode(resolve_ep(a.ep)))
+    for r in res["results"]:
+        say(f"  {'✓' if r['pass'] else '·'} {r['check']}: {r['detail']}")
+    say("  흐름: " + "  ".join(f"{t['scene']}({t['beat']} {t['start']:.0f}s)" for t in res["timeline"]))
+    for t in res["tips"]:
+        say(f"  [제안] {t}")
+    say("스토리 점검 통과" if res["pass"] else "스토리 보강 필요 — .claude/skills/shorts-story/SKILL.md 참고")
+
+
 def cmd_check_voice(_):
     from shorts import typecast
     say(str(typecast.check(load_project())))
@@ -204,7 +216,7 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("doctor").set_defaults(fn=cmd_doctor)
     s = sub.add_parser("new"); s.add_argument("slug"); s.add_argument("--id"); s.set_defaults(fn=cmd_new)
-    for name, fn in (("script", cmd_script), ("captions", cmd_captions), ("timing", cmd_timing),
+    for name, fn in (("script", cmd_script), ("captions", cmd_captions), ("story", cmd_story), ("timing", cmd_timing),
                      ("conti", cmd_conti), ("status", cmd_status)):
         s = sub.add_parser(name); s.add_argument("ep"); s.set_defaults(fn=fn)
     sub.add_parser("check-voice").set_defaults(fn=cmd_check_voice)

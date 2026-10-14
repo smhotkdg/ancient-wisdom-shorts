@@ -12,7 +12,7 @@
 | 단계 | 담당 | 결과물 |
 |---|---|---|
 | 1. 주제 찾기·팩트 체크 | Claude | 후보 2~3개 → 사용자 선택 |
-| 2. 대본·장면 설계 | Claude | `episodes/NNN-slug/episode.yaml` |
+| 2. 대본·장면 설계 | Claude — **스토리형** (`.claude/skills/shorts-story`) → `aw.py story` 점검 | `episodes/NNN-slug/episode.yaml` |
 | 3. 필재 음성 | Claude (`aw.py tts`) | `audio/raw.wav` → 타이밍 |
 | 4. 한 장 콘티 | Claude (`aw.py conti`) | `conti.html` (장면별 / GPT 모음 / Grok 모음 탭, 전체 복사) + `prompts-chatgpt.txt`, `prompts-grok.txt` |
 | 5. 이미지·영상 생성 | **사용자** — ChatGPT 이미지, Grok 영상 | `images/sNN.png`, `clips/sNN.mp4` |
@@ -27,6 +27,7 @@ python aw.py doctor            # 이 PC 환경 점검
 python aw.py new <slug>        # 새 에피소드
 python aw.py script <ep>       # 대본 글자 수·예상 길이
 python aw.py captions <ep>     # 자막 나눔 미리보기
+python aw.py story <ep>        # 스토리 구조 점검 (주인공·시도·실패·깨달음·보상)
 python aw.py check-voice       # Typecast 인증·필재 확인 (크레딧 0)
 python aw.py tts <ep>          # 필재 생성 (크레딧 사용) → 타이밍
 python aw.py voice <ep> --file F   # 다른 곳에서 받은 음성 사용
@@ -40,11 +41,12 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 ## 반드시 지킬 것
 
 1. **팩트 체크**: 주제마다 신뢰할 근거 2개 이상(대학·박물관·학술지·공공기관). 전승과 검증된 사실을 구분하고 `accuracy_notes`에 적는다. 확인 안 된 수치·인용을 만들지 않는다. → [fact-check.md](docs/fact-check.md)
-2. **훅은 현대 화자의 연출**이다. "멘탈이 나가버렸습니다"를 당시 기록이나 실제 발언처럼 쓰지 않는다. 같은 반응어를 연달아 쓰지 않는다(사용 기록: [topics.md](docs/topics.md)).
+2. **대본은 스토리형**: 원리를 나열하지 않고 주인공 한 명이 시도 → 실패 → 깨달음 → 보상으로 풀어 간다 ([shorts-story 스킬](.claude/skills/shorts-story/SKILL.md)). 시도 순서·감정은 재구성임을 `accuracy_notes`에 적고, 지어낸 기록·이름·날짜는 쓰지 않는다. `aw.py story`가 통과해야 음성을 만든다.
+2-1. **훅은 현대 화자의 연출**이다. "멘탈이 나가버렸습니다"를 당시 기록이나 실제 발언처럼 쓰지 않는다. 같은 반응어를 연달아 쓰지 않는다(사용 기록: [topics.md](docs/topics.md)).
 3. **목소리는 Typecast 필재 original + ssfm-v30만** 쓴다. voice_id는 매번 인증된 목록에서 다시 찾고, 다른 목소리로 몰래 바꾸지 않는다.
 4. **유료 생성 전 알리기**: `tts`는 대본 글자 수만큼 Typecast 크레딧을 쓴다. 생성 전에 글자 수를 말하고 승인받는다. 기존 음성은 덮어쓰지 않는다(`--force`는 승인 후). 네트워크 오류로 결과가 불명확하면 자동으로 다시 생성하지 않는다.
 5. **음성 먼저, 화면은 음성에 맞춘다.** 대사를 빨리 감거나 자르지 않는다. 길면 영상을 늘린다.
-6. **텍스트 레이아웃 v6 고정** (`config/project.yaml`): 제목 블록 중심 (540,260) 흰색/노란색 두 줄, 자막 블록 중심 (540,1360) 64px·최대 두 줄. 에피소드에서 좌표를 바꾸지 않는다.
+6. **텍스트 레이아웃 v7 고정** (`config/project.yaml`): 제목 두 줄(흰색/노란색) 블록 중심 (540,279), 줄 사이 간격 좁게(실제 약 36px), 자막 블록 중심 (540,1360) 64px·최대 두 줄. 에피소드에서 좌표를 바꾸지 않는다.
 7. **가로 중앙 정렬 필수**: 모든 제목·자막 줄은 외곽선 포함 실제 픽셀 기준 좌우 여백 차 2px 이내. 렌더 후 `verify`가 오버레이를 다시 측정해 확인한다. 실패하면 납품하지 않는다. 영상 소스도 가운데 기준으로 대칭 크롭한다.
 8. **자막 배경 없음**: 패널·띠·박스·블러 금지. 상단 진행 칩·단계 제목·부품 라벨 금지. 화면 텍스트는 고정 제목 + 대사 자막뿐.
 9. **자막은 대본의 모든 단어를** 의미 단위로 보여 준다. 자동 나눔이 어색하면 `episode.yaml`의 `captions`로 직접 쓴다.
