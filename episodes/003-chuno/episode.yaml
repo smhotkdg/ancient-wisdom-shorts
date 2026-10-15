@@ -1,7 +1,7 @@
 # 003 추뇨 — 감자를 몇 년씩 보관한 안데스의 방법
 id: "003"
 slug: chuno
-status: script_ok
+status: done
 working_title: 안데스 사람들은 어떻게 감자를 몇 년씩 보관했을까?
 title_lines: ["감자를 몇 년이나", "보관했다고?"]
 hook: 속이 터졌습니다
@@ -70,7 +70,7 @@ scenes:
     beat: question
     lines:
       - text: "그때 농부는 혹독한 겨울 밤 추위를 떠올렸습니다."
-        captions: ["그때 농부는 혹독한 / 겨울 밤 추위를 떠올렸습니다"]
+        captions: ["그때 농부는", "혹독한 겨울 밤 / 추위를 떠올렸습니다"]
       - "이 추위로, 감자를 지킬 수 있을까요?"
     visual: 별이 가득한 밤, 하얀 서리가 내린 고원에서 농부가 입김을 내뿜으며 생각한다
     image_prompt: >-
