@@ -20,3 +20,6 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# 다른 에이전트용 규칙 복사본 (원본은 CLAUDE.md, .claude/skills)
+.agents/
