@@ -1,0 +1,207 @@
+# 004 해인사 장경판전 — 나무판 8만 장을 500년 넘게 지킨 창문
+id: "004"
+slug: janggyeong-panjeon
+status: script_ok
+working_title: 산속 절은 어떻게 나무판 8만 장을 500년 넘게 지켰을까?
+title_lines: ["나무판 8만 장이", "안 썩은 비밀?"]
+hook: 골머리를 앓았습니다
+caption_keywords: [나무판, 습기, 바람, 창, 계곡]
+
+story:
+  hero: 스님
+  reveal: [팔만대장경, 해인사 장경판전]
+
+characters:
+  - id: monk
+    name: 스님
+    name_en: young Korean Buddhist monk
+    description: >-
+      a gentle, round-faced young Korean Buddhist monk in his 20s with a shaved head, kind eyes and a warm smile,
+      wearing loose grey traditional monk robes with a brown sash, straw sandals
+    note: 이야기 주인공. 목판을 아끼는 젊은 스님
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "목판을 지키던 스님은 골머리를 앓았습니다."
+        captions: ["목판을 지키던 스님은 / 골머리를 앓았습니다"]
+      - "산속 절은 늘 축축해서, 나무가 썩고 뒤틀리기 십상이었거든요."
+    visual: 안개 낀 산속 절, 스님이 눅눅해져 곰팡이 핀 나무판을 들고 이마를 짚는다
+    image_prompt: >-
+      A misty, damp mountain temple courtyard on a rainy day, the young monk holding up a warped wooden printing
+      block with dark mold spots, his other hand on his forehead in worry, moss on the stone steps.
+    characters: [monk]
+    motion_prompt: >-
+      The monk turns the warped block in his hands, frowns and sighs; mist drifts and raindrops fall from the eaves.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a carved wooden printing block covered in rows of tiny engraved characters (illegible, no real
+          text), its edge swollen and warped, beads of moisture and dark mold spots on the wood, misty light.
+        characters: [monk]
+        motion_prompt: >-
+          Moisture beads slowly roll down the warped wooden block; mist drifts past; a drop falls.
+        camera: very slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "글자를 한 자 한 자 새긴 나무판이, 무려 8만 장이 넘었는데 말이죠."
+        captions: ["글자를 한 자 한 자 / 새긴 나무판이", "무려 8만 장이 / 넘었는데 말이죠"]
+    visual: 끝없이 쌓인 나무판 더미 앞에서 작은 스님이 놀란 표정
+    image_prompt: >-
+      A vast hall filled with towering stacks of carved wooden printing blocks reaching the ceiling, the small young
+      monk standing in front of them, looking up in awe, warm dim light.
+    characters: [monk]
+    motion_prompt: >-
+      The camera slowly rises along the towering stacks of wooden blocks; the monk's mouth falls open.
+    camera: slow tilt up
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이 나무판들을, 어떻게 수백 년 동안 지켜 냈을까요?"
+        captions: ["이 나무판들을", "어떻게 수백 년 동안 / 지켜 냈을까요?"]
+    visual: 스님이 나무판 하나를 소중히 품에 안고 하늘을 올려다본다
+    image_prompt: >-
+      The monk standing on a mountain path at dawn, hugging one carved wooden block close to his chest, looking up
+      at the forested mountain slopes with determination, soft morning mist in the valley below.
+    characters: [monk]
+    motion_prompt: >-
+      The monk hugs the block a little tighter and lifts his gaze toward the mountain; mist drifts up the valley.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - "그래서 스님들은 절에서 가장 높은 곳, 계곡 바람이 올라오는 자리에 집을 지었습니다."
+    visual: 산 중턱 가장 높은 곳의 길쭉한 목조 건물 두 채, 계곡에서 바람이 올라온다
+    image_prompt: >-
+      Wide view of a mountain temple complex climbing a forested slope, with two long, plain wooden storage halls
+      side by side at the very top, a breeze sweeping up from the valley below through the pine trees.
+      Simple tiled roofs, no decoration, no signboards.
+    motion_prompt: >-
+      A breeze sweeps up from the valley, pine branches sway and mist flows up the slope toward the two halls at the top.
+    camera: slow push in toward the top halls
+
+  - id: s05
+    beat: solution
+    lines:
+      - "그리고 벽마다 나무 창살을 냈는데, 창 크기가 제각각이었죠."
+    visual: 건물 벽 클로즈업 — 앞벽은 아래 창이 크고 위 창이 작다
+    image_prompt: >-
+      Close view of the long wooden hall's front wall: a row of simple vertical wooden lattice windows, a small
+      window high up and a much larger window low down in each bay, plain unpainted wood and white plaster,
+      the monk walking past and glancing at them curiously.
+    characters: [monk]
+    motion_prompt: >-
+      The monk walks along the wall, stops and tilts his head comparing the small upper window and the big lower window.
+    camera: slow pan along the wall
+
+  - id: s06
+    beat: twist
+    lines:
+      - "그런데 왜, 창 크기를 일부러 다르게 냈을까요?"
+    visual: 스님이 위 창과 아래 창을 번갈아 가리키며 고개를 갸웃
+    image_prompt: >-
+      The monk standing between a small high lattice window and a large low lattice window, pointing at both with
+      a puzzled, playful expression, soft afternoon light through the slats.
+    characters: [monk]
+    motion_prompt: >-
+      The monk points up at the small window, then down at the big one, and scratches his head.
+    camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - "아래 큰 창으로 들어온 바람이, 나무판 사이를 한 바퀴 돌고"
+      - "반대편 위쪽 창으로 빠져나가게 한 겁니다."
+    visual: 단면도 — 앞벽 아래 큰 창으로 들어온 바람이 선반 사이를 돌아 뒷벽 위 큰 창으로 빠져나간다
+    image_prompt: >-
+      Side cross-section of the long wooden hall: rows of wooden shelves filled with printing blocks, the front wall
+      with a large lower window and the back wall with a large upper window, soft pale-blue breeze streams entering
+      low at the front, circling between the shelves and leaving high at the back. Clean educational illustration,
+      no labels, no text.
+    motion_prompt: >-
+      Pale-blue breeze streams flow in through the big lower window, swirl between the shelves and rise out through
+      the upper window on the opposite wall.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Inside the hall between tall wooden shelves packed with printing blocks standing on edge, a gentle breeze
+          visible as faint drifting dust in shafts of light from the lattice windows, the monk with eyes closed,
+          feeling the wind on his face.
+        characters: [monk]
+        motion_prompt: >-
+          A gentle breeze moves through the shelves, dust drifts in the light shafts, the monk's robe sways and he smiles.
+        camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - "습기는 바람에 실려 나가고, 나무판은 보송보송하게 숨을 쉬었죠."
+    visual: 선반에 꽂힌 나무판들 사이로 습기가 바람에 실려 빠져나가고, 나무판이 뽀송하다
+    image_prompt: >-
+      Close-up of neat rows of dry, healthy wooden printing blocks standing on edge on a shelf, faint wisps of
+      moisture drifting out between them toward a lattice window, warm golden light.
+    motion_prompt: >-
+      Faint wisps of moisture drift out between the blocks and slip away through the lattice window on the breeze.
+    camera: slow pan along the shelf
+
+  - id: s09
+    beat: info
+    lines:
+      - "그렇게 500년 넘게, 이 집은 나무판들을 지켜 왔습니다."
+    visual: 계절이 바뀌는 타임랩스 — 같은 건물 위로 눈, 비, 단풍이 지나간다
+    image_prompt: >-
+      The two long wooden halls at the top of the mountain temple seen from the front, framed by pine trees,
+      half covered in winter snow and half in autumn leaves, calm and timeless.
+    motion_prompt: >-
+      Time-lapse of the seasons passing over the halls: snow falls and melts, rain, autumn leaves drift by, the halls unchanged.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - "이 나무판이 바로 팔만대장경, 이 집이 바로 해인사 장경판전입니다."
+    visual: 스님이 미소 지으며 나무판을 선반에 꽂고, 카메라가 빠지며 끝없는 선반 줄이 드러난다
+    image_prompt: >-
+      The monk gently sliding a wooden printing block back onto a long shelf, smiling, with endless rows of shelves
+      full of blocks stretching into the distance inside the wooden hall, lattice windows glowing.
+    characters: [monk]
+    motion_prompt: >-
+      The monk slides the block into place and bows slightly; the camera slowly pulls back to reveal the endless rows.
+    camera: slow pull back
+
+sources:
+  - "UNESCO World Heritage — Haeinsa Temple Janggyeong Panjeon, the Depositories for the Tripitaka Koreana Woodblocks (15세기 조선 초 양식, 약 8만 장 경판, 자연 통풍으로 온도·습도 조절, 약 500년간 보존) — https://whc.unesco.org/en/list/737"
+  - "한국민족문화대백과 — 합천 해인사 장경판전 (건립 1488년 추정, 수다라장·법보전 남북 배치, 습도·풍향을 조절하는 건축) — https://encykorea.aks.ac.kr/Article/E0062725"
+  - "아주경제 — 해인사 팔만대장경 600년 만의 봉인해제 (가장 높은 곳·계곡 바람, 앞뒤 벽 위아래 살창 크기가 달라 아래로 들어온 바람이 위로 빠져나감) — https://www.ajunews.com/view/20220816090354899"
+  - "위키백과 — 합천 해인사 장경판전 (남·북 창 크기를 서로 다르게; 국가유산포털 인용) — https://ko.wikipedia.org/wiki/합천_해인사_장경판전"
+
+accuracy_notes:
+  - "스님 인물과 감정, 대사는 설명용 재구성. 특정 인물의 실제 이야기가 아니다."
+  - "'골머리를 앓았습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "'500년 넘게'는 1488년 건립 추정(한국민족문화대백과)과 유네스코 '약 500년' 기준. '600년'은 쓰지 않는다."
+  - "창 크기 차이(앞벽 아래 창이 크고, 뒷벽 위 창이 큼)는 널리 소개된 구조를 단순화한 그림. 실측 치수는 쓰지 않는다."
+  - "'바닥에 숯·소금·횟가루' 설은 1차 근거를 확인하지 못해 대본에 쓰지 않는다."
+  - "8만 장: 경판 수는 자료마다 81,258장 등으로 다르므로 '8만 장이 넘는'으로만 쓴다."
+  - "나무판에 새긴 글자는 그림에서 판독 불가능한 무늬로 처리한다."
+
+youtube:
+  titles:
+    - 나무판 8만 장이 500년 동안 안 썩은 비밀, 해인사 장경판전
+    - 팔만대장경을 지킨 건 '창문'이었다?
+    - 일부러 크기를 다르게 낸 창문의 비밀
+  description: |-
+    🪵 축축한 산속에서, 나무판 8만 장을 500년 넘게 지켜야 한다면?
+
+    스님들의 답은 놀랍게도 '창문'이었습니다.
+    위 창은 작게, 아래 창은 크게. 반대편 벽은 거꾸로 🌬️
+    들어온 바람이 나무판 사이를 한 바퀴 돌고 습기를 싣고 나가도록요.
+
+    전기도 기계도 없는 자연 제습기, 해인사 장경판전.
+    그 안에는 지금도 팔만대장경이 숨을 쉬고 있습니다 🙏
+  comment_question: 여러분 집에서 바람이 가장 잘 통하는 곳은 어디인가요?
+  hashtags: [팔만대장경, 해인사, 장경판전, 세계유산, 쇼츠]

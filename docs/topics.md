@@ -29,6 +29,7 @@
 
 | 후보 | 핵심 | 근거 | 판정 |
 |---|---|---|---|
-| 해인사 장경판전 | 앞뒤 벽 위아래 살창 크기를 달리한 자연 통풍 | [UNESCO](https://whc.unesco.org/en/list/737), [아주경제](https://www.ajunews.com/view/20220816090354899) | 조건부 — '바닥에 숯·소금' 설은 근거 미확인, 쓰지 않음 |
 | 로마 해양 콘크리트 | 석회+화산재+바닷물, 바닷물과 반응해 알루미늄 토버모라이트·필립사이트 결정이 자라며 단단해짐 | [Sci.News](https://www.sci.news/archaeology/roman-marine-concrete-05011.html) (Jackson 외, American Mineralogist 2017) | 채택 가능 — 결정 성장 시각화 고민 |
 | 중국 도강언 | 물고기 입 둑으로 강을 나누고, 불로 달군 바위에 찬물을 끼얹어 산에 물길(보병구) — 기원전 256년경, 지금도 사용 | [UNESCO](https://whc.unesco.org/en/list/1001), [Sixth Tone](https://www.sixthtone.com/news/1008097) | 공법 근거 학술 자료로 보강 필요 |
+| 온돌 | 아궁이 불길을 방바닥 밑 고래로, 구들장이 열을 품음, 굴뚝으로 연기 배출 — 2018 국가무형유산 | [한국민족문화대백과](https://encykorea.aks.ac.kr/Article/E0077489) | 채택 가능 (국내) |
+| 정약용 거중기 | 도르래로 무거운 돌을 들어 올린 화성 축조 기구 | [송성수 칼럼](https://v.daum.net/v/20231030004709607?f=p) | 주의 — 실제 기여는 크지 않았다는 견해, 비용 절감 수치 금지 |

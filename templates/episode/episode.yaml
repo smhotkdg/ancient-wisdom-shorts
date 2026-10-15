@@ -13,6 +13,7 @@ caption_keywords: []     # 자막에서 노란색으로 강조할 단어 3~6개
 
 story:                   # 스토리형 대본 — .claude/skills/shorts-story/SKILL.md
   hero: ""               # 주인공 역할 이름 (대본에 등장)
+  reveal: []             # 마지막 대사 "이것이 바로 ○○입니다"에서 공개할 이름 — 앞부분·화면 제목에는 쓰지 않음
 
 characters:
   - id: hero

@@ -1,0 +1,20 @@
+episodes/004-janggyeong-panjeon 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
+
+0. git pull
+1. python aw.py status 004 — 이미지 13장, Grok 클립 12개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
+2. 음성(audio/raw.wav)이 없으면: 대본 402자 = Typecast 크레딧 약 402. 실행해도 되는지 나에게 먼저 묻고, 승인 후 python aw.py tts 004.
+   네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
+3. python aw.py conti 004 — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
+4. python aw.py compose 004
+5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
+   - 모든 제목·자막 줄은 외곽선 포함 실제 픽셀 기준 좌우 여백 차 2px 이내
+   - 영상 소스는 가운데 기준 대칭 크롭 (좌우 여백 동일)
+   - 렌더 후 측정으로 확인. 하나라도 실패하면 원인을 고치고 다시 합성. 실패한 채로 납품하지 않는다.
+6. output/check/final-sheet.jpg 를 직접 보고 확인:
+   - 자막·제목이 핵심 장면(나무판, 습기, 바람, 창, 계곡)을 가리지 않는지
+   - 클립에 말소리·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
+   - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
+   - 고친 뒤 다시 compose
+7. python aw.py youtube 004 — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
+8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과.
+9. episode.yaml status: done, docs/topics.md 의 004 상태를 "완성"으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).
