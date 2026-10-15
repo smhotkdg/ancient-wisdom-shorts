@@ -1,14 +1,15 @@
 # 003 추뇨 — 감자를 몇 년씩 보관한 안데스의 방법
 id: "003"
 slug: chuno
-status: done
+status: script_ok
 working_title: 안데스 사람들은 어떻게 감자를 몇 년씩 보관했을까?
 title_lines: ["감자를 몇 년이나", "보관했다고?"]
 hook: 속이 터졌습니다
-caption_keywords: [감자, 추뇨, 서리, 햇볕, 맨발, 라마]
+caption_keywords: [감자, 추뇨, 추위, 햇볕, 맨발, 라마]
 
 story:
   hero: 농부
+  reveal: [추뇨]
 
 characters:
   - id: farmer
@@ -30,8 +31,8 @@ scenes:
   - id: s01
     beat: hook
     lines:
-      - "안데스의 농부는 속이 터졌습니다."
-      - "애써 캔 감자가, 몇 달 만에 줄줄이 썩어버렸거든요."
+      - {text: "안데스의 농부는 속이 터졌습니다.", captions: ["안데스의 농부는 / 속이 터졌습니다"]}
+      - "봄 내내 애써 캔 감자가, 몇 달 만에 줄줄이 썩어버렸거든요."
     visual: 돌창고 안 썩어 가는 감자 더미 앞에서 농부가 이마를 짚고 한숨
     image_prompt: >-
       Inside a small stone storehouse in the high Andes, the farmer stands over a pile of potatoes that are
@@ -54,8 +55,7 @@ scenes:
   - id: s02
     beat: problem
     lines:
-      - text: "높은 산 위에서, 감자는 겨울을 버틸 귀한 식량이었는데 말이죠."
-        captions: ["높은 산 위에서", "감자는 겨울을 버틸 / 귀한 식량이었는데 말이죠"]
+      - {text: "높은 산 위에서, 감자는 긴 겨울을 버틸 가장 귀한 식량이었는데 말이죠.", captions: ["높은 산 위에서", "감자는 긴 겨울을 버틸", "가장 귀한 / 식량이었는데 말이죠"]}
     visual: 해발 높은 고원의 감자밭, 멀리 눈 덮인 봉우리, 농부가 바구니 가득 감자를 캔다
     image_prompt: >-
       A high Andean plateau potato field under a huge blue sky with snowy peaks in the distance, the farmer
@@ -69,9 +69,8 @@ scenes:
   - id: s03
     beat: question
     lines:
-      - text: "그때 농부는 혹독한 겨울 밤 추위를 떠올렸습니다."
-        captions: ["그때 농부는", "혹독한 겨울 밤 / 추위를 떠올렸습니다"]
-      - "이 추위로, 감자를 지킬 수 있을까요?"
+      - {text: "그때 농부는 뼈가 시릴 만큼 추운 겨울 밤을 떠올렸습니다.", captions: ["그때 농부는", "뼈가 시릴 만큼 / 추운 겨울 밤을 떠올렸습니다"]}
+      - "혹시 이 추위로, 감자를 지킬 수 있지 않을까요?"
     visual: 별이 가득한 밤, 하얀 서리가 내린 고원에서 농부가 입김을 내뿜으며 생각한다
     image_prompt: >-
       A freezing, clear night on the Andean plateau under a sky full of stars, white frost covering the ground,
@@ -93,8 +92,7 @@ scenes:
   - id: s04
     beat: solution
     lines:
-      - text: "해가 지면, 감자를 땅 위에 펼쳐 밤새 꽁꽁 얼렸습니다."
-        captions: ["해가 지면", "감자를 땅 위에 펼쳐 / 밤새 꽁꽁 얼렸습니다"]
+      - {text: "해가 지자마자, 농부는 감자를 땅 위에 쭉 펼쳐 밤새 꽁꽁 얼렸습니다.", captions: ["해가 지자마자", "농부는 감자를 / 땅 위에 쭉 펼쳐", "밤새 꽁꽁 얼렸습니다"]}
     visual: 해 질 녘 고원, 농부가 짚 위에 감자를 줄지어 펼친다
     image_prompt: >-
       Sunset on the high plateau, the farmer spreading rows of potatoes on a bed of dry grass on the open ground,
@@ -108,7 +106,7 @@ scenes:
   - id: s05
     beat: solution
     lines:
-      - "낮에는 햇볕에 녹이고, 밤이면 다시 얼리고. 이걸 며칠이나 반복했죠."
+      - "아침이면 햇볕에 사르르 녹이고, 밤이면 다시 꽁꽁 얼리고. 이걸 며칠이나 반복했죠."
     visual: 같은 감자 줄 — 밤엔 하얗게 서리, 낮엔 햇볕에 녹아 촉촉 (낮밤이 바뀌는 타임랩스)
     image_prompt: >-
       Close-up of the rows of potatoes on dry grass on the plateau, half of the frame at frosty night covered in
@@ -122,7 +120,7 @@ scenes:
   - id: s06
     beat: twist
     lines:
-      - "그런데 흐물흐물해진 감자 속 물기는, 어떻게 뺐을까요?"
+      - {text: "그런데 이렇게 흐물흐물해진 감자 속 물기는, 대체 어떻게 뺐을까요?", captions: ["그런데 이렇게", "흐물흐물해진 / 감자 속 물기는", "대체 어떻게 뺐을까요?"]}
     visual: 농부가 말랑해진 감자를 손가락으로 눌러 보고 갸웃
     image_prompt: >-
       Close-up of the farmer crouching and pressing a soft, squishy thawed potato between her fingers, water
@@ -135,7 +133,7 @@ scenes:
   - id: s07
     beat: resolve
     lines:
-      - "농부는 맨발로 감자를 꾹꾹 밟았습니다. 물이 쭉 빠지고, 껍질까지 벗겨졌죠."
+      - "농부는 맨발로 감자를 꾹꾹 밟았습니다. 물이 쭉쭉 빠지고, 껍질까지 훌렁 벗겨졌죠."
     visual: 신발을 벗은 농부가 감자 더미 위를 꾹꾹 밟는다, 물이 빠져나오고 껍질이 벗겨진다
     image_prompt: >-
       The farmer, barefoot with her skirt hitched up, stomping on a pile of thawed potatoes on a stone surface,
@@ -156,7 +154,7 @@ scenes:
   - id: s08
     beat: resolve
     lines:
-      - "이걸 햇볕에 바싹 말리면, 가볍고 단단한 추뇨가 됩니다. 몇 년을 둬도 끄떡없었죠."
+      - "이걸 햇볕에 바싹 말리면, 가볍고 단단해져서 몇 년을 둬도 끄떡없었죠."
     visual: 햇볕 아래 쭈글쭈글 말라 가는 감자, 농부가 돌처럼 가벼워진 추뇨를 흔들어 보인다
     image_prompt: >-
       Bright sun on the plateau, rows of small shriveled dark chuño drying on the dry grass, the farmer holding up
@@ -177,7 +175,7 @@ scenes:
   - id: s09
     beat: info
     lines:
-      - "그래서 라마 등에 싣고, 산 아래 마을까지 날랐고요."
+      - "그래서 라마 등에 잔뜩 싣고, 산 아래 마을까지 날랐고요."
     visual: 추뇨 자루를 실은 라마 행렬이 산길을 내려간다, 농부가 앞장선다
     image_prompt: >-
       A caravan of pack llamas carrying woven sacks of chuño walking down a winding mountain trail toward a
@@ -190,7 +188,8 @@ scenes:
   - id: s10
     beat: info
     lines:
-      - "최근엔 잉카 유적의 항아리 속에서, 500년 된 추뇨까지 나왔습니다."
+      - "최근엔 잉카 유적 항아리 속에서, 500년 된 것도 나왔죠."
+      - "이 감자가 바로, 추뇨입니다."
     visual: 발굴 현장, 흙바닥에 묻힌 깨진 항아리 바닥에서 쭈글쭈글한 추뇨 두 덩이가 보인다
     image_prompt: >-
       An archaeological dig in a dry coastal valley: a broken clay pot sunk into a dirt floor of an ancient adobe

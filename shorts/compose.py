@@ -145,7 +145,13 @@ def _render_clip(ep: Episode, sc: dict, clip: Path, duration: float, out: Path) 
     avail = media_duration(clip) - trim
     if avail <= 0.2:
         raise ShortsError(f"{sc['id']}: trim_start 가 클립 길이보다 깁니다")
-    k = 1.0 if avail >= duration else min(duration / avail, float(cfg["max_slowdown"]))
+    speed = max(1.0, float(cfg.get("speed_up", 1.0)))
+    if avail >= duration * speed:
+        k = 1.0 / speed                      # 속도감: 넉넉하면 빠르게 재생
+    elif avail >= duration:
+        k = duration / avail                 # 남는 만큼만 빠르게
+    else:
+        k = min(duration / avail, float(cfg["max_slowdown"]))
     freeze = max(0.0, duration - avail * k)
     sharpen = float(cfg.get("upscale_sharpen", 0.0))
     vf = (f"[0:v]setpts={k:.5f}*PTS,fps={fps},"
@@ -289,6 +295,15 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     for ov in overlays:
         cmd += ["-i", ov["png"]]
     vlabel = "[0:v]"
+    jz = float((ep.project.get("pace") or {}).get("jump_zoom", 1.0))
+    zoom_iv = _jump_zoom_intervals(events, [(fb[i] / fps, fb[i + 1] / fps) for i in range(len(segs))]) if jz > 1.001 else []
+    if zoom_iv:
+        ZW, ZH = int(round(W * jz / 2)) * 2, int(round(H * jz / 2)) * 2
+        en = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in zoom_iv)
+        fc.append(f"[0:v]split[jzbase][jzsrc];[jzsrc]scale={ZW}:{ZH}:flags=lanczos,crop={W}:{H}[jzz];"
+                  f"[jzbase][jzz]overlay=0:0:enable='{en}'[jz]")
+        vlabel = "[jz]"
+    report["jump_zoom_intervals"] = len(zoom_iv)
     for k, ov in enumerate(overlays):
         nxt = f"[v{k}]"
         en = "" if ov["kind"] == "title" else f":enable='between(t,{ov['start']:.3f},{ov['end']:.3f})'"
@@ -319,6 +334,17 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     if not animatic:
         _youtube(ep)
     return report
+
+
+def _jump_zoom_intervals(events: list[dict], seg_bounds: list[tuple[float, float]]) -> list[tuple[float, float]]:
+    """같은 화면 구간(세그먼트) 안에서 자막이 바뀔 때마다 확대/원래를 번갈아. 세그먼트가 바뀌면 원래 크기로 시작."""
+    out = []
+    for a, b in seg_bounds:
+        starts = sorted(e["start"] for e in events if a + 0.25 < e["start"] < b - 0.25)
+        edges = [a, *starts, b]
+        for i in range(1, len(edges) - 1, 2):      # 두 번째, 네 번째… 묶음 구간을 확대
+            out.append((edges[i], edges[i + 1]))
+    return out
 
 
 def _ts(t: float) -> str:

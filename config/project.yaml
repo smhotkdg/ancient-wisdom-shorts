@@ -19,14 +19,17 @@ voice:
   model: ssfm-v30
   tempo: 1.0                  # Typecast 생성 속도 (자연 속도)
   format: wav
-  rate_after: 0.94            # 생성 후 피치 유지 감속 (기존 레포 확정값). 1.0이면 감속 없음
+  rate_after: 1.0             # 생성 후 감속 없음 (2026-10-15 사용자: 속도감 우선. 예전 0.94)
   fallback_allowed: false     # 필재를 다른 목소리로 몰래 바꾸지 않는다
-  chars_per_second_raw: 6.2   # 길이 추정용 (공백 제외 글자 / 원음 초)
+  chars_per_second_raw: 6.2   # 길이 추정용 (공백 제외 글자 / 원음 초, 쉼 제외)
   max_script_chars: 1500
-  # 문장별 생성: 대사마다 따로 만들어 정해진 쉼으로 이어 붙인다 → 문장 경계가 정확해 싱크가 어긋나지 않는다
-  per_line: true
-  line_pause: 0.45            # 문장 사이 쉼(초, 원음 기준)
-  question_pause: 0.6         # ? 로 끝나는 문장 뒤 쉼
+  # 음성은 무조건 대본 전체를 파일 하나로 받는다 (2026-10-15 사용자: 문장별 생성은 감정·흐름이 끊김)
+  per_line: false
+  max_pause: 0.28             # 속도감: 이보다 긴 쉼(문장 사이 등)은 이 길이로 줄인다. 0 이면 끔
+
+pace:
+  # 속도감 연출
+  jump_zoom: 1.0              # 자막이 바뀔 때마다 번갈아 확대하는 배율(예: 1.08). 1.0 = 끔 (기본 끔)
 
 timing:
   # 대사·자막 시간 맞추기
@@ -40,8 +43,8 @@ timing:
 
 duration:
   target_seconds: [45, 60]    # 최종 영상 길이 목표
-  lead_in_seconds: 0.15       # 첫 대사 전 여백
-  tail_seconds_min: 1.2       # 마지막 대사 후 여운 (최소)
+  lead_in_seconds: 0.1        # 첫 대사 전 여백
+  tail_seconds_min: 0.9       # 마지막 대사 후 여운 (최소)
   rule: "음성을 먼저 측정하고 화면을 맞춘다. 대사를 빨리 감거나 자르지 않는다. 길면 영상을 늘린다."
 
 audio:
@@ -58,6 +61,7 @@ clips:
   still_motion: slow_zoom     # 이미지만 있는 장면: slow_zoom | pan_left | pan_right | none
   still_zoom_max: 1.08        # 정지 이미지 확대 상한 (강한 줌 금지)
   upscale_sharpen: 0.3        # 720p → 1080p 확대 후 약한 선명화 (0이면 끔)
+  speed_up: 1.0               # 클립 재생 배속 (2026-10-15 사용자: 클립 속도는 유지 → 1.0)
   grok_lengths: [6]           # Grok 클립 길이(초) — 클립 하나는 최대 6초 (2026-10-14 사용자)
   plan_slowdown: 1.2          # 콘티 계획 시 클립 하나가 덮을 수 있는 최대 감속 (6초 → 7.2초)
   # 6초 클립 하나로 부족한 장면은 episode.yaml 의 extra_clips 로 같은 이미지에서 클립을 더 만든다

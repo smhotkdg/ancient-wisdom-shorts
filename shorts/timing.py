@@ -23,6 +23,7 @@ def import_voice(ep: Episode, src: Path, force: bool = False) -> None:
     if ep.raw_voice.exists() and not force:
         raise ShortsError(f"이미 음성이 있습니다: {ep.raw_voice} (바꾸려면 --force)")
     ep.audio_dir.mkdir(parents=True, exist_ok=True)
+    (ep.audio_dir / "lines.json").unlink(missing_ok=True)   # 통파일 음성이므로 문장별 정보는 무효
     if src.suffix.lower() == ".wav":
         shutil.copyfile(src, ep.raw_voice)
     else:
@@ -35,6 +36,43 @@ def _postprocess(ep: Episode) -> None:
     rate = float(ep.project["voice"].get("rate_after", 1.0))
     af = f"atempo={rate}" if abs(rate - 1.0) > 1e-3 else "anull"
     run(["ffmpeg", "-y", "-i", ep.raw_voice, "-af", af, "-ac", "1", "-ar", "48000", "-c:a", "pcm_s16le", ep.voice])
+    _tighten_pauses(ep)
+
+
+def _tighten_pauses(ep: Episode) -> None:
+    """속도감: max_pause 보다 긴 쉼은 가운데를 잘라 max_pause 로 줄인다. 말소리는 건드리지 않는다."""
+    mp = float(ep.project["voice"].get("max_pause", 0) or 0)
+    if mp <= 0:
+        return
+    import wave
+    import numpy as np
+    sil = detect_silences(ep.voice, -40, mp + 0.02)
+    with wave.open(str(ep.voice), "rb") as w:
+        sr, n = w.getframerate(), w.getnframes()
+        a = np.frombuffer(w.readframes(n), dtype="<i2")
+    keep, pos, removed = [], 0, 0.0
+    total = n / sr
+    for s0, e0 in sil:
+        if s0 <= 0.01:                     # 앞 여백은 0.05초만 남김
+            cut_a, cut_b = 0, max(0, int((e0 - 0.05) * sr))
+        elif e0 >= total - 0.01:           # 끝 여백은 그대로
+            continue
+        else:
+            half = mp / 2
+            cut_a, cut_b = int((s0 + half) * sr), int((e0 - half) * sr)
+        if cut_b > cut_a:
+            keep.append(a[pos:cut_a])
+            pos = cut_b
+            removed += (cut_b - cut_a) / sr
+    keep.append(a[pos:])
+    out = np.concatenate(keep)
+    with wave.open(str(ep.voice), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(out.astype("<i2").tobytes())
+    ep.audio_dir.joinpath("pace.json").write_text(
+        '{"max_pause": %s, "removed_seconds": %.3f}' % (mp, removed), encoding="utf-8")
 
 
 def detect_silences(path: Path, noise_db: float = -35, min_dur: float = 0.16) -> list[tuple[float, float]]:
@@ -211,7 +249,7 @@ def part_bounds(ep: Episode, timing: dict, scene: dict, n_parts: int) -> list[tu
 def _per_line_timing(ep: Episode) -> list[dict] | None:
     """문장별 생성 음성(audio/lines.json)이 현재 대본과 같으면 정확한 문장 시간을 쓴다 (voice.wav 기준)."""
     p = ep.audio_dir / "lines.json"
-    if not p.exists():
+    if not p.exists() or not ep.project["voice"].get("per_line"):
         return None
     import json
     from .lines_audio import script_hash
@@ -309,7 +347,8 @@ def estimate(ep: Episode) -> dict:
     vc = ep.project["voice"]
     cps = float(vc["chars_per_second_raw"]) * float(vc.get("rate_after", 1.0))
     lead = float(ep.project["duration"]["lead_in_seconds"])
-    pause = 0.45
+    mp = float(vc.get("max_pause", 0) or 0)
+    pause = min(0.45, mp) if mp > 0 else 0.45
     t = lead
     lines = []
     for l in ep.lines:

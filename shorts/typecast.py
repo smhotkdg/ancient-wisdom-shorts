@@ -98,6 +98,8 @@ def generate(ep: Episode, force: bool = False, per_line: bool | None = None) -> 
     if out.exists() and not force:
         raise ShortsError(f"이미 음성이 있습니다: {out} (다시 만들려면 --force, 크레딧이 사용됩니다)")
     per_line = bool(vc.get("per_line", False)) if per_line is None else per_line
+    if per_line:
+        raise ShortsError("문장별 생성은 쓰지 않습니다 — 음성은 대본 전체를 파일 하나로 받습니다 (voice.per_line: false)")
     key = api_key()
     v = resolve_voice(ep.project, key)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -126,6 +128,7 @@ def generate(ep: Episode, force: bool = False, per_line: bool | None = None) -> 
         data = synth(text)
         out.write_bytes(data)
         n_bytes = len(data)
+        (ep.audio_dir / "lines.json").unlink(missing_ok=True)
     info = {"provider": "typecast", "voice": vc["name_kor"], "voice_id": v["voice_id"], "model": vc["model"],
             "tempo": vc["tempo"], "characters": len(text), "bytes": n_bytes, "per_line": per_line}
     write_json(ep.audio_dir / "tts.json", info)
