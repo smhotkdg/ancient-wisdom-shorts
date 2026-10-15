@@ -72,7 +72,24 @@ def check(project: dict) -> dict:
     return {"status": "piljae_verified", "voice_id": v["voice_id"], "models": [m.get("version") for m in v.get("models", [])]}
 
 
-def generate(ep: Episode, force: bool = False) -> dict:
+def _wav_ok(data: bytes) -> None:
+    if not (data.startswith(b"RIFF") and data[8:12] == b"WAVE"):
+        raise ShortsError("Typecast 응답이 WAV 가 아닙니다")
+
+
+def _backup_existing(ep: Episode) -> None:
+    """--force 로 다시 만들 때 이전 음성을 지우지 않고 audio/prev/ 로 옮긴다."""
+    if not ep.raw_voice.exists():
+        return
+    prev = ep.audio_dir / "prev"
+    prev.mkdir(exist_ok=True)
+    for name in ("raw.wav", "voice.wav", "timing.json", "tts.json", "lines.json"):
+        f = ep.audio_dir / name
+        if f.exists():
+            f.replace(prev / name)
+
+
+def generate(ep: Episode, force: bool = False, per_line: bool | None = None) -> dict:
     vc = ep.project["voice"]
     text = ep.script_text()
     if len(text) > int(vc["max_script_chars"]):
@@ -80,16 +97,36 @@ def generate(ep: Episode, force: bool = False) -> dict:
     out = ep.raw_voice
     if out.exists() and not force:
         raise ShortsError(f"이미 음성이 있습니다: {out} (다시 만들려면 --force, 크레딧이 사용됩니다)")
+    per_line = bool(vc.get("per_line", False)) if per_line is None else per_line
     key = api_key()
     v = resolve_voice(ep.project, key)
-    payload = {"model": vc["model"], "voice_id": v["voice_id"], "text": text,
-               "output": {"audio_format": vc["format"], "audio_tempo": float(vc["tempo"])}}
-    data = _request("/v1/text-to-speech", key, payload)
-    if not (data.startswith(b"RIFF") and data[8:12] == b"WAVE"):
-        raise ShortsError("Typecast 응답이 WAV 가 아닙니다")
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(data)
+    _backup_existing(ep)
+
+    def synth(t: str) -> bytes:
+        payload = {"model": vc["model"], "voice_id": v["voice_id"], "text": t,
+                   "output": {"audio_format": vc["format"], "audio_tempo": float(vc["tempo"])}}
+        data = _request("/v1/text-to-speech", key, payload)
+        _wav_ok(data)
+        return data
+
+    if per_line:
+        from .lines_audio import assemble
+        parts_dir = ep.audio_dir / "lines"
+        parts_dir.mkdir(exist_ok=True)
+        files = []
+        for line in ep.lines:
+            f = parts_dir / f"{line.index:02d}.wav"
+            if not f.exists():          # 중간에 끊겼다면 이미 받은 문장은 다시 만들지 않는다
+                f.write_bytes(synth(line.text))
+            files.append(f)
+        assemble(ep, files)
+        n_bytes = sum(f.stat().st_size for f in files)
+    else:
+        data = synth(text)
+        out.write_bytes(data)
+        n_bytes = len(data)
     info = {"provider": "typecast", "voice": vc["name_kor"], "voice_id": v["voice_id"], "model": vc["model"],
-            "tempo": vc["tempo"], "characters": len(text), "bytes": len(data)}
+            "tempo": vc["tempo"], "characters": len(text), "bytes": n_bytes, "per_line": per_line}
     write_json(ep.audio_dir / "tts.json", info)
     return info

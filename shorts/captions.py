@@ -159,12 +159,12 @@ def time_chunks(captions: list[dict], timing: dict, offset: float, gap_fill: flo
                 acc += w
                 cuts.append(cs[acc])
         else:
-            # 무음 기반: 글자 비례 경계 → 근처 쉼이 끝나는 시각(다음 말 시작)으로 맞춘다 (±0.8초 안)
+            # 무음 기반: 글자 비례 경계 → 근처 쉼이 끝나는 시각(다음 말 시작)으로 맞춘다 (±1.2초 안)
             pauses = [b for a, b in tl.get("pauses") or []]
             for w in weights[:-1]:
                 acc += w
                 t0 = s + (e - s) * acc / total
-                near = [p for p in pauses if abs(p - t0) <= 0.8 and (not cuts or p > cuts[-1] + 0.4)]
+                near = [p for p in pauses if abs(p - t0) <= 1.2 and (not cuts or p > cuts[-1] + 0.4)]
                 cuts.append(min(near, key=lambda p: abs(p - t0)) if near else t0)
         edges = [s, *cuts, e]
         for chunk, a, b in zip(cap["chunks"], edges, edges[1:]):

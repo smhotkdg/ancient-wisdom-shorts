@@ -208,6 +208,27 @@ def part_bounds(ep: Episode, timing: dict, scene: dict, n_parts: int) -> list[tu
     return [(round(a, 3), round(b, 3)) for a, b in zip(edges, edges[1:])]
 
 
+def _per_line_timing(ep: Episode) -> list[dict] | None:
+    """문장별 생성 음성(audio/lines.json)이 현재 대본과 같으면 정확한 문장 시간을 쓴다 (voice.wav 기준)."""
+    p = ep.audio_dir / "lines.json"
+    if not p.exists():
+        return None
+    import json
+    from .lines_audio import script_hash
+    info = json.loads(p.read_text(encoding="utf-8"))
+    if info.get("script_hash") != script_hash(ep) or len(info["lines"]) != len(ep.lines):
+        return None
+    rate = float(ep.project["voice"].get("rate_after", 1.0))
+    out = []
+    for e in info["lines"]:
+        out.append({"index": e["index"], "text": e["text"], "start": round(e["start"] / rate, 3),
+                    "end": round(e["end"] / rate, 3)})
+    for a, b in zip(out, out[1:]):
+        a["pause_after"] = round(b["start"] - a["end"], 3)
+    out[-1]["pause_after"] = 0.0
+    return out
+
+
 def build_timing(ep: Episode) -> dict:
     if not ep.raw_voice.exists():
         raise ShortsError(f"음성이 없습니다: {ep.raw_voice}  (python aw.py tts 또는 python aw.py voice --file ...)")
@@ -218,7 +239,31 @@ def build_timing(ep: Episode) -> dict:
     engine = cfg.get("engine", "auto")
     lines = meta = None
     warn = None
-    if engine in ("auto", "whisper"):
+    per_line = _per_line_timing(ep)
+    if per_line is not None:
+        lines = per_line
+        meta = {"speech_start": lines[0]["start"], "speech_end": lines[-1]["end"], "method": "per_line",
+                "warnings": []}
+        # 문장 안 자막 전환용 글자 시각: Whisper 가 있으면 사용
+        if engine in ("auto", "whisper"):
+            from . import asr
+            if asr.available():
+                try:
+                    words = asr.transcribe(ep.voice, cfg.get("whisper_model", "small"), prompt=" ".join(texts))
+                    al, ratio = asr.align_script(texts, words)
+                    if ratio >= float(cfg.get("min_match", 0.6)):
+                        for ln, w in zip(lines, al):
+                            # 문장 경계는 정확한 값 유지, 글자 시각은 그 안으로 제한
+                            ln["char_starts"] = [min(max(c, ln["start"]), ln["end"]) for c in w["char_starts"]]
+                        meta["method"] = "per_line+whisper"
+                        meta["match_ratio"] = round(ratio, 3)
+                except Exception as exc:
+                    meta["warnings"].append(f"Whisper 실행 실패({type(exc).__name__}) — 문장 안 자막은 쉼 기준으로 나눕니다.")
+        if "char_starts" not in lines[0]:
+            fine = detect_silences(ep.voice, -35, 0.12)
+            for ln in lines:
+                ln["pauses"] = [[round(x, 3), round(y, 3)] for x, y in fine if ln["start"] + 0.2 < x and y < ln["end"] - 0.2]
+    elif engine in ("auto", "whisper"):
         from . import asr
         if asr.available():
             try:

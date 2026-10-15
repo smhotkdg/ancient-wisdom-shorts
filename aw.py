@@ -151,8 +151,9 @@ def _after_voice(ep):
 def cmd_tts(a):
     from shorts import typecast
     ep = load_episode(resolve_ep(a.ep))
-    info = typecast.generate(ep, force=a.force)
-    say(f"필재 생성 완료: {info['characters']}자")
+    per_line = True if a.per_line else (False if a.whole else None)
+    info = typecast.generate(ep, force=a.force, per_line=per_line)
+    say(f"필재 생성 완료: {info['characters']}자 ({'문장별' if info['per_line'] else '한 번에'})")
     _after_voice(ep)
 
 
@@ -232,7 +233,10 @@ def main():
                      ("conti", cmd_conti), ("status", cmd_status)):
         s = sub.add_parser(name); s.add_argument("ep"); s.set_defaults(fn=fn)
     sub.add_parser("check-voice").set_defaults(fn=cmd_check_voice)
-    s = sub.add_parser("tts"); s.add_argument("ep"); s.add_argument("--force", action="store_true"); s.set_defaults(fn=cmd_tts)
+    s = sub.add_parser("tts"); s.add_argument("ep"); s.add_argument("--force", action="store_true")
+    s.add_argument("--per-line", action="store_true", help="문장별 생성 (기본값: config voice.per_line)")
+    s.add_argument("--whole", action="store_true", help="대본 전체를 한 번에 생성")
+    s.set_defaults(fn=cmd_tts)
     s = sub.add_parser("voice"); s.add_argument("ep"); s.add_argument("--file", required=True)
     s.add_argument("--force", action="store_true"); s.set_defaults(fn=cmd_voice)
     s = sub.add_parser("animatic"); s.add_argument("ep"); s.set_defaults(fn=lambda a: cmd_compose(a, animatic=True))

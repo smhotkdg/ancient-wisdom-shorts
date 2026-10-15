@@ -23,6 +23,10 @@ voice:
   fallback_allowed: false     # 필재를 다른 목소리로 몰래 바꾸지 않는다
   chars_per_second_raw: 6.2   # 길이 추정용 (공백 제외 글자 / 원음 초)
   max_script_chars: 1500
+  # 문장별 생성: 대사마다 따로 만들어 정해진 쉼으로 이어 붙인다 → 문장 경계가 정확해 싱크가 어긋나지 않는다
+  per_line: true
+  line_pause: 0.45            # 문장 사이 쉼(초, 원음 기준)
+  question_pause: 0.6         # ? 로 끝나는 문장 뒤 쉼
 
 timing:
   # 대사·자막 시간 맞추기

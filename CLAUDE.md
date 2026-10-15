@@ -62,6 +62,7 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 ## 환경 메모
 
 - 필요: Python 3.10+, `pip install -r requirements.txt`, ffmpeg, Noto Sans KR(Black·Bold) 폰트. `python aw.py doctor`로 확인.
+- **문장별 음성 생성**(`voice.per_line: true`, 기본): `aw.py tts`가 대사마다 필재를 따로 만들어 정해진 쉼(0.45초, 질문 뒤 0.6초)으로 이어 붙인다 → 문장 경계가 정확하다. 크레딧은 대본 글자 수 그대로. `--force`로 다시 만들면 이전 음성은 `audio/prev/`로 옮겨진다.
 - **자막 싱크**: `faster-whisper`가 설치된 PC는 음성 인식으로 글자마다 실제 발음 시각을 찾아 자막·컷을 맞춘다(`timing.engine: auto`, 첫 실행 때 모델 다운로드). 없으면 무음 기반 정렬(쉼이 짧으면 0.5초 안팎 어긋날 수 있음). 검수 보고서의 "음성·자막 정렬 방식"이 `whisper`인지 확인한다.
 - Typecast 키는 레포 루트 `.env`의 `TYPECAST_API_KEY` (Git 제외). 음성을 만드는 PC에만 필요.
 - claude.ai 클라우드 작업 공간에서는 Typecast API 접속이 막혀 있다. 그때는 사용자 PC에서 `aw.py tts`를 실행하거나, Typecast 웹에서 받은 파일을 `aw.py voice --file`로 넣는다.
