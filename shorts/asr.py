@@ -108,12 +108,11 @@ def align_script(lines: list[str], words: list[tuple[str, float, float]]) -> tup
     return out, ratio
 
 
-def transcribe_align(path: Path, lines: list[str], model_size: str = "small",
-                     good: float = 0.8) -> tuple[list[dict], float]:
-    """대본 힌트를 주고 인식 → 일치율이 낮으면 힌트 없이 다시 인식해 더 나은 쪽을 쓴다.
+def transcribe_align(path: Path, lines: list[str], model_size: str = "small") -> tuple[list[dict], float]:
+    """대본 힌트를 준 인식과 힌트 없는 인식을 둘 다 해 보고 대본과 더 잘 맞는 쪽을 쓴다.
 
-    대본 전체를 initial_prompt 로 주면 Whisper 가 앞부분을 통째로 건너뛰는 일이 있다
-    (003: 힌트 있음 54% / 없음 98%).
+    대본 전체를 initial_prompt 로 주면 Whisper 가 앞부분을 건너뛰거나 뒤섞는 일이 있다
+    (003: 힌트 있음 54% / 없음 98%, 004: 85% / 98%) — 일치율이 높아 보여도 앞부분이 틀릴 수 있어 항상 비교한다.
     """
     best = None
     for prompt in (" ".join(lines), ""):
@@ -123,8 +122,6 @@ def transcribe_align(path: Path, lines: list[str], model_size: str = "small",
             continue
         if best is None or ratio > best[1]:
             best = (al, ratio)
-        if ratio >= good:
-            break
     if best is None:
         raise ValueError("인식 결과가 대본과 전혀 맞지 않습니다")
     return best

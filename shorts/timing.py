@@ -285,7 +285,7 @@ def _snap_to_speech(lines: list[dict], silences: list[tuple[float, float]]) -> l
                 if heads[i]:
                     # 문장 첫 단어·쉼표 뒤 단어: 앞에 쉼이 있어야 한다. Whisper 는 이 단어를 쉼보다
                     # 0.5초 가까이 앞에 두기도 하므로, 근처에서 가장 긴 쉼의 끝을 말 시작으로 본다
-                    near = [(b - a, -abs(b - c), b) for a, b in silences if c - 0.4 <= a <= c + 0.5]
+                    near = [(b - a, -abs(b - c), b) for a, b in silences if b >= c - 0.15 and a <= c + 0.5]
                     if near:
                         c = max(near)[2]
                 else:
