@@ -58,6 +58,9 @@ def cmd_doctor(_):
         except ImportError:
             ok = False
             say(f"  ✗ python 패키지 {mod} 없음 → pip install -r requirements.txt")
+    from shorts import asr
+    say(f"  {'✓' if asr.available() else '·'} faster-whisper "
+        + ("(자막 싱크: 음성 인식 정렬)" if asr.available() else "없음 → 무음 기반 정렬. 정확한 싱크: pip install faster-whisper"))
     for tool in ("ffmpeg", "ffprobe"):
         if shutil.which(tool):
             say(f"  ✓ {tool}")
@@ -137,7 +140,8 @@ def cmd_check_voice(_):
 def _after_voice(ep):
     from shorts.timing import build_timing
     t = build_timing(ep)
-    say(f"음성 {t['voice_duration']:.2f}초 · 정렬 방식 {t['method']} · 영상 {t['video_duration']:.2f}초")
+    extra = f" · 일치율 {t['match_ratio']:.0%}" if t.get("match_ratio") is not None else ""
+    say(f"음성 {t['voice_duration']:.2f}초 · 정렬 방식 {t['method']}{extra} · 영상 {t['video_duration']:.2f}초")
     for s in t["scenes"]:
         say(f"  {s['id']} {s['start']:6.2f}–{s['end']:6.2f}  ({s['duration']:.2f}초)")
     for w in t["warnings"]:

@@ -141,7 +141,8 @@ def build_captions(ep: Episode) -> list[dict]:
     return out
 
 
-def time_chunks(captions: list[dict], timing: dict, offset: float, gap_fill: float = 0.6) -> list[dict]:
+def time_chunks(captions: list[dict], timing: dict, offset: float, gap_fill: float = 0.6,
+                lead: float = 0.0) -> list[dict]:
     """대사 구간 안에서 글자 수 비례로 묶음 시간을 나눈다. 반환 시간은 영상 기준(offset 포함)."""
     lines = {l["index"]: l for l in timing["lines"]}
     events = []
@@ -150,18 +151,25 @@ def time_chunks(captions: list[dict], timing: dict, offset: float, gap_fill: flo
         s, e = tl["start"], tl["end"]
         weights = [max(1, len(_norm("".join(c)))) for c in cap["chunks"]]
         total = sum(weights)
-        # 글자 비례 경계 → 문장 안 실제 쉼(있으면)의 가운데로 맞춘다 (±0.7초 안)
-        pauses = [(a + b) / 2 for a, b in tl.get("pauses") or []]
         cuts, acc = [], 0
-        for w in weights[:-1]:
-            acc += w
-            t0 = s + (e - s) * acc / total
-            near = [p for p in pauses if abs(p - t0) <= 0.7 and (not cuts or p > cuts[-1] + 0.4)]
-            cuts.append(min(near, key=lambda p: abs(p - t0)) if near else t0)
+        cs = tl.get("char_starts")
+        if cs and len(cs) == sum(len(_norm("".join(c))) for c in cap["chunks"]):
+            # Whisper: 각 묶음의 첫 글자가 실제로 발음된 시각에 전환
+            for w in weights[:-1]:
+                acc += w
+                cuts.append(cs[acc])
+        else:
+            # 무음 기반: 글자 비례 경계 → 근처 쉼이 끝나는 시각(다음 말 시작)으로 맞춘다 (±0.8초 안)
+            pauses = [b for a, b in tl.get("pauses") or []]
+            for w in weights[:-1]:
+                acc += w
+                t0 = s + (e - s) * acc / total
+                near = [p for p in pauses if abs(p - t0) <= 0.8 and (not cuts or p > cuts[-1] + 0.4)]
+                cuts.append(min(near, key=lambda p: abs(p - t0)) if near else t0)
         edges = [s, *cuts, e]
         for chunk, a, b in zip(cap["chunks"], edges, edges[1:]):
             events.append({"line": cap["line"], "scene": cap["scene"], "lines": chunk,
-                           "start": round(a + offset, 3), "end": round(b + offset, 3)})
+                           "start": round(max(0.0, a + offset - lead), 3), "end": round(b + offset - lead, 3)})
     # 짧은 공백은 다음 자막 시작까지 이어서 깜빡임을 없앤다
     for a, b in zip(events, events[1:]):
         if 0 < b["start"] - a["end"] <= gap_fill:

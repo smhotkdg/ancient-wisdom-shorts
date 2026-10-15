@@ -247,7 +247,8 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
                          "h": blk.image.height, "start": 0.0, "end": total, "lines": blk.lines,
                          "font_px": blk.font_px})
     caps = build_captions(ep)
-    events = time_chunks(caps, timing, offset=float(timing["lead_in"]))
+    events = time_chunks(caps, timing, offset=float(timing["lead_in"]),
+                         lead=float((ep.project.get("timing") or {}).get("caption_lead", 0.0)))
     for i, ev in enumerate(events):
         blk = render_block(ev["lines"], project=ep.project, kind="caption",
                            keywords=ep.data.get("caption_keywords") or [], canvas=(W, H))

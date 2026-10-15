@@ -24,6 +24,16 @@ voice:
   chars_per_second_raw: 6.2   # 길이 추정용 (공백 제외 글자 / 원음 초)
   max_script_chars: 1500
 
+timing:
+  # 대사·자막 시간 맞추기
+  #  whisper: 음성 인식(faster-whisper)으로 글자마다 실제 발음 시각을 찾는다 — 가장 정확 (pip install faster-whisper)
+  #  silence: 무음 위치 + 말하는 속도로 문장 경계를 찾는다 — 설치 없이 동작, 쉼이 짧으면 0.5초 안팎 어긋날 수 있음
+  #  auto: whisper 가 설치돼 있으면 whisper, 아니면 silence
+  engine: auto
+  whisper_model: small        # small(약 0.5GB) / medium(약 1.5GB, 더 정확)
+  min_match: 0.6              # 인식 글자와 대본 일치율이 이보다 낮으면 silence 로 대체
+  caption_lead: 0.0           # 자막을 목소리보다 이만큼 먼저 띄움(초). 0 = 말 시작과 동시
+
 duration:
   target_seconds: [45, 60]    # 최종 영상 길이 목표
   lead_in_seconds: 0.15       # 첫 대사 전 여백

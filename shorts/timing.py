@@ -213,12 +213,39 @@ def build_timing(ep: Episode) -> dict:
         raise ShortsError(f"음성이 없습니다: {ep.raw_voice}  (python aw.py tts 또는 python aw.py voice --file ...)")
     _postprocess(ep)
     total = media_duration(ep.voice)
-    silences = detect_silences(ep.voice)
-    lines, meta = align([l.text for l in ep.lines], silences, total)
-    # 문장 안 쉼(쉼표 등) — 자막 묶음 전환을 실제 쉼에 맞추는 데 쓴다
-    fine = detect_silences(ep.voice, -35, 0.12)
-    for ln in lines:
-        ln["pauses"] = [[round(a, 3), round(b, 3)] for a, b in fine if ln["start"] + 0.2 < a and b < ln["end"] - 0.2]
+    texts = [l.text for l in ep.lines]
+    cfg = ep.project.get("timing") or {}
+    engine = cfg.get("engine", "auto")
+    lines = meta = None
+    warn = None
+    if engine in ("auto", "whisper"):
+        from . import asr
+        if asr.available():
+            try:
+                words = asr.transcribe(ep.voice, cfg.get("whisper_model", "small"), prompt=" ".join(texts))
+                al, ratio = asr.align_script(texts, words)
+            except Exception as exc:  # 모델 다운로드 실패 등
+                al, ratio = None, 0.0
+                warn = f"Whisper 실행 실패({type(exc).__name__}) — 무음 기반 정렬로 대체했습니다."
+            if al and ratio >= float(cfg.get("min_match", 0.6)):
+                lines = al
+                meta = {"speech_start": al[0]["start"], "speech_end": al[-1]["end"], "method": "whisper",
+                        "match_ratio": round(ratio, 3), "warnings": []}
+                if ratio < 0.8:
+                    meta["warnings"].append(f"인식 일치율 {ratio:.0%} — 자막 시간을 한 번 확인하세요.")
+            elif al:
+                warn = f"Whisper 인식 일치율 {ratio:.0%}가 낮아 무음 기반 정렬로 대체했습니다."
+        elif engine == "whisper":
+            raise ShortsError("timing.engine 이 whisper 인데 faster-whisper 가 없습니다: pip install faster-whisper")
+    if lines is None:
+        silences = detect_silences(ep.voice)
+        lines, meta = align(texts, silences, total)
+        if warn:
+            meta["warnings"].insert(0, warn)
+        # 문장 안 쉼(쉼표 등) — 자막 묶음 전환을 실제 쉼 끝(다음 말 시작)에 맞추는 데 쓴다
+        fine = detect_silences(ep.voice, -35, 0.12)
+        for ln in lines:
+            ln["pauses"] = [[round(a, 3), round(b, 3)] for a, b in fine if ln["start"] + 0.2 < a and b < ln["end"] - 0.2]
     timing = {"voice_file": "audio/voice.wav", "voice_duration": round(total, 3),
               "rate_after": ep.project["voice"].get("rate_after", 1.0),
               "lead_in": float(ep.project["duration"]["lead_in_seconds"]),

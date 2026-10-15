@@ -53,7 +53,7 @@ def verify(ep: Episode, animatic: bool = False) -> dict:
     check("영상 길이", abs(dur - report["duration"]) < 0.15, f"{dur:.3f}초 (계획 {report['duration']:.3f})")
     tm = ep.timing() or {}
     if tm and not tm.get("estimated"):
-        check("음성·자막 정렬 방식", tm.get("method") in ("silence_rate_dp", "single"),
+        check("음성·자막 정렬 방식", tm.get("method") in ("whisper", "silence_rate_dp", "single"),
               f"{tm.get('method')} (구버전이면 python aw.py timing 으로 다시 계산)")
         warns.extend(tm.get("warnings") or [])
     lo, hi = proj["duration"]["target_seconds"]
