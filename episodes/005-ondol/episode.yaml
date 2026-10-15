@@ -1,0 +1,223 @@
+# 005 온돌 — 불은 방 밖에서, 온기는 방바닥으로
+id: "005"
+slug: ondol
+status: script_ok
+working_title: 옛사람들은 왜 불을 방 밖에서 피웠을까?
+title_lines: ["불은 방 밖에서 피웠는데", "방이 따뜻하다고?"]
+hook: 발을 동동 굴렀습니다
+caption_keywords: [연기, 아궁이, 고래, 돌, 굴뚝]
+
+story:
+  hero: 집주인
+  reveal: [온돌]
+
+characters:
+  - id: owner
+    name: 집주인
+    name_en: Korean village homeowner
+    description: >-
+      a friendly, slightly chubby Korean man in his 30s with a small topknot and short beard, rosy cheeks,
+      wearing a padded white-beige traditional hanbok jacket and trousers with a grey vest, straw sandals
+    note: 이야기 주인공. 추운 겨울밤을 따뜻하게 나고 싶은 초가집 주인
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "추운 겨울밤, 한 집주인은 발을 동동 굴렀습니다."
+        captions: ["추운 겨울밤, 한 집주인은 / 발을 동동 굴렀습니다"]
+      - text: "방 안에 불을 피우자, 금세 연기가 가득 차서 숨도 쉬기 힘들었거든요."
+        captions: ["방 안에 불을 피우자", "금세 연기가 가득 차서 / 숨도 쉬기 힘들었거든요"]
+    visual: 눈 내리는 밤 초가집 방 안, 바닥 화덕 불에서 연기가 차오르고 집주인이 콜록이며 발을 동동 구른다
+    image_prompt: >-
+      Inside a small thatched-roof farmhouse room on a snowy winter night, a small open fire burning in a shallow
+      hearth on the floor, grey smoke filling the room, the homeowner coughing and stamping his feet, waving the
+      smoke away with one hand, snow visible through a paper door.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner stamps his feet and coughs, fanning the smoke; thick grey smoke curls up and fills the room.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The same farmhouse room now thick with grey smoke, the homeowner crouching low with teary eyes, covering
+          his nose and mouth with his sleeve, the small floor fire glowing through the haze.
+        characters: [owner]
+        motion_prompt: >-
+          Smoke swirls thickly; the homeowner coughs into his sleeve and wipes his teary eyes.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "그렇다고 불을 끄면, 이번엔 손발이 꽁꽁 얼어붙는 추위가 밀려왔죠."
+        captions: ["그렇다고 불을 끄면", "이번엔 손발이 꽁꽁 / 얼어붙는 추위가 밀려왔죠"]
+    visual: 불을 끈 어두운 방, 집주인이 이불을 뒤집어쓰고 덜덜 떨며 입김을 분다
+    image_prompt: >-
+      The same farmhouse room, the fire put out and the room dark and cold, frost on the paper door, the homeowner
+      wrapped in a thick quilt, shivering, his breath visible as white puffs.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner shivers under the quilt, teeth chattering, puffs of white breath; frost creeps on the paper door.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "연기는 빼고, 불의 따뜻한 기운만 방에 들일 수는 없을까요?"
+        captions: ["연기는 빼고", "불의 따뜻한 기운만 / 방에 들일 수는 없을까요?"]
+    visual: 집주인이 이불 속에서 마당의 장작불을 바라보며 골똘히 생각한다
+    image_prompt: >-
+      The homeowner wrapped in a quilt sitting at the open paper door, staring thoughtfully at a small fire glowing
+      outside in the snowy yard, chin in hand, a curious spark in his eyes.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner taps his chin, eyes narrowing in thought, then his face lights up with an idea; snow falls softly.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 집주인은 불을 아예 방 밖으로 내보냈습니다."
+        captions: ["그래서 집주인은 불을 / 아예 방 밖으로 내보냈습니다"]
+      - text: "벽 바깥에 불구멍, 아궁이를 낸 거죠."
+        captions: ["벽 바깥에 불구멍 / 아궁이를 낸 거죠"]
+    visual: 방 벽 바깥 낮은 곳에 돌로 만든 아궁이, 집주인이 장작을 넣고 불을 지핀다
+    image_prompt: >-
+      Outside the farmhouse, at the low base of the room's outer wall, a small arched stone fire opening (furnace
+      mouth) built into the wall, the homeowner kneeling and feeding firewood into it, flames glowing inside.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner pushes a log into the stone fire opening; the flames flare up and are drawn inward under the wall.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the arched stone fire opening at the base of the farmhouse wall, bright flames inside being
+          pulled deep into a dark passage under the room, sparks drifting, the homeowner's hands holding firewood.
+        characters: [owner]
+        motion_prompt: >-
+          The flames lean and stream inward into the dark passage under the room, as if sucked in by a draft.
+        camera: slow push in
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 방바닥 밑에는, 불길이 지나갈 좁은 길 고래를 여러 줄 냈습니다."
+        captions: ["그리고 방바닥 밑에는", "불길이 지나갈 좁은 길 / 고래를 여러 줄 냈습니다"]
+    visual: 단면도 — 방바닥 아래 돌로 쌓은 길쭉한 통로 여러 줄, 아궁이 불길이 그 사이로 들어간다
+    image_prompt: >-
+      Cutaway view under the floor of the room: several parallel narrow channels built of stacked stones running
+      from the fire opening at one end across the whole room, orange flames and hot air flowing into the channels.
+      Clean educational illustration, no labels, no text.
+    motion_prompt: >-
+      Orange flames and waves of hot air flow from the fire opening into the parallel stone channels and travel along them.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그 위를 얇고 넓은 돌로 덮자, 뜨겁게 달궈진 돌바닥이 방 전체를 데웠죠."
+        captions: ["그 위를 얇고 넓은 돌로 덮자", "뜨겁게 달궈진 돌바닥이 / 방 전체를 데웠죠"]
+    visual: 집주인이 고래 위에 넓적한 돌판을 덮고, 돌판이 주황빛으로 달아오른다
+    image_prompt: >-
+      The homeowner laying a large flat thin stone slab over the stone channels, other slabs already covering most
+      of the floor, a faint warm orange glow seeping up from beneath the slabs.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner sets the last slab into place; a warm orange glow spreads across the slabs and heat shimmers rise.
+    camera: slow pull back
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 바닥 밑으로 들어간 그 연기는, 대체 어디로 빠져나가야 할까요?"
+        captions: ["그런데 바닥 밑으로 / 들어간 그 연기는", "대체 어디로 / 빠져나가야 할까요?"]
+    visual: 집주인이 따뜻한 바닥에 앉았다가, 바닥 틈을 보며 연기 걱정에 고개를 갸웃
+    image_prompt: >-
+      The homeowner sitting on the warm stone floor, now covered with a smooth yellow oiled-paper finish, starting
+      to smile, then pausing and peering down at the floor with a worried, puzzled look, one eyebrow raised.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner pats the warm floor happily, then freezes, sniffs the air and tilts his head with a worried look.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 아궁이 반대편 끝에 굴뚝을 세웠습니다."
+        captions: ["그래서 아궁이 반대편 끝에 / 굴뚝을 세웠습니다"]
+      - text: "불길은 바닥 밑을 지나며 열을 남기고, 연기만 굴뚝으로 쏙 빠져나갔죠."
+        captions: ["불길은 바닥 밑을 지나며 / 열을 남기고", "연기만 굴뚝으로 / 쏙 빠져나갔죠"]
+    visual: 단면도 — 아궁이 불길이 고래를 지나 돌판을 데우고, 반대편 굴뚝으로 연기가 올라간다
+    image_prompt: >-
+      Side cross-section of the whole farmhouse room: the fire opening on one side, flames and hot air passing
+      through the channels under the stone floor slabs, and a tall chimney on the opposite side with grey smoke
+      rising out of it into the night sky; the room above warm and smoke-free. Clean educational illustration,
+      no labels, no text.
+    motion_prompt: >-
+      Flames enter from the fire opening, flow under the floor slabs leaving an orange glow, and grey smoke rises out of the chimney.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Outside the snowy farmhouse at night, a short stone-and-clay chimney at the far end of the house puffing
+          grey smoke into the starry sky, warm light glowing through the paper doors, no smoke inside.
+        motion_prompt: >-
+          Grey smoke puffs steadily out of the chimney and drifts into the starry sky; snow falls gently.
+        camera: slow tilt up
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이렇게 바닥을 데우는 지혜는, 2천 년 넘게 이어져 왔습니다."
+        captions: ["이렇게 바닥을 데우는 지혜는", "2천 년 넘게 / 이어져 왔습니다"]
+    visual: 연기 없는 따뜻한 방, 집주인과 가족이 바닥에 앉아 손을 대고 웃는다
+    image_prompt: >-
+      The cozy farmhouse room on the snowy night, smoke-free and warmly lit, the homeowner and his small family
+      sitting on the warm yellow floor, palms pressed to it, laughing; a quilt spread on the floor.
+    characters: [owner]
+    motion_prompt: >-
+      The family press their palms to the warm floor and laugh; the homeowner stretches out happily on the floor.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "아궁이 불로 바닥을 데우는 이 따뜻한 방이 바로, 온돌입니다."
+        captions: ["아궁이 불로 바닥을 데우는", "이 따뜻한 방이 / 바로, 온돌입니다"]
+    visual: 집주인이 따뜻한 바닥에 누워 미소, 카메라가 빠지며 눈 덮인 초가집과 굴뚝 연기가 보인다
+    image_prompt: >-
+      The homeowner lying on his back on the warm yellow floor with his hands behind his head, eyes closed, a
+      blissful smile, a soft orange glow beneath the floor, paper door half open to the snowy night.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner sighs contentedly; the camera slowly pulls back out through the paper door to the snowy
+      thatched house with smoke rising from its chimney.
+    camera: slow pull back
+
+sources:
+  - "한국민족문화대백과 — 온돌문화 (아궁이 → 고래(불길과 연기가 지나는 길) → 구들장(얇고 넓은 돌) → 굴뚝, 바닥을 직접 데워 방 공기를 덥힘; 신석기·청동기부터, 초기 철기 고래식 구들과 굴뚝, 고려 후기 전면 온돌, 2018 국가무형문화재 지정) — https://encykorea.aks.ac.kr/Article/E0077489"
+  - "경향신문 2018-03-16 — 문화재청 '온돌문화' 국가무형문화재 지정 예고 (청동기부터 발해까지 2000년 이상 이어진 난방, 『구당서』 '긴 구들 아래 불을 지펴 방을 덥힌다') — https://www.khan.co.kr/article/201803161535011"
+
+accuracy_notes:
+  - "집주인 인물과 가족, 감정, 대사는 설명용 재구성. 특정 인물이나 온돌을 처음 만든 사람의 실제 이야기가 아니다."
+  - "온돌은 한 사람이 발명한 것이 아니라 수천 년에 걸쳐 발달했다. '집주인이 만들었다'는 이야기 흐름을 위한 단순화."
+  - "'발을 동동 굴렀습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "방 안 화덕의 연기 문제는 이야기의 출발점으로 단순화한 설정. 구체적 수치나 기록은 쓰지 않는다."
+  - "'2천 년 넘게'는 문화재청 지정 예고(경향신문 2018)의 '2000년 이상' 기준."
+  - "아랫목·윗목, 부뚜막 취사 겸용 등은 이번 대본에서 쓰지 않는다 (근거를 따로 확인하지 않음)."
+  - "단면도는 고래 구조를 단순화한 그림이며 실측 치수가 아니다."
+
+youtube:
+  titles:
+    - 불은 밖에서 피웠는데 방이 따뜻한 이유, 2천 년 된 한국의 바닥 난방
+    - 연기는 빼고 온기만 들인 천재적인 방법
+    - 보일러 없던 시절, 방바닥이 뜨끈했던 비밀
+  description: |-
+    🔥 방 안에서 불을 피우면 연기 때문에 콜록, 불을 끄면 추워서 덜덜… 어떻게 해야 할까요?
+
+    옛사람들의 답은 '불을 방 밖으로 내보내기'였습니다.
+    아궁이 불길이 방바닥 밑 고래를 지나며 돌을 데우고 🪨
+    연기는 반대편 굴뚝으로 쏙 빠져나가도록요.
+
+    2천 년 넘게 이어진 이 지혜, 오늘 우리 집 바닥 난방의 할아버지랍니다 🏠
+  comment_question: 겨울에 뜨끈한 바닥에서 하고 싶은 것, 하나만 꼽는다면?
+  hashtags: [온돌, 구들, 국가무형유산, 한국전통, 쇼츠]
