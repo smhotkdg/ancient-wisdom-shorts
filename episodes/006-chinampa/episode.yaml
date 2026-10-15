@@ -1,0 +1,226 @@
+# 006 치남파 — 호수 위에 밭을 만든 아즈텍 사람들
+id: "006"
+slug: chinampa
+status: script_ok
+working_title: 아즈텍 사람들은 어떻게 호수 위에 밭을 만들었을까?
+title_lines: ["호수 한가운데에", "밭을 만들었다고?"]
+hook: 두 손 두 발 다 들었습니다
+caption_keywords: [호수, 진흙, 말뚝, 버드나무, 물길]
+
+story:
+  hero: 농부
+  reveal: [치남파]
+
+characters:
+  - id: farmer
+    name: 농부
+    name_en: Aztec farmer
+    description: >-
+      a cheerful, sturdy Aztec man in his 30s with warm brown skin, straight black hair cut in a fringe, kind eyes,
+      wearing a simple white cotton cloak tied at one shoulder over a plain cotton waist garment, barefoot or
+      simple sandals, holding a wooden digging stick
+    note: 이야기 주인공. 호수 위 도시에서 가족을 먹여 살려야 하는 농부
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "호수 위 도시의 한 농부는 두 손 두 발 다 들었습니다."
+        captions: ["호수 위 도시의 한 농부는 / 두 손 두 발 다 들었습니다"]
+      - text: "도시가 호수 한가운데라, 옥수수를 심을 땅이 한 뼘도 없었거든요."
+        captions: ["도시가 호수 한가운데라", "옥수수를 심을 땅이 / 한 뼘도 없었거든요"]
+    visual: 호수 한가운데 섬 도시, 물가에 선 농부가 옥수수 씨앗 주머니를 들고 두 팔을 번쩍 든다
+    image_prompt: >-
+      A wide sunny view of an ancient Aztec island city in the middle of a large blue lake, white stone temples and
+      houses crowded edge to edge, volcanoes in the distance; in the foreground the farmer standing at the water's
+      edge holding a small pouch of corn seeds, throwing both arms up in despair.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer throws both arms up and lets them drop with a big sigh; gentle waves lap at the stone edge.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the farmer kneeling at the stone edge of the island city, looking down at an open palm full of
+          corn seeds, nothing but water in front of him, crowded houses behind him, a puzzled frown.
+        characters: [farmer]
+        motion_prompt: >-
+          The farmer looks from the seeds in his palm to the water and back, shaking his head slowly.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "사람은 자꾸 늘어나는데, 주변은 온통 질척한 늪과 물뿐이었죠."
+        captions: ["사람은 자꾸 늘어나는데", "주변은 온통 / 질척한 늪과 물뿐이었죠"]
+    visual: 붐비는 섬 도시 시장, 바깥은 질척한 늪과 갈대밭, 농부의 발이 진흙에 빠진다
+    image_prompt: >-
+      The edge of the crowded island city where the land turns into a muddy reed marsh, many townspeople bustling
+      behind, the farmer stepping into the swamp and sinking up to his knees in mud, reeds all around.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer's leg sinks deeper into the mud; he wobbles, grimaces and pulls his foot out with a squelch.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "땅이 없다면, 대체 어디에 밭을 만들어야 할까요?"
+        captions: ["땅이 없다면", "대체 어디에 / 밭을 만들어야 할까요?"]
+    visual: 카누에 앉은 농부가 넓은 호수를 바라보며 골똘히 생각
+    image_prompt: >-
+      The farmer sitting in a small wooden dugout canoe on the calm lake at sunset, chin in hand, staring
+      thoughtfully across the water at the reeds and the muddy shallows.
+    characters: [farmer]
+    motion_prompt: >-
+      The canoe drifts gently; the farmer taps his chin, then his eyes widen as he looks down into the shallow water.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 농부는 얕은 호수에 나무 말뚝을 박아, 울타리를 둘렀습니다."
+        captions: ["그래서 농부는 얕은 호수에 / 나무 말뚝을 박아", "울타리를 둘렀습니다"]
+      - text: "말뚝 사이사이는 갈대로 촘촘히 엮었죠."
+        captions: ["말뚝 사이사이는 / 갈대로 촘촘히 엮었죠"]
+    visual: 농부가 얕은 물에 서서 나무 말뚝을 박아 길쭉한 네모 울타리를 만든다
+    image_prompt: >-
+      The farmer standing knee-deep in the shallow lake, hammering a wooden pole into the lake bed with a stone
+      mallet; a long rectangular outline of wooden poles already rising from the water beside him.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer swings the stone mallet and drives the pole down; ripples spread across the water with each blow.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the farmer's hands weaving long green reeds between the wooden poles, forming a tight woven
+          fence wall standing in the shallow lake water.
+        characters: [farmer]
+        motion_prompt: >-
+          The farmer's hands weave a reed in and out between the poles and pull it tight; water ripples below.
+        camera: slow pan along the fence
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 그 안에 호수 바닥 진흙과 썩은 풀을, 층층이 쌓아 올렸습니다."
+        captions: ["그리고 그 안에 / 호수 바닥 진흙과 썩은 풀을", "층층이 쌓아 올렸습니다"]
+    visual: 단면도 — 말뚝 울타리 안에 진흙과 풀이 층층이 쌓여 물 위로 올라온다
+    image_prompt: >-
+      Side cross-section of the shallow lake: a rectangular fence of wooden poles and woven reeds standing on the
+      lake bed, inside it alternating layers of dark mud and green-brown decaying plants piling up from the bottom
+      until they rise above the water surface. Clean educational illustration, no labels, no text.
+    motion_prompt: >-
+      Layer after layer of dark mud and plant matter drops in and stacks up inside the fence until it rises above the water.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "드디어 물 위로 기름진 밭이 솟았고, 옥수수와 콩, 호박이 쑥쑥 자랐죠."
+        captions: ["드디어 물 위로 / 기름진 밭이 솟았고", "옥수수와 콩, 호박이 / 쑥쑥 자랐죠"]
+    visual: 물 위의 길쭉한 밭에서 옥수수·콩·호박이 자라고 농부가 기뻐한다
+    image_prompt: >-
+      A long narrow rectangular garden plot rising just above the lake water, its dark rich soil full of young corn
+      stalks, bean vines and big squash leaves, the farmer kneeling in the middle with a huge happy grin.
+    characters: [farmer]
+    motion_prompt: >-
+      Time-lapse: corn stalks shoot up, bean vines curl around them and squash leaves unfurl; the farmer laughs.
+    camera: slow pull back
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 물살에 흙이 조금씩 쓸려 나가면, 이 밭은 어떻게 버틸까요?"
+        captions: ["그런데 물살에 흙이 / 조금씩 쓸려 나가면", "이 밭은 어떻게 / 버틸까요?"]
+    visual: 밭 가장자리 흙이 물에 무너져 흘러내리고 농부가 깜짝 놀란다
+    image_prompt: >-
+      Close view of the edge of the garden plot where chunks of soil are crumbling into the lake water, the farmer
+      crouching at the edge with a shocked, worried face, hands reaching out.
+    characters: [farmer]
+    motion_prompt: >-
+      A clump of soil crumbles and slides into the water with a splash; the farmer gasps and grabs at it.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 농부는 밭 가장자리를 따라 버드나무를 심었습니다."
+        captions: ["그래서 농부는 / 밭 가장자리를 따라", "버드나무를 심었습니다"]
+      - text: "물속으로 뻗은 뿌리가, 그물처럼 흙을 꽉 붙잡아 준 거죠."
+        captions: ["물속으로 뻗은 뿌리가", "그물처럼 흙을 / 꽉 붙잡아 준 거죠"]
+    visual: 밭 둘레에 키 크고 가느다란 버드나무가 줄지어 서고, 물속 단면에 뿌리가 흙을 감싼다
+    image_prompt: >-
+      The farmer planting a young, tall, slender willow sapling at the edge of the garden plot, a neat row of
+      slender willows already standing along the border, reflected in the calm canal water.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer presses soil around the sapling and pats it; the slender willows sway gently in the breeze.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Underwater cross-section view at the edge of the garden plot: willow roots spreading down and sideways
+          like a net through the soil and around the wooden poles, holding the bank firmly in the water.
+          Clean educational illustration, no labels, no text.
+        motion_prompt: >-
+          The willow roots slowly grow and spread like a net, wrapping around the soil; tiny fish swim past.
+        camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "밭 사이 물길로는 카누가 다녔고, 물길 바닥 진흙은 다시 거름이 됐죠."
+        captions: ["밭 사이 물길로는 / 카누가 다녔고", "물길 바닥 진흙은 / 다시 거름이 됐죠"]
+    visual: 버드나무로 둘러싸인 밭들이 바둑판처럼 이어지고, 그 사이 물길로 카누가 오가며 진흙을 떠 올린다
+    image_prompt: >-
+      Aerial view of many long rectangular green garden plots lined with slender willows, arranged like a grid on
+      the lake, separated by narrow canals; canoes gliding along the canals, the farmer in one canoe scooping dark
+      mud from the canal bottom with a long-handled scoop.
+    characters: [farmer]
+    motion_prompt: >-
+      Canoes glide along the canals between the green plots; the farmer lifts a scoop of dark mud onto his plot.
+    camera: slow drone push forward
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "지금도 멕시코시티에서 농사짓는 이 호수 밭이 바로, 치남파입니다."
+        captions: ["지금도 멕시코시티에서 / 농사짓는", "이 호수 밭이 / 바로, 치남파입니다"]
+    visual: 농부가 수확한 옥수수를 카누에 싣고 웃으며, 카메라가 빠지며 끝없는 초록 밭과 물길이 펼쳐진다
+    image_prompt: >-
+      The farmer standing proudly in his canoe loaded with corn, squash and beans, smiling, gliding along a canal
+      between lush green plots lined with willows, the island city glowing in golden evening light behind.
+    characters: [farmer]
+    motion_prompt: >-
+      The farmer raises an ear of corn proudly; the camera slowly rises and pulls back to reveal endless green plots and canals.
+    camera: slow pull back and rise
+
+sources:
+  - "FAO 세계중요농업유산(GIAHS) — Chinampa agriculture in Xochimilco, Tláhuac and Milpa Alta (2017 지정, 아즈텍 시대부터 이어진 전통 방식, 지금도 농사, 수로·도랑을 따라 심은 아우에호테 버드나무 뿌리가 가장자리 침식을 막음) — https://www.fao.org/giahs/giahsaroundtheworld/designated-sites/latin-america-and-the-caribbean/chinampa-agriculture-in-the-world-natural-and-cultural-heritage-zone-in-xochimilco-tlahuac-and-milpa-alta/en/"
+  - "Te Papa(뉴질랜드 국립박물관) — Aztecs: Gardens in the lake (호수 바닥부터 진흙·썩은 풀·갈대를 층층이 쌓음, 갈대로 엮은 나무 기둥 틀, 버드나무로 고정, 수로 바닥 진흙으로 흙을 새로 돋움, 수로는 카누 길, 옥수수·콩·고추·호박, 20만 명 넘는 도시) — https://blog.tepapa.govt.nz/2013/09/24/aztecs-gardens-in-the-lake/"
+
+accuracy_notes:
+  - "농부 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 치남파를 처음 만든 사람의 실제 이야기가 아니다."
+  - "치남파는 한 사람이 발명한 것이 아니다. '농부가 만들었다'는 이야기 흐름을 위한 단순화."
+  - "'두 손 두 발 다 들었습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "흔히 '떠 있는 밭'이라 부르지만 실제로는 호수 바닥부터 쌓아 올린 밭이다. 대본에서 '떠 있다'는 표현을 쓰지 않는다."
+  - "'버드나무'는 아우에호테(Salix bonplandiana) — 키 크고 가느다란 버드나무로 그린다 (늘어진 수양버들 아님)."
+  - "인구(20만 명)·수확 횟수 같은 수치는 대본에 쓰지 않는다."
+  - "'지금도 멕시코시티에서 농사짓는'은 FAO GIAHS 지정 지역(소치밀코·틀라우악·밀파알타) 기준."
+  - "인물 복장은 단순화한 그림이며 특정 계층·시기의 고증 복식이 아니다."
+
+youtube:
+  titles:
+    - 땅이 없어서 호수 위에 밭을 만든 아즈텍 사람들
+    - 진흙과 버드나무로 만든 '물 위의 밭' 이야기
+    - 지금도 농사짓는 호수 위 밭의 비밀
+  description: |-
+    🌽 옥수수는 심어야 하는데… 도시가 통째로 호수 한가운데라면?
+
+    아즈텍 농부들의 답은 '밭을 직접 만들기'였습니다.
+    말뚝으로 울타리를 치고, 진흙과 풀을 층층이 쌓고 🪵
+    가장자리엔 버드나무를 심어 뿌리가 흙을 꽉 붙잡게!
+
+    밭 사이 물길로는 카누가 오가고, 바닥 진흙은 다시 거름으로 ♻️
+    이 호수 밭에서는 지금도 농사를 짓고 있답니다 🛶
+  comment_question: 여러분이라면 물 위의 밭에 무엇을 심어 보고 싶나요?
+  hashtags: [치남파, 아즈텍, 멕시코, 세계농업유산, 쇼츠]
