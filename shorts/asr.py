@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import difflib
+import functools
 import re
 from pathlib import Path
 
@@ -26,9 +27,14 @@ def available() -> bool:
         return False
 
 
-def transcribe(path: Path, model_size: str = "small", prompt: str = "") -> list[tuple[str, float, float]]:
+@functools.lru_cache(maxsize=2)
+def _model(model_size: str):
     from faster_whisper import WhisperModel
-    model = WhisperModel(model_size, device="auto", compute_type="int8")
+    return WhisperModel(model_size, device="auto", compute_type="int8")
+
+
+def transcribe(path: Path, model_size: str = "small", prompt: str = "") -> list[tuple[str, float, float]]:
+    model = _model(model_size)
     segments, _ = model.transcribe(str(path), language="ko", word_timestamps=True, beam_size=5,
                                    vad_filter=False, condition_on_previous_text=False,
                                    initial_prompt=prompt[:200] or None)
@@ -100,3 +106,25 @@ def align_script(lines: list[str], words: list[tuple[str, float, float]]) -> tup
         a["pause_after"] = round(b["start"] - a["end"], 3)
     out[-1]["pause_after"] = 0.0
     return out, ratio
+
+
+def transcribe_align(path: Path, lines: list[str], model_size: str = "small",
+                     good: float = 0.8) -> tuple[list[dict], float]:
+    """대본 힌트를 주고 인식 → 일치율이 낮으면 힌트 없이 다시 인식해 더 나은 쪽을 쓴다.
+
+    대본 전체를 initial_prompt 로 주면 Whisper 가 앞부분을 통째로 건너뛰는 일이 있다
+    (003: 힌트 있음 54% / 없음 98%).
+    """
+    best = None
+    for prompt in (" ".join(lines), ""):
+        try:
+            al, ratio = align_script(lines, transcribe(path, model_size, prompt=prompt))
+        except ValueError:
+            continue
+        if best is None or ratio > best[1]:
+            best = (al, ratio)
+        if ratio >= good:
+            break
+    if best is None:
+        raise ValueError("인식 결과가 대본과 전혀 맞지 않습니다")
+    return best

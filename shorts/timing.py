@@ -267,6 +267,46 @@ def _per_line_timing(ep: Episode) -> list[dict] | None:
     return out
 
 
+def _snap_to_speech(lines: list[dict], silences: list[tuple[float, float]]) -> list[dict]:
+    """Whisper 는 쉼 뒤 첫 단어의 시작을 앞 단어 끝(쉼 시작)으로 잡는다 → 자막이 목소리보다 먼저 뜬다.
+    단어 첫 글자의 시작이 무음 구간 안(또는 바로 앞)에 있으면 그 무음이 끝나는 곳(실제 말 시작)으로 옮긴다."""
+    from .asr import norm
+    last = 0.0
+    for ln in lines:
+        heads, k, prev = {}, 0, ""           # 단어 첫 글자 위치 → 앞 단어가 쉼표로 끝났는지
+        for w in ln["text"].split():
+            if norm(w):
+                heads[k] = k == 0 or bool(re.search(r"[,…]$", prev))
+                k += len(norm(w))
+                prev = w
+        cs = []
+        for i, c in enumerate(ln["char_starts"]):
+            if i in heads:
+                if heads[i]:
+                    # 문장 첫 단어·쉼표 뒤 단어: 앞에 쉼이 있어야 한다. Whisper 는 이 단어를 쉼보다
+                    # 0.5초 가까이 앞에 두기도 하므로, 근처에서 가장 긴 쉼의 끝을 말 시작으로 본다
+                    near = [(b - a, -abs(b - c), b) for a, b in silences if c - 0.4 <= a <= c + 0.5]
+                    if near:
+                        c = max(near)[2]
+                else:
+                    for a, b in silences:
+                        if a - 0.12 <= c < b:   # 쉼 바로 앞(0.12초 이내)이나 쉼 안에서 시작하면 쉼 끝으로
+                            c = b
+                            break
+            last = max(last, c)
+            cs.append(round(last, 3))
+        ln["char_starts"] = cs
+        ln["start"] = cs[0]
+        ln["end"] = max(ln["end"], cs[-1])
+    for a, b in zip(lines, lines[1:]):
+        # 앞 줄 끝은 다음 줄 시작 전 무음이 시작되는 곳으로
+        gap = next((x for x, y in silences if a["end"] - 0.3 <= x < b["start"] and y >= b["start"] - 0.02), None)
+        a["end"] = round(min(b["start"], gap if gap is not None else a["end"]), 3)
+        a["pause_after"] = round(b["start"] - a["end"], 3)
+    lines[-1]["pause_after"] = 0.0
+    return lines
+
+
 def build_timing(ep: Episode) -> dict:
     if not ep.raw_voice.exists():
         raise ShortsError(f"음성이 없습니다: {ep.raw_voice}  (python aw.py tts 또는 python aw.py voice --file ...)")
@@ -287,8 +327,7 @@ def build_timing(ep: Episode) -> dict:
             from . import asr
             if asr.available():
                 try:
-                    words = asr.transcribe(ep.voice, cfg.get("whisper_model", "small"), prompt=" ".join(texts))
-                    al, ratio = asr.align_script(texts, words)
+                    al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"))
                     if ratio >= float(cfg.get("min_match", 0.6)):
                         for ln, w in zip(lines, al):
                             # 문장 경계는 정확한 값 유지, 글자 시각은 그 안으로 제한
@@ -305,13 +344,12 @@ def build_timing(ep: Episode) -> dict:
         from . import asr
         if asr.available():
             try:
-                words = asr.transcribe(ep.voice, cfg.get("whisper_model", "small"), prompt=" ".join(texts))
-                al, ratio = asr.align_script(texts, words)
+                al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"))
             except Exception as exc:  # 모델 다운로드 실패 등
                 al, ratio = None, 0.0
                 warn = f"Whisper 실행 실패({type(exc).__name__}) — 무음 기반 정렬로 대체했습니다."
             if al and ratio >= float(cfg.get("min_match", 0.6)):
-                lines = al
+                lines = _snap_to_speech(al, detect_silences(ep.voice, -35, 0.05))
                 meta = {"speech_start": al[0]["start"], "speech_end": al[-1]["end"], "method": "whisper",
                         "match_ratio": round(ratio, 3), "warnings": []}
                 if ratio < 0.8:

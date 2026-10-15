@@ -105,7 +105,8 @@ def _render_frames(base: Image.Image, out: Path, duration: float, ep: Episode, m
     cover = max(W / bw, H / bh)
     vw, vh = W / cover, H / cover            # 원본 좌표계에서 z=1 일 때 보이는 영역
     n = max(1, int(round(duration * fps)))
-    cmd = ["ffmpeg", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps),
+    # 로그를 오류만 남긴다: stderr 를 끝에서야 읽으므로 진행 로그가 파이프를 채우면 ffmpeg·python 이 서로 기다리며 멈춘다
+    cmd = ["ffmpeg", "-y", "-nostats", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps),
            "-i", "-", "-f", "lavfi", "-t", f"{duration:.3f}", "-i", "anullsrc=r=48000:cl=stereo",
            "-map", "0:v", "-map", "1:a", "-t", f"{duration:.3f}", *ENC_MID, str(out)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
