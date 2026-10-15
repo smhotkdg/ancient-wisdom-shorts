@@ -47,8 +47,8 @@ scenes:
   - id: s02
     beat: problem
     lines:
-      - text: "글자를 한 자 한 자 새긴 나무판이, 무려 8만 장이 넘었는데 말이죠."
-        captions: ["글자를 한 자 한 자 / 새긴 나무판이", "무려 8만 장이 / 넘었는데 말이죠"]
+      - text: "글자를 한 자 한 자 정성껏 새긴 나무판이, 무려 8만 장이 넘었는데 말이죠."
+        captions: ["글자를 한 자 한 자 / 정성껏 새긴 나무판이", "무려 8만 장이 / 넘었는데 말이죠"]
     visual: 끝없이 쌓인 나무판 더미 앞에서 작은 스님이 놀란 표정
     image_prompt: >-
       A vast hall filled with towering stacks of carved wooden printing blocks reaching the ceiling, the small young
@@ -61,8 +61,8 @@ scenes:
   - id: s03
     beat: question
     lines:
-      - text: "이 나무판들을, 어떻게 수백 년 동안 지켜 냈을까요?"
-        captions: ["이 나무판들을", "어떻게 수백 년 동안 / 지켜 냈을까요?"]
+      - text: "이 많은 나무판들을, 대체 어떻게 수백 년 동안 지켜 냈을까요?"
+        captions: ["이 많은 나무판들을", "대체 어떻게 수백 년 동안 / 지켜 냈을까요?"]
     visual: 스님이 나무판 하나를 소중히 품에 안고 하늘을 올려다본다
     image_prompt: >-
       The monk standing on a mountain path at dawn, hugging one carved wooden block close to his chest, looking up
@@ -88,7 +88,7 @@ scenes:
   - id: s05
     beat: solution
     lines:
-      - "그리고 벽마다 나무 창살을 냈는데, 창 크기가 제각각이었죠."
+      - {text: "그리고 벽마다 나무 창살을 냈는데, 이상하게도 위아래 창 크기가 제각각이었죠.", captions: ["그리고 벽마다 / 나무 창살을 냈는데", "이상하게도 위아래 / 창 크기가 제각각이었죠"]}
     visual: 건물 벽 클로즈업 — 앞벽은 아래 창이 크고 위 창이 작다
     image_prompt: >-
       Close view of the long wooden hall's front wall: a row of simple vertical wooden lattice windows, a small
@@ -102,7 +102,7 @@ scenes:
   - id: s06
     beat: twist
     lines:
-      - "그런데 왜, 창 크기를 일부러 다르게 냈을까요?"
+      - "그런데 왜, 스님들은 창 크기를 일부러 다르게 냈을까요?"
     visual: 스님이 위 창과 아래 창을 번갈아 가리키며 고개를 갸웃
     image_prompt: >-
       The monk standing between a small high lattice window and a large low lattice window, pointing at both with
@@ -140,7 +140,7 @@ scenes:
   - id: s08
     beat: resolve
     lines:
-      - "습기는 바람에 실려 나가고, 나무판은 보송보송하게 숨을 쉬었죠."
+      - {text: "축축한 습기는 바람에 실려 쓱 빠져나가고, 나무판은 보송보송하게 숨을 쉬었죠.", captions: ["축축한 습기는 / 바람에 실려 쓱 빠져나가고", "나무판은 보송보송하게 / 숨을 쉬었죠"]}
     visual: 선반에 꽂힌 나무판들 사이로 습기가 바람에 실려 빠져나가고, 나무판이 뽀송하다
     image_prompt: >-
       Close-up of neat rows of dry, healthy wooden printing blocks standing on edge on a shelf, faint wisps of
@@ -152,7 +152,7 @@ scenes:
   - id: s09
     beat: info
     lines:
-      - "그렇게 500년 넘게, 이 집은 나무판들을 지켜 왔습니다."
+      - "그렇게 비가 오나 눈이 오나, 500년 넘게 이 집은 나무판들을 지켜 왔습니다."
     visual: 계절이 바뀌는 타임랩스 — 같은 건물 위로 눈, 비, 단풍이 지나간다
     image_prompt: >-
       The two long wooden halls at the top of the mountain temple seen from the front, framed by pine trees,

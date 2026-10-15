@@ -1,35 +1,35 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.6초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.3초
 The monk turns the warped block in his hands, frowns and sighs; mist drifts and raindrops fall from the eaves. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.6–8.7초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.3–7.9초
 Moisture beads slowly roll down the warped wooden block; mist drifts past; a drop falls. Camera: very slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.7–14.0초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.9–13.2초
 The camera slowly rises along the towering stacks of wooden blocks; the monk's mouth falls open. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 14.0–18.2초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.2–17.7초
 The monk hugs the block a little tighter and lifts his gaze toward the mountain; mist drifts up the valley. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 18.2–24.8초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 17.7–23.8초
 A breeze sweeps up from the valley, pine branches sway and mist flows up the slope toward the two halls at the top. Camera: slow push in toward the top halls. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 24.8–29.7초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 23.8–29.5초
 The monk walks along the wall, stops and tilts his head comparing the small upper window and the big lower window. Camera: slow pan along the wall. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 29.7–33.6초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 29.5–33.7초
 The monk points up at the small window, then down at the big one, and scratches his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 33.6–38.2초
+[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 33.7–37.8초
 Pale-blue breeze streams flow in through the big lower window, swirl between the shelves and rise out through the upper window on the opposite wall. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 38.2–41.7초
+[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 37.8–41.0초
 A gentle breeze moves through the shelves, dust drifts in the light shafts, the monk's robe sways and he smiles. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 41.7–47.0초
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 41.0–46.8초
 Faint wisps of moisture drift out between the blocks and slip away through the lattice window on the breeze. Camera: slow pan along the shelf. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 47.0–51.7초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 46.8–52.4초
 Time-lapse of the seasons passing over the halls: snow falls and melts, rain, autumn leaves drift by, the halls unchanged. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 51.7–58.1초
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 52.4–58.1초
 The monk slides the block into place and bows slightly; the camera slowly pulls back to reveal the endless rows. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
