@@ -7,6 +7,7 @@
 """
 from __future__ import annotations
 
+import math
 import re
 import shutil
 from pathlib import Path
@@ -59,73 +60,103 @@ def _char_weight(text: str) -> int:
     return max(1, len(re.sub(r"\s", "", text)))
 
 
+def _commas(text: str) -> int:
+    return len(re.findall(r"[,·…]", text))
+
+
 def align(lines: list[str], silences: list[tuple[float, float]], total: float) -> tuple[list[dict], dict]:
-    # 말 시작/끝
+    """대사 경계 찾기.
+
+    후보 = 말 중간의 쉼(무음). 문장 끝 쉼과 쉼표 쉼이 비슷하게 길 때 쉼만 보고 고르면 경계를 잘못 잡는다
+    (예: 12자 문장이 5초로 잡힘). 그래서 각 문장 길이가 '글자 수 × 말하는 속도 + 쉼표 쉼'에
+    맞는지(로그 비율 제곱)를 비용으로 넣고, 쉼 길이는 보조 점수로만 쓴다. 속도는 두 번 다시 추정한다.
+    """
     speech_start, speech_end = 0.0, total
     sil = list(silences)
     if sil and sil[0][0] <= 0.05:
         speech_start = sil.pop(0)[1]
     if sil and sil[-1][1] >= total - 0.05:
         speech_end = sil.pop()[0]
-    interior = [s for s in sil if speech_start < s[0] and s[1] < speech_end]
-    n = len(lines)
-    need = n - 1
-    warnings = []
-    # 글자 비례 예상 경계 위치
-    w = [_char_weight(t) for t in lines]
+    interior = [x for x in sil if speech_start < x[0] and x[1] < speech_end]
+    n, need = len(lines), len(lines) - 1
+    chars = [_char_weight(t) for t in lines]
+    commas = [_commas(t) for t in lines]
+    warnings: list[str] = []
     span = speech_end - speech_start
-    cum, expected = 0, []
-    for wi in w[:-1]:
-        cum += wi
-        expected.append(speech_start + span * cum / sum(w))
+    M = len(interior)
 
-    chosen: list[tuple[float, float]] = []
-    if need > 0 and len(interior) >= need:
-        M = len(interior)
-        INF = float("inf")
-        # cost: 예상 위치와의 거리(정규화) - 쉼 길이 보너스
-        def cost(i, j):
-            s, e = interior[j]
-            mid = (s + e) / 2
-            return abs(mid - expected[i]) / max(span, 1e-6) * 4.0 - min(e - s, 1.2) * 1.0
-
-        dp = [[INF] * M for _ in range(need)]
-        prev = [[-1] * M for _ in range(need)]
-        for j in range(M):
-            dp[0][j] = cost(0, j)
-        for i in range(1, need):
-            best, arg = INF, -1
-            for j in range(M):
-                if j - 1 >= 0 and dp[i - 1][j - 1] < best:
-                    best, arg = dp[i - 1][j - 1], j - 1
-                if best < INF:
-                    dp[i][j] = best + cost(i, j)
-                    prev[i][j] = arg
-        j = min(range(M), key=lambda k: dp[need - 1][k])
-        if dp[need - 1][j] == INF:
-            raise ShortsError("대사 경계를 찾지 못했습니다")
-        picks = [j]
-        for i in range(need - 1, 0, -1):
-            j = prev[i][j]
-            picks.append(j)
-        chosen = [interior[k] for k in reversed(picks)]
-        method = "silence_dp"
-    else:
-        if need > 0:
-            warnings.append(f"쉼이 부족합니다 (필요 {need}, 검출 {len(interior)}). 글자 비례로 나눴습니다 — 자막 시간을 확인하세요.")
-        chosen = [(t, t) for t in expected]
+    if need == 0:
+        chosen, method = [], "single"
+    elif M < need:
+        warnings.append(f"쉼이 부족합니다 (필요 {need}, 검출 {M}). 글자 비례로 나눴습니다 — 자막 시간을 확인하세요.")
+        cum, chosen = 0, []
+        for c in chars[:-1]:
+            cum += c
+            t = speech_start + span * cum / sum(chars)
+            chosen.append((t, t))
         method = "proportional"
+    else:
+        comma_pause, line_pause = 0.30, 0.60
+        rate = max(0.05, (span - need * line_pause - sum(commas) * comma_pause) / sum(chars))
+        INF = float("inf")
+        for _ in range(2):
+            def seg_cost(i, a, b):
+                dur = b - a
+                if dur <= 0.15:
+                    return INF
+                exp = chars[i] * rate + commas[i] * comma_pause
+                return 6.0 * math.log(dur / exp) ** 2
+
+            starts = [x[1] for x in interior]
+            ends = [x[0] for x in interior]
+            bonus = [-0.5 * min(x[1] - x[0], 1.2) for x in interior]
+            # dp[i][j]: i번째 경계를 쉼 j 로 골랐을 때 대사 0..i 까지의 최소 비용
+            dp = [[INF] * M for _ in range(need)]
+            prev = [[-1] * M for _ in range(need)]
+            for j in range(M):
+                dp[0][j] = seg_cost(0, speech_start, ends[j]) + bonus[j]
+            for i in range(1, need):
+                for j in range(i, M):
+                    best, arg = INF, -1
+                    for k in range(i - 1, j):
+                        if dp[i - 1][k] == INF:
+                            continue
+                        c = dp[i - 1][k] + seg_cost(i, starts[k], ends[j])
+                        if c < best:
+                            best, arg = c, k
+                    if arg >= 0:
+                        dp[i][j] = best + bonus[j]
+                        prev[i][j] = arg
+            last = [dp[need - 1][j] + seg_cost(n - 1, starts[j], speech_end) for j in range(M)]
+            j = min(range(M), key=lambda k: last[k])
+            if last[j] == INF:
+                raise ShortsError("대사 경계를 찾지 못했습니다")
+            picks = [j]
+            for i in range(need - 1, 0, -1):
+                j = prev[i][j]
+                picks.append(j)
+            chosen = [interior[k] for k in reversed(picks)]
+            # 고른 경계로 말하는 속도를 다시 추정
+            edges = [speech_start] + [c[1] for c in chosen]
+            ends_ = [c[0] for c in chosen] + [speech_end]
+            talk = sum(e - s0 for s0, e in zip(edges, ends_)) - sum(commas) * comma_pause
+            rate = max(0.05, talk / sum(chars))
+        method = "silence_rate_dp"
 
     out = []
     start = speech_start
     for i, text in enumerate(lines):
-        if i < need:
-            end, nxt = chosen[i]
-        else:
-            end, nxt = speech_end, speech_end
+        end, nxt = (chosen[i] if i < need else (speech_end, speech_end))
         out.append({"index": i, "text": text, "start": round(start, 3), "end": round(end, 3),
                     "pause_after": round(nxt - end, 3)})
         start = nxt
+    # 이상치 경고: 글자당 시간이 평균의 0.6배 미만 / 1.6배 초과
+    per = [(l["end"] - l["start"] - commas[i] * 0.3) / chars[i] for i, l in enumerate(out)]
+    avg = sum(per) / len(per)
+    odd = [i for i, v in enumerate(per) if v < avg * 0.55 or v > avg * 1.9]
+    if odd:
+        warnings.append("말하는 속도가 튀는 대사가 있습니다 (경계 오류 가능): "
+                        + ", ".join(f"{i}번 {per[i]:.3f}s/자" for i in odd) + " — aw.py timing 결과를 확인하세요.")
     meta = {"speech_start": round(speech_start, 3), "speech_end": round(speech_end, 3),
             "method": method, "warnings": warnings}
     return out, meta
@@ -184,6 +215,10 @@ def build_timing(ep: Episode) -> dict:
     total = media_duration(ep.voice)
     silences = detect_silences(ep.voice)
     lines, meta = align([l.text for l in ep.lines], silences, total)
+    # 문장 안 쉼(쉼표 등) — 자막 묶음 전환을 실제 쉼에 맞추는 데 쓴다
+    fine = detect_silences(ep.voice, -35, 0.12)
+    for ln in lines:
+        ln["pauses"] = [[round(a, 3), round(b, 3)] for a, b in fine if ln["start"] + 0.2 < a and b < ln["end"] - 0.2]
     timing = {"voice_file": "audio/voice.wav", "voice_duration": round(total, 3),
               "rate_after": ep.project["voice"].get("rate_after", 1.0),
               "lead_in": float(ep.project["duration"]["lead_in_seconds"]),

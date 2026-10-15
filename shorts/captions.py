@@ -150,12 +150,18 @@ def time_chunks(captions: list[dict], timing: dict, offset: float, gap_fill: flo
         s, e = tl["start"], tl["end"]
         weights = [max(1, len(_norm("".join(c)))) for c in cap["chunks"]]
         total = sum(weights)
-        t = s
-        for chunk, w in zip(cap["chunks"], weights):
-            dur = (e - s) * w / total
+        # 글자 비례 경계 → 문장 안 실제 쉼(있으면)의 가운데로 맞춘다 (±0.7초 안)
+        pauses = [(a + b) / 2 for a, b in tl.get("pauses") or []]
+        cuts, acc = [], 0
+        for w in weights[:-1]:
+            acc += w
+            t0 = s + (e - s) * acc / total
+            near = [p for p in pauses if abs(p - t0) <= 0.7 and (not cuts or p > cuts[-1] + 0.4)]
+            cuts.append(min(near, key=lambda p: abs(p - t0)) if near else t0)
+        edges = [s, *cuts, e]
+        for chunk, a, b in zip(cap["chunks"], edges, edges[1:]):
             events.append({"line": cap["line"], "scene": cap["scene"], "lines": chunk,
-                           "start": round(t + offset, 3), "end": round(t + dur + offset, 3)})
-            t += dur
+                           "start": round(a + offset, 3), "end": round(b + offset, 3)})
     # 짧은 공백은 다음 자막 시작까지 이어서 깜빡임을 없앤다
     for a, b in zip(events, events[1:]):
         if 0 < b["start"] - a["end"] <= gap_fill:

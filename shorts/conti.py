@@ -87,6 +87,8 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
 1. python aw.py status {eid} — 이미지 {n_img}장, Grok 클립 {len(grok_items)}개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
 2. 음성(audio/raw.wav)이 없으면: 대본 {n_chars}자 = Typecast 크레딧 약 {n_chars}. 실행해도 되는지 나에게 먼저 묻고, 승인 후 python aw.py tts {eid}.
    네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
+2-1. 음성이 이미 있으면 python aw.py timing {eid} — 문장 경계를 다시 계산 (크레딧 0).
+   "말하는 속도가 튀는 대사" 경고가 나오면 그 대사 번호와 시간을 보고한다.
 3. python aw.py conti {eid} — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
 4. python aw.py compose {eid}
 5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
@@ -99,7 +101,8 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose
 7. python aw.py youtube {eid} — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
-8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과.
+8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과(음성·자막 정렬 방식 포함).
+   싱크 확인: output/final.srt 의 몇 군데(처음·중간·끝)를 실제 소리와 비교해 자막이 0.3초 이상 어긋나는 곳이 있으면 보고.
 9. episode.yaml status: done, docs/topics.md 의 {eid} 상태를 "완성"으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).
 """
 

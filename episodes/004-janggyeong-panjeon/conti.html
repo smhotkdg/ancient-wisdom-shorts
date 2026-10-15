@@ -46,6 +46,8 @@ button.copy.big.ok{background:var(--ink);color:var(--bg);border-color:var(--ink)
 1. python aw.py status 004 — 이미지 13장, Grok 클립 12개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
 2. 음성(audio/raw.wav)이 없으면: 대본 402자 = Typecast 크레딧 약 402. 실행해도 되는지 나에게 먼저 묻고, 승인 후 python aw.py tts 004.
    네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
+2-1. 음성이 이미 있으면 python aw.py timing 004 — 문장 경계를 다시 계산 (크레딧 0).
+   &quot;말하는 속도가 튀는 대사&quot; 경고가 나오면 그 대사 번호와 시간을 보고한다.
 3. python aw.py conti 004 — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
 4. python aw.py compose 004
 5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
@@ -58,7 +60,8 @@ button.copy.big.ok{background:var(--ink);color:var(--bg);border-color:var(--ink)
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose
 7. python aw.py youtube 004 — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
-8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과.
+8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과(음성·자막 정렬 방식 포함).
+   싱크 확인: output/final.srt 의 몇 군데(처음·중간·끝)를 실제 소리와 비교해 자막이 0.3초 이상 어긋나는 곳이 있으면 보고.
 9. episode.yaml status: done, docs/topics.md 의 004 상태를 &quot;완성&quot;으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).
 </pre></div></div><div class='panel' data-panel='gpt' hidden><div class='bulk'><p><b>ChatGPT 이미지 프롬프트 13개</b> · 캐릭터 시트부터 순서대로. 첨부 표시가 있으면 그 이미지를 함께 올리세요.</p><button class='copy big' data-target='all-gpt' onclick='copyText(this)'>전체 복사</button></div><pre class='hidden-src' id='all-gpt'>[캐릭터: 스님] 저장: images/char_monk.png
 Character reference sheet of a gentle, round-faced young Korean Buddhist monk in his 20s with a shaved head, kind eyes and a warm smile, wearing loose grey traditional monk robes with a brown sash, straw sandals. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark.

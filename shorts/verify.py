@@ -51,6 +51,11 @@ def verify(ep: Episode, animatic: bool = False) -> dict:
     check("프레임레이트", abs(num / den - fps) < 0.01, f"{num / den:.3f}")
     check("오디오 트랙", len(aus) == 1, f"{len(aus)}개")
     check("영상 길이", abs(dur - report["duration"]) < 0.15, f"{dur:.3f}초 (계획 {report['duration']:.3f})")
+    tm = ep.timing() or {}
+    if tm and not tm.get("estimated"):
+        check("음성·자막 정렬 방식", tm.get("method") in ("silence_rate_dp", "single"),
+              f"{tm.get('method')} (구버전이면 python aw.py timing 으로 다시 계산)")
+        warns.extend(tm.get("warnings") or [])
     lo, hi = proj["duration"]["target_seconds"]
     if not lo <= dur <= hi:
         warns.append(f"길이 {dur:.1f}초가 목표 {lo}~{hi}초 밖입니다")
