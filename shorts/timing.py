@@ -272,25 +272,30 @@ def _snap_to_speech(lines: list[dict], silences: list[tuple[float, float]]) -> l
     단어 첫 글자의 시작이 무음 구간 안(또는 바로 앞)에 있으면 그 무음이 끝나는 곳(실제 말 시작)으로 옮긴다."""
     from .asr import norm
     last = 0.0
-    for ln in lines:
+    for n, ln in enumerate(lines):
         heads, k, prev = {}, 0, ""           # 단어 첫 글자 위치 → 앞 단어가 쉼표로 끝났는지
         for w in ln["text"].split():
             if norm(w):
                 heads[k] = k == 0 or bool(re.search(r"[,…]$", prev))
                 k += len(norm(w))
                 prev = w
+        orig = ln["char_starts"]
+        nxt_line = lines[n + 1]["char_starts"][0] if n + 1 < len(lines) else float("inf")
         cs = []
-        for i, c in enumerate(ln["char_starts"]):
+        for i, c in enumerate(orig):
             if i in heads:
+                # 다음 단어의 (원래) 시작을 넘어 옮기면 다른 단어 뒤의 쉼에 붙은 것이다
+                limit = next((orig[j] for j in sorted(heads) if j > i), nxt_line) - 0.03
                 if heads[i]:
                     # 문장 첫 단어·쉼표 뒤 단어: 앞에 쉼이 있어야 한다. Whisper 는 이 단어를 쉼보다
                     # 0.5초 가까이 앞에 두기도 하므로, 근처에서 가장 긴 쉼의 끝을 말 시작으로 본다
-                    near = [(b - a, -abs(b - c), b) for a, b in silences if b >= c - 0.15 and a <= c + 0.5]
+                    near = [(b - a, -abs(b - c), b) for a, b in silences
+                            if b >= c - 0.15 and a <= c + 0.5 and b < limit]
                     if near:
                         c = max(near)[2]
                 else:
                     for a, b in silences:
-                        if a - 0.12 <= c < b:   # 쉼 바로 앞(0.12초 이내)이나 쉼 안에서 시작하면 쉼 끝으로
+                        if a - 0.12 <= c < b < limit:   # 쉼 바로 앞(0.12초 이내)이나 쉼 안에서 시작하면 쉼 끝으로
                             c = b
                             break
             last = max(last, c)

@@ -1,11 +1,11 @@
 # 005 온돌 — 불은 방 밖에서, 온기는 방바닥으로
 id: "005"
 slug: ondol
-status: script_ok
+status: done
 working_title: 옛사람들은 왜 불을 방 밖에서 피웠을까?
-title_lines: ["불은 방 밖에서 피웠는데", "방이 따뜻하다고?"]
+title_lines: ["불은 밖에서 피웠는데", "방이 따뜻하다고?"]
 hook: 발을 동동 굴렀습니다
-caption_keywords: [연기, 아궁이, 고래, 돌, 굴뚝]
+caption_keywords: [연기, 아궁이, 고래, 돌, 굴뚝, 온돌]
 
 story:
   hero: 집주인
@@ -78,7 +78,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 집주인은 불을 아예 방 밖으로 내보냈습니다."
-        captions: ["그래서 집주인은 불을 / 아예 방 밖으로 내보냈습니다"]
+        captions: ["그래서 집주인은 / 불을 아예", "방 밖으로 내보냈습니다"]
       - text: "벽 바깥에 불구멍, 아궁이를 낸 거죠."
         captions: ["벽 바깥에 불구멍 / 아궁이를 낸 거죠"]
     visual: 방 벽 바깥 낮은 곳에 돌로 만든 아궁이, 집주인이 장작을 넣고 불을 지핀다
@@ -116,7 +116,7 @@ scenes:
     beat: solution
     lines:
       - text: "그 위를 얇고 넓은 돌로 덮자, 뜨겁게 달궈진 돌바닥이 방 전체를 데웠죠."
-        captions: ["그 위를 얇고 넓은 돌로 덮자", "뜨겁게 달궈진 돌바닥이 / 방 전체를 데웠죠"]
+        captions: ["그 위를 얇고 / 넓은 돌로 덮자", "뜨겁게 달궈진 돌바닥이 / 방 전체를 데웠죠"]
     visual: 집주인이 고래 위에 넓적한 돌판을 덮고, 돌판이 주황빛으로 달아오른다
     image_prompt: >-
       The homeowner laying a large flat thin stone slab over the stone channels, other slabs already covering most
@@ -168,7 +168,7 @@ scenes:
     beat: info
     lines:
       - text: "이렇게 바닥을 데우는 지혜는, 2천 년 넘게 이어져 왔습니다."
-        captions: ["이렇게 바닥을 데우는 지혜는", "2천 년 넘게 / 이어져 왔습니다"]
+        captions: ["이렇게 바닥을 / 데우는 지혜는", "2천 년 넘게 / 이어져 왔습니다"]
     visual: 연기 없는 따뜻한 방, 집주인과 가족이 바닥에 앉아 손을 대고 웃는다
     image_prompt: >-
       The cozy farmhouse room on the snowy night, smoke-free and warmly lit, the homeowner and his small family

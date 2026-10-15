@@ -307,7 +307,8 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     report["jump_zoom_intervals"] = len(zoom_iv)
     for k, ov in enumerate(overlays):
         nxt = f"[v{k}]"
-        en = "" if ov["kind"] == "title" else f":enable='between(t,{ov['start']:.3f},{ov['end']:.3f})'"
+        # 끝은 열린 구간: between() 은 양 끝을 포함해, 전환 시각이 프레임과 딱 맞으면 앞뒤 자막이 한 프레임 겹친다
+        en = "" if ov["kind"] == "title" else f":enable='gte(t,{ov['start']:.3f})*lt(t,{ov['end']:.3f})'"
         fc.append(f"{vlabel}[{first_ov + k}:v]overlay=x={ov['x']}:y={ov['y']}{en}{nxt}")
         vlabel = nxt
     fc.append(f"{vlabel}format=yuv420p[vout]")
