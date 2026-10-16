@@ -14,7 +14,9 @@ REACTIONS = ["멘탈이 나가", "머리를 쥐어뜯", "속이 터졌", "발을
              "제정신이 아닌", "놀라 자빠", "기가 막히", "말도 안 되"]
 TURNS = ["그런데", "하지만", "그때", "그래서", "결국", "드디어", "이번엔", "그러자", "그렇게"]
 LIST_WORDS = ["첫째", "둘째", "셋째", "먼저,", "다음으로"]
-# 화면 인물 = 주인공 한 명 (2026-10-16 사용자: 인물이 많으면 집중도가 떨어진다 — 008 군중 장면)
+# 화면 인물 = 주인공 중심 (2026-10-16 사용자: 008처럼 인물이 너무 많으면 집중도↓. 007 s08처럼 주인공이 가운데이고
+# 장면에 어울리는 배경 인물 몇 명은 좋다) → 여러 사람이 나오는 장면이 MAX_CROWD 개를 넘으면 실패
+MAX_CROWD = 3
 CROWD_EN = re.compile(r"\b(villagers|crowd|crowds|workers|townspeople|farmers|families|family|children|everyone|"
                       r"group of|lines of|many hands|people)\b", re.I)
 CROWD_KO = re.compile(r"사람들|마을 사람|일꾼|군중|가족|농부들|아이들|여럿")
@@ -82,8 +84,11 @@ def check(ep: Episode) -> dict:
         item(False, "정답 이름을 마지막까지 아낌", "story.reveal 미지정")
 
     crowd = crowd_scenes(ep)
-    item(not crowd, "화면 인물은 주인공 한 명 (군중·일꾼·가족 장면 없음)",
-         f"여러 사람이 나오는 장면: {', '.join(crowd)}" if crowd else "통과")
+    item(len(crowd) <= MAX_CROWD, f"주인공 중심 화면 (배경 인물 장면 {MAX_CROWD}개 이하)",
+         f"배경 인물 장면 {len(crowd)}개: {', '.join(crowd)}" if crowd else "주인공만")
+    if crowd:
+        tips.append("배경 인물이 있는 장면은 주인공을 가운데 크게, 다른 사람은 뒤쪽에 작게 몇 명만 (프롬프트에 "
+                    "'a few people in the background, smaller' 처럼) — 군중이 주인공을 가리지 않게")
 
     notes = " ".join(ep.data.get("accuracy_notes") or [])
     item("재구성" in notes, "정확성 메모에 '재구성' 명시", "있음" if "재구성" in notes else "없음")
