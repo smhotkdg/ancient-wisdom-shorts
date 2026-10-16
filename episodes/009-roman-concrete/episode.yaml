@@ -1,7 +1,7 @@
 # 009 로마 콘크리트 — 바닷물을 만나 더 단단해지는 방파제
 id: "009"
 slug: roman-concrete
-status: script_ok
+status: done
 working_title: 로마 사람들은 왜 일부러 바닷물로 반죽했을까?
 title_lines: ["바닷물에 닿을수록", "더 단단해진다고?"]
 hook: 말문이 막혔습니다
@@ -103,7 +103,7 @@ scenes:
     beat: solution
     lines:
       - text: "이 반죽을 나무 틀 안에 채워, 새 방파제를 쌓았습니다."
-        captions: ["이 반죽을 나무 틀 안에 채워", "새 방파제를 쌓았습니다"]
+        captions: ["이 반죽을 / 나무 틀 안에 채워", "새 방파제를 쌓았습니다"]
     visual: 바다에 박은 나무 틀 위에서 기술자가 반죽 바구니를 부어 채운다
     image_prompt: >-
       A large rectangular wooden frame built out into the shallow sea, the engineer alone standing on a plank across
@@ -192,6 +192,7 @@ scenes:
     motion_prompt: >-
       The engineer knocks on the wall twice and laughs; the camera slowly pulls back and rises over the busy harbor.
     camera: slow pull back and rise
+    sfx_volume: 0               # 클립에 웃음소리("Ha ha ha") — 효과음 끔
 
 sources:
   - "AIP Inside Science 2017 — Secrets of longevity of Roman concrete (석회·바닷물·나폴리만 포추올리 근처 화산재로 반죽, 화산 돌덩이를 섞음; 바닷물이 스며들어 화산재 일부를 녹이고 새 광물이 생김 — 알루미늄 토버모라이트의 판 모양 결정이 맞물려 결함을 메우고 균열을 막음; 현대 콘크리트는 바닷물에서 수십 년 만에 약해짐; 유타대 Marie Jackson, American Mineralogist 2017) — https://www.aip.org/inside-science/secrets-of-longevity-roman-concrete"
