@@ -26,7 +26,7 @@ scenes:
     beat: hook
     lines:
       - text: "조선 수군을 이끌던 이순신은 눈앞이 캄캄했습니다."
-        captions: ["조선 수군을 이끌던 이순신은 / 눈앞이 캄캄했습니다"]
+        captions: ["조선 수군을 / 이끌던 이순신은", "눈앞이 캄캄했습니다"]
       - text: "남은 배는 고작 열세 척, 적의 배는 백삼십 척이 넘었거든요."
         captions: ["남은 배는 고작 열세 척", "적의 배는 / 백삼십 척이 넘었거든요"]
     visual: 판옥선 갑판 위의 이순신, 수평선을 가득 메운 적의 배들을 바라본다
@@ -179,7 +179,7 @@ scenes:
     beat: info
     lines:
       - text: "이 바다가 바로 울돌목, 열세 척으로 지켜 낸 싸움이 바로 명량해전입니다."
-        captions: ["이 바다가 바로 울돌목", "열세 척으로 지켜 낸 싸움이 / 바로 명량해전입니다"]
+        captions: ["이 바다가 바로 울돌목", "열세 척으로 / 지켜 낸 싸움이", "바로 명량해전입니다"]
     visual: 노을 진 해협 위 지휘선 뱃머리에 선 이순신, 카메라가 빠진다
     image_prompt: >-
       The commander standing alone at the bow of his flagship at golden sunset in the calm narrow strait, sword sheathed,
