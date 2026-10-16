@@ -50,6 +50,8 @@ button.copy.big.ok{background:var(--ink);color:var(--bg);border-color:var(--ink)
    음성은 대본 전체를 파일 하나로 받는다(문장별 생성 금지). 싱크는 Whisper 정렬로 맞춘다.
    음성이 이미 있으면 python aw.py timing 007 — 문장·글자 시각을 다시 계산 (크레딧 0).
    출력의 정렬 방식이 whisper 인지, 일치율이 80% 이상인지 확인. 아니면 이유(경고)를 보고한다.
+   Whisper 는 config 의 timing.whisper_device(기본 cpu)로 돈다 — 20초 안팎. GPU 자동 전환·CUDA 설치를 시도하지 않는다.
+   audio/pace.json 의 removed_seconds(줄인 쉼 길이)도 보고한다.
 3. python aw.py conti 007 — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
 4. python aw.py compose 007
 5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
@@ -58,7 +60,7 @@ button.copy.big.ok{background:var(--ink);color:var(--bg);border-color:var(--ink)
    - 렌더 후 측정으로 확인. 하나라도 실패하면 원인을 고치고 다시 합성. 실패한 채로 납품하지 않는다.
 6. output/check/final-sheet.jpg 를 직접 보고 확인:
    - 자막·제목이 핵심 장면(강물, 우물, 눈금, 둑, 세금)을 가리지 않는지
-   - 클립에 말소리·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
+   - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose
 7. python aw.py youtube 007 — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
