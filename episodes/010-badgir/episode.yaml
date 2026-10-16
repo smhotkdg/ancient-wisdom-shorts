@@ -1,9 +1,9 @@
 # 010 바드기르 — 사막 집을 식힌 지붕 위 바람 탑 (이란 야즈드)
 id: "010"
 slug: badgir
-status: script_ok
+status: done
 working_title: 사막 사람들은 왜 지붕 위에 높은 탑을 세웠을까?
-title_lines: ["지붕 위 탑 하나로", "사막 집이 시원해졌다고?"]
+title_lines: ["지붕 위 탑 하나로", "집이 시원했다고?"]   # "사막 집이 시원해졌다고?" 는 최소 글자(84px)로도 폭 초과
 hook: 진땀을 뺐습니다
 caption_keywords: [찜통, 탑, 구멍, 바람, 흙벽]
 
@@ -37,6 +37,7 @@ scenes:
     motion_prompt: >-
       The homeowner fans himself faster and faster, wipes sweat from his forehead and flops backward with a groan.
     camera: static
+    sfx_volume: 0               # 숨 몰아쉬기·신음(s01), 한숨·꿀꺽(s01-2) 사람 소리 — 효과음 끔
     extra_clips:
       - image_prompt: >-
           Close-up of the homeowner's sweaty face, beads of sweat rolling down, eyes squeezed shut, a clay cup of
@@ -64,7 +65,7 @@ scenes:
     beat: question
     lines:
       - text: "이 뜨거운 흙집을, 대체 어떻게 시원하게 만들 수 있을까요?"
-        captions: ["이 뜨거운 흙집을", "대체 어떻게 / 시원하게 만들 수 있을까요?"]
+        captions: ["이 뜨거운 흙집을", "대체 어떻게 / 시원하게", "만들 수 있을까요?"]
     visual: 해 질 녘 평평한 흙 지붕 위에 선 집주인, 옷자락이 위쪽 바람에 펄럭인다
     image_prompt: >-
       The homeowner standing on the flat mud roof of his house at sunset, surrounded by the beige domes and flat roofs
