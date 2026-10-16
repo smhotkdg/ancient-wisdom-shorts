@@ -1,35 +1,35 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.5초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.0초
 The inventor rubs his head, crumples a sheet of paper and tosses it aside; the lamp flame flickers. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.5–8.3초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.0–7.2초
 He taps the brass bell lightly with the brush handle, listens, then sighs and frowns harder. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.3–13.7초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.2–12.3초
 His head droops lower and lower, then jerks up in alarm as a drop of water plinks; he blinks wide awake. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.7–18.0초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.3–16.0초
 Drops fall one by one and ripples spread; his eyes follow them and slowly widen with an idea. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 18.0–23.9초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.0–21.6초
 Water trickles steadily from jar to jar down the steps; the inventor turns a spout and nods. Camera: slow pan along the jars. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 23.9–29.4초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 21.6–26.3초
 The water level climbs inside the cylinder and the floating rod rises slowly out of the top. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 29.4–34.5초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 26.3–31.1초
 The rod creeps up a tiny bit; the inventor looks at it, then at the bell, and tilts his head doubtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 34.5–39.8초
+[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 31.1–36.1초
 The rod nudges the latch, the iron ball rolls down the chute and drops onto the lever, which swings the wooden figurine's arm to strike the bell. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 39.8–43.6초
+[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 36.1–39.7초
 One wooden figurine swings its mallet and strikes the bell; the inventor jumps with joy. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 43.6–47.8초
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 39.7–43.8초
 The figurines strike in turn: the first hits the bell, the second beats the drum, the third bangs the gong. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 47.8–53.5초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 43.8–48.9초
 Autumn leaves drift past the old bronze jars; sunlight glints on their weathered surfaces. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 53.5–58.9초
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.9–53.7초
 A figurine strikes the bell behind him; the inventor grins and bows slightly; the camera slowly pulls back. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
