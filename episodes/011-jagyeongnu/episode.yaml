@@ -80,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 장영실은 큰 물통 여러 개를 계단처럼 이어, 물이 일정하게 흐르게 했습니다."
-        captions: ["그래서 장영실은 / 큰 물통 여러 개를", "계단처럼 이어 / 물이 일정하게 흐르게 했습니다"]
+        captions: ["그래서 장영실은 / 큰 물통 여러 개를", "계단처럼 이어", "물이 일정하게 / 흐르게 했습니다"]
     visual: 높이가 다른 청동 물항아리들이 계단처럼 놓이고, 물이 차례로 흘러내린다
     image_prompt: >-
       A row of large bronze water jars set on stone stands of descending height like steps, thin streams of water
