@@ -30,7 +30,8 @@ scenes:
       - ""               # 대사. 자막을 직접 나누려면 {text: "...", captions: ["...", "... / ..."]}
     visual: ""           # 장면 설명 (한국어)
     image_prompt: ""     # ChatGPT 장면 프롬프트 (영어, 화풍 문구는 자동으로 붙음)
-    characters: [hero]
+    characters: [hero]   # 첫 번째가 주인공 — 콘티가 "주인공은 가운데" 구도 문장을 자동으로 붙인다
+    # extras: "two or three tired farmers sighing"   # 배경 인물(선택) — 대사에 반응할 때만, 에피소드당 3장면 이하 (docs/scene-people.md)
     motion_prompt: ""    # Grok 동작 프롬프트 (영어, 한 가지 동작)
     camera: ""           # 예: slow push in / static / slow pan right
     # trim_start: 0.0    # 클립 앞부분 건너뛰기 (초)

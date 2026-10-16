@@ -42,8 +42,8 @@ description: 쇼츠 대본을 스토리형으로 쓰거나 고칠 때 사용. �
 - **배경 인물은 이야기에 반응하는 역할일 때만**: 세금에 한숨 쉬는 농부, 다리를 보고 놀라는 사람처럼 대사와 직접 연결될 때.
 - **군중이 주인공인 장면은 만들지 않는다**: 줄지어 밧줄 당기는 마을 사람들, 잔치, 대규모 작업 현장 등.
 - 배경 인물 장면은 **에피소드당 3개 이하**. 나머지는 주인공 혼자·클로즈업·결과물·풍경·단면도로.
-- 프롬프트: 배경 인물이 있으면 "the hero in the center foreground, a few <people> in the background, smaller",
-  주인공만 있으면 "No other people.", 사람이 없으면 "No people."
+- **배경 인물은 장면의 `extras:`에 적는다** (image_prompt에 직접 쓰지 않음). 콘티가 "주인공은 가운데 크게, 배경 인물은 뒤에 작게 2~4명" 구도 문장을 자동으로 붙인다.
+  사람이 없는 장면(풍경·단면도)은 image_prompt 끝에 "No people." — 자세한 예: [docs/scene-people.md](../../../docs/scene-people.md)
 - 내레이션 주어는 주인공으로 쓴다. 실제로는 여럿이 했다는 점은 `accuracy_notes`에 적는다.
 - 주제를 고를 때도 **한 사람이 끌고 갈 수 있는 이야기**를 우선한다.
 - `aw.py story`가 배경 인물 장면(villagers, workers, crowd, farmers, family, people… / 사람들·일꾼·가족)을 세어 3개를 넘으면 실패로 알린다.

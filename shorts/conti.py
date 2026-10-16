@@ -21,8 +21,24 @@ def image_prompt(ep: Episode, scene: dict) -> str:
     if used:
         names = ", ".join(f"{c.get('name_en') or c['id']} (attached reference image char_{c['id']}.png)" for c in used)
         parts.append(f"Characters: {names} — keep their faces, proportions and outfits exactly as in the references.")
+    parts.append(composition_line(scene, used))
     parts += [st["image_prefix"].strip(), st["image_suffix"].strip()]
     return " ".join(p for p in parts if p)
+
+
+def composition_line(scene: dict, used: list[dict]) -> str:
+    """화면 인물 규칙 (docs/scene-people.md): 주인공은 가운데 크게, 배경 인물(extras)은 뒤에 작게 몇 명만."""
+    from .story import crowd_text
+    if not used:
+        return ""
+    hero = used[0].get("name_en") or used[0]["id"]
+    extras = str(scene.get("extras") or "").strip()
+    if extras:
+        return (f"Composition: the {hero} in the center foreground, large and clearly the focus; "
+                f"in the background, smaller and slightly out of focus: {extras} (only 2-4 people, never blocking the {hero}).")
+    if crowd_text(scene):   # 프롬프트에 이미 사람들이 적혀 있으면 덧붙이지 않는다 (예전 에피소드)
+        return f"Composition: keep the {hero} in the center foreground as the clear focus."
+    return f"Composition: the {hero} in the center as the only person in the scene."
 
 
 def character_prompt(ep: Episode, char: dict) -> str:
@@ -34,6 +50,8 @@ def character_prompt(ep: Episode, char: dict) -> str:
 def motion_prompt(ep: Episode, scene: dict) -> str:
     """scene 또는 clip_parts() 의 한 항목."""
     parts = [str(scene.get("motion_prompt", "")).strip()]
+    if scene.get("extras"):
+        parts.append("Background people stay small and move only a little; keep the focus on the main character.")
     if scene.get("camera"):
         parts.append(f"Camera: {scene['camera']}.")
     parts.append(ep.style["motion_suffix"].strip())
@@ -101,6 +119,7 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
    - 렌더 후 측정으로 확인. 하나라도 실패하면 원인을 고치고 다시 합성. 실패한 채로 납품하지 않는다.
 6. output/check/final-sheet.jpg 를 직접 보고 확인:
    - 자막·제목이 핵심 장면({focus})을 가리지 않는지
+   - 주인공이 가운데 크게 보이는지, Grok 이 사람을 더 만들어 넣어 주인공을 가리지 않는지 (docs/scene-people.md) → 그런 장면은 보고
    - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose

@@ -116,7 +116,7 @@ def clip_parts(scene: dict) -> list[dict]:
     """
     if (scene.get("source") or "grok") != "grok":
         return []
-    keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in")
+    keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in", "extras")
     sid = scene["id"]
     parts = [{"n": 1, "file": f"{sid}.mp4", "image": sid, "own_image": False, **{k: scene.get(k) for k in keys}}]
     for i, extra in enumerate(scene.get("extra_clips") or [], start=2):

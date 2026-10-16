@@ -23,16 +23,21 @@ CROWD_KO = re.compile(r"사람들|마을 사람|일꾼|군중|가족|농부들|�
 NO_PEOPLE = re.compile(r"\bno (other |visible )?(people|crews?)\b", re.I)
 
 
+def crowd_text(part: dict) -> bool:
+    """장면(또는 extra_clips 항목)의 프롬프트·설명에 여러 사람이 적혀 있는지."""
+    en = " ".join(str(part.get(k) or "") for k in ("image_prompt", "motion_prompt"))
+    en = NO_PEOPLE.sub("", en)
+    ko = str(part.get("visual") or "")
+    return bool(CROWD_EN.search(en) or CROWD_KO.search(ko))
+
+
 def crowd_scenes(ep: Episode) -> list[str]:
-    """이미지·영상 프롬프트에 여러 사람(군중·일꾼·가족 등)이 나오는 장면 id."""
+    """배경 인물이 나오는 장면 id — extras 를 적었거나, 프롬프트에 군중·일꾼·가족 등이 있는 장면."""
     found = []
     for sc in ep.scenes:
         parts = [(sc["id"], sc)] + [(f"{sc['id']}-{i + 2}", x) for i, x in enumerate(sc.get("extra_clips") or [])]
         for pid, part in parts:
-            en = " ".join(str(part.get(k) or "") for k in ("image_prompt", "motion_prompt"))
-            en = NO_PEOPLE.sub("", en)
-            ko = str(part.get("visual") or "")
-            if CROWD_EN.search(en) or CROWD_KO.search(ko):
+            if part.get("extras") or crowd_text(part):
                 found.append(pid)
     return found
 
@@ -87,8 +92,8 @@ def check(ep: Episode) -> dict:
     item(len(crowd) <= MAX_CROWD, f"주인공 중심 화면 (배경 인물 장면 {MAX_CROWD}개 이하)",
          f"배경 인물 장면 {len(crowd)}개: {', '.join(crowd)}" if crowd else "주인공만")
     if crowd:
-        tips.append("배경 인물이 있는 장면은 주인공을 가운데 크게, 다른 사람은 뒤쪽에 작게 몇 명만 (프롬프트에 "
-                    "'a few people in the background, smaller' 처럼) — 군중이 주인공을 가리지 않게")
+        tips.append("배경 인물은 image_prompt 에 직접 쓰지 말고 장면의 extras: 에 적는다 (docs/scene-people.md) — "
+                    "콘티가 '주인공은 가운데 크게, 배경 인물은 뒤에 작게 2~4명' 구도 문장을 자동으로 붙인다")
 
     notes = " ".join(ep.data.get("accuracy_notes") or [])
     item("재구성" in notes, "정확성 메모에 '재구성' 명시", "있음" if "재구성" in notes else "없음")
