@@ -293,6 +293,9 @@ def _snap_to_speech(lines: list[dict], silences: list[tuple[float, float]]) -> l
                             if b >= c - 0.15 and a <= c + 0.5 and b < limit]
                     if near:
                         c = max(near)[2]
+                    if n == 0 and i == 0 and silences and silences[0][0] <= 0.02 < silences[0][1] < c:
+                        # 첫 단어를 인식 못 하면 보간 값이 늦게 잡힌다 → 맨 앞 무음이 끝나는 곳이 말 시작
+                        c = silences[0][1]
                 else:
                     for a, b in silences:
                         if a - 0.12 <= c < b < limit:   # 쉼 바로 앞(0.12초 이내)이나 쉼 안에서 시작하면 쉼 끝으로
