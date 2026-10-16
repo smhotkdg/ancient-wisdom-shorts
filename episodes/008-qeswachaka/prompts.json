@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "boy": "Character reference sheet of a cheerful Andean Quechua boy about 12 years old with warm brown skin, rosy cheeks, bright dark eyes and short black hair, wearing a colorful knitted chullo hat with ear flaps, a red woven poncho with geometric stripes, simple dark trousers and rubber-tire sandals. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A dramatic deep rocky canyon in the high Andes with a roaring brown river far below, steep grassy slopes; the boy standing at the very edge on one side, peering across at a small village of stone houses on the far side, hands on his cheeks, eyes wide in dismay. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The boy leans over the edge, gulps and steps back; the river roars far below and wind ruffles his poncho. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "A pebble tumbles down into the roaring river; the boy's sandals shuffle back from the edge. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A high treeless Andean slope covered in tall tufts of golden, spiky bunch grass swaying in the wind, snowy peaks behind; the boy standing in the middle holding a handful of grass, looking at it doubtfully. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The golden grass ripples in the wind; the boy tugs a handful, frowns and looks around for trees that aren't there. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The boy sitting on a rock near the canyon edge, holding up a handful of golden grass in one hand and looking from it to the canyon, head tilted, a curious spark in his eyes. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "The boy looks at the grass, then the canyon, then the grass again; slowly a grin spreads across his face. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "Villagers in colorful woven ponchos and hats sitting in a circle on the grass, rolling handfuls of golden grass between their palms into thin cords, piles of cord coiled beside them, the boy in the middle twisting a cord with great concentration. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "Hands rub and twist the grass into thin cords; the boy pulls his cord long and holds it up proudly. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "Many hands braid the thin cords together; the thick rope grows longer and is pulled across the ground. Camera: slow pan along the rope. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Two long lines of villagers on both sides of the canyon pulling several thick golden grass ropes taut across the gap, leaning back with all their strength, the river far below, the boy at the front of one line. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "Everyone leans back and heaves together; the ropes rise from a sag and snap taut across the canyon. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "A finished golden grass rope suspension bridge spanning the deep canyon, a woven floor and two handrail ropes linked by woven side netting, the boy carefully walking across in the middle holding both handrails, the river far below. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "The bridge sways gently as the boy steps forward; he wobbles, grips the handrails, then grins and keeps walking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The same grass bridge months later in grey rain and wind, its ropes faded, frayed and sagging, loose strands flapping; the boy at the end of the bridge touching a frayed rope with a worried face, rain dripping from his hat. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "Wind and rain lash the bridge; a frayed strand snaps loose and flutters away; the boy flinches. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A big crowd of villagers from several villages gathered at the canyon in sunshine, hauling bright new golden grass ropes across, colorful ponchos everywhere, the boy cheering on top of a rock. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The crowd heaves the new rope together; the boy jumps and cheers; colorful ponchos sway. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "People laugh and clap; the boy spins in a little dance; firelight flickers; the new bridge glows behind. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "Aerial view of the bright new golden grass rope bridge spanning the deep green canyon, mountain footpaths winding away from both ends into the Andes, the river sparkling far below, morning light. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The camera glides slowly along the canyon toward the bridge; tiny figures cross it; clouds drift over the peaks. Camera: slow drone push forward. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The boy standing in the middle of the new golden grass bridge, waving happily toward the village on the far side where children wave back, sunlight streaming down into the canyon. Characters: Andean Quechua boy (attached reference image char_boy.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "The boy waves with both arms; the bridge sways gently; the camera slowly pulls back to show the whole canyon. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

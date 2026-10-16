@@ -1,0 +1,225 @@
+# 008 케스와차카 — 풀로 엮어 해마다 다시 놓는 잉카의 다리
+id: "008"
+slug: qeswachaka
+status: script_ok
+working_title: 잉카 사람들은 어떻게 풀로 협곡에 다리를 놓았을까?
+title_lines: ["풀로 꼰 밧줄로", "협곡을 건넜다고?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [협곡, 풀, 밧줄, 다리, 해마다]
+
+story:
+  hero: 소년
+  reveal: [케스와차카]
+
+characters:
+  - id: boy
+    name: 소년
+    name_en: Andean Quechua boy
+    description: >-
+      a cheerful Andean Quechua boy about 12 years old with warm brown skin, rosy cheeks, bright dark eyes and short
+      black hair, wearing a colorful knitted chullo hat with ear flaps, a red woven poncho with geometric stripes,
+      simple dark trousers and rubber-tire sandals
+    note: 이야기 주인공. 협곡 건너편 마을에 가고 싶은 산골 소년
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "안데스 산골의 한 소년은 눈앞이 캄캄했습니다."
+        captions: ["안데스 산골의 한 소년은 / 눈앞이 캄캄했습니다"]
+      - text: "깊은 협곡과 거센 강에 막혀, 건너편 마을까지 갈 길이 없었거든요."
+        captions: ["깊은 협곡과 거센 강에 막혀", "건너편 마을까지 / 갈 길이 없었거든요"]
+    visual: 깊은 협곡 끝에 선 소년, 아래로 거센 강, 건너편 언덕에 작은 마을
+    image_prompt: >-
+      A dramatic deep rocky canyon in the high Andes with a roaring brown river far below, steep grassy slopes; the
+      boy standing at the very edge on one side, peering across at a small village of stone houses on the far side,
+      hands on his cheeks, eyes wide in dismay.
+    characters: [boy]
+    motion_prompt: >-
+      The boy leans over the edge, gulps and steps back; the river roars far below and wind ruffles his poncho.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Looking down from the canyon edge past the boy's sandals at the wild river crashing between rocks far
+          below, a small pebble falling, mist rising.
+        characters: [boy]
+        motion_prompt: >-
+          A pebble tumbles down into the roaring river; the boy's sandals shuffle back from the edge.
+        camera: slow tilt down
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "산비탈엔 튼튼한 나무 대신, 질기고 억센 풀만 가득했죠."
+        captions: ["산비탈엔 튼튼한 나무 대신", "질기고 억센 풀만 / 가득했죠"]
+    visual: 나무 하나 없는 높은 산비탈, 바람에 흔들리는 누런 풀밭 한가운데 소년이 풀을 한 줌 쥔다
+    image_prompt: >-
+      A high treeless Andean slope covered in tall tufts of golden, spiky bunch grass swaying in the wind, snowy peaks
+      behind; the boy standing in the middle holding a handful of grass, looking at it doubtfully.
+    characters: [boy]
+    motion_prompt: >-
+      The golden grass ripples in the wind; the boy tugs a handful, frowns and looks around for trees that aren't there.
+    camera: slow pan
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이 풀로 대체 어떻게, 저 협곡을 건널 수 있을까요?"
+        captions: ["이 풀로 대체 어떻게", "저 협곡을 / 건널 수 있을까요?"]
+    visual: 소년이 풀 한 줌과 협곡을 번갈아 보며 고개를 갸웃
+    image_prompt: >-
+      The boy sitting on a rock near the canyon edge, holding up a handful of golden grass in one hand and looking
+      from it to the canyon, head tilted, a curious spark in his eyes.
+    characters: [boy]
+    motion_prompt: >-
+      The boy looks at the grass, then the canyon, then the grass again; slowly a grin spreads across his face.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 소년과 마을 사람들은, 풀을 비비고 꼬아 가는 끈을 만들었습니다."
+        captions: ["그래서 소년과 마을 사람들은", "풀을 비비고 꼬아 / 가는 끈을 만들었습니다"]
+      - text: "그 끈을 다시 꼬고 땋아, 굵고 튼튼한 밧줄로 키웠죠."
+        captions: ["그 끈을 다시 꼬고 땋아", "굵고 튼튼한 / 밧줄로 키웠죠"]
+    visual: 마을 사람들이 둘러앉아 풀을 손바닥으로 비벼 가는 끈을 꼰다
+    image_prompt: >-
+      Villagers in colorful woven ponchos and hats sitting in a circle on the grass, rolling handfuls of golden grass
+      between their palms into thin cords, piles of cord coiled beside them, the boy in the middle twisting a cord
+      with great concentration.
+    characters: [boy]
+    motion_prompt: >-
+      Hands rub and twist the grass into thin cords; the boy pulls his cord long and holds it up proudly.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of several thin grass cords being braided together into a thick, sturdy golden rope by many hands,
+          the finished thick rope coiled in a big loop on the ground.
+        characters: [boy]
+        motion_prompt: >-
+          Many hands braid the thin cords together; the thick rope grows longer and is pulled across the ground.
+        camera: slow pan along the rope
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 굵은 밧줄 여러 가닥을, 협곡 양쪽에 걸고 팽팽히 당겼습니다."
+        captions: ["그리고 굵은 밧줄 여러 가닥을", "협곡 양쪽에 걸고 / 팽팽히 당겼습니다"]
+    visual: 협곡 양쪽에서 사람들이 줄지어 굵은 밧줄을 당긴다
+    image_prompt: >-
+      Two long lines of villagers on both sides of the canyon pulling several thick golden grass ropes taut across the
+      gap, leaning back with all their strength, the river far below, the boy at the front of one line.
+    characters: [boy]
+    motion_prompt: >-
+      Everyone leans back and heaves together; the ropes rise from a sag and snap taut across the canyon.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "드디어 협곡 위로, 풀로 만든 다리가 흔들흔들 놓였습니다."
+        captions: ["드디어 협곡 위로", "풀로 만든 다리가 / 흔들흔들 놓였습니다"]
+    visual: 협곡을 가로지르는 풀 밧줄 다리, 소년이 난간 밧줄을 잡고 조심조심 건넌다
+    image_prompt: >-
+      A finished golden grass rope suspension bridge spanning the deep canyon, a woven floor and two handrail ropes
+      linked by woven side netting, the boy carefully walking across in the middle holding both handrails, the
+      river far below.
+    characters: [boy]
+    motion_prompt: >-
+      The bridge sways gently as the boy steps forward; he wobbles, grips the handrails, then grins and keeps walking.
+    camera: slow push in
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 풀은 비바람을 맞으면 금방 삭을 텐데, 이 다리는 어떻게 버틸까요?"
+        captions: ["그런데 풀은 비바람을 맞으면 / 금방 삭을 텐데", "이 다리는 어떻게 / 버틸까요?"]
+    visual: 비바람 속에 색이 바래고 해진 풀 다리, 소년이 해진 밧줄을 만지며 걱정스러운 표정
+    image_prompt: >-
+      The same grass bridge months later in grey rain and wind, its ropes faded, frayed and sagging, loose strands
+      flapping; the boy at the end of the bridge touching a frayed rope with a worried face, rain dripping from his hat.
+    characters: [boy]
+    motion_prompt: >-
+      Wind and rain lash the bridge; a frayed strand snaps loose and flutters away; the boy flinches.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 네 마을 사람들이 해마다 모여, 사흘 동안 다리를 새로 엮었습니다."
+        captions: ["그래서 네 마을 사람들이 / 해마다 모여", "사흘 동안 / 다리를 새로 엮었습니다"]
+      - text: "함께 일하고, 기도하고, 신나는 잔치까지 벌이면서요."
+        captions: ["함께 일하고, 기도하고", "신나는 잔치까지 / 벌이면서요"]
+    visual: 많은 사람이 모여 새 밧줄을 당기고, 밤에는 모닥불 곁에서 잔치
+    image_prompt: >-
+      A big crowd of villagers from several villages gathered at the canyon in sunshine, hauling bright new golden
+      grass ropes across, colorful ponchos everywhere, the boy cheering on top of a rock.
+    characters: [boy]
+    motion_prompt: >-
+      The crowd heaves the new rope together; the boy jumps and cheers; colorful ponchos sway.
+    camera: slow pan
+    extra_clips:
+      - image_prompt: >-
+          Evening by the canyon: villagers in colorful clothes sharing food around a small fire, some playing
+          simple flutes and drums, the boy dancing and laughing, the bright new bridge glowing in the last light behind.
+        characters: [boy]
+        motion_prompt: >-
+          People laugh and clap; the boy spins in a little dance; firelight flickers; the new bridge glows behind.
+        camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "잉카의 길을 잇던 이 다리는, 지금도 해마다 새로 태어납니다."
+        captions: ["잉카의 길을 잇던 이 다리는", "지금도 해마다 / 새로 태어납니다"]
+    visual: 새로 엮은 황금빛 다리를 하늘에서 내려다본 장면, 협곡 양쪽으로 산길이 이어진다
+    image_prompt: >-
+      Aerial view of the bright new golden grass rope bridge spanning the deep green canyon, mountain footpaths
+      winding away from both ends into the Andes, the river sparkling far below, morning light.
+    motion_prompt: >-
+      The camera glides slowly along the canyon toward the bridge; tiny figures cross it; clouds drift over the peaks.
+    camera: slow drone push forward
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "풀로 엮어 해마다 다시 놓는 이 다리가 바로, 케스와차카입니다."
+        captions: ["풀로 엮어 / 해마다 다시 놓는", "이 다리가 / 바로, 케스와차카입니다"]
+    visual: 다리 한가운데에 선 소년이 건너편 마을을 향해 손을 흔들고, 카메라가 빠진다
+    image_prompt: >-
+      The boy standing in the middle of the new golden grass bridge, waving happily toward the village on the far side
+      where children wave back, sunlight streaming down into the canyon.
+    characters: [boy]
+    motion_prompt: >-
+      The boy waves with both arms; the bridge sways gently; the camera slowly pulls back to show the whole canyon.
+    camera: slow pull back
+
+sources:
+  - "National Geographic — The Q'eswachaka bridge building ceremony in Peru (긴 풀(이추)을 꼬아 가는 끈 → 굵은 밧줄 → 땋은 케이블, 케추아어를 쓰는 네 마을(Huinchiri, Chaupibanda, Choccayhua, Ccollana)이 해마다 새로 엮음 — 예전엔 3년마다, 사흘 동안 일·기도·잔치, 길이 약 120피트, 잉카 길을 잇던 밧줄 다리 중 하나, 2013 유네스코 인류무형유산) — https://www.nationalgeographic.com/travel/article/inca-grass-rope-bridge-qeswachaka-unesco"
+  - "Global Voices 2018 — Q'eswachaka, the last Inca bridge that keeps communities together (마을 공동체가 해마다 다시 엮는 마지막 잉카 다리) — https://globalvoices.org/2018/06/29/qeswachaka-the-last-inca-bridge-that-keeps-communities-together/"
+
+accuracy_notes:
+  - "소년 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 이 다리를 처음 놓은 사람의 실제 이야기가 아니다."
+  - "다리를 언제 누가 처음 놓았는지는 대본에서 말하지 않는다. '잉카의 길을 잇던'은 National Geographic 기준."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "'해마다'는 현재 기준. 예전에는 3년마다 새로 엮었다(National Geographic). 대본은 현재형 '지금도 해마다'로만 쓴다."
+  - "'네 마을', '사흘'은 National Geographic 기준. 참가 인원·밧줄 굵기·버티는 무게 같은 수치는 쓰지 않는다."
+  - "'산비탈엔 튼튼한 나무 대신 풀'은 고산 지대 풍경을 단순화한 표현."
+  - "인물 복장은 오늘날 케추아 전통 복장을 단순화한 그림이며 특정 시기의 고증 복식이 아니다. 의례(기도)는 특정 종교 장면을 자세히 묘사하지 않는다."
+
+youtube:
+  titles:
+    - 풀로 꼰 밧줄로 협곡에 다리를 놓은 잉카 사람들
+    - 해마다 새로 태어나는 다리가 있다고?
+    - 온 마을이 사흘 만에 엮는 마지막 잉카 다리
+  description: |-
+    🌾 나무도 쇠도 없는 협곡, 손에 쥔 건 풀 한 줌뿐이라면?
+
+    안데스 사람들은 풀을 비비고 꼬아 끈을 만들고,
+    그 끈을 다시 땋아 굵은 밧줄로 키웠습니다 🪢
+    그리고 그 밧줄로… 협곡 위에 다리를!
+
+    풀은 금방 삭는데 어떻게 버티냐고요?
+    네 마을이 해마다 모여 사흘 동안 새로 엮는답니다 🎉 일하고, 기도하고, 잔치까지!
+  comment_question: 여러분이라면 이 흔들흔들 풀 다리, 건너 볼 용기 있나요?
+  hashtags: [케스와차카, 잉카, 페루, 유네스코, 쇼츠]
