@@ -38,6 +38,7 @@ timing:
   #  auto: whisper 가 설치돼 있으면 whisper, 아니면 silence
   engine: auto
   whisper_model: small        # small(약 0.5GB) / medium(약 1.5GB, 더 정확)
+  whisper_device: cpu         # cpu(int8) 고정. CUDA(cublas·cudnn) 설치 후에만 cuda 로 바꾼다
   min_match: 0.6              # 인식 글자와 대본 일치율이 이보다 낮으면 silence 로 대체
   caption_lead: 0.0           # 자막을 목소리보다 이만큼 먼저 띄움(초). 0 = 말 시작과 동시
 

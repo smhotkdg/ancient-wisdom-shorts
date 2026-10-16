@@ -28,21 +28,29 @@ def available() -> bool:
 
 
 @functools.lru_cache(maxsize=2)
-def _model(model_size: str):
+def _model(model_size: str, device: str = "cpu"):
+    """device 는 config/project.yaml timing.whisper_device ("cpu" 기본, CUDA 설치 후 "cuda")."""
     from faster_whisper import WhisperModel
-    return WhisperModel(model_size, device="auto", compute_type="int8")
+    return WhisperModel(model_size, device=device, compute_type="int8")
 
 
-def transcribe(path: Path, model_size: str = "small", prompt: str = "") -> list[tuple[str, float, float]]:
-    model = _model(model_size)
-    segments, _ = model.transcribe(str(path), language="ko", word_timestamps=True, beam_size=5,
-                                   vad_filter=False, condition_on_previous_text=False,
-                                   initial_prompt=prompt[:200] or None)
-    words = []
-    for seg in segments:
-        for w in seg.words or []:
-            words.append((w.word, float(w.start), float(w.end)))
-    return words
+def _load_audio(path: Path):
+    """ffmpeg 로 16kHz 모노 float32 로 읽는다 (PyAV 버전 차이로 faster-whisper 의 디코더가 깨지는 것을 피한다)."""
+    import subprocess
+
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(path), "-f", "f32le",
+                          "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.float32)
+
+
+def transcribe(path: Path, model_size: str = "small", prompt: str = "",
+               device: str = "cpu") -> list[tuple[str, float, float]]:
+    segments, _ = _model(model_size, device).transcribe(
+        _load_audio(path), language="ko", word_timestamps=True, beam_size=5,
+        vad_filter=False, condition_on_previous_text=False,
+        initial_prompt=prompt[:200] or None)
+    return [(w.word, float(w.start), float(w.end)) for seg in segments for w in seg.words or []]
 
 
 def char_times(words: list[tuple[str, float, float]]) -> tuple[str, list[float], list[float]]:
@@ -108,20 +116,23 @@ def align_script(lines: list[str], words: list[tuple[str, float, float]]) -> tup
     return out, ratio
 
 
-def transcribe_align(path: Path, lines: list[str], model_size: str = "small") -> tuple[list[dict], float]:
-    """대본 힌트를 준 인식과 힌트 없는 인식을 둘 다 해 보고 대본과 더 잘 맞는 쪽을 쓴다.
+def transcribe_align(path: Path, lines: list[str], model_size: str = "small",
+                     device: str = "cpu", good: float = 0.8) -> tuple[list[dict], float]:
+    """힌트 없는 인식을 먼저 하고, 대본 일치율이 good 미만일 때만 대본 힌트를 준 인식을 해서 더 잘 맞는 쪽을 쓴다.
 
     대본 전체를 initial_prompt 로 주면 Whisper 가 앞부분을 건너뛰거나 뒤섞는 일이 있다
-    (003: 힌트 있음 54% / 없음 98%, 004: 85% / 98%) — 일치율이 높아 보여도 앞부분이 틀릴 수 있어 항상 비교한다.
+    (003: 힌트 있음 54% / 없음 98%, 004: 85% / 98%) — 그래서 힌트 없는 쪽이 기본이다.
     """
     best = None
-    for prompt in (" ".join(lines), ""):
+    for prompt in ("", " ".join(lines)):
         try:
-            al, ratio = align_script(lines, transcribe(path, model_size, prompt=prompt))
+            al, ratio = align_script(lines, transcribe(path, model_size, prompt=prompt, device=device))
         except ValueError:
             continue
         if best is None or ratio > best[1]:
             best = (al, ratio)
+        if best[1] >= good:
+            break
     if best is None:
         raise ValueError("인식 결과가 대본과 전혀 맞지 않습니다")
     return best

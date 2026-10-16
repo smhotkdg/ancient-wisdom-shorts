@@ -332,7 +332,8 @@ def build_timing(ep: Episode) -> dict:
             from . import asr
             if asr.available():
                 try:
-                    al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"))
+                    al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"),
+                                         cfg.get("whisper_device", "cpu"))
                     if ratio >= float(cfg.get("min_match", 0.6)):
                         for ln, w in zip(lines, al):
                             # 문장 경계는 정확한 값 유지, 글자 시각은 그 안으로 제한
@@ -349,7 +350,8 @@ def build_timing(ep: Episode) -> dict:
         from . import asr
         if asr.available():
             try:
-                al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"))
+                al, ratio = asr.transcribe_align(ep.voice, texts, cfg.get("whisper_model", "small"),
+                                         cfg.get("whisper_device", "cpu"))
             except Exception as exc:  # 모델 다운로드 실패 등
                 al, ratio = None, 0.0
                 warn = f"Whisper 실행 실패({type(exc).__name__}) — 무음 기반 정렬로 대체했습니다."
