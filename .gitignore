@@ -1,10 +1,12 @@
 # 비밀
 .env
 
-# 미디어·빌드 결과 (로컬 전용)
+# 미디어·빌드 결과 (로컬 전용) — images/, clips/ 폴더는 .gitkeep 으로 빈 폴더만 올린다
 episodes/*/audio/
-episodes/*/images/
-episodes/*/clips/
+episodes/*/images/*
+!episodes/*/images/.gitkeep
+episodes/*/clips/*
+!episodes/*/clips/.gitkeep
 episodes/*/build/
 episodes/*/output/*
 !episodes/*/output/youtube.txt
