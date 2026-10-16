@@ -1,0 +1,216 @@
+# 007 나일로미터 — 강물 높이를 재서 한 해를 준비한 이집트의 우물
+id: "007"
+slug: nilometer
+status: script_ok
+working_title: 이집트 사람들은 왜 강가에 깊은 우물을 팠을까?
+title_lines: ["강가에 판 우물로", "세금을 정했다고?"]
+hook: 넋이 나갔습니다
+caption_keywords: [강물, 우물, 눈금, 둑, 세금]
+
+story:
+  hero: 관리
+  reveal: [나일로미터]
+
+characters:
+  - id: official
+    name: 관리
+    name_en: ancient Egyptian official
+    description: >-
+      a slim, earnest ancient Egyptian official in his 30s with warm bronze skin, short black hair, big expressive
+      eyes lined with dark kohl, wearing a plain white linen kilt and a simple white linen shawl, a small
+      broad collar necklace, holding a papyrus scroll and a reed pen
+    note: 이야기 주인공. 해마다 나일강 물을 지켜보는 관리
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "나일강 가의 한 관리는 넋이 나갔습니다."
+        captions: ["나일강 가의 한 관리는 / 넋이 나갔습니다"]
+      - text: "해마다 강물이 불어 넘치는데, 올해는 얼마나 넘칠지 아무도 몰랐거든요."
+        captions: ["해마다 강물이 불어 넘치는데", "올해는 얼마나 넘칠지 / 아무도 몰랐거든요"]
+    visual: 넘실대는 나일강가, 관리가 두루마리를 떨어뜨린 채 멍하니 강을 바라본다
+    image_prompt: >-
+      The wide brown Nile river swollen and rising over its banks under a hot blue sky, palm trees and green fields
+      along the shore, simple mud-brick houses and a stone temple in the distance; the official standing on the
+      riverbank, his papyrus scroll slipping from his hands, staring at the water with a dazed, blank expression.
+    characters: [official]
+    motion_prompt: >-
+      The river swells and laps higher up the bank; the scroll slips from the official's hands and he stares, frozen.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the official crouching at the edge of the rising brown river, holding a stick to the water
+          line, shrugging with a helpless, confused face, wet footprints on the mud bank.
+        characters: [official]
+        motion_prompt: >-
+          The water creeps past the stick; the official looks at it, scratches his head and shrugs helplessly.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "물이 적으면 밭이 말라 흉년이 들고, 너무 많으면 마을과 밭이 쓸려 갔죠."
+        captions: ["물이 적으면 / 밭이 말라 흉년이 들고", "너무 많으면 / 마을과 밭이 쓸려 갔죠"]
+    visual: 화면 반으로 갈라 — 왼쪽은 갈라진 마른 밭, 오른쪽은 물에 잠긴 마을
+    image_prompt: >-
+      A split-screen illustration: on the left, a cracked dry field with withered wheat under a scorching sun; on the
+      right, mud-brick houses and fields flooded by brown river water, a lone palm tree poking out. Same village in
+      both halves.
+    motion_prompt: >-
+      On the left, cracks spread in the dry earth; on the right, brown floodwater rises and swirls around the houses.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "강물이 얼마나 차오를지, 미리 알 방법은 정말 없을까요?"
+        captions: ["강물이 얼마나 차오를지", "미리 알 방법은 / 정말 없을까요?"]
+    visual: 관리가 강가 돌 위에 앉아 턱을 괴고 강물을 노려본다
+    image_prompt: >-
+      The official sitting on a stone block by the riverbank at sunset, chin in hand, staring intently at the river,
+      a reed pen tucked behind his ear, a small idea glinting in his eyes.
+    characters: [official]
+    motion_prompt: >-
+      The official taps his chin with the reed pen, narrows his eyes at the river, then sits up straight with an idea.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 관리는 강가에 깊은 돌우물을 짓고, 강과 물길로 이었습니다."
+        captions: ["그래서 관리는 강가에 / 깊은 돌우물을 짓고", "강과 물길로 이었습니다"]
+      - text: "그러자 우물 속 물이, 강물 높이를 그대로 따라 올라왔죠."
+        captions: ["그러자 우물 속 물이", "강물 높이를 그대로 / 따라 올라왔죠"]
+    visual: 강가의 둥근 돌우물과 강을 잇는 물길, 우물 속 물이 강물과 같은 높이로 차오른다
+    image_prompt: >-
+      A round stone-lined well built on the riverbank, a narrow stone channel connecting it to the Nile, workers
+      setting the last stones, the official pointing proudly at the well, river water flowing into the channel.
+    characters: [official]
+    motion_prompt: >-
+      River water flows along the stone channel into the well; the official points and nods as workers set the last stone.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Side cross-section of the riverbank: the river on the left and the deep stone well on the right, connected
+          by an underground channel, the water inside the well at exactly the same level as the river.
+          Clean educational illustration, no labels, no text.
+        motion_prompt: >-
+          The river level rises and the water in the well rises in step with it, staying exactly level.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 우물 안쪽에 계단을 내고, 벽에는 눈금을 촘촘히 새겼습니다."
+        captions: ["그리고 우물 안쪽에 / 계단을 내고", "벽에는 눈금을 / 촘촘히 새겼습니다"]
+    visual: 우물 안 벽을 따라 내려가는 돌계단, 벽에 새긴 가로 눈금들
+    image_prompt: >-
+      Looking down inside the deep stone well: a stone staircase spiraling down along the wall to the water,
+      evenly spaced horizontal measuring marks carved into the stone wall (simple lines only, no numbers, no text),
+      the official carefully carving one more mark with a chisel.
+    characters: [official]
+    motion_prompt: >-
+      The official taps the chisel and a fresh mark appears; the camera slowly moves down past the marks toward the water.
+    camera: slow tilt down
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "물이 불어나는 철이면 계단을 내려가 눈금을 읽고, 둑과 물길을 미리 손봤죠."
+        captions: ["물이 불어나는 철이면", "계단을 내려가 눈금을 읽고 / 둑과 물길을 미리 손봤죠"]
+    visual: 관리가 우물 계단에 서서 물 높이 눈금을 읽고 두루마리에 적는다
+    image_prompt: >-
+      The official standing on a step inside the well, lamp light on the wet stone, reading the water level against
+      the carved marks and writing on his papyrus scroll, water lapping just below his feet.
+    characters: [official]
+    motion_prompt: >-
+      The water rises one mark higher; the official checks it, nods and writes quickly on the scroll.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 이 눈금은, 농부들에게 마냥 반가운 소식만은 아니었습니다. 왜일까요?"
+        captions: ["그런데 이 눈금은 / 농부들에게", "마냥 반가운 소식만은 / 아니었습니다", "왜일까요?"]
+    visual: 우물 밖에서 농부들이 관리의 두루마리를 기웃거리며 불안한 표정
+    image_prompt: >-
+      Outside the well, a small group of farmers in simple linen clothes crowding around the official, peering at his
+      scroll with nervous, uneasy faces, one farmer biting his nails.
+    characters: [official]
+    motion_prompt: >-
+      The farmers lean in to peek at the scroll; the official smiles awkwardly and rolls it up; a farmer gulps.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "물이 넉넉히 차오르면 풍년이 들 테니, 그해 세금도 높게 매겼거든요."
+        captions: ["물이 넉넉히 차오르면 / 풍년이 들 테니", "그해 세금도 / 높게 매겼거든요"]
+    visual: 황금빛 밀밭 앞, 관리가 곡식 자루 수를 세고 농부들이 어깨를 늘어뜨린다
+    image_prompt: >-
+      A golden wheat field at harvest beside the river, sacks of grain piled up, the official counting sacks and
+      tallying on his scroll while the farmers sigh and slump their shoulders, comical but gentle.
+    characters: [official]
+    motion_prompt: >-
+      The official counts the sacks one by one and marks his scroll; the farmers sigh together and droop.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "훗날 카이로의 섬에는, 천 년 넘게 버텨 온 이런 우물이 지금도 남아 있죠."
+        captions: ["훗날 카이로의 섬에는 / 천 년 넘게 버텨 온", "이런 우물이 / 지금도 남아 있죠"]
+    visual: 카이로 로다섬 우물 내부 — 돌우물 한가운데 눈금 새긴 돌기둥, 벽을 따라 내려가는 계단
+    image_prompt: >-
+      Inside a tall square stone well with a pointed-arch niche in each wall, a tall stone column with carved
+      measuring marks standing in the center, stone stairs running down along the walls, sunlight from above.
+      No people, no text, no numbers.
+    motion_prompt: >-
+      Sunlight slowly sweeps down the stone walls and the tall measuring column; dust drifts in the light.
+    camera: slow tilt down
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "강물의 높이를 재서 한 해를 준비한 이 우물이 바로, 나일로미터입니다."
+        captions: ["강물의 높이를 재서 / 한 해를 준비한", "이 우물이 / 바로, 나일로미터입니다"]
+    visual: 관리가 우물가에 서서 뿌듯하게 웃고, 카메라가 빠지며 노을 진 나일강과 초록 들판이 보인다
+    image_prompt: >-
+      The official standing proudly at the rim of the stone well by the Nile at golden sunset, scroll under his arm,
+      smiling, green fields and palm trees along the calm river behind him.
+    characters: [official]
+    motion_prompt: >-
+      The official smiles and tucks the scroll under his arm; the camera slowly pulls back and rises over the golden Nile.
+    camera: slow pull back and rise
+
+sources:
+  - "이집트 관광유물부 — Rawda Island Nilometer (861년 아바스 칼리프 알무타와킬 때 건립, 돌로 두른 우물 속 19큐빗 대리석 기둥의 눈금으로 범람 높이를 잼, 둑·운하를 미리 준비, 범람 높이에 따라 세율을 정함) — https://egymonuments.gov.eg/en/monuments/rawda-island-nilometer/"
+  - "National Geographic 2016 — 투무이스(Thmuis) 나일로미터 발견 (기원전 3세기경 석회암 우물과 계단, 수로로 강과 잇거나 지하수 높이로 강 수위를 가늠, 하와이대 Robert Littman: '파라오 시대 나일로미터로 세금을 계산했다, 수위가 풍년을 가리키면 세금이 높아졌다', 물이 모자라거나 넘치면 기근·작물 피해) — https://www.nationalgeographic.com/history/article/160517-nilometer-discovered-ancient-egypt-nile-river-archaeology"
+
+accuracy_notes:
+  - "관리 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 나일로미터를 처음 만든 사람의 실제 이야기가 아니다."
+  - "나일로미터는 한 사람이 발명한 것이 아니며, 시대·장소마다 형태가 달랐다 (계단식 우물, 기둥식 등). '관리가 지었다'는 이야기 흐름을 위한 단순화."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01~s08은 고대 이집트(투무이스 유형: 강과 수로로 이은 계단 우물), s09는 훨씬 뒤인 861년 카이로 로다섬 나일로미터. '훗날'로 시대를 구분하고 같은 인물을 s09에 넣지 않는다."
+  - "'천 년 넘게'는 861년 건립(이집트 관광유물부) 기준."
+  - "세금: 수위가 높아 풍년이 예상되면 세금이 높았다는 설명은 National Geographic의 Littman 인용과 이집트 관광유물부 설명 기준. 구체적 세율·수치는 쓰지 않는다."
+  - "눈금은 숫자·글자 없이 가로선으로만 그린다 (실제 단위는 큐빗)."
+  - "인물 복장은 단순화한 그림이며 특정 왕조의 고증 복식이 아니다."
+
+youtube:
+  titles:
+    - 강가에 판 우물 하나로 세금을 정한 이집트 사람들
+    - 나일강의 기분을 미리 읽은 '눈금 우물'의 비밀
+    - 물이 많이 차면 세금도 올랐다고?
+  description: |-
+    🌊 올해 강물이 얼마나 넘칠지 미리 알 수 있다면?
+
+    이집트 사람들은 강가에 깊은 돌우물을 파고 강과 이었습니다.
+    우물 속 물은 강물 높이를 그대로 따라 올라오고 📏
+    벽에 새긴 눈금만 보면 올해 홍수를 짐작할 수 있었죠!
+
+    그런데 이 눈금, 농부들에겐 살짝 무서운 숫자였다는데… 😅
+    물이 넉넉하면 풍년, 그럼 세금도 쑥! 🌾
+  comment_question: 여러분이 이집트 농부라면, 눈금이 올라가길 바랄까요 내려가길 바랄까요?
+  hashtags: [나일로미터, 고대이집트, 나일강, 세계사, 쇼츠]

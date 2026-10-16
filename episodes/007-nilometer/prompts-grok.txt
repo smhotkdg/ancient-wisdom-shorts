@@ -1,0 +1,35 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.0초
+The river swells and laps higher up the bank; the scroll slips from the official's hands and he stares, frozen. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.0–8.3초
+The water creeps past the stick; the official looks at it, scratches his head and shrugs helplessly. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.3–13.4초
+On the left, cracks spread in the dry earth; on the right, brown floodwater rises and swirls around the houses. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.4–17.5초
+The official taps his chin with the reed pen, narrows his eyes at the river, then sits up straight with an idea. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 17.5–22.5초
+River water flows along the stone channel into the well; the official points and nods as workers set the last stone. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 22.5–26.6초
+The river level rises and the water in the well rises in step with it, staying exactly level. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 26.6–31.6초
+The official taps the chisel and a fresh mark appears; the camera slowly moves down past the marks toward the water. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 31.6–37.0초
+The water rises one mark higher; the official checks it, nods and writes quickly on the scroll. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 37.0–42.8초
+The farmers lean in to peek at the scroll; the official smiles awkwardly and rolls it up; a farmer gulps. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 42.8–47.8초
+The official counts the sacks one by one and marks his scroll; the farmers sigh together and droop. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 47.8–52.9초
+Sunlight slowly sweeps down the stone walls and the tall measuring column; dust drifts in the light. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 52.9–58.8초
+The official smiles and tucks the scroll under his arm; the camera slowly pulls back and rises over the golden Nile. Camera: slow pull back and rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
