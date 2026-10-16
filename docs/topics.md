@@ -14,6 +14,7 @@
 | 008 | 케스와차카 — 풀로 엮어 해마다 다시 놓는 잉카의 다리 (교훈: 마을 사람·군중 장면이 많아 집중도↓ → 화면 인물은 주인공 한 명) | 완성 | 눈앞이 캄캄했습니다 |
 | 009 | 로마 콘크리트 — 바닷물을 만나 더 단단해지는 방파제 | 소스 대기 | 말문이 막혔습니다 |
 | 010 | 바드기르 — 사막 집을 식힌 지붕 위 바람 탑 (이란 야즈드) | 소스 대기 | 진땀을 뺐습니다 |
+| 011 | 자격루 — 물과 구슬로 스스로 시간을 알린 조선의 시계 | 소스 대기 | 골머리를 앓았습니다 |
 
 ## 이전 레포에서 이미 만든 주제 (checkvalve-shorts-production)
 
@@ -45,7 +46,7 @@
 | 잉카 풀 다리 케스와차카 | 협곡 위 다리를 풀로 꼰 밧줄로 만들고, 네 마을이 해마다 3일 동안 새로 엮음 — 2013 유네스코 인류무형유산 | [National Geographic](https://www.nationalgeographic.com/travel/article/inca-grass-rope-bridge-qeswachaka-unesco), [Global Voices](https://globalvoices.org/2018/06/29/qeswachaka-the-last-inca-bridge-that-keeps-communities-together/) | 채택 → 008 |
 | 페르시아 바람탑 (야즈드) | 지붕 위 탑이 바람을 잡아 집 안·지하로 내려보냄, 안뜰·두꺼운 흙벽과 함께 시원한 집 | [UNESCO 야즈드](https://whc.unesco.org/en/list/1544), [국제냉동연구소 IIR](https://iifiir.org/en/news/windcatchers-the-birth-of-air-conditioning-and-natural-refrigeration) | 채택 → 010 |
 | 로마 바닷물 콘크리트 | 석회+화산재+바닷물, 바닷물이 스며들며 새 광물 결정이 틈을 메워 더 단단해짐 | [AIP Inside Science](https://www.aip.org/inside-science/secrets-of-longevity-roman-concrete), [Sci.News](https://www.sci.news/archaeology/roman-marine-concrete-05011.html) (Jackson 외, American Mineralogist 2017) | 채택 → 009 |
-| 장영실 자격루 (조선) | 사람 없이 시간을 알리는 물시계 — 물이 차면 살대가 떠오르고, 그 힘으로 쇠구슬이 굴러 인형이 종·북·징을 침 (부력+지렛대) | [사이언스타임즈](https://www.sciencetimes.co.kr/?p=39655), [서울시 미디어허브(덕수궁 자격루)](https://mediahub.seoul.go.kr/archives/178408) | 채택 가능 — 연도는 1433(완성)/1434(보루각 설치) 자료마다 다름, 연도는 쓰지 않거나 '세종 때' |
+| 장영실 자격루 (조선) | 사람 없이 시간을 알리는 물시계 — 물이 차면 살대가 떠오르고, 그 힘으로 쇠구슬이 굴러 인형이 종·북·징을 침 (부력+지렛대) | [사이언스타임즈](https://www.sciencetimes.co.kr/?p=39655), [서울시 미디어허브(덕수궁 자격루)](https://mediahub.seoul.go.kr/archives/178408) | 채택 → 011 |
 | 석굴암 습기 (신라) | 바닥 아래 지하수로 바닥을 벽보다 차게 해 불상에 이슬이 맺히지 않게, 외벽 자갈층 — 일제 콘크리트 보수 후 결로 생겨 지금은 기계로 습도 조절 | [경북매일 2022(이태녕 교수 논문 인용)](https://kbmaeil.com/article/202208210342204), [보존환경 연구 2003](https://koreascience.or.kr/article/JAKO200364064957082.page?lang=en) | 주의 — 신라의 의도는 '해석', 학술 근거 1개 더 필요 |
 | 이순신 명량해전 (조선) | 13척으로 133척을 상대 — 좁은 울돌목(가장 좁은 곳 약 300m)과 불규칙한 조류로 적 대열을 무너뜨림, 일자진으로 물길 봉쇄 | [한국민족문화대백과 명량대첩](https://encykorea.aks.ac.kr/Article/E0018250), [경향신문 2001](https://www.khan.co.kr/article/200101181703571) | 채택 가능 — 철쇄(쇠사슬) 설은 쓰지 않음, 전투 장면은 배 위주(인물은 이순신 한 명) |
 | 정약용 거중기 | 도르래로 무거운 돌을 들어 올린 화성 축조 기구 | [송성수 칼럼](https://v.daum.net/v/20231030004709607?f=p) | 주의 — 실제 기여는 크지 않았다는 견해, 비용 절감 수치 금지 |
