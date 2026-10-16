@@ -81,14 +81,14 @@ scenes:
         captions: ["그래서 기술자는 / 화산 근처의 고운 화산재를", "구운 석회와 섞었습니다"]
       - text: "그리고 화산 돌덩이를 듬뿍 넣어 반죽했죠."
         captions: ["그리고 화산 돌덩이를 / 듬뿍 넣어 반죽했죠"]
-    visual: 회색 화산재 더미와 흰 석회 가루를 큰 나무 통에 쏟아 섞는다
+    visual: 기술자 혼자 회색 화산재와 흰 석회 가루를 큰 나무 통에 쏟아 섞는다
     image_prompt: >-
-      A busy ancient harbor work yard: workers pouring grey volcanic ash from baskets and white lime powder into a big
-      wooden mixing trough, the engineer stirring it with a long wooden paddle, a pile of porous dark volcanic rocks
-      beside them.
+      A quiet ancient harbor work yard with only the engineer: he tips a basket of grey volcanic ash into a big wooden
+      mixing trough already holding white lime powder, a long wooden paddle leaning on the trough, a pile of porous
+      dark volcanic rocks beside him. No other people.
     characters: [engineer]
     motion_prompt: >-
-      Grey ash and white lime pour into the trough in puffs of dust; the engineer stirs them together with the paddle.
+      Grey ash pours into the trough in a puff of dust; the engineer sets the basket down and stirs with the paddle.
     camera: static
     extra_clips:
       - image_prompt: >-
@@ -104,13 +104,14 @@ scenes:
     lines:
       - text: "이 반죽을 나무 틀 안에 채워, 새 방파제를 쌓았습니다."
         captions: ["이 반죽을 나무 틀 안에 채워", "새 방파제를 쌓았습니다"]
-    visual: 바다에 박은 나무 틀 안으로 일꾼들이 반죽을 부어 채운다
+    visual: 바다에 박은 나무 틀 위에서 기술자가 반죽 바구니를 부어 채운다
     image_prompt: >-
-      A large rectangular wooden frame built out into the shallow sea, workers on planks dumping baskets of grey
-      mortar and volcanic rock into it, the engineer directing them from the edge, calm turquoise water around.
+      A large rectangular wooden frame built out into the shallow sea, the engineer alone standing on a plank across
+      it, tipping a heavy basket of grey mortar and volcanic rock into the frame, calm turquoise water around.
+      No other people.
     characters: [engineer]
     motion_prompt: >-
-      Workers tip their baskets and the grey mortar splashes into the wooden frame; the engineer points and nods.
+      The engineer tips the basket and the grey mortar splashes into the wooden frame; he wipes his brow and nods.
     camera: slow pull back
 
   - id: s06
@@ -204,6 +205,7 @@ accuracy_notes:
   - "'2천 년 가까이'는 서기 79년경 플리니우스가 이미 바다 구조물을 기록했고, 구조물이 지금도 남아 있다는 점(Sci.News) 기준."
   - "s05 나무 틀은 바다 구조물을 쌓는 장면을 단순화한 그림. 대본에서는 공법을 자세히 단정하지 않는다."
   - "현미경 장면의 결정 모양은 판 모양(plate-like)이라는 설명을 단순화한 그림."
+  - "화면 인물은 기술자 한 명으로 연출 (실제 공사는 많은 사람이 했다)."
   - "인물 복장은 단순화한 그림이며 특정 시기의 고증 복식이 아니다."
 
 youtube:

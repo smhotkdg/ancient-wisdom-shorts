@@ -39,12 +39,12 @@
       ]
     },
     "s04": {
-      "image": "A busy ancient harbor work yard: workers pouring grey volcanic ash from baskets and white lime powder into a big wooden mixing trough, the engineer stirring it with a long wooden paddle, a pile of porous dark volcanic rocks beside them. Characters: Roman harbor engineer (attached reference image char_engineer.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "image": "A quiet ancient harbor work yard with only the engineer: he tips a basket of grey volcanic ash into a big wooden mixing trough already holding white lime powder, a long wooden paddle leaning on the trough, a pile of porous dark volcanic rocks beside him. No other people. Characters: Roman harbor engineer (attached reference image char_engineer.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
       "clips": [
         {
           "file": "clips/s04.mp4",
           "seconds": 6,
-          "motion": "Grey ash and white lime pour into the trough in puffs of dust; the engineer stirs them together with the paddle. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+          "motion": "Grey ash pours into the trough in a puff of dust; the engineer sets the basket down and stirs with the paddle. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
         },
         {
           "file": "clips/s04-2.mp4",
@@ -54,12 +54,12 @@
       ]
     },
     "s05": {
-      "image": "A large rectangular wooden frame built out into the shallow sea, workers on planks dumping baskets of grey mortar and volcanic rock into it, the engineer directing them from the edge, calm turquoise water around. Characters: Roman harbor engineer (attached reference image char_engineer.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "image": "A large rectangular wooden frame built out into the shallow sea, the engineer alone standing on a plank across it, tipping a heavy basket of grey mortar and volcanic rock into the frame, calm turquoise water around. No other people. Characters: Roman harbor engineer (attached reference image char_engineer.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
       "clips": [
         {
           "file": "clips/s05.mp4",
           "seconds": 6,
-          "motion": "Workers tip their baskets and the grey mortar splashes into the wooden frame; the engineer points and nods. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+          "motion": "The engineer tips the basket and the grey mortar splashes into the wooden frame; he wipes his brow and nods. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
         }
       ]
     },

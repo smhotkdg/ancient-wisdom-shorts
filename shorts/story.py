@@ -14,6 +14,27 @@ REACTIONS = ["멘탈이 나가", "머리를 쥐어뜯", "속이 터졌", "발을
              "제정신이 아닌", "놀라 자빠", "기가 막히", "말도 안 되"]
 TURNS = ["그런데", "하지만", "그때", "그래서", "결국", "드디어", "이번엔", "그러자", "그렇게"]
 LIST_WORDS = ["첫째", "둘째", "셋째", "먼저,", "다음으로"]
+# 화면 인물 = 주인공 한 명 (2026-10-16 사용자: 인물이 많으면 집중도가 떨어진다 — 008 군중 장면)
+CROWD_EN = re.compile(r"\b(villagers|crowd|crowds|workers|townspeople|farmers|families|family|children|everyone|"
+                      r"group of|lines of|many hands|people)\b", re.I)
+CROWD_KO = re.compile(r"사람들|마을 사람|일꾼|군중|가족|농부들|아이들|여럿")
+NO_PEOPLE = re.compile(r"\bno (other )?people\b", re.I)
+
+
+def crowd_scenes(ep: Episode) -> list[str]:
+    """이미지·영상 프롬프트에 여러 사람(군중·일꾼·가족 등)이 나오는 장면 id."""
+    found = []
+    for sc in ep.scenes:
+        parts = [(sc["id"], sc)] + [(f"{sc['id']}-{i + 2}", x) for i, x in enumerate(sc.get("extra_clips") or [])]
+        for pid, part in parts:
+            en = " ".join(str(part.get(k) or "") for k in ("image_prompt", "motion_prompt"))
+            en = NO_PEOPLE.sub("", en)
+            ko = str(part.get("visual") or "")
+            if CROWD_EN.search(en) or CROWD_KO.search(ko):
+                found.append(pid)
+    return found
+
+
 BEAT_ORDER = ["hook", "problem", "question", "solution", "twist", "resolve", "info"]
 BEAT_KO = {"hook": "훅", "problem": "문제", "question": "질문", "solution": "해결", "twist": "반전",
            "resolve": "마무리", "info": "정보"}
@@ -59,6 +80,10 @@ def check(ep: Episode) -> dict:
              f"앞부분·제목에 노출: {', '.join(leaked)}" if leaked else f"마지막에만 등장: {', '.join(reveal)}")
     else:
         item(False, "정답 이름을 마지막까지 아낌", "story.reveal 미지정")
+
+    crowd = crowd_scenes(ep)
+    item(not crowd, "화면 인물은 주인공 한 명 (군중·일꾼·가족 장면 없음)",
+         f"여러 사람이 나오는 장면: {', '.join(crowd)}" if crowd else "통과")
 
     notes = " ".join(ep.data.get("accuracy_notes") or [])
     item("재구성" in notes, "정확성 메모에 '재구성' 명시", "있음" if "재구성" in notes else "없음")
