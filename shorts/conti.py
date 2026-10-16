@@ -345,4 +345,37 @@ def write(ep: Episode) -> str:
     (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header), encoding="utf-8")
     (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
     (ep.dir / "claude-code.txt").write_text(claude_code_prompt(ep, timing, grok_items), encoding="utf-8")
+    publish_copy(ep)
     return str(path)
+
+
+def publish_copy(ep: Episode) -> None:
+    """레포 루트 conti/ 에 에피소드별 콘티 복사본 + 목록(index.html)을 둔다 — 찾기 쉽게 (2026-10-16 사용자)."""
+    from .common import ROOT, load_episode
+    out = ROOT / "conti"
+    out.mkdir(exist_ok=True)
+    (out / f"{ep.dir.name}.html").write_text((ep.dir / "conti.html").read_text(encoding="utf-8"), encoding="utf-8")
+    rows = []
+    for d in sorted((ROOT / "episodes").glob("[0-9][0-9][0-9]-*")):
+        if not (d / "conti.html").exists() or not (out / f"{d.name}.html").exists():
+            continue
+        try:
+            e = load_episode(d)
+            title = " ".join(e.data.get("title_lines") or []) or e.data.get("working_title") or d.name
+            status = e.data.get("status", "")
+        except Exception:
+            title, status = d.name, ""
+        rows.append(f'<li><a href="{_e(d.name)}.html"><b>{_e(d.name[:3])}</b> {_e(title)}</a>'
+                    f' <span class="st">{_e(status)}</span></li>')
+    (out / "index.html").write_text(f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>콘티 목록</title>
+<style>:root{{--bg:#f6f3ee;--ink:#1d1b18;--muted:#6b655c;--line:#e4ddd2;--card:#fff}}
+@media (prefers-color-scheme:dark){{:root{{--bg:#15130f;--ink:#f0ebe2;--muted:#a59d90;--line:#332e26;--card:#1f1c17}}}}
+body{{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Noto Sans KR",system-ui,sans-serif}}
+main{{max-width:720px;margin:0 auto;padding:24px 16px}}h1{{font-size:22px}}ul{{list-style:none;padding:0}}
+li{{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:8px 0;padding:10px 14px}}
+a{{color:inherit;text-decoration:none}}.st{{color:var(--muted);font-size:13px;margin-left:6px}}</style></head>
+<body><main><h1>에피소드 콘티 목록</h1><ul>
+{chr(10).join(rows)}
+</ul><p class="st">python aw.py conti &lt;ep&gt; 를 실행하면 자동으로 갱신됩니다.</p></main></body></html>
+""", encoding="utf-8")

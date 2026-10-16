@@ -57,7 +57,7 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 10-1. **콘티를 줄 때 로컬 Claude Code 합성 지시문도 함께** 준다. `aw.py conti`가 콘티의 "Claude Code" 탭과 `claude-code.txt`로 자동 생성한다 (가로 중앙 정렬 검수 포함).
 11. **Grok 클립 원음은 효과음으로만 작게** 남긴다 (기본 `audio.sfx_volume: 0.12`, 에피소드·장면별로 바꿀 수 있음). 말소리·음악이 섞인 클립은 그 장면만 `sfx_volume: 0`.
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`, 기본 3d-cartoon). 프롬프트에 화풍 문구를 직접 박아 넣지 않는다.
-13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다. `images/`, `clips/`는 빈 폴더(`.gitkeep`)만 올려서 pull 하면 폴더가 바로 생긴다.
+13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다. `images/`, `clips/`는 빈 폴더(`.gitkeep`)만 올려서 pull 하면 폴더가 바로 생긴다. 콘티는 레포 루트 `conti/`에도 복사본(`conti/NNN-slug.html`)과 목록(`conti/index.html`)이 생겨 함께 올린다 (`aw.py conti`가 자동 갱신).
 14. 납품 전 `output/check/final-sheet.jpg`(360px 폭 장면 모음)를 직접 보고 자막이 핵심 동작을 가리지 않는지 확인한다.
 
 ## 환경 메모
