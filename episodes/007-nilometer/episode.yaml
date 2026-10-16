@@ -1,7 +1,7 @@
 # 007 나일로미터 — 강물 높이를 재서 한 해를 준비한 이집트의 우물
 id: "007"
 slug: nilometer
-status: script_ok
+status: done
 working_title: 이집트 사람들은 왜 강가에 깊은 우물을 팠을까?
 title_lines: ["강가에 판 우물로", "세금을 정했다고?"]
 hook: 넋이 나갔습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "나일강 가의 한 관리는 넋이 나갔습니다."
         captions: ["나일강 가의 한 관리는 / 넋이 나갔습니다"]
       - text: "해마다 강물이 불어 넘치는데, 올해는 얼마나 넘칠지 아무도 몰랐거든요."
-        captions: ["해마다 강물이 불어 넘치는데", "올해는 얼마나 넘칠지 / 아무도 몰랐거든요"]
+        captions: ["해마다 강물이 / 불어 넘치는데", "올해는 얼마나 넘칠지 / 아무도 몰랐거든요"]
     visual: 넘실대는 나일강가, 관리가 두루마리를 떨어뜨린 채 멍하니 강을 바라본다
     image_prompt: >-
       The wide brown Nile river swollen and rising over its banks under a hot blue sky, palm trees and green fields
@@ -141,6 +141,7 @@ scenes:
     motion_prompt: >-
       The farmers lean in to peek at the scroll; the official smiles awkwardly and rolls it up; a farmer gulps.
     camera: static
+    sfx_volume: 0               # 클립 끝에 사람 소리("Hmm")로 보이는 소리 — 효과음 끔
 
   - id: s08
     beat: resolve
