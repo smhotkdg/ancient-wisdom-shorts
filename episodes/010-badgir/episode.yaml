@@ -1,0 +1,220 @@
+# 010 바드기르 — 사막 집을 식힌 지붕 위 바람 탑 (이란 야즈드)
+id: "010"
+slug: badgir
+status: script_ok
+working_title: 사막 사람들은 왜 지붕 위에 높은 탑을 세웠을까?
+title_lines: ["지붕 위 탑 하나로", "사막 집이 시원해졌다고?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [찜통, 탑, 구멍, 바람, 흙벽]
+
+story:
+  hero: 집주인
+  reveal: [바드기르]
+
+characters:
+  - id: owner
+    name: 집주인
+    name_en: Persian desert homeowner
+    description: >-
+      a lean, friendly Persian man in his 40s with olive skin, a neat dark beard, thick eyebrows and warm brown eyes,
+      wearing a loose light beige cotton tunic and trousers, a simple off-white cloth cap, leather sandals
+    note: 이야기 주인공. 사막 도시의 흙집에 사는 집주인 (화면에 나오는 사람은 이 사람 한 명뿐)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "사막 도시의 한 집주인은 진땀을 뺐습니다."
+        captions: ["사막 도시의 한 집주인은 / 진땀을 뺐습니다"]
+      - text: "한여름 흙집 안이, 숨이 턱 막히는 찜통이었거든요."
+        captions: ["한여름 흙집 안이", "숨이 턱 막히는 / 찜통이었거든요"]
+    visual: 흙벽 방 안, 땀범벅이 된 집주인이 부채질하며 헉헉댄다
+    image_prompt: >-
+      Inside a simple mud-brick room in a desert town on a blazing summer afternoon, harsh sunlight through a small
+      window, heat shimmer in the air, the homeowner sitting on a rug drenched in sweat, fanning himself desperately
+      with a palm-leaf fan, tongue out, exhausted. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner fans himself faster and faster, wipes sweat from his forehead and flops backward with a groan.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the homeowner's sweaty face, beads of sweat rolling down, eyes squeezed shut, a clay cup of
+          water in his hand, the hot air shimmering. No other people.
+        characters: [owner]
+        motion_prompt: >-
+          A bead of sweat rolls down his cheek; he gulps the water, sighs and fans himself weakly.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "창문을 활짝 열어도, 뜨거운 모래바람만 훅 들어왔죠."
+        captions: ["창문을 활짝 열어도", "뜨거운 모래바람만 / 훅 들어왔죠"]
+    visual: 집주인이 나무 덧창을 열자 뜨거운 모래바람이 얼굴로 들이친다
+    image_prompt: >-
+      The homeowner pushing open a wooden window shutter in the mud-brick wall, a gust of hot sandy wind blasting into
+      his face, sand swirling into the room, his cap flying off. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The shutter swings open, hot sand blasts in, his cap flies off and he slams the shutter shut, coughing.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이 뜨거운 흙집을, 대체 어떻게 시원하게 만들 수 있을까요?"
+        captions: ["이 뜨거운 흙집을", "대체 어떻게 / 시원하게 만들 수 있을까요?"]
+    visual: 해 질 녘 평평한 흙 지붕 위에 선 집주인, 옷자락이 위쪽 바람에 펄럭인다
+    image_prompt: >-
+      The homeowner standing on the flat mud roof of his house at sunset, surrounded by the beige domes and flat roofs
+      of the desert town, his tunic fluttering in a breeze up here, eyes closed, feeling the wind with a curious
+      expression. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      A breeze ruffles his tunic; he opens his eyes, looks up at the wind and then down at his roof with a spark of an idea.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 집주인은 지붕 위에 높다란 탑을 세웠습니다."
+        captions: ["그래서 집주인은 지붕 위에 / 높다란 탑을 세웠습니다"]
+      - text: "땅 위보다 높은 곳에서 부는 바람을, 붙잡기 위해서였죠."
+        captions: ["땅 위보다 높은 곳에서 / 부는 바람을", "붙잡기 위해서였죠"]
+    visual: 집주인이 지붕 위에서 흙벽돌을 쌓아 네모난 탑을 올린다
+    image_prompt: >-
+      The homeowner alone on his flat mud roof, stacking sun-dried mud bricks to build a tall square tower that rises
+      above the rooftops, a bucket of mud mortar beside him, the desert town spreading out below. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner sets another mud brick on top and pats it with mortar; the tower rises a little higher.
+    camera: slow tilt up
+    extra_clips:
+      - image_prompt: >-
+          Low angle looking up at the finished tall square mud-brick tower on the roof against a clear blue sky, the
+          homeowner standing proudly beside its base, hands on hips. No other people.
+        characters: [owner]
+        motion_prompt: >-
+          The camera tilts up the tall tower; a breeze blows dust off its top; the homeowner grins.
+        camera: slow tilt up
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 탑 꼭대기 사방에는, 길쭉한 구멍을 여러 개 뚫었습니다."
+        captions: ["그리고 탑 꼭대기 사방에는", "길쭉한 구멍을 / 여러 개 뚫었습니다"]
+    visual: 탑 꼭대기 네 면에 세로로 긴 구멍들이 나란히 뚫려 있다
+    image_prompt: >-
+      Close view of the top of the square mud-brick wind tower: each of its four sides has a row of tall narrow
+      vertical slots, wooden beams across the top, blue sky behind, the homeowner on a ladder chiseling the last slot.
+      No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The homeowner taps the chisel and a chunk falls away, opening the last slot; sunlight streams through the slots.
+    camera: slow orbit
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그러자 바람이 불어오는 쪽 구멍으로 들어온 바람이, 탑을 타고 집 안으로 쑥 내려왔죠."
+        captions: ["그러자 바람이 불어오는 쪽 / 구멍으로 들어온 바람이", "탑을 타고 / 집 안으로 쑥 내려왔죠"]
+    visual: 단면도 — 탑의 바람 받는 쪽 구멍으로 하늘색 바람이 들어와 탑 속을 타고 아래 방으로 내려간다
+    image_prompt: >-
+      Side cross-section of the mud-brick house and its tall roof tower: pale-blue breeze streams entering the
+      openings on the windward side of the tower top, flowing down the vertical shaft into the room below.
+      Clean educational illustration, no labels, no text, no people.
+    motion_prompt: >-
+      Pale-blue breeze streams pour into the windward openings, slide down the shaft and spread into the room below.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 바람이 계속 들어오기만 하면, 집 안의 더운 공기는 어디로 가야 할까요?"
+        captions: ["그런데 바람이 / 계속 들어오기만 하면", "집 안의 더운 공기는 / 어디로 가야 할까요?"]
+    visual: 방 천장 근처에 붉은 더운 공기가 고여 있고, 집주인이 위를 올려다보며 고개를 갸웃
+    image_prompt: >-
+      Inside the room, a faint reddish haze of hot air pooled near the ceiling, the homeowner looking up at it,
+      scratching his head with a puzzled look. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The reddish haze swirls near the ceiling; the homeowner looks up, frowns and scratches his head.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "답은 탑의 반대쪽 구멍이었습니다."
+        captions: ["답은 탑의 / 반대쪽 구멍이었습니다"]
+      - text: "바람 뒤편에서 공기를 쭉 빨아들여, 더운 공기를 밖으로 뽑아냈거든요."
+        captions: ["바람 뒤편에서 / 공기를 쭉 빨아들여", "더운 공기를 / 밖으로 뽑아냈거든요"]
+    visual: 단면도 — 하늘색 바람이 내려오고, 붉은 더운 공기가 탑의 반대쪽 구멍으로 빨려 나간다
+    image_prompt: >-
+      Side cross-section of the house and tower: pale-blue cool air coming down on the windward side, and reddish
+      warm air being drawn up and out through the openings on the opposite, leeward side of the tower, forming a loop.
+      Clean educational illustration, no labels, no text, no people.
+    motion_prompt: >-
+      Blue air flows down one side while reddish warm air is sucked up and out of the opposite openings in a steady loop.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "여기에 두꺼운 흙벽과 안뜰까지 더해, 사막 한가운데서도 시원한 집이 됐죠."
+        captions: ["여기에 두꺼운 흙벽과 / 안뜰까지 더해", "사막 한가운데서도 / 시원한 집이 됐죠"]
+    visual: 그늘진 안뜰에서 집주인이 혼자 차를 마시며 편히 쉰다, 위로 바람 탑이 보인다
+    image_prompt: >-
+      A shady sunken courtyard of the mud-brick house with thick earthen walls, a small pool and a pomegranate tree,
+      the homeowner alone relaxing on a cushion sipping tea with a contented smile, the wind tower rising above the
+      wall behind him. No other people.
+    characters: [owner]
+    motion_prompt: >-
+      Leaves sway gently in the breeze; the homeowner sips his tea, leans back and closes his eyes contentedly.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "사막 도시의 하늘을 가득 채운 이 바람 탑이 바로, 바드기르입니다."
+        captions: ["사막 도시의 하늘을 / 가득 채운", "이 바람 탑이 / 바로, 바드기르입니다"]
+    visual: 해 질 녘 흙빛 도시 위로 수많은 바람 탑이 솟아 있고, 한 지붕 위에 집주인이 서 있다
+    image_prompt: >-
+      Golden sunset over a beige mud-brick desert town, its skyline punctuated with many tall square wind towers and
+      a few domes, the homeowner standing alone on his roof beside his own tower, tiny in the wide view, waving.
+      No other people.
+    characters: [owner]
+    motion_prompt: >-
+      The camera slowly rises and pulls back over the skyline of wind towers; the homeowner waves from his roof.
+    camera: slow pull back and rise
+
+sources:
+  - "UNESCO 세계유산 — Historic City of Yazd (이란 고원 한가운데 사막 도시, 카나트로 물을 끌어옴; 바람 탑(wind-catchers)·안뜰·두꺼운 흙벽이 쾌적한 미기후를 만듦; 바람 탑·첨탑·돔이 어우러진 스카이라인) — https://whc.unesco.org/en/list/1544"
+  - "Mahdavinejad 외, 'Numerical Modeling and Experimental Study of Air Flow in the Yazdi Wind-Towers', International Journal of Architectural Engineering & Urban Planning (이란과학기술대) — 높은 곳의 바람을 붙잡아 생활 공간으로 보냄, 여러 면의 구멍, 바람 받는 쪽으로 들어와 반대쪽으로 나감, 바람 뒤편의 흡입 효과로 실내 더운 공기가 빠져나감 — https://ijaup.iust.ac.ir/article-1-125-fa.pdf"
+  - "국제냉동연구소(IIR) — Windcatchers: the birth of air conditioning and natural refrigeration? (지붕 위 굴뚝 같은 탑이 시원한 바람을 아래로 보냄, 이란에서 현존하는 가장 오래된 것은 14세기) — https://iifiir.org/en/news/windcatchers-the-birth-of-air-conditioning-and-natural-refrigeration"
+
+accuracy_notes:
+  - "집주인 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 바드기르를 처음 만든 사람의 실제 이야기가 아니다."
+  - "바드기르는 한 사람이 발명한 것이 아니다. '집주인이 세웠다'는 이야기 흐름을 위한 단순화."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "화면 인물은 집주인 한 명으로 연출."
+  - "작동 원리는 논문(Mahdavinejad 외)의 설명을 단순화: 바람 받는 쪽으로 들어오고, 반대쪽(바람 뒤편)의 흡입으로 더운 공기가 빠져나간다. 실제 흐름은 바람 방향·탑 형태에 따라 다르다."
+  - "온도가 몇 도 내려간다는 수치는 쓰지 않는다. 물·지하 저수조를 이용한 냉각도 이번 대본에서는 다루지 않는다."
+  - "'창문을 열면 모래바람'은 사막 기후를 단순화한 연출."
+  - "인물 복장은 단순화한 그림이며 특정 시기의 고증 복식이 아니다."
+
+youtube:
+  titles:
+    - 에어컨 없던 사막 집이 시원했던 비밀, 지붕 위 바람 탑
+    - 지붕 위 탑 하나로 사막 집이 시원해졌다고?
+    - 바람은 들이고 열기는 빼내는 천 년 전 에어컨
+  description: |-
+    🥵 창문을 열면 뜨거운 모래바람, 닫으면 찜통… 사막 한가운데 집을 어떻게 식힐까요?
+
+    이란 사막 도시 사람들은 지붕 위에 높다란 탑을 세웠습니다 🏜️
+    높은 곳의 바람을 붙잡아 집 안으로 쑥!
+    그리고 반대쪽 구멍으로는 더운 공기를 쭉 뽑아냈죠 🌬️
+
+    전기 한 방울 없이 돌아가는 자연 에어컨, 지금도 사막 도시의 하늘을 채우고 있답니다.
+  comment_question: 여러분 집에서 여름에 가장 시원한 자리는 어디인가요?
+  hashtags: [바드기르, 이란, 야즈드, 바람탑, 쇼츠]

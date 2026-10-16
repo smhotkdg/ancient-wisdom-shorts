@@ -1,0 +1,117 @@
+{
+  "characters": {
+    "owner": "Character reference sheet of a lean, friendly Persian man in his 40s with olive skin, a neat dark beard, thick eyebrows and warm brown eyes, wearing a loose light beige cotton tunic and trousers, a simple off-white cloth cap, leather sandals. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "Inside a simple mud-brick room in a desert town on a blazing summer afternoon, harsh sunlight through a small window, heat shimmer in the air, the homeowner sitting on a rug drenched in sweat, fanning himself desperately with a palm-leaf fan, tongue out, exhausted. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The homeowner fans himself faster and faster, wipes sweat from his forehead and flops backward with a groan. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "A bead of sweat rolls down his cheek; he gulps the water, sighs and fans himself weakly. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The homeowner pushing open a wooden window shutter in the mud-brick wall, a gust of hot sandy wind blasting into his face, sand swirling into the room, his cap flying off. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The shutter swings open, hot sand blasts in, his cap flies off and he slams the shutter shut, coughing. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The homeowner standing on the flat mud roof of his house at sunset, surrounded by the beige domes and flat roofs of the desert town, his tunic fluttering in a breeze up here, eyes closed, feeling the wind with a curious expression. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "A breeze ruffles his tunic; he opens his eyes, looks up at the wind and then down at his roof with a spark of an idea. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The homeowner alone on his flat mud roof, stacking sun-dried mud bricks to build a tall square tower that rises above the rooftops, a bucket of mud mortar beside him, the desert town spreading out below. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The homeowner sets another mud brick on top and pats it with mortar; the tower rises a little higher. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "The camera tilts up the tall tower; a breeze blows dust off its top; the homeowner grins. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Close view of the top of the square mud-brick wind tower: each of its four sides has a row of tall narrow vertical slots, wooden beams across the top, blue sky behind, the homeowner on a ladder chiseling the last slot. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The homeowner taps the chisel and a chunk falls away, opening the last slot; sunlight streams through the slots. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Side cross-section of the mud-brick house and its tall roof tower: pale-blue breeze streams entering the openings on the windward side of the tower top, flowing down the vertical shaft into the room below. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "Pale-blue breeze streams pour into the windward openings, slide down the shaft and spread into the room below. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "Inside the room, a faint reddish haze of hot air pooled near the ceiling, the homeowner looking up at it, scratching his head with a puzzled look. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "The reddish haze swirls near the ceiling; the homeowner looks up, frowns and scratches his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Side cross-section of the house and tower: pale-blue cool air coming down on the windward side, and reddish warm air being drawn up and out through the openings on the opposite, leeward side of the tower, forming a loop. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Blue air flows down one side while reddish warm air is sucked up and out of the opposite openings in a steady loop. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A shady sunken courtyard of the mud-brick house with thick earthen walls, a small pool and a pomegranate tree, the homeowner alone relaxing on a cushion sipping tea with a contented smile, the wind tower rising above the wall behind him. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "Leaves sway gently in the breeze; the homeowner sips his tea, leans back and closes his eyes contentedly. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "Golden sunset over a beige mud-brick desert town, its skyline punctuated with many tall square wind towers and a few domes, the homeowner standing alone on his roof beside his own tower, tiny in the wide view, waving. No other people. Characters: Persian desert homeowner (attached reference image char_owner.png) — keep their faces, proportions and outfits exactly as in the references. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly rises and pulls back over the skyline of wind towers; the homeowner waves from his roof. Camera: slow pull back and rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}
