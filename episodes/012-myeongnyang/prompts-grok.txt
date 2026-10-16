@@ -1,0 +1,38 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.8초
+The distant fleet slowly grows on the horizon; the commander's robe whips in the wind and his grip tightens. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.8–8.1초
+The camera rises to reveal the huge enemy fleet dwarfing the small line of Joseon ships. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.1–12.3초
+He slides the enemy tokens around his few ships until they are fully surrounded, then exhales heavily. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.3–15.8초
+His finger slides across the chart and stops on the narrow channel; he taps it twice and looks up. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.8–21.0초
+The current roars and swirls into whirlpools; the commander watches calmly from the cliff, robe flapping. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 21.0–25.0초
+Water rushes and spins violently between the rocks, throwing spray into the air. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 25.0–29.8초
+The Joseon ships glide into a straight line across the channel and hold firm against the current. Camera: slow drone push forward. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 29.8–34.0초
+Enemy ships jostle and bump as they squeeze into the narrow channel, unable to spread out. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 34.0–39.9초
+Smoke drifts across the deck; the commander leans over the railing and stares as the water starts to turn. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 39.9–44.2초
+The current arrows swing around; the enemy ships spin, drift and scatter out of formation. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 44.2–49.3초
+Cannons fire in a row with flashes and smoke; the commander thrusts his sword forward. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 49.3–53.0초
+Smoke drifts away and the enemy ships shrink toward the horizon; sunlight breaks through onto the Joseon ships. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 53.0–59.0초
+The commander slowly turns his head toward the sea; the camera pulls back and rises over the calm strait at sunset. Camera: slow pull back and rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.

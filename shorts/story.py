@@ -18,7 +18,7 @@ LIST_WORDS = ["첫째", "둘째", "셋째", "먼저,", "다음으로"]
 CROWD_EN = re.compile(r"\b(villagers|crowd|crowds|workers|townspeople|farmers|families|family|children|everyone|"
                       r"group of|lines of|many hands|people)\b", re.I)
 CROWD_KO = re.compile(r"사람들|마을 사람|일꾼|군중|가족|농부들|아이들|여럿")
-NO_PEOPLE = re.compile(r"\bno (other )?people\b", re.I)
+NO_PEOPLE = re.compile(r"\bno (other |visible )?(people|crews?)\b", re.I)
 
 
 def crowd_scenes(ep: Episode) -> list[str]:

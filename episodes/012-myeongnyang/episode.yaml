@@ -1,0 +1,220 @@
+# 012 명량해전 — 배 13척으로 133척을 막은 좁은 바닷길
+id: "012"
+slug: myeongnyang
+status: script_ok
+working_title: 이순신은 어떻게 배 13척으로 133척을 막았을까?
+title_lines: ["배 13척으로", "133척을 막았다고?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [열세 척, 바닷길, 한 줄로, 물살, 대포]
+
+story:
+  hero: 이순신
+  reveal: [울돌목, 명량해전]
+
+characters:
+  - id: yi
+    name: 이순신
+    name_en: Joseon naval commander
+    description: >-
+      a calm, resolute Korean naval commander in his 50s with a long thin black beard and mustache, sharp determined
+      eyes and weathered skin, wearing a dark red Joseon military commander's robe with a black brimmed military hat
+      (jeollip) with a red tassel, a sword at his side (an imagined look, not a real portrait)
+    note: 이야기 주인공. 남은 배 13척으로 바다를 지켜야 하는 수군 장수 (화면에 나오는 사람은 이 사람 한 명뿐)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "조선 수군을 이끌던 이순신은 눈앞이 캄캄했습니다."
+        captions: ["조선 수군을 이끌던 이순신은 / 눈앞이 캄캄했습니다"]
+      - text: "남은 배는 고작 열세 척, 적의 배는 백삼십 척이 넘었거든요."
+        captions: ["남은 배는 고작 열세 척", "적의 배는 / 백삼십 척이 넘었거든요"]
+    visual: 판옥선 갑판 위의 이순신, 수평선을 가득 메운 적의 배들을 바라본다
+    image_prompt: >-
+      The commander standing alone at the bow of a large Joseon wooden warship (panokseon) on a grey morning sea,
+      gripping the railing, staring at the horizon where a huge fleet of enemy sailing ships fills the sea, dark clouds
+      overhead. Ships only in the distance, no visible crews. No other people.
+    characters: [yi]
+    motion_prompt: >-
+      The distant fleet slowly grows on the horizon; the commander's robe whips in the wind and his grip tightens.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          High aerial view of the sea: a small line of thirteen Joseon warships on one side and a vast swarm of more than
+          a hundred enemy ships on the other, the contrast dramatic. No visible people.
+        motion_prompt: >-
+          The camera rises to reveal the huge enemy fleet dwarfing the small line of Joseon ships.
+        camera: slow rise
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "넓은 바다에서 맞붙으면, 순식간에 둘러싸일 게 뻔했죠."
+        captions: ["넓은 바다에서 맞붙으면", "순식간에 / 둘러싸일 게 뻔했죠"]
+    visual: 지휘선 안 탁자 위 지도, 작은 배 모형들이 큰 무리에 둘러싸인다
+    image_prompt: >-
+      Inside the commander's cabin, a sea chart spread on a low wooden table, the commander alone moving small wooden
+      ship tokens: a few tokens surrounded on all sides by a large ring of enemy tokens, his face grim in lamplight.
+      No other people.
+    characters: [yi]
+    motion_prompt: >-
+      He slides the enemy tokens around his few ships until they are fully surrounded, then exhales heavily.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "열 배가 넘는 적을, 대체 어디서 막아야 할까요?"
+        captions: ["열 배가 넘는 적을", "대체 어디서 / 막아야 할까요?"]
+    visual: 이순신이 지도 위 섬과 육지 사이 좁은 물길을 손가락으로 짚는다
+    image_prompt: >-
+      Close-up of the commander's finger tracing the sea chart and stopping on a very narrow channel squeezed between an
+      island and the mainland, his eyes narrowing with sudden resolve. No other people.
+    characters: [yi]
+    motion_prompt: >-
+      His finger slides across the chart and stops on the narrow channel; he taps it twice and looks up.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 이순신은 진도와 육지 사이, 좁디좁은 바닷길 하나를 골랐습니다."
+        captions: ["그래서 이순신은 / 진도와 육지 사이", "좁디좁은 바닷길 하나를 / 골랐습니다"]
+      - text: "물살이 거세, 바닷물이 우는 소리를 낸다는 곳이었죠."
+        captions: ["물살이 거세", "바닷물이 우는 소리를 / 낸다는 곳이었죠"]
+    visual: 섬과 육지 사이 좁은 해협, 소용돌이치는 거센 물살
+    image_prompt: >-
+      A dramatic narrow sea strait between a rocky green island and the mainland coast, fierce swirling currents and
+      whirlpools churning white foam, the commander alone on a cliff top looking down at it, wind in his robe.
+      No other people.
+    characters: [yi]
+    motion_prompt: >-
+      The current roars and swirls into whirlpools; the commander watches calmly from the cliff, robe flapping.
+    camera: slow pan
+    extra_clips:
+      - image_prompt: >-
+          Close view of the roaring water in the narrow strait, waves crashing against black rocks, whirlpools spinning,
+          spray flying. No people.
+        motion_prompt: >-
+          Water rushes and spins violently between the rocks, throwing spray into the air.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 그 좁은 길목을, 배 열세 척으로 한 줄로 길게 막아섰습니다."
+        captions: ["그리고 그 좁은 길목을", "배 열세 척으로 / 한 줄로 길게 막아섰습니다"]
+    visual: 하늘에서 본 해협 — 조선 배들이 물길을 가로질러 일자로 늘어선다
+    image_prompt: >-
+      Aerial view of the narrow strait: a line of Joseon wooden warships stretched straight across the channel from shore
+      to shore like a wall, the commander's flagship in the center, swirling water around them. No visible people.
+    motion_prompt: >-
+      The Joseon ships glide into a straight line across the channel and hold firm against the current.
+    camera: slow drone push forward
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "좁은 물길 탓에, 적은 많은 배로 한꺼번에 덤비지 못했죠."
+        captions: ["좁은 물길 탓에", "적은 많은 배로 / 한꺼번에 덤비지 못했죠"]
+    visual: 좁은 해협 입구에 적의 배들이 몰려 서로 엉키며 줄줄이 늘어선다
+    image_prompt: >-
+      The mouth of the narrow strait crowded with enemy sailing ships jammed together, bumping and tangled as they squeeze
+      in one by one, while the line of Joseon ships waits ahead. No visible people.
+    motion_prompt: >-
+      Enemy ships jostle and bump as they squeeze into the narrow channel, unable to spread out.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 싸움이 한창일 때, 바다에 이상한 일이 벌어졌습니다. 무슨 일이었을까요?"
+        captions: ["그런데 싸움이 한창일 때", "바다에 이상한 일이 / 벌어졌습니다", "무슨 일이었을까요?"]
+    visual: 갑판 위 이순신이 발밑 바다를 내려다보며 눈을 크게 뜬다
+    image_prompt: >-
+      The commander on the deck of his flagship amid cannon smoke, looking down over the railing at the sea surface where
+      the water is beginning to swirl in a new direction, his eyes widening. No other people.
+    characters: [yi]
+    motion_prompt: >-
+      Smoke drifts across the deck; the commander leans over the railing and stares as the water starts to turn.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "거의 멈춰 있던 물살이, 방향을 바꿔 흐르기 시작한 겁니다."
+        captions: ["거의 멈춰 있던 물살이", "방향을 바꿔 / 흐르기 시작한 겁니다"]
+      - text: "뒤엉킨 물살에 적의 대열은 무너졌고, 조선 배들은 대포로 몰아붙였죠."
+        captions: ["뒤엉킨 물살에 / 적의 대열은 무너졌고", "조선 배들은 / 대포로 몰아붙였죠"]
+    visual: 단면/하늘 시점 — 물살 화살표가 방향을 바꾸며 적의 배들이 뒤엉킨다
+    image_prompt: >-
+      Aerial view of the strait with glowing blue arrows of current swinging around to flow the other way, the crowded enemy
+      ships spinning and drifting apart in disorder. Clean illustrative style, no labels, no text, no visible people.
+    motion_prompt: >-
+      The current arrows swing around; the enemy ships spin, drift and scatter out of formation.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Side view of a Joseon wooden warship firing its cannons, bright flashes and thick white smoke billowing from the
+          gun ports, the commander alone on the high deck pointing forward with his sword. No other people.
+        characters: [yi]
+        motion_prompt: >-
+          Cannons fire in a row with flashes and smoke; the commander thrusts his sword forward.
+        camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "결국 적은 서른 척 넘게 배를 잃고, 물러났습니다."
+        captions: ["결국 적은 서른 척 넘게", "배를 잃고 / 물러났습니다"]
+    visual: 연기 걷힌 바다, 적의 배들이 멀리 수평선으로 물러가고 조선 배들이 남아 있다
+    image_prompt: >-
+      The sea after the battle with drifting smoke clearing, enemy ships retreating far toward the horizon, the line of
+      Joseon warships still standing in the strait, evening sun breaking through the clouds. No visible people.
+    motion_prompt: >-
+      Smoke drifts away and the enemy ships shrink toward the horizon; sunlight breaks through onto the Joseon ships.
+    camera: slow pull back
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "이 바다가 바로 울돌목, 열세 척으로 지켜 낸 싸움이 바로 명량해전입니다."
+        captions: ["이 바다가 바로 울돌목", "열세 척으로 지켜 낸 싸움이 / 바로 명량해전입니다"]
+    visual: 노을 진 해협 위 지휘선 뱃머리에 선 이순신, 카메라가 빠진다
+    image_prompt: >-
+      The commander standing alone at the bow of his flagship at golden sunset in the calm narrow strait, sword sheathed,
+      gazing out to sea with quiet resolve, gentle waves around. No other people.
+    characters: [yi]
+    motion_prompt: >-
+      The commander slowly turns his head toward the sea; the camera pulls back and rises over the calm strait at sunset.
+    camera: slow pull back and rise
+
+sources:
+  - "한국민족문화대백과 — 명량대첩 (1597년 9월 16일 정유재란, 조선 전선 13척(칠천량에서 빠져나온 12척 + 1척), 일본 전선 133척, 진도와 육지 사이 협수로 명량, 일자진으로 적의 수로 통과를 막음, 전투 초반 거의 멈췄던 조류가 남동류로 바뀌며 불규칙한 조류가 일본 수군 대열을 무너뜨림, 현자총통·화전 공격, 적선 31척 격파 후 일본 수군 퇴각, 서해 진출 차단) — https://encykorea.aks.ac.kr/Article/E0018250"
+  - "경향신문 2001 — 울돌목 (물살이 매우 빠르고, 바다가 우는 소리에서 이름이 유래, 가장 좁은 곳 약 300m, 이순신이 이를 간파하고 결전 장소로 잡음) — https://www.khan.co.kr/article/200101181703571"
+
+accuracy_notes:
+  - "이순신은 실존 인물이지만, 감정·행동은 설명용 재구성이다. 대사를 지어내 인용하지 않는다 (난중일기 문구도 쓰지 않음)."
+  - "이순신의 얼굴·복장은 상상한 모습이다."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "배 수: 조선 13척, 일본 133척, 격파 31척 — 한국민족문화대백과 기준. 자료마다 다른 숫자(330척 설 등)는 쓰지 않는다."
+  - "'넓은 바다에서는 둘러싸인다'(s02), '좁아서 한꺼번에 덤비지 못했다'(s06)는 협수로를 이용했다는 백과사전 설명을 풀어 쓴 해석."
+  - "조류 변화: '거의 멈췄던 조류가 방향을 바꾸며 불규칙한 조류가 대열을 무너뜨렸다'(한국민족문화대백과) 기준. '이순신이 조류가 바뀔 시각을 정확히 계산해 기다렸다'는 단정하지 않는다."
+  - "철쇄(쇠사슬)를 바다에 걸었다는 설은 근거가 약해 쓰지 않는다. 물살 속도 수치도 쓰지 않는다."
+  - "화면 인물은 이순신 한 명으로 연출. 배는 멀리서 보이게 하고 선원은 그리지 않는다."
+
+youtube:
+  titles:
+    - 배 13척으로 133척을 막은 이순신의 바닷길
+    - 열 배 넘는 적을 막아 낸 '우는 바다'의 비밀
+    - 이순신이 이 좁은 바다를 고른 이유
+  description: |-
+    ⚓ 내 배는 13척, 적의 배는 133척… 여러분이라면 어디서 싸우시겠어요?
+
+    이순신의 답은 '넓은 바다가 아니라, 가장 좁은 바닷길'이었습니다 🌊
+    물살이 거세 바닷물이 운다는 그곳을, 13척이 한 줄로 막아섰죠.
+
+    그런데 싸움이 한창일 때, 바다가 갑자기 방향을 바꾸는데… 🔥
+    지금도 그 바다에는 거센 물살이 소리를 내며 흐르고 있답니다.
+  comment_question: 이순신 장군의 해전 중 다음엔 어떤 이야기가 궁금하세요?
+  hashtags: [이순신, 명량해전, 울돌목, 한국사, 쇼츠]
