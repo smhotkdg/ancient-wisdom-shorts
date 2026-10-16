@@ -1,7 +1,7 @@
 # 006 치남파 — 호수 위에 밭을 만든 아즈텍 사람들
 id: "006"
 slug: chinampa
-status: script_ok
+status: done
 working_title: 아즈텍 사람들은 어떻게 호수 위에 밭을 만들었을까?
 title_lines: ["호수 한가운데에", "밭을 만들었다고?"]
 hook: 두 손 두 발 다 들었습니다
@@ -38,6 +38,7 @@ scenes:
     motion_prompt: >-
       The farmer throws both arms up and lets them drop with a big sigh; gentle waves lap at the stone edge.
     camera: static
+    sfx_volume: 0               # 클립에 사람 소리("Oh") — 효과음 끔
     extra_clips:
       - image_prompt: >-
           Close-up of the farmer kneeling at the stone edge of the island city, looking down at an open palm full of
@@ -103,7 +104,7 @@ scenes:
     beat: solution
     lines:
       - text: "그리고 그 안에 호수 바닥 진흙과 썩은 풀을, 층층이 쌓아 올렸습니다."
-        captions: ["그리고 그 안에 / 호수 바닥 진흙과 썩은 풀을", "층층이 쌓아 올렸습니다"]
+        captions: ["그리고 그 안에 / 호수 바닥 진흙과", "썩은 풀을 / 층층이 쌓아 올렸습니다"]
     visual: 단면도 — 말뚝 울타리 안에 진흙과 풀이 층층이 쌓여 물 위로 올라온다
     image_prompt: >-
       Side cross-section of the shallow lake: a rectangular fence of wooden poles and woven reeds standing on the
@@ -126,6 +127,7 @@ scenes:
     motion_prompt: >-
       Time-lapse: corn stalks shoot up, bean vines curl around them and squash leaves unfurl; the farmer laughs.
     camera: slow pull back
+    sfx_volume: 0               # 클립에 웃음소리 — 효과음 끔
 
   - id: s07
     beat: twist
