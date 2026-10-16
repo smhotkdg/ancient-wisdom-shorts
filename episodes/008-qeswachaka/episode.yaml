@@ -1,7 +1,7 @@
 # 008 케스와차카 — 풀로 엮어 해마다 다시 놓는 잉카의 다리
 id: "008"
 slug: qeswachaka
-status: script_ok
+status: done
 working_title: 잉카 사람들은 어떻게 풀로 협곡에 다리를 놓았을까?
 title_lines: ["풀로 꼰 밧줄로", "협곡을 건넜다고?"]
 hook: 눈앞이 캄캄했습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "안데스 산골의 한 소년은 눈앞이 캄캄했습니다."
         captions: ["안데스 산골의 한 소년은 / 눈앞이 캄캄했습니다"]
       - text: "깊은 협곡과 거센 강에 막혀, 건너편 마을까지 갈 길이 없었거든요."
-        captions: ["깊은 협곡과 거센 강에 막혀", "건너편 마을까지 / 갈 길이 없었거든요"]
+        captions: ["깊은 협곡과 / 거센 강에 막혀", "건너편 마을까지 / 갈 길이 없었거든요"]
     visual: 깊은 협곡 끝에 선 소년, 아래로 거센 강, 건너편 언덕에 작은 마을
     image_prompt: >-
       A dramatic deep rocky canyon in the high Andes with a roaring brown river far below, steep grassy slopes; the
@@ -79,7 +79,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 소년과 마을 사람들은, 풀을 비비고 꼬아 가는 끈을 만들었습니다."
-        captions: ["그래서 소년과 마을 사람들은", "풀을 비비고 꼬아 / 가는 끈을 만들었습니다"]
+        captions: ["그래서 소년과 / 마을 사람들은", "풀을 비비고 꼬아 / 가는 끈을 만들었습니다"]
       - text: "그 끈을 다시 꼬고 땋아, 굵고 튼튼한 밧줄로 키웠죠."
         captions: ["그 끈을 다시 꼬고 땋아", "굵고 튼튼한 / 밧줄로 키웠죠"]
     visual: 마을 사람들이 둘러앉아 풀을 손바닥으로 비벼 가는 끈을 꼰다
@@ -104,7 +104,7 @@ scenes:
     beat: solution
     lines:
       - text: "그리고 굵은 밧줄 여러 가닥을, 협곡 양쪽에 걸고 팽팽히 당겼습니다."
-        captions: ["그리고 굵은 밧줄 여러 가닥을", "협곡 양쪽에 걸고 / 팽팽히 당겼습니다"]
+        captions: ["그리고 굵은 밧줄 / 여러 가닥을", "협곡 양쪽에 걸고 / 팽팽히 당겼습니다"]
     visual: 협곡 양쪽에서 사람들이 줄지어 굵은 밧줄을 당긴다
     image_prompt: >-
       Two long lines of villagers on both sides of the canyon pulling several thick golden grass ropes taut across the
@@ -113,6 +113,7 @@ scenes:
     motion_prompt: >-
       Everyone leans back and heaves together; the ropes rise from a sag and snap taut across the canyon.
     camera: static
+    sfx_volume: 0               # 다 함께 당기는 기합 소리 — 효과음 끔
 
   - id: s06
     beat: solution
@@ -133,7 +134,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 풀은 비바람을 맞으면 금방 삭을 텐데, 이 다리는 어떻게 버틸까요?"
-        captions: ["그런데 풀은 비바람을 맞으면 / 금방 삭을 텐데", "이 다리는 어떻게 / 버틸까요?"]
+        captions: ["그런데 풀은 / 비바람을 맞으면", "금방 삭을 텐데", "이 다리는 어떻게 / 버틸까요?"]
     visual: 비바람 속에 색이 바래고 해진 풀 다리, 소년이 해진 밧줄을 만지며 걱정스러운 표정
     image_prompt: >-
       The same grass bridge months later in grey rain and wind, its ropes faded, frayed and sagging, loose strands
@@ -158,6 +159,7 @@ scenes:
     motion_prompt: >-
       The crowd heaves the new rope together; the boy jumps and cheers; colorful ponchos sway.
     camera: slow pan
+    sfx_volume: 0               # 군중 구령·환호, s08-2 잔치(피리·북·웃음·박수) — 효과음 끔
     extra_clips:
       - image_prompt: >-
           Evening by the canyon: villagers in colorful clothes sharing food around a small fire, some playing
@@ -171,7 +173,7 @@ scenes:
     beat: info
     lines:
       - text: "잉카의 길을 잇던 이 다리는, 지금도 해마다 새로 태어납니다."
-        captions: ["잉카의 길을 잇던 이 다리는", "지금도 해마다 / 새로 태어납니다"]
+        captions: ["잉카의 길을 잇던 / 이 다리는", "지금도 해마다 / 새로 태어납니다"]
     visual: 새로 엮은 황금빛 다리를 하늘에서 내려다본 장면, 협곡 양쪽으로 산길이 이어진다
     image_prompt: >-
       Aerial view of the bright new golden grass rope bridge spanning the deep green canyon, mountain footpaths
