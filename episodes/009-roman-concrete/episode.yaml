@@ -1,0 +1,224 @@
+# 009 로마 콘크리트 — 바닷물을 만나 더 단단해지는 방파제
+id: "009"
+slug: roman-concrete
+status: script_ok
+working_title: 로마 사람들은 왜 일부러 바닷물로 반죽했을까?
+title_lines: ["바닷물에 닿을수록", "더 단단해진다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [파도, 화산재, 석회, 바닷물, 결정]
+
+story:
+  hero: 기술자
+  reveal: [로마 콘크리트]
+
+characters:
+  - id: engineer
+    name: 기술자
+    name_en: Roman harbor engineer
+    description: >-
+      a stocky, good-humored ancient Roman man in his 40s with short curly dark hair, a short beard, sun-tanned skin
+      and bushy eyebrows, wearing a simple knee-length off-white wool tunic with a brown leather belt, sturdy
+      sandals, a coil of measuring rope over one shoulder
+    note: 이야기 주인공. 바다에 방파제를 쌓아야 하는 항구 기술자
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "로마의 한 항구 기술자는 말문이 막혔습니다."
+        captions: ["로마의 한 항구 기술자는 / 말문이 막혔습니다"]
+      - text: "바다에 쌓은 방파제가, 거센 파도에 자꾸 부서져 나갔거든요."
+        captions: ["바다에 쌓은 방파제가", "거센 파도에 / 자꾸 부서져 나갔거든요"]
+    visual: 거친 바다, 무너진 돌 방파제 앞에서 기술자가 입을 벌린 채 굳어 있다
+    image_prompt: >-
+      A stormy ancient Mediterranean harbor, big waves crashing over a crumbling stone breakwater, blocks tumbling into
+      the sea, a small wooden ship rocking behind; the engineer standing on the shore with his mouth hanging open,
+      frozen in shock, the measuring rope slipping off his shoulder.
+    characters: [engineer]
+    motion_prompt: >-
+      A huge wave smashes the breakwater and stone blocks tumble into the sea; the engineer's jaw drops and he stays frozen.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the broken end of the stone breakwater after the storm, loose blocks scattered in the foamy
+          water, the engineer crouching on a rock, holding a cracked stone fragment and staring at it in disbelief.
+        characters: [engineer]
+        motion_prompt: >-
+          Foamy water washes over the scattered blocks; the engineer turns the cracked stone in his hands and sighs.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "짠 바닷물과 쉴 새 없는 파도는, 웬만한 벽은 금세 망가뜨렸죠."
+        captions: ["짠 바닷물과 / 쉴 새 없는 파도는", "웬만한 벽은 / 금세 망가뜨렸죠"]
+    visual: 파도가 반복해서 벽을 때리고, 벽 틈이 벌어지며 돌이 떨어져 나간다
+    image_prompt: >-
+      A close side view of an ordinary stone and mortar sea wall being hit by waves again and again, cracks spreading,
+      salty foam in the gaps, small chunks breaking off into the water.
+    motion_prompt: >-
+      Wave after wave slams the wall; cracks widen and a chunk breaks off and falls into the water.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "대체 무엇으로 쌓아야, 이 바다를 이길 수 있을까요?"
+        captions: ["대체 무엇으로 쌓아야", "이 바다를 / 이길 수 있을까요?"]
+    visual: 해 질 녘 바닷가 바위에 앉은 기술자가 멀리 연기 나는 화산을 바라본다
+    image_prompt: >-
+      The engineer sitting on a rock by the calm evening sea, chin in hand, looking thoughtfully across the bay toward a
+      distant volcano with a thin wisp of smoke, golden sunset light.
+    characters: [engineer]
+    motion_prompt: >-
+      The engineer taps his chin, follows the volcano's smoke with his eyes, then slowly sits up with an idea.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 기술자는 화산 근처의 고운 화산재를, 구운 석회와 섞었습니다."
+        captions: ["그래서 기술자는 / 화산 근처의 고운 화산재를", "구운 석회와 섞었습니다"]
+      - text: "그리고 화산 돌덩이를 듬뿍 넣어 반죽했죠."
+        captions: ["그리고 화산 돌덩이를 / 듬뿍 넣어 반죽했죠"]
+    visual: 회색 화산재 더미와 흰 석회 가루를 큰 나무 통에 쏟아 섞는다
+    image_prompt: >-
+      A busy ancient harbor work yard: workers pouring grey volcanic ash from baskets and white lime powder into a big
+      wooden mixing trough, the engineer stirring it with a long wooden paddle, a pile of porous dark volcanic rocks
+      beside them.
+    characters: [engineer]
+    motion_prompt: >-
+      Grey ash and white lime pour into the trough in puffs of dust; the engineer stirs them together with the paddle.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the wooden trough: chunks of dark porous volcanic rock being tossed into thick grey mortar, the
+          engineer's hands mixing them in with a wooden paddle.
+        characters: [engineer]
+        motion_prompt: >-
+          Volcanic rocks drop into the grey mortar with heavy plops; the paddle folds them into the mix.
+        camera: slow push in
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "이 반죽을 나무 틀 안에 채워, 새 방파제를 쌓았습니다."
+        captions: ["이 반죽을 나무 틀 안에 채워", "새 방파제를 쌓았습니다"]
+    visual: 바다에 박은 나무 틀 안으로 일꾼들이 반죽을 부어 채운다
+    image_prompt: >-
+      A large rectangular wooden frame built out into the shallow sea, workers on planks dumping baskets of grey
+      mortar and volcanic rock into it, the engineer directing them from the edge, calm turquoise water around.
+    characters: [engineer]
+    motion_prompt: >-
+      Workers tip their baskets and the grey mortar splashes into the wooden frame; the engineer points and nods.
+    camera: slow pull back
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "반죽은 바닷속에서 단단히 굳어, 커다란 돌덩이 하나처럼 버텼죠."
+        captions: ["반죽은 바닷속에서 / 단단히 굳어", "커다란 돌덩이 하나처럼 / 버텼죠"]
+    visual: 완성된 매끈한 회색 방파제 위로 파도가 부딪혀 흩어지고, 기술자가 팔짱 끼고 웃는다
+    image_prompt: >-
+      A finished smooth grey breakwater standing solid in the sea like one giant stone block, a big wave crashing
+      against it and bursting into spray, the engineer standing on top with arms crossed and a proud grin.
+    characters: [engineer]
+    motion_prompt: >-
+      A big wave bursts harmlessly against the breakwater into spray; the engineer grins and doesn't even flinch.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 반죽에 바닷물을 그대로 썼는데, 짠물이 벽을 망가뜨리지 않을까요?"
+        captions: ["그런데 반죽에 / 바닷물을 그대로 썼는데", "짠물이 벽을 / 망가뜨리지 않을까요?"]
+    visual: 기술자가 바가지로 바닷물을 떠서 반죽에 붓다가, 멈칫하며 걱정스럽게 바라본다
+    image_prompt: >-
+      The engineer holding a wooden scoop of seawater over the trough of grey mortar, pausing mid-pour with a
+      worried, doubtful face, salt crystals glinting on the scoop's rim.
+    characters: [engineer]
+    motion_prompt: >-
+      Seawater trickles from the scoop into the mortar; the engineer stops, frowns and looks at the scoop suspiciously.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "오히려 반대였습니다. 스며든 바닷물이 화산재와 만나, 새 돌 결정을 키웠거든요."
+        captions: ["오히려 반대였습니다", "스며든 바닷물이 / 화산재와 만나", "새 돌 결정을 / 키웠거든요"]
+      - text: "판 모양 결정들이 서로 맞물려, 벽을 꽉 묶어 준 겁니다."
+        captions: ["판 모양 결정들이 / 서로 맞물려", "벽을 꽉 / 묶어 준 겁니다"]
+    visual: 현미경 확대 — 반죽 속으로 바닷물이 스며들고, 얇은 판 모양 결정이 자라 서로 맞물린다
+    image_prompt: >-
+      A magnified microscopic view inside the grey concrete: tiny pores with seawater seeping in, and thin flat
+      plate-like crystals growing and interlocking with each other, glowing softly. Clean educational illustration,
+      no labels, no text.
+    motion_prompt: >-
+      Seawater seeps into the pores and thin plate-like crystals grow outward, interlocking into a tight mesh.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A cutaway of the breakwater wall: seawater gently seeping into it from the sea side, and inside the wall a
+          web of tiny glowing crystal plates filling small flaws and binding the stone together. Clean educational
+          illustration, no labels, no text.
+        motion_prompt: >-
+          Seawater seeps in and the glowing crystal web spreads through the wall, sealing tiny cracks one by one.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그래서 이 방파제들은, 2천 년 가까이 지난 지금도 바다에 남아 있죠."
+        captions: ["그래서 이 방파제들은", "2천 년 가까이 지난 지금도 / 바다에 남아 있죠"]
+    visual: 오늘날 잔잔한 바다 속, 해초와 물고기에 둘러싸인 오래된 회색 방파제 덩어리
+    image_prompt: >-
+      An underwater view in clear blue sea of a massive ancient grey concrete block from a Roman breakwater, covered
+      in seaweed and shells, small fish swimming around it, sunbeams filtering down from the surface. No people.
+    motion_prompt: >-
+      Sunbeams ripple over the old concrete block; fish swim past and seaweed sways gently.
+    camera: slow orbit
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "바닷물을 만나 더 단단해지는 이 돌이 바로, 로마 콘크리트입니다."
+        captions: ["바닷물을 만나 / 더 단단해지는", "이 돌이 바로, / 로마 콘크리트입니다"]
+    visual: 맑은 날 방파제 위의 기술자가 벽을 두드리며 웃고, 카메라가 빠지며 배들이 드나드는 항구가 보인다
+    image_prompt: >-
+      The engineer standing on the solid grey breakwater on a bright sunny day, knocking on it proudly with his
+      knuckles and laughing, ships with sails gliding into the calm harbor behind.
+    characters: [engineer]
+    motion_prompt: >-
+      The engineer knocks on the wall twice and laughs; the camera slowly pulls back and rises over the busy harbor.
+    camera: slow pull back and rise
+
+sources:
+  - "AIP Inside Science 2017 — Secrets of longevity of Roman concrete (석회·바닷물·나폴리만 포추올리 근처 화산재로 반죽, 화산 돌덩이를 섞음; 바닷물이 스며들어 화산재 일부를 녹이고 새 광물이 생김 — 알루미늄 토버모라이트의 판 모양 결정이 맞물려 결함을 메우고 균열을 막음; 현대 콘크리트는 바닷물에서 수십 년 만에 약해짐; 유타대 Marie Jackson, American Mineralogist 2017) — https://www.aip.org/inside-science/secrets-of-longevity-roman-concrete"
+  - "Sci.News 2017 — New research shows how natural chemistry strengthened ancient Roman marine concrete (화산재·구운 석회·바닷물 반죽 + 화산암 골재, 바닷물이 스며들며 맞물리는 광물(알루미늄 토버모라이트·필립사이트)이 자람, 구조물이 지금도 남아 있음, 플리니우스(서기 79년경) 기록) — https://www.sci.news/archaeology/roman-marine-concrete-05011.html"
+
+accuracy_notes:
+  - "기술자 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 로마 콘크리트를 처음 만든 사람의 실제 이야기가 아니다."
+  - "'방파제가 자꾸 부서졌다'는 이야기의 출발점으로 단순화한 설정이며 특정 기록이 아니다."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "결정이 자라 단단해지는 과정은 2017년 연구(Jackson 외)의 해석을 단순화한 것. 몇 년·몇 배 같은 수치는 쓰지 않는다."
+  - "'2천 년 가까이'는 서기 79년경 플리니우스가 이미 바다 구조물을 기록했고, 구조물이 지금도 남아 있다는 점(Sci.News) 기준."
+  - "s05 나무 틀은 바다 구조물을 쌓는 장면을 단순화한 그림. 대본에서는 공법을 자세히 단정하지 않는다."
+  - "현미경 장면의 결정 모양은 판 모양(plate-like)이라는 설명을 단순화한 그림."
+  - "인물 복장은 단순화한 그림이며 특정 시기의 고증 복식이 아니다."
+
+youtube:
+  titles:
+    - 바닷물에 닿을수록 더 단단해지는 2천 년 된 벽
+    - 로마 사람들은 왜 일부러 바닷물로 반죽했을까?
+    - 파도를 이긴 비밀은 '화산재'였다
+  description: |-
+    🌊 보통 벽은 바닷물에 닿으면 망가지는데… 반대로 더 단단해지는 벽이 있다면?
+
+    로마의 항구 기술자들은 화산재와 석회를 섞고 🌋
+    반죽할 물로 바닷물을 그대로 부었습니다.
+    그러자 바닷물이 스며들며 벽 속에서 새로운 돌 결정이 자라났죠 💎
+
+    그래서 이 방파제들은 2천 년 가까이 지난 지금도 바닷속에 남아 있답니다.
+    요즘 과학자들도 이 비밀을 배우려고 연구 중이에요 🔬
+  comment_question: 여러분이라면 2천 년 뒤에도 남아 있었으면 하는 물건, 뭐가 있나요?
+  hashtags: [로마콘크리트, 고대로마, 화산재, 과학, 쇼츠]

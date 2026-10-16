@@ -1,0 +1,38 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.3초
+A huge wave smashes the breakwater and stone blocks tumble into the sea; the engineer's jaw drops and he stays frozen. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.3–7.8초
+Foamy water washes over the scattered blocks; the engineer turns the cracked stone in his hands and sighs. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.8–12.3초
+Wave after wave slams the wall; cracks widen and a chunk breaks off and falls into the water. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.3–16.1초
+The engineer taps his chin, follows the volcano's smoke with his eyes, then slowly sits up with an idea. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.1–21.2초
+Grey ash and white lime pour into the trough in puffs of dust; the engineer stirs them together with the paddle. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 21.2–24.4초
+Volcanic rocks drop into the grey mortar with heavy plops; the paddle folds them into the mix. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 24.4–28.4초
+Workers tip their baskets and the grey mortar splashes into the wooden frame; the engineer points and nods. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 28.4–33.2초
+A big wave bursts harmlessly against the breakwater into spray; the engineer grins and doesn't even flinch. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 33.2–38.6초
+Seawater trickles from the scoop into the mortar; the engineer stops, frowns and looks at the scoop suspiciously. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 38.6–44.5초
+Seawater seeps into the pores and thin plate-like crystals grow outward, interlocking into a tight mesh. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 44.5–48.5초
+Seawater seeps in and the glowing crystal web spreads through the wall, sealing tiny cracks one by one. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 48.5–53.5초
+Sunbeams ripple over the old concrete block; fish swim past and seaweed sways gently. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 53.5–59.0초
+The engineer knocks on the wall twice and laughs; the camera slowly pulls back and rises over the busy harbor. Camera: slow pull back and rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
