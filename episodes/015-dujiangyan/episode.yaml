@@ -1,7 +1,7 @@
 # 015 도강언 — 강을 막지 않고 둘로 나눠 다스린 2천 년 물길 (중국 쓰촨)
 id: "015"
 slug: dujiangyan
-status: script_ok
+status: done
 working_title: 이빙은 어떻게 강을 막지 않고 홍수를 다스렸을까?
 title_lines: ["강을 막지 않고", "둘로 갈랐다고?"]
 hook: 멘탈이 나가버렸습니다
@@ -80,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 이빙은 강 한가운데에, 물고기 입처럼 생긴 둑을 쌓아 강을 둘로 갈랐습니다."
-        captions: ["그래서 이빙은 강 한가운데에", "물고기 입처럼 생긴 둑을 쌓아 / 강을 둘로 갈랐습니다"]
+        captions: ["그래서 이빙은 / 강 한가운데에", "물고기 입처럼 생긴 / 둑을 쌓아", "강을 둘로 갈랐습니다"]
     visual: 하늘에서 본 강 — 뾰족한 물고기 머리 모양 둑이 강을 두 갈래로 나눈다
     image_prompt: >-
       Aerial view of a wide river flowing out of the mountains, a long pointed levee shaped like a fish's head built in
@@ -117,7 +117,7 @@ scenes:
     beat: solution
     lines:
       - text: "들판으로 갈 물길을 내려고, 바위산에 불을 지피고 찬물을 부어 돌을 깨뜨렸다고 전해집니다."
-        captions: ["들판으로 갈 물길을 내려고", "바위산에 불을 지피고 / 찬물을 부어", "돌을 깨뜨렸다고 전해집니다"]
+        captions: ["들판으로 갈 물길을 내려고", "바위산에 불을 지피고 / 찬물을 부어", "돌을 깨뜨렸다고 / 전해집니다"]
     visual: 이빙이 바위산 절벽에 지핀 불 위로 물을 끼얹자 김이 치솟고 바위가 갈라진다
     image_prompt: >-
       The governor at the foot of a rocky mountain cliff beside the river, a big wood fire blazing against the rock face,
