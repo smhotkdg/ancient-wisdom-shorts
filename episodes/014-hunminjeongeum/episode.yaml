@@ -1,7 +1,7 @@
 # 014 훈민정음 — 입과 혀의 모양을 본떠 만든 글자
 id: "014"
 slug: hunminjeongeum
-status: script_ok
+status: done
 working_title: 세종은 어떻게 누구나 배울 쉬운 글자를 만들었을까?
 title_lines: ["입 모양을 본떠", "글자를 만들었다고?"]
 hook: 속이 터졌습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "조선의 임금 세종은 속이 터졌습니다."
         captions: ["조선의 임금 세종은 / 속이 터졌습니다"]
       - text: "억울한 일을 당한 백성이, 글을 몰라 하소연조차 적지 못했거든요."
-        captions: ["억울한 일을 당한 백성이", "글을 몰라 / 하소연조차 적지 못했거든요"]
+        captions: ["억울한 일을 당한 백성이", "글을 몰라 하소연조차 / 적지 못했거든요"]
     visual: 궁궐 마당, 세종이 글을 몰라 빈 종이만 들고 선 백성을 안타깝게 바라본다
     image_prompt: >-
       A Joseon palace courtyard, the king in the center foreground looking down with a pained, frustrated expression,
@@ -67,7 +67,7 @@ scenes:
     beat: question
     lines:
       - text: "누구나 금방 배울 쉬운 글자, 대체 어떻게 만들 수 있을까요?"
-        captions: ["누구나 금방 배울 쉬운 글자", "대체 어떻게 / 만들 수 있을까요?"]
+        captions: ["누구나 금방 배울 / 쉬운 글자", "대체 어떻게 / 만들 수 있을까요?"]
     visual: 밤, 등잔불 아래 세종이 붓을 들고 빈 종이를 앞에 두고 골똘히 생각한다
     image_prompt: >-
       At night in a quiet palace study lit by an oil lamp, the king sitting before a blank sheet of paper with a brush
@@ -82,7 +82,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 세종은, 말소리가 날 때 입과 혀가 어떤 모양인지부터 살폈습니다."
-        captions: ["그래서 세종은 / 말소리가 날 때", "입과 혀가 어떤 모양인지부터 / 살폈습니다"]
+        captions: ["그래서 세종은 / 말소리가 날 때", "입과 혀가 / 어떤 모양인지부터", "살폈습니다"]
     visual: 세종이 손거울 앞에서 입을 벌려 소리를 내며 혀 모양을 관찰한다
     image_prompt: >-
       The king sitting before a small bronze hand mirror, mouth open as he pronounces a sound, carefully observing the
@@ -97,7 +97,7 @@ scenes:
     beat: solution
     lines:
       - text: "기역은 혀뿌리가 목구멍을 막는 모양, 니은은 혀끝이 윗잇몸에 닿는 모양을 본떴죠."
-        captions: ["기역은 혀뿌리가 / 목구멍을 막는 모양", "니은은 혀끝이 / 윗잇몸에 닿는 모양을 본떴죠"]
+        captions: ["기역은 혀뿌리가 / 목구멍을 막는 모양", "니은은 혀끝이 윗잇몸에 / 닿는 모양을 본떴죠"]
     visual: 입 속 옆모습 단면도 — 혀뿌리가 목을 막는 모양이 ㄱ 모양으로, 혀끝이 윗잇몸에 닿는 모양이 ㄴ 모양으로 겹쳐진다
     image_prompt: >-
       Side cross-section diagram of a human mouth and throat in a soft friendly style: first the back of the tongue
@@ -134,7 +134,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 말소리는 훨씬 많은데, 이 다섯 글자로 어떻게 다 적을까요?"
-        captions: ["그런데 말소리는 훨씬 많은데", "이 다섯 글자로 / 어떻게 다 적을까요?"]
+        captions: ["그런데 말소리는 / 훨씬 많은데", "이 다섯 글자로 / 어떻게 다 적을까요?"]
     visual: 세종 주위로 수많은 말소리 물결이 퍼지고, 앞에는 다섯 글자만 놓여 있다
     image_prompt: >-
       The king standing in his study surrounded by many swirling colorful sound waves floating in the air, looking at
