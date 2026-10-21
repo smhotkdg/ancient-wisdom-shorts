@@ -18,6 +18,7 @@
 | 012 | 명량해전 — 배 13척으로 133척을 막은 좁은 바닷길 | 소스 대기 | 눈앞이 캄캄했습니다 |
 | 013 | 대동여지도 — 책처럼 접어 들고 다닌 6.7m 조선 지도 | 완성 | 혼이 쏙 빠졌습니다 |
 | 014 | 훈민정음 — 입과 혀의 모양을 본떠 만든 글자 | 완성 | 속이 터졌습니다 |
+| 015 | 도강언 — 강을 막지 않고 둘로 나눠 다스린 2천 년 물길 (중국) | 소스 대기 | 멘탈이 나가버렸습니다 |
 
 ## 이전 레포에서 이미 만든 주제 (checkvalve-shorts-production)
 
@@ -41,7 +42,7 @@
 | 후보 | 핵심 | 근거 | 판정 |
 |---|---|---|---|
 | 로마 해양 콘크리트 | 석회+화산재+바닷물, 바닷물과 반응해 알루미늄 토버모라이트·필립사이트 결정이 자라며 단단해짐 | [Sci.News](https://www.sci.news/archaeology/roman-marine-concrete-05011.html) (Jackson 외, American Mineralogist 2017) | 채택 가능 — 결정 성장 시각화 고민 |
-| 중국 도강언 | 물고기 입 둑으로 강을 나누고, 불로 달군 바위에 찬물을 끼얹어 산에 물길(보병구) — 기원전 256년경, 지금도 사용 | [UNESCO](https://whc.unesco.org/en/list/1001), [Sixth Tone](https://www.sixthtone.com/news/1008097) | 공법 근거 학술 자료로 보강 필요 |
+| 중국 도강언 → 015 | 물고기 입 둑으로 강을 나누고, 불로 달군 바위에 찬물을 끼얹어 산에 물길(보병구) — 기원전 256년경, 지금도 사용 | [UNESCO](https://whc.unesco.org/en/list/1001), [Sixth Tone](https://www.sixthtone.com/news/1008097) | 공법 근거 학술 자료로 보강 필요 |
 | 온돌 | 아궁이 불길을 방바닥 밑 고래로, 구들장이 열을 품음, 굴뚝으로 연기 배출 — 2018 국가무형유산 | [한국민족문화대백과](https://encykorea.aks.ac.kr/Article/E0077489) | 채택 → 005 |
 | 아즈텍 치남파 | 호수 위 도시를 먹이려 진흙·수초를 쌓아 호수에 밭을 만들고, 버드나무 뿌리로 가장자리를 붙잡음 — 2017 FAO 세계중요농업유산 | [FAO GIAHS](https://www.fao.org/giahs/giahsaroundtheworld/designated-sites/latin-america-and-the-caribbean/chinampa-agriculture-in-the-world-natural-and-cultural-heritage-zone-in-xochimilco-tlahuac-and-milpa-alta/en/), [Te Papa 박물관](https://blog.tepapa.govt.nz/2013/09/24/aztecs-gardens-in-the-lake/) | 채택 → 006 |
 | 이집트 나일로미터 | 계단 우물 눈금으로 범람 높이를 재서 둑·운하를 준비하고 세금을 정함 | [이집트 관광유물부](https://egymonuments.gov.eg/en/monuments/rawda-island-nilometer/), [National Geographic](https://www.nationalgeographic.com/history/article/160517-nilometer-discovered-ancient-egypt-nile-river-archaeology) | 채택 → 007 (로다섬 861년은 "훗날"로 구분) |

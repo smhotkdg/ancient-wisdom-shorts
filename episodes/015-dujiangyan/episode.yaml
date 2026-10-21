@@ -1,0 +1,226 @@
+# 015 도강언 — 강을 막지 않고 둘로 나눠 다스린 2천 년 물길 (중국 쓰촨)
+id: "015"
+slug: dujiangyan
+status: script_ok
+working_title: 이빙은 어떻게 강을 막지 않고 홍수를 다스렸을까?
+title_lines: ["강을 막지 않고", "둘로 갈랐다고?"]
+hook: 멘탈이 나가버렸습니다
+caption_keywords: [강물, 물고기 입, 안쪽 강, 바깥쪽 강, 모래]
+
+story:
+  hero: 이빙
+  reveal: [도강언]
+
+characters:
+  - id: libing
+    name: 이빙
+    name_en: ancient Chinese governor
+    description: >-
+      a calm, wise ancient Chinese official in his 50s with a long thin black beard and mustache, hair tied in a topknot
+      under a simple black cloth cap, kind but determined eyes, wearing a dark blue long-sleeved Qin-era robe with a
+      wide black belt, sturdy cloth shoes, holding a bamboo measuring pole (an imagined look, not a real portrait)
+    note: 이야기 주인공. 강물을 다스려야 하는 고을의 태수 (진나라 촉군 태수 이빙)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "강가 고을의 태수 이빙은 멘탈이 나가버렸습니다."
+        captions: ["강가 고을의 태수 이빙은 / 멘탈이 나가버렸습니다"]
+      - text: "봄마다 산의 눈이 녹으면, 불어난 강물이 들판을 휩쓸었거든요."
+        captions: ["봄마다 산의 눈이 녹으면", "불어난 강물이 / 들판을 휩쓸었거든요"]
+    visual: 눈 덮인 산 아래 흙탕물 강이 넘쳐 들판을 덮고, 언덕 위 이빙이 두 손으로 머리를 감싼다
+    image_prompt: >-
+      A wide river valley below snowy mountains in spring, a swollen muddy river bursting its banks and flooding green
+      farm fields and small thatched huts, the governor standing on a hill in the center foreground clutching his head
+      with both hands in dismay, robe whipping in the wind.
+    characters: [libing]
+    motion_prompt: >-
+      Brown floodwater surges over the fields; the governor grabs his head and staggers back a step.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close view of the raging muddy river tearing past the riverbank, uprooted trees and debris swirling in it,
+          the governor in the foreground watching with a grim, tense face. No other people.
+        characters: [libing]
+        motion_prompt: >-
+          Debris tumbles past in the churning water; the governor clenches his fists.
+        camera: slow pan
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "그렇다고 둑으로 강을 막으면, 들판에 댈 물이 사라졌죠."
+        captions: ["그렇다고 둑으로 / 강을 막으면", "들판에 댈 물이 / 사라졌죠"]
+    visual: 강을 막은 둑 아래로 메마르게 갈라진 논밭, 이빙이 마른 흙을 한 줌 쥔다
+    image_prompt: >-
+      A high wall dam blocking the river on one side, and on the other side cracked dry farm fields with withered
+      crops under a hot sun, the governor kneeling in the center letting dry dust fall through his fingers.
+      No other people.
+    characters: [libing]
+    motion_prompt: >-
+      Dry dust trickles through his fingers and blows away; he looks back at the dam and shakes his head.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "넘치는 물은 막고 필요한 물은 쓰는 법, 대체 없을까요?"
+        captions: ["넘치는 물은 막고 / 필요한 물은 쓰는 법", "대체 없을까요?"]
+    visual: 강가 바위에 앉은 이빙이 강물이 갈라져 흐르는 작은 여울을 뚫어지게 본다
+    image_prompt: >-
+      The governor sitting on a riverside rock at dawn, chin in hand, staring at a small stream in front of him that
+      splits in two around a pointed pebble, a spark of an idea in his eyes. No other people.
+    characters: [libing]
+    motion_prompt: >-
+      Water splits neatly around the pointed pebble; his eyes widen and he slowly stands up.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 이빙은 강 한가운데에, 물고기 입처럼 생긴 둑을 쌓아 강을 둘로 갈랐습니다."
+        captions: ["그래서 이빙은 강 한가운데에", "물고기 입처럼 생긴 둑을 쌓아 / 강을 둘로 갈랐습니다"]
+    visual: 하늘에서 본 강 — 뾰족한 물고기 머리 모양 둑이 강을 두 갈래로 나눈다
+    image_prompt: >-
+      Aerial view of a wide river flowing out of the mountains, a long pointed levee shaped like a fish's head built in
+      the middle of the river, splitting the current neatly into two channels, a tiny figure of the governor standing on
+      the tip of the levee. No other people.
+    characters: [libing]
+    motion_prompt: >-
+      The current meets the fish-head tip and splits smoothly into two channels.
+    camera: slow drone push forward
+    extra_clips:
+      - image_prompt: >-
+          Close view of the governor standing on the pointed tip of the fish-shaped levee, pointing forward with his
+          bamboo pole as the river splits on either side of him in white foaming curves. No other people.
+        characters: [libing]
+        motion_prompt: >-
+          Water rushes past on both sides; he plants the bamboo pole and points ahead proudly.
+        camera: slow orbit
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "안쪽 강은 좁고 깊게 들판으로, 바깥쪽 강은 넓고 얕게 흘려보냈죠."
+        captions: ["안쪽 강은 / 좁고 깊게 들판으로", "바깥쪽 강은 / 넓고 얕게 흘려보냈죠"]
+    visual: 하늘에서 본 두 갈래 — 안쪽은 좁고 짙은 물길이 들판으로, 바깥쪽은 넓고 옅은 물길
+    image_prompt: >-
+      Aerial diagram-like view of the split river: the inner channel narrow and deep blue curving toward green farm
+      fields, the outer channel wide and shallow light-blue flowing away past sandbars. Clean illustrative style,
+      no labels, no text, no people.
+    motion_prompt: >-
+      Deep blue water flows down the narrow inner channel toward the fields while the wide outer channel ripples away.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "들판으로 갈 물길을 내려고, 바위산에 불을 지피고 찬물을 부어 돌을 깨뜨렸다고 전해집니다."
+        captions: ["들판으로 갈 물길을 내려고", "바위산에 불을 지피고 / 찬물을 부어", "돌을 깨뜨렸다고 전해집니다"]
+    visual: 이빙이 바위산 절벽에 지핀 불 위로 물을 끼얹자 김이 치솟고 바위가 갈라진다
+    image_prompt: >-
+      The governor at the foot of a rocky mountain cliff beside the river, a big wood fire blazing against the rock face,
+      the governor throwing a bucket of cold water onto the glowing hot rock, a burst of white steam and fresh cracks
+      spreading across the stone. No other people.
+    characters: [libing]
+    motion_prompt: >-
+      Water splashes onto the hot rock, white steam bursts up and cracks crackle across the stone.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 큰물이 지면, 안쪽 강까지 넘쳐 버리지 않을까요?"
+        captions: ["그런데 큰물이 지면", "안쪽 강까지 / 넘쳐 버리지 않을까요?"]
+    visual: 먹구름 아래 불어나는 강물을 보며 이빙이 걱정스럽게 안쪽 물길을 내려다본다
+    image_prompt: >-
+      Dark storm clouds over the mountains, the river rising fast, the governor on the levee looking down anxiously at
+      the inner channel as the water climbs. No other people.
+    characters: [libing]
+    motion_prompt: >-
+      Rain starts to fall and the water rises; the governor grips his pole and stares at the inner channel.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "물고기 입은 큰물 땐 바깥쪽으로, 가물 땐 안쪽으로 물을 더 많이 보냈습니다."
+        captions: ["물고기 입은 / 큰물 땐 바깥쪽으로", "가물 땐 안쪽으로 / 물을 더 많이 보냈습니다"]
+      - text: "넘치는 물은 낮은 둑을 넘어, 모래와 함께 바깥 강으로 빠져나갔죠."
+        captions: ["넘치는 물은 / 낮은 둑을 넘어", "모래와 함께 / 바깥 강으로 빠져나갔죠"]
+    visual: 하늘 시점 단면 — 큰물 때 물살 화살표가 바깥쪽으로 쏠리고, 낮은 둑 위로 모래 섞인 물이 넘어간다
+    image_prompt: >-
+      Aerial illustrative view of the split river in flood: glowing arrows showing most of the water swinging into the
+      wide outer channel, and a low side weir where muddy water carrying sand spills over from the inner channel back
+      into the outer river. Clean illustrative style, no labels, no text, no people.
+    motion_prompt: >-
+      The arrows swing toward the outer channel and sandy water spills over the low weir into the outer river.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close view of the low stone-and-bamboo side weir with muddy, sandy water pouring over it in a swirling cascade,
+          the governor standing on the bank beside it smiling with relief. No other people.
+        characters: [libing]
+        motion_prompt: >-
+          Swirling sandy water pours over the weir; the governor lets out a relieved breath and smiles.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그렇게 이 물길은 2천 년이 넘은 지금도, 넓은 들판에 물을 대고 있습니다."
+        captions: ["그렇게 이 물길은 / 2천 년이 넘은 지금도", "넓은 들판에 / 물을 대고 있습니다"]
+    visual: 오늘날 초록빛 넓은 평야 사이로 갈라진 물길이 반짝이며 흐른다
+    image_prompt: >-
+      A vast green plain of rice paddies and fields today, crisscrossed by sparkling irrigation channels fed from the
+      split river, mountains in the background under a clear sky. No people.
+    motion_prompt: >-
+      Sunlight sparkles on the channels as water flows out across the green plain.
+    camera: slow drone push forward
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "강을 막지 않고 나눠서 다스린 이 물길이 바로, 도강언입니다."
+        captions: ["강을 막지 않고 / 나눠서 다스린", "이 물길이 / 바로, 도강언입니다"]
+    visual: 물고기 입 둑 끝에 선 이빙이 잔잔히 갈라지는 강을 바라보며 미소 짓고, 카메라가 빠진다
+    image_prompt: >-
+      The governor standing on the tip of the fish-shaped levee at golden sunset, the river calmly splitting on both
+      sides, green fields stretching beyond, a peaceful proud smile on his face.
+    characters: [libing]
+    extras: "two farmers far in the distance on the green fields, waving happily toward the river"
+    motion_prompt: >-
+      He smiles and looks out over the fields; the camera slowly pulls back and rises over the split river.
+    camera: slow pull back and rise
+
+sources:
+  - "UNESCO 세계유산 — Mount Qingcheng and the Dujiangyan Irrigation System (기원전 3세기 진나라 때 착공, 이빙 주도, 댐 없이 자연 지형·물길을 이용해 물 나누기·모래 빼기·홍수 조절, 위쭈이(어취) 분수제·페이사옌 여수로·바오핑커우 취수구, 지금도 민강을 다스리며 사용 중) — https://whc.unesco.org/en/list/1001"
+  - "Sixth Tone 2021 (The World of Chinese 2020 원문) — Flood Defense in Ancient Times (봄 눈 녹은 물로 민강이 범람, 이빙이 물고기 입 둑으로 강을 좁고 깊은 안쪽 강(관개)·넓고 얕은 바깥쪽 강(배수·모래)으로 나눔, 건기엔 안쪽으로 더 많이·우기엔 더 적게, 여수로가 넘치는 물과 모래를 바깥 강으로, 바위산을 불로 달구고 물로 식혀 깨뜨려 물길을 냈다고 전함, 지금도 사용) — https://www.sixthtone.com/news/1008097"
+
+accuracy_notes:
+  - "이빙은 실존 인물(진나라 촉군 태수)이지만, 감정·행동·대사는 설명용 재구성이다. 얼굴·복장은 상상한 모습."
+  - "도강언은 이빙 한 사람이 혼자 만든 것이 아니다. 많은 사람이 오랜 기간 지었고, 이후 2천 년 넘게 고쳐 쓰며 발전했다."
+  - "'멘탈이 나가버렸습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s02 '강을 막으면 들판에 댈 물이 없다'는 댐 없이 물을 다스렸다(UNESCO)는 점을 대비해 보여 주는 연출."
+  - "s06 불과 찬물로 바위를 깨뜨린 방법은 '전해진다'로만 쓴다 (Sixth Tone 서술 기준, 1차 사료 확인 안 함)."
+  - "s08 물 나누는 비율(건기 약 6:4, 우기 약 4:6)은 숫자를 쓰지 않고 '더 많이'로만 쓴다."
+  - "착공 연도는 자료마다 '기원전 3세기'·'기원전 256년경' 등으로 다르다. 대본은 '2천 년이 넘은'으로만 쓴다."
+  - "화면 인물은 이빙 중심. 배경 인물은 s10 먼 들판의 농부 두 명뿐."
+
+youtube:
+  titles:
+    - 강을 막지 않고 둘로 갈랐더니 2천 년 홍수가 멈췄다
+    - 물고기 입 모양 둑 하나로 강을 다스린 방법
+    - 2천 년 넘게 지금도 돌아가는 중국의 물길
+  description: |-
+    🌊 강물이 넘치면 막으면 되잖아? …그러면 농사지을 물이 없어집니다.
+
+    태수 이빙의 답은 '막지 말고 나누기'였습니다 🐟
+    물고기 입처럼 생긴 둑으로 강을 둘로 가르고,
+    큰물 땐 바깥으로, 가물 땐 안쪽으로 물이 더 많이 가게!
+
+    넘치는 물과 모래는 옆 둑을 넘어 쓱 빠져나가고 🏞️
+    이 물길은 2천 년이 넘은 지금도 들판에 물을 대고 있답니다.
+  comment_question: 여러분 동네 강이나 하천에도 이런 옛 물길이 있나요?
+  hashtags: [도강언, 중국역사, 이빙, 세계유산, 쇼츠]
