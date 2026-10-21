@@ -103,7 +103,9 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
 
 0. git pull
 1. python aw.py status {eid} — 이미지 {n_img}장, Grok 클립 {len(grok_items)}개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
-2. 음성(audio/raw.wav)이 없으면: 대본 {n_chars}자 = Typecast 크레딧 약 {n_chars}. 실행해도 되는지 나에게 먼저 묻고, 승인 후 python aw.py tts {eid}.
+2. 음성(audio/raw.wav)이 없으면: 묻지 말고 바로 python aw.py tts {eid} 를 실행한다.
+   (이 지시문 자체가 승인이다 — 대본 {n_chars}자 = Typecast 크레딧 약 {n_chars}. 사용한 글자 수는 마지막 보고에 적는다.)
+   음성이 이미 있으면 새로 만들지 않는다 (--force 금지).
    네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
 2-1. 자막 싱크: python -c "import faster_whisper" 가 실패하면 pip install faster-whisper 부터 한다.
    음성은 대본 전체를 파일 하나로 받는다(문장별 생성 금지). 싱크는 Whisper 정렬로 맞춘다.
