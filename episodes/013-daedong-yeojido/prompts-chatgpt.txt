@@ -1,3 +1,15 @@
+[진행 방식 — 질문하지 말고 바로 생성]
+아래 이미지 13장을 순서대로 만들어 줘. 확인 질문이나 선택지 제시 없이 지금 바로 시작한다.
+1. 캐릭터 레퍼런스부터 만들고, 끝나면 묻지 말고 곧바로 장면 이미지로 넘어간다.
+   장면에서는 이 대화에서 만든 캐릭터 레퍼런스(또는 첨부한 char_*.png)와 얼굴·체형·옷을 똑같이 유지한다.
+2. 한 번에 만들 수 있는 이미지 수(10장)를 넘으면 알아서 나눠서 만든다:
+   - 1차: 캐릭터 김정호, S01, S01-2, S02, S03, S04, S05, S06, S06-2, S07
+   - 2차: S08, S09, S10
+   한 차수가 끝나면 묻지 말고 바로 다음 차수를 이어서 만든다.
+   응답이 끊겨야 한다면 마지막 줄에 "계속"이라고만 쓰고 멈추고, 내가 "계속"이라고 보내면 남은 이미지부터 바로 이어서 만든다.
+3. 모든 이미지는 세로 9:16, 이미지 안에 글자·숫자·로고·워터마크를 넣지 않는다.
+4. 각 이미지 아래에는 저장할 파일 이름(예: s01.png)만 한 줄로 적는다. 다른 설명은 쓰지 않는다.
+
 [캐릭터: 김정호] 저장: images/char_kim.png
 Character reference sheet of a wiry, determined Korean man in his 40s with a neat topknot under a black horsehair headband, a thin mustache and short goatee, ink-stained fingers, wearing a plain grey-white Joseon hanbok with rolled-up sleeves and a simple cloth belt, a brush tucked behind his ear (an imagined look, not a real portrait). Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark.
 

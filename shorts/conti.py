@@ -226,16 +226,40 @@ def grok_header(it: dict) -> str:
             f" · 구간 {it['start']:.1f}–{it['end']:.1f}초")
 
 
-def bundle(items: list[dict], header) -> str:
-    return "\n\n".join(f"{header(it)}\n{it['text']}" for it in items) + "\n"
+def bundle(items: list[dict], header, preamble: str = "") -> str:
+    body = "\n\n".join(f"{header(it)}\n{it['text']}" for it in items) + "\n"
+    return f"{preamble}\n\n{body}" if preamble else body
 
 
-def _collection(pid: str, title: str, hint: str, items: list[dict], header) -> str:
+GPT_BATCH = 10   # ChatGPT 한 번에 만들 수 있는 최대 이미지 수
+
+
+def gpt_preamble(items: list[dict]) -> str:
+    """ChatGPT '전체 복사' 맨 앞에 붙는 진행 지시 — 묻지 말고 캐릭터 → 장면 순서로 바로 생성 (2026-10-21 사용자)."""
+    labels = [it["label"].replace("캐릭터: ", "캐릭터 ") for it in items]
+    batches = [labels[i:i + GPT_BATCH] for i in range(0, len(labels), GPT_BATCH)]
+    plan = "\n".join(f"   - {n}차: {', '.join(b)}" for n, b in enumerate(batches, 1))
+    return f"""[진행 방식 — 질문하지 말고 바로 생성]
+아래 이미지 {len(items)}장을 순서대로 만들어 줘. 확인 질문이나 선택지 제시 없이 지금 바로 시작한다.
+1. 캐릭터 레퍼런스부터 만들고, 끝나면 묻지 말고 곧바로 장면 이미지로 넘어간다.
+   장면에서는 이 대화에서 만든 캐릭터 레퍼런스(또는 첨부한 char_*.png)와 얼굴·체형·옷을 똑같이 유지한다.
+2. 한 번에 만들 수 있는 이미지 수({GPT_BATCH}장)를 넘으면 알아서 나눠서 만든다:
+{plan}
+   한 차수가 끝나면 묻지 말고 바로 다음 차수를 이어서 만든다.
+   응답이 끊겨야 한다면 마지막 줄에 "계속"이라고만 쓰고 멈추고, 내가 "계속"이라고 보내면 남은 이미지부터 바로 이어서 만든다.
+3. 모든 이미지는 세로 9:16, 이미지 안에 글자·숫자·로고·워터마크를 넣지 않는다.
+4. 각 이미지 아래에는 저장할 파일 이름(예: s01.png)만 한 줄로 적는다. 다른 설명은 쓰지 않는다."""
+
+
+def _collection(pid: str, title: str, hint: str, items: list[dict], header, preamble: str = "") -> str:
     src_id = f"all-{pid}"
     out = [f"<div class='panel' data-panel='{pid}' hidden>",
            f"<div class='bulk'><p><b>{_e(title)} {len(items)}개</b> · {_e(hint)}</p>"
            f"<button class='copy big' data-target='{src_id}' onclick='copyText(this)'>전체 복사</button></div>",
-           f"<pre class='hidden-src' id='{src_id}'>{_e(bundle(items, header))}</pre><div class='list'>"]
+           f"<pre class='hidden-src' id='{src_id}'>{_e(bundle(items, header, preamble))}</pre><div class='list'>"]
+    if preamble:
+        out.append(f'<div class="p"><div class="h"><span><b>진행 방식</b> 전체 복사 맨 앞에 자동으로 붙습니다</span></div>'
+                   f'<pre>{_e(preamble)}</pre></div>')
     for it in items:
         out.append(f'<div class="p"><div class="h"><span><b>{_e(it["label"])}</b> {_e(header(it).split("] ", 1)[1])}</span>'
                    f'<button class="copy" onclick="copyText(this)">복사</button></div><pre>{_e(it["text"])}</pre></div>')
@@ -291,8 +315,8 @@ def build(ep: Episode) -> str:
                "이미지·클립을 폴더에 넣은 뒤 레포 폴더에서 Claude Code 를 열고 붙여 넣으세요.</p>"
                "<button class='copy big' data-target='cc-src' onclick='copyText(this)'>복사</button></div>"
                f"<div class='p'><pre id='cc-src' style='max-height:none'>{_e(cc)}</pre></div></div>")
-    out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "캐릭터 시트부터 순서대로. 첨부 표시가 있으면 그 이미지를 함께 올리세요.",
-                           gpt_items, gpt_header))
+    out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "'전체 복사'를 그대로 붙여 넣으면 캐릭터 → 장면 순서로 묻지 않고 바로 생성합니다 (10장씩 나눠서).",
+                           gpt_items, gpt_header, gpt_preamble(gpt_items)))
     out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
                            grok_items, grok_header))
     out.append("<div class='panel' data-panel='scenes'>")
@@ -361,7 +385,7 @@ def write(ep: Episode) -> str:
                                               for g in grok_items if g["scene"] == s["id"]]}
                           for s in ep.scenes}}
     (ep.dir / "prompts.json").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding="utf-8")
-    (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header), encoding="utf-8")
+    (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header, gpt_preamble(gpt_items)), encoding="utf-8")
     (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
     (ep.dir / "claude-code.txt").write_text(claude_code_prompt(ep, timing, grok_items), encoding="utf-8")
     publish_copy(ep)
