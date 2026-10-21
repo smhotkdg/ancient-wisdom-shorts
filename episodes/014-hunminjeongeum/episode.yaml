@@ -1,0 +1,224 @@
+# 014 훈민정음 — 입과 혀의 모양을 본떠 만든 글자
+id: "014"
+slug: hunminjeongeum
+status: script_ok
+working_title: 세종은 어떻게 누구나 배울 쉬운 글자를 만들었을까?
+title_lines: ["입 모양을 본떠", "글자를 만들었다고?"]
+hook: 속이 터졌습니다
+caption_keywords: [백성, 혀, 입, 획, 하늘]
+
+story:
+  hero: 세종
+  reveal: [훈민정음]
+
+characters:
+  - id: sejong
+    name: 세종
+    name_en: Joseon king
+    description: >-
+      a kind, thoughtful Korean king in his 40s with a round gentle face, a neat black beard and mustache, warm intelligent
+      eyes, wearing a red royal robe with a round golden dragon emblem on the chest, a black royal winged cap (ikseongwan),
+      a jade belt (an imagined look, not a real portrait)
+    note: 이야기 주인공. 백성이 쉽게 배울 글자를 만들려는 조선의 임금
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "조선의 임금 세종은 속이 터졌습니다."
+        captions: ["조선의 임금 세종은 / 속이 터졌습니다"]
+      - text: "억울한 일을 당한 백성이, 글을 몰라 하소연조차 적지 못했거든요."
+        captions: ["억울한 일을 당한 백성이", "글을 몰라 / 하소연조차 적지 못했거든요"]
+    visual: 궁궐 마당, 세종이 글을 몰라 빈 종이만 들고 선 백성을 안타깝게 바라본다
+    image_prompt: >-
+      A Joseon palace courtyard, the king in the center foreground looking down with a pained, frustrated expression,
+      one hand pressed to his chest, at a blank sheet of paper in his hand that a commoner could not write on.
+      No readable text.
+    characters: [sejong]
+    extras: "one poor commoner in plain white clothes kneeling a little behind, holding his head in sorrow"
+    motion_prompt: >-
+      The king looks at the blank paper, closes his eyes and lets out a heavy sigh; his robe stirs in the breeze.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the king alone in a quiet palace hall, holding the blank sheet of paper, frowning deeply, the
+          paper trembling slightly in his hand. No other people. No readable text.
+        characters: [sejong]
+        motion_prompt: >-
+          He grips the paper tighter, shakes his head slowly and looks up with determination.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "어려운 한자는 수천 자를 외워야 해서, 바쁜 백성이 배우기엔 너무 벅찼죠."
+        captions: ["어려운 한자는 / 수천 자를 외워야 해서", "바쁜 백성이 배우기엔 / 너무 벅찼죠"]
+    visual: 세종 앞 서탁 위에 산더미처럼 쌓인 두꺼운 한문 책들
+    image_prompt: >-
+      The king at a low wooden desk piled with towering stacks of thick old books, so many that they lean and wobble,
+      the king peeking out from behind them with a tired, comical expression. No other people.
+      Book covers plain, no readable text.
+    characters: [sejong]
+    motion_prompt: >-
+      The tower of books wobbles and a few slide down; the king catches one and sighs.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "누구나 금방 배울 쉬운 글자, 대체 어떻게 만들 수 있을까요?"
+        captions: ["누구나 금방 배울 쉬운 글자", "대체 어떻게 / 만들 수 있을까요?"]
+    visual: 밤, 등잔불 아래 세종이 붓을 들고 빈 종이를 앞에 두고 골똘히 생각한다
+    image_prompt: >-
+      At night in a quiet palace study lit by an oil lamp, the king sitting before a blank sheet of paper with a brush
+      raised, chin resting on his other hand, deep in thought, a spark of an idea in his eyes. No other people.
+      No readable text.
+    characters: [sejong]
+    motion_prompt: >-
+      He taps the brush handle on his chin, then slowly opens his mouth as if saying a sound, listening to himself.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 세종은, 말소리가 날 때 입과 혀가 어떤 모양인지부터 살폈습니다."
+        captions: ["그래서 세종은 / 말소리가 날 때", "입과 혀가 어떤 모양인지부터 / 살폈습니다"]
+    visual: 세종이 손거울 앞에서 입을 벌려 소리를 내며 혀 모양을 관찰한다
+    image_prompt: >-
+      The king sitting before a small bronze hand mirror, mouth open as he pronounces a sound, carefully observing the
+      shape of his lips and tongue, a brush and paper with simple sketches of mouth shapes beside him. No other people.
+      No readable text.
+    characters: [sejong]
+    motion_prompt: >-
+      He opens and closes his mouth slowly in front of the mirror, then quickly sketches a mouth shape on the paper.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "기역은 혀뿌리가 목구멍을 막는 모양, 니은은 혀끝이 윗잇몸에 닿는 모양을 본떴죠."
+        captions: ["기역은 혀뿌리가 / 목구멍을 막는 모양", "니은은 혀끝이 / 윗잇몸에 닿는 모양을 본떴죠"]
+    visual: 입 속 옆모습 단면도 — 혀뿌리가 목을 막는 모양이 ㄱ 모양으로, 혀끝이 윗잇몸에 닿는 모양이 ㄴ 모양으로 겹쳐진다
+    image_prompt: >-
+      Side cross-section diagram of a human mouth and throat in a soft friendly style: first the back of the tongue
+      raised to block the throat, with a glowing golden outline tracing that bent tongue shape into an angular hook
+      like the Korean letter ㄱ; beside it the tongue tip touching the upper gum, traced into a right-angle shape like
+      the Korean letter ㄴ. Clean educational illustration, no labels, no other text, no people.
+    motion_prompt: >-
+      The tongue moves into position and a glowing golden line traces its shape, turning into a simple letter outline.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The king holding up a large sheet of paper with two big, simple brush-drawn letter shapes, ㄱ and ㄴ, smiling
+          with delight, ink still wet. No other people. No other text.
+        characters: [sejong]
+        motion_prompt: >-
+          He lifts the paper higher and grins; a drop of ink drips from the brush in his other hand.
+        camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "입 모양은 미음, 이 모양은 시옷, 목구멍 모양은 이응이 됐습니다."
+        captions: ["입 모양은 미음 / 이 모양은 시옷", "목구멍 모양은 / 이응이 됐습니다"]
+    visual: 입술 모양 → ㅁ, 이 모양 → ㅅ, 동그란 목구멍 → ㅇ 으로 차례로 변하는 그림
+    image_prompt: >-
+      Three soft illustrated panels side by side: closed lips forming a square shape like the Korean letter ㅁ, a front
+      tooth forming a pointed shape like the Korean letter ㅅ, and a round open throat forming a circle like the Korean
+      letter ㅇ, each shape glowing gold. Clean educational illustration, no labels, no other text, no people.
+    motion_prompt: >-
+      Each mouth part morphs in turn into its glowing golden letter shape: square, pointed, then circle.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 말소리는 훨씬 많은데, 이 다섯 글자로 어떻게 다 적을까요?"
+        captions: ["그런데 말소리는 훨씬 많은데", "이 다섯 글자로 / 어떻게 다 적을까요?"]
+    visual: 세종 주위로 수많은 말소리 물결이 퍼지고, 앞에는 다섯 글자만 놓여 있다
+    image_prompt: >-
+      The king standing in his study surrounded by many swirling colorful sound waves floating in the air, looking at
+      only five simple letter shapes laid out on the desk before him (ㄱ ㄴ ㅁ ㅅ ㅇ), scratching his beard thoughtfully.
+      No other people. No other text.
+    characters: [sejong]
+    motion_prompt: >-
+      Sound waves swirl around him; he looks from the waves to the five shapes and strokes his beard.
+    camera: slow orbit
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 소리가 세지면 획을 하나씩 더했습니다."
+        captions: ["그래서 소리가 세지면 / 획을 하나씩 더했습니다"]
+      - text: "니은에 획을 더하면 디귿, 한 번 더 더하면 티읕이 되는 식이죠."
+        captions: ["니은에 획을 더하면 디귿", "한 번 더 더하면 / 티읕이 되는 식이죠"]
+    visual: 붓이 ㄴ 위에 가로획을 더해 ㄷ, 또 한 획 더해 ㅌ 이 된다
+    image_prompt: >-
+      Close-up of the king's brush on paper: a large simple letter shape ㄴ, then the same shape with one more stroke on
+      top making ㄷ, then one more stroke making ㅌ, the three shapes in a row with small glowing arrows between them.
+      No other text.
+    characters: [sejong]
+    motion_prompt: >-
+      The brush adds one stroke to the first shape, then another stroke, each time the new shape glows.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "모음은 하늘의 둥근 점, 평평한 땅, 서 있는 사람을 본뜬 세 가지로 만들었습니다."
+        captions: ["모음은 하늘의 둥근 점", "평평한 땅 / 서 있는 사람을 본뜬", "세 가지로 만들었습니다"]
+    visual: 둥근 해(하늘)가 점으로, 지평선(땅)이 가로선으로, 서 있는 사람이 세로선으로 변한다
+    image_prompt: >-
+      A wide gentle landscape at dawn: a round sun in the sky, a flat horizon line, and the king standing upright on a
+      hill as a tall silhouette; glowing golden shapes appear over each — a round dot over the sun, a long horizontal
+      line along the horizon, a vertical line beside the standing king. No other people. No text.
+    characters: [sejong]
+    motion_prompt: >-
+      A golden dot glows over the sun, a horizontal line sweeps along the horizon, and a vertical line rises beside the king.
+    camera: slow pull back
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "누구나 쉽게 배우도록 만든 이 스물여덟 글자가 바로, 훈민정음입니다."
+        captions: ["누구나 쉽게 배우도록 만든", "이 스물여덟 글자가 / 바로, 훈민정음입니다"]
+    visual: 세종이 완성된 글자가 적힌 큰 종이를 펼쳐 들고 환하게 웃는다
+    image_prompt: >-
+      The king in the palace courtyard at golden morning light, holding open a large scroll covered with simple letter
+      shapes (ㄱ ㄴ ㄷ ㅁ ㅅ ㅇ ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ) in neat rows, smiling warmly and proudly.
+      No other text.
+    characters: [sejong]
+    extras: "two or three commoners in plain white clothes in the background, leaning in curiously to look at the scroll"
+    motion_prompt: >-
+      The king unrolls the scroll a little more and smiles; the camera slowly pulls back across the courtyard.
+    camera: slow pull back
+
+sources:
+  - "한국민족문화대백과 — 훈민정음 (1443년 겨울 창제, 1446년 9월 해례본 완성, 28자, 표기 수단이 없던 백성에게 글자를 주려고 세종이 창제, 정인지 서문의 한자 차용·이두의 불편, 자음은 발음기관 모양을 본뜬 기본자에 소리가 센 정도에 따라 획을 더함(ㄴ→ㄷ→ㅌ), 모음은 천(ㆍ 둥근 하늘)·지(ㅡ 평평한 땅)·인(ㅣ 서 있는 사람)) — https://encykorea.aks.ac.kr/Article/E0065805"
+  - "국립국어원 — 훈민정음의 창제 원리 (기본 자음은 발음기관을 본뜸: ㄱ 혀뿌리가 목구멍을 막는 모양, ㄴ 혀가 윗잇몸에 닿는 모양, ㅁ 입 모양, ㅅ 이 모양, ㅇ 목구멍 모양; 센 소리는 획을 더함; 기본 모음은 천지인) — https://www.korean.go.kr/hangeul/short/004d.html"
+
+accuracy_notes:
+  - "세종은 실존 인물이지만, 감정·행동·대사는 설명용 재구성이다. 얼굴·복장은 상상한 모습."
+  - "'속이 터졌습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '억울한 백성이 하소연을 적지 못했다'는 '백성이 하고 싶은 말이 있어도 뜻을 펴지 못한다'는 창제 취지를 이야기로 푼 것. 특정 사건이 아니다."
+  - "s02 '수천 자를 외워야'는 한자 학습의 어려움을 설명한 표현이며 정확한 수치가 아니다."
+  - "s04 손거울로 입 모양을 관찰하는 장면은 '발음기관을 본떴다'는 원리를 보여 주기 위한 연출. 세종이 실제로 그렇게 했다는 기록이 아니다."
+  - "창제에 집현전 학자들이 참여했는지에 대해서는 견해가 갈린다. 대본은 '세종이 만들었다'(한국민족문화대백과 기준)로만 쓰고 다른 인물을 넣지 않는다."
+  - "28자: 초성 17자 + 중성 11자 (해례본 기준 28자). 지금 쓰지 않는 글자(ㆍ, ㅿ 등)는 다루지 않는다."
+  - "화면의 글자는 자모 모양만 보이게 하고, 다른 글씨는 넣지 않는다. 배경 인물 장면은 s01·s10 두 개."
+
+youtube:
+  titles:
+    - 입 모양을 본떠 글자를 만들었다고? 훈민정음의 비밀
+    - 기역은 왜 그렇게 생겼을까? 세종이 숨겨 둔 설계도
+    - 다섯 글자로 시작해 스물여덟 자가 된 이야기
+  description: |-
+    👅 지금 '기역' 소리를 내 보세요. 혀뿌리가 목구멍을 막죠? 그게 바로 ㄱ 모양입니다!
+
+    세종은 말소리가 날 때 입과 혀의 모양을 그대로 본떠 글자를 만들었습니다.
+    소리가 세지면 획을 하나 더! ㄴ → ㄷ → ㅌ ✍️
+    모음은 하늘(ㆍ), 땅(ㅡ), 사람(ㅣ) 세 가지로 시작했죠 ☀️
+
+    누구나 며칠이면 배울 수 있는 글자, 우리가 매일 쓰는 바로 그 글자의 설계도랍니다.
+  comment_question: 여러분은 어떤 자음이 가장 '입 모양 그대로'라고 느껴지나요?
+  hashtags: [훈민정음, 세종대왕, 한글, 한국사, 쇼츠]

@@ -1,0 +1,117 @@
+{
+  "characters": {
+    "sejong": "Character reference sheet of a kind, thoughtful Korean king in his 40s with a round gentle face, a neat black beard and mustache, warm intelligent eyes, wearing a red royal robe with a round golden dragon emblem on the chest, a black royal winged cap (ikseongwan), a jade belt (an imagined look, not a real portrait). Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A Joseon palace courtyard, the king in the center foreground looking down with a pained, frustrated expression, one hand pressed to his chest, at a blank sheet of paper in his hand that a commoner could not write on. No readable text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: one poor commoner in plain white clothes kneeling a little behind, holding his head in sorrow (only 2-4 people, never blocking the Joseon king). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The king looks at the blank paper, closes his eyes and lets out a heavy sigh; his robe stirs in the breeze. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He grips the paper tighter, shakes his head slowly and looks up with determination. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The king at a low wooden desk piled with towering stacks of thick old books, so many that they lean and wobble, the king peeking out from behind them with a tired, comical expression. No other people. Book covers plain, no readable text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The tower of books wobbles and a few slide down; the king catches one and sighs. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "At night in a quiet palace study lit by an oil lamp, the king sitting before a blank sheet of paper with a brush raised, chin resting on his other hand, deep in thought, a spark of an idea in his eyes. No other people. No readable text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He taps the brush handle on his chin, then slowly opens his mouth as if saying a sound, listening to himself. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The king sitting before a small bronze hand mirror, mouth open as he pronounces a sound, carefully observing the shape of his lips and tongue, a brush and paper with simple sketches of mouth shapes beside him. No other people. No readable text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He opens and closes his mouth slowly in front of the mirror, then quickly sketches a mouth shape on the paper. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Side cross-section diagram of a human mouth and throat in a soft friendly style: first the back of the tongue raised to block the throat, with a glowing golden outline tracing that bent tongue shape into an angular hook like the Korean letter ㄱ; beside it the tongue tip touching the upper gum, traced into a right-angle shape like the Korean letter ㄴ. Clean educational illustration, no labels, no other text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The tongue moves into position and a glowing golden line traces its shape, turning into a simple letter outline. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "He lifts the paper higher and grins; a drop of ink drips from the brush in his other hand. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Three soft illustrated panels side by side: closed lips forming a square shape like the Korean letter ㅁ, a front tooth forming a pointed shape like the Korean letter ㅅ, and a round open throat forming a circle like the Korean letter ㅇ, each shape glowing gold. Clean educational illustration, no labels, no other text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "Each mouth part morphs in turn into its glowing golden letter shape: square, pointed, then circle. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The king standing in his study surrounded by many swirling colorful sound waves floating in the air, looking at only five simple letter shapes laid out on the desk before him (ㄱ ㄴ ㅁ ㅅ ㅇ), scratching his beard thoughtfully. No other people. No other text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "Sound waves swirl around him; he looks from the waves to the five shapes and strokes his beard. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Close-up of the king's brush on paper: a large simple letter shape ㄴ, then the same shape with one more stroke on top making ㄷ, then one more stroke making ㅌ, the three shapes in a row with small glowing arrows between them. No other text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The brush adds one stroke to the first shape, then another stroke, each time the new shape glows. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A wide gentle landscape at dawn: a round sun in the sky, a flat horizon line, and the king standing upright on a hill as a tall silhouette; glowing golden shapes appear over each — a round dot over the sun, a long horizontal line along the horizon, a vertical line beside the standing king. No other people. No text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "A golden dot glows over the sun, a horizontal line sweeps along the horizon, and a vertical line rises beside the king. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The king in the palace courtyard at golden morning light, holding open a large scroll covered with simple letter shapes (ㄱ ㄴ ㄷ ㅁ ㅅ ㅇ ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ) in neat rows, smiling warmly and proudly. No other text. Characters: Joseon king (attached reference image char_sejong.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three commoners in plain white clothes in the background, leaning in curiously to look at the scroll (only 2-4 people, never blocking the Joseon king). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "The king unrolls the scroll a little more and smiles; the camera slowly pulls back across the courtyard. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

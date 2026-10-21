@@ -31,6 +31,10 @@ def crowd_text(part: dict) -> bool:
     return bool(CROWD_EN.search(en) or CROWD_KO.search(ko))
 
 
+def _all_parts(ep: Episode) -> list[dict]:
+    return [p for sc in ep.scenes for p in [sc] + list(sc.get("extra_clips") or [])]
+
+
 def crowd_scenes(ep: Episode) -> list[str]:
     """배경 인물이 나오는 장면 id — extras 를 적었거나, 프롬프트에 군중·일꾼·가족 등이 있는 장면."""
     found = []
@@ -91,7 +95,7 @@ def check(ep: Episode) -> dict:
     crowd = crowd_scenes(ep)
     item(len(crowd) <= MAX_CROWD, f"주인공 중심 화면 (배경 인물 장면 {MAX_CROWD}개 이하)",
          f"배경 인물 장면 {len(crowd)}개: {', '.join(crowd)}" if crowd else "주인공만")
-    if crowd:
+    if any(crowd_text(p) and not p.get("extras") for p in _all_parts(ep)):
         tips.append("배경 인물은 image_prompt 에 직접 쓰지 말고 장면의 extras: 에 적는다 (docs/scene-people.md) — "
                     "콘티가 '주인공은 가운데 크게, 배경 인물은 뒤에 작게 2~4명' 구도 문장을 자동으로 붙인다")
 
