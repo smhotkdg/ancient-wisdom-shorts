@@ -1,7 +1,7 @@
 # 013 대동여지도 — 책처럼 접어 들고 다닌 6.7m 조선 지도
 id: "013"
 slug: daedong-yeojido
-status: script_ok
+status: done
 working_title: 김정호는 어떻게 커다란 나라 지도를 들고 다니게 했을까?
 title_lines: ["책처럼 접히는", "6.7m 지도라고?"]
 hook: 혼이 쏙 빠졌습니다
@@ -108,7 +108,7 @@ scenes:
     beat: solution
     lines:
       - text: "필요한 고장만 꺼내 펼치면 되고, 모두 이으면 온 나라가 되는 지도였습니다."
-        captions: ["필요한 고장만 / 꺼내 펼치면 되고", "모두 이으면 / 온 나라가 되는 지도였습니다"]
+        captions: ["필요한 고장만 / 꺼내 펼치면 되고", "모두 이으면 온 나라가 / 되는 지도였습니다"]
     visual: 김정호가 책 한 권만 꺼내 펼쳐 보고, 이어 바닥에 여러 권을 이어 펼쳐 한반도가 완성된다
     image_prompt: >-
       The mapmaker in a courtyard pulling one slim folded booklet from a cloth bundle and opening it like a fan to show a
@@ -132,7 +132,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 이 지도만 보고, 고을과 고을 사이가 얼마나 먼지 어떻게 알까요?"
-        captions: ["그런데 이 지도만 보고", "고을과 고을 사이가 / 얼마나 먼지 어떻게 알까요?"]
+        captions: ["그런데 이 지도만 보고", "고을과 고을 사이가 / 얼마나 먼지", "어떻게 알까요?"]
     visual: 길 위의 김정호가 펼친 지도와 멀리 보이는 고을을 번갈아 보며 고개를 갸웃
     image_prompt: >-
       The mapmaker standing at a fork in a country road holding an opened map booklet, looking from the map to a distant
@@ -160,7 +160,7 @@ scenes:
     beat: info
     lines:
       - text: "게다가 나무판에 새겨 찍어 냈기에, 똑같은 지도를 여러 벌 만들 수 있었습니다."
-        captions: ["게다가 나무판에 새겨 / 찍어 냈기에", "똑같은 지도를 / 여러 벌 만들 수 있었습니다"]
+        captions: ["게다가 나무판에 새겨 / 찍어 냈기에", "똑같은 지도를 여러 벌 / 만들 수 있었습니다"]
     visual: 김정호가 지도가 새겨진 나무판에 먹을 바르고 종이를 덮어 찍어 낸다
     image_prompt: >-
       The mapmaker in his workshop rolling ink over a large carved wooden printing block engraved with mountains, rivers

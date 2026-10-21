@@ -1,35 +1,35 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.3초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.9초
 The mapmaker turns slowly, looking at the map spreading over floor and walls; the brush slips from his fingers. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.3–8.1초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.9–7.3초
 A breeze lifts the paper edges; he clutches his head and sighs, ink drips from his brush. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.1–12.7초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.3–11.9초
 He wobbles under the huge roll, takes two shaky steps and nearly topples over, catching himself on a tree. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.7–17.0초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 11.9–15.7초
 He flips the little booklet open and closed, glances at the big roll, and slowly smiles. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 17.0–22.0초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.7–20.3초
 The brush glides along the ruler and one horizontal line after another divides the map into bands. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 22.0–26.6초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.3–24.9초
 The long map strip folds zigzag, fold after fold, into a slim book; he presses the cover shut. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06-1] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 26.6–29.4초
+[S06-1] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 24.9–27.7초
 He opens one booklet with a flick, then looks back as the rows of opened booklets line up into one whole map. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06-2] 6초 · 업로드: images/s06-2.png · 저장: clips/s06-2.mp4 · 구간 29.4–32.1초
+[S06-2] 6초 · 업로드: images/s06-2.png · 저장: clips/s06-2.mp4 · 구간 27.7–30.5초
 The camera rises slowly from the bottom to the top of the long assembled map. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 32.1–37.2초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 30.5–35.3초
 He traces the road on the map with a finger, looks up at the faraway village and tilts his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 37.2–43.3초
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 35.3–41.2초
 The brush taps a new dot onto the road, then his finger hops from dot to dot along the road, counting. Camera: slow pan along the road. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 43.3–48.9초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 41.2–45.3초
 He brushes ink across the carved block, lays paper on it, rubs, and peels off a crisp printed map. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.9–54.6초
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 45.3–50.3초
 He looks up proudly; the camera slowly tilts up the towering map from bottom to top. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
