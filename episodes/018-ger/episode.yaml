@@ -28,7 +28,7 @@ scenes:
       - text: "몽골 초원의 목동은 넋이 나갔습니다."
         captions: ["몽골 초원의 목동은 / 넋이 나갔습니다"]
       - text: "양 떼가 풀을 다 먹어 치우면, 집까지 통째로 새 풀밭으로 옮겨야 했거든요."
-        captions: ["양 떼가 풀을 다 먹어 치우면", "집까지 통째로 / 새 풀밭으로 옮겨야 했거든요"]
+        captions: ["양 떼가 풀을 / 다 먹어 치우면", "집까지 통째로", "새 풀밭으로 / 옮겨야 했거든요"]
     visual: 풀이 다 뜯긴 맨땅 위, 양 떼 사이에 선 목동이 멍하니 먼 초원을 바라본다
     image_prompt: >-
       A wide Mongolian steppe where the grass around has been grazed down to bare earth, a flock of sheep nibbling at the
@@ -46,6 +46,7 @@ scenes:
         motion_prompt: >-
           He heaves on the rope with all his might, slips and falls on his back; the hut does not budge.
         camera: static
+        sfx_volume: 0
 
   - id: s02
     beat: problem
@@ -65,7 +66,7 @@ scenes:
     beat: question
     lines:
       - text: "가볍게 옮기면서도 바람에 끄떡없는 집, 어떻게 지을 수 있을까요?"
-        captions: ["가볍게 옮기면서도 / 바람에 끄떡없는 집", "어떻게 지을 수 있을까요?"]
+        captions: ["가볍게 옮기면서도", "바람에 끄떡없는 집", "어떻게 지을 수 있을까요?"]
     visual: 저녁 모닥불 앞에 앉은 목동이 나뭇가지로 땅에 둥근 집 모양을 그려 본다
     image_prompt: >-
       At dusk the herder sitting by a small campfire on the steppe, drawing a round dome shape in the dirt with a stick,
@@ -79,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 목동은 나무 틀로 벽을 둥글게 세우고, 기둥을 모아 뾰족한 지붕을 얹었습니다."
-        captions: ["그래서 목동은 / 나무 틀로 벽을 둥글게 세우고", "기둥을 모아 / 뾰족한 지붕을 얹었습니다"]
+        captions: ["그래서 목동은 / 나무 틀로", "벽을 둥글게 세우고", "기둥을 모아 뾰족한 / 지붕을 얹었습니다"]
     visual: 둥글게 둘러친 나무 격자 벽 위로 목동이 지붕 기둥을 하나씩 걸쳐 올린다
     image_prompt: >-
       On the open steppe, a round wooden frame of painted lattice walls set up in a circle, the herder standing on a stool
@@ -97,12 +98,13 @@ scenes:
         motion_prompt: >-
           The pole slides into the crown with a click; he taps it firmly into place.
         camera: static
+        sfx_volume: 0
 
   - id: s05
     beat: solution
     lines:
       - text: "그 위를 두툼한 펠트로 덮고, 짐승 털로 꼰 밧줄로 꽉 조였죠."
-        captions: ["그 위를 두툼한 펠트로 덮고", "짐승 털로 꼰 밧줄로 / 꽉 조였죠"]
+        captions: ["그 위를 / 두툼한 펠트로 덮고", "짐승 털로 꼰 밧줄로 / 꽉 조였죠"]
     visual: 목동이 하얀 펠트를 둥근 틀 위에 덮고 밧줄로 빙 둘러 조인다
     image_prompt: >-
       The herder pulling thick white felt over the round frame, then wrapping it tightly with long brown ropes made of
@@ -130,7 +132,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 이렇게 가벼운 집이, 사나운 봄바람을 정말 버틸 수 있을까요?"
-        captions: ["그런데 이렇게 가벼운 집이", "사나운 봄바람을 / 정말 버틸 수 있을까요?"]
+        captions: ["그런데 이렇게 가벼운 집이", "사나운 봄바람을", "정말 버틸 수 있을까요?"]
     visual: 멀리서 먹구름과 흙바람이 몰려오고, 목동이 둥근 집 앞에서 걱정스럽게 하늘을 본다
     image_prompt: >-
       Dark clouds and a wall of dust rolling across the steppe toward the round white dwelling, the herder standing in
@@ -144,9 +146,9 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 둥근 벽과 꽉 조인 밧줄 덕분에, 집은 사나운 바람도 거뜬히 버텼죠."
-        captions: ["결국 둥근 벽과 / 꽉 조인 밧줄 덕분에", "집은 사나운 바람도 / 거뜬히 버텼죠"]
+        captions: ["결국 둥근 벽과", "꽉 조인 밧줄 덕분에", "집은 사나운 바람도 / 거뜬히 버텼죠"]
       - text: "그리고 펠트와 밧줄은, 기르던 양과 짐승의 털로 초원에서 직접 만들었습니다."
-        captions: ["그리고 펠트와 밧줄은", "기르던 양과 짐승의 털로 / 초원에서 직접 만들었습니다"]
+        captions: ["그리고 펠트와 밧줄은", "기르던 양과 / 짐승의 털로", "초원에서 직접 / 만들었습니다"]
     visual: 휘몰아치는 흙바람 속에 둥근 집이 끄떡없이 서 있고, 안에서 목동이 차를 마시며 웃는다
     image_prompt: >-
       The round white felt dwelling standing firm in a howling dust storm, ropes taut, wind streaming around its curved
@@ -169,7 +171,7 @@ scenes:
     beat: info
     lines:
       - text: "이 집을 걷고 세우는 일은 언제나 온 가족의 몫이었고, 아이들은 어른을 보며 배웠습니다."
-        captions: ["이 집을 걷고 세우는 일은 / 언제나 온 가족의 몫이었고", "아이들은 / 어른을 보며 배웠습니다"]
+        captions: ["이 집을 걷고 / 세우는 일은", "언제나 온 가족의 / 몫이었고", "아이들은 / 어른을 보며 배웠습니다"]
     visual: 목동이 지붕 기둥을 세우고, 뒤에서 아이 둘이 작은 기둥을 들고 따라 하며 배운다
     image_prompt: >-
       The herder in the center foreground raising a roof pole into a half-built round frame on the green steppe at

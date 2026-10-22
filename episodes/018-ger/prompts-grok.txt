@@ -1,38 +1,38 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.8초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.4초
 A sheep bumps his leg and bleats; he looks down at the bare ground, then at the far green hills, dazed. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.8–8.1초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.4–7.3초
 He heaves on the rope with all his might, slips and falls on his back; the hut does not budge. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.1–11.6초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.3–10.3초
 A strong gust blasts dust across the plain; his hat flies off and he grabs for it, staggering. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 11.6–16.4초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 10.3–14.4초
 He finishes the circle in the dirt, taps it with the stick and slowly grins. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.4–19.4초
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 14.4–17.1초
 He slots one roof pole after another into place until they all meet at the top. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 19.4–22.5초
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 17.1–19.8초
 The pole slides into the crown with a click; he taps it firmly into place. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 22.5–26.8초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 19.8–24.2초
 He throws the felt over the frame, wraps the rope around and pulls it tight with a strong tug. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 26.8–31.6초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 24.2–28.1초
 The cart rolls forward; he walks ahead leading the horse, the sheep trotting after them. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 31.6–36.6초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 28.1–32.2초
 The dust storm rolls closer; he glances at his home and back at the sky, swallowing nervously. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 36.6–41.7초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 32.2–37.5초
 Wind and dust stream around the round walls without shaking them; inside he sips his tea and smiles. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 41.7–47.3초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 37.5–42.9초
 He rolls the wool mat back and forth firmly, pressing it into felt; a sheep wanders over to watch. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 47.3–53.5초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 42.9–48.4초
 He sets the pole in place and nods; the children behind him wobble their pole into place and cheer. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 53.5–58.4초
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.4–52.8초
 He waves; the camera slowly rises high above to show the lone round home on the endless steppe. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
