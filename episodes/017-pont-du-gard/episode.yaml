@@ -28,7 +28,7 @@ scenes:
       - text: "로마의 물길 기술자는 머리를 쥐어뜯었습니다."
         captions: ["로마의 물길 기술자는 / 머리를 쥐어뜯었습니다"]
       - text: "도시엔 마실 물이 모자란데, 쓸 만한 샘은 무려 50킬로미터 밖에 있었거든요."
-        captions: ["도시엔 마실 물이 모자란데", "쓸 만한 샘은 무려 / 50킬로미터 밖에 있었거든요"]
+        captions: ["도시엔 마실 물이 / 모자란데", "쓸 만한 샘은 무려", "50킬로미터 밖에 / 있었거든요"]
     visual: 흙빛 로마 도시 성벽 위, 지도를 든 기술자가 아득히 먼 언덕 너머를 보며 머리를 쥐어뜯는다
     image_prompt: >-
       A sunny ancient Roman town with terracotta roofs and a dry stone fountain, the engineer standing on the town wall
@@ -51,7 +51,7 @@ scenes:
     beat: problem
     lines:
       - text: "펌프도 없던 시절, 물은 오직 높은 곳에서 낮은 곳으로만 흘렀죠."
-        captions: ["펌프도 없던 시절", "물은 오직 높은 곳에서 / 낮은 곳으로만 흘렀죠"]
+        captions: ["펌프도 없던 시절", "물은 오직 높은 곳에서", "낮은 곳으로만 흘렀죠"]
     visual: 기술자가 경사진 판 위에 물을 붓자 물이 아래로만 흘러내린다
     image_prompt: >-
       The engineer kneeling on a hillside pouring water from a clay jug onto a tilted wooden plank, the water running
@@ -65,7 +65,7 @@ scenes:
     beat: question
     lines:
       - text: "그 먼 거리를, 대체 어떻게 물이 스스로 흘러오게 할까요?"
-        captions: ["그 먼 거리를", "대체 어떻게 물이 / 스스로 흘러오게 할까요?"]
+        captions: ["그 먼 거리를", "대체 어떻게 물이", "스스로 흘러오게 할까요?"]
     visual: 언덕 위 기술자가 샘과 도시 사이 굽이굽이 이어진 땅을 내려다보며 생각에 잠긴다
     image_prompt: >-
       The engineer sitting on a hilltop at sunset with his measuring rod across his knees, looking out over the long
@@ -79,7 +79,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 기술자는 샘에서 도시까지, 아주 조금씩만 내려가는 물길을 냈습니다."
-        captions: ["그래서 기술자는 / 샘에서 도시까지", "아주 조금씩만 내려가는 / 물길을 냈습니다"]
+        captions: ["그래서 기술자는 / 샘에서 도시까지", "아주 조금씩만 / 내려가는 물길을 냈습니다"]
     visual: 언덕 허리를 따라 구불구불 이어지는 돌 수로, 기술자가 막대로 높이를 재며 따라간다
     image_prompt: >-
       A long covered stone water channel winding along the curves of the green hillsides, following the contour of the
@@ -100,7 +100,7 @@ scenes:
     beat: solution
     lines:
       - text: "1킬로미터를 가도 겨우 한 뼘 남짓 낮아질 만큼, 아주 완만하게요."
-        captions: ["1킬로미터를 가도 / 겨우 한 뼘 남짓 낮아질 만큼", "아주 완만하게요"]
+        captions: ["1킬로미터를 가도", "겨우 한 뼘 남짓 / 낮아질 만큼", "아주 완만하게요"]
     visual: 기술자가 손바닥을 펴 한 뼘을 보여 주고, 뒤로 끝없이 이어진 수로가 보인다
     image_prompt: >-
       Close view of the engineer holding up his hand with fingers spread wide to show a hand-span, grinning, the long
@@ -114,7 +114,7 @@ scenes:
     beat: solution
     lines:
       - text: "그러자 물은 그 기울기를 타고, 쉬지 않고 도시로 흘러갔죠."
-        captions: ["그러자 물은 그 기울기를 타고", "쉬지 않고 / 도시로 흘러갔죠"]
+        captions: ["그러자 물은 / 그 기울기를 타고", "쉬지 않고 / 도시로 흘러갔죠"]
     visual: 수로 끝에서 물이 도시 분수로 쏟아져 나오고 기술자가 손을 담근다
     image_prompt: >-
       The end of the channel at the Roman town, clear water gushing out into a stone fountain basin, the engineer
@@ -128,7 +128,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 가는 길에, 깊은 강 골짜기가 떡하니 가로막고 있었습니다. 어떻게 건널까요?"
-        captions: ["그런데 가는 길에", "깊은 강 골짜기가 / 떡하니 가로막고 있었습니다", "어떻게 건널까요?"]
+        captions: ["그런데 가는 길에", "깊은 강 골짜기가 떡하니 / 가로막고 있었습니다", "어떻게 건널까요?"]
     visual: 수로가 깊은 강 골짜기 앞에서 뚝 끊기고, 절벽 끝에 선 기술자가 아래를 내려다본다
     image_prompt: >-
       The stone channel abruptly ending at the edge of a deep, wide river gorge, the river far below, the engineer
@@ -142,9 +142,9 @@ scenes:
     beat: resolve
     lines:
       - text: "기술자는 골짜기 위에 아치를 세 층으로 쌓아, 높은 돌다리를 놓았습니다."
-        captions: ["기술자는 골짜기 위에 / 아치를 세 층으로 쌓아", "높은 돌다리를 놓았습니다"]
+        captions: ["기술자는 골짜기 위에", "아치를 세 층으로 쌓아", "높은 돌다리를 놓았습니다"]
       - text: "물길은 다리 맨 꼭대기를 지나, 기울기를 그대로 지켰죠."
-        captions: ["물길은 다리 맨 꼭대기를 지나", "기울기를 / 그대로 지켰죠"]
+        captions: ["물길은 다리 / 맨 꼭대기를 지나", "기울기를 / 그대로 지켰죠"]
     visual: 강 골짜기를 가로지르는 3층 아치 돌다리, 맨 위층에 물길이 지나간다
     image_prompt: >-
       A majestic three-tiered stone arch bridge spanning the river gorge, large arches on the bottom, more arches in the
@@ -167,7 +167,7 @@ scenes:
     beat: info
     lines:
       - text: "이 물길은 약 오백 년 동안 도시에 물을 댔고, 다리는 지금도 서 있습니다."
-        captions: ["이 물길은 약 오백 년 동안 / 도시에 물을 댔고", "다리는 지금도 / 서 있습니다"]
+        captions: ["이 물길은 / 약 오백 년 동안", "도시에 물을 댔고", "다리는 지금도 / 서 있습니다"]
     visual: 오늘날 푸른 강 위에 우뚝 선 3층 아치 돌다리 전경
     image_prompt: >-
       The same three-tiered Roman stone arch bridge today, weathered golden stone, standing over a calm green river with
