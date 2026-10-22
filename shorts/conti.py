@@ -122,6 +122,7 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
 6. output/check/final-sheet.jpg 를 직접 보고 확인:
    - 자막·제목이 핵심 장면({focus})을 가리지 않는지
    - 주인공이 가운데 크게 보이는지, Grok 이 사람을 더 만들어 넣어 주인공을 가리지 않는지 (docs/scene-people.md) → 그런 장면은 보고
+   - 마지막 CTA 자막(댓글·좋아요 한 줄)이 주인공 엄지척 컷 위에 나오고, 얼굴·손을 가리지 않는지
    - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose
