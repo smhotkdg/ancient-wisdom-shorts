@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "hunter": "Character reference sheet of a cheerful, sturdy Inuit man in his 30s with a round warm face, rosy cold cheeks, narrow smiling eyes and short black hair, wearing a thick caribou-fur parka with a fur-trimmed hood, fur mittens, sealskin boots, and a long bone snow knife at his belt. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "An endless flat white Arctic snowfield in a howling blizzard, not a single tree or rock in sight, the hunter in the center foreground with snow piling on his fur hood, mouth hanging open in disbelief, a spear in one hand. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "Snow whips sideways across the plain; he turns slowly looking for shelter and his jaw drops. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He shivers hard, his teeth chatter and his breath freezes into white puffs. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The hunter kneeling beside a small wooden sled, digging through his bundle and finding only furs and a lamp, no tent, looking around at nothing but snow in every direction. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "He rummages through the sled bundle, finds no tent, and throws up his hands as snow swirls around. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The hunter crouching and knocking on the hard wind-packed snow at his feet with his mitten, his eyes lighting up with an idea, the bone snow knife at his belt. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He knocks on the hard snow twice, it sounds solid, and he slowly draws his snow knife with a grin. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The hunter cutting a large rectangular block out of hard packed snow with a long bone knife, lifting the block with both hands, several neat snow blocks already lined up beside him. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The knife slides through the snow, and he lifts out a big clean block and sets it down. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The hunter standing inside a half-built dome of snow blocks laid in a rising spiral, each row leaning further inward, placing another block near the top, the dome nearly closed. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "Block after block spirals upward and inward until the dome is almost closed over his head. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "A glowing line traces the spiral of blocks from the bottom up to the small hole at the top. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "The hunter rubbing loose snow into the joints between the blocks, then standing back proudly in front of the finished smooth white snow dome with a low tunnel entrance, dusting off his mittens. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He packs snow into the last gap, steps back, claps his mittens together and grins. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "Inside the dim snow dome, the hunter pressing his bare hand against the white snow wall, eyebrows raised doubtfully, his breath still steaming. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He touches the cold wall, pulls his hand back, blows on it and tilts his head doubtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Inside the snow dome glowing warm orange from a shallow stone oil lamp burning seal blubber, the hunter sitting on a raised snow sleeping platform covered with caribou furs, hood down, smiling and warming his hands. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The lamp flame flickers warmly; he pulls off his mittens, rubs his hands and relaxes with a sigh. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "Warm orange air rises and gathers over the platform while pale blue cold air settles low in the tunnel. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A dark Arctic night with a blizzard swirling, the snow dome glowing warmly from within, golden light shining through a small clear ice window and steam rising from the vent hole at the top. No people visible. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "Snow swirls around the glowing dome; warm light flickers in the ice window and steam drifts from the top. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "A clear bright Arctic morning after the storm, the hunter crawling out of the low tunnel entrance of the snow dome and stretching happily under a pink-blue sky, the sled beside him. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He stretches his arms wide and smiles at the sunrise; the camera rises high over the lone snow house. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

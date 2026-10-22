@@ -1,0 +1,219 @@
+# 019 이글루 — 눈으로 지었는데 안은 따뜻한 북극의 집
+id: "019"
+slug: igloo
+status: script_ok
+working_title: 북극 사람들은 어떻게 눈으로 따뜻한 집을 지었을까?
+title_lines: ["눈으로 지은 집이", "따뜻하다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [눈보라, 눈 벽돌, 나선, 등잔, 잠자리]
+
+story:
+  hero: 사냥꾼
+  reveal: [이글루]
+
+characters:
+  - id: hunter
+    name: 사냥꾼
+    name_en: Inuit hunter
+    description: >-
+      a cheerful, sturdy Inuit man in his 30s with a round warm face, rosy cold cheeks, narrow smiling eyes and short
+      black hair, wearing a thick caribou-fur parka with a fur-trimmed hood, fur mittens, sealskin boots, and a long
+      bone snow knife at his belt
+    note: 이야기 주인공. 겨울 사냥을 나온 북극의 사냥꾼
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "북극의 사냥꾼은 말문이 막혔습니다."
+        captions: ["북극의 사냥꾼은 / 말문이 막혔습니다"]
+      - text: "사냥을 나왔다가 눈보라를 만났는데, 주변엔 나무 한 그루 없었거든요."
+        captions: ["사냥을 나왔다가 / 눈보라를 만났는데", "주변엔 / 나무 한 그루 없었거든요"]
+    visual: 끝없는 하얀 설원에 눈보라가 몰아치고, 사냥꾼이 입을 벌린 채 굳어 있다
+    image_prompt: >-
+      An endless flat white Arctic snowfield in a howling blizzard, not a single tree or rock in sight, the hunter in the
+      center foreground with snow piling on his fur hood, mouth hanging open in disbelief, a spear in one hand.
+    characters: [hunter]
+    motion_prompt: >-
+      Snow whips sideways across the plain; he turns slowly looking for shelter and his jaw drops.
+    camera: slow orbit
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the hunter's frosty face inside his fur hood, eyelashes and eyebrows covered in ice crystals,
+          shivering, breath freezing in white clouds. No other people.
+        characters: [hunter]
+        motion_prompt: >-
+          He shivers hard, his teeth chatter and his breath freezes into white puffs.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "기댈 바위도, 칠 천막도 없이 사방이 온통 눈뿐이었죠."
+        captions: ["기댈 바위도 / 칠 천막도 없이", "사방이 온통 / 눈뿐이었죠"]
+    visual: 사냥꾼이 썰매 짐을 뒤지지만 천막은 없고, 사방은 눈뿐이다
+    image_prompt: >-
+      The hunter kneeling beside a small wooden sled, digging through his bundle and finding only furs and a lamp, no
+      tent, looking around at nothing but snow in every direction. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      He rummages through the sled bundle, finds no tent, and throws up his hands as snow swirls around.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이 꽁꽁 언 들판에서, 대체 무엇으로 집을 지을 수 있을까요?"
+        captions: ["이 꽁꽁 언 들판에서", "대체 무엇으로 / 집을 지을 수 있을까요?"]
+    visual: 사냥꾼이 발밑 단단한 눈을 장갑으로 두드려 보며 눈을 반짝인다
+    image_prompt: >-
+      The hunter crouching and knocking on the hard wind-packed snow at his feet with his mitten, his eyes lighting up
+      with an idea, the bone snow knife at his belt. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      He knocks on the hard snow twice, it sounds solid, and he slowly draws his snow knife with a grin.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 사냥꾼은 단단히 다져진 눈을, 칼로 커다란 벽돌처럼 잘라 냈습니다."
+        captions: ["그래서 사냥꾼은 / 단단히 다져진 눈을", "칼로 커다란 벽돌처럼 / 잘라 냈습니다"]
+    visual: 사냥꾼이 뼈 칼로 다져진 눈을 네모난 큰 벽돌 모양으로 잘라 들어 올린다
+    image_prompt: >-
+      The hunter cutting a large rectangular block out of hard packed snow with a long bone knife, lifting the block
+      with both hands, several neat snow blocks already lined up beside him. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      The knife slides through the snow, and he lifts out a big clean block and sets it down.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 눈 벽돌을 빙글빙글 나선으로 쌓아 올려, 둥근 지붕을 만들었죠."
+        captions: ["그리고 눈 벽돌을 / 빙글빙글 나선으로 쌓아 올려", "둥근 지붕을 만들었죠"]
+    visual: 눈 벽돌이 나선형으로 안쪽으로 기울며 쌓여 둥근 돔이 되어 간다
+    image_prompt: >-
+      The hunter standing inside a half-built dome of snow blocks laid in a rising spiral, each row leaning further
+      inward, placing another block near the top, the dome nearly closed. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      Block after block spirals upward and inward until the dome is almost closed over his head.
+    camera: slow orbit
+    extra_clips:
+      - image_prompt: >-
+          A clean cutaway diagram of the snow dome showing the blocks laid in one continuous rising spiral that narrows
+          inward to a small hole at the top. Clean educational illustration, no labels, no text, no people.
+        motion_prompt: >-
+          A glowing line traces the spiral of blocks from the bottom up to the small hole at the top.
+        camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "틈은 눈으로 꼼꼼히 메웠고, 한두 시간이면 집 한 채가 뚝딱 완성됐습니다."
+        captions: ["틈은 눈으로 꼼꼼히 메웠고", "한두 시간이면 / 집 한 채가 뚝딱 완성됐습니다"]
+    visual: 사냥꾼이 눈 벽돌 틈에 눈을 문질러 메우고, 완성된 하얀 돔 앞에서 손을 털며 웃는다
+    image_prompt: >-
+      The hunter rubbing loose snow into the joints between the blocks, then standing back proudly in front of the
+      finished smooth white snow dome with a low tunnel entrance, dusting off his mittens. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      He packs snow into the last gap, steps back, claps his mittens together and grins.
+    camera: slow pull back
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 차가운 눈으로 지은 집이, 정말 따뜻할 수 있을까요?"
+        captions: ["그런데 차가운 눈으로 / 지은 집이", "정말 따뜻할 수 있을까요?"]
+    visual: 사냥꾼이 하얀 눈벽에 손을 대 보며 고개를 갸웃한다
+    image_prompt: >-
+      Inside the dim snow dome, the hunter pressing his bare hand against the white snow wall, eyebrows raised
+      doubtfully, his breath still steaming. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      He touches the cold wall, pulls his hand back, blows on it and tilts his head doubtfully.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "단단한 눈벽은 몸의 온기를 가둬 주었고, 바다표범 기름 등잔이 안을 데웠습니다."
+        captions: ["단단한 눈벽은 / 몸의 온기를 가둬 주었고", "바다표범 기름 등잔이 / 안을 데웠습니다"]
+      - text: "입구는 바닥보다 낮은 굴로 내고, 잠자리는 높은 눈 단 위에 만들었죠."
+        captions: ["입구는 / 바닥보다 낮은 굴로 내고", "잠자리는 / 높은 눈 단 위에 만들었죠"]
+    visual: 등잔불이 주황빛으로 비추는 이글루 안, 털가죽을 깐 높은 눈 단 위에 사냥꾼이 앉아 몸을 녹인다
+    image_prompt: >-
+      Inside the snow dome glowing warm orange from a shallow stone oil lamp burning seal blubber, the hunter sitting on
+      a raised snow sleeping platform covered with caribou furs, hood down, smiling and warming his hands. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      The lamp flame flickers warmly; he pulls off his mittens, rubs his hands and relaxes with a sigh.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Side cross-section of the snow house: the entrance tunnel dug lower than the inner floor, a raised sleeping
+          platform at the back, soft orange glow of warm air gathering high inside and pale blue cold air staying low in
+          the tunnel. Clean educational illustration, no labels, no text, no people.
+        motion_prompt: >-
+          Warm orange air rises and gathers over the platform while pale blue cold air settles low in the tunnel.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그렇게 밖이 꽁꽁 얼어붙어도, 안은 영하를 넘어 따뜻해지곤 했습니다."
+        captions: ["그렇게 밖이 꽁꽁 얼어붙어도", "안은 영하를 넘어 / 따뜻해지곤 했습니다"]
+    visual: 눈보라 치는 캄캄한 밤, 하얀 돔 꼭대기 구멍과 얼음 창으로 따뜻한 불빛이 새어 나온다
+    image_prompt: >-
+      A dark Arctic night with a blizzard swirling, the snow dome glowing warmly from within, golden light shining
+      through a small clear ice window and steam rising from the vent hole at the top. No people visible.
+    motion_prompt: >-
+      Snow swirls around the glowing dome; warm light flickers in the ice window and steam drifts from the top.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "눈으로 지었는데 안은 따뜻한 이 집이 바로, 이글루입니다."
+        captions: ["눈으로 지었는데 / 안은 따뜻한", "이 집이 / 바로, 이글루입니다"]
+    visual: 맑게 갠 아침, 이글루 입구에서 기어 나온 사냥꾼이 기지개를 켜고, 카메라가 높이 솟는다
+    image_prompt: >-
+      A clear bright Arctic morning after the storm, the hunter crawling out of the low tunnel entrance of the snow dome
+      and stretching happily under a pink-blue sky, the sled beside him. No other people.
+    characters: [hunter]
+    motion_prompt: >-
+      He stretches his arms wide and smiles at the sunrise; the camera rises high over the lone snow house.
+    camera: slow rise
+
+sources:
+  - "캐나다 백과사전(The Canadian Encyclopedia, Historica Canada) — Igloo (이누이트 가족과 여행하는 사냥꾼이 겨울에 사용, 고래뼈·쇠 칼로 큰 눈 벽돌을 잘라 안쪽으로 기우는 벽을 나선으로 쌓음, 틈은 눈으로 메움, 입구 통로는 때로 지면보다 낮게 팜, 단단한 눈벽은 체온을 가두는 좋은 단열재, 안은 흔히 영하를 조금 넘고 사람·열원이 있으면 약 15°C까지, 기름 등잔(쿨리크)으로 데움, 바닥을 층지게 해 더 따뜻한 위쪽에서 잠) — https://www.thecanadianencyclopedia.ca/en/article/igloo"
+  - "브리태니커 — Igloo (캐나다·그린란드 이누이트의 임시 겨울집·사냥터 집, 다져진 눈을 벽돌로 잘라 나선으로 쌓아 돔과 꼭대기 환기 구멍, 틈은 눈으로 메움, 맑은 얼음·바다표범 창자로 창, 약 3m 반원통 입구 통로, 바다표범 기름 등잔, 털가죽을 깐 높은 눈 잠자리 단, 숙련된 사람은 1~2시간이면 짓는다) — https://www.britannica.com/topic/igloo"
+
+accuracy_notes:
+  - "사냥꾼 인물과 감정, 대사는 설명용 재구성. 특정 인물의 실제 이야기가 아니다."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '눈보라에 갇혀 집을 지었다'는 이글루가 사냥 중 임시로 짓는 집이었다는 점(브리태니커)을 이야기로 푼 것."
+  - "모든 이누이트가 이글루에 산 것은 아니다. 브리태니커 기준 매켄지강 삼각주~래브라도 사이에서만 겨울집으로 쓰였다. 대본은 '북극의 사냥꾼'으로만 쓴다."
+  - "'한두 시간'은 브리태니커의 '숙련된 사람은 1~2시간' 기준."
+  - "s09 '영하를 넘어'는 캐나다 백과사전의 '안은 흔히 영하를 조금 넘는다' 기준. 15°C 같은 수치는 쓰지 않는다."
+  - "s08 단면도의 '찬 공기는 아래, 따뜻한 공기는 위'는 '높은 곳에서 자면 더 따뜻하다'(캐나다 백과사전)를 그림으로 단순화한 것."
+  - "화면 인물은 사냥꾼 한 명으로 연출 (실제로는 가족이 함께 쓰는 경우가 많다)."
+
+youtube:
+  titles:
+    - 눈으로 지었는데 따뜻하다고? 이글루의 비밀
+    - 한두 시간이면 뚝딱! 눈 벽돌로 짓는 북극의 집
+    - 얼음집 안이 영상이 되는 놀라운 이유
+  description: |-
+    ❄️ 눈보라 한가운데, 나무도 천막도 없다면… 무엇으로 집을 지을까요?
+
+    북극 사냥꾼의 답은 '발밑의 눈'이었습니다 🔪
+    단단한 눈을 벽돌처럼 잘라 빙글빙글 나선으로 쌓으면, 한두 시간 만에 둥근 집 완성!
+
+    눈벽은 몸의 온기를 가두고, 등잔이 안을 데우고 🕯️
+    입구는 낮게, 잠자리는 높게 만들어 밖은 꽁꽁 얼어도 안은 영상으로!
+  comment_question: 여러분은 이글루에서 하룻밤, 잘 수 있을 것 같나요?
+  hashtags: [이글루, 이누이트, 북극, 생활의지혜, 쇼츠]
