@@ -1,0 +1,38 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.5초
+He looks from the dry fountain to the distant hills and tugs at his hair in despair. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.5–9.1초
+The spring bubbles up; he cups the water, tastes it and looks back toward the far-away town. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 9.1–13.7초
+Water runs down the plank; he tries to sweep it back up with his hand and it just trickles down again. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.7–17.9초
+He traces the landscape in the air with his finger from the hills to the town and slowly nods. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 17.9–20.7초
+He sets the rod down, sights along it, nods and walks on along the winding channel. Camera: slow pan along the channel. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 20.7–23.5초
+Clear water flows smoothly and steadily along the inside of the stone channel. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 23.5–28.3초
+He spreads his hand to show one span, winks, and points down the endless channel. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 28.3–32.6초
+Water gushes into the basin; he laughs and splashes water up into the sunlight. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 32.6–38.7초
+A pebble falls from the edge into the gorge; he looks down, gulps, and stares across to the other side. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 38.7–43.9초
+The camera rises slowly up the three tiers of arches to the water channel on top; the engineer raises his arms. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 43.9–48.1초
+Water flows through the channel on top of the bridge; he walks alongside, checking the level, and smiles. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 48.1–53.2초
+Sunlight glints on the river as the camera glides slowly toward the ancient bridge. Camera: slow drone push forward. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 53.2–58.6초
+He smiles and pats the stone; the camera pulls back and rises to reveal the whole bridge over the gorge. Camera: slow pull back and rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.

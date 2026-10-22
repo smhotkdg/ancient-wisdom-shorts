@@ -1,0 +1,221 @@
+# 017 퐁뒤가르 — 50km 물길을 펌프 없이 끌어온 로마의 물다리
+id: "017"
+slug: pont-du-gard
+status: script_ok
+working_title: 로마 사람들은 어떻게 50km 밖의 물을 펌프 없이 끌어왔을까?
+title_lines: ["50km 물길을", "펌프 없이 끌어왔다고?"]
+hook: 머리를 쥐어뜯었습니다
+caption_keywords: [샘, 물길, 한 뼘, 골짜기, 아치]
+
+story:
+  hero: 기술자
+  reveal: [퐁뒤가르]
+
+characters:
+  - id: engineer
+    name: 기술자
+    name_en: Roman water engineer
+    description: >-
+      a tall, lanky ancient Roman man in his 30s with short dark wavy hair, clean-shaven, bright eager eyes and a big
+      nose, wearing a short light-brown wool tunic with a leather belt, sturdy sandals, a wax tablet and a long wooden
+      measuring rod in hand
+    note: 이야기 주인공. 먼 샘물을 도시까지 끌어와야 하는 로마의 물길 기술자
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "로마의 물길 기술자는 머리를 쥐어뜯었습니다."
+        captions: ["로마의 물길 기술자는 / 머리를 쥐어뜯었습니다"]
+      - text: "도시엔 마실 물이 모자란데, 쓸 만한 샘은 무려 50킬로미터 밖에 있었거든요."
+        captions: ["도시엔 마실 물이 모자란데", "쓸 만한 샘은 무려 / 50킬로미터 밖에 있었거든요"]
+    visual: 흙빛 로마 도시 성벽 위, 지도를 든 기술자가 아득히 먼 언덕 너머를 보며 머리를 쥐어뜯는다
+    image_prompt: >-
+      A sunny ancient Roman town with terracotta roofs and a dry stone fountain, the engineer standing on the town wall
+      in the center foreground, clutching his hair with one hand and holding a wax tablet with a rough map in the other,
+      staring at faraway green hills on the horizon.
+    characters: [engineer]
+    motion_prompt: >-
+      He looks from the dry fountain to the distant hills and tugs at his hair in despair.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A clear spring bubbling out among rocks and trees in the far hills, crystal water pooling, the tiny figure of the
+          engineer kneeling beside it and cupping water in his hands. No other people.
+        characters: [engineer]
+        motion_prompt: >-
+          The spring bubbles up; he cups the water, tastes it and looks back toward the far-away town.
+        camera: slow pull back
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "펌프도 없던 시절, 물은 오직 높은 곳에서 낮은 곳으로만 흘렀죠."
+        captions: ["펌프도 없던 시절", "물은 오직 높은 곳에서 / 낮은 곳으로만 흘렀죠"]
+    visual: 기술자가 경사진 판 위에 물을 붓자 물이 아래로만 흘러내린다
+    image_prompt: >-
+      The engineer kneeling on a hillside pouring water from a clay jug onto a tilted wooden plank, the water running
+      only downhill, while he tries to push some back uphill with his hand, comically failing. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      Water runs down the plank; he tries to sweep it back up with his hand and it just trickles down again.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그 먼 거리를, 대체 어떻게 물이 스스로 흘러오게 할까요?"
+        captions: ["그 먼 거리를", "대체 어떻게 물이 / 스스로 흘러오게 할까요?"]
+    visual: 언덕 위 기술자가 샘과 도시 사이 굽이굽이 이어진 땅을 내려다보며 생각에 잠긴다
+    image_prompt: >-
+      The engineer sitting on a hilltop at sunset with his measuring rod across his knees, looking out over the long
+      winding landscape of hills and valleys between the spring and the distant town, deep in thought. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      He traces the landscape in the air with his finger from the hills to the town and slowly nods.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 기술자는 샘에서 도시까지, 아주 조금씩만 내려가는 물길을 냈습니다."
+        captions: ["그래서 기술자는 / 샘에서 도시까지", "아주 조금씩만 내려가는 / 물길을 냈습니다"]
+    visual: 언덕 허리를 따라 구불구불 이어지는 돌 수로, 기술자가 막대로 높이를 재며 따라간다
+    image_prompt: >-
+      A long covered stone water channel winding along the curves of the green hillsides, following the contour of the
+      land, the engineer walking beside it holding his measuring rod upright to check the level. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      He sets the rod down, sights along it, nods and walks on along the winding channel.
+    camera: slow pan along the channel
+    extra_clips:
+      - image_prompt: >-
+          A cutaway of the stone channel: clear water flowing gently inside a rectangular stone conduit with a stone slab
+          roof, the gentle slope visible. Clean educational illustration, no labels, no text, no people.
+        motion_prompt: >-
+          Clear water flows smoothly and steadily along the inside of the stone channel.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "1킬로미터를 가도 겨우 한 뼘 남짓 낮아질 만큼, 아주 완만하게요."
+        captions: ["1킬로미터를 가도 / 겨우 한 뼘 남짓 낮아질 만큼", "아주 완만하게요"]
+    visual: 기술자가 손바닥을 펴 한 뼘을 보여 주고, 뒤로 끝없이 이어진 수로가 보인다
+    image_prompt: >-
+      Close view of the engineer holding up his hand with fingers spread wide to show a hand-span, grinning, the long
+      stone channel stretching away behind him into the distance. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      He spreads his hand to show one span, winks, and points down the endless channel.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그러자 물은 그 기울기를 타고, 쉬지 않고 도시로 흘러갔죠."
+        captions: ["그러자 물은 그 기울기를 타고", "쉬지 않고 / 도시로 흘러갔죠"]
+    visual: 수로 끝에서 물이 도시 분수로 쏟아져 나오고 기술자가 손을 담근다
+    image_prompt: >-
+      The end of the channel at the Roman town, clear water gushing out into a stone fountain basin, the engineer
+      laughing and splashing his hands in the water. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      Water gushes into the basin; he laughs and splashes water up into the sunlight.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 가는 길에, 깊은 강 골짜기가 떡하니 가로막고 있었습니다. 어떻게 건널까요?"
+        captions: ["그런데 가는 길에", "깊은 강 골짜기가 / 떡하니 가로막고 있었습니다", "어떻게 건널까요?"]
+    visual: 수로가 깊은 강 골짜기 앞에서 뚝 끊기고, 절벽 끝에 선 기술자가 아래를 내려다본다
+    image_prompt: >-
+      The stone channel abruptly ending at the edge of a deep, wide river gorge, the river far below, the engineer
+      standing at the cliff edge looking down and then across to the far side with a worried frown. No other people.
+    characters: [engineer]
+    motion_prompt: >-
+      A pebble falls from the edge into the gorge; he looks down, gulps, and stares across to the other side.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "기술자는 골짜기 위에 아치를 세 층으로 쌓아, 높은 돌다리를 놓았습니다."
+        captions: ["기술자는 골짜기 위에 / 아치를 세 층으로 쌓아", "높은 돌다리를 놓았습니다"]
+      - text: "물길은 다리 맨 꼭대기를 지나, 기울기를 그대로 지켰죠."
+        captions: ["물길은 다리 맨 꼭대기를 지나", "기울기를 / 그대로 지켰죠"]
+    visual: 강 골짜기를 가로지르는 3층 아치 돌다리, 맨 위층에 물길이 지나간다
+    image_prompt: >-
+      A majestic three-tiered stone arch bridge spanning the river gorge, large arches on the bottom, more arches in the
+      middle, and a row of small arches on top carrying the covered water channel, the engineer standing proudly at one
+      end. Golden light.
+    characters: [engineer]
+    motion_prompt: >-
+      The camera rises slowly up the three tiers of arches to the water channel on top; the engineer raises his arms.
+    camera: slow tilt up
+    extra_clips:
+      - image_prompt: >-
+          Cutaway of the top tier of the bridge: water flowing steadily through the covered stone channel high above the
+          river, the engineer walking along the top beside it with his measuring rod. No other people.
+        characters: [engineer]
+        motion_prompt: >-
+          Water flows through the channel on top of the bridge; he walks alongside, checking the level, and smiles.
+        camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이 물길은 약 오백 년 동안 도시에 물을 댔고, 다리는 지금도 서 있습니다."
+        captions: ["이 물길은 약 오백 년 동안 / 도시에 물을 댔고", "다리는 지금도 / 서 있습니다"]
+    visual: 오늘날 푸른 강 위에 우뚝 선 3층 아치 돌다리 전경
+    image_prompt: >-
+      The same three-tiered Roman stone arch bridge today, weathered golden stone, standing over a calm green river with
+      trees on the banks under a clear blue sky. No people.
+    motion_prompt: >-
+      Sunlight glints on the river as the camera glides slowly toward the ancient bridge.
+    camera: slow drone push forward
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "물길을 이고 골짜기를 건넌 이 돌다리가 바로, 퐁뒤가르입니다."
+        captions: ["물길을 이고 / 골짜기를 건넌", "이 돌다리가 / 바로, 퐁뒤가르입니다"]
+    visual: 다리 꼭대기 물길 옆에 선 기술자가 미소 짓고, 카메라가 빠지며 골짜기 전체가 보인다
+    image_prompt: >-
+      The engineer standing on top of the three-tiered stone bridge beside the water channel at golden sunset, looking
+      out over the river gorge with a proud, contented smile.
+    characters: [engineer]
+    motion_prompt: >-
+      He smiles and pats the stone; the camera pulls back and rises to reveal the whole bridge over the gorge.
+    camera: slow pull back and rise
+
+sources:
+  - "UNESCO 세계유산 — Pont du Gard (Roman Aqueduct) (님 도시에 물을 대려고 만든 약 50km 수로가 가르동강을 건너는 다리, 높이 약 50m, 3층 아치, 1세기 무렵(자료마다 기원전 19년~1세기 중엽), 홍수에 버티도록 교각 설계) — https://whc.unesco.org/en/list/344"
+  - "ROMAQ (Roman Aqueducts 연구 데이터베이스) — Nemausus (Nîmes) aqueduct (길이 50km, 수원과 도시의 높이 차는 50km에 겨우 11.2m, 평균 기울기 1km에 0.25m(일부 구간 0.1m), 약 5세기 동안 사용, 하루 약 35,000㎥) — https://romaq.org/the-project/aqueducts/178-nemausus.html"
+
+accuracy_notes:
+  - "기술자 인물과 감정, 대사는 설명용 재구성. 특정 인물의 실제 이야기가 아니다. 수로는 많은 사람이 지었다."
+  - "'머리를 쥐어뜯었습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '도시엔 마실 물이 모자랐다'는 수로를 지은 이유를 단순화한 연출."
+  - "기울기: 높이 차는 자료마다 다르다(ROMAQ 11.2m, UNESCO 일부 언어판 17m). 그래서 숫자 대신 '1km에 한 뼘 남짓'(평균 약 25~34cm)으로 쓴다."
+  - "건설 연도는 자료마다 달라(기원전 19년~1세기 중엽) 쓰지 않는다. '약 오백 년 동안 사용'은 ROMAQ 기준."
+  - "측량 도구 이름(코로바테스 등)은 근거를 따로 확인하지 않아 쓰지 않는다. 그림의 '막대'는 단순화."
+  - "화면 인물은 기술자 한 명으로 연출."
+
+youtube:
+  titles:
+    - 50km 물길을 펌프 없이! 로마의 3층 물다리
+    - 1km에 겨우 한 뼘! 로마 수로의 미친 기울기
+    - 물이 지나가는 다리가 2천 년째 서 있다고?
+  description: |-
+    💧 마실 물은 50km 밖에 있고, 펌프는 없다면… 물을 어떻게 데려올까요?
+
+    로마의 답은 '아주아주 조금씩 내려가는 물길'이었습니다.
+    1km를 가도 겨우 한 뼘 남짓 낮아지게! 📏
+    그런데 중간에 깊은 골짜기가 떡하니… 🏞️
+
+    그래서 아치를 3층으로 쌓아 물길을 하늘로 올렸죠.
+    이 물다리는 지금도 프랑스 남부에 우뚝 서 있답니다 🌉
+  comment_question: 여러분이라면 골짜기를 다리로 건널까요, 굴을 뚫을까요?
+  hashtags: [퐁뒤가르, 고대로마, 수로, 세계유산, 쇼츠]
