@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "herder": "Character reference sheet of a sturdy, cheerful Mongolian man in his 30s with ruddy wind-burned cheeks, narrow smiling eyes and short black hair, wearing a long deep-blue traditional deel robe with an orange sash, tall leather boots with upturned toes and a round fur-trimmed hat. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A wide Mongolian steppe where the grass around has been grazed down to bare earth, a flock of sheep nibbling at the last tufts, the herder in the center foreground standing with his mouth open and arms hanging, staring blankly at green pastures far away on the horizon. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "A sheep bumps his leg and bleats; he looks down at the bare ground, then at the far green hills, dazed. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He heaves on the rope with all his might, slips and falls on his back; the hut does not budge. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A fierce spring windstorm sweeping across the open steppe, dust and dry grass whirling through the air, the herder leaning hard into the wind, holding onto his flying hat. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "A strong gust blasts dust across the plain; his hat flies off and he grabs for it, staggering. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "At dusk the herder sitting by a small campfire on the steppe, drawing a round dome shape in the dirt with a stick, chin in his other hand, the first stars appearing above. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He finishes the circle in the dirt, taps it with the stick and slowly grins. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "On the open steppe, a round wooden frame of painted lattice walls set up in a circle, the herder standing on a stool in the middle lifting long thin roof poles one by one to meet at a peak above, the frame beautifully painted in orange and red patterns. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He slots one roof pole after another into place until they all meet at the top. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "The pole slides into the crown with a click; he taps it firmly into place. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The herder pulling thick white felt over the round frame, then wrapping it tightly with long brown ropes made of animal hair around the walls, the round white dwelling taking shape on the steppe. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "He throws the felt over the frame, wraps the rope around and pulls it tight with a strong tug. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "The herder leading a horse pulling a small wooden cart loaded with the folded lattice walls, a bundle of roof poles and rolled white felt, heading across the steppe toward green pastures, sheep following behind. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "The cart rolls forward; he walks ahead leading the horse, the sheep trotting after them. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "Dark clouds and a wall of dust rolling across the steppe toward the round white dwelling, the herder standing in front of it looking up at the sky with a worried face, holding the door frame. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "The dust storm rolls closer; he glances at his home and back at the sky, swallowing nervously. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "The round white felt dwelling standing firm in a howling dust storm, ropes taut, wind streaming around its curved walls; through the open door the herder sits calmly inside by a small stove sipping tea and grinning. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Wind and dust stream around the round walls without shaking them; inside he sips his tea and smiles. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "He rolls the wool mat back and forth firmly, pressing it into felt; a sheep wanders over to watch. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "The herder in the center foreground raising a roof pole into a half-built round frame on the green steppe at golden hour, smiling and showing how it is done. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two small children in colorful deel robes behind him, carrying a light roof pole together and copying him (only 2-4 people, never blocking the Mongolian herder). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "He sets the pole in place and nods; the children behind him wobble their pole into place and cheer. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "A single round white felt dwelling in the middle of the vast golden steppe at sunset, smoke curling from the stove pipe, the herder standing at the painted orange door waving, sheep grazing around. No other people. Characters: Mongolian herder (attached reference image char_herder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Mongolian herder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He waves; the camera slowly rises high above to show the lone round home on the endless steppe. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

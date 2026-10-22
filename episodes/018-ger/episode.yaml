@@ -1,0 +1,225 @@
+# 018 게르 — 집을 통째로 들고 다닌 몽골 초원의 둥근 집
+id: "018"
+slug: ger
+status: script_ok
+working_title: 몽골 사람들은 어떻게 집을 통째로 들고 다녔을까?
+title_lines: ["집을 통째로", "들고 다녔다고?"]
+hook: 넋이 나갔습니다
+caption_keywords: [양 떼, 바람, 둥글게, 펠트, 밧줄]
+
+story:
+  hero: 목동
+  reveal: [게르]
+
+characters:
+  - id: herder
+    name: 목동
+    name_en: Mongolian herder
+    description: >-
+      a sturdy, cheerful Mongolian man in his 30s with ruddy wind-burned cheeks, narrow smiling eyes and short black hair,
+      wearing a long deep-blue traditional deel robe with an orange sash, tall leather boots with upturned toes and a
+      round fur-trimmed hat
+    note: 이야기 주인공. 양 떼를 따라 초원을 옮겨 다니는 유목민 목동
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "몽골 초원의 목동은 넋이 나갔습니다."
+        captions: ["몽골 초원의 목동은 / 넋이 나갔습니다"]
+      - text: "양 떼가 풀을 다 먹어 치우면, 집까지 통째로 새 풀밭으로 옮겨야 했거든요."
+        captions: ["양 떼가 풀을 다 먹어 치우면", "집까지 통째로 / 새 풀밭으로 옮겨야 했거든요"]
+    visual: 풀이 다 뜯긴 맨땅 위, 양 떼 사이에 선 목동이 멍하니 먼 초원을 바라본다
+    image_prompt: >-
+      A wide Mongolian steppe where the grass around has been grazed down to bare earth, a flock of sheep nibbling at the
+      last tufts, the herder in the center foreground standing with his mouth open and arms hanging, staring blankly at
+      green pastures far away on the horizon.
+    characters: [herder]
+    motion_prompt: >-
+      A sheep bumps his leg and bleats; he looks down at the bare ground, then at the far green hills, dazed.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The herder trying to drag a heavy wooden-and-stone hut by a rope across the steppe, the hut not moving an inch,
+          comically straining with all his strength. No other people.
+        characters: [herder]
+        motion_prompt: >-
+          He heaves on the rope with all his might, slips and falls on his back; the hut does not budge.
+        camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "게다가 봄이면 초원에 사나운 바람이 몰아쳤죠."
+        captions: ["게다가 봄이면", "초원에 사나운 바람이 / 몰아쳤죠"]
+    visual: 거센 봄바람에 흙먼지가 휘몰아치고 목동의 모자가 날아간다
+    image_prompt: >-
+      A fierce spring windstorm sweeping across the open steppe, dust and dry grass whirling through the air, the herder
+      leaning hard into the wind, holding onto his flying hat. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      A strong gust blasts dust across the plain; his hat flies off and he grabs for it, staggering.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "가볍게 옮기면서도 바람에 끄떡없는 집, 어떻게 지을 수 있을까요?"
+        captions: ["가볍게 옮기면서도 / 바람에 끄떡없는 집", "어떻게 지을 수 있을까요?"]
+    visual: 저녁 모닥불 앞에 앉은 목동이 나뭇가지로 땅에 둥근 집 모양을 그려 본다
+    image_prompt: >-
+      At dusk the herder sitting by a small campfire on the steppe, drawing a round dome shape in the dirt with a stick,
+      chin in his other hand, the first stars appearing above. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      He finishes the circle in the dirt, taps it with the stick and slowly grins.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 목동은 나무 틀로 벽을 둥글게 세우고, 기둥을 모아 뾰족한 지붕을 얹었습니다."
+        captions: ["그래서 목동은 / 나무 틀로 벽을 둥글게 세우고", "기둥을 모아 / 뾰족한 지붕을 얹었습니다"]
+    visual: 둥글게 둘러친 나무 격자 벽 위로 목동이 지붕 기둥을 하나씩 걸쳐 올린다
+    image_prompt: >-
+      On the open steppe, a round wooden frame of painted lattice walls set up in a circle, the herder standing on a stool
+      in the middle lifting long thin roof poles one by one to meet at a peak above, the frame beautifully painted in
+      orange and red patterns. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      He slots one roof pole after another into place until they all meet at the top.
+    camera: slow orbit
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the herder's hands fitting the end of a painted roof pole into the round wooden crown at the top of
+          the frame, sky visible through it. No other people.
+        characters: [herder]
+        motion_prompt: >-
+          The pole slides into the crown with a click; he taps it firmly into place.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그 위를 두툼한 펠트로 덮고, 짐승 털로 꼰 밧줄로 꽉 조였죠."
+        captions: ["그 위를 두툼한 펠트로 덮고", "짐승 털로 꼰 밧줄로 / 꽉 조였죠"]
+    visual: 목동이 하얀 펠트를 둥근 틀 위에 덮고 밧줄로 빙 둘러 조인다
+    image_prompt: >-
+      The herder pulling thick white felt over the round frame, then wrapping it tightly with long brown ropes made of
+      animal hair around the walls, the round white dwelling taking shape on the steppe. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      He throws the felt over the frame, wraps the rope around and pulls it tight with a strong tug.
+    camera: slow pan
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "떠날 땐 하나하나 풀고 접어서, 말이나 수레에 싣고 가면 됐습니다."
+        captions: ["떠날 땐 / 하나하나 풀고 접어서", "말이나 수레에 / 싣고 가면 됐습니다"]
+    visual: 접힌 격자 벽과 둘둘 만 펠트를 수레에 싣고, 목동이 말을 끌고 새 풀밭으로 떠난다
+    image_prompt: >-
+      The herder leading a horse pulling a small wooden cart loaded with the folded lattice walls, a bundle of roof poles
+      and rolled white felt, heading across the steppe toward green pastures, sheep following behind. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      The cart rolls forward; he walks ahead leading the horse, the sheep trotting after them.
+    camera: slow pan
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 이렇게 가벼운 집이, 사나운 봄바람을 정말 버틸 수 있을까요?"
+        captions: ["그런데 이렇게 가벼운 집이", "사나운 봄바람을 / 정말 버틸 수 있을까요?"]
+    visual: 멀리서 먹구름과 흙바람이 몰려오고, 목동이 둥근 집 앞에서 걱정스럽게 하늘을 본다
+    image_prompt: >-
+      Dark clouds and a wall of dust rolling across the steppe toward the round white dwelling, the herder standing in
+      front of it looking up at the sky with a worried face, holding the door frame. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      The dust storm rolls closer; he glances at his home and back at the sky, swallowing nervously.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 둥근 벽과 꽉 조인 밧줄 덕분에, 집은 사나운 바람도 거뜬히 버텼죠."
+        captions: ["결국 둥근 벽과 / 꽉 조인 밧줄 덕분에", "집은 사나운 바람도 / 거뜬히 버텼죠"]
+      - text: "그리고 펠트와 밧줄은, 기르던 양과 짐승의 털로 초원에서 직접 만들었습니다."
+        captions: ["그리고 펠트와 밧줄은", "기르던 양과 짐승의 털로 / 초원에서 직접 만들었습니다"]
+    visual: 휘몰아치는 흙바람 속에 둥근 집이 끄떡없이 서 있고, 안에서 목동이 차를 마시며 웃는다
+    image_prompt: >-
+      The round white felt dwelling standing firm in a howling dust storm, ropes taut, wind streaming around its curved
+      walls; through the open door the herder sits calmly inside by a small stove sipping tea and grinning.
+      No other people.
+    characters: [herder]
+    motion_prompt: >-
+      Wind and dust stream around the round walls without shaking them; inside he sips his tea and smiles.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The herder sitting outside on a sunny calm day beating and rolling sheep's wool into a thick white felt sheet,
+          a coil of twisted animal-hair rope beside him, sheep grazing nearby. No other people.
+        characters: [herder]
+        motion_prompt: >-
+          He rolls the wool mat back and forth firmly, pressing it into felt; a sheep wanders over to watch.
+        camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이 집을 걷고 세우는 일은 언제나 온 가족의 몫이었고, 아이들은 어른을 보며 배웠습니다."
+        captions: ["이 집을 걷고 세우는 일은 / 언제나 온 가족의 몫이었고", "아이들은 / 어른을 보며 배웠습니다"]
+    visual: 목동이 지붕 기둥을 세우고, 뒤에서 아이 둘이 작은 기둥을 들고 따라 하며 배운다
+    image_prompt: >-
+      The herder in the center foreground raising a roof pole into a half-built round frame on the green steppe at
+      golden hour, smiling and showing how it is done.
+    characters: [herder]
+    extras: "two small children in colorful deel robes behind him, carrying a light roof pole together and copying him"
+    motion_prompt: >-
+      He sets the pole in place and nods; the children behind him wobble their pole into place and cheer.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "초원 어디든 들고 다니는 이 둥근 집이 바로, 게르입니다."
+        captions: ["초원 어디든 들고 다니는", "이 둥근 집이 / 바로, 게르입니다"]
+    visual: 노을 진 넓은 초원 한가운데 하얀 둥근 집, 문 앞에 선 목동이 손을 흔들고 카메라가 높이 솟는다
+    image_prompt: >-
+      A single round white felt dwelling in the middle of the vast golden steppe at sunset, smoke curling from the stove
+      pipe, the herder standing at the painted orange door waving, sheep grazing around. No other people.
+    characters: [herder]
+    motion_prompt: >-
+      He waves; the camera slowly rises high above to show the lone round home on the endless steppe.
+    camera: slow rise
+
+sources:
+  - "UNESCO 인류무형유산 — Traditional craftsmanship of the Mongol Ger and its associated customs (2013 등재, 벽·기둥·뾰족한 지붕으로 이루어진 둥근 구조에 캔버스와 펠트를 덮고 밧줄로 조임, 장식을 칠한 나무 틀, 흰 펠트와 짐승 털 밧줄, 유목민이 들고 다닐 만큼 가볍고 접어서 꾸릴 수 있음, 몽골의 사나운 봄바람을 견딤, 걷고 세우는 일은 늘 가족의 일이고 아이들은 어른을 보며 배움, 양털 손질·펠트 만들기는 공동 작업) — https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+  - "브리태니커 — Yurt (나무 기둥 위에 가죽·펠트·직물을 덮은 집, 목초지를 찾아 말이나 작은 수레에 싣고 옮겨 다님) — https://www.britannica.com/technology/yurt"
+
+accuracy_notes:
+  - "목동 인물과 감정, 대사는 설명용 재구성. 특정 인물의 실제 이야기가 아니다."
+  - "게르는 한 사람이 발명한 것이 아니며, 오랜 세월 유목민들이 다듬어 온 집이다. 실제로는 가족이 함께 짓는다(UNESCO). 대본·화면은 목동 중심으로 단순화."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '풀을 다 먹으면 옮긴다'는 유목 생활을 단순화한 설명. 이동 횟수·거리 같은 수치는 쓰지 않는다."
+  - "s08 바람을 버틴 이유는 UNESCO 설명(둥근 구조, 밧줄로 조임, 봄바람을 견딤) 범위에서만 쓴다. '공기역학적으로 바람을 흘린다' 같은 설명은 근거를 따로 확인하지 않아 쓰지 않는다."
+  - "조립 시간(몇 시간 만에) 같은 수치는 쓰지 않는다."
+  - "배경 인물은 s09 아이 둘뿐."
+
+youtube:
+  titles:
+    - 집을 통째로 들고 다닌 몽골 사람들
+    - 접어서 말에 싣는 집? 초원의 둥근 집 게르
+    - 사나운 봄바람도 끄떡없는 가벼운 집의 비밀
+  description: |-
+    🐑 양 떼가 풀을 다 먹었다! 그럼 집은… 두고 가나요?
+
+    몽골 목동의 답은 '접어서 들고 가는 집'이었습니다 🏕️
+    나무 틀로 둥글게 벽을 세우고, 펠트를 덮고, 밧줄로 꽉!
+    떠날 땐 하나하나 접어서 말이나 수레에 싣고 출발 🐎
+
+    이렇게 가벼운데 사나운 봄바람도 거뜬히 버틴다니,
+    지금도 몽골 초원 곳곳에서 볼 수 있는 진짜 이동식 집이랍니다.
+  comment_question: 여러분 집을 통째로 들고 갈 수 있다면, 어디에 펼치고 싶나요?
+  hashtags: [게르, 몽골, 유목민, 세계무형유산, 쇼츠]
