@@ -26,9 +26,9 @@ scenes:
     beat: hook
     lines:
       - text: "인도 사막 마을의 우물 장인은 발을 동동 굴렀습니다."
-        captions: ["인도 사막 마을의 우물 장인은 / 발을 동동 굴렀습니다"]
+        captions: ["인도 사막 마을의 / 우물 장인은", "발을 동동 굴렀습니다"]
       - text: "한 해 몇 주만 비가 쏟아지고, 나머지는 바짝 마른 날뿐이었거든요."
-        captions: ["한 해 몇 주만 비가 쏟아지고", "나머지는 / 바짝 마른 날뿐이었거든요"]
+        captions: ["한 해 몇 주만 / 비가 쏟아지고", "나머지는 / 바짝 마른 날뿐이었거든요"]
     visual: 갈라진 메마른 땅 위, 텅 빈 물항아리를 든 장인이 뙤약볕 아래 발을 동동 구른다
     image_prompt: >-
       A dry desert village in northwest India under a blazing sun, cracked earth, a few sandstone houses and a withered
@@ -52,7 +52,7 @@ scenes:
     beat: problem
     lines:
       - text: "땅속 물은 건물 열 층 깊이까지 내려가, 줄을 아무리 내려도 닿지 않았죠."
-        captions: ["땅속 물은 / 건물 열 층 깊이까지 내려가", "줄을 아무리 내려도 / 닿지 않았죠"]
+        captions: ["땅속 물은 건물 / 열 층 깊이까지 내려가", "줄을 아무리 내려도 / 닿지 않았죠"]
     visual: 단면도 — 땅 위의 장인이 내린 두레박 줄이 한참 모자라고, 물은 아주 깊은 곳에 있다
     image_prompt: >-
       Side cross-section of the ground: the craftsman at the surface lowering a rope with a bucket into a narrow hole,
@@ -82,7 +82,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 장인은 땅을 깊이 파고, 물가까지 내려가는 긴 계단을 층층이 놓았습니다."
-        captions: ["그래서 장인은 땅을 깊이 파고", "물가까지 내려가는 / 긴 계단을 층층이 놓았습니다"]
+        captions: ["그래서 장인은 / 땅을 깊이 파고", "물가까지 내려가는 / 긴 계단을", "층층이 놓았습니다"]
     visual: 땅속 깊이 길게 이어진 돌계단, 층마다 기둥 있는 단이 놓인 거대한 구덩이를 위에서 내려다본다
     image_prompt: >-
       Looking down into a huge deep rectangular pit carved into the earth, long sandstone staircases descending level
@@ -105,7 +105,7 @@ scenes:
     beat: solution
     lines:
       - text: "비가 쏟아지는 철엔, 깊은 구덩이가 거대한 물탱크처럼 가득 찼죠."
-        captions: ["비가 쏟아지는 철엔", "깊은 구덩이가 / 거대한 물탱크처럼 가득 찼죠"]
+        captions: ["비가 쏟아지는 철엔", "깊은 구덩이가 거대한 / 물탱크처럼 가득 찼죠"]
     visual: 장대비 속에 계단 우물이 빗물로 가득 차 아래 계단들이 물에 잠긴다
     image_prompt: >-
       The great stepped pit during the monsoon, rain pouring down, the water filled high so the lower staircases and
@@ -134,7 +134,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 사막의 뜨거운 햇볕 아래, 그 많은 물이 금방 말라 버리지 않을까요?"
-        captions: ["그런데 사막의 / 뜨거운 햇볕 아래", "그 많은 물이 / 금방 말라 버리지 않을까요?"]
+        captions: ["그런데 사막의 / 뜨거운 햇볕 아래", "그 많은 물이 금방 / 말라 버리지 않을까요?"]
     visual: 이글거리는 해 아래 장인이 우물 수면을 내려다보며 걱정스럽게 이마의 땀을 닦는다
     image_prompt: >-
       A scorching sun high above the open stepwell, heat shimmer over the water surface, the craftsman on a landing
@@ -148,7 +148,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그래서 층마다 지붕을 얹은 돌 정자를 세워, 물 위에 그늘을 드리웠습니다."
-        captions: ["그래서 층마다 / 지붕을 얹은 돌 정자를 세워", "물 위에 그늘을 / 드리웠습니다"]
+        captions: ["그래서 층마다", "지붕을 얹은 / 돌 정자를 세워", "물 위에 그늘을 / 드리웠습니다"]
       - text: "땅속 깊은 아래층은, 한낮에도 서늘했죠."
         captions: ["땅속 깊은 아래층은", "한낮에도 서늘했죠"]
     visual: 층층이 돌 정자가 덮인 계단 우물, 아래로 갈수록 그늘지고 푸르스름하게 서늘하다
