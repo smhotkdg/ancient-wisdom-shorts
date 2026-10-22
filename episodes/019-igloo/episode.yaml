@@ -1,7 +1,7 @@
 # 019 이글루 — 눈으로 지었는데 안은 따뜻한 북극의 집
 id: "019"
 slug: igloo
-status: script_ok
+status: done
 working_title: 북극 사람들은 어떻게 눈으로 따뜻한 집을 지었을까?
 title_lines: ["눈으로 지은 집이", "따뜻하다고?"]
 hook: 말문이 막혔습니다
@@ -78,7 +78,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 사냥꾼은 단단히 다져진 눈을, 칼로 커다란 벽돌처럼 잘라 냈습니다."
-        captions: ["그래서 사냥꾼은 / 단단히 다져진 눈을", "칼로 커다란 벽돌처럼 / 잘라 냈습니다"]
+        captions: ["그래서 사냥꾼은 / 단단히 다져진 눈을", "칼로 커다란 / 벽돌처럼 잘라 냈습니다"]
     visual: 사냥꾼이 뼈 칼로 다져진 눈을 네모난 큰 벽돌 모양으로 잘라 들어 올린다
     image_prompt: >-
       The hunter cutting a large rectangular block out of hard packed snow with a long bone knife, lifting the block
@@ -92,7 +92,7 @@ scenes:
     beat: solution
     lines:
       - text: "그리고 눈 벽돌을 빙글빙글 나선으로 쌓아 올려, 둥근 지붕을 만들었죠."
-        captions: ["그리고 눈 벽돌을 / 빙글빙글 나선으로 쌓아 올려", "둥근 지붕을 만들었죠"]
+        captions: ["그리고 눈 벽돌을", "빙글빙글 나선으로 / 쌓아 올려", "둥근 지붕을 만들었죠"]
     visual: 눈 벽돌이 나선형으로 안쪽으로 기울며 쌓여 둥근 돔이 되어 간다
     image_prompt: >-
       The hunter standing inside a half-built dome of snow blocks laid in a rising spiral, each row leaning further
@@ -113,7 +113,7 @@ scenes:
     beat: solution
     lines:
       - text: "틈은 눈으로 꼼꼼히 메웠고, 한두 시간이면 집 한 채가 뚝딱 완성됐습니다."
-        captions: ["틈은 눈으로 꼼꼼히 메웠고", "한두 시간이면 / 집 한 채가 뚝딱 완성됐습니다"]
+        captions: ["틈은 눈으로 / 꼼꼼히 메웠고", "한두 시간이면 / 집 한 채가", "뚝딱 완성됐습니다"]
     visual: 사냥꾼이 눈 벽돌 틈에 눈을 문질러 메우고, 완성된 하얀 돔 앞에서 손을 털며 웃는다
     image_prompt: >-
       The hunter rubbing loose snow into the joints between the blocks, then standing back proudly in front of the
@@ -141,9 +141,9 @@ scenes:
     beat: resolve
     lines:
       - text: "단단한 눈벽은 몸의 온기를 가둬 주었고, 바다표범 기름 등잔이 안을 데웠습니다."
-        captions: ["단단한 눈벽은 / 몸의 온기를 가둬 주었고", "바다표범 기름 등잔이 / 안을 데웠습니다"]
+        captions: ["단단한 눈벽은 / 몸의 온기를", "가둬 주었고", "바다표범 기름 / 등잔이 안을 데웠습니다"]
       - text: "입구는 바닥보다 낮은 굴로 내고, 잠자리는 높은 눈 단 위에 만들었죠."
-        captions: ["입구는 / 바닥보다 낮은 굴로 내고", "잠자리는 / 높은 눈 단 위에 만들었죠"]
+        captions: ["입구는 바닥보다 / 낮은 굴로 내고", "잠자리는 높은 / 눈 단 위에 만들었죠"]
     visual: 등잔불이 주황빛으로 비추는 이글루 안, 털가죽을 깐 높은 눈 단 위에 사냥꾼이 앉아 몸을 녹인다
     image_prompt: >-
       Inside the snow dome glowing warm orange from a shallow stone oil lamp burning seal blubber, the hunter sitting on
@@ -165,7 +165,7 @@ scenes:
     beat: info
     lines:
       - text: "그렇게 밖이 꽁꽁 얼어붙어도, 안은 영하를 넘어 따뜻해지곤 했습니다."
-        captions: ["그렇게 밖이 꽁꽁 얼어붙어도", "안은 영하를 넘어 / 따뜻해지곤 했습니다"]
+        captions: ["그렇게 밖이 / 꽁꽁 얼어붙어도", "안은 영하를 넘어", "따뜻해지곤 했습니다"]
     visual: 눈보라 치는 캄캄한 밤, 하얀 돔 꼭대기 구멍과 얼음 창으로 따뜻한 불빛이 새어 나온다
     image_prompt: >-
       A dark Arctic night with a blizzard swirling, the snow dome glowing warmly from within, golden light shining
@@ -173,6 +173,7 @@ scenes:
     motion_prompt: >-
       Snow swirls around the glowing dome; warm light flickers in the ice window and steam drifts from the top.
     camera: slow push in
+    sfx_volume: 0
 
   - id: s10
     beat: info
