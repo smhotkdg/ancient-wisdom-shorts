@@ -57,6 +57,7 @@ class Line:
     index: int          # 전체 대사 순번 (0부터)
     text: str
     captions: list[str] | None = None
+    cta: bool = False   # 정답 공개 뒤 마지막 한 줄 — 댓글·좋아요 유도 (docs/story-format.md)
 
 
 @dataclass
@@ -156,10 +157,12 @@ def load_episode(path: str | Path) -> Episode:
                 text, caps = item, None
             else:
                 text, caps = item.get("text", ""), item.get("captions")
+                cta = bool(item.get("cta"))
             text = " ".join(str(text).split())
             if not text:
                 raise ShortsError(f"{sid}: 빈 대사가 있습니다")
-            ep.lines.append(Line(scene=sid, index=idx, text=text, captions=caps))
+            ep.lines.append(Line(scene=sid, index=idx, text=text, captions=caps,
+                                 cta=cta if isinstance(item, dict) else False))
             idx += 1
     if not ep.lines:
         raise ShortsError("대사가 하나도 없습니다")

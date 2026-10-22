@@ -1,10 +1,10 @@
 [진행 방식 — 질문하지 말고 바로 생성]
-아래 이미지 14장을 순서대로 만들어 줘. 확인 질문이나 선택지 제시 없이 지금 바로 시작한다.
+아래 이미지 15장을 순서대로 만들어 줘. 확인 질문이나 선택지 제시 없이 지금 바로 시작한다.
 1. 캐릭터 레퍼런스부터 만들고, 끝나면 묻지 말고 곧바로 장면 이미지로 넘어간다.
    장면에서는 이 대화에서 만든 캐릭터 레퍼런스(또는 첨부한 char_*.png)와 얼굴·체형·옷을 똑같이 유지한다.
 2. 한 번에 만들 수 있는 이미지 수(10장)를 넘으면 알아서 나눠서 만든다:
    - 1차: 캐릭터 사냥꾼, S01, S01-2, S02, S03, S04, S05, S05-2, S06, S07
-   - 2차: S08, S08-2, S09, S10
+   - 2차: S08, S08-2, S09, S10, S10-2
    한 차수가 끝나면 묻지 말고 바로 다음 차수를 이어서 만든다.
    응답이 끊겨야 한다면 마지막 줄에 "계속"이라고만 쓰고 멈추고, 내가 "계속"이라고 보내면 남은 이미지부터 바로 이어서 만든다.
 3. 모든 이미지는 세로 9:16, 이미지 안에 글자·숫자·로고·워터마크를 넣지 않는다.
@@ -51,3 +51,6 @@ A dark Arctic night with a blizzard swirling, the snow dome glowing warmly from 
 
 [S10] 저장: images/s10.png · 첨부: char_hunter.png
 A clear bright Arctic morning after the storm, the hunter crawling out of the low tunnel entrance of the snow dome and stretching happily under a pink-blue sky, the sled beside him. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.
+
+[S10-2] 저장: images/s10-2.png · 첨부: char_hunter.png, s10.png (같은 장소·조명 유지)
+Close-up of the hunter standing in front of his snow dome in bright morning light, looking straight at the viewer with a big friendly grin, giving a thumbs-up with one fur mitten and pointing at the viewer with the other. No other people. Characters: Inuit hunter (attached reference image char_hunter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Inuit hunter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.

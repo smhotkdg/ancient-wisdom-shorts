@@ -52,7 +52,8 @@ BEAT_KO = {"hook": "훅", "problem": "문제", "question": "질문", "solution":
 
 
 def check(ep: Episode) -> dict:
-    lines = [l.text for l in ep.lines]
+    lines = [l.text for l in ep.lines if not l.cta]      # 이야기 대사 (CTA 제외)
+    cta = [l for l in ep.lines if l.cta]
     text = " ".join(lines)
     est = estimate(ep)
     total = est["video_duration"]
@@ -91,6 +92,14 @@ def check(ep: Episode) -> dict:
              f"앞부분·제목에 노출: {', '.join(leaked)}" if leaked else f"마지막에만 등장: {', '.join(reveal)}")
     else:
         item(False, "정답 이름을 마지막까지 아낌", "story.reveal 미지정")
+
+    # 마무리 CTA — 정답 공개 뒤 한 줄, 댓글·좋아요 유도 (2026-10-22 사용자)
+    cta_ok = (len(cta) == 1 and ep.lines[-1].cta and bool(re.search(r"댓글|좋아요", cta[0].text))
+              and len("".join(cta[0].text.split())) <= 40)
+    item(cta_ok, "마무리 한 줄 (댓글·좋아요 유도, 공개 대사 뒤, 공백 제외 40자 이하)",
+         cta[0].text if cta else "없음 — 마지막 장면 lines 끝에 {text: ..., cta: true}")
+    total = sum(len("".join(l.text.split())) for l in ep.lines)
+    item(total <= 350, "대본 길이 (CTA 포함 공백 제외 350자 이하)", f"{total}자")
 
     crowd = crowd_scenes(ep)
     item(len(crowd) <= MAX_CROWD, f"주인공 중심 화면 (배경 인물 장면 {MAX_CROWD}개 이하)",
