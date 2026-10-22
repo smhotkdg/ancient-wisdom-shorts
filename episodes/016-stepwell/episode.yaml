@@ -1,0 +1,230 @@
+# 016 바브 — 땅속으로 거꾸로 지은 신전 같은 인도의 계단 우물
+id: "016"
+slug: stepwell
+status: script_ok
+working_title: 인도 사람들은 왜 땅속으로 계단을 수백 개나 냈을까?
+title_lines: ["땅속으로 거꾸로 지은", "신전 같은 우물?"]
+hook: 발을 동동 굴렀습니다
+caption_keywords: [비, 땅속 물, 계단, 그늘, 나그네]
+
+story:
+  hero: 장인
+  reveal: [바브]
+
+characters:
+  - id: builder
+    name: 장인
+    name_en: Indian well-builder
+    description: >-
+      a lean, cheerful Indian craftsman in his 40s with warm brown skin, a thick black mustache, kind crinkled eyes, a
+      bright orange cloth turban, wearing a simple off-white cotton kurta and dhoti with a red sash, leather sandals,
+      a stonemason's chisel tucked in his sash
+    note: 이야기 주인공. 메마른 사막 마을에서 물을 지켜야 하는 우물 장인
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "인도 사막 마을의 우물 장인은 발을 동동 굴렀습니다."
+        captions: ["인도 사막 마을의 우물 장인은 / 발을 동동 굴렀습니다"]
+      - text: "한 해 몇 주만 비가 쏟아지고, 나머지는 바짝 마른 날뿐이었거든요."
+        captions: ["한 해 몇 주만 비가 쏟아지고", "나머지는 / 바짝 마른 날뿐이었거든요"]
+    visual: 갈라진 메마른 땅 위, 텅 빈 물항아리를 든 장인이 뙤약볕 아래 발을 동동 구른다
+    image_prompt: >-
+      A dry desert village in northwest India under a blazing sun, cracked earth, a few sandstone houses and a withered
+      tree, the craftsman in the center foreground holding an empty clay water pot upside down, stamping his feet in
+      frustration.
+    characters: [builder]
+    motion_prompt: >-
+      He shakes the empty pot, not a drop falls, and he stamps his feet; dust puffs up around his sandals.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The same village during a short monsoon downpour, heavy rain pouring and muddy water rushing away across the
+          ground, the craftsman standing in the rain with his arms spread, looking worried as the water runs off.
+          No other people.
+        characters: [builder]
+        motion_prompt: >-
+          Heavy rain pours and the water rushes off across the ground; he watches it flow away, frowning.
+        camera: slow pan
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "땅속 물은 건물 열 층 깊이까지 내려가, 줄을 아무리 내려도 닿지 않았죠."
+        captions: ["땅속 물은 / 건물 열 층 깊이까지 내려가", "줄을 아무리 내려도 / 닿지 않았죠"]
+    visual: 단면도 — 땅 위의 장인이 내린 두레박 줄이 한참 모자라고, 물은 아주 깊은 곳에 있다
+    image_prompt: >-
+      Side cross-section of the ground: the craftsman at the surface lowering a rope with a bucket into a narrow hole,
+      the rope ending far above a thin layer of groundwater shown very deep below, layers of sand and rock in between.
+      Clean educational illustration, no labels, no text.
+    characters: [builder]
+    motion_prompt: >-
+      The rope runs out and the bucket dangles far above the deep water; he leans over the hole and sighs.
+    camera: slow tilt down
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "비가 올 땐 넘치고 가물 땐 바닥나는 물, 어떻게 일 년 내내 쓸까요?"
+        captions: ["비가 올 땐 넘치고 / 가물 땐 바닥나는 물", "어떻게 일 년 내내 쓸까요?"]
+    visual: 장인이 모래 위에 막대기로 깊은 구덩이와 계단 모양을 그려 보며 생각에 잠긴다
+    image_prompt: >-
+      The craftsman crouching in the shade of a tree at sunset, drawing in the sand with a stick: a deep funnel-shaped
+      pit with steps going down its sides, chin in his other hand, a spark of an idea in his eyes. No other people.
+      No text.
+    characters: [builder]
+    motion_prompt: >-
+      He draws one more step in the sand, taps the drawing with the stick and slowly smiles.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 장인은 땅을 깊이 파고, 물가까지 내려가는 긴 계단을 층층이 놓았습니다."
+        captions: ["그래서 장인은 땅을 깊이 파고", "물가까지 내려가는 / 긴 계단을 층층이 놓았습니다"]
+    visual: 땅속 깊이 길게 이어진 돌계단, 층마다 기둥 있는 단이 놓인 거대한 구덩이를 위에서 내려다본다
+    image_prompt: >-
+      Looking down into a huge deep rectangular pit carved into the earth, long sandstone staircases descending level
+      after level with carved stone pillars on each landing, the craftsman standing on an upper landing chiseling a step.
+      No other people.
+    characters: [builder]
+    motion_prompt: >-
+      The camera slowly tilts down the long staircases level by level; the craftsman taps his chisel on a step.
+    camera: slow tilt down
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the craftsman setting a large carved sandstone step block into place with both hands, stone dust
+          in the air, more steps descending below him into the shadowy depths. No other people.
+        characters: [builder]
+        motion_prompt: >-
+          He sets the stone block down with a thud, wipes his brow and looks down the long stairway.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "비가 쏟아지는 철엔, 깊은 구덩이가 거대한 물탱크처럼 가득 찼죠."
+        captions: ["비가 쏟아지는 철엔", "깊은 구덩이가 / 거대한 물탱크처럼 가득 찼죠"]
+    visual: 장대비 속에 계단 우물이 빗물로 가득 차 아래 계단들이 물에 잠긴다
+    image_prompt: >-
+      The great stepped pit during the monsoon, rain pouring down, the water filled high so the lower staircases and
+      pillars are submerged, the craftsman standing at the top edge under a cloth, grinning at the full well.
+      No other people.
+    characters: [builder]
+    motion_prompt: >-
+      Rain pours in and the water rises up the steps; he grins and pumps his fist.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "가물어 물이 줄면, 계단을 한 칸씩 더 내려가 물을 길었죠."
+        captions: ["가물어 물이 줄면", "계단을 한 칸씩 더 내려가 / 물을 길었죠"]
+    visual: 물이 많이 줄어든 우물, 장인이 깊은 계단을 내려가 맨 아래 물에서 항아리를 채운다
+    image_prompt: >-
+      The same stepwell in the dry season, the water level far lower, dry steps above it, the craftsman walking down the
+      long staircase with a clay pot on his shoulder toward the water at the bottom. No other people.
+    characters: [builder]
+    motion_prompt: >-
+      He steps down the stairs one by one, kneels at the water's edge and dips the pot in.
+    camera: slow tilt down
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 사막의 뜨거운 햇볕 아래, 그 많은 물이 금방 말라 버리지 않을까요?"
+        captions: ["그런데 사막의 / 뜨거운 햇볕 아래", "그 많은 물이 / 금방 말라 버리지 않을까요?"]
+    visual: 이글거리는 해 아래 장인이 우물 수면을 내려다보며 걱정스럽게 이마의 땀을 닦는다
+    image_prompt: >-
+      A scorching sun high above the open stepwell, heat shimmer over the water surface, the craftsman on a landing
+      shading his eyes and looking up at the sun with a worried face, wiping sweat from his forehead. No other people.
+    characters: [builder]
+    motion_prompt: >-
+      Heat shimmers over the water; he squints up at the sun and wipes his brow anxiously.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 층마다 지붕을 얹은 돌 정자를 세워, 물 위에 그늘을 드리웠습니다."
+        captions: ["그래서 층마다 / 지붕을 얹은 돌 정자를 세워", "물 위에 그늘을 / 드리웠습니다"]
+      - text: "땅속 깊은 아래층은, 한낮에도 서늘했죠."
+        captions: ["땅속 깊은 아래층은", "한낮에도 서늘했죠"]
+    visual: 층층이 돌 정자가 덮인 계단 우물, 아래로 갈수록 그늘지고 푸르스름하게 서늘하다
+    image_prompt: >-
+      Inside the stepwell looking down: tier after tier of carved stone pavilions with roofs casting deep cool shadows
+      over the stairs and the water far below, bright sun only at the top, soft blue coolness in the depths, the
+      craftsman resting in the shade on a lower landing. No other people.
+    characters: [builder]
+    motion_prompt: >-
+      The camera descends from the bright top into the cool shaded depths where he sits and smiles.
+    camera: slow tilt down
+    extra_clips:
+      - image_prompt: >-
+          Close view of the craftsman sitting on a cool stone step in deep shade beside the dark still water, eyes closed,
+          fanning himself lazily, relieved. No other people.
+        characters: [builder]
+        motion_prompt: >-
+          He lets out a long relaxed breath; ripples spread gently across the water beside him.
+        camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "더위에 지친 나그네도 여기서 쉬어 갔고, 가장 아름다운 우물은 세계유산이 됐습니다."
+        captions: ["더위에 지친 나그네도 / 여기서 쉬어 갔고", "가장 아름다운 우물은 / 세계유산이 됐습니다"]
+    visual: 정교하게 조각된 거대한 계단 우물의 웅장한 전경, 장인이 그늘에서 나그네에게 물을 건넨다
+    image_prompt: >-
+      A grand, ornately carved stepwell with seven levels of richly sculpted sandstone walls and pillars glowing in
+      golden afternoon light, the craftsman in the foreground on a shaded landing offering a cup of water.
+    characters: [builder]
+    extras: "one tired traveler with a walking stick and a cloth bundle, sitting on a step behind him, gratefully reaching for the cup"
+    motion_prompt: >-
+      The camera slowly reveals the carved levels; the craftsman hands the cup back toward the resting traveler.
+    camera: slow pull back
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "땅속으로 거꾸로 지은 신전 같은 이 계단 우물이 바로, 바브입니다."
+        captions: ["땅속으로 거꾸로 지은 / 신전 같은", "이 계단 우물이 / 바로, 바브입니다"]
+    visual: 위에서 내려다본 계단 우물 전체, 맨 위 가장자리에 선 장인이 미소 짓고 카메라가 높이 솟는다
+    image_prompt: >-
+      A dramatic top-down view into the deep stepwell like an upside-down temple, staircases zigzagging down its walls
+      to the water far below, the craftsman standing at the top edge looking down with a proud smile. No other people.
+    characters: [builder]
+    motion_prompt: >-
+      The camera rises high above the stepwell, revealing its full depth; the craftsman waves from the edge.
+    camera: slow rise
+
+sources:
+  - "브리태니커 — Stepwell (인도에서 널리 쓰인 땅속 건축물이자 물 공급원, 1년 중 대부분 바짝 마르고 몇 주만 큰비가 오는 몬순 기후, 인도 북서부 지하수는 약 10층 깊이, 건기엔 긴 계단(100계단 넘는 곳도)으로 줄어든 물까지 내려감, 우기엔 거대한 물탱크처럼 가득 차 계단이 잠김, 층마다 지붕 있는 정자가 그늘을 주고 벽을 지탱, 아래층은 서늘해 나그네·대상·순례자가 쉬어 감, 구자라트 파탄의 라니키바브는 유네스코 세계유산) — https://www.britannica.com/technology/stepwell"
+  - "UNESCO 세계유산 — Rani-ki-Vav (the Queen's Stepwell) at Patan, Gujarat (2014 등재, 계단 우물은 인도 아대륙 고유의 지하 물 저장 시설, 11세기 왕을 기리며 지은 '물을 기리는 거꾸로 선 신전', 7층 계단, 13세기 강줄기 변화와 홍수 퇴적물로 묻혀 7세기 넘게 보존) — https://whc.unesco.org/en/list/922"
+
+accuracy_notes:
+  - "우물 장인 인물과 감정, 대사는 설명용 재구성. 특정 인물이나 바브를 처음 만든 사람의 실제 이야기가 아니다."
+  - "계단 우물은 한 사람이 혼자 지은 것이 아니며, 수백 년에 걸쳐 여러 지역에서 발달했다. '장인이 지었다'는 단순화."
+  - "'발을 동동 굴렀습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "'건물 열 층 깊이'는 브리태니커의 '약 10층 깊이' 기준. 지역마다 다르다."
+  - "s07~s08: 정자가 그늘을 드리우고 아래층이 서늘하다는 것은 브리태니커 기준. 증발을 얼마나 줄였는지 같은 수치는 쓰지 않는다."
+  - "s09 '가장 아름다운 우물이 세계유산'은 라니키바브(2014 유네스코 등재)를 가리킨다. s09 그림은 라니키바브를 단순화한 모습."
+  - "'바브(vav)'는 구자라트 지역에서 계단 우물을 부르는 말 (힌디어권에서는 바올리/baoli라고도 함)."
+  - "화면 인물은 장인 중심. 배경 인물은 s09 나그네 한 명뿐."
+
+youtube:
+  titles:
+    - 땅속으로 거꾸로 지은 신전? 인도의 계단 우물
+    - 물이 줄면 계단을 내려가면 된다! 사막의 천재 우물
+    - 건물 10층 깊이까지 계단을 낸 이유
+  description: |-
+    🏜️ 비는 1년에 몇 주뿐, 땅속 물은 건물 10층 깊이… 이런 곳에서 어떻게 물을 마셨을까요?
+
+    인도 사람들의 답은 '물까지 걸어 내려가는 계단'이었습니다 🪜
+    비 오는 철엔 거대한 물탱크처럼 가득 차고,
+    가물면 계단을 한 칸씩 더 내려가 물을 길었죠.
+
+    층마다 돌 정자가 그늘을 드리워 아래층은 한낮에도 서늘 😌
+    가장 아름다운 계단 우물은 지금 세계유산이 되었답니다.
+  comment_question: 이 계단 우물 맨 아래까지, 여러분은 몇 번 왕복할 수 있을 것 같나요?
+  hashtags: [계단우물, 인도, 라니키바브, 세계유산, 쇼츠]

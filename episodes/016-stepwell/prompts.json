@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "builder": "Character reference sheet of a lean, cheerful Indian craftsman in his 40s with warm brown skin, a thick black mustache, kind crinkled eyes, a bright orange cloth turban, wearing a simple off-white cotton kurta and dhoti with a red sash, leather sandals, a stonemason's chisel tucked in his sash. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A dry desert village in northwest India under a blazing sun, cracked earth, a few sandstone houses and a withered tree, the craftsman in the center foreground holding an empty clay water pot upside down, stamping his feet in frustration. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "He shakes the empty pot, not a drop falls, and he stamps his feet; dust puffs up around his sandals. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "Heavy rain pours and the water rushes off across the ground; he watches it flow away, frowning. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "Side cross-section of the ground: the craftsman at the surface lowering a rope with a bucket into a narrow hole, the rope ending far above a thin layer of groundwater shown very deep below, layers of sand and rock in between. Clean educational illustration, no labels, no text. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The rope runs out and the bucket dangles far above the deep water; he leans over the hole and sighs. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The craftsman crouching in the shade of a tree at sunset, drawing in the sand with a stick: a deep funnel-shaped pit with steps going down its sides, chin in his other hand, a spark of an idea in his eyes. No other people. No text. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He draws one more step in the sand, taps the drawing with the stick and slowly smiles. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "Looking down into a huge deep rectangular pit carved into the earth, long sandstone staircases descending level after level with carved stone pillars on each landing, the craftsman standing on an upper landing chiseling a step. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly tilts down the long staircases level by level; the craftsman taps his chisel on a step. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "He sets the stone block down with a thud, wipes his brow and looks down the long stairway. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The great stepped pit during the monsoon, rain pouring down, the water filled high so the lower staircases and pillars are submerged, the craftsman standing at the top edge under a cloth, grinning at the full well. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "Rain pours in and the water rises up the steps; he grins and pumps his fist. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "The same stepwell in the dry season, the water level far lower, dry steps above it, the craftsman walking down the long staircase with a clay pot on his shoulder toward the water at the bottom. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He steps down the stairs one by one, kneels at the water's edge and dips the pot in. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "A scorching sun high above the open stepwell, heat shimmer over the water surface, the craftsman on a landing shading his eyes and looking up at the sun with a worried face, wiping sweat from his forehead. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "Heat shimmers over the water; he squints up at the sun and wipes his brow anxiously. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Inside the stepwell looking down: tier after tier of carved stone pavilions with roofs casting deep cool shadows over the stairs and the water far below, bright sun only at the top, soft blue coolness in the depths, the craftsman resting in the shade on a lower landing. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The camera descends from the bright top into the cool shaded depths where he sits and smiles. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "He lets out a long relaxed breath; ripples spread gently across the water beside him. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A grand, ornately carved stepwell with seven levels of richly sculpted sandstone walls and pillars glowing in golden afternoon light, the craftsman in the foreground on a shaded landing offering a cup of water. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: one tired traveler with a walking stick and a cloth bundle, sitting on a step behind him, gratefully reaching for the cup (only 2-4 people, never blocking the Indian well-builder). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly reveals the carved levels; the craftsman hands the cup back toward the resting traveler. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "A dramatic top-down view into the deep stepwell like an upside-down temple, staircases zigzagging down its walls to the water far below, the craftsman standing at the top edge looking down with a proud smile. No other people. Characters: Indian well-builder (attached reference image char_builder.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Indian well-builder in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "The camera rises high above the stepwell, revealing its full depth; the craftsman waves from the edge. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}
