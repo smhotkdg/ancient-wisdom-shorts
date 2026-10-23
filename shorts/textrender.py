@@ -30,6 +30,10 @@ def _segments(text: str, keywords: list[str], base: str, accent: str) -> list[tu
             i = text.find(kw, start)
             if i < 0:
                 break
+            # 낱말 중간은 건너뛴다 (예: '비'가 '준비'의 '비'에 걸리지 않게)
+            if i > 0 and "가" <= text[i - 1] <= "힣":
+                start = i + 1
+                continue
             for j in range(i, i + len(kw)):
                 marks[j] = True
             start = i + len(kw)

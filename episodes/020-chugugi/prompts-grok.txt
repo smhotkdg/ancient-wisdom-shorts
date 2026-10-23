@@ -1,35 +1,35 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.5초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.6초
 Water drips from the eaves; the prince wipes his brow, looks at the sky and sighs anxiously. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.5–7.9초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.6–7.5초
 A raindrop ripples his reflection; he frowns and taps his chin, puzzled. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.9–13.4초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.5–13.1초
 He digs a second hole, compares the two wet depths, and scratches his head in confusion. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.4–17.7초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 13.1–16.9초
 Drops fall into the bowl and the water level rises a little; his eyes widen and he sits up straight. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 17.7–23.3초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.9–22.0초
 He sets the vessel on the pedestal, straightens it, steps back and looks up at the clouds. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 23.3–27.6초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 22.0–25.9초
 He dips the ruler in, lifts it, reads the wet mark and writes in his notebook. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 27.6–32.1초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.9–29.7초
 Rain falls on both sides; on the left it seeps unevenly, on the right the water rises in a neat flat level. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 32.1–36.6초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 29.7–34.4초
 He taps one region, then another far away, and folds his arms thoughtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 36.6–42.5초
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 34.4–39.3초
 Little vessels pop up across the map one after another; scrolls stack up on his desk and he smiles. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 42.5–47.4초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 39.3–43.3초
 The pages flutter and settle; the prince glances at the camera with a small modest smile. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 47.4–51.6초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 43.3–46.7초
 Sunlight breaks through; he looks at the vessel and then up at the rainbow with a proud smile. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 51.6–57.5초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 46.7–52.4초
 He grins at the camera, gives a thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
