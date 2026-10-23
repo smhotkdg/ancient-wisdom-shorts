@@ -1,0 +1,219 @@
+# 020 측우기 — 흙 대신 그릇으로 비를 잰 조선의 세자
+id: "020"
+slug: chugugi
+status: script_ok
+working_title: 조선은 어떻게 비의 양을 정확하게 쟀을까?
+title_lines: ["비의 양을", "그릇으로 쟀다고?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [비, 흙, 구리 그릇, 고을, 세자]
+
+story:
+  hero: 세자
+  reveal: [측우기]
+
+characters:
+  - id: prince
+    name: 세자
+    name_en: Joseon crown prince
+    description: >-
+      a gentle, studious Korean young man in his late 20s with a smooth oval face, a thin neat mustache, bright attentive
+      eyes, wearing a dark blue crown prince's robe with a round golden emblem on the chest, a black winged court cap
+      (ikseongwan), a jade belt (an imagined look, not a real portrait)
+    note: 이야기 주인공. 세종의 아들로, 비를 정확히 재는 방법을 고민하는 세자 (훗날 문종)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "조선의 세자는 진땀을 뺐습니다."
+        captions: ["조선의 세자는 / 진땀을 뺐습니다"]
+      - text: "비가 얼마나 왔는지 알아야 농사를 준비하는데, 잴 방법이 엉터리였거든요."
+        captions: ["비가 얼마나 왔는지 알아야 / 농사를 준비하는데", "잴 방법이 / 엉터리였거든요"]
+    visual: 비 그친 궁궐 마당, 세자가 젖은 땅을 내려다보며 이마의 땀을 닦는다
+    image_prompt: >-
+      A Joseon palace courtyard just after rain, wet stone paths and puddles, the crown prince in the center foreground
+      wiping sweat from his forehead with his sleeve, frowning at the muddy ground, a farming field visible beyond the
+      palace wall.
+    characters: [prince]
+    motion_prompt: >-
+      Water drips from the eaves; the prince wipes his brow, looks at the sky and sighs anxiously.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the crown prince crouching to look at a puddle, his worried face reflected in the water, a few last
+          raindrops making ripples. No other people.
+        characters: [prince]
+        motion_prompt: >-
+          A raindrop ripples his reflection; he frowns and taps his chin, puzzled.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "땅을 파서 빗물이 스며든 깊이를 쟀는데, 흙마다 젖는 정도가 제각각이었죠."
+        captions: ["땅을 파서 / 빗물이 스며든 깊이를 쟀는데", "흙마다 젖는 정도가 / 제각각이었죠"]
+    visual: 세자가 호미로 두 곳의 땅을 파 보는데, 한쪽은 깊이 젖고 한쪽은 얕게 젖어 있다
+    image_prompt: >-
+      The crown prince kneeling and digging two small holes side by side with a hoe in a field, one hole showing soil
+      wet very deep, the other showing only a thin wet layer on top, the prince comparing them with a confused look.
+      No other people.
+    characters: [prince]
+    motion_prompt: >-
+      He digs a second hole, compares the two wet depths, and scratches his head in confusion.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "하늘에서 내린 비의 양을, 어떻게 정확하게 잴 수 있을까요?"
+        captions: ["하늘에서 내린 비의 양을", "어떻게 정확하게 / 잴 수 있을까요?"]
+    visual: 처마 밑 빗방울이 떨어져 돌 위 작은 그릇에 고이는 것을 세자가 뚫어지게 바라본다
+    image_prompt: >-
+      Under the palace eaves, rainwater dripping steadily into a small bowl left on a stone step, the crown prince
+      sitting nearby watching the water collect, his eyes lighting up with an idea. No other people.
+    characters: [prince]
+    motion_prompt: >-
+      Drops fall into the bowl and the water level rises a little; his eyes widen and he sits up straight.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 세자는 구리로 둥근 통 모양의 그릇을 만들어, 궁궐 마당에 두었습니다."
+        captions: ["그래서 세자는 구리로 / 둥근 통 모양의 그릇을 만들어", "궁궐 마당에 두었습니다"]
+    visual: 세자가 원통형 구리 그릇을 돌 받침대 위에 올려놓는다
+    image_prompt: >-
+      The crown prince placing a tall, simple cylindrical bronze-copper vessel on a carved stone pedestal in the middle of
+      the palace courtyard, adjusting it carefully so it stands straight, rain clouds gathering above. No other people.
+    characters: [prince]
+    motion_prompt: >-
+      He sets the vessel on the pedestal, straightens it, steps back and looks up at the clouds.
+    camera: slow pull back
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "비가 그치면, 그릇에 고인 빗물의 깊이를 자로 꼼꼼히 쟀죠."
+        captions: ["비가 그치면", "그릇에 고인 빗물의 깊이를 / 자로 꼼꼼히 쟀죠"]
+    visual: 비 그친 뒤 세자가 구리 그릇 안에 자를 세워 물 깊이를 읽는다
+    image_prompt: >-
+      After the rain, the crown prince lowering a thin wooden ruler with simple tick marks into the bronze vessel, reading
+      the water depth carefully, a notebook and brush on the pedestal beside him. No other people. No readable text.
+    characters: [prince]
+    motion_prompt: >-
+      He dips the ruler in, lifts it, reads the wet mark and writes in his notebook.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "흙과 달리 그릇의 물은 새지 않으니, 언제 재도 정확했습니다."
+        captions: ["흙과 달리 / 그릇의 물은 새지 않으니", "언제 재도 / 정확했습니다"]
+    visual: 단면 비교 — 왼쪽 흙은 물이 제각각 스며들고, 오른쪽 그릇은 물이 고르게 고여 있다
+    image_prompt: >-
+      A split cross-section illustration: on the left, rainwater soaking unevenly into soil layers; on the right, rain
+      collecting in a straight-sided vessel with a perfectly flat, even water level. Clean educational illustration,
+      no labels, no text, no people.
+    motion_prompt: >-
+      Rain falls on both sides; on the left it seeps unevenly, on the right the water rises in a neat flat level.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 궁궐 한 곳의 비만 재면, 먼 고을의 비는 어떻게 알까요?"
+        captions: ["그런데 궁궐 한 곳의 비만 재면", "먼 고을의 비는 / 어떻게 알까요?"]
+    visual: 세자가 큰 조선 지도 앞에서 여러 고을을 손가락으로 짚으며 고민한다
+    image_prompt: >-
+      The crown prince standing before a large painted map of the Korean peninsula on a wall, tapping several distant
+      regions with his finger, a worried frown on his face. No other people. Map with lines and colors only,
+      no readable text.
+    characters: [prince]
+    motion_prompt: >-
+      He taps one region, then another far away, and folds his arms thoughtfully.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 똑같은 그릇을 여러 고을에 보내, 비가 올 때마다 그 양을 보고하게 했습니다."
+        captions: ["그래서 똑같은 그릇을 / 여러 고을에 보내", "비가 올 때마다 / 그 양을 보고하게 했습니다"]
+    visual: 지도 위 여러 고을에 같은 구리 그릇이 하나씩 놓이고, 세자 앞으로 두루마리 보고서가 쌓인다
+    image_prompt: >-
+      A magical illustrated map of the Korean peninsula with identical small bronze rain vessels appearing one by one at
+      many towns across the land, the crown prince in the foreground at his desk with a growing stack of rolled report
+      scrolls. No other people. No readable text.
+    characters: [prince]
+    motion_prompt: >-
+      Little vessels pop up across the map one after another; scrolls stack up on his desk and he smiles.
+    camera: slow pull back
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "흔히 장영실이 만든 줄 알지만, 기록에는 세자가 만들었다고 나오죠."
+        captions: ["흔히 장영실이 / 만든 줄 알지만", "기록에는 / 세자가 만들었다고 나오죠"]
+    visual: 오래된 책장이 넘어가고, 세자가 구리 그릇 옆에서 살짝 웃는다
+    image_prompt: >-
+      An old bound book lying open on a wooden desk, pages turning gently, the crown prince standing beside the bronze
+      rain vessel behind it with a modest, knowing smile. No other people. Book pages with blurred illegible marks only.
+    characters: [prince]
+    motion_prompt: >-
+      The pages flutter and settle; the prince glances at the camera with a small modest smile.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "흙 대신 그릇으로 비를 잰 이 도구가 바로, 측우기입니다."
+        captions: ["흙 대신 그릇으로 / 비를 잰", "이 도구가 / 바로, 측우기입니다"]
+      - text: "장영실이 만든 줄 알았다면 댓글에 '나도'! 처음 알았다면 좋아요 꾹!"
+        captions: ["장영실이 만든 줄 알았다면 / 댓글에 '나도'!", "처음 알았다면 / 좋아요 꾹!"]
+        cta: true
+    visual: 비 갠 궁궐 마당, 구리 그릇 옆의 세자가 하늘을 보며 미소 / 이어서 시청자를 보며 엄지척
+    image_prompt: >-
+      The palace courtyard after the rain with a rainbow, the crown prince standing proudly beside the bronze rain vessel
+      on its stone pedestal, smiling up at the clearing sky. No other people.
+    characters: [prince]
+    motion_prompt: >-
+      Sunlight breaks through; he looks at the vessel and then up at the rainbow with a proud smile.
+    camera: slow pull back
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the crown prince beside the bronze rain vessel, looking straight at the viewer with a warm friendly
+          grin, giving a thumbs-up with one hand and pointing at the viewer with the other. No other people.
+        characters: [prince]
+        motion_prompt: >-
+          He grins at the camera, gives a thumbs-up and points at the viewer with a wink.
+        camera: slow push in
+
+sources:
+  - "주간경향 2023 (이기환의 Hi-story) — 측우기 발명자는 장영실 아닌 문종 (세종실록 1441년 4월 29일: 땅을 파서 젖은 깊이를 재 왔으나 정확하지 못해, 세자가 구리 그릇을 만들어 궁중에 두고 빗물을 시험; 1441년 8월 18일 호조안 승인해 정식 제작; '측우기' 명칭은 1442년 5월 8일 첫 기록; 서운관과 각 지방에 두고 강우량을 재어 보고; 사료에 장영실을 발명자로 적은 기록은 없음) — https://weekly.khan.co.kr/article/202303031128481"
+  - "부경온 외, 「19세기 공주감영 측우기 강우량 18년 복원」, 대기(Atmosphere) 16(4), 2006 — 1441년(세종 23) 측우기 발명과 함께 강우 관측 시작, 궁궐·본감에 두고 팔도 감영 등에 나눠 비가 올 때마다 보고, 조선시대 전국 측우기 관측망 운영 — https://koreascience.or.kr/article/JAKO200628839765827.pdf"
+
+accuracy_notes:
+  - "세자(훗날 문종)는 실존 인물이지만, 감정·행동·대사는 설명용 재구성이다. 얼굴·복장은 상상한 모습."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s02 '흙마다 젖는 정도가 제각각'은 실록의 '땅을 파서 젖은 깊이를 쟀지만 정확하지 못했다'를 풀어 쓴 설명."
+  - "s06 '언제 재도 정확했다'는 흙 깊이 측정과 비교한 설명이며, 오차 수치는 쓰지 않는다."
+  - "s08 실제 배포는 1441~1442년 서운관·각 도(지방)에 두고 보고하게 한 것. 몇 개를 어디에 보냈는지 숫자는 쓰지 않는다."
+  - "s09 발명자: 세종실록에 세자의 실험 기록이 있고, 장영실을 발명자로 적은 사료는 없다(주간경향 2023). '세계 최초' 같은 표현은 근거를 따로 확인하지 않아 쓰지 않는다."
+  - "측우기 크기(높이·지름)는 시대마다 달라(1441년 원형은 전하지 않음) 쓰지 않는다. 그림의 그릇 모양은 단순화."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 말이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 엄지척 컷."
+  - "화면 인물은 세자 한 명으로 연출."
+
+youtube:
+  titles:
+    - 측우기, 장영실이 아니라 세자가 만들었다?
+    - 흙 대신 그릇으로! 조선이 비를 잰 방법
+    - 비가 얼마나 왔는지 숫자로 잰 조선의 그릇
+  description: |-
+    🌧️ 비가 얼마나 왔는지, 땅을 파서 쟀다고요? 그런데 흙마다 젖는 정도가 다 달랐다면…
+
+    조선의 세자는 구리 그릇 하나로 답을 찾았습니다 🥣
+    그릇에 고인 빗물의 깊이를 재면 언제 재도 정확!
+    똑같은 그릇을 여러 고을에 보내 비 소식을 모았죠 🗺️
+
+    그런데 이거, 장영실이 만든 줄 아셨죠? 기록 속 진짜 주인공은 따로 있었답니다.
+  comment_question: 장영실이 만든 줄 알았다면 댓글에 '나도'!
+  hashtags: [측우기, 세종, 문종, 조선과학, 쇼츠]

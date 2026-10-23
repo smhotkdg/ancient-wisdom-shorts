@@ -1,0 +1,117 @@
+{
+  "characters": {
+    "prince": "Character reference sheet of a gentle, studious Korean young man in his late 20s with a smooth oval face, a thin neat mustache, bright attentive eyes, wearing a dark blue crown prince's robe with a round golden emblem on the chest, a black winged court cap (ikseongwan), a jade belt (an imagined look, not a real portrait). Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A Joseon palace courtyard just after rain, wet stone paths and puddles, the crown prince in the center foreground wiping sweat from his forehead with his sleeve, frowning at the muddy ground, a farming field visible beyond the palace wall. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "Water drips from the eaves; the prince wipes his brow, looks at the sky and sighs anxiously. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "A raindrop ripples his reflection; he frowns and taps his chin, puzzled. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The crown prince kneeling and digging two small holes side by side with a hoe in a field, one hole showing soil wet very deep, the other showing only a thin wet layer on top, the prince comparing them with a confused look. No other people. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "He digs a second hole, compares the two wet depths, and scratches his head in confusion. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "Under the palace eaves, rainwater dripping steadily into a small bowl left on a stone step, the crown prince sitting nearby watching the water collect, his eyes lighting up with an idea. No other people. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "Drops fall into the bowl and the water level rises a little; his eyes widen and he sits up straight. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The crown prince placing a tall, simple cylindrical bronze-copper vessel on a carved stone pedestal in the middle of the palace courtyard, adjusting it carefully so it stands straight, rain clouds gathering above. No other people. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He sets the vessel on the pedestal, straightens it, steps back and looks up at the clouds. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "After the rain, the crown prince lowering a thin wooden ruler with simple tick marks into the bronze vessel, reading the water depth carefully, a notebook and brush on the pedestal beside him. No other people. No readable text. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "He dips the ruler in, lifts it, reads the wet mark and writes in his notebook. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "A split cross-section illustration: on the left, rainwater soaking unevenly into soil layers; on the right, rain collecting in a straight-sided vessel with a perfectly flat, even water level. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "Rain falls on both sides; on the left it seeps unevenly, on the right the water rises in a neat flat level. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The crown prince standing before a large painted map of the Korean peninsula on a wall, tapping several distant regions with his finger, a worried frown on his face. No other people. Map with lines and colors only, no readable text. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He taps one region, then another far away, and folds his arms thoughtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A magical illustrated map of the Korean peninsula with identical small bronze rain vessels appearing one by one at many towns across the land, the crown prince in the foreground at his desk with a growing stack of rolled report scrolls. No other people. No readable text. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Little vessels pop up across the map one after another; scrolls stack up on his desk and he smiles. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "An old bound book lying open on a wooden desk, pages turning gently, the crown prince standing beside the bronze rain vessel behind it with a modest, knowing smile. No other people. Book pages with blurred illegible marks only. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The pages flutter and settle; the prince glances at the camera with a small modest smile. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The palace courtyard after the rain with a rainbow, the crown prince standing proudly beside the bronze rain vessel on its stone pedestal, smiling up at the clearing sky. No other people. Characters: Joseon crown prince (attached reference image char_prince.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon crown prince in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "Sunlight breaks through; he looks at the vessel and then up at the rainbow with a proud smile. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He grins at the camera, gives a thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}
