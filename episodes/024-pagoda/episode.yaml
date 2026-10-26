@@ -1,7 +1,7 @@
 # 024 오층탑 — 흔들려서 버티는 일본의 나무 탑
 id: "024"
 slug: pagoda
-status: script_ok
+status: done
 working_title: 지진이 잦은 일본에서 나무 탑은 어떻게 버텼을까?
 title_lines: ["흔들려서", "무너지지 않는 탑?"]
 hook: 눈앞이 캄캄했습니다
@@ -26,7 +26,7 @@ scenes:
     beat: hook
     lines:
       - text: "지진이 잦은 섬나라의 목수는 눈앞이 캄캄했습니다."
-        captions: ["지진이 잦은 섬나라의 목수는 / 눈앞이 캄캄했습니다"]
+        captions: ["지진이 잦은 / 섬나라의 목수는", "눈앞이 캄캄했습니다"]
       - text: "땅이 흔들릴 때마다, 높은 탑이 무너질 판이었거든요."
         captions: ["땅이 흔들릴 때마다", "높은 탑이 / 무너질 판이었거든요"]
     visual: 땅이 흔들리는 절 마당, 목수가 비틀거리며 반쯤 지은 나무 탑을 올려다본다
@@ -60,6 +60,7 @@ scenes:
     motion_prompt: >-
       He strikes the post hard; the ground trembles and the post wobbles and leans anyway.
     camera: static
+    trim_start: 1.5
 
   - id: s03
     beat: question
@@ -79,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 목수는 탑을 한 덩어리로 짓지 않고, 층층이 따로 얹었습니다."
-        captions: ["그래서 목수는 / 탑을 한 덩어리로 짓지 않고", "층층이 따로 얹었습니다"]
+        captions: ["그래서 목수는", "탑을 한 덩어리로 / 짓지 않고", "층층이 따로 얹었습니다"]
     visual: 나무 상자 같은 층을 하나씩 위에 얹어 탑이 올라간다
     image_prompt: >-
       The carpenter guiding a large box-like wooden story with wide eaves as it is lowered onto the story below, stacking
@@ -115,7 +116,7 @@ scenes:
     beat: solution
     lines:
       - text: "나무 이음새도 살짝 미끄러지며, 버드나무처럼 휘청이다 제자리를 찾았죠."
-        captions: ["나무 이음새도 / 살짝 미끄러지며", "버드나무처럼 휘청이다 / 제자리를 찾았죠"]
+        captions: ["나무 이음새도 / 살짝 미끄러지며", "버드나무처럼 / 휘청이다", "제자리를 찾았죠"]
     visual: 못 없이 맞물린 나무 이음새 클로즈업, 흔들림에 살짝 미끄러졌다 제자리로 돌아온다
     image_prompt: >-
       Close-up of intricate interlocking wooden joints without nails in the pagoda's frame, the carpenter's hand resting on
@@ -129,7 +130,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 층이 따로 흔들리면, 한 층이 쑥 빠지지 않을까요?"
-        captions: ["그런데 층이 따로 흔들리면", "한 층이 / 쑥 빠지지 않을까요?"]
+        captions: ["그런데 / 층이 따로 흔들리면", "한 층이 / 쑥 빠지지 않을까요?"]
     visual: 목수가 탑을 올려다보며, 한 층이 옆으로 밀려나는 상상에 식은땀을 흘린다
     image_prompt: >-
       The carpenter looking up anxiously at the stacked pagoda, imagining one middle story sliding sideways off the others
@@ -143,9 +144,9 @@ scenes:
     beat: resolve
     lines:
       - text: "그래서 탑 한가운데, 바닥부터 꼭대기까지 굵은 기둥을 세웠습니다."
-        captions: ["그래서 탑 한가운데", "바닥부터 꼭대기까지 / 굵은 기둥을 세웠습니다"]
+        captions: ["그래서 탑 한가운데", "바닥부터 꼭대기까지", "굵은 기둥을 세웠습니다"]
       - text: "층이 미끄러지려 하면, 이 기둥이 붙잡아 가운데로 되돌려 놓았죠."
-        captions: ["층이 미끄러지려 하면", "이 기둥이 붙잡아 / 가운데로 되돌려 놓았죠"]
+        captions: ["층이 미끄러지려 하면", "이 기둥이 붙잡아", "가운데로 / 되돌려 놓았죠"]
     visual: 단면도 — 탑 한가운데를 관통하는 굵은 기둥, 층이 밀리면 기둥에 닿아 가운데로 돌아온다
     image_prompt: >-
       A cutaway illustration of the five-story pagoda with one thick central wooden pillar running from the ground to the
@@ -180,9 +181,9 @@ scenes:
     beat: info
     lines:
       - text: "흔들리면서 버티는 이 나무 탑이 바로, 일본의 오층탑입니다."
-        captions: ["흔들리면서 버티는", "이 나무 탑이 / 바로, 일본의 오층탑입니다"]
+        captions: ["흔들리면서 버티는", "이 나무 탑이 바로", "일본의 오층탑입니다"]
       - text: "여러분이라면 흔들리는 땅에 무엇을 지으셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 흔들리는 땅에 / 무엇을 지으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 흔들리는 땅에", "무엇을 지으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 단풍 속 완성된 오층탑 앞에서 목수가 뿌듯하게 올려다본다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
