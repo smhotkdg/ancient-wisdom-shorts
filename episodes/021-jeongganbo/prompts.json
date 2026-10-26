@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "musician": "Character reference sheet of a slender, expressive Korean man in his 30s with a neat topknot under a black court musician's hat, a thin mustache, lively curious eyes, wearing a red Joseon court musician's robe with a dark sash, holding a long bamboo daegeum flute and a brush. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A Joseon palace music hall with wooden floors and red pillars, traditional instruments (a gayageum, a large drum, a set of bronze bells) arranged around, the court musician in the center foreground holding his flute in one hand and throwing both arms up in exasperation over a sheet of music on a low stand. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two other court musicians in red robes sitting blurred in the background, each playing a different rhythm and glancing at each other in confusion (only 2-4 people, never blocking the Joseon court musician). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The musician throws his arms up and shakes his head; behind him the others keep playing out of time. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He blows a note, stops, frowns at the sheet and tilts his head in confusion. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "Close view of an old paper music sheet with only a single column of simple brush marks, no spacing or rhythm shown, the musician holding it up close and squinting, scratching his head. No other people. Brush marks illegible, no readable text. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "He turns the sheet sideways, squints, and scratches his head with the flute. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "At night in the music hall, moonlight casting the square grid shadow of a wooden lattice window across the floor, the musician sitting beside it staring at the neat square shadows, a spark of an idea in his eyes. No other people. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He traces one square of the lattice shadow with his finger and slowly smiles. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The musician kneeling at a low desk drawing a long vertical column of equal square boxes on paper with a brush and a wooden ruler, the grid looking like a row of little windows, ink stone beside him. No other people. No text. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The brush glides along the ruler and square box after square box appears down the paper. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "A clean illustration of a vertical column of square boxes: one box glowing briefly for a short sound, and three boxes in a row glowing together for a long sound, with soft sound-wave ribbons beside them showing short and long. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "A glow moves down the boxes one by one at a steady pace; one box flashes short, three boxes glow long together. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "The musician in the center foreground playing his flute while pointing at the boxed music sheet on the stand, tapping each box in time, looking delighted. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two court musicians in red robes in the background playing a drum and a gayageum in perfect time, smiling (only 2-4 people, never blocking the Joseon court musician). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "His finger taps down the boxes in a steady beat; behind him the drum and strings play in sync. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The musician holding up a sheet with only empty square boxes, one hand raised high and the other low as if weighing a high note against a low note, a puzzled frown. No other people. No text. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He raises one hand high then lowers the other, looks at the empty boxes and shrugs. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Close-up of the musician's brush writing a single small character inside each square box down the column, some boxes left empty to show a held note, the finished grid score glowing softly. No other people. Characters drawn as simple stylized brush marks, not readable text. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The brush writes one mark into a box, skips an empty box, then writes the next; the column glows. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "The length ribbon stretches along the boxes while the pitch markers step up and down beside them. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "An old bound book lying open showing columns of square-box music notation, and beside it a modern music stand on a traditional Korean music stage holding a sheet with the same box-grid notation, warm stage light. No people. Notation drawn as stylized grids and marks, not readable text. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The old book's pages turn gently and the camera glides over to the modern sheet on the stand. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The musician standing in the palace music hall in golden morning light, proudly holding up a long sheet of box-grid music notation in one hand and his flute in the other, smiling. No other people. No readable text. Characters: Joseon court musician (attached reference image char_musician.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon court musician in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He lifts the sheet higher and grins; the camera slowly pulls back across the music hall. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He grins at the camera, gives a thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}
