@@ -1,7 +1,7 @@
 # 021 정간보 — 우물 정(井) 자 칸으로 소리의 길이를 적은 조선의 악보
 id: "021"
 slug: jeongganbo
-status: script_ok
+status: done
 working_title: 조선 악사들은 어떻게 소리의 길이까지 악보에 적었을까?
 title_lines: ["소리의 길이를", "칸으로 적었다고?"]
 hook: 두 손 두 발 다 들었습니다
@@ -26,9 +26,9 @@ scenes:
     beat: hook
     lines:
       - text: "궁궐의 악사는 두 손 두 발 다 들었습니다."
-        captions: ["궁궐의 악사는 / 두 손 두 발 다 들었습니다"]
+        captions: ["궁궐의 악사는", "두 손 두 발 / 다 들었습니다"]
       - text: "같은 곡인데도, 연주할 때마다 박자가 제멋대로였거든요."
-        captions: ["같은 곡인데도", "연주할 때마다 / 박자가 제멋대로였거든요"]
+        captions: ["같은 곡인데도", "연주할 때마다 / 박자가", "제멋대로였거든요"]
     visual: 궁궐 연주 마루, 대금을 든 악사가 악보를 보다가 두 팔을 번쩍 든다
     image_prompt: >-
       A Joseon palace music hall with wooden floors and red pillars, traditional instruments (a gayageum, a large drum,
@@ -39,6 +39,7 @@ scenes:
     motion_prompt: >-
       The musician throws his arms up and shakes his head; behind him the others keep playing out of time.
     camera: static
+    sfx_volume: 0
     extra_clips:
       - image_prompt: >-
           Close-up of the musician alone, cheeks puffed, playing his bamboo flute and then stopping mid-note with a
@@ -47,12 +48,13 @@ scenes:
         motion_prompt: >-
           He blows a note, stops, frowns at the sheet and tilts his head in confusion.
         camera: slow push in
+        sfx_volume: 0
 
   - id: s02
     beat: problem
     lines:
       - text: "악보엔 음 높이만 적혀 있어, 소리를 얼마나 길게 낼지 알 수 없었죠."
-        captions: ["악보엔 / 음 높이만 적혀 있어", "소리를 얼마나 길게 낼지 / 알 수 없었죠"]
+        captions: ["악보엔 / 음 높이만 적혀 있어", "소리를 얼마나 / 길게 낼지", "알 수 없었죠"]
     visual: 글자만 세로로 빼곡한 옛 악보를 악사가 들여다보며 고개를 갸웃
     image_prompt: >-
       Close view of an old paper music sheet with only a single column of simple brush marks, no spacing or rhythm
@@ -81,7 +83,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 악사는, 종이에 우물 정 자 같은 칸을 줄줄이 그렸습니다."
-        captions: ["그래서 악사는", "종이에 우물 정 자 같은 / 칸을 줄줄이 그렸습니다"]
+        captions: ["그래서 악사는", "종이에 / 우물 정 자 같은 칸을", "줄줄이 그렸습니다"]
     visual: 악사가 붓과 자로 종이에 세로로 이어진 네모 칸들을 그린다
     image_prompt: >-
       The musician kneeling at a low desk drawing a long vertical column of equal square boxes on paper with a brush and a
@@ -104,12 +106,13 @@ scenes:
     motion_prompt: >-
       A glow moves down the boxes one by one at a steady pace; one box flashes short, three boxes glow long together.
     camera: static
+    sfx_volume: 0
 
   - id: s06
     beat: solution
     lines:
       - text: "이제 모두가 칸을 세며 연주하니, 박자가 딱딱 맞아떨어졌습니다."
-        captions: ["이제 모두가 / 칸을 세며 연주하니", "박자가 / 딱딱 맞아떨어졌습니다"]
+        captions: ["이제 모두가 / 칸을 세며 연주하니", "박자가 딱딱 / 맞아떨어졌습니다"]
     visual: 악사가 칸 악보를 손가락으로 짚으며 대금을 불고, 뒤의 악사들이 같은 박자로 연주한다
     image_prompt: >-
       The musician in the center foreground playing his flute while pointing at the boxed music sheet on the stand,
@@ -119,12 +122,13 @@ scenes:
     motion_prompt: >-
       His finger taps down the boxes in a steady beat; behind him the drum and strings play in sync.
     camera: slow pull back
+    sfx_volume: 0
 
   - id: s07
     beat: twist
     lines:
       - text: "그런데 칸만으로는, 어떤 높이의 소리인지 알 수 없잖아요?"
-        captions: ["그런데 칸만으로는", "어떤 높이의 소리인지 / 알 수 없잖아요?"]
+        captions: ["그런데 칸만으로는", "어떤 높이의 / 소리인지", "알 수 없잖아요?"]
     visual: 빈 칸만 이어진 악보를 들고 악사가 높은 소리인지 낮은 소리인지 몰라 고민한다
     image_prompt: >-
       The musician holding up a sheet with only empty square boxes, one hand raised high and the other low as if weighing
@@ -138,9 +142,9 @@ scenes:
     beat: resolve
     lines:
       - text: "그래서 칸 안에, 음 이름의 첫 글자를 하나씩 써넣었습니다."
-        captions: ["그래서 칸 안에", "음 이름의 첫 글자를 / 하나씩 써넣었습니다"]
+        captions: ["그래서 칸 안에", "음 이름의 / 첫 글자를", "하나씩 써넣었습니다"]
       - text: "칸은 소리의 길이를, 글자는 소리의 높이를 알려 준 거죠."
-        captions: ["칸은 소리의 길이를", "글자는 소리의 높이를 / 알려 준 거죠"]
+        captions: ["칸은 소리의 길이를", "글자는 / 소리의 높이를", "알려 준 거죠"]
     visual: 붓이 칸 안에 글자를 하나씩 써넣고, 완성된 칸 악보가 빛난다
     image_prompt: >-
       Close-up of the musician's brush writing a single small character inside each square box down the column, some
@@ -163,7 +167,7 @@ scenes:
     beat: info
     lines:
       - text: "이 악보는 동양에서 가장 오래된, 길이 적는 악보로 꼽히며 지금도 국악에서 쓰이죠."
-        captions: ["이 악보는 동양에서 / 가장 오래된", "길이 적는 악보로 꼽히며 / 지금도 국악에서 쓰이죠"]
+        captions: ["이 악보는 동양에서 / 가장 오래된", "길이 적는 악보로 / 꼽히며", "지금도 / 국악에서 쓰이죠"]
     visual: 오래된 책 속 칸 악보와, 오늘날 국악 연주대 위에 놓인 같은 모양의 악보
     image_prompt: >-
       An old bound book lying open showing columns of square-box music notation, and beside it a modern music stand on a
@@ -179,7 +183,7 @@ scenes:
       - text: "우물 정 자 칸으로 음악을 적은 이 악보가 바로, 정간보입니다."
         captions: ["우물 정 자 칸으로 / 음악을 적은", "이 악보가 / 바로, 정간보입니다"]
       - text: "칸 악보로 연주해 보고 싶다면 댓글에 '도전'! 신기했다면 좋아요 꾹!"
-        captions: ["칸 악보로 연주해 보고 싶다면 / 댓글에 '도전'!", "신기했다면 / 좋아요 꾹!"]
+        captions: ["칸 악보로 / 연주해 보고 싶다면", "댓글에 '도전'!", "신기했다면 / 좋아요 꾹!"]
         cta: true
     visual: 칸 악보를 펼쳐 든 악사가 뿌듯하게 웃는다 / 이어서 시청자를 보며 엄지척
     image_prompt: >-

@@ -1,38 +1,38 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.0초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.9초
 The musician throws his arms up and shakes his head; behind him the others keep playing out of time. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.0–7.3초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.9–6.7초
 He blows a note, stops, frowns at the sheet and tilts his head in confusion. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.3–12.1초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 6.7–11.6초
 He turns the sheet sideways, squints, and scratches his head with the flute. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.1–16.1초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 11.6–15.2초
 He traces one square of the lattice shadow with his finger and slowly smiles. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.1–20.7초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.2–19.3초
 The brush glides along the ruler and square box after square box appears down the paper. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.7–25.2초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 19.3–23.1초
 A glow moves down the boxes one by one at a steady pace; one box flashes short, three boxes glow long together. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.2–30.0초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 23.1–27.0초
 His finger taps down the boxes in a steady beat; behind him the drum and strings play in sync. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 30.0–34.3초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 27.0–30.6초
 He raises one hand high then lowers the other, looks at the empty boxes and shrugs. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 34.3–38.6초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 30.6–34.5초
 The brush writes one mark into a box, skips an empty box, then writes the next; the column glows. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 38.6–42.8초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 34.5–38.1초
 The length ribbon stretches along the boxes while the pitch markers step up and down beside them. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 42.8–48.7초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 38.1–43.2초
 The old book's pages turn gently and the camera glides over to the modern sheet on the stand. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.7–53.2초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 43.2–47.2초
 He lifts the sheet higher and grins; the camera slowly pulls back across the music hall. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 53.2–59.0초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 47.2–52.7초
 He grins at the camera, gives a thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
