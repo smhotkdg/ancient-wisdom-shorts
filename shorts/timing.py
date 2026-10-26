@@ -273,10 +273,11 @@ def _snap_to_speech(lines: list[dict], silences: list[tuple[float, float]]) -> l
     from .asr import norm
     last = 0.0
     for n, ln in enumerate(lines):
-        heads, k, prev = {}, 0, ""           # 단어 첫 글자 위치 → 앞 단어가 쉼표로 끝났는지
+        heads, k, prev = {}, 0, ""           # 단어 첫 글자 위치 → 앞 단어가 쉼표·문장부호로 끝났는지
         for w in ln["text"].split():
             if norm(w):
-                heads[k] = k == 0 or bool(re.search(r"[,…]$", prev))
+                # 한 줄 안의 문장 경계("댓글에 '가자'! 신기했다면")도 쉼표처럼 앞에 쉼이 있다
+                heads[k] = k == 0 or bool(re.search(r"[,…!?.]['\"’”]?$", prev))
                 k += len(norm(w))
                 prev = w
         orig = ln["char_starts"]

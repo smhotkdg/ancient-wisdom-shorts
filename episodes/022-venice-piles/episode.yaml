@@ -37,6 +37,7 @@ scenes:
     motion_prompt: >-
       He tries to pull one leg out, the mud squelches and he sinks deeper, clutching his head.
     camera: static
+    sfx_volume: 0
     extra_clips:
       - image_prompt: >-
           Close-up of the carpenter's bare foot sinking into soft grey lagoon mud with a slurp, bubbles rising, his
@@ -45,6 +46,7 @@ scenes:
         motion_prompt: >-
           His foot sinks with a slurp and bubbles rise; he groans and pulls it out with a pop.
         camera: slow push in
+        sfx_volume: 0
 
   - id: s02
     beat: problem
@@ -123,6 +125,7 @@ scenes:
     motion_prompt: >-
       He shoves the wall hard, nothing moves, and he laughs and pats the bricks.
     camera: static
+    sfx_volume: 0
 
   - id: s07
     beat: twist
@@ -161,6 +164,7 @@ scenes:
         motion_prompt: >-
           Glittering mineral particles seep slowly into the wood fibers, filling them in.
         camera: slow push in
+        sfx_volume: 0
 
   - id: s09
     beat: info
@@ -174,6 +178,7 @@ scenes:
     motion_prompt: >-
       A beam of light slowly sweeps across the old pile heads under the water; small fish dart away.
     camera: slow pan
+    sfx_volume: 0
 
   - id: s10
     beat: info
