@@ -25,6 +25,7 @@
 | 019 | 이글루 — 눈으로 지었는데 안은 따뜻한 북극의 집 | 완성 | 말문이 막혔습니다 |
 | 020 | 측우기 — 흙 대신 그릇으로 비를 잰 조선의 세자 (첫 CTA 편) | 완성 | 진땀을 뺐습니다 |
 | 021 | 정간보 — 우물 정(井) 자 칸으로 소리의 길이를 적은 조선의 악보 | 완성 | 두 손 두 발 다 들었습니다 |
+| 022 | 베네치아 — 진흙 갯벌에 나무 기둥 숲을 박아 세운 도시 | 소스 대기 | 골머리를 앓았습니다 |
 
 ## 이전 레포에서 이미 만든 주제 (checkvalve-shorts-production)
 
@@ -52,7 +53,7 @@
 | 온돌 | 아궁이 불길을 방바닥 밑 고래로, 구들장이 열을 품음, 굴뚝으로 연기 배출 — 2018 국가무형유산 | [한국민족문화대백과](https://encykorea.aks.ac.kr/Article/E0077489) | 채택 → 005 |
 | 아즈텍 치남파 | 호수 위 도시를 먹이려 진흙·수초를 쌓아 호수에 밭을 만들고, 버드나무 뿌리로 가장자리를 붙잡음 — 2017 FAO 세계중요농업유산 | [FAO GIAHS](https://www.fao.org/giahs/giahsaroundtheworld/designated-sites/latin-america-and-the-caribbean/chinampa-agriculture-in-the-world-natural-and-cultural-heritage-zone-in-xochimilco-tlahuac-and-milpa-alta/en/), [Te Papa 박물관](https://blog.tepapa.govt.nz/2013/09/24/aztecs-gardens-in-the-lake/) | 채택 → 006 |
 | 이집트 나일로미터 | 계단 우물 눈금으로 범람 높이를 재서 둑·운하를 준비하고 세금을 정함 | [이집트 관광유물부](https://egymonuments.gov.eg/en/monuments/rawda-island-nilometer/), [National Geographic](https://www.nationalgeographic.com/history/article/160517-nilometer-discovered-ancient-egypt-nile-river-archaeology) | 채택 → 007 (로다섬 861년은 "훗날"로 구분) |
-| 베네치아 나무 말뚝 | 갯벌에 나무 말뚝 수백만 개, 물에 잠겨 산소가 없어 잘 안 썩음 | [CORILA](https://www.storico.corila.it/en/node/154), [TU Delft](https://repository.tudelft.nl/file/File_a5ecfdac-472d-415d-ab48-3ed48f3a2c64) | 주의 — '영원히 안 썩는다'는 틀림(혐기성 세균이 천천히 분해), 말뚝 개수 수치 확인 필요 |
+| 베네치아 나무 말뚝 → 022 | 갯벌에 나무 말뚝 수백만 개, 물에 잠겨 산소가 없어 잘 안 썩음 | [CORILA](https://www.storico.corila.it/en/node/154), [TU Delft](https://repository.tudelft.nl/file/File_a5ecfdac-472d-415d-ab48-3ed48f3a2c64) | 주의 — '영원히 안 썩는다'는 틀림(혐기성 세균이 천천히 분해), 말뚝 개수 수치 확인 필요 |
 | 잉카 풀 다리 케스와차카 | 협곡 위 다리를 풀로 꼰 밧줄로 만들고, 네 마을이 해마다 3일 동안 새로 엮음 — 2013 유네스코 인류무형유산 | [National Geographic](https://www.nationalgeographic.com/travel/article/inca-grass-rope-bridge-qeswachaka-unesco), [Global Voices](https://globalvoices.org/2018/06/29/qeswachaka-the-last-inca-bridge-that-keeps-communities-together/) | 채택 → 008 |
 | 페르시아 바람탑 (야즈드) | 지붕 위 탑이 바람을 잡아 집 안·지하로 내려보냄, 안뜰·두꺼운 흙벽과 함께 시원한 집 | [UNESCO 야즈드](https://whc.unesco.org/en/list/1544), [국제냉동연구소 IIR](https://iifiir.org/en/news/windcatchers-the-birth-of-air-conditioning-and-natural-refrigeration) | 채택 → 010 |
 | 로마 바닷물 콘크리트 | 석회+화산재+바닷물, 바닷물이 스며들며 새 광물 결정이 틈을 메워 더 단단해짐 | [AIP Inside Science](https://www.aip.org/inside-science/secrets-of-longevity-roman-concrete), [Sci.News](https://www.sci.news/archaeology/roman-marine-concrete-05011.html) (Jackson 외, American Mineralogist 2017) | 채택 → 009 |

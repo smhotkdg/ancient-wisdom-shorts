@@ -1,0 +1,127 @@
+{
+  "characters": {
+    "carpenter": "Character reference sheet of a burly, good-natured Italian man in his 40s with curly dark hair, a short salt-and-pepper beard, sun-tanned skin and rolled-up sleeves, wearing a loose cream linen shirt, a brown leather apron and knee-length brown trousers, bare muddy feet, a big wooden mallet in hand. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A wide shallow lagoon with muddy marsh islands and reeds under a hazy sky, the carpenter in the center foreground sunk knee-deep in soft grey mud, holding his head with both hands in dismay, his mallet sinking beside him. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "He tries to pull one leg out, the mud squelches and he sinks deeper, clutching his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "His foot sinks with a slurp and bubbles rise; he groans and pulls it out with a pop. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The carpenter crouching beside a small stone house model he placed on the mud, watching in horror as it tilts and slowly sinks into the soft grey mud. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The little stone house tilts and slowly sinks into the mud; his eyes go wide. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "At sunset on the lagoon shore, the carpenter sitting on an overturned boat, staring at a single wooden stake that stands firmly upright in the mud while everything else sinks, a spark of an idea in his eyes. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He pushes the stake with his finger, it doesn't budge, and he slowly grins. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The carpenter standing on a small plank platform swinging a big wooden mallet to drive a long wooden pile into the lagoon mud, dozens of pile tops already packed tightly side by side around him like a forest of stumps. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The mallet slams down and the pile sinks deeper into the mud; water splashes with each blow. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "Piles slide down one after another through the mud, packing tightly together. Camera: slow tilt down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The carpenter laying thick wooden planks across the tops of the tightly packed piles to make a flat platform, and on top of it the first rows of a brick and stone house rising. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "He drops the last plank into place and the brick walls rise layer by layer above it. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "A finished brick and stone house standing straight at the water's edge of a canal, the carpenter pushing on the wall with both hands to test it and laughing because it doesn't move at all. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He shoves the wall hard, nothing moves, and he laughs and pats the bricks. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The carpenter kneeling at the canal edge holding up a soggy, dark, rotting piece of wood in one hand, looking down worriedly into the water toward the foundations of his house. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "A piece crumbles off the rotten wood in his hand; he looks down into the water anxiously. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Side cross-section: above the water line, a wooden post exposed to air with fuzzy fungus spots and bubbles of oxygen; below in the dark wet mud, the wooden piles clean and solid with no oxygen bubbles and no fungus. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Fungus spreads on the post in the air while the piles deep in the mud stay clean and dark. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "Glittering mineral particles seep slowly into the wood fibers, filling them in. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "Present-day view under a Venetian canal building: an underwater lamp illuminating the old dark wooden pile heads beneath the stone foundation, small fish swimming by, green canal water. No people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "A beam of light slowly sweeps across the old pile heads under the water; small fish dart away. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "A beautiful lagoon city of colorful brick and stone buildings rising straight from the canals at golden sunset, the carpenter standing on a small wooden dock in the foreground looking proudly at the city. No other people. Characters: medieval Italian carpenter (attached reference image char_carpenter.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the medieval Italian carpenter in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He puts his hands on his hips and smiles; the camera slowly pulls back over the canals at sunset. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He grins at the camera, gives a thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}
