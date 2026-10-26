@@ -1,0 +1,127 @@
+{
+  "characters": {
+    "mason": "Character reference sheet of a stocky, hard-working Chinese man in his 40s with a weathered tanned face, a short black beard, kind tired eyes, hair tied in a topknot under a dark cloth wrap, wearing a faded blue cotton work jacket and loose trousers tied at the ankles, cloth shoes, a trowel in hand. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A tall grey stone city wall after rain, puddles at its foot, cracks running through the white lime mortar between the stones, the stonemason in the center foreground pressing his fist to his chest in frustration, staring at a crumbling joint. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "A piece of crumbling mortar falls from the joint; he groans and thumps his chest. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He pokes the joint, it crumbles further and rainwater seeps into the crack. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "Heavy rain on the city wall, water running down into the joints, a few stones at the corner sliding loose and falling, the stonemason stepping back in alarm, holding a woven straw hat over his head. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "Rain pours, a stone slips out of the wall and thuds down; he jumps back. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "In a simple kitchen at dusk, the stonemason sitting at a low table trying to scrape sticky rice off his bowl and fingers, the rice stretching and clinging, his eyes suddenly lighting up with an idea. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He pulls his fingers apart and the sticky rice stretches between them; he stops and stares, grinning. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "A big iron cauldron over a wood fire outdoors next to the wall construction site, thick white sticky rice porridge bubbling inside, the stonemason stirring it with a long wooden paddle, steam rising. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The porridge bubbles; he lifts the paddle and a thick sticky strand stretches down into the pot. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The stonemason pouring a bucket of sticky white rice porridge into a large wooden trough of white lime mortar, then mixing it vigorously with a hoe, the mixture turning thick and glossy. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The porridge pours into the lime and he mixes hard until the mortar turns thick and glossy. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "The stonemason spreading the glossy rice-lime mortar with a trowel and pressing a heavy stone block onto it, the joint filling perfectly smooth with no gaps, a neat new section of wall beside him. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He spreads the mortar, sets the stone and presses down; the joint squeezes out smooth and he wipes it clean. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s06-2.mp4",
+          "seconds": 6,
+          "motion": "He knocks on the wall twice, nothing moves, and he nods with satisfaction. Camera: slow pan along the wall. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The stonemason holding a spoonful of sticky rice in one hand, looking from it to the massive stone wall with a doubtful, raised-eyebrow expression. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He looks at the spoon, then at the wall, and tilts his head doubtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A magnified microscopic comparison: on the left, ordinary lime mortar with large loose crystals and many gaps; on the right, rice-lime mortar with tiny crystals packed tightly together, bound by a translucent sticky web. Clean educational illustration, no labels, no text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Crystals grow big and loose on the left, while on the right a sticky web keeps them tiny and packed tight. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "Rain beads and rolls off the rice-lime joint while the other joint soaks it up; he grins. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "Present day: an old grey stone city wall standing firm, a small yellow bulldozer pushing against a section of it and failing, its tracks spinning in the dirt, comic but gentle. No people visible. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The bulldozer pushes and its tracks spin, but the old wall doesn't budge at all. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The stonemason standing on top of the finished stone city wall at golden sunset, trowel in hand, looking out over the rooftops with a proud smile. No other people. Characters: ancient Chinese stonemason (attached reference image char_mason.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Chinese stonemason in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He pats the wall top and smiles; the camera slowly pulls back to reveal the long wall at sunset. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

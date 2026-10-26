@@ -1,0 +1,233 @@
+# 023 찹쌀 모르타르 — 찹쌀죽을 섞어 돌을 붙인 중국의 성벽 반죽
+id: "023"
+slug: sticky-rice-mortar
+status: script_ok
+working_title: 옛 중국 석공들은 왜 성벽 반죽에 찹쌀죽을 섞었을까?
+title_lines: ["밥으로 성벽을", "붙였다고?"]
+hook: 속이 터졌습니다
+caption_keywords: [빗물, 찹쌀죽, 석회, 촘촘한, 지진]
+
+story:
+  hero: 석공
+  reveal: [찹쌀 모르타르]
+
+characters:
+  - id: mason
+    name: 석공
+    name_en: ancient Chinese stonemason
+    description: >-
+      a stocky, hard-working Chinese man in his 40s with a weathered tanned face, a short black beard, kind tired eyes,
+      hair tied in a topknot under a dark cloth wrap, wearing a faded blue cotton work jacket and loose trousers tied at
+      the ankles, cloth shoes, a trowel in hand
+    note: 이야기 주인공. 성벽을 쌓는 석공
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "성벽을 쌓던 석공은 속이 터졌습니다."
+        captions: ["성벽을 쌓던 석공은 / 속이 터졌습니다"]
+      - text: "돌 사이를 메운 석회 반죽이, 비만 오면 금이 가고 부서졌거든요."
+        captions: ["돌 사이를 메운 석회 반죽이", "비만 오면 / 금이 가고 부서졌거든요"]
+    visual: 비 갠 뒤 성벽 앞, 석공이 갈라진 반죽 틈을 보며 가슴을 친다
+    image_prompt: >-
+      A tall grey stone city wall after rain, puddles at its foot, cracks running through the white lime mortar between
+      the stones, the stonemason in the center foreground pressing his fist to his chest in frustration, staring at a
+      crumbling joint.
+    characters: [mason]
+    motion_prompt: >-
+      A piece of crumbling mortar falls from the joint; he groans and thumps his chest.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the stonemason's fingertip touching a cracked mortar joint between two stones, white crumbs falling,
+          rainwater trickling into the crack. No other people.
+        characters: [mason]
+        motion_prompt: >-
+          He pokes the joint, it crumbles further and rainwater seeps into the crack.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "틈으로 빗물이 스며들면, 단단한 성벽도 조금씩 무너져 내렸죠."
+        captions: ["틈으로 빗물이 스며들면", "단단한 성벽도 / 조금씩 무너져 내렸죠"]
+    visual: 빗속에 성벽 모서리의 돌 몇 개가 미끄러져 떨어지고 석공이 놀라 물러선다
+    image_prompt: >-
+      Heavy rain on the city wall, water running down into the joints, a few stones at the corner sliding loose and falling,
+      the stonemason stepping back in alarm, holding a woven straw hat over his head. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      Rain pours, a stone slips out of the wall and thuds down; he jumps back.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "돌과 돌을 꽉 붙잡는 반죽, 어떻게 만들 수 있을까요?"
+        captions: ["돌과 돌을 꽉 붙잡는 반죽", "어떻게 만들 수 있을까요?"]
+    visual: 저녁 밥상 앞, 석공이 그릇에 달라붙은 찹쌀밥을 떼어 보다가 눈을 반짝인다
+    image_prompt: >-
+      In a simple kitchen at dusk, the stonemason sitting at a low table trying to scrape sticky rice off his bowl and
+      fingers, the rice stretching and clinging, his eyes suddenly lighting up with an idea. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      He pulls his fingers apart and the sticky rice stretches between them; he stops and stares, grinning.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 석공은 찹쌀을 푹 끓여, 끈적한 찹쌀죽을 만들었습니다."
+        captions: ["그래서 석공은 / 찹쌀을 푹 끓여", "끈적한 찹쌀죽을 / 만들었습니다"]
+    visual: 큰 무쇠솥에서 찹쌀죽이 보글보글 끓고 석공이 긴 나무 주걱으로 젓는다
+    image_prompt: >-
+      A big iron cauldron over a wood fire outdoors next to the wall construction site, thick white sticky rice porridge
+      bubbling inside, the stonemason stirring it with a long wooden paddle, steam rising. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      The porridge bubbles; he lifts the paddle and a thick sticky strand stretches down into the pot.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 이 찹쌀죽을, 석회 반죽에 듬뿍 섞어 넣었죠."
+        captions: ["그리고 이 찹쌀죽을", "석회 반죽에 / 듬뿍 섞어 넣었죠"]
+    visual: 흰 석회 반죽 통에 찹쌀죽을 쏟아붓고 석공이 힘차게 섞는다
+    image_prompt: >-
+      The stonemason pouring a bucket of sticky white rice porridge into a large wooden trough of white lime mortar, then
+      mixing it vigorously with a hoe, the mixture turning thick and glossy. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      The porridge pours into the lime and he mixes hard until the mortar turns thick and glossy.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그렇게 끈적해진 반죽으로 돌을 쌓자, 성벽이 빈틈없이 단단해졌습니다."
+        captions: ["그렇게 끈적해진 반죽으로 / 돌을 쌓자", "성벽이 / 빈틈없이 단단해졌습니다"]
+    visual: 석공이 흙손으로 반죽을 바르고 돌을 얹어 꾹 누르자 이음매가 매끈하게 차오른다
+    image_prompt: >-
+      The stonemason spreading the glossy rice-lime mortar with a trowel and pressing a heavy stone block onto it, the
+      joint filling perfectly smooth with no gaps, a neat new section of wall beside him. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      He spreads the mortar, sets the stone and presses down; the joint squeezes out smooth and he wipes it clean.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A long newly built section of the stone city wall with neat smooth mortar joints, the stonemason standing at its
+          foot patting the wall proudly. No other people.
+        characters: [mason]
+        motion_prompt: >-
+          He knocks on the wall twice, nothing moves, and he nods with satisfaction.
+        camera: slow pan along the wall
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 밥알을 섞은 반죽이, 정말 수백 년을 버틸 수 있을까요?"
+        captions: ["그런데 밥알을 섞은 반죽이", "정말 수백 년을 / 버틸 수 있을까요?"]
+    visual: 석공이 찹쌀밥 한 숟갈과 성벽을 번갈아 보며 고개를 갸웃한다
+    image_prompt: >-
+      The stonemason holding a spoonful of sticky rice in one hand, looking from it to the massive stone wall with a
+      doubtful, raised-eyebrow expression. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      He looks at the spoon, then at the wall, and tilts his head doubtfully.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "찹쌀 속 끈끈한 성분이 석회 알갱이가 크게 자라는 걸 막아, 아주 촘촘한 덩어리를 만들었습니다."
+        captions: ["찹쌀 속 끈끈한 성분이 / 석회 알갱이가", "크게 자라는 걸 막아", "아주 촘촘한 덩어리를 / 만들었습니다"]
+      - text: "덕분에 빗물에도 훨씬 강해졌죠."
+        captions: ["덕분에 / 빗물에도 훨씬 강해졌죠"]
+    visual: 현미경 확대 — 보통 석회는 굵은 알갱이 사이에 틈이 많고, 찹쌀 반죽은 작은 알갱이가 빽빽하게 엉겨 있다
+    image_prompt: >-
+      A magnified microscopic comparison: on the left, ordinary lime mortar with large loose crystals and many gaps; on the
+      right, rice-lime mortar with tiny crystals packed tightly together, bound by a translucent sticky web.
+      Clean educational illustration, no labels, no text, no people.
+    motion_prompt: >-
+      Crystals grow big and loose on the left, while on the right a sticky web keeps them tiny and packed tight.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Rain pouring on two wall sections side by side: water seeping into the crumbling ordinary joint on one side,
+          and beading off the smooth rice-lime joint on the other, the stonemason under a straw hat watching and smiling.
+          No other people.
+        characters: [mason]
+        motion_prompt: >-
+          Rain beads and rolls off the rice-lime joint while the other joint soaks it up; he grins.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이렇게 쌓은 성벽과 무덤은 큰 지진도 견뎠고, 불도저도 쩔쩔맸다고 합니다."
+        captions: ["이렇게 쌓은 성벽과 무덤은 / 큰 지진도 견뎠고", "불도저도 / 쩔쩔맸다고 합니다"]
+    visual: 오늘날 오래된 회색 성벽 앞에서 노란 불도저가 꼼짝 못 하고 멈춰 서 있다
+    image_prompt: >-
+      Present day: an old grey stone city wall standing firm, a small yellow bulldozer pushing against a section of it
+      and failing, its tracks spinning in the dirt, comic but gentle. No people visible.
+    motion_prompt: >-
+      The bulldozer pushes and its tracks spin, but the old wall doesn't budge at all.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "찹쌀죽을 섞어 돌을 붙인 이 반죽이 바로, 찹쌀 모르타르입니다."
+        captions: ["찹쌀죽을 섞어 / 돌을 붙인", "이 반죽이 / 바로, 찹쌀 모르타르입니다"]
+      - text: "여러분이라면 반죽에 무엇을 섞어 보셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 반죽에 / 무엇을 섞어 보셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 성벽 위에서 석공이 흙손을 들고 뿌듯하게 웃는다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The stonemason standing on top of the finished stone city wall at golden sunset, trowel in hand, looking out over
+      the rooftops with a proud smile. No other people.
+    characters: [mason]
+    motion_prompt: >-
+      He pats the wall top and smiles; the camera slowly pulls back to reveal the long wall at sunset.
+    camera: slow pull back
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the stonemason on the wall at sunset looking straight at the viewer with a warm curious smile, one
+          hand open toward the viewer as if asking a question, a bowl of sticky rice in his other hand. No other people.
+        characters: [mason]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "미국화학회(ACS) 보도, ScienceDaily 2010-06-01 — 약 1,500년 전 중국 석공들이 석회 반죽에 찹쌀죽을 섞음, 찹쌀의 아밀로펙틴이 탄산칼슘 결정이 자라는 것을 조절해 촘촘한 미세 구조를 만듦, 순수 석회 반죽보다 물에 강함, 무덤·탑·성벽에 쓰였고 일부는 현대의 불도저와 강한 지진도 견딤, 저장대 장빙젠(Bingjian Zhang) 연구팀, Accounts of Chemical Research — https://www.sciencedaily.com/releases/2010/05/100530093704.htm"
+  - "National Geographic 2010 — 600년 된 난징 성벽 반죽이 석회와 찹쌀죽의 혼합, 아밀로펙틴 덕분에 탄산칼슘 결정이 작아져 단단하고 물에 강함, 다리·사원·무덤·성벽에 쓰임, 명나라 무덤 일부는 불도저도 어쩌지 못할 만큼 단단(연구진), 적어도 1,500년 전부터 사용 — https://www.nationalgeographic.com/history/article/100608-sticky-rice-mortar-china-science"
+
+accuracy_notes:
+  - "석공 인물과 감정, 대사는 설명용 재구성. 찹쌀 모르타르를 처음 만든 사람의 실제 이야기가 아니다."
+  - "'속이 터졌습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01~s02 '석회 반죽이 비에 약했다'는 '찹쌀 반죽이 순수 석회 반죽보다 물에 강하다'(ACS)를 거꾸로 보여 준 단순화."
+  - "s08 원리는 ACS 설명(아밀로펙틴이 탄산칼슘 결정 성장을 조절해 촘촘한 구조)을 단순화. '찹쌀 속 끈끈한 성분'은 아밀로펙틴."
+  - "s09 '지진도 견뎠고 불도저도 쩔쩔맸다'는 ACS·National Geographic이 전한 연구진의 말. 특정 지진 이름·규모는 쓰지 않는다."
+  - "흔히 '만리장성에 찹쌀을 썼다'고 하지만 근거 자료에 나오지 않아 쓰지 않는다. 대본은 '성벽과 무덤'으로만 쓴다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 석공 한 명으로 연출."
+
+youtube:
+  titles:
+    - 밥으로 성벽을 붙였다고? 찹쌀 모르타르의 비밀
+    - 불도저도 쩔쩔맨 성벽, 비밀은 찹쌀죽이었다
+    - 석회에 찹쌀죽을 섞으면 생기는 놀라운 일
+  description: |-
+    🍚 비만 오면 부서지는 성벽 반죽… 석공이 꺼낸 비장의 재료는 '찹쌀죽'?
+
+    찹쌀을 푹 끓여 석회 반죽에 듬뿍 섞었더니,
+    끈끈한 성분이 석회 알갱이를 촘촘하게 붙잡아 훨씬 단단해졌습니다 🧱
+    빗물에도 강해지고, 큰 지진도 견뎌 냈죠.
+
+    오래된 성벽 앞에서 불도저마저 쩔쩔맸다니 🚜 밥의 힘, 놀랍지 않나요?
+  comment_question: 여러분이라면 반죽에 무엇을 섞어 보셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [찹쌀모르타르, 중국역사, 건축, 과학, 쇼츠]
