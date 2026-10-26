@@ -165,8 +165,8 @@ scenes:
   - id: s09
     beat: info
     lines:
-      - text: "다만 영원하진 않아서, 지금도 연구자들이 기둥을 살피고 있습니다."
-        captions: ["다만 영원하진 않아서", "지금도 연구자들이 / 기둥을 살피고 있습니다"]
+      - text: "다만 영원하진 않아서, 지금도 연구자들이 기둥을 살피죠."
+        captions: ["다만 영원하진 않아서", "지금도 연구자들이 / 기둥을 살피죠"]
     visual: 오늘날 운하 옆 건물 아래 물속 나무 기둥 머리를 비추는 조명
     image_prompt: >-
       Present-day view under a Venetian canal building: an underwater lamp illuminating the old dark wooden pile heads
@@ -180,10 +180,10 @@ scenes:
     lines:
       - text: "물 아래 나무 기둥 숲 위에 세운 이 도시가 바로, 베네치아입니다."
         captions: ["물 아래 / 나무 기둥 숲 위에 세운", "이 도시가 / 바로, 베네치아입니다"]
-      - text: "베네치아에 가 보고 싶다면 댓글에 '가자'! 신기했다면 좋아요 꾹!"
-        captions: ["베네치아에 가 보고 싶다면 / 댓글에 '가자'!", "신기했다면 / 좋아요 꾹!"]
+      - text: "여러분이라면 갯벌 위에 어떻게 집을 지으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 갯벌 위에 / 어떻게 집을 지으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
-    visual: 노을 진 운하 위 곤돌라 옆, 목수가 완성된 도시를 바라보며 미소 / 이어서 시청자를 보며 엄지척
+    visual: 노을 진 운하 위 곤돌라 옆, 목수가 완성된 도시를 바라보며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
       A beautiful lagoon city of colorful brick and stone buildings rising straight from the canals at golden sunset,
       the carpenter standing on a small wooden dock in the foreground looking proudly at the city. No other people.
@@ -193,11 +193,11 @@ scenes:
     camera: slow pull back
     extra_clips:
       - image_prompt: >-
-          Close-up of the carpenter on the dock with the canal city behind him, looking straight at the viewer with a big
-          friendly grin, giving a thumbs-up and pointing at the viewer. No other people.
+          Close-up of the carpenter on the dock with the canal city behind him, looking straight at the viewer with a warm
+          curious smile, one hand open toward the viewer as if asking a question. No other people.
         characters: [carpenter]
         motion_prompt: >-
-          He grins at the camera, gives a thumbs-up and points at the viewer with a wink.
+          He looks at the camera, tilts his head with a warm curious smile and opens one hand toward the viewer as if asking.
         camera: slow push in
 
 sources:
@@ -211,7 +211,7 @@ accuracy_notes:
   - "말뚝 개수(성당 하나에 100만 개 등)는 확인하지 못해 쓰지 않는다. 나무 종류도 대본에 쓰지 않는다."
   - "s08 산소 부족·곰팡이·광물로 단단해짐은 브리태니커 기준. '돌처럼 변했다(화석화)'고는 쓰지 않는다."
   - "s09 '영원하지 않다'는 CORILA 기준 (혐기성 세균에 의한 느린 분해, 기초 상태 조사)."
-  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 말이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 엄지척 컷."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 말이며 이야기 대사가 아니다. s10-2는 그 줄을 위한, 주인공이 시청자에게 묻는 컷."
   - "화면 인물은 목수 한 명으로 연출."
 
 youtube:
@@ -227,5 +227,5 @@ youtube:
 
     그런데 물에 젖은 나무는 썩지 않을까? 🤔
     진흙과 짠물 속엔 산소가 거의 없어 곰팡이가 못 살았답니다. 지금도 연구자들이 그 기둥을 지켜보고 있어요.
-  comment_question: 베네치아에 가 보고 싶다면 댓글에 '가자'!
+  comment_question: 여러분이라면 갯벌 위에 어떻게 집을 지으셨을까요? 여러분의 생각이 궁금합니다.
   hashtags: [베네치아, 이탈리아, 건축, 세계사, 쇼츠]

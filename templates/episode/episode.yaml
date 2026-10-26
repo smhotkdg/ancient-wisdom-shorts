@@ -28,7 +28,7 @@ scenes:
     source: grok         # grok (움직임) | still (정지 이미지 + 느린 줌)
     lines:
       - ""               # 대사. 자막을 직접 나누려면 {text: "...", captions: ["...", "... / ..."]}
-      # 마지막 장면의 마지막 줄은 CTA: {text: "…? 댓글에 '…'! 신기했다면 좋아요 꾹!", cta: true}  (docs/story-format.md)
+      # 마지막 장면의 마지막 줄은 CTA: {text: "여러분이라면 …을까요? 여러분의 생각이 궁금합니다.", cta: true}  (docs/story-format.md)
     visual: ""           # 장면 설명 (한국어)
     image_prompt: ""     # ChatGPT 장면 프롬프트 (영어, 화풍 문구는 자동으로 붙음)
     characters: [hero]   # 첫 번째가 주인공 — 콘티가 "주인공은 가운데" 구도 문장을 자동으로 붙인다

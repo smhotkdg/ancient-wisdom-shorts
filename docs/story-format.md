@@ -15,7 +15,7 @@
 | 반전/한계 | 새로 생긴 문제 하나 | 그럼 수레는 어떻게 지나갈까요? |
 | 마무리 해결 | 한계를 넘는 디테일 | 돌 사이 틈으로 바퀴가 지나갑니다. |
 | 정리 + 정보 | 한 문장 답 + 의외의 한 줄 정보 → **마지막 대사: "이것이 바로 ○○입니다"** (이름은 여기서 처음 공개) | 사람은 돌 위로, 물과 바퀴는 돌 사이로. |
-| 마무리 한 줄 (CTA) | 공개 바로 뒤, 시청자에게 댓글·좋아요를 부르는 짧은 한 줄 (`cta: true`, 공백 제외 40자 이하) | 여러분이라면 이 돌을 밟고 건널까요? 댓글로! 신기했다면 좋아요 꾹! |
+| 마무리 한 줄 (CTA) | 공개 바로 뒤, 시청자의 생각을 묻는 짧은 질문 (`cta: true`, 공백 제외 40자 이하) | 여러분이라면 이 돌을 어떻게 놓으셨을까요? 여러분의 생각이 궁금합니다. |
 
 ## 길이
 
@@ -64,26 +64,29 @@ lines:
 
 `youtube.titles` 2~3개, `description` 2~4문장(재구성 애니메이션임을 밝힘), `hashtags` 3~5개.
 
-## 마무리 한 줄 (CTA) — 2026-10-22
+## 마무리 한 줄 (CTA) — 2026-10-22, 말투 수정 2026-10-26
 
 정답 공개("이것이 바로 ○○입니다") 바로 뒤에 붙인다. 이야기 대사가 아니라 시청자에게 건네는 말이다.
+**직접 요청("댓글에 ○○! 좋아요 꾹!")은 쓰지 않는다.** 시청자의 생각을 묻는 질문으로 자연스럽게 댓글·좋아요를 부른다.
 
 ```yaml
   - id: s10
     beat: info
     lines:
-      - text: "눈으로 지었는데 안은 따뜻한 이 집이 바로, 이글루입니다."
-      - text: "이글루에서 하룻밤 잘 수 있다면 댓글에 '가능'! 신기했다면 좋아요 꾹!"
-        captions: ["이글루에서 하룻밤 / 잘 수 있다면 댓글에 '가능'!", "신기했다면 / 좋아요 꾹!"]
+      - text: "물 아래 나무 기둥 숲 위에 세운 이 도시가 바로, 베네치아입니다."
+      - text: "여러분이라면 진흙 갯벌 위에 어떻게 집을 지으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 진흙 갯벌 위에 / 어떻게 집을 지으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
-    extra_clips:            # CTA 구간은 새 컷 — 주인공이 시청자를 보며 엄지척
+    extra_clips:            # CTA 구간은 새 컷 — 주인공이 시청자를 보며 묻는 표정
       - image_prompt: >-
-          Close-up of the <hero> looking straight at the viewer with a big friendly grin, thumbs-up, pointing at the viewer.
+          Close-up of the <hero> looking straight at the viewer with a warm curious smile, one hand open toward the viewer
+          as if asking a question.
         characters: [<hero>]
-        motion_prompt: He grins at the camera, gives a thumbs-up and points at the viewer with a wink.
+        motion_prompt: He looks at the camera, tilts his head with a curious smile and gestures toward the viewer.
 ```
 
-- **댓글 질문은 짧고 답하기 쉽게**: 한 단어로 답하게 ('가능'/'불가능', 숫자, A/B). `youtube.comment_question`과 같은 질문을 쓴다.
-- **좋아요는 가볍게**: "신기했다면 좋아요 꾹!"처럼 짧게. 구독 요청까지 넣으면 길어지니 넣지 않는다.
+- **형식**: "여러분이라면/여러분은 …? + 여러분의 생각이 궁금합니다." 같은 열린 질문. 오늘 이야기의 문제를 시청자에게 되묻는다.
+- **쓰지 않는 말**: "꾹", "눌러 주세요", "구독" 같은 직접 요청 (`aw.py story`가 실패로 알린다).
+- `youtube.comment_question`도 같은 질문으로 맞춘다.
 - 공백 제외 40자 이하 (약 4~5초). 대본 전체 350자 이하로 맞추려고 본문을 조금 줄인다.
-- 정답 이름은 CTA에 다시 쓰지 않아도 된다 (방금 공개했으므로).
+- 정답 이름은 다시 쓰지 않아도 된다 (방금 공개했으므로).

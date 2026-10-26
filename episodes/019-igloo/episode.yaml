@@ -27,8 +27,8 @@ scenes:
     lines:
       - text: "북극의 사냥꾼은 말문이 막혔습니다."
         captions: ["북극의 사냥꾼은 / 말문이 막혔습니다"]
-      - text: "사냥을 나왔다가 눈보라를 만났는데, 주변엔 나무 한 그루 없었거든요."
-        captions: ["사냥을 나왔다가 / 눈보라를 만났는데", "주변엔 / 나무 한 그루 없었거든요"]
+      - text: "사냥을 나왔다가 눈보라를 만났는데, 나무 한 그루 없었거든요."
+        captions: ["사냥을 나왔다가 / 눈보라를 만났는데", "나무 한 그루 / 없었거든요"]
     visual: 끝없는 하얀 설원에 눈보라가 몰아치고, 사냥꾼이 입을 벌린 채 굳어 있다
     image_prompt: >-
       An endless flat white Arctic snowfield in a howling blizzard, not a single tree or rock in sight, the hunter in the
@@ -180,8 +180,8 @@ scenes:
     lines:
       - text: "눈으로 지었는데 안은 따뜻한 이 집이 바로, 이글루입니다."
         captions: ["눈으로 지었는데 / 안은 따뜻한", "이 집이 / 바로, 이글루입니다"]
-      - text: "이글루에서 하룻밤 잘 수 있다면 댓글에 '가능'! 신기했다면 좋아요 꾹!"
-        captions: ["이글루에서 하룻밤 / 잘 수 있다면 댓글에 '가능'!", "신기했다면 / 좋아요 꾹!"]
+      - text: "여러분은 이글루에서 하룻밤, 버틸 수 있을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분은 이글루에서 하룻밤 / 버틸 수 있을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 맑게 갠 아침, 이글루 입구에서 기어 나온 사냥꾼이 기지개를 켜고, 카메라가 높이 솟는다
     image_prompt: >-
@@ -194,11 +194,10 @@ scenes:
     extra_clips:
       - image_prompt: >-
           Close-up of the hunter standing in front of his snow dome in bright morning light, looking straight at the
-          viewer with a big friendly grin, giving a thumbs-up with one fur mitten and pointing at the viewer with the
-          other. No other people.
+          viewer with a warm curious smile, one fur mitten open toward the viewer as if asking a question. No other people.
         characters: [hunter]
         motion_prompt: >-
-          He grins at the camera, gives a big thumbs-up and points at the viewer with a wink.
+          He looks at the camera, tilts his head with a warm curious smile and opens one hand toward the viewer as if asking.
         camera: slow push in
 
 sources:
@@ -213,7 +212,7 @@ accuracy_notes:
   - "'한두 시간'은 브리태니커의 '숙련된 사람은 1~2시간' 기준."
   - "s09 '영하를 넘어'는 캐나다 백과사전의 '안은 흔히 영하를 조금 넘는다' 기준. 15°C 같은 수치는 쓰지 않는다."
   - "s08 단면도의 '찬 공기는 아래, 따뜻한 공기는 위'는 '높은 곳에서 자면 더 따뜻하다'(캐나다 백과사전)를 그림으로 단순화한 것."
-  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 말이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 새 클립."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 말이며 이야기 대사가 아니다. s10-2는 그 줄을 위한, 주인공이 시청자에게 묻는 컷."
   - "화면 인물은 사냥꾼 한 명으로 연출 (실제로는 가족이 함께 쓰는 경우가 많다)."
 
 youtube:
@@ -229,5 +228,5 @@ youtube:
 
     눈벽은 몸의 온기를 가두고, 등잔이 안을 데우고 🕯️
     입구는 낮게, 잠자리는 높게 만들어 밖은 꽁꽁 얼어도 안은 영상으로!
-  comment_question: 이글루에서 하룻밤 잘 수 있다면 '가능', 절대 못 잔다면 '불가능'! 댓글로 알려 주세요
+  comment_question: 여러분은 이글루에서 하룻밤, 버틸 수 있을까요? 여러분의 생각이 궁금합니다.
   hashtags: [이글루, 이누이트, 북극, 생활의지혜, 쇼츠]

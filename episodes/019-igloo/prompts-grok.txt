@@ -1,41 +1,41 @@
 [S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–2.8초
 Snow whips sideways across the plain; he turns slowly looking for shelter and his jaw drops. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.8–7.9초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 2.8–7.5초
 He shivers hard, his teeth chatter and his breath freezes into white puffs. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.9–11.4초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.5–11.0초
 He rummages through the sled bundle, finds no tent, and throws up his hands as snow swirls around. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 11.4–15.0초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 11.0–14.5초
 He knocks on the hard snow twice, it sounds solid, and he slowly draws his snow knife with a grin. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.0–20.4초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 14.5–19.9초
 The knife slides through the snow, and he lifts out a big clean block and sets it down. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.4–23.0초
+[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 19.9–22.5초
 Block after block spirals upward and inward until the dome is almost closed over his head. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 23.0–25.5초
+[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 22.5–25.0초
 A glowing line traces the spiral of blocks from the bottom up to the small hole at the top. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.5–30.0초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.0–29.5초
 He packs snow into the last gap, steps back, claps his mittens together and grins. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 30.0–34.3초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 29.5–33.8초
 He touches the cold wall, pulls his hand back, blows on it and tilts his head doubtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 34.3–40.1초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 33.8–39.6초
 The lamp flame flickers warmly; he pulls off his mittens, rubs his hands and relaxes with a sigh. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 40.1–45.0초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 39.6–44.5초
 Warm orange air rises and gathers over the platform while pale blue cold air settles low in the tunnel. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 45.0–49.5초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 44.5–49.0초
 Snow swirls around the glowing dome; warm light flickers in the ice window and steam drifts from the top. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 49.5–53.8초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 49.0–53.3초
 He stretches his arms wide and smiles at the sunrise; the camera rises high over the lone snow house. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 53.8–59.8초
-He grins at the camera, gives a big thumbs-up and points at the viewer with a wink. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 53.3–59.8초
+He looks at the camera, tilts his head with a warm curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.

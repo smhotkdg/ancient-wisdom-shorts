@@ -93,11 +93,13 @@ def check(ep: Episode) -> dict:
     else:
         item(False, "정답 이름을 마지막까지 아낌", "story.reveal 미지정")
 
-    # 마무리 CTA — 정답 공개 뒤 한 줄, 댓글·좋아요 유도 (2026-10-22 사용자)
-    cta_ok = (len(cta) == 1 and ep.lines[-1].cta and bool(re.search(r"댓글|좋아요", cta[0].text))
-              and len("".join(cta[0].text.split())) <= 40)
-    item(cta_ok, "마무리 한 줄 (댓글·좋아요 유도, 공개 대사 뒤, 공백 제외 40자 이하)",
-         cta[0].text if cta else "없음 — 마지막 장면 lines 끝에 {text: ..., cta: true}")
+    # 마무리 한 줄 — 시청자 생각을 묻는 질문으로 댓글·좋아요를 자연스럽게 유도 (2026-10-26 사용자:
+    # "댓글 꾹! 좋아요 꾹!" 같은 직접 요청 대신 "여러분은 어떻게 생각하시나요? 여러분의 생각이 궁금합니다")
+    c = cta[0].text if cta else ""
+    cta_ok = (len(cta) == 1 and ep.lines[-1].cta and "?" in c and bool(re.search(r"여러분", c))
+              and not re.search(r"꾹|눌러|구독", c) and len("".join(c.split())) <= 40)
+    item(cta_ok, "마무리 한 줄 (시청자 생각을 묻는 질문, 공개 대사 뒤, 공백 제외 40자 이하)",
+         c if cta else "없음 — 마지막 장면 lines 끝에 {text: \"여러분이라면 …? 여러분의 생각이 궁금합니다.\", cta: true}")
     total = sum(len("".join(l.text.split())) for l in ep.lines)
     item(total <= 350, "대본 길이 (CTA 포함 공백 제외 350자 이하)", f"{total}자")
 

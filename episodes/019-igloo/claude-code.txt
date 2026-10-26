@@ -3,7 +3,7 @@ episodes/019-igloo 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 0. git pull
 1. python aw.py status 019 — 이미지 15장, Grok 클립 14개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
 2. 음성(audio/raw.wav)이 없으면: 묻지 말고 바로 python aw.py tts 019 를 실행한다.
-   (이 지시문 자체가 승인이다 — 대본 456자 = Typecast 크레딧 약 456. 사용한 글자 수는 마지막 보고에 적는다.)
+   (이 지시문 자체가 승인이다 — 대본 454자 = Typecast 크레딧 약 454. 사용한 글자 수는 마지막 보고에 적는다.)
    음성이 이미 있으면 새로 만들지 않는다 (--force 금지).
    네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
 2-1. 자막 싱크: python -c "import faster_whisper" 가 실패하면 pip install faster-whisper 부터 한다.
@@ -21,6 +21,7 @@ episodes/019-igloo 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 6. output/check/final-sheet.jpg 를 직접 보고 확인:
    - 자막·제목이 핵심 장면(눈보라, 눈 벽돌, 나선, 등잔, 잠자리)을 가리지 않는지
    - 주인공이 가운데 크게 보이는지, Grok 이 사람을 더 만들어 넣어 주인공을 가리지 않는지 (docs/scene-people.md) → 그런 장면은 보고
+   - 마지막 질문 자막("여러분의 생각이 궁금합니다")이 주인공이 시청자를 보는 컷 위에 나오고, 얼굴·손을 가리지 않는지
    - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
    - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
    - 고친 뒤 다시 compose
