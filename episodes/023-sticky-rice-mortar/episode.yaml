@@ -26,9 +26,9 @@ scenes:
     beat: hook
     lines:
       - text: "성벽을 쌓던 석공은 속이 터졌습니다."
-        captions: ["성벽을 쌓던 석공은 / 속이 터졌습니다"]
+        captions: ["성벽을 쌓던 석공은", "속이 터졌습니다"]
       - text: "돌 사이를 메운 석회 반죽이, 비만 오면 금이 가고 부서졌거든요."
-        captions: ["돌 사이를 메운 석회 반죽이", "비만 오면 / 금이 가고 부서졌거든요"]
+        captions: ["돌 사이를 메운 / 석회 반죽이", "비만 오면 / 금이 가고", "부서졌거든요"]
     visual: 비 갠 뒤 성벽 앞, 석공이 갈라진 반죽 틈을 보며 가슴을 친다
     image_prompt: >-
       A tall grey stone city wall after rain, puddles at its foot, cracks running through the white lime mortar between
@@ -51,7 +51,7 @@ scenes:
     beat: problem
     lines:
       - text: "틈으로 빗물이 스며들면, 단단한 성벽도 조금씩 무너져 내렸죠."
-        captions: ["틈으로 빗물이 스며들면", "단단한 성벽도 / 조금씩 무너져 내렸죠"]
+        captions: ["틈으로 / 빗물이 스며들면", "단단한 성벽도 / 조금씩", "무너져 내렸죠"]
     visual: 빗속에 성벽 모서리의 돌 몇 개가 미끄러져 떨어지고 석공이 놀라 물러선다
     image_prompt: >-
       Heavy rain on the city wall, water running down into the joints, a few stones at the corner sliding loose and falling,
@@ -65,7 +65,7 @@ scenes:
     beat: question
     lines:
       - text: "돌과 돌을 꽉 붙잡는 반죽, 어떻게 만들 수 있을까요?"
-        captions: ["돌과 돌을 꽉 붙잡는 반죽", "어떻게 만들 수 있을까요?"]
+        captions: ["돌과 돌을 / 꽉 붙잡는 반죽", "어떻게 / 만들 수 있을까요?"]
     visual: 저녁 밥상 앞, 석공이 그릇에 달라붙은 찹쌀밥을 떼어 보다가 눈을 반짝인다
     image_prompt: >-
       In a simple kitchen at dusk, the stonemason sitting at a low table trying to scrape sticky rice off his bowl and
@@ -107,7 +107,7 @@ scenes:
     beat: solution
     lines:
       - text: "그렇게 끈적해진 반죽으로 돌을 쌓자, 성벽이 빈틈없이 단단해졌습니다."
-        captions: ["그렇게 끈적해진 반죽으로 / 돌을 쌓자", "성벽이 / 빈틈없이 단단해졌습니다"]
+        captions: ["그렇게 끈적해진 / 반죽으로 돌을 쌓자", "성벽이 빈틈없이 / 단단해졌습니다"]
     visual: 석공이 흙손으로 반죽을 바르고 돌을 얹어 꾹 누르자 이음매가 매끈하게 차오른다
     image_prompt: >-
       The stonemason spreading the glossy rice-lime mortar with a trowel and pressing a heavy stone block onto it, the
@@ -129,7 +129,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 밥알을 섞은 반죽이, 정말 수백 년을 버틸 수 있을까요?"
-        captions: ["그런데 밥알을 섞은 반죽이", "정말 수백 년을 / 버틸 수 있을까요?"]
+        captions: ["그런데 / 밥알을 섞은 반죽이", "정말 수백 년을 / 버틸 수 있을까요?"]
     visual: 석공이 찹쌀밥 한 숟갈과 성벽을 번갈아 보며 고개를 갸웃한다
     image_prompt: >-
       The stonemason holding a spoonful of sticky rice in one hand, looking from it to the massive stone wall with a
@@ -143,9 +143,9 @@ scenes:
     beat: resolve
     lines:
       - text: "찹쌀 속 끈끈한 성분이 석회 알갱이가 크게 자라는 걸 막아, 아주 촘촘한 덩어리를 만들었습니다."
-        captions: ["찹쌀 속 끈끈한 성분이 / 석회 알갱이가", "크게 자라는 걸 막아", "아주 촘촘한 덩어리를 / 만들었습니다"]
+        captions: ["찹쌀 속 / 끈끈한 성분이", "석회 알갱이가 / 크게 자라는 걸 막아", "아주 촘촘한 / 덩어리를 만들었습니다"]
       - text: "덕분에 빗물에도 훨씬 강해졌죠."
-        captions: ["덕분에 / 빗물에도 훨씬 강해졌죠"]
+        captions: ["덕분에 빗물에도 / 훨씬 강해졌죠"]
     visual: 현미경 확대 — 보통 석회는 굵은 알갱이 사이에 틈이 많고, 찹쌀 반죽은 작은 알갱이가 빽빽하게 엉겨 있다
     image_prompt: >-
       A magnified microscopic comparison: on the left, ordinary lime mortar with large loose crystals and many gaps; on the
@@ -168,7 +168,7 @@ scenes:
     beat: info
     lines:
       - text: "이렇게 쌓은 성벽과 무덤은 큰 지진도 견뎠고, 불도저도 쩔쩔맸다고 합니다."
-        captions: ["이렇게 쌓은 성벽과 무덤은 / 큰 지진도 견뎠고", "불도저도 / 쩔쩔맸다고 합니다"]
+        captions: ["이렇게 쌓은 / 성벽과 무덤은", "큰 지진도 견뎠고", "불도저도 / 쩔쩔맸다고 합니다"]
     visual: 오늘날 오래된 회색 성벽 앞에서 노란 불도저가 꼼짝 못 하고 멈춰 서 있다
     image_prompt: >-
       Present day: an old grey stone city wall standing firm, a small yellow bulldozer pushing against a section of it
@@ -181,9 +181,9 @@ scenes:
     beat: info
     lines:
       - text: "찹쌀죽을 섞어 돌을 붙인 이 반죽이 바로, 찹쌀 모르타르입니다."
-        captions: ["찹쌀죽을 섞어 / 돌을 붙인", "이 반죽이 / 바로, 찹쌀 모르타르입니다"]
+        captions: ["찹쌀죽을 섞어 / 돌을 붙인", "이 반죽이 바로", "찹쌀 모르타르입니다"]
       - text: "여러분이라면 반죽에 무엇을 섞어 보셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 반죽에 / 무엇을 섞어 보셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 반죽에 무엇을", "섞어 보셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 성벽 위에서 석공이 흙손을 들고 뿌듯하게 웃는다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
