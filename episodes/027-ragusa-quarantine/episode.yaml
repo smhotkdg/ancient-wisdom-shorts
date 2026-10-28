@@ -28,7 +28,7 @@ scenes:
       - text: "라구사의 항구 관리는 넋이 나갔습니다."
         captions: ["라구사의 항구 관리는 / 넋이 나갔습니다"]
       - text: "무서운 흑사병이, 배를 타고 바다 건너 퍼지고 있었거든요."
-        captions: ["무서운 흑사병이", "배를 타고 / 바다 건너 퍼지고 있었거든요"]
+        captions: ["무서운 흑사병이", "배를 타고 / 바다 건너", "퍼지고 있었거든요"]
     visual: 성벽 항구 부두에 선 관리가 수평선에서 다가오는 범선들을 보며 넋이 나간 표정
     image_prompt: >-
       A medieval walled harbor city on the Adriatic coast with stone walls and red-tiled roofs, the official in the center
@@ -51,7 +51,7 @@ scenes:
     beat: problem
     lines:
       - text: "그런데 라구사는 바다 장사로 먹고사는 도시라, 항구를 닫을 수도 없었죠."
-        captions: ["그런데 라구사는 / 바다 장사로 먹고사는 도시라", "항구를 닫을 수도 / 없었죠"]
+        captions: ["그런데 라구사는", "바다 장사로 / 먹고사는 도시라", "항구를 닫을 수도 / 없었죠"]
     visual: 소금·옷감·향신료 상자가 쌓인 부두에서 관리가 머리를 감싸고, 뒤에서 상인 몇이 걱정스럽게 수군댄다
     image_prompt: >-
       A busy medieval stone quay piled with crates of spices, bolts of cloth and sacks of salt, merchant ships moored
@@ -66,7 +66,7 @@ scenes:
     beat: question
     lines:
       - text: "배는 받으면서 병은 막을 방법, 없을까요?"
-        captions: ["배는 받으면서", "병은 막을 방법, 없을까요?"]
+        captions: ["배는 받으면서", "병은 막을 방법, / 없을까요?"]
     visual: 성벽 위에 선 관리가 항구 안쪽 도시와 바깥 바다를 번갈아 보며 턱을 괸다
     image_prompt: >-
       The official standing on top of the stone city wall at dusk, the harbor and city roofs on one side and the open sea
@@ -80,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 관리는 병이 돈다는 곳에서 온 배를, 바로 항구에 들이지 않았습니다."
-        captions: ["그래서 관리는 / 병이 돈다는 곳에서 온 배를", "바로 항구에 / 들이지 않았습니다"]
+        captions: ["그래서 관리는 / 병이 돈다는 곳에서", "온 배를, 바로 항구에 / 들이지 않았습니다"]
     visual: 부두 끝에 선 관리가 다가오는 배를 향해 손바닥을 펴 "멈추라"는 손짓을 한다
     image_prompt: >-
       The official at the very end of the stone pier, one arm raised with his palm out in a firm stop gesture toward an
@@ -94,7 +94,7 @@ scenes:
     beat: solution
     lines:
       - text: "항구 앞바다에 닻을 내리고, 30일을 꼬박 기다리게 했죠."
-        captions: ["항구 앞바다에 닻을 내리고", "30일을 꼬박 / 기다리게 했죠"]
+        captions: ["항구 앞바다에 / 닻을 내리고", "30일을 꼬박 / 기다리게 했죠"]
     visual: 성 앞바다에 닻을 내린 범선들이 떠 있고, 관리가 장부에 날짜를 하나씩 지워 나간다
     image_prompt: >-
       Several merchant sailing ships riding at anchor in the calm sea outside the walled harbor city, sails furled, and in
@@ -116,7 +116,7 @@ scenes:
     beat: solution
     lines:
       - text: "그동안은 정해진 사람만 오가게 하고, 아무나 가까이 가지 못하게 막았습니다."
-        captions: ["그동안은 / 정해진 사람만 오가게 하고", "아무나 가까이 / 가지 못하게 막았습니다"]
+        captions: ["그동안은 / 정해진 사람만", "오가게 하고", "아무나 가까이 / 가지 못하게 막았습니다"]
     visual: 관리가 작은 배에 바구니를 실어 보내며, 뒤에 한 사람만 노를 저어 닻 내린 배로 간다 — 부두 입구엔 줄이 쳐져 있다
     image_prompt: >-
       On the pier, the official stretching a rope barrier across the entrance and pointing firmly at it, while a single
@@ -145,7 +145,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 기다리는 날을 40일로 늘렸고, 이 규칙은 베네치아 같은 다른 항구로도 퍼져 나갔죠."
-        captions: ["결국 기다리는 날을 / 40일로 늘렸고", "이 규칙은 베네치아 같은 / 다른 항구로도 퍼져 나갔죠"]
+        captions: ["결국 기다리는 날을 / 40일로 늘렸고", "이 규칙은 / 베네치아 같은", "다른 항구로도 / 퍼져 나갔죠"]
     visual: 관리가 장부에 새 줄을 길게 더 긋고 / 지중해 지도 위로 항구들에 불빛이 하나씩 켜진다
     image_prompt: >-
       The official adding a longer new row of tally marks to his ledger with a decisive stroke of the quill, a large old
@@ -166,7 +166,7 @@ scenes:
     beat: info
     lines:
       - text: "그리고 이탈리아 말로 40, '콰란타'에서 지금의 영어 단어가 생겼습니다."
-        captions: ["그리고 이탈리아 말로 40 / '콰란타'에서", "지금의 영어 단어가 / 생겼습니다"]
+        captions: ["그리고 / 이탈리아 말로 40", "'콰란타'에서 / 지금의 영어 단어가", "생겼습니다"]
     visual: 양피지 위에 깃펜으로 큼직하게 쓰인 숫자 40 (글자 없이 숫자만)
     image_prompt: >-
       Close-up of an old parchment on a wooden desk with a large number 40 written boldly in ink by a quill, the official's
@@ -192,6 +192,7 @@ scenes:
     motion_prompt: >-
       He lets out a breath and smiles; the camera slowly pulls back over the gate and harbor.
     camera: slow pull back
+    trim_start: 1.0
     extra_clips:
       - image_prompt: >-
           Close-up of the official in front of the harbor at sunset, looking straight at the viewer with a warm curious
