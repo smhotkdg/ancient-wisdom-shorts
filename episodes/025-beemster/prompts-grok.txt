@@ -1,0 +1,41 @@
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.8초
+Water laps over the fields; he tugs his hair and one of his clogs floats away. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.8–8.4초
+He grabs the floating clog, shakes the water out and stares at the lake, sighing. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.4–12.7초
+Water spreads across the low fields and just sits there, with nowhere to flow. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.7–16.1초
+The windmill sails turn in the wind; he looks from them to the lake and slowly grins. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.1–21.4초
+The camera rises slowly to show the dike and the ring canal circling the whole lake. Camera: slow rise. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 21.4–23.3초
+The sails of the windmills start turning one after another down the line; he spreads his arms. Camera: slow pan along the row. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 23.3–25.2초
+He knocks the wooden gear into place with a mallet and the shaft begins to turn. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.2–29.8초
+The scoop wheel turns, lifting water up and splashing it over into the canal. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 29.8–34.3초
+He unfolds the ruler all the way, looks up at the top of the dike and shakes his head. Camera: slow tilt up. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 34.3–39.6초
+Water is lifted up one step by the first mill, then the second, then the third, into the top canal. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 39.6–43.2초
+The three mills turn together and water steps up from pool to pool; he nods with satisfaction. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 43.2–48.5초
+The camera glides slowly over the perfect grid of green fields and straight canals. Camera: slow drone push forward. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.5–53.2초
+He tips his hat and smiles; the camera slowly pulls back over the fields and windmills. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 53.2–60.0초
+He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
