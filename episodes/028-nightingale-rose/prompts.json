@@ -1,0 +1,132 @@
+{
+  "characters": {
+    "nurse": "Character reference sheet of a slender, graceful young English woman in her 30s with a gentle oval face, soft grey-blue eyes, delicate features and dark brown hair parted in the middle and tied in a neat low bun, wearing a plain long dark grey wool dress with a white collar and cuffs, a white apron and a small white cap, a small notebook and pencil in her apron pocket. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A long, dim old army hospital ward with stone arches and rows of simple cots, the nurse seen from the knees up in the middle of the frame, hands clasped anxiously in front of her chest, worried eyes, shifting on her feet. Plain dark arched ceiling above her. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: a few sick soldiers resting under grey blankets on cots far behind her, blurred (only 2-4 people, never blocking the young Victorian nurse). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "She looks left and right down the ward, wringing her hands and shifting anxiously on her feet. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "She softly lays the cloth on his forehead and bites her lip with worry. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A stuffy, gloomy hospital ward with tightly shut small windows, puddles of dirty water and scattered rubbish on the stone floor, a hazy stale air, the nurse in the middle of the frame covering her nose with a handkerchief and frowning. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three cots with sleeping patients in the background, small and blurred (only 2-4 people, never blocking the young Victorian nurse). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "A drip falls into a dirty puddle; she covers her nose, frowns and looks at the shut windows. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "A small plain room at night lit by a single lantern, the nurse seen from the waist up in the middle of the frame, sitting at a wooden desk piled with papers, resting her chin on her hand and thinking hard. Plain dark wall above her. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "The lantern flickers; she taps her pencil on the desk, thinking, then her eyes light up. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The nurse at a desk covered with thick hospital record books and stacks of papers, turning a page of a big ledger with one hand and writing carefully in her small notebook with the other, focused expression, lantern light. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "She turns a ledger page, runs her finger down a column and writes quickly in her notebook. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "Her pencil adds tally marks one after another, filling the page. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The nurse leaning over a large sheet of paper on her desk, drawing a big circle with a brass compass and coloring in wedge-shaped petals radiating from the center like a flower, with watercolor brushes and small paint pots beside her. No text, no numbers on the paper. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "She swings the compass around, then paints one wedge-shaped petal after another. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "The petals fill in with color one by one around the circle. Camera: slow overhead rotate. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Close view of the nurse holding up the round petal chart, pointing with a paintbrush first at a large soft-blue petal and then at a small red petal, explaining with a serious gentle face. No text on the chart. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "She points the brush at a blue petal, then moves it to a small red petal and nods. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "Two round petal charts side by side on a desk: on the left, huge swollen soft-blue petals; on the right, much smaller blue petals after the change, a clear visual contrast. Clean educational illustration, no text, no numbers, no labels, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "The blue petals on the right chart slowly shrink while the left ones stay large. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A grand Victorian meeting room with tall curtains and a long polished table, the nurse standing in the middle of the frame confidently holding up the large round petal chart toward the table, calm and determined. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three surprised gentlemen officials in dark frock coats leaning forward at the table, smaller and out of focus (only 2-4 people, never blocking the young Victorian nurse). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "She unrolls the chart and holds it up; the officials behind her lean forward in surprise and murmur. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "She pushes the window open; sunlight and fresh air fill the room and the curtains flutter. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A quiet hospital corridor at night with stone arches, the nurse seen from the knees up in the middle of the frame, walking gently with a small glowing paper lantern in one hand and her notebook held to her chest in the other, warm light on her face. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "She walks slowly toward the camera, the lantern glowing softly, and glances down at her notebook with a small smile. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The nurse standing by a bright window in soft morning light, seen from the waist up in the middle of the frame, holding the finished round petal chart in front of her with both hands, smiling gently and proudly. No text on the chart. No other people. Characters: young Victorian nurse (attached reference image char_nurse.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Victorian nurse in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "She lifts the chart a little and smiles; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "She looks at the camera, tilts her head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

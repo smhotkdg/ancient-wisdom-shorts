@@ -1,0 +1,253 @@
+# 028 나이팅게일의 장미 도표 — 숫자를 꽃잎 그림으로 바꿔 병원을 바꾼 간호사
+id: "028"
+slug: nightingale-rose
+status: script_ok
+working_title: 전쟁터의 간호사는 왜 꽃잎 그림을 그렸을까?
+title_lines: ["꽃잎 그림 하나로", "병원을 바꿨다고?"]
+hook: 발을 동동 굴렀습니다
+caption_keywords: [상처보다, 숫자를, 꽃잎, 파란 꽃잎, 통계학자]
+
+story:
+  hero: 간호사
+  reveal: [나이팅게일, 장미 도표]
+
+characters:
+  - id: nurse
+    name: 간호사
+    name_en: young Victorian nurse
+    description: >-
+      a slender, graceful young English woman in her 30s with a gentle oval face, soft grey-blue eyes, delicate features
+      and dark brown hair parted in the middle and tied in a neat low bun, wearing a plain long dark grey wool dress with
+      a white collar and cuffs, a white apron and a small white cap, a small notebook and pencil in her apron pocket
+    note: 이야기 주인공. 1854년 크림 전쟁 때 스쿠타리 군 병원에 간 영국 간호사 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "전쟁터 병원에 온 젊은 간호사는 발을 동동 굴렀습니다."
+        captions: ["전쟁터 병원에 온 / 젊은 간호사는", "발을 동동 굴렀습니다"]
+      - text: "다친 병사들이, 상처보다 병으로 더 많이 쓰러졌거든요."
+        captions: ["다친 병사들이", "상처보다 병으로 / 더 많이 쓰러졌거든요"]
+    visual: 어둑한 병원 복도에서 간호사가 두 손을 가슴 앞에 모으고 안절부절, 뒤로 침상에 누운 병사 몇
+    image_prompt: >-
+      A long, dim old army hospital ward with stone arches and rows of simple cots, the nurse seen from the knees up in
+      the middle of the frame, hands clasped anxiously in front of her chest, worried eyes, shifting on her feet. Plain
+      dark arched ceiling above her.
+    characters: [nurse]
+    extras: "a few sick soldiers resting under grey blankets on cots far behind her, blurred"
+    motion_prompt: >-
+      She looks left and right down the ward, wringing her hands and shifting anxiously on her feet.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the nurse kneeling beside a cot, gently laying a damp cloth on a feverish young soldier's forehead
+          (only his face and blanket visible, no wounds), her face full of worry. No other people.
+        characters: [nurse]
+        motion_prompt: >-
+          She softly lays the cloth on his forehead and bites her lip with worry.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "병실은 더럽고 바람도 안 통해, 병이 퍼지기 딱 좋았죠."
+        captions: ["병실은 더럽고 / 바람도 안 통해", "병이 퍼지기 / 딱 좋았죠"]
+    visual: 꽉 닫힌 창, 바닥의 물웅덩이와 쓰레기 — 간호사가 코를 막고 얼굴을 찌푸린다
+    image_prompt: >-
+      A stuffy, gloomy hospital ward with tightly shut small windows, puddles of dirty water and scattered rubbish on the
+      stone floor, a hazy stale air, the nurse in the middle of the frame covering her nose with a handkerchief and
+      frowning.
+    characters: [nurse]
+    extras: "two or three cots with sleeping patients in the background, small and blurred"
+    motion_prompt: >-
+      A drip falls into a dirty puddle; she covers her nose, frowns and looks at the shut windows.
+    camera: slow pan
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "하지만 말만 해서는, 높은 사람들을 설득하기 어려웠죠."
+        captions: ["하지만 말만 해서는", "높은 사람들을 / 설득하기 어려웠죠"]
+      - text: "어떻게 하면 한눈에 보여 줄까요?"
+        captions: ["어떻게 하면 / 한눈에 보여 줄까요?"]
+    visual: 등불 하나 켠 작은 방, 책상 앞 간호사가 턱을 괴고 창밖을 보며 골똘히 생각한다
+    image_prompt: >-
+      A small plain room at night lit by a single lantern, the nurse seen from the waist up in the middle of the frame,
+      sitting at a wooden desk piled with papers, resting her chin on her hand and thinking hard. Plain dark wall above
+      her. No other people.
+    characters: [nurse]
+    motion_prompt: >-
+      The lantern flickers; she taps her pencil on the desk, thinking, then her eyes light up.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 간호사는 병사들이 왜 숨졌는지, 숫자를 모았습니다."
+        captions: ["그래서 간호사는 / 병사들이 왜 숨졌는지", "숫자를 모았습니다"]
+    visual: 두꺼운 장부를 넘기며 작은 수첩에 깨알같이 적는 간호사, 책상 위에 서류가 쌓여 있다
+    image_prompt: >-
+      The nurse at a desk covered with thick hospital record books and stacks of papers, turning a page of a big ledger
+      with one hand and writing carefully in her small notebook with the other, focused expression, lantern light. No
+      other people.
+    characters: [nurse]
+    motion_prompt: >-
+      She turns a ledger page, runs her finger down a column and writes quickly in her notebook.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the nurse's slender hand writing neat tally marks in a small notebook by lantern light, more marks
+          filling the page. No people visible besides her hand.
+        characters: [nurse]
+        motion_prompt: >-
+          Her pencil adds tally marks one after another, filling the page.
+        camera: macro static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 그 숫자를 달마다 한 칸씩, 꽃잎 그림으로 그렸죠."
+        captions: ["그리고 그 숫자를 / 달마다 한 칸씩", "꽃잎 그림으로 / 그렸죠"]
+    visual: 큰 종이에 컴퍼스로 원을 그리고, 열두 칸 꽃잎 모양을 하나씩 칠해 나가는 간호사
+    image_prompt: >-
+      The nurse leaning over a large sheet of paper on her desk, drawing a big circle with a brass compass and coloring
+      in wedge-shaped petals radiating from the center like a flower, with watercolor brushes and small paint pots beside
+      her. No text, no numbers on the paper. No other people.
+    characters: [nurse]
+    motion_prompt: >-
+      She swings the compass around, then paints one wedge-shaped petal after another.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Top-down view of a large paper on a wooden desk with a round flower-like chart of twelve wedge-shaped petals of
+          different sizes in soft blue and red watercolor, a brush resting beside it. No text, no numbers, no people.
+        motion_prompt: >-
+          The petals fill in with color one by one around the circle.
+        camera: slow overhead rotate
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "파란 꽃잎은 막을 수 있던 병, 빨간 꽃잎은 상처였습니다."
+        captions: ["파란 꽃잎은 / 막을 수 있던 병", "빨간 꽃잎은 / 상처였습니다"]
+    visual: 간호사가 붓끝으로 파란 꽃잎과 빨간 꽃잎을 차례로 가리킨다
+    image_prompt: >-
+      Close view of the nurse holding up the round petal chart, pointing with a paintbrush first at a large soft-blue
+      petal and then at a small red petal, explaining with a serious gentle face. No text on the chart. No other people.
+    characters: [nurse]
+    motion_prompt: >-
+      She points the brush at a blue petal, then moves it to a small red petal and nods.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 파란 꽃잎이 훨씬 컸고, 병원을 깨끗이 고친 뒤엔 확 작아졌죠. 무슨 뜻일까요?"
+        captions: ["그런데 파란 꽃잎이 / 훨씬 컸고", "병원을 깨끗이 고친 뒤엔 / 확 작아졌죠", "무슨 뜻일까요?"]
+    visual: 두 개의 꽃잎 그림 — 왼쪽은 파란 꽃잎이 크게 부풀어 있고, 오른쪽은 작게 줄어 있다
+    image_prompt: >-
+      Two round petal charts side by side on a desk: on the left, huge swollen soft-blue petals; on the right, much
+      smaller blue petals after the change, a clear visual contrast. Clean educational illustration, no text, no numbers,
+      no labels, no people.
+    motion_prompt: >-
+      The blue petals on the right chart slowly shrink while the left ones stay large.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "깨끗하게만 해도 살릴 수 있었던 거죠. 결국 이 그림은, 여왕까지 움직였습니다."
+        captions: ["깨끗하게만 해도 / 살릴 수 있었던 거죠", "결국 이 그림은 / 여왕까지 움직였습니다"]
+    visual: 화려한 회의실에서 간호사가 꽃잎 그림을 펼쳐 보이고, 뒤에서 관리 몇이 놀라 몸을 앞으로 기울인다
+    image_prompt: >-
+      A grand Victorian meeting room with tall curtains and a long polished table, the nurse standing in the middle of
+      the frame confidently holding up the large round petal chart toward the table, calm and determined.
+    characters: [nurse]
+    extras: "two or three surprised gentlemen officials in dark frock coats leaning forward at the table, smaller and out of focus"
+    motion_prompt: >-
+      She unrolls the chart and holds it up; the officials behind her lean forward in surprise and murmur.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A clean, bright hospital ward with large open windows, fresh air blowing the white curtains, swept floors and
+          neat cots, the nurse in the middle of the frame opening a window with a relieved smile. No other people.
+        characters: [nurse]
+        motion_prompt: >-
+          She pushes the window open; sunlight and fresh air fill the room and the curtains flutter.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "등불을 든 여인으로 불린 그녀는, 사실 숫자로 싸운 통계학자이기도 했죠."
+        captions: ["등불을 든 여인으로 / 불린 그녀는", "사실 숫자로 싸운 / 통계학자이기도 했죠"]
+    visual: 밤의 조용한 병원 복도를 작은 등불을 들고 걷는 간호사, 다른 손엔 수첩
+    image_prompt: >-
+      A quiet hospital corridor at night with stone arches, the nurse seen from the knees up in the middle of the frame,
+      walking gently with a small glowing paper lantern in one hand and her notebook held to her chest in the other, warm
+      light on her face. No other people.
+    characters: [nurse]
+    motion_prompt: >-
+      She walks slowly toward the camera, the lantern glowing softly, and glances down at her notebook with a small smile.
+    camera: slow pull back at eye level
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "숫자를 꽃잎으로 바꾼 이것이 바로, 나이팅게일의 장미 도표입니다."
+        captions: ["숫자를 꽃잎으로 / 바꾼 이것이", "바로, 나이팅게일의 / 장미 도표입니다"]
+      - text: "여러분이라면 높은 사람들을 어떻게 설득하셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 높은 사람들을", "어떻게 설득하셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 밝은 창가에서 간호사가 완성된 꽃잎 도표를 가슴 앞에 들고 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The nurse standing by a bright window in soft morning light, seen from the waist up in the middle of the frame,
+      holding the finished round petal chart in front of her with both hands, smiling gently and proudly. No text on the
+      chart. No other people.
+    characters: [nurse]
+    motion_prompt: >-
+      She lifts the chart a little and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the nurse by the bright window, looking straight at the viewer with a warm curious smile, one hand
+          open toward the viewer as if asking a question. No other people.
+        characters: [nurse]
+        motion_prompt: >-
+          She looks at the camera, tilts her head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Scientific American (2022), How Florence Nightingale Changed Data Visualization Forever (밤마다 등불을 들고 돌아 '등불을 든 여인'으로 불림, 대표 도표에서 파란 쐐기=막을 수 있던 병으로 인한 사망이 빨간 쐐기=상처로 인한 병원 사망보다 훨씬 큼, 위생 기술자들이 몇 달에 걸쳐 오물을 치우고 하수도를 다시 짓고 환기구를 달자 사망이 크게 줄어듦 — 도표에 '위생 개선 시작' 표시, 주된 설득 대상은 군의 수장인 빅토리아 여왕, 도표가 의회 양원의 막사 과밀 논의로 이어짐, 1856년 귀국 후 도표 작업) — https://www.scientificamerican.com/article/how-florence-nightingale-changed-data-visualization-forever/"
+  - "University of Vermont 통계학과 — Florence Nightingale (1854년 간호사 38명과 스쿠타리로 감, 1855년 2월 병원 사망률 42.7%, 위생 개혁 후 사망률 감소, 쐐기 넓이로 값을 나타내는 원형 도표(polar-area diagram)를 고안, 1858년 왕립통계학회 회원) — https://www.uvm.edu/~rsingle/stats/Nightingale.html"
+  - "Lehigh University Libraries — Nightingale's Rose Diagram (크림 전쟁 영국군 사망을 열두 달 열두 칸의 원형 도표로, 세 가지 색이 사망 원인, 위생 개혁의 근거, 1858년 Notes on Matters Affecting the Health… of the British Army) — https://exhibits.lib.lehigh.edu/exhibits/show/data_visualization/science/nightingale"
+
+accuracy_notes:
+  - "주인공은 실존 인물 플로렌스 나이팅게일(1820~1910). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것."
+  - "'발을 동동 굴렀습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '상처보다 병으로 더 많이'는 Scientific American의 '파란 쐐기(막을 수 있던 병)가 빨간 쐐기(상처)보다 훨씬 많음' 기준. 사망률 수치(42.7% 등)는 대본에 쓰지 않는다."
+  - "s03 '말만 해서는 설득하기 어려웠다'는 도표로 여왕·의회를 설득했다는 사실을 이야기로 푼 재구성. 특정 인물이 거절했다는 기록을 지어내지 않는다."
+  - "s04 실제 도표 작업은 1856년 귀국 뒤 군 기록 등을 바탕으로 했다 (SciAm). 화면은 시점을 압축해 보여 준다."
+  - "s05 실제 도표의 각 칸은 한 달이다 (Lehigh). '꽃잎'은 쐐기를 쉽게 부른 표현이며, 실제 도표에는 검은색 등 다른 원인도 있다."
+  - "s07 '고친 뒤엔 확 작아졌다'는 SciAm의 '위생 개선 시작 이후 사망이 크게 줄어듦'을 쉽게 푼 것. 위생 공사는 1855년 위생 위원회와 기술자들이 했다."
+  - "s08 '여왕까지 움직였다'는 SciAm 기준 (주 설득 대상 빅토리아 여왕, 의회 양원에서도 막사 과밀 논의). 여왕은 화면에 그리지 않는다."
+  - "s10 '장미 도표'는 한국에서 흔히 부르는 이름이며, 영어로는 polar area diagram 또는 coxcomb(닭 볏)이라고도 한다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 간호사 한 명 중심, s01·s02에 멀리 침상의 환자, s08에 관리 2~3명. 상처·피·시신은 화면에 넣지 않는다."
+
+youtube:
+  titles:
+    - 꽃잎 그림 하나로 병원을 바꿨다고? 등불을 든 여인의 진짜 무기
+    - 전쟁터 간호사가 붓을 든 이유
+    - 여왕을 설득한 동그란 그림의 비밀
+  description: |-
+    🕯️ 병사들이 상처보다 병으로 더 많이 쓰러진다… 그런데 아무리 말해도 안 바뀐다면?
+
+    전쟁터 병원의 젊은 간호사는 붓을 들었습니다 🎨
+    숫자를 하나하나 모아, 달마다 한 칸씩 동그란 꽃잎으로!
+    파란 꽃잎은 막을 수 있던 병, 빨간 꽃잎은 상처… 그런데 파란 꽃잎이 훨씬 컸죠 💙
+
+    결국 이 그림 한 장이 여왕과 의회까지 움직였답니다 🌹 지금도 인포그래픽 하면 꼭 나오는 그림이에요.
+  comment_question: 여러분이라면 높은 사람들을 어떻게 설득하셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [나이팅게일, 인포그래픽, 통계, 간호사, 쇼츠]
