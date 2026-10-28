@@ -14,11 +14,11 @@ story:
 characters:
   - id: navigator
     name: 항해사
-    name_en: young Marshallese navigator
+    name_en: young island navigator
     description: >-
-      a lean, sun-tanned young Micronesian man in his 20s with thick wavy black hair tied back, bright dark eyes and a
-      determined face, bare-chested with a woven pandanus-fiber wrap skirt, a small shell necklace, simple tattoo lines
-      on his shoulders, barefoot
+      a friendly young Pacific island sailor in his 20s with thick wavy black hair tied back, warm brown skin, bright
+      dark eyes and a cheerful determined face, wearing a sleeveless woven pandanus-fiber tunic that covers his chest and
+      a matching knee-length wrap skirt, a small shell necklace, barefoot
     note: 이야기 주인공. 아우트리거 카누로 섬 사이를 오가는 마셜 제도의 젊은 항해사
 
 scenes:
@@ -29,14 +29,15 @@ scenes:
         captions: ["마셜 제도의 젊은 항해사는 / 멘탈이 나가버렸습니다"]
       - text: "바다에 흩어진 섬들이 너무 낮고 작아서, 멀리서는 보이지도 않았거든요."
         captions: ["바다에 흩어진 섬들이 / 너무 낮고 작아서", "멀리서는 / 보이지도 않았거든요"]
-    visual: 끝없는 푸른 바다 위 작은 카누, 항해사가 수평선을 두리번거리며 머리를 감싼다
+    visual: 끝없는 푸른 바다 위 작은 카누, 항해사가 수평선을 두리번거리며 양손으로 머리를 감싼다
     image_prompt: >-
       A small outrigger sailing canoe with a triangular pandanus sail alone on the endless blue Pacific Ocean, nothing but
-      flat horizon in every direction, the navigator in the center standing in the canoe, clutching his head in panic as
-      he scans the empty horizon.
+      flat horizon in every direction, the navigator seen from the knees up in the middle of the frame, standing in the
+      canoe with both hands pressed to the sides of his head in dismay as he scans the empty horizon, wide empty sky
+      above him.
     characters: [navigator]
     motion_prompt: >-
-      The canoe rocks on the swells; he turns left and right searching the horizon and clutches his head.
+      The canoe rocks on the swells; he turns left and right searching the horizon with his hands on the sides of his head.
     camera: static
     extra_clips:
       - image_prompt: >-
@@ -153,14 +154,15 @@ scenes:
     lines:
       - text: "출발 전에 통째로 외우고, 바다에선 카누에 전해지는 물결을 몸으로 느꼈거든요."
         captions: ["출발 전에 통째로 외우고", "바다에선 카누에 전해지는 / 물결을 몸으로 느꼈거든요"]
-    visual: 카누 바닥에 등을 대고 누운 항해사가 눈을 감고 흔들림에 집중하다, 눈을 뜨고 한쪽을 가리킨다
+    visual: 카누 가운데 책상다리로 앉은 항해사가 눈을 감고 흔들림에 집중하다, 눈을 뜨고 한쪽을 가리킨다
     image_prompt: >-
-      The navigator lying on his back in the hull of the outrigger canoe on the open ocean, eyes closed, palms flat on the
-      wooden hull, feeling the rocking of the swells, calm and focused. No other people.
+      The navigator sitting cross-legged in the middle of his outrigger canoe on the open ocean, seen from the waist up in
+      the middle of the frame, eyes gently closed in concentration, both palms resting flat on the wooden hull, feeling
+      the rocking of the swells, calm and focused, wide sky above him. No other people.
     characters: [navigator]
     motion_prompt: >-
-      The canoe rocks gently; he lies still with eyes closed, then opens his eyes and points confidently to one side.
-    camera: slow overhead push in
+      The canoe rocks gently; he sits still with eyes closed, then opens his eyes, smiles and points confidently to one side.
+    camera: slow push in at eye level
     extra_clips:
       - image_prompt: >-
           The navigator standing at the bow of his canoe, smiling with relief as a low line of palm trees rises from the
@@ -175,14 +177,14 @@ scenes:
     lines:
       - text: "이 바다 읽는 법은, 항해사에서 항해사로 대대로 전해졌다고 합니다."
         captions: ["이 바다 읽는 법은", "항해사에서 항해사로 / 대대로 전해졌다고 합니다"]
-    visual: 해변에 앉은 항해사가 엮음 틀을 펼쳐 놓고 손가락으로 짚으며 설명하고, 뒤에서 어린 제자 몇이 눈을 반짝이며 듣는다
+    visual: 해변에 앉은 항해사가 엮음 틀을 펼쳐 놓고 손가락으로 짚으며 설명하고, 뒤에서 젊은 뱃사람 몇이 귀 기울여 듣는다
     image_prompt: >-
       On a beach at sunset, the navigator sitting cross-legged with the palm-strip lattice chart spread on a mat in front
       of him, tracing a curved strip with his finger as he explains.
     characters: [navigator]
-    extras: "two or three young apprentices sitting on the sand, leaning in and listening with wide eyes"
+    extras: "two or three young adult sailors sitting on the sand, leaning in and listening with interest"
     motion_prompt: >-
-      He traces the curves with his finger while explaining; the apprentices behind him lean in and nod.
+      He traces the curves with his finger while explaining; the sailors behind him lean in and nod.
     camera: slow push in
 
   - id: s10
@@ -222,11 +224,11 @@ accuracy_notes:
   - "s04 '알아챘습니다'는 한 사람이 발견한 것처럼 줄인 연출. 실제로는 오랜 세월 항해사들이 쌓은 지식이다."
   - "s05 재료는 Smithsonian 기준 코코넛·야자 줄기와 개오지 조개 (RMG는 '나무 줄기'). 대본은 '야자 줄기'로 쓴다."
   - "s06 '엉키는 자리 근처에 섬'은 Smithsonian의 '줄기가 만나는 곳은 바다가 어지러운 자리로, 항해사의 위치를 알려 주곤 했다'를 쉽게 푼 것."
-  - "s08 카누에 누워 느끼는 장면은 '물결을 느낌과 눈으로 읽었다'(Smithsonian)를 화면으로 표현한 연출이다. 특정 신체 부위로 느꼈다는 속설은 쓰지 않는다."
+  - "s08 카누에 앉아 눈을 감고 느끼는 장면은 '물결을 느낌과 눈으로 읽었다'(Smithsonian)를 화면으로 표현한 연출이다. 특정 신체 부위로 느꼈다는 속설은 쓰지 않는다."
   - "s09 '대대로 전해졌다고 합니다'는 전승 표현 — 일부 항해사가 지닌 지식이었다는 근거(Smithsonian·Atlas Obscura)에 기반."
   - "막대 해도에는 연습용(마탕)과 길 안내용(메도) 등 종류가 있지만 대본에서는 나누지 않는다."
   - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
-  - "화면 인물은 항해사 한 명 중심, s09에만 배경으로 어린 제자 2~3명."
+  - "화면 인물은 항해사 한 명 중심, s09에만 배경으로 젊은 뱃사람 2~3명. ChatGPT 생성 제한을 피하려고 옷은 가슴을 덮는 판다누스 섬유 옷으로, 문신은 넣지 않는다 (실제 복식은 이와 다를 수 있음)."
 
 youtube:
   titles:
