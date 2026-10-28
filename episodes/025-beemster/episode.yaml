@@ -26,9 +26,9 @@ scenes:
     beat: hook
     lines:
       - text: "네덜란드의 풍차 기술자는 머리를 쥐어뜯었습니다."
-        captions: ["네덜란드의 풍차 기술자는 / 머리를 쥐어뜯었습니다"]
+        captions: ["네덜란드의 / 풍차 기술자는", "머리를 쥐어뜯었습니다"]
       - text: "커다란 호수가 툭하면 넘쳐, 낮은 땅을 물바다로 만들었거든요."
-        captions: ["커다란 호수가 툭하면 넘쳐", "낮은 땅을 / 물바다로 만들었거든요"]
+        captions: ["커다란 호수가 / 툭하면 넘쳐", "낮은 땅을 / 물바다로 만들었거든요"]
     visual: 넘친 호숫물에 잠긴 낮은 들판, 나막신 신은 기술자가 물에 발목까지 잠겨 머리를 쥐어뜯는다
     image_prompt: >-
       A flat, low Dutch landscape under a grey sky, a huge lake overflowing onto the fields and a small farmhouse, the
@@ -51,7 +51,7 @@ scenes:
     beat: problem
     lines:
       - text: "땅이 워낙 낮아서, 넘친 물을 흘려보낼 곳도 마땅치 않았죠."
-        captions: ["땅이 워낙 낮아서", "넘친 물을 흘려보낼 곳도 / 마땅치 않았죠"]
+        captions: ["땅이 워낙 낮아서", "넘친 물을 / 흘려보낼 곳도", "마땅치 않았죠"]
     visual: 단면도 — 낮은 들판과 호수가 같은 높이이고, 물이 빠질 곳이 없다
     image_prompt: >-
       Side cross-section of the low flat land: the lake and the flooded fields at nearly the same low level, with nowhere
@@ -64,7 +64,7 @@ scenes:
     beat: question
     lines:
       - text: "아예 이 호수를, 밭으로 바꿀 수는 없을까요?"
-        captions: ["아예 이 호수를", "밭으로 바꿀 수는 없을까요?"]
+        captions: ["아예 이 호수를", "밭으로 / 바꿀 수는 없을까요?"]
     visual: 둑 위에 선 기술자가 바람에 돌아가는 풍차와 넓은 호수를 번갈아 보며 눈을 반짝인다
     image_prompt: >-
       The millwright standing on a grassy embankment beside the lake, his hat brim flapping in the strong wind, looking
@@ -78,7 +78,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 기술자는 호수 둘레에 둑을 쌓고, 바깥에 빙 둘러 물길을 팠습니다."
-        captions: ["그래서 기술자는 / 호수 둘레에 둑을 쌓고", "바깥에 빙 둘러 / 물길을 팠습니다"]
+        captions: ["그래서 기술자는", "호수 둘레에 / 둑을 쌓고", "바깥에 빙 둘러 / 물길을 팠습니다"]
     visual: 하늘에서 본 호수 — 호수를 빙 두른 긴 둑과 그 바깥의 둥근 물길
     image_prompt: >-
       Aerial view of a large lake completely surrounded by a long earthen dike, with a wide ring canal running all the way
@@ -92,7 +92,7 @@ scenes:
     beat: solution
     lines:
       - text: "그리고 둑을 따라 풍차를, 무려 마흔세 대나 세웠죠."
-        captions: ["그리고 둑을 따라 풍차를", "무려 마흔세 대나 세웠죠"]
+        captions: ["그리고 둑을 따라 / 풍차를", "무려 마흔세 대나 / 세웠죠"]
     visual: 둑을 따라 수많은 풍차가 줄지어 서 있고, 기술자가 그 앞에서 두 팔을 벌린다
     image_prompt: >-
       A long row of many traditional Dutch drainage windmills standing along the dike around the lake, stretching into the
@@ -114,7 +114,7 @@ scenes:
     beat: solution
     lines:
       - text: "바람이 불면 풍차가 호숫물을 퍼 올려, 바깥 물길로 넘겼습니다."
-        captions: ["바람이 불면 / 풍차가 호숫물을 퍼 올려", "바깥 물길로 넘겼습니다"]
+        captions: ["바람이 불면", "풍차가 호숫물을 / 퍼 올려", "바깥 물길로 / 넘겼습니다"]
     visual: 풍차 아래 물레바퀴가 돌며 호숫물을 퍼 올려 둑 너머 물길로 쏟는다
     image_prompt: >-
       A windmill on the dike with its sails turning, and at its base a large wooden scoop wheel lifting water from the lake
@@ -128,7 +128,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 물을 4미터 넘게 올려야 하는데, 풍차 한 대로 될까요?"
-        captions: ["그런데 물을 4미터 넘게 / 올려야 하는데", "풍차 한 대로 될까요?"]
+        captions: ["그런데 물을 / 4미터 넘게 올려야 하는데", "풍차 한 대로 될까요?"]
     visual: 기술자가 키보다 훨씬 높은 둑을 올려다보며 자를 펼쳐 재 보고 고개를 젓는다
     image_prompt: >-
       The millwright at the bottom of the high dike holding up his folding ruler against it, looking up at how high the
@@ -142,7 +142,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그래서 풍차를 계단처럼 세워, 한 대가 올리면 다음 풍차가 이어받게 했죠."
-        captions: ["그래서 풍차를 / 계단처럼 세워", "한 대가 올리면 / 다음 풍차가 이어받게 했죠"]
+        captions: ["그래서 풍차를 / 계단처럼 세워", "한 대가 올리면", "다음 풍차가 / 이어받게 했죠"]
       - text: "한 대에 약 1.5미터씩, 세 번에 나눠 올린 거죠."
         captions: ["한 대에 약 1.5미터씩", "세 번에 나눠 / 올린 거죠"]
     visual: 단면도 — 풍차 세 대가 계단처럼 높이를 달리해 서서 물을 단계별로 위로 넘긴다
@@ -166,7 +166,7 @@ scenes:
     beat: info
     lines:
       - text: "마침내 호수는 바닥을 드러냈고, 그 자리엔 바둑판 같은 밭과 길이 생겼죠."
-        captions: ["마침내 호수는 / 바닥을 드러냈고", "그 자리엔 / 바둑판 같은 밭과 길이 생겼죠"]
+        captions: ["마침내 호수는 / 바닥을 드러냈고", "그 자리엔 / 바둑판 같은", "밭과 길이 생겼죠"]
     visual: 하늘에서 본 바둑판 모양의 초록 밭과 곧은 길·물길, 둘레를 두른 둑과 풍차
     image_prompt: >-
       Aerial view of a vast flat green polder laid out in a perfect grid of square fields, straight roads and canals,
@@ -179,9 +179,9 @@ scenes:
     beat: info
     lines:
       - text: "풍차로 호수를 퍼내 만든 이 땅이 바로, 베임스터 간척지입니다."
-        captions: ["풍차로 호수를 퍼내 / 만든", "이 땅이 / 바로, 베임스터 간척지입니다"]
+        captions: ["풍차로 호수를 / 퍼내 만든", "이 땅이 바로", "베임스터 간척지입니다"]
       - text: "여러분이라면 물에 잠긴 땅을 어떻게 되찾으셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 물에 잠긴 땅을 / 어떻게 되찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 물에 잠긴 땅을", "어떻게 되찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 초록 밭 사이 길 위에서 기술자가 풍차들을 바라보며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
