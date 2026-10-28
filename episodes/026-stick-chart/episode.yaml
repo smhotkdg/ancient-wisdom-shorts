@@ -1,0 +1,245 @@
+# 026 마셜 제도 막대 해도 — 야자 줄기와 조개껍데기로 파도를 그린 바다 지도
+id: "026"
+slug: stick-chart
+status: script_ok
+working_title: 마셜 제도 사람들은 어떻게 보이지 않는 섬을 찾아갔을까?
+title_lines: ["야자 줄기로", "바다 지도를?"]
+hook: 멘탈이 나가버렸습니다
+caption_keywords: [보이지도, 휘어진다, 조개껍데기, 엉키는, 외우고]
+
+story:
+  hero: 항해사
+  reveal: [막대 해도]
+
+characters:
+  - id: navigator
+    name: 항해사
+    name_en: young Marshallese navigator
+    description: >-
+      a lean, sun-tanned young Micronesian man in his 20s with thick wavy black hair tied back, bright dark eyes and a
+      determined face, bare-chested with a woven pandanus-fiber wrap skirt, a small shell necklace, simple tattoo lines
+      on his shoulders, barefoot
+    note: 이야기 주인공. 아우트리거 카누로 섬 사이를 오가는 마셜 제도의 젊은 항해사
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "마셜 제도의 젊은 항해사는 멘탈이 나가버렸습니다."
+        captions: ["마셜 제도의 젊은 항해사는 / 멘탈이 나가버렸습니다"]
+      - text: "바다에 흩어진 섬들이 너무 낮고 작아서, 멀리서는 보이지도 않았거든요."
+        captions: ["바다에 흩어진 섬들이 / 너무 낮고 작아서", "멀리서는 / 보이지도 않았거든요"]
+    visual: 끝없는 푸른 바다 위 작은 카누, 항해사가 수평선을 두리번거리며 머리를 감싼다
+    image_prompt: >-
+      A small outrigger sailing canoe with a triangular pandanus sail alone on the endless blue Pacific Ocean, nothing but
+      flat horizon in every direction, the navigator in the center standing in the canoe, clutching his head in panic as
+      he scans the empty horizon.
+    characters: [navigator]
+    motion_prompt: >-
+      The canoe rocks on the swells; he turns left and right searching the horizon and clutches his head.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the navigator shading his eyes with one hand, squinting at the distant horizon where only a tiny,
+          barely visible line of palm trees sits flat on the sea. No other people.
+        characters: [navigator]
+        motion_prompt: >-
+          He squints harder, leans forward, then lowers his hand with a worried frown.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "다음 섬을 놓치면, 그대로 끝없는 바다 한가운데였죠."
+        captions: ["다음 섬을 놓치면", "그대로 / 끝없는 바다 한가운데였죠"]
+    visual: 하늘에서 본 넓은 바다 — 아주 작은 산호섬 몇 개가 멀리 흩어져 있고, 카누는 그 사이 점 하나
+    image_prompt: >-
+      High aerial view of a vast deep-blue ocean with a few tiny, flat ring-shaped coral atolls scattered very far apart,
+      and one tiny canoe drifting in the empty water between them. No people.
+    motion_prompt: >-
+      The camera rises higher and higher; the canoe becomes a tiny dot among the scattered islands.
+    camera: slow rise
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "보이지도 않는 섬을, 대체 어떻게 찾아갈까요?"
+        captions: ["보이지도 않는 섬을", "대체 어떻게 찾아갈까요?"]
+    visual: 카누 가장자리에 앉은 항해사가 손을 물에 담그고 출렁이는 물결을 골똘히 바라본다
+    image_prompt: >-
+      The navigator sitting on the edge of his outrigger canoe, one hand trailing in the water, staring thoughtfully at
+      the rolling swells around the canoe. No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      Swells lift and lower the canoe; he watches the waves closely and narrows his eyes.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그때 항해사는 알아챘습니다. 파도가 섬에 부딪히면, 물결이 휘어진다는 걸요."
+        captions: ["그때 항해사는 알아챘습니다", "파도가 섬에 부딪히면 / 물결이 휘어진다는 걸요"]
+    visual: 하늘에서 본 섬 — 곧게 밀려오던 파도가 섬에 부딪혀 섬 둘레로 휘어 돌아간다
+    image_prompt: >-
+      Top-down view of a small coral island with long straight ocean swells rolling toward it, the swell lines bending and
+      curving around both sides of the island and bouncing back from its shore. Clean educational illustration, no labels,
+      no text, no people.
+    motion_prompt: >-
+      Straight swells roll in, hit the island and curve around it in bending rings.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the navigator's face lighting up with realization as he feels the canoe rocking in a new direction,
+          eyes wide, one finger raised. No other people.
+        characters: [navigator]
+        motion_prompt: >-
+          The canoe tilts in a new direction; his eyes widen and he raises one finger with a grin.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그래서 야자 줄기를 휘어 묶어 물결을 그리고, 섬 자리엔 조개껍데기를 달았죠."
+        captions: ["그래서 야자 줄기를 휘어 묶어 / 물결을 그리고", "섬 자리엔 / 조개껍데기를 달았죠"]
+    visual: 해변 오두막 그늘에서 항해사가 가는 야자 줄기를 휘어 엮고, 교차점에 작은 조개껍데기를 묶는다
+    image_prompt: >-
+      In the shade of a palm-thatched hut on a white sand beach, the navigator kneeling on a woven mat, bending thin
+      strips of coconut palm rib into curves and tying them into a lattice frame with fiber cord, small cowrie shells laid
+      beside him. No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      He bends a palm strip into a curve, ties it to the frame and knots a small cowrie shell onto it.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the navigator's hands tying a small white cowrie shell onto the crossing point of two curved palm
+          strips with thin coconut fiber cord. No other people.
+        characters: [navigator]
+        motion_prompt: >-
+          His fingers wrap the cord around the shell and pull the knot tight.
+        camera: macro static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "물결이 서로 엉키는 자리, 그 근처에 섬이 있다는 표시였습니다."
+        captions: ["물결이 서로 엉키는 자리", "그 근처에 섬이 있다는 / 표시였습니다"]
+    visual: 완성된 엮음 틀을 위에서 본 모습 — 휘어진 줄기들이 엉키는 곳마다 조개껍데기가 달려 있다
+    image_prompt: >-
+      Top-down view of a finished lattice of thin curved and straight palm strips tied together on a woven mat, small
+      cowrie shells fixed where the curved strips cross and tangle. The navigator's finger pointing at one of the shells.
+      No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      His finger traces a curved strip and stops on the shell where the curves cross.
+    camera: slow push in
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "하지만 정작 바다에 나갈 땐, 이 지도를 두고 갔습니다. 왜일까요?"
+        captions: ["하지만 정작 바다에 나갈 땐", "이 지도를 두고 갔습니다 / 왜일까요?"]
+    visual: 카누를 바다로 밀어내는 항해사, 엮음 틀은 해변 오두막 벽에 그대로 걸려 있다
+    image_prompt: >-
+      The navigator pushing his outrigger canoe from the white sand beach into the turquoise lagoon, glancing back over
+      his shoulder at the palm-strip lattice chart left hanging on the wall of the hut behind him. No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      He pushes the canoe into the water and glances back at the chart hanging on the hut, smiling.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "출발 전에 통째로 외우고, 바다에선 카누에 전해지는 물결을 몸으로 느꼈거든요."
+        captions: ["출발 전에 통째로 외우고", "바다에선 카누에 전해지는 / 물결을 몸으로 느꼈거든요"]
+    visual: 카누 바닥에 등을 대고 누운 항해사가 눈을 감고 흔들림에 집중하다, 눈을 뜨고 한쪽을 가리킨다
+    image_prompt: >-
+      The navigator lying on his back in the hull of the outrigger canoe on the open ocean, eyes closed, palms flat on the
+      wooden hull, feeling the rocking of the swells, calm and focused. No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      The canoe rocks gently; he lies still with eyes closed, then opens his eyes and points confidently to one side.
+    camera: slow overhead push in
+    extra_clips:
+      - image_prompt: >-
+          The navigator standing at the bow of his canoe, smiling with relief as a low line of palm trees rises from the
+          horizon ahead of him. No other people.
+        characters: [navigator]
+        motion_prompt: >-
+          The palm-tree island slowly appears on the horizon; he raises his fist with a joyful smile.
+        camera: slow push forward
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이 바다 읽는 법은, 항해사에서 항해사로 대대로 전해졌다고 합니다."
+        captions: ["이 바다 읽는 법은", "항해사에서 항해사로 / 대대로 전해졌다고 합니다"]
+    visual: 해변에 앉은 항해사가 엮음 틀을 펼쳐 놓고 손가락으로 짚으며 설명하고, 뒤에서 어린 제자 몇이 눈을 반짝이며 듣는다
+    image_prompt: >-
+      On a beach at sunset, the navigator sitting cross-legged with the palm-strip lattice chart spread on a mat in front
+      of him, tracing a curved strip with his finger as he explains.
+    characters: [navigator]
+    extras: "two or three young apprentices sitting on the sand, leaning in and listening with wide eyes"
+    motion_prompt: >-
+      He traces the curves with his finger while explaining; the apprentices behind him lean in and nod.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "야자 줄기와 조개로 파도를 그린 이것이 바로, 마셜 제도의 막대 해도입니다."
+        captions: ["야자 줄기와 조개로 / 파도를 그린 이것이", "바로, 마셜 제도의 / 막대 해도입니다"]
+      - text: "여러분이라면 보이지 않는 섬을 어떻게 찾으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 보이지 않는 섬을", "어떻게 찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 해변에서 항해사가 막대 해도를 들어 보이며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The navigator standing on a white sand beach at golden sunset, his canoe pulled up behind him, proudly holding up the
+      palm-strip and cowrie-shell lattice chart in both hands, smiling. No other people.
+    characters: [navigator]
+    motion_prompt: >-
+      He lifts the chart higher and smiles; the camera slowly pulls back over the beach and lagoon.
+    camera: slow pull back
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the navigator on the sunset beach, looking straight at the viewer with a warm curious smile, one
+          hand open toward the viewer as if asking a question. No other people.
+        characters: [navigator]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Smithsonian Ocean (스미스소니언 국립자연사박물관) — Navigating the Waters: Micronesian Stick Charts (코코넛·야자 줄기와 개오지 조개로 만듦, 휘어진 줄기는 섬에 막혀 휘는 물결 방향, 줄기가 엉키는 곳은 바다가 어지러운 자리로 위치를 알려 줌, 조개는 섬, 지도는 약해서 출발 전에 외우고 바다에는 가져가지 않음, 바다에선 물결을 느낌과 눈으로 읽는 파도 항법, 항해사(ri-metos)의 '비밀 지식'을 나타낸 것으로 여겨짐) — https://ocean.si.edu/human-connections/history-cultures/navigating-waters-micronesian-stick-charts"
+  - "Royal Museums Greenwich (영국 국립해양박물관) — Stick chart from the Marshall Islands (나무 줄기를 섬유로 묶고 개오지 조개로 섬 표시, 휘어진 줄기는 알려진 너울·파도 모양, 구전 항해 지식을 외우게 돕는 교육 도구, 19세기부터 알려짐) — https://rmg.co.uk/collections/objects/rmgc-object-670368"
+  - "Atlas Obscura — How Marshall Islanders Navigated the Sea Using Only Sticks and Shells (보조: 바다에 가져가지 않고 미리 외움, 공동체의 일부 항해사가 지식을 지님, 1862년 선교사 L.H. 굴릭이 Nautical Magazine에 기록) — https://www.atlasobscura.com/articles/how-marshall-islanders-navigated-the-sea-using-only-sticks-and-shells"
+
+accuracy_notes:
+  - "항해사 인물과 감정, 대사는 설명용 재구성. 특정 실존 인물이 아니며 이름·연도를 지어내지 않았다."
+  - "'멘탈이 나가버렸습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '섬이 낮고 작아 멀리서 보이지 않음'은 마셜 제도가 낮은 산호섬(환초)이라는 일반 사실을 이야기로 푼 것. 몇 km에서 안 보이는지 같은 수치는 쓰지 않는다."
+  - "s04 '알아챘습니다'는 한 사람이 발견한 것처럼 줄인 연출. 실제로는 오랜 세월 항해사들이 쌓은 지식이다."
+  - "s05 재료는 Smithsonian 기준 코코넛·야자 줄기와 개오지 조개 (RMG는 '나무 줄기'). 대본은 '야자 줄기'로 쓴다."
+  - "s06 '엉키는 자리 근처에 섬'은 Smithsonian의 '줄기가 만나는 곳은 바다가 어지러운 자리로, 항해사의 위치를 알려 주곤 했다'를 쉽게 푼 것."
+  - "s08 카누에 누워 느끼는 장면은 '물결을 느낌과 눈으로 읽었다'(Smithsonian)를 화면으로 표현한 연출이다. 특정 신체 부위로 느꼈다는 속설은 쓰지 않는다."
+  - "s09 '대대로 전해졌다고 합니다'는 전승 표현 — 일부 항해사가 지닌 지식이었다는 근거(Smithsonian·Atlas Obscura)에 기반."
+  - "막대 해도에는 연습용(마탕)과 길 안내용(메도) 등 종류가 있지만 대본에서는 나누지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 항해사 한 명 중심, s09에만 배경으로 어린 제자 2~3명."
+
+youtube:
+  titles:
+    - 야자 줄기로 바다 지도를? 마셜 제도 항해사의 비밀
+    - 보이지 않는 섬을 찾아간 태평양의 지도
+    - 지도를 두고 바다에 나간 이유
+  description: |-
+    🌊 끝없는 바다, 섬은 너무 낮아서 보이지도 않는다면… 어떻게 찾아가죠?
+
+    마셜 제도 항해사의 비밀은 '파도'였습니다 🛶
+    파도는 섬에 부딪히면 휘어진다! 그래서 야자 줄기를 휘어 묶어 물결을 그리고, 섬 자리엔 조개껍데기를 🐚
+    그런데 정작 바다에 나갈 땐 이 지도를 두고 갔다는데요?
+
+    지도는 머릿속에, 길은 몸으로 🧭 요즘 내비게이션도 울고 갈 바다 읽는 법이랍니다.
+  comment_question: 여러분이라면 보이지 않는 섬을 어떻게 찾으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [마셜제도, 항해, 지도, 태평양, 쇼츠]
