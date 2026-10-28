@@ -1,0 +1,127 @@
+{
+  "characters": {
+    "official": "Character reference sheet of a slim, serious man in his 40s with short dark curly hair, a neatly trimmed dark beard, thick eyebrows and thoughtful brown eyes, wearing a long deep-red wool robe with a black belt and a small black cap, a leather-bound ledger and a quill tucked under his arm. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A medieval walled harbor city on the Adriatic coast with stone walls and red-tiled roofs, the official in the center foreground standing on the stone pier, staring in shock at several sailing ships approaching from the horizon under a dark stormy sky, his ledger slipping from his arm. No other people. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The ships glide closer on the grey sea; his jaw drops and the ledger slips from his arm. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "He reads the letter, his hand starts to tremble and he looks up in fear. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A busy medieval stone quay piled with crates of spices, bolts of cloth and sacks of salt, merchant ships moored along it, the official standing among the goods holding his head with a troubled look. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three worried merchants in colorful robes whispering to each other (only 2-4 people, never blocking the Ragusan harbor official). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "He looks from the ships to the piles of goods and rubs his forehead; the merchants behind him whisper anxiously. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The official standing on top of the stone city wall at dusk, the harbor and city roofs on one side and the open sea with anchored ships on the other, resting his chin on his hand, deep in thought. No other people. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He looks from the city to the open sea and back, then narrows his eyes thoughtfully. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The official at the very end of the stone pier, one arm raised with his palm out in a firm stop gesture toward an approaching merchant sailing ship, determined expression. No other people visible. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The ship slows and turns away from the pier as he holds up his hand firmly. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Several merchant sailing ships riding at anchor in the calm sea outside the walled harbor city, sails furled, and in the foreground the official at a small desk on the pier crossing off days in his ledger with a quill. No other people visible. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The anchored ships rock gently; he crosses off one more day in the ledger. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "The quill draws another tally mark and crosses it; the candle flickers. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s06": {
+      "image": "On the pier, the official stretching a rope barrier across the entrance and pointing firmly at it, while a single small rowboat with one rower carries a basket of bread toward an anchored ship in the distance. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: one appointed rower in a small boat, far in the distance (only 2-4 people, never blocking the Ragusan harbor official). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He ties the rope tight and points at it; the lone rowboat slowly moves toward the anchored ship. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The official in his candlelit stone office frowning at his ledger, tapping his finger on a page full of crossed-off tally marks, unsure and worried. No other people. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He taps the page twice, frowns and slowly shakes his head. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s08": {
+      "image": "The official adding a longer new row of tally marks to his ledger with a decisive stroke of the quill, a large old map of the Mediterranean pinned on the wall behind him. No other people. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "He draws the longer row with a firm stroke and nods, then glances at the map behind him. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "Small warm lights appear one after another at harbor cities across the map. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s09": {
+      "image": "Close-up of an old parchment on a wooden desk with a large number 40 written boldly in ink by a quill, the official's hand holding the quill beside it, candlelight glowing. No other text. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The quill finishes the last stroke of the 40 and lifts away; the ink glistens. Camera: macro slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The official standing in front of the open stone city gate at golden sunset, the calm harbor and ships behind him, ledger under his arm, smiling with relief. No other people. Characters: Ragusan harbor official (attached reference image char_official.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Ragusan harbor official in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top fifth of the image calm and simple (sky or plain wall) for a title. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He lets out a breath and smiles; the camera slowly pulls back over the gate and harbor. Camera: slow pull back. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen."
+        }
+      ]
+    }
+  }
+}

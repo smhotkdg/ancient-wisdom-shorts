@@ -1,0 +1,236 @@
+# 027 라구사 검역 — 병이 도는 곳에서 온 배를 바다에 세워 둔 항구 도시
+id: "027"
+slug: ragusa-quarantine
+status: script_ok
+working_title: 라구사 사람들은 왜 배를 30일이나 바다에 세워 뒀을까?
+title_lines: ["배를 30일이나", "바다에 세워뒀다고?"]
+hook: 넋이 나갔습니다
+caption_keywords: [흑사병, 닻을, 30일, 40일, 콰란타]
+
+story:
+  hero: 관리
+  reveal: [검역]
+
+characters:
+  - id: official
+    name: 항구 관리
+    name_en: Ragusan harbor official
+    description: >-
+      a slim, serious man in his 40s with short dark curly hair, a neatly trimmed dark beard, thick eyebrows and
+      thoughtful brown eyes, wearing a long deep-red wool robe with a black belt and a small black cap, a leather-bound
+      ledger and a quill tucked under his arm
+    note: 이야기 주인공. 14세기 아드리아해 항구 도시 라구사(지금의 크로아티아 두브로브니크)의 항구 관리
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "라구사의 항구 관리는 넋이 나갔습니다."
+        captions: ["라구사의 항구 관리는 / 넋이 나갔습니다"]
+      - text: "무서운 흑사병이, 배를 타고 바다 건너 퍼지고 있었거든요."
+        captions: ["무서운 흑사병이", "배를 타고 / 바다 건너 퍼지고 있었거든요"]
+    visual: 성벽 항구 부두에 선 관리가 수평선에서 다가오는 범선들을 보며 넋이 나간 표정
+    image_prompt: >-
+      A medieval walled harbor city on the Adriatic coast with stone walls and red-tiled roofs, the official in the center
+      foreground standing on the stone pier, staring in shock at several sailing ships approaching from the horizon under
+      a dark stormy sky, his ledger slipping from his arm. No other people.
+    characters: [official]
+    motion_prompt: >-
+      The ships glide closer on the grey sea; his jaw drops and the ledger slips from his arm.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the official reading a crumpled letter by candlelight, his face going pale, a map of the
+          Mediterranean with dark marks spreading across port cities on the table beside him. No other people.
+        characters: [official]
+        motion_prompt: >-
+          He reads the letter, his hand starts to tremble and he looks up in fear.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "그런데 라구사는 바다 장사로 먹고사는 도시라, 항구를 닫을 수도 없었죠."
+        captions: ["그런데 라구사는 / 바다 장사로 먹고사는 도시라", "항구를 닫을 수도 / 없었죠"]
+    visual: 소금·옷감·향신료 상자가 쌓인 부두에서 관리가 머리를 감싸고, 뒤에서 상인 몇이 걱정스럽게 수군댄다
+    image_prompt: >-
+      A busy medieval stone quay piled with crates of spices, bolts of cloth and sacks of salt, merchant ships moored
+      along it, the official standing among the goods holding his head with a troubled look.
+    characters: [official]
+    extras: "two or three worried merchants in colorful robes whispering to each other"
+    motion_prompt: >-
+      He looks from the ships to the piles of goods and rubs his forehead; the merchants behind him whisper anxiously.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "배는 받으면서 병은 막을 방법, 없을까요?"
+        captions: ["배는 받으면서", "병은 막을 방법, 없을까요?"]
+    visual: 성벽 위에 선 관리가 항구 안쪽 도시와 바깥 바다를 번갈아 보며 턱을 괸다
+    image_prompt: >-
+      The official standing on top of the stone city wall at dusk, the harbor and city roofs on one side and the open sea
+      with anchored ships on the other, resting his chin on his hand, deep in thought. No other people.
+    characters: [official]
+    motion_prompt: >-
+      He looks from the city to the open sea and back, then narrows his eyes thoughtfully.
+    camera: slow orbit
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 관리는 병이 돈다는 곳에서 온 배를, 바로 항구에 들이지 않았습니다."
+        captions: ["그래서 관리는 / 병이 돈다는 곳에서 온 배를", "바로 항구에 / 들이지 않았습니다"]
+    visual: 부두 끝에 선 관리가 다가오는 배를 향해 손바닥을 펴 "멈추라"는 손짓을 한다
+    image_prompt: >-
+      The official at the very end of the stone pier, one arm raised with his palm out in a firm stop gesture toward an
+      approaching merchant sailing ship, determined expression. No other people visible.
+    characters: [official]
+    motion_prompt: >-
+      The ship slows and turns away from the pier as he holds up his hand firmly.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "항구 앞바다에 닻을 내리고, 30일을 꼬박 기다리게 했죠."
+        captions: ["항구 앞바다에 닻을 내리고", "30일을 꼬박 / 기다리게 했죠"]
+    visual: 성 앞바다에 닻을 내린 범선들이 떠 있고, 관리가 장부에 날짜를 하나씩 지워 나간다
+    image_prompt: >-
+      Several merchant sailing ships riding at anchor in the calm sea outside the walled harbor city, sails furled, and in
+      the foreground the official at a small desk on the pier crossing off days in his ledger with a quill. No other
+      people visible.
+    characters: [official]
+    motion_prompt: >-
+      The anchored ships rock gently; he crosses off one more day in the ledger.
+    camera: slow pull back
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the official's ledger page with a long row of tally marks being crossed off one by one with a
+          quill, candlelight flickering. No people.
+        motion_prompt: >-
+          The quill draws another tally mark and crosses it; the candle flickers.
+        camera: macro static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그동안은 정해진 사람만 오가게 하고, 아무나 가까이 가지 못하게 막았습니다."
+        captions: ["그동안은 / 정해진 사람만 오가게 하고", "아무나 가까이 / 가지 못하게 막았습니다"]
+    visual: 관리가 작은 배에 바구니를 실어 보내며, 뒤에 한 사람만 노를 저어 닻 내린 배로 간다 — 부두 입구엔 줄이 쳐져 있다
+    image_prompt: >-
+      On the pier, the official stretching a rope barrier across the entrance and pointing firmly at it, while a single
+      small rowboat with one rower carries a basket of bread toward an anchored ship in the distance.
+    characters: [official]
+    extras: "one appointed rower in a small boat, far in the distance"
+    motion_prompt: >-
+      He ties the rope tight and points at it; the lone rowboat slowly moves toward the anchored ship.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "하지만 30일로는, 모자랐던 걸까요?"
+        captions: ["하지만 30일로는", "모자랐던 걸까요?"]
+    visual: 장부를 넘기던 관리가 멈칫하며 이마를 찌푸리고, 30이라는 숫자 위를 손가락으로 두드린다
+    image_prompt: >-
+      The official in his candlelit stone office frowning at his ledger, tapping his finger on a page full of crossed-off
+      tally marks, unsure and worried. No other people.
+    characters: [official]
+    motion_prompt: >-
+      He taps the page twice, frowns and slowly shakes his head.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 기다리는 날을 40일로 늘렸고, 이 규칙은 베네치아 같은 다른 항구로도 퍼져 나갔죠."
+        captions: ["결국 기다리는 날을 / 40일로 늘렸고", "이 규칙은 베네치아 같은 / 다른 항구로도 퍼져 나갔죠"]
+    visual: 관리가 장부에 새 줄을 길게 더 긋고 / 지중해 지도 위로 항구들에 불빛이 하나씩 켜진다
+    image_prompt: >-
+      The official adding a longer new row of tally marks to his ledger with a decisive stroke of the quill, a large old
+      map of the Mediterranean pinned on the wall behind him. No other people.
+    characters: [official]
+    motion_prompt: >-
+      He draws the longer row with a firm stroke and nods, then glances at the map behind him.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          An old parchment map of the Mediterranean Sea with small glowing dots lighting up one by one at port cities
+          along the coasts, starting from the Adriatic. No people.
+        motion_prompt: >-
+          Small warm lights appear one after another at harbor cities across the map.
+        camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그리고 이탈리아 말로 40, '콰란타'에서 지금의 영어 단어가 생겼습니다."
+        captions: ["그리고 이탈리아 말로 40 / '콰란타'에서", "지금의 영어 단어가 / 생겼습니다"]
+    visual: 양피지 위에 깃펜으로 큼직하게 쓰인 숫자 40 (글자 없이 숫자만)
+    image_prompt: >-
+      Close-up of an old parchment on a wooden desk with a large number 40 written boldly in ink by a quill, the official's
+      hand holding the quill beside it, candlelight glowing. No other text.
+    characters: [official]
+    motion_prompt: >-
+      The quill finishes the last stroke of the 40 and lifts away; the ink glistens.
+    camera: macro slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "병을 성문 밖에서 기다리게 한 이것이 바로, 검역입니다."
+        captions: ["병을 성문 밖에서 / 기다리게 한 이것이", "바로, 검역입니다"]
+      - text: "여러분이라면 무서운 병을 어떻게 막으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 무서운 병을", "어떻게 막으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 맑게 갠 항구에서 관리가 성문 앞에 서서 안도의 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The official standing in front of the open stone city gate at golden sunset, the calm harbor and ships behind him,
+      ledger under his arm, smiling with relief. No other people.
+    characters: [official]
+    motion_prompt: >-
+      He lets out a breath and smiles; the camera slowly pulls back over the gate and harbor.
+    camera: slow pull back
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the official in front of the harbor at sunset, looking straight at the viewer with a warm curious
+          smile, one hand open toward the viewer as if asking a question. No other people.
+        characters: [official]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Gensini, Conti, Lippi (2004), The concept of quarantine in history: from plague to SARS, Journal of Infection 49(4) (1377년 라구사 '트렌티나' — 감염됐거나 의심되는 곳에서 온 배는 항구에 들어오기 전 30일 동안 닻을 내리고 머물러야 함, 정해진 사람만 돌볼 수 있고 아무나 들어가거나 음식을 가져갈 수 없음, 어기면 벌금과 한 달 격리, 이후 40일로 늘어남, '쿼런틴'은 이탈리아어 quaranta(40)에서 옴, 1423년 베네치아 첫 라자레토) — https://library.alnap.org/system/files/content/resource/files/main/gensini%2C-g-the-concept-of-quarantine-in-history.pdf"
+  - "Tognotti (2013), Lessons from the History of Quarantine, from Plague to Influenza A, Emerging Infectious Diseases 19(2), 미국 CDC (1377년 라구사 대평의회가 30일 격리 'trentino' 도입, 다른 도시로 퍼지며 30일에서 40일 'quarantino'로 늘어남, 40일은 효과 또는 성경의 40일 상징 때문이라는 설) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3559069"
+  - "NPR (2021), How A Medieval City Dealing With The Black Death Invented Quarantine (보조: 라구사는 작은 무역 도시라 무역을 멈출 수 없어 고안, 주변 섬 등에서 즉석으로 격리, 1642년 성 밖 라자레토 완공) — https://www.npr.org/2021/07/06/1012490871/how-a-medieval-city-dealing-with-the-black-death-invented-quarantine"
+
+accuracy_notes:
+  - "항구 관리 인물과 감정, 대사는 설명용 재구성. 실제 결정은 라구사 대평의회·총독(Rector)이 내렸고, 의사 야코프(파도바)의 조언이 있었다고 전한다 (Gensini). 대본은 이름 없이 '항구 관리'로 쓴다."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s02 '항구를 닫을 수 없었다'는 NPR·Gensini의 '무역을 지켜야 하는 경제적 필요'를 이야기로 푼 것."
+  - "s05 30일은 Gensini·Tognotti 기준. NPR은 처음부터 40일로 적는다 — 대본은 학술지 기준 30일 → 40일로 쓴다."
+  - "s06 '정해진 사람만 오가게'는 Gensini의 '대평의회가 정한 사람만 돌볼 수 있고 다른 사람은 음식도 가져갈 수 없음'을 쉽게 푼 것. 벌칙(코·귀를 자름 등)은 다루지 않는다."
+  - "s07 '30일로는 모자랐던 걸까요?'는 Gensini의 '짧은 기간으로는 부족하다고 여겨진 듯'과 Tognotti의 '더 효과적이었을 수도, 성경의 40일 상징일 수도'라는 두 설을 질문으로만 남긴 것 (단정하지 않음)."
+  - "s08 40일로 늘어나고 다른 도시로 퍼진 것은 Tognotti 기준. 베네치아는 1423년 라자레토를 연 대표 사례 (Gensini). 라구사가 직접 베네치아에 전했다고 쓰지 않는다."
+  - "당시 사람들은 세균·잠복기를 몰랐다. 대본에서 '잠복기를 알고 기다렸다'는 식으로 쓰지 않는다."
+  - "s10 정답 '검역'은 영어 quarantine의 우리말 대응어로 쓴 것. s09에서 영어 단어 자체는 말하지 않고 '지금의 영어 단어'로만 둔다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 관리 한 명 중심, s02에 배경 상인 2~3명, s06에 멀리 노 젓는 사람 1명. 흑사병 환자나 시신은 화면에 넣지 않는다."
+
+youtube:
+  titles:
+    - 배를 30일이나 바다에 세워뒀다고? 중세 항구의 비밀
+    - 흑사병을 막은 '40일 기다리기' 작전
+    - 쿼런틴이 숫자 40에서 왔다고?
+  description: |-
+    ⚓ 무서운 병이 배를 타고 온다… 그런데 항구를 닫으면 도시가 굶는다면?
+
+    라구사(지금의 두브로브니크) 항구 관리의 작전은 단순했습니다 🚢
+    "일단 바다에 닻 내리고, 30일만 기다리세요!"
+    그런데 30일로는 모자랐는지, 결국 40일로 늘렸다는데요 📜
+
+    그 40일, 이탈리아 말로 '콰란타'가 지금 우리가 아는 그 단어가 되었답니다 😷
+  comment_question: 여러분이라면 무서운 병을 어떻게 막으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [두브로브니크, 흑사병, 검역, 중세, 쇼츠]
