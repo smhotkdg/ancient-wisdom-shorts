@@ -213,7 +213,8 @@ def collect(ep: Episode, timing: dict) -> tuple[list[dict], list[dict]]:
         for part in clip_parts(sc):
             if part["own_image"]:
                 patt = [f"char_{c}.png" for c in part.get("characters") or [] if c in chars]
-                patt.append(f"{sid}.png (같은 장소·조명 유지)")
+                if sc.get("characters"):   # 단면도·풍경(사람 없는 장면)은 장소 기준으로 첨부하지 않는다
+                    patt.append(f"{sid}.png (같은 장소·조명 유지)")
                 gpt.append({"key": part["image"], "label": part["image"].upper(), "save": f"images/{part['image']}.png",
                             "attach": ", ".join(patt), "text": image_prompt(ep, part)})
     return gpt, grok_plan(ep, timing)
@@ -252,6 +253,30 @@ def gpt_preamble(items: list[dict]) -> str:
    응답이 끊겨야 한다면 마지막 줄에 "계속"이라고만 쓰고 멈추고, 내가 "계속"이라고 보내면 남은 이미지부터 바로 이어서 만든다.
 3. 모든 이미지는 세로 9:16, 이미지 안에 글자·숫자·로고·워터마크를 넣지 않는다.
 4. 각 이미지 아래에는 저장할 파일 이름(예: s01.png)만 한 줄로 적는다. 다른 설명은 쓰지 않는다."""
+
+
+def redo_items(ep: Episode, gpt_items: list[dict], grok_items: list[dict]) -> tuple[list[dict], list[dict], str]:
+    """episode.yaml 의 redo: {images: [s01, s08-2 ...], reason: ...} — 다시 만들 이미지와 그 이미지로 만드는 Grok 클립만 고른다.
+    (2026-10-28 사용자: 얼굴이 제목에 가린 컷만 ChatGPT 한도 안에서 다시 만들기)"""
+    redo = ep.data.get("redo") or {}
+    keys = [str(k) for k in redo.get("images") or []]
+    if not keys:
+        return [], [], ""
+    gpt = [it for it in gpt_items if it["key"] in keys]
+    grok = [g for g in grok_items if g["upload"].removeprefix("images/").removesuffix(".png") in keys]
+    return gpt, grok, str(redo.get("reason") or "")
+
+
+def redo_preamble(ep: Episode, items: list[dict], reason: str) -> str:
+    chars = ", ".join(f"char_{c['id']}.png" for c in ep.data.get("characters") or [])
+    why = f" ({reason})" if reason else ""
+    return f"""[진행 방식 — 다시 만들기, 질문하지 말고 바로 생성]
+아래 이미지 {len(items)}장만 다시 만들어 줘{why}. 캐릭터 레퍼런스는 새로 만들지 않는다 — 첨부한 {chars}의 얼굴·체형·옷을 그대로 쓴다.
+1. 확인 질문이나 선택지 제시 없이 순서대로 바로 만든다. 끊겨야 한다면 마지막 줄에 "계속"이라고만 쓰고, 내가 "계속"이라고 보내면 남은 것부터 이어서 만든다.
+2. 가장 중요: 이미지 위쪽 1/4은 비워 둔다(하늘이나 민무늬 벽). 머리·얼굴·들어 올린 손·모자가 위쪽 1/4에 들어가면 안 된다.
+   주인공의 머리는 위에서 35~45% 높이, 무릎 또는 허리 위가 보이게. 클로즈업이어도 얼굴은 화면 가운데.
+3. 모든 이미지는 세로 9:16, 이미지 안에 글자·숫자·로고·워터마크를 넣지 않는다.
+4. 각 이미지 아래에는 저장할 파일 이름(예: s01.png)만 한 줄로 적는다 (기존 파일을 덮어쓴다)."""
 
 
 def _collection(pid: str, title: str, hint: str, items: list[dict], header, preamble: str = "") -> str:
@@ -309,11 +334,13 @@ def build(ep: Episode) -> str:
     out.append("<li>파일을 에피소드 폴더에 넣고 알려주기 → 합성</li></ol>")
 
     cc = claude_code_prompt(ep, timing, grok_items)
+    r_gpt, r_grok, r_why = redo_items(ep, gpt_items, grok_items)
     out.append("<nav class='tabs' role='tablist'>"
                "<button class='tab' role='tab' data-tab='scenes' onclick=\"showTab('scenes')\">장면별 보기</button>"
                f"<button class='tab' role='tab' data-tab='gpt' onclick=\"showTab('gpt')\">GPT 이미지 모음<span class='n'>{len(gpt_items)}</span></button>"
                f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button>"
-               "<button class='tab' role='tab' data-tab='cc' onclick=\"showTab('cc')\">Claude Code</button></nav>")
+               + (f"<button class='tab' role='tab' data-tab='redo' onclick=\"showTab('redo')\">다시 만들기<span class='n'>{len(r_gpt)}</span></button>" if r_gpt else "")
+               + "<button class='tab' role='tab' data-tab='cc' onclick=\"showTab('cc')\">Claude Code</button></nav>")
     out.append("<div class='panel' data-panel='cc' hidden><div class='bulk'><p><b>로컬 Claude Code 합성 지시문</b> · "
                "이미지·클립을 폴더에 넣은 뒤 레포 폴더에서 Claude Code 를 열고 붙여 넣으세요.</p>"
                "<button class='copy big' data-target='cc-src' onclick='copyText(this)'>복사</button></div>"
@@ -322,6 +349,12 @@ def build(ep: Episode) -> str:
                            gpt_items, gpt_header, gpt_preamble(gpt_items)))
     out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
                            grok_items, grok_header))
+    if r_gpt:
+        out.append(_collection("redo", "다시 만들 ChatGPT 이미지", f"{r_why} — 이 이미지들만 다시 만듭니다. 아래에 같은 장면의 Grok 클립도 있습니다.",
+                               r_gpt, gpt_header, redo_preamble(ep, r_gpt, r_why)).removesuffix("</div></div>")
+                   + f"<h3>다시 만들 Grok 클립 {len(r_grok)}개</h3><pre class='hidden-src' id='redo-grok'>{_e(bundle(r_grok, grok_header))}</pre>"
+                   + "<button class='copy big' data-target='redo-grok' onclick='copyText(this)'>Grok 전체 복사</button>"
+                   + "".join(_prompt_box(f"Grok 영상 {g['label']}", g["text"]) for g in r_grok) + "</div></div>")
     out.append("<div class='panel' data-panel='scenes'>")
 
     if chars:
@@ -390,6 +423,14 @@ def write(ep: Episode) -> str:
     (ep.dir / "prompts.json").write_text(json.dumps(prompts, ensure_ascii=False, indent=2), encoding="utf-8")
     (ep.dir / "prompts-chatgpt.txt").write_text(bundle(gpt_items, gpt_header, gpt_preamble(gpt_items)), encoding="utf-8")
     (ep.dir / "prompts-grok.txt").write_text(bundle(grok_items, grok_header), encoding="utf-8")
+    r_gpt, r_grok, r_why = redo_items(ep, gpt_items, grok_items)
+    for name, text in (("prompts-chatgpt-redo.txt", bundle(r_gpt, gpt_header, redo_preamble(ep, r_gpt, r_why)) if r_gpt else ""),
+                       ("prompts-grok-redo.txt", bundle(r_grok, grok_header) if r_grok else "")):
+        p = ep.dir / name
+        if text:
+            p.write_text(text, encoding="utf-8")
+        elif p.exists():
+            p.unlink()
     (ep.dir / "claude-code.txt").write_text(claude_code_prompt(ep, timing, grok_items), encoding="utf-8")
     publish_copy(ep)
     return str(path)

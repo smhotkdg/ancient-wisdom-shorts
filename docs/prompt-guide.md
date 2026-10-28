@@ -39,3 +39,21 @@
 `styles/3d-cartoon.yaml`을 복사해 새 이름으로 만들고 `image_prefix` 등을 고친 뒤,
 `episode.yaml`에 `style: <새이름>` (이번 편만) 또는 `config/project.yaml`의 `style.default` (전체).
 `python aw.py conti <ep>`를 다시 실행하면 프롬프트가 새 화풍으로 바뀐다.
+
+## 제목 자리 비우기 · 몇 장만 다시 만들기 (2026-10-28)
+
+- 016~018·023·025 러프 컷에서 주인공 얼굴·손이 위쪽 제목(중심 y 279)에 자주 가렸다.
+  화풍 프리셋(`styles/*.yaml`)이 이제 "위쪽 1/4 비우기, 머리는 위에서 35~45%, 무릎·허리 위 구도"를 모든 이미지에 붙이고,
+  Grok에는 "카메라가 올라가 얼굴이 위쪽 1/4로 가지 않게"를 붙인다.
+  `image_prompt`를 쓸 때도 팔을 머리 위로 드는 동작, 카메라 tilt up / rise, 주인공이 화면 맨 위 높은 곳에 선 구도는 피한다.
+- 러프 컷에서 몇 컷만 고쳐야 하면 `episode.yaml`에 적고 `aw.py conti`를 다시 돌린다:
+
+```yaml
+redo:
+  reason: "얼굴이 제목에 가린 컷"
+  images: [s01, s03, s08-2]     # 이미지 이름 (sNN, sNN-2)
+```
+
+  콘티에 "다시 만들기" 탭과 `prompts-chatgpt-redo.txt`·`prompts-grok-redo.txt`가 생긴다 (캐릭터 레퍼런스는 다시 만들지 않음 → ChatGPT 한도를 아낀다).
+  다 고치면 `redo:`를 지우고 `aw.py conti`를 다시 돌리면 두 파일도 지워진다.
+- 사람 없는 장면(단면도·풍경)의 -2 컷에는 그 장면 이미지를 장소 기준으로 첨부하지 않는다.

@@ -9,7 +9,10 @@ image_prefix: >-
   vertical 9:16 composition.
 image_suffix: >-
   Main action in the middle of the frame, key subjects inside the central 80% of the width,
-  keep the top fifth of the image calm and simple for a title.
+  keep the top quarter of the image empty and simple (plain sky or plain wall) for a title:
+  no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head
+  about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep
+  the face in the middle of the frame, never near the top edge.
   No text, no letters, no captions, no logos, no watermark, no modern objects.
 character_sheet_template: >-
   Character reference sheet of {description}. Full body, front view and three-quarter view,
@@ -17,4 +20,6 @@ character_sheet_template: >-
 motion_suffix: >-
   Keep the character, outfit and background consistent with the image. Smooth natural motion.
   Natural ambient sound effects only: no speech, no voices, no music, no text on screen.
+  The camera never tilts or rises so that the character's head moves into the top quarter of the frame;
+  keep the face in the middle of the frame for the whole clip.
 palette_note: "따뜻한 금속·린넨·석회암 색"

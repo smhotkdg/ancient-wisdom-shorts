@@ -31,12 +31,14 @@ scenes:
         captions: ["커다란 호수가 / 툭하면 넘쳐", "낮은 땅을 / 물바다로 만들었거든요"]
     visual: 넘친 호숫물에 잠긴 낮은 들판, 나막신 신은 기술자가 물에 발목까지 잠겨 머리를 쥐어뜯는다
     image_prompt: >-
-      A flat, low Dutch landscape under a grey sky, a huge lake overflowing onto the fields and a small farmhouse, the
-      millwright in the center foreground standing ankle-deep in floodwater in wooden clogs, tugging at his hair in
-      frustration.
+      A flat, low Dutch landscape under a wide plain grey sky, a huge lake overflowing onto the fields and a small
+      farmhouse, the millwright seen from the knees up in the middle of the frame, standing ankle-deep in floodwater in
+      wooden clogs, both hands gripping the sides of his head at ear level in frustration (hands not raised above his
+      head), his face in the middle of the frame with plenty of empty grey sky above him.
     characters: [millwright]
     motion_prompt: >-
-      Water laps over the fields; he tugs his hair and one of his clogs floats away.
+      Water laps over the fields; he squeezes the sides of his head in frustration and one of his clogs floats away.
+      His head stays in the middle of the frame; he never raises his arms above his head.
     camera: static
     extra_clips:
       - image_prompt: >-
@@ -67,12 +69,14 @@ scenes:
         captions: ["아예 이 호수를", "밭으로 / 바꿀 수는 없을까요?"]
     visual: 둑 위에 선 기술자가 바람에 돌아가는 풍차와 넓은 호수를 번갈아 보며 눈을 반짝인다
     image_prompt: >-
-      The millwright standing on a grassy embankment beside the lake, his hat brim flapping in the strong wind, looking
-      from a single spinning windmill to the wide lake with a spark of an idea in his eyes. No other people.
+      Medium shot from slightly above: the millwright seen from the waist up in the middle of the frame, standing on a
+      grassy embankment beside the lake, one hand holding his hat down in the wind, a single spinning windmill and the
+      wide lake behind him, a spark of an idea in his eyes. Wide empty sky in the top part of the image. No other
+      people.
     characters: [millwright]
     motion_prompt: >-
       The windmill sails turn in the wind; he looks from them to the lake and slowly grins.
-    camera: slow push in
+    camera: static, slight push in at chest height
 
   - id: s04
     beat: solution
@@ -131,12 +135,14 @@ scenes:
         captions: ["그런데 물을 / 4미터 넘게 올려야 하는데", "풍차 한 대로 될까요?"]
     visual: 기술자가 키보다 훨씬 높은 둑을 올려다보며 자를 펼쳐 재 보고 고개를 젓는다
     image_prompt: >-
-      The millwright at the bottom of the high dike holding up his folding ruler against it, looking up at how high the
-      water must be lifted, shaking his head. No other people.
+      Three-quarter back view from a low distance: the millwright seen from the knees up in the middle of the frame,
+      standing at the foot of a tall grassy dike that fills the upper part of the image, holding his unfolded wooden
+      ruler against the slope at chest height and glancing back over his shoulder with a worried frown. His head is
+      in the middle of the frame, well below the top of the dike. No other people.
     characters: [millwright]
     motion_prompt: >-
-      He unfolds the ruler all the way, looks up at the top of the dike and shakes his head.
-    camera: slow tilt up
+      He holds the ruler against the slope, glances up the dike, then back with a worried frown and shakes his head.
+    camera: static
 
   - id: s08
     beat: resolve
@@ -155,12 +161,13 @@ scenes:
     camera: static
     extra_clips:
       - image_prompt: >-
-          Three windmills standing one behind another at different heights on terraced dikes, sails turning together, the
-          millwright standing at the top level watching water flow from step to step. No other people.
+          Three windmills standing one behind another at rising heights on terraced dikes in the background, sails
+          turning together, water flowing from step to step; the millwright in the foreground at the lowest level, seen
+          from the waist up in the middle of the frame, turning to watch with a satisfied smile. No other people.
         characters: [millwright]
         motion_prompt: >-
           The three mills turn together and water steps up from pool to pool; he nods with satisfaction.
-        camera: slow pan
+        camera: static
 
   - id: s09
     beat: info
@@ -185,12 +192,13 @@ scenes:
         cta: true
     visual: 초록 밭 사이 길 위에서 기술자가 풍차들을 바라보며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
-      The millwright standing on a straight country road between green square fields at golden sunset, windmills turning
-      along the dike in the distance, looking out with a proud smile. No other people.
+      The millwright seen from the knees up in the middle of the frame, standing on a straight country road between
+      green square fields at golden sunset, windmills turning along the dike in the distance, a wide calm sunset sky
+      above him, looking out with a proud smile. No other people.
     characters: [millwright]
     motion_prompt: >-
-      He tips his hat and smiles; the camera slowly pulls back over the fields and windmills.
-    camera: slow pull back
+      He touches the brim of his hat (without lifting it high) and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
     extra_clips:
       - image_prompt: >-
           Close-up of the millwright with windmills behind him, looking straight at the viewer with a warm curious smile,
@@ -199,6 +207,10 @@ scenes:
         motion_prompt: >-
           He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
         camera: slow push in
+
+redo:
+  reason: "러프 컷에서 얼굴·손이 제목에 가린 컷 (s01-1·s03·s07·s08-2·s10-1) — 주인공을 화면 가운데로 내림"
+  images: [s01, s03, s07, s08-2, s10]
 
 sources:
   - "UNESCO 세계유산 — Droogmakerij de Beemster (Beemster Polder) (17세기 초 베임스터 호수를 물을 빼 만든 간척지, 홍수가 잦던 낮은 지역, 1612년 5월 19일 마름(네덜란드어 설명), 풍차 43대(건설 당시 약 40대)로 물을 퍼냄, 밭·길·물길·둑·마을이 정사각형 단위의 반듯한 기하학 배치) — https://whc.unesco.org/en/list/899"
