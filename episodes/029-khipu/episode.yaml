@@ -1,7 +1,7 @@
 # 029 잉카의 키푸 — 글자 없이 줄과 매듭으로 나라를 센 기록
 id: "029"
 slug: khipu
-status: script_ok
+status: done
 working_title: 잉카 사람들은 글자 없이 어떻게 숫자를 남겼을까?
 title_lines: ["글자 없이", "매듭으로 셌다고?"]
 hook: 혼이 쏙 빠졌습니다
@@ -29,7 +29,7 @@ scenes:
       - text: "잉카의 젊은 기록관은 혼이 쏙 빠졌습니다."
         captions: ["잉카의 젊은 기록관은 / 혼이 쏙 빠졌습니다"]
       - text: "넓은 나라의 사람 수와 창고 곡식을 다 세야 하는데, 글자가 없었거든요."
-        captions: ["넓은 나라의 사람 수와 / 창고 곡식을 다 세야 하는데", "글자가 없었거든요"]
+        captions: ["넓은 나라의 사람 수와 / 창고 곡식을", "다 세야 하는데 / 글자가 없었거든요"]
     visual: 안데스 산비탈에 줄지어 선 둥근 돌 창고들 앞에서, 기록관이 옥수수 자루 더미를 보며 넋 나간 표정
     image_prompt: >-
       A steep green Andean mountainside with a long row of round stone storehouses with thatched roofs, piles of sacks of
@@ -53,7 +53,7 @@ scenes:
     beat: problem
     lines:
       - text: "하지만 머릿속으로 외우기엔, 숫자가 너무 많았죠."
-        captions: ["하지만 머릿속으로 외우기엔", "숫자가 너무 많았죠"]
+        captions: ["하지만 머릿속으로 / 외우기엔", "숫자가 너무 많았죠"]
     visual: 기록관 머리 위로 수많은 옥수수·감자·라마 그림이 빙글빙글 돈다 (글자·숫자 없이)
     image_prompt: >-
       The record keeper sitting on a stone step in the middle of the frame, eyes squeezed shut, rubbing his temples, while
@@ -173,7 +173,7 @@ scenes:
     beat: info
     lines:
       - text: "이 줄을 어깨에 걸친 전령은 산길을 달려, 나라 곳곳의 숫자를 날랐다고 합니다."
-        captions: ["이 줄을 어깨에 걸친 전령은 / 산길을 달려", "나라 곳곳의 숫자를 / 날랐다고 합니다"]
+        captions: ["이 줄을 어깨에 걸친 / 전령은 산길을 달려", "나라 곳곳의 숫자를 / 날랐다고 합니다"]
     visual: 돌계단 산길에서 기록관이 매듭 줄 다발을 전령의 어깨에 걸쳐 주고, 전령이 뒤쪽으로 달려 나간다
     image_prompt: >-
       A stone-paved Inca road winding along a misty mountain ridge, the record keeper in the middle of the frame handing
