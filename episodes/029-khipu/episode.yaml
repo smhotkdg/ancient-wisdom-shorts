@@ -1,0 +1,244 @@
+# 029 잉카의 키푸 — 글자 없이 줄과 매듭으로 나라를 센 기록
+id: "029"
+slug: khipu
+status: script_ok
+working_title: 잉카 사람들은 글자 없이 어떻게 숫자를 남겼을까?
+title_lines: ["글자 없이", "매듭으로 셌다고?"]
+hook: 혼이 쏙 빠졌습니다
+caption_keywords: [글자가, 매듭, 일의 자리, 빈자리, 전령]
+
+story:
+  hero: 기록관
+  reveal: [키푸]
+
+characters:
+  - id: recorder
+    name: 기록관
+    name_en: young Inca record keeper
+    description: >-
+      a slim, earnest young Andean man in his 20s with straight black hair cut at chin length under a simple woven
+      headband, warm brown skin, bright dark eyes and a thoughtful face, wearing a knee-length sleeveless woven tunic with
+      a band of small red and gold square patterns across the chest, a brown wool cloak knotted at one shoulder, sandals,
+      a bundle of colorful wool cords hanging from his belt
+    note: 이야기 주인공. 잉카 제국에서 줄과 매듭으로 기록을 맡은 기록관(키푸카마유크)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "잉카의 젊은 기록관은 혼이 쏙 빠졌습니다."
+        captions: ["잉카의 젊은 기록관은 / 혼이 쏙 빠졌습니다"]
+      - text: "넓은 나라의 사람 수와 창고 곡식을 다 세야 하는데, 글자가 없었거든요."
+        captions: ["넓은 나라의 사람 수와 / 창고 곡식을 다 세야 하는데", "글자가 없었거든요"]
+    visual: 안데스 산비탈에 줄지어 선 둥근 돌 창고들 앞에서, 기록관이 옥수수 자루 더미를 보며 넋 나간 표정
+    image_prompt: >-
+      A steep green Andean mountainside with a long row of round stone storehouses with thatched roofs, piles of sacks of
+      maize and potatoes stacked in front of them, the record keeper seen from the knees up in the middle of the frame,
+      staring at the endless piles with wide eyes and his mouth open in dismay, hands at the sides of his head. Wide calm
+      mountain sky above him.
+    characters: [recorder]
+    motion_prompt: >-
+      He looks from one pile of sacks to the next and the next, his shoulders drooping in dismay.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the record keeper trying to count sacks on his fingers, losing track, scratching his head with a
+          confused frown, storehouses blurred behind him. No other people.
+        characters: [recorder]
+        motion_prompt: >-
+          He counts on his fingers, loses track, frowns and scratches his head.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "하지만 머릿속으로 외우기엔, 숫자가 너무 많았죠."
+        captions: ["하지만 머릿속으로 외우기엔", "숫자가 너무 많았죠"]
+    visual: 기록관 머리 위로 수많은 옥수수·감자·라마 그림이 빙글빙글 돈다 (글자·숫자 없이)
+    image_prompt: >-
+      The record keeper sitting on a stone step in the middle of the frame, eyes squeezed shut, rubbing his temples, while
+      small cartoon icons of maize cobs, potatoes and llamas swirl around his shoulders in a dizzy circle. No text, no
+      numbers. No other people.
+    characters: [recorder]
+    motion_prompt: >-
+      The little icons spin faster around his shoulders; he shakes his head, overwhelmed.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "글자 없이 숫자를, 어떻게 남길 수 있을까요?"
+        captions: ["글자 없이 숫자를", "어떻게 남길 수 있을까요?"]
+    visual: 허리에 찬 알록달록한 털실 다발을 풀어 손에 든 기록관이 눈을 반짝인다
+    image_prompt: >-
+      The record keeper seen from the waist up in the middle of the frame, untying the bundle of colorful wool cords from
+      his belt and holding them up in front of him, looking at them with a sudden spark of an idea. Plain mountain sky
+      above him. No other people.
+    characters: [recorder]
+    motion_prompt: >-
+      He lifts the cords, turns them in the light and slowly smiles as an idea comes to him.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 기록관은 굵은 줄 하나에, 가는 줄을 주렁주렁 매달았습니다."
+        captions: ["그래서 기록관은 / 굵은 줄 하나에", "가는 줄을 / 주렁주렁 매달았습니다"]
+    visual: 무릎 위에 굵은 줄을 가로로 놓고 가는 줄을 하나씩 묶어 늘어뜨리는 기록관
+    image_prompt: >-
+      The record keeper sitting cross-legged on a woven mat, a thick main cord stretched horizontally across his lap, tying
+      many thinner cords of natural brown, cream and grey cotton and wool onto it one by one so they hang down like a
+      fringe. No other people.
+    characters: [recorder]
+    motion_prompt: >-
+      He loops another thin cord onto the thick cord and pulls it tight; the fringe of cords sways.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 가는 줄에 매듭을 지었죠. 맨 아래는 일의 자리, 위로 갈수록 십, 백, 천의 자리였습니다."
+        captions: ["그리고 가는 줄에 / 매듭을 지었죠", "맨 아래는 일의 자리", "위로 갈수록 / 십, 백, 천의 자리였습니다"]
+    visual: 늘어진 줄 하나를 가까이서 — 아래쪽부터 위로 매듭 묶음이 칸칸이 떨어져 있다
+    image_prompt: >-
+      Close-up of the record keeper's hands holding one hanging cord, tying small knots in separate clusters spaced along
+      it, from near the bottom up toward the thick main cord, the clusters clearly separated by gaps. No text, no numbers.
+    characters: [recorder]
+    motion_prompt: >-
+      His fingers tie a knot in the lowest cluster, then slide up and tie knots in the next cluster above.
+    camera: macro slow tilt along the cord
+    extra_clips:
+      - image_prompt: >-
+          Clean educational illustration of a single hanging cord with three clusters of knots spaced apart: the lowest
+          cluster near the bottom, a middle cluster, and a top cluster near the thick horizontal main cord, each cluster
+          softly glowing in turn. No text, no numbers, no labels, no people.
+        motion_prompt: >-
+          The knot clusters glow one by one from the bottom cluster up to the top cluster.
+        camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "매듭이 넷, 다섯, 둘이면 사백오십이였죠."
+        captions: ["매듭이 넷, 다섯, 둘이면", "사백오십이였죠"]
+    visual: 줄 하나에 위에서부터 매듭 4개, 5개, 2번 감은 매듭 — 기록관이 손가락으로 하나씩 짚는다
+    image_prompt: >-
+      Close-up of one short hanging cord centered in the middle of the frame against the plain sky (all knots
+      between 30% and 75% of the image height): an upper cluster of four small knots, below it a cluster of
+      five small knots, and at the bottom one long knot with two turns, the record keeper's finger pointing at the
+      clusters. No text, no numbers.
+    characters: [recorder]
+    motion_prompt: >-
+      His finger taps the four knots, then the five knots, then the long knot at the bottom.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 영은, 어떻게 적었을까요?"
+        captions: ["그런데 영은", "어떻게 적었을까요?"]
+    visual: 기록관이 줄 하나를 들고 고개를 갸웃하며 생각에 잠긴다
+    image_prompt: >-
+      The record keeper seen from the waist up in the middle of the frame, holding up a single cord with a puzzled look,
+      tilting his head and raising one eyebrow. Plain mountain sky above him. No other people.
+    characters: [recorder]
+    motion_prompt: >-
+      He holds up the cord, tilts his head and taps his chin thoughtfully.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그 자리엔 매듭을 하나도 짓지 않았습니다. 빈자리가 곧 영이었죠."
+        captions: ["그 자리엔 매듭을", "하나도 짓지 않았습니다", "빈자리가 곧 영이었죠"]
+    visual: 매듭 묶음 사이에 텅 빈 칸이 있는 줄 — 기록관이 그 빈칸을 손가락으로 가리키며 씩 웃는다
+    image_prompt: >-
+      Close-up of a cord with a cluster of knots at the top, then a long empty gap with no knots where a middle cluster
+      would be, then another cluster of knots below, the record keeper's finger pointing at the empty gap. No text, no
+      numbers.
+    characters: [recorder]
+    motion_prompt: >-
+      His finger slides down the cord and stops on the empty gap; he grins.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The record keeper sitting proudly beside a large finished knotted-cord record laid out on a mat, dozens of
+          colorful knotted cords hanging from a thick main cord, smiling with satisfaction. No other people.
+        characters: [recorder]
+        motion_prompt: >-
+          He lifts the finished cord record and the many knotted strands sway; he smiles proudly.
+        camera: slow pull back
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이 줄을 어깨에 걸친 전령은 산길을 달려, 나라 곳곳의 숫자를 날랐다고 합니다."
+        captions: ["이 줄을 어깨에 걸친 전령은 / 산길을 달려", "나라 곳곳의 숫자를 / 날랐다고 합니다"]
+    visual: 돌계단 산길에서 기록관이 매듭 줄 다발을 전령의 어깨에 걸쳐 주고, 전령이 뒤쪽으로 달려 나간다
+    image_prompt: >-
+      A stone-paved Inca road winding along a misty mountain ridge, the record keeper in the middle of the frame handing
+      a bundle of knotted cords forward, watching a runner set off down the path behind him.
+    characters: [recorder]
+    extras: "one young messenger runner with knotted cords over his shoulder, small, running away down the path"
+    motion_prompt: >-
+      He hands over the cords and waves; the runner behind him sprints away down the mountain path.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "줄과 매듭으로 나라를 센 이것이 바로, 잉카의 키푸입니다."
+        captions: ["줄과 매듭으로 / 나라를 센 이것이", "바로, 잉카의 / 키푸입니다"]
+      - text: "여러분이라면 글자 없이 숫자를 어떻게 남기셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 글자 없이 숫자를", "어떻게 남기셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 산 위 돌 창고 앞에서 기록관이 매듭 줄 다발을 들어 보이며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The record keeper seen from the knees up in the middle of the frame, standing on a mountain terrace at golden sunset
+      in front of the round stone storehouses, proudly holding up the colorful knotted-cord record with both hands,
+      smiling. Wide sunset sky above him. No other people.
+    characters: [recorder]
+    motion_prompt: >-
+      He raises the knotted cords a little and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the record keeper at sunset, looking straight at the viewer with a warm curious smile, one hand open
+          toward the viewer as if asking a question. No other people.
+        characters: [recorder]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Dumbarton Oaks (하버드대 연구 기관) — Written in Knots: Inka Khipus (1450–1534) (면·낙타과 동물 털로 꼰 줄, 굵은 주 줄에 가는 줄을 매닮, 십진 자리 매듭으로 숫자를 읽음, 인구조사·공물 등 회계 기록, 틀리거나 고쳐 쓰지 못하게 사본을 만듦, 특별히 훈련받은 기록관 키푸카마유크가 대대로 이어 마을부터 국가 창고·잉카 길 숙소까지 일함, 가르실라소 데 라 베가의 기록) — https://www.doaks.org/resources/online-exhibits/written-in-knots/inka"
+  - "Science News — Knotted Strings and Inca Accounts (매듭 묶음이 십진 자리 — 일·십·백·천의 자리 묶음이 주 줄 쪽으로 올라가며 간격으로 나뉨, '0은 그 자리에 매듭이 없는 것으로 나타냄', 십 이상은 단순 매듭, 일의 자리는 두 번 이상 감은 긴 매듭, 예: 단순 매듭 4개·5개와 두 번 감은 긴 매듭 = 452, 1920년대 리랜드 로크가 밝힘) — https://www.sciencenews.org/article/knotted-strings-and-inca-accounts"
+  - "SAPIENS — The Incas' Knotty History (보조: 잉카(1400~1532)가 글자 대신 쓴 매듭 줄, 1,000점 넘게 남음, 약 2/3가 십진 회계용, 인구조사·세금 기록, 전령(차스키)이 키푸를 양어깨에 걸치고 안데스 산비탈을 달림, 이야기를 담은 키푸는 아직 완전히 해독하지 못함) — https://www.sapiens.org/culture/khipu-incas-knotty-history/"
+
+accuracy_notes:
+  - "기록관 인물과 감정, 대사는 설명용 재구성. 특정 실존 인물이 아니며 이름·연도를 지어내지 않았다."
+  - "'혼이 쏙 빠졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '글자가 없었다'는 SAPIENS의 '글자 대신 쓴 매듭 줄' 기준. 키푸 일부가 이야기를 담았을 가능성은 연구 중이라 '글자'와 같다고 단정하지 않는다."
+  - "s04 한 사람이 키푸를 처음 생각해 낸 것처럼 보이는 것은 연출이다. 키푸는 잉카 이전(와리)부터 이어진 전통이며, 대본은 '발명했다'고 쓰지 않고 그가 만드는 모습으로만 그린다."
+  - "s05~s06 자리와 매듭 모양은 Science News 기준 (일의 자리 = 맨 아래 긴 매듭, 위로 갈수록 십·백·천, 452 예시)."
+  - "s08 '빈자리가 곧 영'은 Science News의 '0은 그 자리에 매듭이 없는 것'을 그대로 쉽게 푼 것."
+  - "s09 전령이 어깨에 걸치고 달렸다는 것은 SAPIENS 기준. '전해진다'는 전승 표현으로 쓴다."
+  - "색깔의 뜻, 1을 나타내는 8자 매듭은 대본에서 다루지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 기록관 한 명 중심, s09에만 멀리 달려가는 전령 1명."
+
+youtube:
+  titles:
+    - 글자 없이 매듭으로 셌다고? 잉카 제국의 계산법
+    - 매듭 하나 없는 빈자리가 '0'이었다
+    - 줄 하나로 나라를 센 잉카의 비밀 장부
+  description: |-
+    🧶 넓은 나라의 사람 수, 창고 곡식까지 다 세야 하는데… 글자가 없다면?
+
+    잉카의 기록관은 줄을 꺼냈습니다 🪢
+    굵은 줄에 가는 줄을 주렁주렁, 그리고 매듭! 맨 아래는 일의 자리, 위로 갈수록 십·백·천
+    매듭이 넷, 다섯, 둘이면 452 🔢 그런데 0은 어떻게 적었을까요?
+
+    정답은 '아무것도 묶지 않기' 😎 이 줄을 어깨에 걸친 전령이 산길을 달려 나라 곳곳의 숫자를 날랐답니다.
+  comment_question: 여러분이라면 글자 없이 숫자를 어떻게 남기셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [잉카, 키푸, 매듭, 수학, 쇼츠]

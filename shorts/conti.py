@@ -52,6 +52,9 @@ def motion_prompt(ep: Episode, scene: dict) -> str:
     parts = [str(scene.get("motion_prompt", "")).strip()]
     if scene.get("extras"):
         parts.append("Background people stay small and move only a little; keep the focus on the main character.")
+    elif not scene.get("characters"):
+        # 사람 없는 장면(단면도·풍경·도표)에 Grok이 사람을 지어 넣는 일이 있었다 (028 s07, 2026-10-29)
+        parts.append("No people, hands or faces appear at any point in the clip; only the objects and scenery shown move.")
     if scene.get("camera"):
         parts.append(f"Camera: {scene['camera']}.")
     parts.append(ep.style["motion_suffix"].strip())

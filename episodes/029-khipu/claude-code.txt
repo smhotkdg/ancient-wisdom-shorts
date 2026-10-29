@@ -1,0 +1,31 @@
+episodes/029-khipu 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
+
+0. git pull
+1. python aw.py status 029 — 이미지 15장, Grok 클립 14개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
+2. 음성(audio/raw.wav)이 없으면: 묻지 말고 바로 python aw.py tts 029 를 실행한다.
+   (이 지시문 자체가 승인이다 — 대본 415자 = Typecast 크레딧 약 415. 사용한 글자 수는 마지막 보고에 적는다.)
+   음성이 이미 있으면 새로 만들지 않는다 (--force 금지).
+   네트워크 오류로 결과가 불명확하면 다시 생성하지 말고 멈춘다.
+2-1. 자막 싱크: python -c "import faster_whisper" 가 실패하면 pip install faster-whisper 부터 한다.
+   음성은 대본 전체를 파일 하나로 받는다(문장별 생성 금지). 싱크는 Whisper 정렬로 맞춘다.
+   음성이 이미 있으면 python aw.py timing 029 — 문장·글자 시각을 다시 계산 (크레딧 0).
+   출력의 정렬 방식이 whisper 인지, 일치율이 80% 이상인지 확인. 아니면 이유(경고)를 보고한다.
+   Whisper 는 config 의 timing.whisper_device(기본 cpu)로 돈다 — 20초 안팎. GPU 자동 전환·CUDA 설치를 시도하지 않는다.
+   audio/pace.json 의 removed_seconds(줄인 쉼 길이)도 보고한다.
+3. python aw.py conti 029 — 실측 음성 타이밍으로 콘티 갱신. 6초를 넘는 클립 구간 알림이 있으면 보고.
+4. python aw.py compose 029
+5. output/final-verification.json 검수 — 가로 중앙 정렬 필수:
+   - 모든 제목·자막 줄은 외곽선 포함 실제 픽셀 기준 좌우 여백 차 2px 이내
+   - 영상 소스는 가운데 기준 대칭 크롭 (좌우 여백 동일)
+   - 렌더 후 측정으로 확인. 하나라도 실패하면 원인을 고치고 다시 합성. 실패한 채로 납품하지 않는다.
+6. output/check/final-sheet.jpg 를 직접 보고 확인:
+   - 자막·제목이 핵심 장면(글자가, 매듭, 일의 자리, 빈자리, 전령)을 가리지 않는지
+   - 주인공이 가운데 크게 보이는지, Grok 이 사람을 더 만들어 넣어 주인공을 가리지 않는지 (docs/scene-people.md) → 그런 장면은 보고
+   - 마지막 질문 자막("여러분의 생각이 궁금합니다")이 주인공이 시청자를 보는 컷 위에 나오고, 얼굴·손을 가리지 않는지
+   - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0
+   - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start
+   - 고친 뒤 다시 compose
+7. python aw.py youtube 029 — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
+8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과(음성·자막 정렬 방식 포함).
+   싱크 확인: output/final.srt 의 몇 군데(처음·중간·끝)를 실제 소리와 비교해 자막이 0.3초 이상 어긋나는 곳이 있으면 보고.
+9. episode.yaml status: done, docs/topics.md 의 029 상태를 "완성"으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).

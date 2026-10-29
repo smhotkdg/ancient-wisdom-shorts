@@ -1,44 +1,44 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.4초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–4.0초
 She looks left and right down the ward, wringing her hands and shifting anxiously on her feet. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.4–6.9초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 4.0–8.1초
 She softly lays the cloth on his forehead and bites her lip with worry. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 6.9–10.8초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.1–12.1초
 A drip falls into a dirty puddle; she covers her nose, frowns and looks at the shut windows. Background people stay small and move only a little; keep the focus on the main character. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 10.8–16.4초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.1–18.8초
 The lantern flickers; she taps her pencil on the desk, thinking, then her eyes light up. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.4–18.3초
+[S04-1] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 18.8–21.0초
 She turns a ledger page, runs her finger down a column and writes quickly in her notebook. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 18.3–20.2초
+[S04-2] 6초 · 업로드: images/s04-2.png · 저장: clips/s04-2.mp4 · 구간 21.0–23.3초
 Her pencil adds tally marks one after another, filling the page. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.2–22.0초
+[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 23.3–25.3초
 She swings the compass around, then paints one wedge-shaped petal after another. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 22.0–23.7초
-The petals fill in with color one by one around the circle. Camera: slow overhead rotate. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
+[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 25.3–27.4초
+The petals fill in with color one by one around the circle. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow overhead rotate. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 23.7–27.4초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 27.4–31.6초
 She points the brush at a blue petal, then moves it to a small red petal and nods. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 27.4–33.7초
-The blue petals on the right chart slowly shrink while the left ones stay large. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 31.6–37.6초
+The blue petals on the right chart slowly shrink while the left ones stay large. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 33.7–36.3초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 37.6–40.5초
 She unrolls the chart and holds it up; the officials behind her lean forward in surprise and murmur. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 36.3–39.0초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 40.5–43.4초
 She pushes the window open; sunlight and fresh air fill the room and the curtains flutter. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 39.0–43.9초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 43.4–48.7초
 She walks slowly toward the camera, the lantern glowing softly, and glances down at her notebook with a small smile. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 43.9–48.4초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.7–53.6초
 She lifts the chart a little and smiles; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 48.4–54.3초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 53.6–60.5초
 She looks at the camera, tilts her head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.

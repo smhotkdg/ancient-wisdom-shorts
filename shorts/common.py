@@ -119,12 +119,14 @@ def clip_parts(scene: dict) -> list[dict]:
         return []
     keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in", "extras")
     sid = scene["id"]
-    parts = [{"n": 1, "file": f"{sid}.mp4", "image": sid, "own_image": False, **{k: scene.get(k) for k in keys}}]
+    parts = [{"n": 1, "file": f"{sid}.mp4", "image": sid, "own_image": False,
+              "characters": scene.get("characters"), **{k: scene.get(k) for k in keys}}]
     for i, extra in enumerate(scene.get("extra_clips") or [], start=2):
         own = bool(extra.get("image_prompt"))   # 자기 이미지가 있으면 images/s01-2.png 에서 시작
         parts.append({"n": i, "file": f"{sid}-{i}.mp4", "image": f"{sid}-{i}" if own else sid, "own_image": own,
                       "image_prompt": extra.get("image_prompt"),
-                      "characters": extra.get("characters", scene.get("characters")),
+                      # 자기 이미지가 있는 컷은 그 컷에 적은 인물만 (단면도·도표 컷에 주인공 구도 문장이 붙지 않게)
+                      "characters": extra.get("characters", [] if own else scene.get("characters")),
                       **{k: extra.get(k) for k in keys}})
     return parts
 
