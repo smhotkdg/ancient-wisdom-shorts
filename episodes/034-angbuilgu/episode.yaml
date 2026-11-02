@@ -1,0 +1,231 @@
+# 034 앙부일구 — 글 모르는 백성도 동물 그림으로 시각을 읽은 조선의 길거리 해시계
+id: "034"
+slug: angbuilgu
+status: script_ok
+working_title: 조선 백성들은 글을 몰라도 어떻게 시간을 알았을까?
+title_lines: ["글 몰라도", "시간을 읽었다고?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [어림짐작, 궁궐 깊숙이, 그림자, 큰길가, 열두 동물]
+
+story:
+  hero: 임금
+  reveal: [앙부일구, 세종]
+
+characters:
+  - id: king
+    name: 임금
+    name_en: Joseon king
+    description: >-
+      a kind, thoughtful Korean man in his late 30s with a gentle round face, warm intelligent eyes, a neat black
+      mustache and short beard, wearing a deep red royal robe with a round golden dragon emblem on the chest, a black
+      winged royal cap (ikseongwan), a jade belt, black boots
+    note: 이야기 주인공. 15세기 조선의 임금 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "조선의 한 임금은 눈앞이 캄캄했습니다."
+        captions: ["조선의 한 임금은 / 눈앞이 캄캄했습니다"]
+      - text: "백성들은 지금이 몇 시인지 몰라, 일도 장사도 어림짐작이었거든요."
+        captions: ["백성들은 지금이 / 몇 시인지 몰라", "일도 장사도 / 어림짐작이었거든요"]
+    visual: 궁궐 높은 누각 난간에서 임금이 성 밖 장터를 내려다보며 이마를 짚는다
+    image_prompt: >-
+      A wooden palace pavilion with a carved railing, the busy rooftops of a Joseon-era market town below and soft green
+      mountains far away, the king seen from the waist up in the middle of the frame, resting one hand on his forehead
+      with a troubled look as he looks out over the town. Wide plain sky above him. No other people.
+    characters: [king]
+    motion_prompt: >-
+      A breeze moves his sleeves; he looks out over the town, sighs and presses his fingers to his forehead.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A Joseon-era market street seen from a distance, a merchant shading his eyes and squinting up at the sun,
+          unsure of the time, his stall half set up. Soft daylight.
+        characters: []
+        extras: "one confused merchant in a white hanbok and a black horsehair hat, small, in the middle of the street"
+        motion_prompt: >-
+          The merchant squints at the sky, shrugs and scratches his head.
+        camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "시계는 궁궐 깊숙이, 높은 사람들만 볼 수 있었죠."
+        captions: ["시계는 궁궐 깊숙이", "높은 사람들만 / 볼 수 있었죠"]
+    visual: 굳게 닫힌 궁궐 문 너머 안쪽에만 놓인 시계 기구 (사람 없이)
+    image_prompt: >-
+      A heavy red palace gate standing slightly ajar, and deep inside the quiet courtyard beyond it a small bronze
+      timekeeping instrument on a stone pedestal, out of reach, lit by a beam of sunlight. No text, no people.
+    motion_prompt: >-
+      The camera slowly peeks through the gap in the gate toward the distant bronze instrument; dust floats in the light.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "백성 누구나, 시간을 알 수는 없을까요?"
+        captions: ["백성 누구나", "시간을 알 수는 없을까요?"]
+    visual: 마당에 선 임금이 바닥에 드리운 자기 그림자를 내려다보며 골똘히 생각한다
+    image_prompt: >-
+      The king seen from the knees up in the middle of the frame, standing in a sunny palace courtyard paved with stone,
+      looking down thoughtfully at his own long shadow on the ground, one hand stroking his beard. Wide plain sky above
+      him. No other people.
+    characters: [king]
+    motion_prompt: >-
+      He looks down at his shadow, tilts his head and slowly smiles as an idea comes.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 임금은 하늘을 향해 입을 벌린, 솥 모양 해시계를 만들게 했습니다."
+        captions: ["그래서 임금은 / 하늘을 향해 입을 벌린", "솥 모양 해시계를 / 만들게 했습니다"]
+    visual: 공방에서 오목한 청동 반구(솥) 위에 바늘을 세우는 장면을 임금이 흐뭇하게 지켜본다
+    image_prompt: >-
+      A royal workshop with bronze tools, a gleaming bronze bowl-shaped hemispherical sundial facing upward on four short
+      legs on a stone stand, a thin pointer rod reaching over its hollow, the king in the middle of the frame standing
+      beside it and looking into the bowl with delight. No other people.
+    characters: [king]
+    motion_prompt: >-
+      Sunlight glints on the bronze bowl; he leans over it, smiling, and runs a finger along its rim.
+    camera: slow orbit at eye level
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "바늘 그림자가 닿는 곳을 보면, 시각과 절기를 한눈에 알 수 있었죠."
+        captions: ["바늘 그림자가 / 닿는 곳을 보면", "시각과 절기를 / 한눈에 알 수 있었죠"]
+    visual: 위에서 내려다본 오목한 솥 안 — 세로·가로 선이 그어진 면 위로 바늘 그림자가 천천히 움직인다
+    image_prompt: >-
+      Looking straight down into the hollow of the bronze hemispherical sundial: a neat grid of thin engraved curved lines
+      across the inside, and the shadow of the pointer rod falling across the lines. Clean simple illustration, no text,
+      no letters, no numbers, no people.
+    motion_prompt: >-
+      The shadow of the pointer slowly slides across the engraved lines inside the bowl.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그리고 궁궐 밖, 사람들이 오가는 큰길가에 내놓았습니다."
+        captions: ["그리고 궁궐 밖", "사람들이 오가는 / 큰길가에 내놓았습니다"]
+    visual: 돌다리 옆 큰길가 돌 받침 위에 놓인 해시계, 그 옆에서 임금이 손짓하고 뒤로 행인 몇이 신기한 듯 다가온다
+    image_prompt: >-
+      A busy Joseon-era main street beside an old stone bridge, the bronze bowl sundial set on a sturdy stone pedestal at
+      the roadside, the king in the middle of the frame beside it, gesturing warmly toward it with an open hand.
+    characters: [king]
+    extras: "two or three curious townsfolk in white hanbok approaching from behind, small and out of focus"
+    motion_prompt: >-
+      He gestures toward the sundial with a warm smile; the townsfolk behind him slowly come closer, curious.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 글을 모르는 백성은, 시각을 적은 글자를 읽을 수 없었죠. 어떻게 했을까요?"
+        captions: ["그런데 글을 모르는 백성은", "시각을 적은 글자를 / 읽을 수 없었죠", "어떻게 했을까요?"]
+    visual: 해시계 테두리를 들여다보던 임금이 고개를 갸웃하며 턱을 쓰다듬는다
+    image_prompt: >-
+      The king seen from the waist up in the middle of the frame, bending slightly over the rim of the bronze sundial,
+      squinting at the tiny marks around its edge, then frowning and stroking his beard thoughtfully. Plain sky above
+      him. No other people.
+    characters: [king]
+    motion_prompt: >-
+      He squints at the rim, frowns, straightens up and strokes his beard, thinking.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그래서 글자 대신, 쥐·소·호랑이 같은 열두 동물 그림을 새겨 넣었습니다."
+        captions: ["그래서 글자 대신", "쥐·소·호랑이 같은 / 열두 동물 그림을", "새겨 넣었습니다"]
+    visual: 해시계 테두리를 가까이서 — 쥐·소·호랑이·토끼… 열두 동물이 귀엽게 새겨져 있고 임금의 손가락이 하나씩 짚는다
+    image_prompt: >-
+      Close-up of the bronze rim of the sundial decorated with a ring of twelve small cute engraved animal figures - a
+      rat, an ox, a tiger, a rabbit, a dragon, a snake, a horse, a sheep, a monkey, a rooster, a dog and a pig - the king's
+      fingertip touching the tiger. No letters, no numbers.
+    characters: [king]
+    motion_prompt: >-
+      His fingertip moves from the rat to the ox to the tiger along the ring of little animals.
+    camera: slow pan along the rim
+    extra_clips:
+      - image_prompt: >-
+          The king seen from the waist up in the middle of the frame beside the roadside sundial, smiling warmly as he
+          points at the animal pictures on its rim.
+        characters: [king]
+        extras: "a small boy and his mother in plain hanbok behind him, leaning in and pointing at the animals with delight"
+        motion_prompt: >-
+          He points at an animal picture and smiles; the boy behind him claps and points too.
+        camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그림자가 말 그림에 닿으면 한낮, 누구나 한눈에 읽을 수 있었죠."
+        captions: ["그림자가 말 그림에 닿으면 / 한낮", "누구나 한눈에 / 읽을 수 있었죠"]
+    visual: 한낮의 해시계 — 바늘 그림자가 말 그림이 있는 칸에 정확히 닿는다
+    image_prompt: >-
+      Close-up of the bronze sundial at bright noon, the shadow of the pointer falling exactly onto the little engraved
+      horse figure on the rim, sunlight sparkling on the bronze. No letters, no numbers, no people.
+    motion_prompt: >-
+      The shadow slides slowly and stops right on the little horse; the horse figure gleams.
+    camera: macro static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "하늘을 우러른 솥 모양 해시계, 이것이 바로 세종의 앙부일구입니다."
+        captions: ["하늘을 우러른 / 솥 모양 해시계", "이것이 바로 / 세종의 앙부일구입니다"]
+      - text: "여러분이라면 시간을 어떻게 알리셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 시간을", "어떻게 알리셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 큰길가, 해시계 옆에 선 임금이 흐뭇하게 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The king seen from the knees up in the middle of the frame, standing beside the bronze bowl sundial on its stone
+      pedestal at the roadside at golden sunset, hands folded in his sleeves, smiling contentedly. Wide sunset sky above
+      him. No other people.
+    characters: [king]
+    motion_prompt: >-
+      He nods with a gentle smile; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the king beside the sundial at sunset, looking straight at the viewer with a warm curious smile,
+          one hand open toward the viewer as if asking a question. No other people.
+        characters: [king]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "한국민족문화대백과사전 — 앙부일구 (1434년(세종 16) 제작, 오목한 반구형 수영면이 하늘을 우러르는 가마솥 같아 '앙부', 영침의 그림자로 시각과 절기를 읽음, 13개 절기선과 시각선, 세종 때 혜정교 옆과 종묘 남쪽 대로변에 설치해 백성이 보는 공중시계, 글 모르는 백성을 위해 시각을 글자 대신 12지신 동물 그림으로 표현했다고 함, 세종 때 제작품은 남아 있지 않음) — https://encykorea.aks.ac.kr/Article/E0035191"
+  - "민병희 외 (2024), 조선 세종대 앙부일구의 특징, 한국천문학회 간행물(Publications of The Korean Astronomical Society) 39(2) (1434년 제작, 오목한 반구형 해시계, 세종실록 등을 바탕으로 12시를 각 시의 동물 신 그림으로 나타냈음을 밝힘, 세종대 원형은 남아 있지 않음) — https://koreascience.or.kr/article/JAKO202426743229580.page?lang=en"
+  - "코리아중앙데일리/다음 '유물 이야기' — 백성을 위한 세종의 해시계 (보조: 1434년 이순지·장영실 등이 만듦, 이전엔 왕과 높은 사람들만 볼 수 있던 해시계를 실록에 따르면 종묘 앞과 혜정교에 내놓음, 글 모르는 사람을 위해 12지 동물 그림, 7개 시각선·13개 절기선) — https://v.daum.net/v/fBJEYJA0ow"
+
+accuracy_notes:
+  - "주인공 '임금'은 세종(재위 1418~1450). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 실제 제작은 이순지·장영실 등이 맡았다. 마지막 대사 전까지 이름을 밝히지 않는다 (013 분석)."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '백성들이 몇 시인지 몰라 어림짐작'은 동기를 이야기로 푼 재구성이다."
+  - "s02 '시계는 궁궐 깊숙이, 높은 사람들만'은 다음/중앙 기사의 '이전엔 왕과 높은 사신만 볼 수 있었다' 기준."
+  - "s06 큰길가 설치는 한국민족문화대백과(혜정교 옆·종묘 남쪽 대로변) 기준. 임금이 직접 거리에 나간 것은 화면 연출이다."
+  - "s08 열두 동물 그림은 한국민족문화대백과·한국천문학회 논문 공통. 세종 때 원형은 남아 있지 않다."
+  - "s09 '말 그림 = 한낮'은 12시 중 오시(11~13시)가 말이라는 기본 지식으로 쓴 예시."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 임금 한 명 중심, s01-2에 상인 1명, s06에 행인 2~3명, s08-2에 아이와 어머니."
+
+youtube:
+  titles:
+    - 글 몰라도 시간을 읽었다고? 조선 길거리 해시계의 비밀
+    - 시계 바늘 대신 호랑이와 말이 시간을 알려 줬다
+    - 궁궐 시계를 길거리로! 백성을 위한 임금의 아이디어
+  description: |-
+    ⏰ 지금 몇 시지? 시계는 궁궐 깊숙이에만 있고, 백성들은 해를 보며 어림짐작…
+
+    조선의 임금은 이걸 그냥 두지 않았습니다 ☀️
+    하늘을 향해 입을 벌린 솥 모양 해시계를 만들어, 사람들이 오가는 큰길가에 쿵!
+    그런데 글을 모르는 백성은 시각 글자를 못 읽잖아요? 🤔
+
+    정답은 글자 대신 쥐·소·호랑이… 열두 동물 그림 🐯🐴 그림자가 말에 닿으면 한낮! 누구나 읽을 수 있었답니다.
+  comment_question: 여러분이라면 시간을 어떻게 알리셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [조선, 세종, 해시계, 한국사, 쇼츠]

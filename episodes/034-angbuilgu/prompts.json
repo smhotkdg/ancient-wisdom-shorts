@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "king": "Character reference sheet of a kind, thoughtful Korean man in his late 30s with a gentle round face, warm intelligent eyes, a neat black mustache and short beard, wearing a deep red royal robe with a round golden dragon emblem on the chest, a black winged royal cap (ikseongwan), a jade belt, black boots. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A wooden palace pavilion with a carved railing, the busy rooftops of a Joseon-era market town below and soft green mountains far away, the king seen from the waist up in the middle of the frame, resting one hand on his forehead with a troubled look as he looks out over the town. Wide plain sky above him. No other people. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "A breeze moves his sleeves; he looks out over the town, sighs and presses his fingers to his forehead. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "The merchant squints at the sky, shrugs and scratches his head. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A heavy red palace gate standing slightly ajar, and deep inside the quiet courtyard beyond it a small bronze timekeeping instrument on a stone pedestal, out of reach, lit by a beam of sunlight. No text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly peeks through the gap in the gate toward the distant bronze instrument; dust floats in the light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The king seen from the knees up in the middle of the frame, standing in a sunny palace courtyard paved with stone, looking down thoughtfully at his own long shadow on the ground, one hand stroking his beard. Wide plain sky above him. No other people. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He looks down at his shadow, tilts his head and slowly smiles as an idea comes. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "A royal workshop with bronze tools, a gleaming bronze bowl-shaped hemispherical sundial facing upward on four short legs on a stone stand, a thin pointer rod reaching over its hollow, the king in the middle of the frame standing beside it and looking into the bowl with delight. No other people. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "Sunlight glints on the bronze bowl; he leans over it, smiling, and runs a finger along its rim. Camera: slow orbit at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Looking straight down into the hollow of the bronze hemispherical sundial: a neat grid of thin engraved curved lines across the inside, and the shadow of the pointer rod falling across the lines. Clean simple illustration, no text, no letters, no numbers, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The shadow of the pointer slowly slides across the engraved lines inside the bowl. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "A busy Joseon-era main street beside an old stone bridge, the bronze bowl sundial set on a sturdy stone pedestal at the roadside, the king in the middle of the frame beside it, gesturing warmly toward it with an open hand. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three curious townsfolk in white hanbok approaching from behind, small and out of focus (only 2-4 people, never blocking the Joseon king). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He gestures toward the sundial with a warm smile; the townsfolk behind him slowly come closer, curious. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The king seen from the waist up in the middle of the frame, bending slightly over the rim of the bronze sundial, squinting at the tiny marks around its edge, then frowning and stroking his beard thoughtfully. Plain sky above him. No other people. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He squints at the rim, frowns, straightens up and strokes his beard, thinking. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Close-up of the bronze rim of the sundial decorated with a ring of twelve small cute engraved animal figures - a rat, an ox, a tiger, a rabbit, a dragon, a snake, a horse, a sheep, a monkey, a rooster, a dog and a pig - the king's fingertip touching the tiger. No letters, no numbers. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "His fingertip moves from the rat to the ox to the tiger along the ring of little animals. Camera: slow pan along the rim. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "He points at an animal picture and smiles; the boy behind him claps and points too. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "Close-up of the bronze sundial at bright noon, the shadow of the pointer falling exactly onto the little engraved horse figure on the rim, sunlight sparkling on the bronze. No letters, no numbers, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The shadow slides slowly and stops right on the little horse; the horse figure gleams. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The king seen from the knees up in the middle of the frame, standing beside the bronze bowl sundial on its stone pedestal at the roadside at golden sunset, hands folded in his sleeves, smiling contentedly. Wide sunset sky above him. No other people. Characters: Joseon king (attached reference image char_king.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Joseon king in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He nods with a gentle smile; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}
