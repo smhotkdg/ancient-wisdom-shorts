@@ -1,7 +1,7 @@
 # 031 에라토스테네스 — 막대 하나와 그림자로 지구 둘레를 잰 알렉산드리아의 학자
 id: "031"
 slug: eratosthenes
-status: script_ok
+status: done
 working_title: 2천 년 전 사람은 어떻게 막대 하나로 지구 둘레를 쟀을까?
 title_lines: ["막대기 하나로", "지구 둘레를 쟀다고?"]
 hook: 골머리를 앓았습니다
@@ -104,7 +104,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 같은 날 같은 시각, 알렉산드리아에 막대를 세워 그림자를 쟀습니다."
-        captions: ["그래서 같은 날 같은 시각", "알렉산드리아에 막대를 세워 / 그림자를 쟀습니다"]
+        captions: ["그래서 같은 날 같은 시각", "알렉산드리아에 / 막대를 세워", "그림자를 쟀습니다"]
     visual: 햇살 쏟아지는 돌 마당에 곧은 막대를 세운 학자가 땅에 드리운 짧은 그림자 끝을 손가락으로 짚는다
     image_prompt: >-
       A sunny stone courtyard in Alexandria at noon, a tall straight wooden rod standing upright on the flat paving, casting
@@ -134,7 +134,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 두 도시 사이 거리는, 어떻게 알았을까요?"
-        captions: ["그런데 두 도시 사이 거리는", "어떻게 알았을까요?"]
+        captions: ["그런데 두 도시 사이 / 거리는", "어떻게 알았을까요?"]
     visual: 지도 위 두 도시 사이에 손가락 두 개를 벌려 대 보며 고개를 갸웃하는 학자
     image_prompt: >-
       The scholar seen from the waist up in the middle of the frame, leaning over a painted papyrus map of the Nile on a
@@ -179,7 +179,7 @@ scenes:
     beat: info
     lines:
       - text: "막대 하나와 그림자로 지구를 잰 이 사람이 바로, 에라토스테네스입니다."
-        captions: ["막대 하나와 그림자로 / 지구를 잰 이 사람이", "바로, 에라토스테네스입니다"]
+        captions: ["막대 하나와 그림자로 / 지구를 잰 이 사람이", "바로, / 에라토스테네스입니다"]
       - text: "여러분이라면 지구의 크기를 어떻게 재셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 지구의 크기를", "어떻게 재셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
