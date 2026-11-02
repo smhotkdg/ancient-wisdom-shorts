@@ -1,0 +1,228 @@
+# 032 제멜바이스 — 손 씻기 하나로 산모를 지킨 빈의 젊은 의사
+id: "032"
+slug: semmelweis
+status: script_ok
+working_title: 1847년 빈의 의사는 어떻게 손만 씻게 해서 산모들을 살렸을까?
+title_lines: ["손만 씻었는데", "산모가 살았다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [몇 배나, 무엇이 달랐을까, 똑같았죠, 소독물, 세균]
+
+story:
+  hero: 의사
+  reveal: [제멜바이스]
+
+characters:
+  - id: doctor
+    name: 의사
+    name_en: young Viennese doctor
+    description: >-
+      a slim, earnest young Central European man in his late 20s with short wavy brown hair, neat side whiskers and a
+      small mustache, a round kind face with serious brown eyes, wearing a dark 1840s frock coat over a white shirt and a
+      dark cravat, a small leather notebook in his breast pocket
+    note: 이야기 주인공. 1840년대 빈 종합병원 산과 병동의 젊은 조수 의사 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "빈의 한 젊은 의사는 말문이 막혔습니다."
+        captions: ["빈의 한 젊은 의사는 / 말문이 막혔습니다"]
+      - text: "의사들이 아기를 받는 병동에서, 산모가 훨씬 더 많이 숨졌거든요."
+        captions: ["의사들이 아기를 받는 / 병동에서", "산모가 훨씬 더 많이 / 숨졌거든요"]
+    visual: 1840년대 병원 복도, 수첩을 든 젊은 의사가 텅 빈 침대들을 보며 입을 벌린 채 굳어 있다
+    image_prompt: >-
+      A long 1840s hospital ward with tall windows and rows of simple iron beds with white sheets, several beds standing
+      empty and neatly made, the doctor seen from the knees up in the middle of the frame, holding his open notebook,
+      frozen in shock with his mouth slightly open. Plain high wall and window light above him. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      He looks from one empty bed to the next, lowers his notebook slowly and stares in disbelief.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the doctor's notebook page filled with rows of small tally marks, his finger stopping on a long
+          row, his worried face blurred behind it. No readable text, no numbers.
+        characters: [doctor]
+        motion_prompt: >-
+          His finger runs along the tally marks and stops; his hand tightens on the notebook.
+        camera: macro slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "산파들이 아기를 받는 옆 병동보다, 몇 배나 많았죠."
+        captions: ["산파들이 아기를 받는 / 옆 병동보다", "몇 배나 많았죠"]
+    visual: 두 병동 문을 나란히 — 왼쪽 문 앞엔 촛불 여러 개, 오른쪽 문 앞엔 한 개 (사람 없이)
+    image_prompt: >-
+      Two tall wooden ward doors side by side in an old hospital corridor: in front of the left door many small mourning
+      candles burning on the floor, in front of the right door only one small candle, a clear visual contrast. Calm,
+      respectful mood. No text, no numbers, no people.
+    motion_prompt: >-
+      The many candles before the left door flicker, while the single candle before the right door glows quietly.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "같은 병원인데, 대체 무엇이 달랐을까요?"
+        captions: ["같은 병원인데", "대체 무엇이 달랐을까요?"]
+    visual: 두 병동 사이 복도에 선 의사가 양쪽 문을 번갈아 보며 턱을 괸다
+    image_prompt: >-
+      The doctor seen from the waist up in the middle of the frame, standing in the corridor between the two ward doors,
+      chin in hand, looking from one door to the other, deep in thought. Plain wall above him. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      He looks at the left door, then the right door, and narrows his eyes thoughtfully.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그러던 어느 날, 친한 동료 교수가 해부 중 칼에 베여 세상을 떠났습니다."
+        captions: ["그러던 어느 날 / 친한 동료 교수가", "해부 중 칼에 베여 / 세상을 떠났습니다"]
+    visual: 창가에 선 의사가 검은 띠를 두른 편지를 들고 고개를 떨군다 (해부실·시신은 보여 주지 않음)
+    image_prompt: >-
+      The doctor seen from the waist up in the middle of the frame, standing by a rainy window in a dim office, holding a
+      letter with a black mourning border, head bowed in grief. No readable text. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      Rain runs down the window; he lowers the letter and closes his eyes in grief.
+    camera: slow push in
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그런데 그 증상이, 숨진 산모들과 똑같았죠."
+        captions: ["그런데 그 증상이", "숨진 산모들과 똑같았죠"]
+    visual: 책상 위 두 장의 기록지를 나란히 놓고 번갈아 보던 의사의 눈이 커진다
+    image_prompt: >-
+      The doctor at a desk under lamp light, two handwritten medical reports laid side by side in front of him, his finger
+      on one and his eyes on the other, eyes widening with sudden realization. No readable text. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      His eyes move between the two reports, then widen; he slowly sits back.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그래서 의사는 깨달았습니다. 해부실에서 묻은 무언가가, 의사들 손을 타고 산모에게 옮겨 간다는 걸요."
+        captions: ["그래서 의사는 깨달았습니다", "해부실에서 묻은 무언가가 / 의사들 손을 타고", "산모에게 옮겨 간다는 걸요"]
+    visual: 의사가 자기 두 손바닥을 펴고 들여다본다 — 손에 희미한 잿빛 얼룩이 은은하게 보인다
+    image_prompt: >-
+      The doctor seen from the waist up in the middle of the frame, holding both hands up in front of his chest, palms
+      facing him, staring at them in alarm; faint grey smudges subtly glow on his fingers and palms. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      He turns his hands over slowly; the faint grey smudges on his fingers glow a little brighter.
+    camera: slow push in
+
+  - id: s07
+    beat: solution
+    lines:
+      - text: "그래서 병동에 들어가기 전, 모두 염소 소독물에 손을 씻게 했습니다."
+        captions: ["그래서 병동에 들어가기 전", "모두 염소 소독물에 / 손을 씻게 했습니다"]
+    visual: 병동 문 앞 대야에서 의사가 솔로 손톱 밑까지 박박 문질러 씻는다
+    image_prompt: >-
+      At the entrance of the ward, a white porcelain basin of clear disinfecting water on a wooden stand, the doctor in the
+      middle of the frame with rolled-up sleeves scrubbing his hands and nails with a small brush, determined expression.
+    characters: [doctor]
+    extras: "two young doctors in frock coats waiting behind him, rolling up their sleeves with doubtful faces"
+    motion_prompt: >-
+      He scrubs his hands thoroughly with the brush and rinses them; the young doctors behind him reluctantly roll up their
+      sleeves.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the doctor's hands scrubbing under the fingernails with a small brush over the white basin, water
+          splashing. No other people.
+        characters: [doctor]
+        motion_prompt: >-
+          The brush scrubs between his fingers and under the nails; water splashes into the basin.
+        camera: macro static
+
+  - id: s08
+    beat: twist
+    lines:
+      - text: "그러자 숨지는 산모가 확 줄었습니다. 하지만 다른 의사들은, 이 말을 믿지 않았죠. 왜일까요?"
+        captions: ["그러자 숨지는 산모가 / 확 줄었습니다", "하지만 다른 의사들은 / 이 말을 믿지 않았죠", "왜일까요?"]
+    visual: 회의실에서 의사가 수첩을 내밀며 말하지만, 뒤의 나이 든 의사들이 팔짱을 끼고 고개를 젓는다
+    image_prompt: >-
+      A wood-paneled hospital meeting room, the doctor in the middle of the frame holding out his open notebook earnestly,
+      pleading his case.
+    characters: [doctor]
+    extras: "two or three older doctors with grey whiskers behind him at a table, arms crossed, shaking their heads"
+    motion_prompt: >-
+      He holds out the notebook and speaks earnestly; the older doctors behind him cross their arms and shake their heads.
+    camera: slow push in
+
+  - id: s09
+    beat: resolve
+    lines:
+      - text: "그때는 아무도, 눈에 안 보이는 세균을 몰랐거든요."
+        captions: ["그때는 아무도", "눈에 안 보이는 세균을 / 몰랐거든요"]
+    visual: 손바닥 위를 확대해 들어가자 아주 작은 둥근 세균들이 꿈틀댄다
+    image_prompt: >-
+      An extreme magnified view of the surface of skin on a fingertip, tiny round and rod-shaped cartoon microbes wiggling
+      on it, soft glowing educational style, cute but slightly sinister. No text, no people.
+    motion_prompt: >-
+      The camera zooms in further and the tiny microbes wiggle and slide around.
+    camera: slow zoom in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "손 씻기로 산모들을 지켜 낸 이 의사가 바로, 제멜바이스입니다."
+        captions: ["손 씻기로 산모들을 / 지켜 낸 이 의사가", "바로, 제멜바이스입니다"]
+      - text: "여러분이라면 아무도 안 믿는 사실을 어떻게 알리셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 아무도 안 믿는 사실을", "어떻게 알리셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 햇살 드는 병동 창가에서 의사가 손을 닦으며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The doctor seen from the waist up in the middle of the frame, standing by a sunlit ward window, drying his hands on a
+      clean white towel, smiling gently with relief. Bright calm window light above him. No other people.
+    characters: [doctor]
+    motion_prompt: >-
+      He dries his hands, folds the towel and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the doctor by the sunlit window, looking straight at the viewer with a warm curious smile, one hand
+          open toward the viewer as if asking a question. No other people.
+        characters: [doctor]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Arizona State University, The Embryo Project Encyclopedia — Ignaz Philipp Semmelweis (1818-1865) (빈 종합병원 제1산과(의사·의대생)와 제2산과(산파), 산욕열 사망 약 13% 대 약 2%, 법의학 교수 콜레치카가 해부용 칼에 찔려 숨지고 증상이 산욕열로 숨진 산모와 비슷함, 의대생이 시체 해부실의 물질을 손에 묻혀 산모에게 옮긴다고 결론, 1847년 진찰 사이 염소 용액 손 씻기 의무화, 사망률이 약 2%로 떨어짐, 당시엔 세균이 병을 일으킨다는 것이 밝혀지지 않음, 오스트리아 학계는 받아들이지 않음) — https://embryo.asu.edu/pages/ignaz-philipp-semmelweis-1818-1865"
+  - "Semmelweis University (헝가리 제멜바이스 대학교) — Ignác Fülöp Semmelweis (1818-1865) (1846년 빈 종합병원 산과 조수, 의대생 병동 평균 10% 가까이·산파 병동 3.3%, 친구인 법의학 교수 콜레치카가 해부 중 손을 베여 숨짐, '시체 입자' 가설, 1847년 5월 비누·손톱 솔 뒤 4% 염소 석회 용액, 동료들이 진지하게 받아들이지 않고 손 씻기 규칙을 싫어함 — '제멜바이스 반사') — https://semmelweis.hu/english/Semmelweiss"
+
+accuracy_notes:
+  - "주인공은 실존 인물 이그나즈 제멜바이스(1818~1865). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s02 '몇 배나'는 ASU(약 13% 대 2%)·제멜바이스 대학교(약 10% 대 3.3%) 수치가 서로 달라 배수를 쓰지 않는다."
+  - "s04 콜레치카는 '친한 동료 교수'로만 쓴다 (실제로는 법의학 교수이자 친구). 해부실·시신은 화면에 넣지 않는다."
+  - "s06 제멜바이스는 '시체 입자'라고 생각했고, 세균이라는 개념은 아직 없었다. 대본은 '무언가'로 쓰고, s09에서 '그때는 세균을 몰랐다'로 정리한다."
+  - "s07 염소 석회 용액(제멜바이스 대학교: 1847년 5월, 4%)을 '염소 소독물'로 쉽게 쓴다."
+  - "s08 사망이 '확 줄었다'는 ASU의 '약 2%로 떨어지고 계속 줄어듦' 기준. 상사 클라인은 환기 장치 덕분이라고 봤다 (ASU). '믿지 않았다'는 두 출처 공통."
+  - "s09 '세균을 몰랐다'는 ASU의 '세균이 병을 일으킨다는 것이 아직 밝혀지지 않음' 기준. 반대한 이유로 거론되는 출신 차별·정치 문제는 다루지 않는다."
+  - "제멜바이스의 말년(정신병원에서 사망)은 다루지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 의사 한 명 중심, s07에 젊은 의사 2명, s08에 나이 든 의사 2~3명. 산모·환자·시신은 화면에 넣지 않는다 (s02는 촛불로 표현)."
+
+youtube:
+  titles:
+    - 손만 씻었는데 산모가 살았다고? 180년 전 병원의 비밀
+    - 의사가 아기를 받으면 더 위험했던 이유
+    - 아무도 믿지 않았던 '손 씻기'의 시작
+  description: |-
+    🏥 같은 병원, 같은 출산… 그런데 의사가 아기를 받는 병동에서만 산모가 훨씬 많이 숨진다?
+
+    빈의 젊은 의사는 그 이유를 찾아 나섰습니다 🔍
+    단서는 해부 중 숨진 동료의 증상! 해부실에서 묻은 '무언가'가 손을 타고 옮겨 간다면?
+    그래서 병동 앞에 소독물 대야를 놓고 모두 손을 박박 🧼
+
+    그런데 다른 의사들은 믿지 않았다는데요… 그때는 아무도 세균을 몰랐거든요 🦠 오늘 손 씻을 때 한 번 떠올려 보세요!
+  comment_question: 여러분이라면 아무도 안 믿는 사실을 어떻게 알리셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [손씻기, 의학사, 과학사, 병원, 쇼츠]
