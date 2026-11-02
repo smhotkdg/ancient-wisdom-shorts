@@ -1,38 +1,38 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.5초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.2초
 A ship slowly disappears into the fog; he lifts his hands in a helpless shrug and shakes his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.5–7.9초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.2–7.2초
 The ship pitches over big waves in the rain, heading toward dim rocks ahead. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static with slight sway. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.9–12.1초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.2–10.8초
 He leans closer to the poster, his eyes widen and he slowly rubs his chin. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.1–16.4초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 10.8–14.2초
 The globe turns slowly under his finger; he stops it and narrows his eyes thoughtfully. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 16.4–21.7초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 14.2–18.9초
 The clock's pendulum swings; he looks at it, his face lights up and he raises one finger. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 21.7–26.8초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 18.9–23.8초
 The Earth turns slowly; the thin slice between the harbor and the ship glows brighter. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 26.8–31.3초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 23.8–27.8초
 The cabin tilts back and forth; the pendulum swings wildly and he grabs the clock, grimacing. Camera: static with slight sway. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 31.3–33.9초
+[S07-1] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 27.8–30.1초
 The brass balance arms rock back and forth; he tightens a tiny screw and squints through the loupe. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 33.9–36.6초
+[S07-2] 6초 · 업로드: images/s07-2.png · 저장: clips/s07-2.mp4 · 구간 30.1–32.4초
 The gears and balance arms of the three clocks tick and rock in the lamp light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 36.6–41.8초
+[S08] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 32.4–37.2초
 The watch's second hand ticks; he lifts it a little closer to the camera and grins. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 41.8–47.0초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 37.2–41.6초
 The ship glides into the harbor; the hand holds the watch up beside the distant clock tower as the hands match. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 47.0–51.6초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 41.6–46.0초
 He closes the watch with a click and smiles; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 51.6–58.4초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 46.0–51.9초
 He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.

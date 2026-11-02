@@ -1,7 +1,7 @@
 # 033 존 해리슨 — 시계 하나로 바다 위 위치를 찾은 영국의 시골 목수
 id: "033"
 slug: harrison-clock
-status: script_ok
+status: done
 working_title: 18세기 목수는 어떻게 시계 하나로 바다 위 위치를 알아냈을까?
 title_lines: ["시계 하나로", "바다 위 위치를?"]
 hook: 두 손 두 발 다 들었습니다
@@ -51,7 +51,7 @@ scenes:
     beat: problem
     lines:
       - text: "나라에선 이걸 푸는 사람에게, 엄청난 상금까지 걸었죠."
-        captions: ["나라에선 이걸 푸는 사람에게", "엄청난 상금까지 걸었죠"]
+        captions: ["나라에선 / 이걸 푸는 사람에게", "엄청난 상금까지 걸었죠"]
     visual: 마을 벽에 붙은 커다란 포고문 앞에서 목수가 금화 그림을 보며 눈이 휘둥그레진다
     image_prompt: >-
       A village street wall with a large old printed proclamation poster decorated with a royal seal and a drawing of a
@@ -96,7 +96,7 @@ scenes:
     beat: solution
     lines:
       - text: "배 위의 한낮과 고향 시계가 한 시간 다르면, 지구를 15도 돈 셈이었죠."
-        captions: ["배 위의 한낮과 / 고향 시계가 한 시간 다르면", "지구를 15도 / 돈 셈이었죠"]
+        captions: ["배 위의 한낮과 / 고향 시계가", "한 시간 다르면", "지구를 15도 / 돈 셈이었죠"]
     visual: 우주에서 본 지구 — 해가 비추는 쪽과 배 한 척, 고향 항구 사이에 얇은 부채꼴이 빛난다
     image_prompt: >-
       Simple educational illustration of the round Earth seen from above the North Pole, sunlight from one side, a tiny
@@ -147,7 +147,7 @@ scenes:
     beat: twist
     lines:
       - text: "그렇게 나온 네 번째 시계는, 얼마나 컸을까요? 놀랍게도 손바닥만 했죠."
-        captions: ["그렇게 나온 네 번째 시계는", "얼마나 컸을까요?", "놀랍게도 / 손바닥만 했죠"]
+        captions: ["그렇게 나온 / 네 번째 시계는", "얼마나 컸을까요?", "놀랍게도 / 손바닥만 했죠"]
     visual: 목수가 손바닥 위에 반짝이는 커다란 은빛 회중시계를 올려 보이며 씩 웃는다
     image_prompt: >-
       Close-up of the carpenter's open palm in the middle of the frame holding a large shiny silver pocket watch with a
@@ -177,7 +177,7 @@ scenes:
     beat: info
     lines:
       - text: "시계 하나로 바다 위 길을 찾은 이 사람이 바로, 존 해리슨입니다."
-        captions: ["시계 하나로 / 바다 위 길을 찾은 이 사람이", "바로, 존 해리슨입니다"]
+        captions: ["시계 하나로 / 바다 위 길을 찾은", "이 사람이 바로, / 존 해리슨입니다"]
       - text: "여러분이라면 바다 위에서 어떻게 길을 찾으셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 바다 위에서", "어떻게 길을 찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
