@@ -1,0 +1,234 @@
+# 033 존 해리슨 — 시계 하나로 바다 위 위치를 찾은 영국의 시골 목수
+id: "033"
+slug: harrison-clock
+status: script_ok
+working_title: 18세기 목수는 어떻게 시계 하나로 바다 위 위치를 알아냈을까?
+title_lines: ["시계 하나로", "바다 위 위치를?"]
+hook: 두 손 두 발 다 들었습니다
+caption_keywords: [길을 잃기, 상금, 15도, 흔들리는 배, 5초]
+
+story:
+  hero: 목수
+  reveal: [존 해리슨]
+
+characters:
+  - id: carpenter
+    name: 목수
+    name_en: English country carpenter and clockmaker
+    description: >-
+      a lean, determined Englishman in his 40s with a long narrow face, bright stubborn grey eyes, bushy eyebrows and
+      shoulder-length brown hair tied back with a ribbon, wearing a plain brown wool waistcoat over a white linen shirt
+      with rolled-up sleeves, a leather work apron, dark breeches and buckled shoes, a small brass magnifying loupe on a
+      cord around his neck
+    note: 이야기 주인공. 18세기 영국 링컨셔 시골의 목수 출신 독학 시계공 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "영국의 한 시골 목수는 두 손 두 발 다 들었습니다."
+        captions: ["영국의 한 시골 목수는 / 두 손 두 발 다 들었습니다"]
+      - text: "바다 위 배들이 어디쯤 왔는지 몰라, 길을 잃기 일쑤였거든요."
+        captions: ["바다 위 배들이 / 어디쯤 왔는지 몰라", "길을 잃기 일쑤였거든요"]
+    visual: 항구 부두에서 목수가 안개 속으로 사라지는 범선을 보며 두 손을 번쩍 든다
+    image_prompt: >-
+      A misty 18th-century English harbor with wooden piers and tall sailing ships fading into thick fog at sea, the
+      carpenter seen from the knees up in the middle of the frame on the pier, both hands raised at shoulder height in a
+      helpless shrug, worried face. Plain misty sky above him. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      A ship slowly disappears into the fog; he lifts his hands in a helpless shrug and shakes his head.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A tall sailing ship lost in a stormy grey sea, its sails straining, huge waves around it, dark rocks barely
+          visible ahead through the rain. No people visible.
+        motion_prompt: >-
+          The ship pitches over big waves in the rain, heading toward dim rocks ahead.
+        camera: static with slight sway
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "나라에선 이걸 푸는 사람에게, 엄청난 상금까지 걸었죠."
+        captions: ["나라에선 이걸 푸는 사람에게", "엄청난 상금까지 걸었죠"]
+    visual: 마을 벽에 붙은 커다란 포고문 앞에서 목수가 금화 그림을 보며 눈이 휘둥그레진다
+    image_prompt: >-
+      A village street wall with a large old printed proclamation poster decorated with a royal seal and a drawing of a
+      pile of gold coins, the carpenter seen from the waist up in the middle of the frame, staring at it with wide eyes.
+      No readable text on the poster. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      He leans closer to the poster, his eyes widen and he slowly rubs his chin.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "끝없는 바다에서, 배가 어디쯤인지 어떻게 알 수 있을까요?"
+        captions: ["끝없는 바다에서", "배가 어디쯤인지 / 어떻게 알 수 있을까요?"]
+    visual: 작업장 창가에서 목수가 지구본을 천천히 돌리며 골똘히 생각한다
+    image_prompt: >-
+      A cozy wooden workshop full of tools and wood shavings, the carpenter seen from the waist up in the middle of the
+      frame, sitting by the window and slowly turning an old globe with one finger, deep in thought. Plain wooden wall
+      above him. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      The globe turns slowly under his finger; he stops it and narrows his eyes thoughtfully.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그때 목수는 생각했습니다. 출발한 항구의 시각만 정확히 알면 된다고요."
+        captions: ["그때 목수는 생각했습니다", "출발한 항구의 시각만 / 정확히 알면 된다고요"]
+    visual: 목수가 벽시계를 올려다보다가 손바닥을 탁 친다
+    image_prompt: >-
+      The carpenter seen from the waist up in the middle of the frame in his workshop, standing beside a tall wooden
+      longcase clock, turning toward it with a sudden bright idea, one finger raised. Plain wooden wall above him. No
+      other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      The clock's pendulum swings; he looks at it, his face lights up and he raises one finger.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "배 위의 한낮과 고향 시계가 한 시간 다르면, 지구를 15도 돈 셈이었죠."
+        captions: ["배 위의 한낮과 / 고향 시계가 한 시간 다르면", "지구를 15도 / 돈 셈이었죠"]
+    visual: 우주에서 본 지구 — 해가 비추는 쪽과 배 한 척, 고향 항구 사이에 얇은 부채꼴이 빛난다
+    image_prompt: >-
+      Simple educational illustration of the round Earth seen from above the North Pole, sunlight from one side, a tiny
+      sailing ship on the ocean and a tiny harbor town, a thin glowing slice of the globe between them, a small clock
+      face floating beside each. No text, no numbers, no people.
+    motion_prompt: >-
+      The Earth turns slowly; the thin slice between the harbor and the ship glows brighter.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "하지만 흔들리는 배 위에서 시계는, 금세 틀어져 버렸습니다."
+        captions: ["하지만 흔들리는 배 위에서 / 시계는", "금세 틀어져 버렸습니다"]
+    visual: 기울어진 배 선실에서 진자 시계가 이리저리 흔들리고, 목수가 붙잡으며 인상을 쓴다
+    image_prompt: >-
+      Inside a tilted wooden ship's cabin rocking on the waves, a pendulum clock on the wall swinging wildly off balance,
+      the carpenter in the middle of the frame bracing himself and grabbing the clock with a frustrated grimace. Plain
+      cabin ceiling above him. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      The cabin tilts back and forth; the pendulum swings wildly and he grabs the clock, grimacing.
+    camera: static with slight sway
+
+  - id: s07
+    beat: solution
+    lines:
+      - text: "그래서 목수는 흔들려도 맞는 시계를, 수십 년 동안 고치고 또 고쳤습니다."
+        captions: ["그래서 목수는 / 흔들려도 맞는 시계를", "수십 년 동안 / 고치고 또 고쳤습니다"]
+    visual: 작업대 위 커다란 놋쇠 시계 기계 속을 확대경으로 들여다보며 조이는 목수 — 머리에 흰 기가 늘어난다
+    image_prompt: >-
+      The carpenter, now older with grey streaks in his hair, seen from the waist up in the middle of the frame at his
+      workbench under lamp light, peering through his brass loupe into a large complex brass clock mechanism with
+      gleaming springs and balance arms, adjusting it with a tiny screwdriver. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      The brass balance arms rock back and forth; he tightens a tiny screw and squints through the loupe.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a workbench crowded with three big brass sea clocks of different designs and scattered gears and
+          springs, lamp light gleaming on the metal. No people.
+        motion_prompt: >-
+          The gears and balance arms of the three clocks tick and rock in the lamp light.
+        camera: slow pan
+
+  - id: s08
+    beat: twist
+    lines:
+      - text: "그렇게 나온 네 번째 시계는, 얼마나 컸을까요? 놀랍게도 손바닥만 했죠."
+        captions: ["그렇게 나온 네 번째 시계는", "얼마나 컸을까요?", "놀랍게도 / 손바닥만 했죠"]
+    visual: 목수가 손바닥 위에 반짝이는 커다란 은빛 회중시계를 올려 보이며 씩 웃는다
+    image_prompt: >-
+      Close-up of the carpenter's open palm in the middle of the frame holding a large shiny silver pocket watch with a
+      white enamel face, his proud grinning face softly visible behind it. No readable text or numbers on the dial. No
+      other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      The watch's second hand ticks; he lifts it a little closer to the camera and grins.
+    camera: slow push in
+
+  - id: s09
+    beat: resolve
+    lines:
+      - text: "이 시계는 두 달 가까이 바다를 건넌 뒤에도, 겨우 5초 늦었다고 합니다."
+        captions: ["이 시계는 두 달 가까이 / 바다를 건넌 뒤에도", "겨우 5초 늦었다고 합니다"]
+    visual: 열대 섬 항구에 닿은 배의 갑판, 회중시계를 든 손과 항구 시계탑이 같은 시각을 가리킨다
+    image_prompt: >-
+      The deck of a sailing ship arriving at a sunny tropical island harbor with palm trees, a hand in the foreground
+      holding up the silver pocket watch next to a distant harbor clock tower, both showing the same time. No readable
+      text, no numbers. No people visible besides the hand.
+    characters: [carpenter]
+    motion_prompt: >-
+      The ship glides into the harbor; the hand holds the watch up beside the distant clock tower as the hands match.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "시계 하나로 바다 위 길을 찾은 이 사람이 바로, 존 해리슨입니다."
+        captions: ["시계 하나로 / 바다 위 길을 찾은 이 사람이", "바로, 존 해리슨입니다"]
+      - text: "여러분이라면 바다 위에서 어떻게 길을 찾으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 바다 위에서", "어떻게 길을 찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 부두에서 나이 든 목수가 회중시계를 손에 쥐고 떠나는 배를 보며 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The carpenter, older with grey hair, seen from the knees up in the middle of the frame, standing on the harbor pier
+      at golden sunset holding the silver pocket watch, a sailing ship heading out to sea behind him, smiling proudly. Wide
+      sunset sky above him. No other people.
+    characters: [carpenter]
+    motion_prompt: >-
+      He closes the watch with a click and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the older carpenter on the sunset pier, looking straight at the viewer with a warm curious smile,
+          one hand open toward the viewer as if asking a question. No other people.
+        characters: [carpenter]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Royal Museums Greenwich (영국 국립해양박물관) — Who was John Harrison? (1714년 경도법이 바다에서 배의 정확한 경도를 찾는 방법에 상금을 걸음, 해리슨은 목수 출신으로 시계 만들기를 독학, H1(1735~36)부터 H2·H3(1740년부터 19년)·H4까지 해양 시계를 고쳐 만듦, H4는 처음엔 큰 회중시계처럼 보임, 1761년 아들 윌리엄이 H4를 들고 자메이카로 항해, 위원회와의 다툼, 결국 의회가 보상) — https://www.rmg.co.uk/stories/time/harrisons-clocks-longitude-problem"
+  - "Linda Hall Library (과학·기술 연구 도서관) — Scientist of the Day: John Harrison (1714년 2만 파운드 상금, H1~H3는 큰 기계, H4는 '커다란 쿠키만 한' 큰 회중시계, 1761년 자메이카 항해 약 두 달 뒤 5초 늦음 = 경도 약 2마일 오차, 위원회는 우연이라며 두 번째 시험 요구, 1773년 조지 3세에게 호소한 뒤 의회가 최종 지급, 공식 상금은 끝내 주지 않음) — https://www.lindahall.org/about/news/scientist-of-the-day/john-harrison"
+
+accuracy_notes:
+  - "주인공은 실존 인물 존 해리슨(1693~1776). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'두 손 두 발 다 들었습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '길을 잃기 일쑤'는 경도를 알 수 없어 바다 위 위치를 찾기 어려웠던 상황을 쉽게 푼 것. 특정 난파 사고는 대본에 쓰지 않는다 (s01-2는 분위기 컷)."
+  - "s02 상금 2만 파운드는 Linda Hall 기준. 대본에는 '엄청난 상금'으로만 쓴다."
+  - "s05 '한 시간 = 15도'는 지구가 하루(24시간)에 360도 도는 데서 나오는 기본 원리. 화면은 원리를 보여 주는 그림이다."
+  - "s06 '흔들리는 배 위에서 시계가 틀어짐'은 당시 진자시계의 한계를 쉽게 푼 것. '하루 몇 분' 같은 수치는 쓰지 않는다."
+  - "s07 '수십 년'은 H1(1735년 무렵)부터 H4(1750년대 후반)까지, H3에만 19년을 들였다는 RMG 기준."
+  - "s08 '손바닥만 했다'는 Linda Hall의 '커다란 쿠키만 한'·RMG의 '큰 회중시계처럼 보임'을 쉽게 쓴 것. 실제로는 보통 회중시계보다 크다."
+  - "s09 1761년 자메이카 항해 약 두 달 뒤 5초 늦음은 Linda Hall 기준이며 '했다고 합니다'로 쓴다. 실제로 시계를 들고 간 사람은 아들 윌리엄이라, 화면은 손만 보여 준다."
+  - "위원회와의 다툼, 상금을 끝내 공식으로 받지 못한 이야기는 대본에서 다루지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 목수 한 명. 배경 인물 장면 없음."
+
+youtube:
+  titles:
+    - 시계 하나로 바다 위 위치를? 시골 목수의 수십 년 도전
+    - 배가 길을 잃던 시대, 정답은 '시계'였다
+    - 두 달 항해에 5초 오차, 목수가 만든 기적의 시계
+  description: |-
+    🌊 끝없는 바다 한가운데… 우리 배는 지금 어디쯤일까? 지도도 GPS도 소용없던 시절!
+
+    나라가 엄청난 상금을 건 이 문제에, 영국 시골 목수가 도전장을 냈습니다 🔨
+    아이디어는 단순했어요. "고향 항구의 시각만 정확히 알면 된다!" ⏰
+    한 시간 차이 = 지구 15도. 문제는 흔들리는 배 위에선 시계가 금세 틀어진다는 것…
+
+    수십 년을 고치고 또 고친 끝에 나온 손바닥만 한 시계, 두 달 항해 뒤 오차는 겨우 5초였답니다 🤯
+  comment_question: 여러분이라면 바다 위에서 어떻게 길을 찾으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [시계, 항해, 과학사, 발명, 쇼츠]
