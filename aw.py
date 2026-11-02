@@ -247,7 +247,8 @@ def cmd_done(a):
 
 
 TEXT_FILES = ("episode.yaml", "conti.html", "prompts.json", "prompts-chatgpt.txt", "prompts-grok.txt",
-              "prompts-chatgpt-redo.txt", "prompts-grok-redo.txt", "claude-code.txt", "output/youtube.txt")
+              "prompts-chatgpt-redo.txt", "prompts-grok-redo.txt", "claude-code.txt", "output/youtube.txt",
+              "images/.gitkeep", "clips/.gitkeep")
 
 
 def cmd_publish(a):
