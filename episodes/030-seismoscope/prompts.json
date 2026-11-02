@@ -1,0 +1,127 @@
+{
+  "characters": {
+    "astronomer": "Character reference sheet of a slender, scholarly Chinese man in his 50s with a calm intelligent face, thin long black mustache and a neat short beard, kind narrow eyes, hair tied in a topknot under a small black scholar's cap, wearing a long flowing dark-blue Han dynasty robe with wide sleeves and a red sash, a bamboo writing slip tucked in his belt. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "An ancient Chinese palace courtyard with red pillars and curved tiled roofs, distant blue mountains on the horizon under a wide calm sky, the astronomer seen from the knees up in the middle of the frame, holding an unrolled silk map of the land, wiping sweat from his forehead with his wide sleeve and gazing anxiously toward the far mountains. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "The wind ripples the silk map; he wipes his brow and looks worriedly toward the distant mountains. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "The ground trembles, a few roof tiles slide off and dust puffs up from the walls. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static with slight shake. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "The astronomer seen from the waist up in the middle of the frame, standing in front of a large painted map on a wooden stand with roads branching in every direction, his finger hovering uncertainly between different directions, a troubled frown. No text on the map. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "His finger moves from one direction to another on the map and stops, unsure; he sighs. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "A quiet scholar's study at night lit by an oil lamp, the astronomer seen from the waist up in the middle of the frame, sitting at a low desk, staring closely at a cup of tea whose surface is rippling slightly, his eyes lighting up with an idea. Plain dark wooden wall above him. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "Tiny ripples spread across the tea; he leans closer, then sits up with a spark in his eyes. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "A workshop with bronze tools, a large round bronze vessel about as tall as a person standing on the floor, eight dragon heads arranged evenly around its upper edge facing outward, the astronomer beside it in the middle of the frame fitting one dragon head into place. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He presses a dragon head into place on the vessel and steps back to look at the eight dragons around it. Camera: slow orbit at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Close-up of the astronomer's hand placing a small bronze ball into the open mouth of a bronze dragon head on the vessel, and directly below it on the floor a bronze toad sitting with its mouth wide open facing upward. The dragon and toad in the middle of the frame. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "His fingers set the ball gently in the dragon's mouth; the toad below waits with its mouth open. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "The camera circles slowly around the vessel, the dragons and toads gleaming in the lamp light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Close-up of one bronze dragon head on the vessel releasing its bronze ball, the ball falling in mid-air toward the open mouth of the bronze toad directly below, a small motion trail. Dragon and toad in the middle of the frame. No people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "The ball drops from the dragon's mouth and lands in the toad's mouth with a bright clink. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "A calm palace hall beside the bronze vessel, the astronomer in the middle of the frame holding up a fallen bronze ball in his palm, looking firm and serious. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two or three court officials in robes behind him, whispering and shaking their heads doubtfully (only 2-4 people, never blocking the Han dynasty court astronomer). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He holds up the ball steadily; the officials behind him whisper, shrug and shake their heads. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "At the palace gate, the astronomer in the middle of the frame receiving a sealed bamboo scroll with both hands, a look of quiet triumph on his face. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: one dusty messenger who has just dismounted from a tired horse, bowing as he hands over the scroll, smaller to the side (only 2-4 people, never blocking the Han dynasty court astronomer). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "He takes the scroll, unrolls it and slowly smiles; the messenger catches his breath beside the horse. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "He reads, his eyebrows lift, and he turns to look back at the vessel with a proud smile. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "The astronomer seated at a desk beside the bronze vessel, writing carefully with a brush on a row of bamboo slips, lamp light glowing on the dragons behind him. No readable text. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "He writes a line with the brush, pauses, and glances up at the dragons with a calm smile. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The astronomer seen from the knees up in the middle of the frame, standing proudly beside the bronze dragon vessel in a palace courtyard at golden sunset, hands folded in his wide sleeves, smiling. Wide calm sunset sky above him. No other people. Characters: Han dynasty court astronomer (attached reference image char_astronomer.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Han dynasty court astronomer in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He bows his head slightly and smiles; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,243 @@
+# 030 장형의 지동의 — 용과 두꺼비로 먼 곳의 지진을 알린 한나라의 청동 항아리
+id: "030"
+slug: seismoscope
+status: script_ok
+working_title: 한나라 사람들은 어떻게 먼 곳의 지진을 앉아서 알았을까?
+title_lines: ["먼 곳의 지진을", "앉아서 알았다고?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [며칠씩, 여덟 마리 용, 두꺼비, 땡그랑, 서북쪽]
+
+story:
+  hero: 관리
+  reveal: [장형, 지동의]
+
+characters:
+  - id: astronomer
+    name: 천문 관리
+    name_en: Han dynasty court astronomer
+    description: >-
+      a slender, scholarly Chinese man in his 50s with a calm intelligent face, thin long black mustache and a neat short
+      beard, kind narrow eyes, hair tied in a topknot under a small black scholar's cap, wearing a long flowing dark-blue
+      Han dynasty robe with wide sleeves and a red sash, a bamboo writing slip tucked in his belt
+    note: 이야기 주인공. 후한의 수도 낙양에서 하늘과 땅의 변화를 살피던 천문 관리 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "한나라의 천문 관리는 진땀을 뺐습니다."
+        captions: ["한나라의 천문 관리는 / 진땀을 뺐습니다"]
+      - text: "넓은 나라 어디선가 땅이 흔들려도, 소식이 오기까진 며칠씩 걸렸거든요."
+        captions: ["넓은 나라 어디선가 / 땅이 흔들려도", "소식이 오기까진 / 며칠씩 걸렸거든요"]
+    visual: 궁궐 회랑에서 거대한 지도 두루마리를 펼친 관리가 이마의 땀을 닦으며 먼 산 너머를 바라본다
+    image_prompt: >-
+      An ancient Chinese palace courtyard with red pillars and curved tiled roofs, distant blue mountains on the horizon
+      under a wide calm sky, the astronomer seen from the knees up in the middle of the frame, holding an unrolled silk map
+      of the land, wiping sweat from his forehead with his wide sleeve and gazing anxiously toward the far mountains. No
+      other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      The wind ripples the silk map; he wipes his brow and looks worriedly toward the distant mountains.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A dramatic wide view of a far-off mountain village where the ground is shaking, roof tiles sliding and dust
+          rising from cracked earthen walls, seen from a distance. No people visible.
+        motion_prompt: >-
+          The ground trembles, a few roof tiles slide off and dust puffs up from the walls.
+        camera: static with slight shake
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "어디서 흔들렸는지 모르면, 도울 사람을 보낼 수도 없었죠."
+        captions: ["어디서 흔들렸는지 모르면", "도울 사람을 / 보낼 수도 없었죠"]
+    visual: 갈림길이 여러 갈래로 뻗은 지도 앞에서 관리가 손가락을 이리저리 옮기다 멈춘다
+    image_prompt: >-
+      The astronomer seen from the waist up in the middle of the frame, standing in front of a large painted map on a
+      wooden stand with roads branching in every direction, his finger hovering uncertainly between different directions,
+      a troubled frown. No text on the map. No other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      His finger moves from one direction to another on the map and stops, unsure; he sighs.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "멀리서 난 지진을, 앉아서 알 수는 없을까요?"
+        captions: ["멀리서 난 지진을", "앉아서 알 수는 없을까요?"]
+    visual: 등불 켠 서재에서 관리가 찻잔 속 물이 살짝 일렁이는 것을 보고 눈을 반짝인다
+    image_prompt: >-
+      A quiet scholar's study at night lit by an oil lamp, the astronomer seen from the waist up in the middle of the frame,
+      sitting at a low desk, staring closely at a cup of tea whose surface is rippling slightly, his eyes lighting up with
+      an idea. Plain dark wooden wall above him. No other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      Tiny ripples spread across the tea; he leans closer, then sits up with a spark in his eyes.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 관리는 커다란 청동 항아리에, 여덟 마리 용을 빙 둘렀습니다."
+        captions: ["그래서 관리는 / 커다란 청동 항아리에", "여덟 마리 용을 / 빙 둘렀습니다"]
+    visual: 공방에서 사람 키만 한 청동 항아리 둘레에 용 머리 장식을 하나씩 붙이는 관리
+    image_prompt: >-
+      A workshop with bronze tools, a large round bronze vessel about as tall as a person standing on the floor, eight
+      dragon heads arranged evenly around its upper edge facing outward, the astronomer beside it in the middle of the
+      frame fitting one dragon head into place. No other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      He presses a dragon head into place on the vessel and steps back to look at the eight dragons around it.
+    camera: slow orbit at eye level
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "용마다 입에 구슬을 물리고, 그 아래엔 입을 벌린 두꺼비를 앉혔죠."
+        captions: ["용마다 입에 구슬을 물리고", "그 아래엔 / 입을 벌린 두꺼비를 앉혔죠"]
+    visual: 용 입에 청동 구슬을 끼우는 손, 바로 아래 바닥엔 하늘을 보고 입을 벌린 청동 두꺼비
+    image_prompt: >-
+      Close-up of the astronomer's hand placing a small bronze ball into the open mouth of a bronze dragon head on the
+      vessel, and directly below it on the floor a bronze toad sitting with its mouth wide open facing upward. The dragon
+      and toad in the middle of the frame.
+    characters: [astronomer]
+    motion_prompt: >-
+      His fingers set the ball gently in the dragon's mouth; the toad below waits with its mouth open.
+    camera: macro static
+    extra_clips:
+      - image_prompt: >-
+          The finished bronze vessel standing in a palace hall, eight dragons around its top each holding a ball, eight
+          bronze toads with open mouths sitting in a circle on the floor beneath them, soft lamp light. No people.
+        motion_prompt: >-
+          The camera circles slowly around the vessel, the dragons and toads gleaming in the lamp light.
+        camera: slow orbit
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "땅이 흔들리면 지진이 난 쪽의 용이 구슬을 떨어뜨려, 땡그랑 소리가 났습니다."
+        captions: ["땅이 흔들리면 / 지진이 난 쪽의 용이", "구슬을 떨어뜨려 / 땡그랑 소리가 났습니다"]
+    visual: 한 마리 용의 입에서 구슬이 떨어져 아래 두꺼비 입으로 쏙 들어간다
+    image_prompt: >-
+      Close-up of one bronze dragon head on the vessel releasing its bronze ball, the ball falling in mid-air toward the
+      open mouth of the bronze toad directly below, a small motion trail. Dragon and toad in the middle of the frame. No
+      people.
+    motion_prompt: >-
+      The ball drops from the dragon's mouth and lands in the toad's mouth with a bright clink.
+    camera: static
+    sfx_volume: 0.3
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 어느 날 구슬이 떨어졌는데, 수도에선 아무도 흔들림을 못 느꼈습니다. 고장일까요?"
+        captions: ["그런데 어느 날 / 구슬이 떨어졌는데", "수도에선 아무도 / 흔들림을 못 느꼈습니다", "고장일까요?"]
+    visual: 떨어진 구슬을 들고 서 있는 관리 뒤에서 신하 몇이 고개를 갸웃하며 수군댄다
+    image_prompt: >-
+      A calm palace hall beside the bronze vessel, the astronomer in the middle of the frame holding up a fallen bronze
+      ball in his palm, looking firm and serious.
+    characters: [astronomer]
+    extras: "two or three court officials in robes behind him, whispering and shaking their heads doubtfully"
+    motion_prompt: >-
+      He holds up the ball steadily; the officials behind him whisper, shrug and shake their heads.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그러자 며칠 뒤, 서북쪽 먼 고장에서 땅이 흔들렸다는 소식이 날아왔죠."
+        captions: ["그러자 며칠 뒤 / 서북쪽 먼 고장에서", "땅이 흔들렸다는 / 소식이 날아왔죠"]
+    visual: 궁궐 문 앞에 먼지투성이 전령이 말에서 내려 두루마리를 내밀고, 관리가 그것을 받아 든다
+    image_prompt: >-
+      At the palace gate, the astronomer in the middle of the frame receiving a sealed bamboo scroll with both hands, a
+      look of quiet triumph on his face.
+    characters: [astronomer]
+    extras: "one dusty messenger who has just dismounted from a tired horse, bowing as he hands over the scroll, smaller to the side"
+    motion_prompt: >-
+      He takes the scroll, unrolls it and slowly smiles; the messenger catches his breath beside the horse.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the astronomer reading the unrolled bamboo scroll, eyebrows rising, then glancing back toward the
+          bronze vessel with a proud smile. No other people.
+        characters: [astronomer]
+        motion_prompt: >-
+          He reads, his eyebrows lift, and he turns to look back at the vessel with a proud smile.
+        camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "놀란 조정은 그 뒤로, 지진이 난 방향까지 적어 두기 시작했다고 합니다."
+        captions: ["놀란 조정은 그 뒤로", "지진이 난 방향까지 / 적어 두기 시작했다고 합니다"]
+    visual: 관리가 대나무 죽간에 붓으로 방향을 적고, 옆에는 청동 항아리가 은은히 빛난다
+    image_prompt: >-
+      The astronomer seated at a desk beside the bronze vessel, writing carefully with a brush on a row of bamboo slips,
+      lamp light glowing on the dragons behind him. No readable text. No other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      He writes a line with the brush, pauses, and glances up at the dragons with a calm smile.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "용과 두꺼비로 지진을 알린 이것이 바로, 장형의 지동의입니다."
+        captions: ["용과 두꺼비로 / 지진을 알린 이것이", "바로, 장형의 / 지동의입니다"]
+      - text: "여러분이라면 먼 곳의 지진을 어떻게 아셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 먼 곳의 지진을", "어떻게 아셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 궁궐 마당, 청동 항아리 옆에 선 관리가 뿌듯하게 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The astronomer seen from the knees up in the middle of the frame, standing proudly beside the bronze dragon vessel in
+      a palace courtyard at golden sunset, hands folded in his wide sleeves, smiling. Wide calm sunset sky above him. No
+      other people.
+    characters: [astronomer]
+    motion_prompt: >-
+      He bows his head slightly and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the astronomer beside the bronze vessel at sunset, looking straight at the viewer with a warm curious
+          smile, one hand open toward the viewer as if asking a question. No other people.
+        characters: [astronomer]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Encyclopaedia Britannica — Zhang Heng (78~139) / seismograph 항목 (132년 제작, 원통형, 위쪽 둘레에 용 머리 여덟 개가 각각 구슬을 물고, 그 바로 아래 두꺼비 여덟 마리, 지진이 나면 구슬이 두꺼비 입으로 떨어지며 소리를 냄) — https://www.britannica.com/biography/Zhang-Heng"
+  - "MacTutor, University of St Andrews — Zhang Heng (132년 제작한 '후풍지동의', 구리로 만든 달걀 모양, 용 머리 여덟·두꺼비 여덟, 수도 낙양에서는 아무도 느끼지 못한 지진을 감지해 황제에게 서쪽이라고 보고, 며칠 뒤 서북쪽 먼 곳의 지진 소식이 도착해 명성을 얻음, 태사령(천문 책임 관리)을 여러 번 지냄) — https://mathshistory.st-andrews.ac.uk/Biographies/Zhang_Heng/"
+  - "Encyclopedia.com — Seismology in Ancient China (보조: 청동 항아리, 지진이 난 쪽을 향한 용의 구슬이 떨어짐, 서북쪽 용의 구슬이 떨어졌는데 수도에선 흔들림을 느끼지 못해 학자들이 놀람, 며칠 뒤 롱시(농서) 지진 소식, 그 뒤 관리들이 지진 방향을 기록하기 시작, 내부 구조는 전하지 않아 여러 복원안이 있음) — https://encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/seismology-ancient-china"
+
+accuracy_notes:
+  - "주인공은 실존 인물 장형(78~139). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다 (013 김정호 편 분석: 첫 줄에 이름이 나오면 정답이 미리 드러남)."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 '소식이 며칠씩 걸림', '도울 사람을 보낼 수 없음'은 동기를 이야기로 푼 재구성. 장형이 실제로 이런 이유로 만들었다는 기록을 인용하지 않는다."
+  - "s03 찻잔이 흔들리는 장면은 착상을 보여 주는 연출이며 기록이 아니다."
+  - "생김새는 출처마다 '원통형'(Britannica), '달걀 모양'(MacTutor), '항아리'(Encyclopedia.com)로 다르다. 대본은 '청동 항아리'로 쓰고 크기 수치는 쓰지 않는다."
+  - "내부 구조(진자·막대 등)는 기록이 남지 않아 복원안이 여러 가지라 대본과 화면에서 다루지 않는다. 단면도도 넣지 않는다."
+  - "s06 '지진이 난 쪽의 용이 구슬을 떨어뜨림'은 Encyclopedia.com 기준. 실제 정확도는 현대 학자들 사이에 의견이 갈린다."
+  - "s07~s08 감지 사건의 연도는 출처마다 다르고(132년경 / 138년), 거리도 다르게 적혀 있어(약 644km / 1,000km 이상) 대본에는 '어느 날', '서북쪽 먼 고장'으로만 쓴다."
+  - "s09 '방향까지 적어 두기 시작했다고 합니다'는 Encyclopedia.com 기준의 전승 표현."
+  - "s10 '지동의'는 '후풍지동의(候風地動儀)'의 줄임말."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 관리 한 명 중심, s07에 신하 2~3명, s08에 전령 1명."
+
+youtube:
+  titles:
+    - 먼 곳의 지진을 앉아서 알았다고? 2천 년 전 청동 항아리의 비밀
+    - 용이 구슬을 떨어뜨리면 지진이 났다는 뜻
+    - 아무도 못 느낀 지진을 맞힌 한나라의 발명품
+  description: |-
+    🐉 땅이 흔들려도 소식은 며칠 뒤에나… 멀리서 난 지진을 앉아서 알 수 있다면?
+
+    한나라의 천문 관리가 만든 건 커다란 청동 항아리 🏺
+    둘레엔 구슬을 문 용 여덟 마리, 아래엔 입 벌린 두꺼비 여덟 마리!
+    땅이 흔들리면 지진이 난 쪽 용이 구슬을 '땡그랑' 🔔
+
+    그런데 아무도 흔들림을 못 느낀 날, 구슬이 떨어졌다는데요? 며칠 뒤 날아온 소식에 모두가 깜짝 😲
+  comment_question: 여러분이라면 먼 곳의 지진을 어떻게 아셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [지진, 발명, 중국역사, 과학사, 쇼츠]
