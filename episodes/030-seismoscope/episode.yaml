@@ -1,7 +1,7 @@
 # 030 장형의 지동의 — 용과 두꺼비로 먼 곳의 지진을 알린 한나라의 청동 항아리
 id: "030"
 slug: seismoscope
-status: script_ok
+status: done
 working_title: 한나라 사람들은 어떻게 먼 곳의 지진을 앉아서 알았을까?
 title_lines: ["먼 곳의 지진을", "앉아서 알았다고?"]
 hook: 진땀을 뺐습니다
@@ -171,7 +171,7 @@ scenes:
     beat: info
     lines:
       - text: "놀란 조정은 그 뒤로, 지진이 난 방향까지 적어 두기 시작했다고 합니다."
-        captions: ["놀란 조정은 그 뒤로", "지진이 난 방향까지 / 적어 두기 시작했다고 합니다"]
+        captions: ["놀란 조정은 그 뒤로 / 지진이 난 방향까지", "적어 두기 / 시작했다고 합니다"]
     visual: 관리가 대나무 죽간에 붓으로 방향을 적고, 옆에는 청동 항아리가 은은히 빛난다
     image_prompt: >-
       The astronomer seated at a desk beside the bronze vessel, writing carefully with a brush on a row of bamboo slips,
