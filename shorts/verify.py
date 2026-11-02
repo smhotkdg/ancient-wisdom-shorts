@@ -105,9 +105,11 @@ def verify(ep: Episode, animatic: bool = False) -> dict:
                    "detail": "통과" if not fails else "실패 항목 참조"})
 
     sheet = _contact_sheet(ep, video, report, tag)
+    face_sheet = _face_zone_sheet(ep, video, report, tag)
     result = {"video": str(video.relative_to(ep.dir)), "pass": not fails, "checks": checks,
               "failures": fails, "warnings": warns + report.get("notes", []),
-              "contact_sheet": str(sheet.relative_to(ep.dir))}
+              "contact_sheet": str(sheet.relative_to(ep.dir)),
+              "face_zone_sheet": str(face_sheet.relative_to(ep.dir))}
     write_json(ep.output_dir / f"{tag}-verification.json", result)
     return result
 
@@ -133,5 +135,41 @@ def _contact_sheet(ep: Episode, video: Path, report: dict, tag: str) -> Path:
     path = out_dir / f"{tag}-sheet.jpg"
     sheet.save(path, quality=88)
     for p in out_dir.glob(f"{tag}_s*.jpg"):
+        p.unlink()
+    return path
+
+
+FACE_ZONE = 0.30   # 2026-11-02 사용자: 인물 얼굴이 위쪽 30%(제목 자리)에 들어오면 안 된다
+
+
+def _face_zone_sheet(ep: Episode, video: Path, report: dict, tag: str) -> Path:
+    """얼굴 금지 구역 확인용 — 장면마다 앞·가운데·끝 3프레임, 위쪽 30% 경계에 빨간 선.
+    Grok 클립은 움직이며 얼굴이 올라가는 일이 많아 가운데 한 장(final-sheet)만으로는 놓친다."""
+    from PIL import ImageDraw
+    out_dir = ep.output_dir / "check"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    t, frames = 0.0, []
+    for sc in report["scenes"]:
+        for k, r in enumerate((0.12, 0.5, 0.88)):
+            p = out_dir / f"{tag}_face_{sc['id']}_{k}.jpg"
+            run(["ffmpeg", "-y", "-ss", f"{t + sc['duration'] * r:.3f}", "-i", video, "-frames:v", "1",
+                 "-vf", "scale=240:-2", "-q:v", "4", p])
+            im = Image.open(p).convert("RGB")
+            d = ImageDraw.Draw(im)
+            y = int(im.height * FACE_ZONE)
+            for x in range(0, im.width, 8):
+                d.line([(x, y), (x + 4, y)], fill=(255, 40, 40), width=2)
+            d.text((4, 4), f"{sc['id']}-{k + 1}", fill=(255, 255, 0))
+            frames.append(im)
+        t += sc["duration"]
+    cols = 6
+    rows = (len(frames) + cols - 1) // cols
+    w, h = frames[0].size
+    sheet = Image.new("RGB", (cols * w + (cols + 1) * 6, rows * h + (rows + 1) * 6), (24, 24, 24))
+    for i, f in enumerate(frames):
+        sheet.paste(f, (6 + (i % cols) * (w + 6), 6 + (i // cols) * (h + 6)))
+    path = out_dir / f"{tag}-face-zone.jpg"
+    sheet.save(path, quality=86)
+    for p in out_dir.glob(f"{tag}_face_*.jpg"):
         p.unlink()
     return path

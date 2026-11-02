@@ -110,6 +110,21 @@ def check(ep: Episode) -> dict:
         tips.append("배경 인물은 image_prompt 에 직접 쓰지 말고 장면의 extras: 에 적는다 (docs/scene-people.md) — "
                     "콘티가 '주인공은 가운데 크게, 배경 인물은 뒤에 작게 2~4명' 구도 문장을 자동으로 붙인다")
 
+    # 얼굴이 위쪽 30%(제목 자리)로 올라갈 위험 (2026-11-02 사용자)
+    risky = re.compile(r"tilt(s|ing)? up|\brises?\b|crane up|from below|low angle|above (his|her|their) head|"
+                       r"raises? (both )?(his|her|their)? ?arms|arms (raised|up)|jumps?|standing on top|at the top level|"
+                       r"looking up at the camera", re.I)
+    face_risk = []
+    for sc in ep.scenes:
+        for i, p in enumerate([sc] + list(sc.get("extra_clips") or []), start=1):
+            if not (p.get("characters") if i > 1 else sc.get("characters")):
+                continue
+            blob = " ".join(str(p.get(k) or "") for k in ("image_prompt", "motion_prompt", "camera"))
+            if risky.search(blob):
+                face_risk.append(sc["id"] if i == 1 else f"{sc['id']}-{i}")
+    item(not face_risk, "얼굴이 위쪽 30%로 갈 위험 동작 없음 (tilt up·rise·팔 들기·높은 곳)",
+         ", ".join(face_risk) if face_risk else "없음")
+
     notes = " ".join(ep.data.get("accuracy_notes") or [])
     item("재구성" in notes, "정확성 메모에 '재구성' 명시", "있음" if "재구성" in notes else "없음")
     item(not re.search(r"기록에 따르면|기록에 의하면", text), "지어낸 '기록' 인용 없음", "통과")

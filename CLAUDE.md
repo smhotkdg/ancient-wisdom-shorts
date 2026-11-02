@@ -62,6 +62,7 @@ python aw.py publish <ep> -m M # 텍스트 파일만 골라 커밋·푸시 (--al
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`, 기본 3d-cartoon). 프롬프트에 화풍 문구를 직접 박아 넣지 않는다.
 13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다. `images/`, `clips/`는 빈 폴더(`.gitkeep`)만 올려서 pull 하면 폴더가 바로 생긴다. 콘티는 레포 루트 `conti/`에도 복사본(`conti/NNN-slug.html`)과 목록(`conti/index.html`)이 생겨 함께 올린다 (`aw.py conti`가 자동 갱신).
 14. 납품 전 `output/check/final-sheet.jpg`(360px 폭 장면 모음)를 직접 보고 자막이 핵심 동작을 가리지 않는지 확인한다.
+15. **인물 얼굴은 위쪽 30%에 넣지 않는다** (2026-11-02 사용자): 제목(블록 중심 y 279)에 얼굴이 가리면 안 된다. 이미지는 정수리가 위에서 30%보다 아래, 얼굴은 40~55% 높이 (화풍 프리셋이 모든 이미지·Grok 프롬프트에 자동으로 붙임). `image_prompt`에 팔을 머리 위로 드는 동작, 카메라 tilt up·rise, 높은 곳에 선 구도, 화면 위쪽 얼굴 클로즈업을 쓰지 않는다. 합성 후 `output/check/final-face-zone.jpg`(장면마다 3프레임, 빨간 선 = 30%)에서 선 위로 올라간 얼굴이 있으면 `trim_start`로 피하거나 `redo:`로 다시 만들기를 요청한다.
 
 ## 로컬 Claude Code — 묻지 않고 한 번에 (2026-11-02 사용자)
 
