@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "scholar": "Character reference sheet of a lean, curious Greek man in his 40s with short curly grey-streaked dark hair, a neat short beard, bright clever eyes and laugh lines, wearing a cream linen chiton under a pale blue himation draped over one shoulder, leather sandals, a rolled papyrus scroll and a small wooden measuring rod tucked in his belt. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A grand ancient library hall with tall shelves full of papyrus scrolls, warm sunlight streaming through high windows, the scholar seen from the knees up in the middle of the frame, holding a small round clay globe in one hand and scratching his head with the other, puzzled frown. Plain stone wall and window light above him. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "He turns the clay globe in his hand, squints at it and scratches his head. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "The scroll keeps unrolling off the table and across the floor; he raises his eyebrows and sighs. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "An endless desert road stretching to the horizon under a wide pale sky, the scholar seen from the knees up in the middle of the frame, standing at the start of the road with a walking stick, looking at the impossible distance and slumping his shoulders. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "Heat shimmers over the endless road; he takes one step, stops, and slumps his shoulders. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The scholar seen from the waist up in the middle of the frame, sitting by a library window, chin in hand, gazing at a sharp beam of sunlight falling across the stone floor, deep in thought. Plain stone wall above him. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "The beam of sunlight shifts slowly on the floor; he watches it and narrows his eyes thoughtfully. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "Looking straight down into a deep round stone well at noon, bright sunlight shining all the way down the shaft and sparkling on the water at the very bottom, no shadows on the inner walls. Clean simple illustration, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The sunlight sparkles on the water far below as the camera slowly sinks toward it. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push down. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s04-2.mp4",
+          "seconds": 6,
+          "motion": "He reads the letter, his eyes widen and he looks up with a grin. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "A sunny stone courtyard in Alexandria at noon, a tall straight wooden rod standing upright on the flat paving, casting a short sharp shadow, the scholar seen from the knees up in the middle of the frame, crouching beside it and marking the tip of the shadow with a piece of chalk. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "He crouches and marks the shadow's tip with chalk, then checks the rod is perfectly upright. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Simple educational cross-section diagram of the round Earth: parallel golden sun rays coming from one side, a well at one point on the surface with the rays going straight down into it, and a little upright stick further north casting a slanted shadow; two lines from both points meet at the Earth's center forming a thin slice of the circle, gently highlighted. Clean illustration, no labels, no text, no numbers, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "The parallel sun rays glow, then the two lines draw down to the center and the thin slice lights up. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The scholar seen from the waist up in the middle of the frame, leaning over a painted papyrus map of the Nile on a table, spreading two fingers between a city in the north and a city in the south, tilting his head with a puzzled look. No text on the map. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He spreads his fingers between the two cities, tilts his head and taps the map thoughtfully. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A dirt road along the green banks of the Nile with palm trees, the scholar in the foreground in the middle of the frame writing on a wax tablet with a stylus, then looking up with a delighted smile. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: one or two surveyors far behind him walking in perfectly even steps along the road, counting their paces (only 2-4 people, never blocking the ancient Greek scholar of Alexandria). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "The surveyors pace steadily along the road behind him; he scratches a figure on the tablet and beams. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "The blue planet Earth seen from space, slowly turning, a thin glowing golden line being drawn all the way around its middle. No text, no numbers, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The Earth turns slowly while the golden line traces all the way around it and closes the loop. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The scholar seen from the knees up in the middle of the frame, standing beside the upright wooden rod in the stone courtyard at golden sunset, a long shadow stretching across the paving, smiling proudly with his scroll under his arm. Wide sunset sky above him. No other people. Characters: ancient Greek scholar of Alexandria (attached reference image char_scholar.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the ancient Greek scholar of Alexandria in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top quarter of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top quarter. Place the main character's head about 35-45% down from the top of the frame (framed from the knees or waist up); even in close-ups keep the face in the middle of the frame, never near the top edge. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He pats the rod and smiles; the camera slowly pulls back at eye level as the shadow lengthens. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

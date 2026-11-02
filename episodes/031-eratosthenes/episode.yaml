@@ -1,0 +1,233 @@
+# 031 에라토스테네스 — 막대 하나와 그림자로 지구 둘레를 잰 알렉산드리아의 학자
+id: "031"
+slug: eratosthenes
+status: script_ok
+working_title: 2천 년 전 사람은 어떻게 막대 하나로 지구 둘레를 쟀을까?
+title_lines: ["막대기 하나로", "지구 둘레를 쟀다고?"]
+hook: 골머리를 앓았습니다
+caption_keywords: [우물 바닥, 막대, 그림자, 50분의 1, 걸음 수]
+
+story:
+  hero: 학자
+  reveal: [에라토스테네스]
+
+characters:
+  - id: scholar
+    name: 학자
+    name_en: ancient Greek scholar of Alexandria
+    description: >-
+      a lean, curious Greek man in his 40s with short curly grey-streaked dark hair, a neat short beard, bright clever
+      eyes and laugh lines, wearing a cream linen chiton under a pale blue himation draped over one shoulder, leather
+      sandals, a rolled papyrus scroll and a small wooden measuring rod tucked in his belt
+    note: 이야기 주인공. 기원전 3세기 알렉산드리아에서 지리·천문을 연구한 그리스 학자 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "알렉산드리아의 한 학자는 골머리를 앓았습니다."
+        captions: ["알렉산드리아의 한 학자는 / 골머리를 앓았습니다"]
+      - text: "땅이 둥글다는 건 알았는데, 얼마나 큰지는 아무도 몰랐거든요."
+        captions: ["땅이 둥글다는 건 알았는데", "얼마나 큰지는 / 아무도 몰랐거든요"]
+    visual: 두루마리가 가득한 서고에서 학자가 둥근 지구본 모형을 들고 머리를 긁적인다
+    image_prompt: >-
+      A grand ancient library hall with tall shelves full of papyrus scrolls, warm sunlight streaming through high
+      windows, the scholar seen from the knees up in the middle of the frame, holding a small round clay globe in one
+      hand and scratching his head with the other, puzzled frown. Plain stone wall and window light above him. No other
+      people.
+    characters: [scholar]
+    motion_prompt: >-
+      He turns the clay globe in his hand, squints at it and scratches his head.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the scholar unrolling a long papyrus scroll that keeps rolling and rolling across the table and onto
+          the floor, his eyebrows rising in comic dismay. No text on the scroll. No other people.
+        characters: [scholar]
+        motion_prompt: >-
+          The scroll keeps unrolling off the table and across the floor; he raises his eyebrows and sighs.
+        camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "지구를 한 바퀴, 걸어서 잴 수도 없었죠."
+        captions: ["지구를 한 바퀴", "걸어서 잴 수도 없었죠"]
+    visual: 끝없는 사막 길 위에 서서 지평선을 보며 어깨를 축 늘어뜨린 학자
+    image_prompt: >-
+      An endless desert road stretching to the horizon under a wide pale sky, the scholar seen from the knees up in the
+      middle of the frame, standing at the start of the road with a walking stick, looking at the impossible distance and
+      slumping his shoulders. No other people.
+    characters: [scholar]
+    motion_prompt: >-
+      Heat shimmers over the endless road; he takes one step, stops, and slumps his shoulders.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "걷지 않고, 지구의 둘레를 잴 수는 없을까요?"
+        captions: ["걷지 않고", "지구의 둘레를 / 잴 수는 없을까요?"]
+    visual: 서고 창가에 앉은 학자가 바닥에 드리운 햇빛 줄기를 골똘히 바라본다
+    image_prompt: >-
+      The scholar seen from the waist up in the middle of the frame, sitting by a library window, chin in hand, gazing at a
+      sharp beam of sunlight falling across the stone floor, deep in thought. Plain stone wall above him. No other people.
+    characters: [scholar]
+    motion_prompt: >-
+      The beam of sunlight shifts slowly on the floor; he watches it and narrows his eyes thoughtfully.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그때 학자는 남쪽 도시 시에네의 이야기를 들었습니다."
+        captions: ["그때 학자는 / 남쪽 도시 시에네의", "이야기를 들었습니다"]
+      - text: "일 년에 딱 하루 한낮, 햇빛이 깊은 우물 바닥까지 비친다는 거죠."
+        captions: ["일 년에 딱 하루 한낮", "햇빛이 깊은 우물 바닥까지 / 비친다는 거죠"]
+    visual: 깊은 돌우물을 위에서 내려다본 모습 — 한낮의 햇빛이 곧장 바닥의 물을 비춘다
+    image_prompt: >-
+      Looking straight down into a deep round stone well at noon, bright sunlight shining all the way down the shaft and
+      sparkling on the water at the very bottom, no shadows on the inner walls. Clean simple illustration, no people.
+    motion_prompt: >-
+      The sunlight sparkles on the water far below as the camera slowly sinks toward it.
+    camera: slow push down
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the scholar reading a small papyrus letter by the library window, his eyes widening with excitement.
+          No readable text. No other people.
+        characters: [scholar]
+        motion_prompt: >-
+          He reads the letter, his eyes widen and he looks up with a grin.
+        camera: slow push in
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그래서 같은 날 같은 시각, 알렉산드리아에 막대를 세워 그림자를 쟀습니다."
+        captions: ["그래서 같은 날 같은 시각", "알렉산드리아에 막대를 세워 / 그림자를 쟀습니다"]
+    visual: 햇살 쏟아지는 돌 마당에 곧은 막대를 세운 학자가 땅에 드리운 짧은 그림자 끝을 손가락으로 짚는다
+    image_prompt: >-
+      A sunny stone courtyard in Alexandria at noon, a tall straight wooden rod standing upright on the flat paving, casting
+      a short sharp shadow, the scholar seen from the knees up in the middle of the frame, crouching beside it and marking
+      the tip of the shadow with a piece of chalk. No other people.
+    characters: [scholar]
+    motion_prompt: >-
+      He crouches and marks the shadow's tip with chalk, then checks the rod is perfectly upright.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그림자가 만든 각도는, 원 한 바퀴의 50분의 1이었죠."
+        captions: ["그림자가 만든 각도는", "원 한 바퀴의 / 50분의 1이었죠"]
+    visual: 단면도 — 둥근 지구 위 두 도시, 평행한 햇빛, 시에네는 그림자 없음, 알렉산드리아는 비스듬한 그림자, 지구 중심에서 만나는 작은 부채꼴
+    image_prompt: >-
+      Simple educational cross-section diagram of the round Earth: parallel golden sun rays coming from one side, a well at
+      one point on the surface with the rays going straight down into it, and a little upright stick further north
+      casting a slanted shadow; two lines from both points meet at the Earth's center forming a thin slice of the circle,
+      gently highlighted. Clean illustration, no labels, no text, no numbers, no people.
+    motion_prompt: >-
+      The parallel sun rays glow, then the two lines draw down to the center and the thin slice lights up.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 두 도시 사이 거리는, 어떻게 알았을까요?"
+        captions: ["그런데 두 도시 사이 거리는", "어떻게 알았을까요?"]
+    visual: 지도 위 두 도시 사이에 손가락 두 개를 벌려 대 보며 고개를 갸웃하는 학자
+    image_prompt: >-
+      The scholar seen from the waist up in the middle of the frame, leaning over a painted papyrus map of the Nile on a
+      table, spreading two fingers between a city in the north and a city in the south, tilting his head with a puzzled
+      look. No text on the map. No other people.
+    characters: [scholar]
+    motion_prompt: >-
+      He spreads his fingers between the two cities, tilts his head and taps the map thoughtfully.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "걸음 수를 세는 측량꾼들이 잰 거리, 약 5천 스타디아를 썼다고 합니다."
+        captions: ["걸음 수를 세는 측량꾼들이 / 잰 거리", "약 5천 스타디아를 / 썼다고 합니다"]
+      - text: "여기에 50을 곱하자, 지구 둘레가 나왔죠."
+        captions: ["여기에 50을 곱하자", "지구 둘레가 나왔죠"]
+    visual: 나일강 둑길을 일정한 걸음으로 걷는 측량꾼 뒤로, 학자가 밀랍판에 계산을 하며 활짝 웃는다
+    image_prompt: >-
+      A dirt road along the green banks of the Nile with palm trees, the scholar in the foreground in the middle of the
+      frame writing on a wax tablet with a stylus, then looking up with a delighted smile.
+    characters: [scholar]
+    extras: "one or two surveyors far behind him walking in perfectly even steps along the road, counting their paces"
+    motion_prompt: >-
+      The surveyors pace steadily along the road behind him; he scratches a figure on the tablet and beams.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "단위에 따라 다르지만, 지금 값과 꽤 가까웠다고 합니다."
+        captions: ["단위에 따라 다르지만", "지금 값과 / 꽤 가까웠다고 합니다"]
+    visual: 우주에서 본 푸른 지구가 천천히 돌고, 적도를 따라 금빛 선이 한 바퀴 그려진다
+    image_prompt: >-
+      The blue planet Earth seen from space, slowly turning, a thin glowing golden line being drawn all the way around its
+      middle. No text, no numbers, no people.
+    motion_prompt: >-
+      The Earth turns slowly while the golden line traces all the way around it and closes the loop.
+    camera: slow orbit
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "막대 하나와 그림자로 지구를 잰 이 사람이 바로, 에라토스테네스입니다."
+        captions: ["막대 하나와 그림자로 / 지구를 잰 이 사람이", "바로, 에라토스테네스입니다"]
+      - text: "여러분이라면 지구의 크기를 어떻게 재셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 지구의 크기를", "어떻게 재셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 마당에서 막대 옆에 선 학자가 긴 그림자를 보며 뿌듯한 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The scholar seen from the knees up in the middle of the frame, standing beside the upright wooden rod in the stone
+      courtyard at golden sunset, a long shadow stretching across the paving, smiling proudly with his scroll under his
+      arm. Wide sunset sky above him. No other people.
+    characters: [scholar]
+    motion_prompt: >-
+      He pats the rod and smiles; the camera slowly pulls back at eye level as the shadow lengthens.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the scholar in the sunset courtyard, looking straight at the viewer with a warm curious smile, one
+          hand open toward the viewer as if asking a question. No other people.
+        characters: [scholar]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "Perimeter Institute for Theoretical Physics — How to measure Earth's circumference (북회귀선 가까운 시에네에서는 하짓날 한낮 막대 그림자가 없음, 같은 시각 알렉산드리아 막대의 그림자 각도 = 원 한 바퀴의 1/50, 두 도시 거리 5,000스타디아는 걸음 수를 세는 측량꾼(베마티스트)이 잼, ×50 = 250,000스타디아, 스타디온 길이(150~210m)에 따라 37,500~52,500km, 알렉산드리아 스타디온 기준 약 39,690km, 실제 약 40,075km) — https://perimeterinstitute.ca/news/how-measure-earths-circumference"
+  - "Bucknell University 물리·천문학과 — Eratosthenes and the Size of the Earth (하짓날 한낮 시에네의 깊은 우물 바닥까지 햇빛이 곧장 비침, 알렉산드리아 막대 그림자로 잰 각도 7.2° = 1/50, 거리 5,040스타디아, 둘레 약 250,000스타디아, 태양이 멀어 두 도시에 햇빛이 평행하게 온다는 가정) — https://www.eg.bucknell.edu/physics/astronomy/astr101/specials/eratosthenes.html"
+
+accuracy_notes:
+  - "주인공은 실존 인물 에라토스테네스(기원전 3세기). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'골머리를 앓았습니다'는 현대 화자의 연출이며 당시 기록이 아니다."
+  - "s01 '땅이 둥글다는 건 알았다'는 Perimeter Institute의 '고대 그리스에서 널리 받아들여짐' 기준. '얼마나 큰지 아무도 몰랐다'는 이야기를 위한 단순화다 (그 전에도 추정값은 있었다)."
+  - "s04 우물 이야기는 Bucknell 기준 (Perimeter는 '막대 그림자가 없음'으로 설명). '편지를 받았다'는 화면 연출이다."
+  - "s06 '50분의 1'(7.2°)은 두 출처 공통."
+  - "s08 거리는 출처마다 5,000(Perimeter)·5,040(Bucknell)스타디아라 '약 5천'으로 쓴다. 측량꾼(베마티스트)이 걸음으로 쟀다는 설명은 Perimeter 기준이며 '썼다고 합니다'로 쓴다."
+  - "s09 스타디온 길이가 확실하지 않아 km 값이나 '오차 몇 %'는 대본에 쓰지 않는다. '꽤 가까웠다'고만 쓴다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 학자 한 명 중심, s08에만 멀리 걷는 측량꾼 1~2명."
+
+youtube:
+  titles:
+    - 막대기 하나로 지구 둘레를 쟀다고? 2천 년 전 천재의 계산
+    - 우물 바닥의 햇빛이 지구 크기를 알려 줬다
+    - 그림자 하나로 지구를 잰 사람
+  description: |-
+    🌍 땅이 둥근 건 아는데… 도대체 얼마나 클까? 한 바퀴 걸어 볼 수도 없고!
+
+    알렉산드리아의 학자가 들은 소문 하나 ☀️
+    "남쪽 도시에선 일 년에 딱 하루, 햇빛이 우물 바닥까지 비친대!"
+    그래서 같은 날 같은 시각, 막대 하나를 세워 그림자를 쟀더니… 📏
+
+    각도는 원 한 바퀴의 50분의 1. 여기에 두 도시 거리를 곱하자 지구 둘레가 나왔답니다 🤯
+  comment_question: 여러분이라면 지구의 크기를 어떻게 재셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [지구, 과학사, 수학, 고대그리스, 쇼츠]
