@@ -1,4 +1,7 @@
 episodes/030-seismoscope 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
+진행 방식: 중간에 묻지 말고 끝까지 한 번에 진행한다 (이미지·클립이 빠졌거나 네트워크 오류로 음성 결과가 불명확할 때만 멈춤).
+셸에서는 python aw.py … 와 git 명령만 쓴다. PowerShell 스크립트·.NET 한 줄 명령([IO.File], New-Object 등)·여러 줄 python -c 는 쓰지 않는다
+(권한 확인 창이 뜬다). 파일 고치기는 Edit 도구로, 상태 바꾸기는 python aw.py done, 커밋·푸시는 python aw.py publish 로 한다.
 
 0. git pull
 1. python aw.py status 030 — 이미지 15장, Grok 클립 14개, 음성이 있는지 확인. 이미지·클립이 빠졌으면 목록을 알려주고 멈춤.
@@ -28,4 +31,7 @@ episodes/030-seismoscope 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 7. python aw.py youtube 030 — output/youtube.txt 의 추천 제목·설명을 그대로 보여 준다.
 8. 보고: final.mp4 길이, 감속·정지 보정된 클립, 조정한 항목, 검수 결과(음성·자막 정렬 방식 포함).
    싱크 확인: output/final.srt 의 몇 군데(처음·중간·끝)를 실제 소리와 비교해 자막이 0.3초 이상 어긋나는 곳이 있으면 보고.
-9. episode.yaml status: done, docs/topics.md 의 030 상태를 "완성"으로 바꾸고 커밋·푸시 (이미지·영상·음성은 제외).
+9. python aw.py done 030 — episode.yaml status: done + docs/topics.md 상태 "완성" (보류가 있으면 --label "러프 컷").
+10. python aw.py publish 030 -m "<요약 한 줄>" --trailer "Co-Authored-By: Claude <noreply@anthropic.com>"
+    — 텍스트 파일(episode.yaml·콘티·프롬프트·youtube.txt)·conti/·docs/topics.md 만 커밋·푸시 (이미지·영상·음성은 제외).
+    코드를 고쳤다면 --also shorts/파일.py 로 함께 올린다.

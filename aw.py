@@ -217,6 +217,62 @@ def cmd_status(a):
     say(f"  {mark(ep.output_dir / 'animatic.mp4')} 애니매틱   {mark(ep.output_dir / 'final.mp4')} 최종")
 
 
+def cmd_done(a):
+    """episode.yaml status 와 docs/topics.md 상태 칸을 한 번에 바꾸고 바뀐 내용을 보여 준다.
+    (2026-11-02 사용자: 로컬 Claude Code 가 PowerShell 한 줄 스크립트 대신 이 명령 하나로 묻지 않고 처리)"""
+    import re, subprocess
+    ep = load_episode(resolve_ep(a.ep))
+    eid = str(ep.data.get("id") or "")
+    spec = ep.dir / "episode.yaml"
+    y = spec.read_text(encoding="utf-8")
+    y2, n = re.subn(r"(?m)^status:.*$", f"status: {a.status}", y, count=1)
+    if n == 0:
+        y2 = y.replace("\nslug:", f"\nstatus: {a.status}\nslug:", 1)
+    if y2 != y:
+        spec.write_text(y2, encoding="utf-8", newline="\n")
+    topics = ROOT / "docs" / "topics.md"
+    t = topics.read_text(encoding="utf-8")
+    lines, hit = t.split("\n"), False
+    for i, line in enumerate(lines):
+        if eid and line.startswith(f"| {eid} |"):
+            cells = line.split(" | ")
+            if len(cells) >= 4:
+                cells[2] = a.label
+                lines[i], hit = " | ".join(cells), True
+            break
+    if hit:
+        topics.write_text("\n".join(lines), encoding="utf-8", newline="\n")
+    say(f"{ep.dir.name}: status → {a.status}" + (f", topics.md → {a.label}" if hit else " (topics.md 에 줄이 없어 그대로)"))
+    subprocess.run(["git", "--no-pager", "diff", "--stat", "--", str(spec), str(topics)], cwd=ROOT)
+
+
+TEXT_FILES = ("episode.yaml", "conti.html", "prompts.json", "prompts-chatgpt.txt", "prompts-grok.txt",
+              "prompts-chatgpt-redo.txt", "prompts-grok-redo.txt", "claude-code.txt", "output/youtube.txt")
+
+
+def cmd_publish(a):
+    """에피소드의 텍스트 파일 + conti/ + docs/topics.md 만 골라 커밋·푸시 (이미지·영상·음성은 .gitignore 로 제외).
+    로컬 Claude Code 가 git 명령을 여러 번 조합하지 않고 한 번에 끝내도록."""
+    import subprocess
+    ep = load_episode(resolve_ep(a.ep))
+    paths = [str(ep.dir / p) for p in TEXT_FILES if (ep.dir / p).exists()]
+    paths += [str(ROOT / "conti"), str(ROOT / "docs" / "topics.md")]
+    for extra in a.also or []:
+        paths.append(extra)
+    def git(*args, check=True):
+        say("$ git " + " ".join(args))
+        return subprocess.run(["git", *args], cwd=ROOT, check=check)
+    git("pull", "--rebase", "--autostash", check=False)
+    git("add", "--", *paths)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+        say("커밋할 변경이 없습니다.")
+        return
+    msg = a.message + ("\n\n" + "\n".join(a.trailer) if a.trailer else "")
+    git("commit", "-m", msg)
+    git("push")
+    subprocess.run(["git", "--no-pager", "log", "--oneline", "-1", "--stat"], cwd=ROOT)
+
+
 def cmd_selftest(_):
     from shorts.selftest import selftest
     selftest()
@@ -240,6 +296,11 @@ def main():
     s = sub.add_parser("compose"); s.add_argument("ep"); s.set_defaults(fn=cmd_compose)
     s = sub.add_parser("verify"); s.add_argument("ep"); s.add_argument("--animatic", action="store_true"); s.set_defaults(fn=cmd_verify)
     sub.add_parser("selftest").set_defaults(fn=cmd_selftest)
+    s = sub.add_parser("done"); s.add_argument("ep"); s.add_argument("--status", default="done")
+    s.add_argument("--label", default="완성", help='docs/topics.md 상태 칸 (예: 완성, "러프 컷")'); s.set_defaults(fn=cmd_done)
+    s = sub.add_parser("publish"); s.add_argument("ep"); s.add_argument("-m", "--message", required=True)
+    s.add_argument("--trailer", action="append", help="커밋 메시지 끝 줄 (Co-Authored-By 등), 여러 번 가능")
+    s.add_argument("--also", action="append", help="함께 올릴 파일 (예: shorts/compose.py)"); s.set_defaults(fn=cmd_publish)
     a = p.parse_args()
     try:
         a.fn(a)

@@ -1,41 +1,41 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.1초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.0초
 The wind ripples the silk map; he wipes his brow and looks worriedly toward the distant mountains. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.1–8.8초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.0–8.3초
 The ground trembles, a few roof tiles slide off and dust puffs up from the walls. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static with slight shake. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.8–12.8초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 8.3–12.6초
 His finger moves from one direction to another on the map and stops, unsure; he sighs. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.8–15.9초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.6–15.9초
 Tiny ripples spread across the tea; he leans closer, then sits up with a spark in his eyes. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.9–20.0초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.9–20.9초
 He presses a dragon head into place on the vessel and steps back to look at the eight dragons around it. Camera: slow orbit at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.0–22.2초
+[S05-1] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 20.9–23.3초
 His fingers set the ball gently in the dragon's mouth; the toad below waits with its mouth open. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 22.2–24.5초
+[S05-2] 6초 · 업로드: images/s05-2.png · 저장: clips/s05-2.mp4 · 구간 23.3–25.7초
 The camera circles slowly around the vessel, the dragons and toads gleaming in the lamp light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 24.5–29.6초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 25.7–31.3초
 The ball drops from the dragon's mouth and lands in the toad's mouth with a bright clink. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 29.6–35.3초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 31.3–37.8초
 He holds up the ball steadily; the officials behind him whisper, shrug and shake their heads. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 35.3–37.8초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 37.8–40.4초
 He takes the scroll, unrolls it and slowly smiles; the messenger catches his breath beside the horse. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 37.8–40.3초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 40.4–43.0초
 He reads, his eyebrows lift, and he turns to look back at the vessel with a proud smile. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 40.3–44.8초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 43.0–48.1초
 He writes a line with the brush, pauses, and glances up at the dragons with a calm smile. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 44.8–49.4초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 48.1–52.7초
 He bows his head slightly and smiles; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 49.4–55.2초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 52.7–59.2초
 He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts or rises so that the character's head moves into the top quarter of the frame; keep the face in the middle of the frame for the whole clip.

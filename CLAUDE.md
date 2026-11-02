@@ -37,6 +37,8 @@ python aw.py compose <ep>      # 최종 합성 + 검수
 python aw.py youtube <ep>      # 유튜브 제목·설명만 다시 만들기
 python aw.py status <ep>       # 준비 상태
 python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0)
+python aw.py done <ep>         # episode.yaml status: done + topics.md "완성" (--label "러프 컷")
+python aw.py publish <ep> -m M # 텍스트 파일만 골라 커밋·푸시 (--also 로 코드 파일 추가)
 ```
 
 ## 반드시 지킬 것
@@ -60,6 +62,12 @@ python aw.py selftest          # 가짜 소스로 전체 흐름 시험 (비용 0
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`, 기본 3d-cartoon). 프롬프트에 화풍 문구를 직접 박아 넣지 않는다.
 13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다. `images/`, `clips/`는 빈 폴더(`.gitkeep`)만 올려서 pull 하면 폴더가 바로 생긴다. 콘티는 레포 루트 `conti/`에도 복사본(`conti/NNN-slug.html`)과 목록(`conti/index.html`)이 생겨 함께 올린다 (`aw.py conti`가 자동 갱신).
 14. 납품 전 `output/check/final-sheet.jpg`(360px 폭 장면 모음)를 직접 보고 자막이 핵심 동작을 가리지 않는지 확인한다.
+
+## 로컬 Claude Code — 묻지 않고 한 번에 (2026-11-02 사용자)
+
+- 중간 확인 질문 없이 끝까지 진행한다. 멈추는 경우는 소스가 빠졌을 때, 네트워크 오류로 음성 결과가 불명확할 때, `--force`가 필요할 때뿐.
+- 셸 명령은 `python aw.py …`와 `git …`만 쓴다. PowerShell 스크립트, `.NET` 한 줄(`[IO.File]`, `New-Object` 등), 여러 줄 `python -c`는 권한 확인 창을 띄우므로 쓰지 않는다.
+- 파일 수정은 Edit 도구, 상태 변경은 `aw.py done`, 커밋·푸시는 `aw.py publish`.
 
 ## 환경 메모
 
