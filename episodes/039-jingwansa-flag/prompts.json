@@ -1,0 +1,117 @@
+{
+  "characters": {
+    "monk": "Character reference sheet of a lean, calm Korean Buddhist monk in his early 40s with a closely shaved head, gentle but determined dark eyes, thin straight eyebrows and a serene face, wearing a simple grey monk's robe with a brown kasaya sash over one shoulder, a wooden prayer bead bracelet on his wrist. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A quiet Korean mountain temple courtyard in early spring with tiled roofs and a stone lantern, misty mountains and a village far below, the monk seen from the knees up in the middle of the frame, hands pressed together at his chest, looking down toward the village with a deeply worried face. Wide misty sky above him. No other people. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "Mist drifts past; he presses his palms together tighter and looks anxiously toward the village. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "An empty old wooden chest standing open on a temple's wooden floor, a few torn scraps of plain cloth scattered around it, dim light through a paper door. Quiet, tense mood. No text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "A breeze through the paper door stirs the cloth scraps around the empty chest. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "Inside a dim wooden temple hall lit by candles, the monk seen from the waist up in the middle of the frame, sitting cross-legged with eyes closed in deep thought, then slowly opening them. Plain dark wooden wall above him. No other people. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "The candle flames flicker; he sits still, then slowly opens his eyes with a quiet resolve. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "The monk kneeling on the wooden floor of the temple hall in the middle of the frame, carefully spreading out a white cloth flag with a single red circle in its center (the Japanese flag) in front of him, his face calm and determined. No other people. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He smooths out the white flag with both hands and looks at the red circle in silence. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "Close-up of the monk's hand holding a calligraphy brush dipped in black ink, painting over the red circle on the white flag to form a taegeuk swirl, with four black trigram bars painted at the four corners like the Korean flag. No letters, no numbers. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The brush sweeps through the red circle, the black ink spreads into a swirl, and the corner bars appear stroke by stroke. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s05-2.mp4",
+          "seconds": 6,
+          "motion": "The fresh ink glistens and slowly dries on the hand-painted flag. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow overhead push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Behind the altar of a small temple shrine, the monk in the middle of the frame carefully pushing a cloth bundle wrapped in the hand-painted Korean flag into an opening in the old earthen wall, glancing toward the door. No readable text. No other people. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "He slides the bundle deep into the wall opening, presses clay over it and glances toward the door. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The outside of a small old temple shrine with a closed wooden door and faded painted eaves, snow lying on its roof and on the ground in front of it, time passing quietly. No people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "Seasons pass in a time-lapse: snow falls and melts, leaves blow by, and the colors on the eaves slowly fade. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "Close-up of an old earthen wall partly opened during restoration work, dust falling, and a faded cloth bundle revealed inside the gap, a pair of gloved hands reaching in gently. No faces, no other people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "Dust falls from the opened wall as the gloved hands slowly lift out the faded bundle. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A conservation table with the old faded hand-painted Korean flag gently unfolded, a small stack of yellowed old newspapers resting on it, soft museum light, a sense of awe. Newspapers have no readable text. No people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The camera glides slowly over the faded flag and the yellowed papers in soft light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The monk seen from the knees up in the middle of the frame, standing in the sunny temple courtyard in spring with cherry blossoms, palms pressed together at his chest, a calm gentle smile. Wide clear sky above him. No other people. Characters: Korean Buddhist monk of 1919 (attached reference image char_monk.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the Korean Buddhist monk of 1919 in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "Petals drift down; he bows his head slightly with a calm smile as the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

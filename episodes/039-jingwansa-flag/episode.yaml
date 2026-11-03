@@ -1,0 +1,220 @@
+# 039 진관사 태극기 — 일장기 위에 먹으로 그려 벽 속에 숨긴 태극기 (백초월, 독립운동가 편)
+id: "039"
+slug: jingwansa-flag
+status: script_ok
+working_title: 일장기 위에 그린 태극기는 왜 90년 동안 벽 속에 있었을까?
+title_lines: ["일장기 위에", "태극기를 그렸다고?"]
+hook: 혼이 쏙 빠졌습니다
+caption_keywords: [빼앗고, 일장기, 먹으로, 벽 속에, 90년]
+
+story:
+  hero: 스님
+  reveal: [진관사 태극기, 백초월]
+
+characters:
+  - id: monk
+    name: 스님
+    name_en: Korean Buddhist monk of 1919
+    description: >-
+      a lean, calm Korean Buddhist monk in his early 40s with a closely shaved head, gentle but determined dark eyes, thin
+      straight eyebrows and a serene face, wearing a simple grey monk's robe with a brown kasaya sash over one shoulder,
+      a wooden prayer bead bracelet on his wrist
+    note: 이야기 주인공. 1919년 서울 북쪽 진관사에서 독립운동을 한 스님 (마지막 대사 전까지 이름과 절 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "서울 북쪽 산사의 한 스님은 혼이 쏙 빠졌습니다."
+        captions: ["서울 북쪽 산사의 한 스님은 / 혼이 쏙 빠졌습니다"]
+      - text: "만세 운동이 번지자, 일본 경찰이 태극기와 비밀 신문을 샅샅이 빼앗고 있었거든요."
+        captions: ["만세 운동이 번지자", "일본 경찰이 / 태극기와 비밀 신문을", "샅샅이 빼앗고 있었거든요"]
+    visual: 산사 마당, 스님이 산 아래 마을 쪽을 내려다보며 걱정스럽게 손을 모은다
+    image_prompt: >-
+      A quiet Korean mountain temple courtyard in early spring with tiled roofs and a stone lantern, misty mountains and a
+      village far below, the monk seen from the knees up in the middle of the frame, hands pressed together at his chest,
+      looking down toward the village with a deeply worried face. Wide misty sky above him. No other people.
+    characters: [monk]
+    motion_prompt: >-
+      Mist drifts past; he presses his palms together tighter and looks anxiously toward the village.
+    camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "태극기를 새로 만들 천도, 마음 놓고 숨길 곳도 없었죠."
+        captions: ["태극기를 새로 만들 천도", "마음 놓고 숨길 곳도 / 없었죠"]
+    visual: 텅 빈 나무 궤짝과 바닥에 흩어진 빈 천 조각들 (사람 없이)
+    image_prompt: >-
+      An empty old wooden chest standing open on a temple's wooden floor, a few torn scraps of plain cloth scattered
+      around it, dim light through a paper door. Quiet, tense mood. No text, no people.
+    motion_prompt: >-
+      A breeze through the paper door stirs the cloth scraps around the empty chest.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "들키지 않고 태극기를 지킬 방법, 없을까요?"
+        captions: ["들키지 않고 / 태극기를 지킬 방법", "없을까요?"]
+    visual: 법당 안 촛불 앞에 앉은 스님이 눈을 감고 깊이 생각에 잠긴다
+    image_prompt: >-
+      Inside a dim wooden temple hall lit by candles, the monk seen from the waist up in the middle of the frame, sitting
+      cross-legged with eyes closed in deep thought, then slowly opening them. Plain dark wooden wall above him. No
+      other people.
+    characters: [monk]
+    motion_prompt: >-
+      The candle flames flicker; he sits still, then slowly opens his eyes with a quiet resolve.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 스님은, 일장기 한 장을 바닥에 펼쳤습니다."
+        captions: ["그래서 스님은", "일장기 한 장을 / 바닥에 펼쳤습니다"]
+    visual: 스님이 흰 바탕에 붉은 원이 있는 일장기를 나무 바닥에 조용히 펼친다
+    image_prompt: >-
+      The monk kneeling on the wooden floor of the temple hall in the middle of the frame, carefully spreading out a white
+      cloth flag with a single red circle in its center (the Japanese flag) in front of him, his face calm and determined.
+      No other people.
+    characters: [monk]
+    motion_prompt: >-
+      He smooths out the white flag with both hands and looks at the red circle in silence.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그 위에 먹으로 태극과 네 괘를 그려, 태극기로 바꿔 버렸죠."
+        captions: ["그 위에 먹으로 / 태극과 네 괘를 그려", "태극기로 바꿔 버렸죠"]
+    visual: 붓을 든 스님의 손 — 붉은 원 위로 먹이 번지며 태극 무늬가 생기고, 네 귀퉁이에 괘가 그려진다
+    image_prompt: >-
+      Close-up of the monk's hand holding a calligraphy brush dipped in black ink, painting over the red circle on the
+      white flag to form a taegeuk swirl, with four black trigram bars painted at the four corners like the Korean flag.
+      No letters, no numbers.
+    characters: [monk]
+    motion_prompt: >-
+      The brush sweeps through the red circle, the black ink spreads into a swirl, and the corner bars appear stroke by
+      stroke.
+    camera: macro static
+    extra_clips:
+      - image_prompt: >-
+          Top-down view of the finished hand-painted flag on the wooden floor: a white cloth with a red-and-black inked
+          taegeuk swirl in the center and four black trigram bars at the corners, an ink stone and brush beside it. No
+          letters, no numbers, no people.
+        motion_prompt: >-
+          The fresh ink glistens and slowly dries on the hand-painted flag.
+        camera: slow overhead push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그리고 그 태극기로 비밀 신문들을 싸서, 법당 벽 속에 꼭꼭 숨겼습니다."
+        captions: ["그리고 그 태극기로 / 비밀 신문들을 싸서", "법당 벽 속에 / 꼭꼭 숨겼습니다"]
+    visual: 불단 뒤 흙벽에 난 틈으로, 스님이 태극기 보자기 꾸러미를 조심스럽게 밀어 넣는다
+    image_prompt: >-
+      Behind the altar of a small temple shrine, the monk in the middle of the frame carefully pushing a cloth bundle
+      wrapped in the hand-painted Korean flag into an opening in the old earthen wall, glancing toward the door. No
+      readable text. No other people.
+    characters: [monk]
+    motion_prompt: >-
+      He slides the bundle deep into the wall opening, presses clay over it and glances toward the door.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 그 뒤로 무려 90년 동안, 아무도 이 사실을 몰랐습니다. 어떻게 다시 나왔을까요?"
+        captions: ["그런데 그 뒤로 / 무려 90년 동안", "아무도 이 사실을 몰랐습니다", "어떻게 다시 나왔을까요?"]
+    visual: 같은 전각의 벽 — 계절이 바뀌며 눈이 쌓였다 녹고, 단청이 바래 간다 (사람 없이)
+    image_prompt: >-
+      The outside of a small old temple shrine with a closed wooden door and faded painted eaves, snow lying on its roof
+      and on the ground in front of it, time passing quietly. No people.
+    motion_prompt: >-
+      Seasons pass in a time-lapse: snow falls and melts, leaves blow by, and the colors on the eaves slowly fade.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 2009년, 낡은 전각을 고치려 벽을 뜯자 보자기 하나가 나왔죠."
+        captions: ["결국 2009년 / 낡은 전각을 고치려 벽을 뜯자", "보자기 하나가 나왔죠"]
+    visual: 보수 공사로 뜯긴 흙벽 틈에서 먼지 쌓인 천 꾸러미가 드러난다 (사람 없이, 손만)
+    image_prompt: >-
+      Close-up of an old earthen wall partly opened during restoration work, dust falling, and a faded cloth bundle
+      revealed inside the gap, a pair of gloved hands reaching in gently. No faces, no other people.
+    motion_prompt: >-
+      Dust falls from the opened wall as the gloved hands slowly lift out the faded bundle.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그 안엔 1919년의 비밀 신문 열아홉 점이, 태극기에 싸인 채 남아 있었습니다."
+        captions: ["그 안엔 1919년의 / 비밀 신문 열아홉 점이", "태극기에 싸인 채 / 남아 있었습니다"]
+    visual: 탁자 위에 조심스럽게 펼친 낡은 태극기와 그 위의 누렇게 바랜 신문 뭉치
+    image_prompt: >-
+      A conservation table with the old faded hand-painted Korean flag gently unfolded, a small stack of yellowed old
+      newspapers resting on it, soft museum light, a sense of awe. Newspapers have no readable text. No people.
+    motion_prompt: >-
+      The camera glides slowly over the faded flag and the yellowed papers in soft light.
+    camera: slow pan
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "일장기 위에 그린 이 태극기가 바로 진관사 태극기, 숨긴 이는 백초월 스님입니다."
+        captions: ["일장기 위에 그린 이 태극기가", "바로 진관사 태극기", "숨긴 이는 / 백초월 스님입니다"]
+      - text: "여러분이라면 그 시절 태극기를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 그 시절 / 태극기를", "어디에 숨기셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 봄 햇살 드는 산사 마당에서 스님이 손을 모은 채 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The monk seen from the knees up in the middle of the frame, standing in the sunny temple courtyard in spring with
+      cherry blossoms, palms pressed together at his chest, a calm gentle smile. Wide clear sky above him. No other
+      people.
+    characters: [monk]
+    motion_prompt: >-
+      Petals drift down; he bows his head slightly with a calm smile as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the monk in the sunny temple courtyard, looking straight at the viewer with a warm curious smile,
+          one hand open toward the viewer as if asking a question. No other people.
+        characters: [monk]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "헤럴드경제 2026 '독립의 상징, 진관사 태극기' (국가유산청 설명 인용: 일장기 위에 검은 먹으로 태극과 4괘를 그려 덧칠한, 일장기 위에 그린 유일하고 가장 오래된 태극기, 1919년 무렵 제작 추정, 2009년 5월 26일 진관사 칠성각 해체 중 불단 뒤 벽체 안에서 보자기에 싸여 발견, 백초월 스님이 봉안한 것으로 알려짐, 『독립신문』 등 독립신문류 5종 19점을 태극기로 감쌈, 가로 89cm·세로 70cm, 2010년 등록문화재·2021년 보물) — https://www.heraldk.com/article/2026081318094462468"
+  - "서울특별시 내 손안에 서울 — 그날 진관사 벽에서 발견된 것은? (2009년 5월 26일 칠성각 해체·보수 중 벽 속에서 보자기 발견, 1919년 백초월 스님이 불단을 옮기고 벽을 뜯어 숨김, 신대한·독립신문·조선독립신문·자유신종보·경고문 등, 일장기 위에 덧그린 태극기, 백초월(1878~1944) 1944년 청주교도소 옥사) — https://mediahub.seoul.go.kr/archives/1271893"
+  - "서울특별시 내 손안에 서울 — 3·1절, 한용운 말고 백초월 스님도 있습니다 (보조: 백초월 스님의 독립운동 — 불교계 독립운동 본부, 임시정부·만주 독립군 자금 지원, 비밀 신문 제작·배포, 1986년 건국포장, 2014년 6월 이달의 독립운동가) — https://mediahub.seoul.go.kr/archives/842962"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 백초월 스님(1878~1944). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름과 절 이름(진관사)을 밝히지 않는다."
+  - "'혼이 쏙 빠졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 '일본 경찰이 태극기·비밀 신문을 빼앗음', '천도 숨길 곳도 없음'은 왜 일장기 위에 그리고 벽에 숨겼는지를 이야기로 푼 재구성이다. 스님이 일장기를 쓴 정확한 이유는 기록으로 확인되지 않는다."
+  - "s04~s05 태극기를 스님이 직접 그렸는지는 확실하지 않다 (출처는 '봉안한 것으로 알려짐'). 화면의 붓질 장면은 연출이다."
+  - "s06 '법당 벽 속'은 칠성각 불단 뒤 벽체(국가유산청·서울시) 기준."
+  - "s07 '90년'은 1919년 무렵 숨김 → 2009년 발견 기준."
+  - "s09 '비밀 신문 열아홉 점'은 국가유산청(헤럴드경제 인용) 기준. 서울시는 태극기 포함 20점으로 적는다."
+  - "백초월 스님의 옥사(1944년 청주교도소)는 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 스님 한 명. 배경 인물 장면 없음 (s08은 손만)."
+
+youtube:
+  titles:
+    - 일장기 위에 태극기를 그렸다고? 90년 만에 벽 속에서 나온 비밀
+    - 법당 벽을 뜯자 나온 보자기 하나, 그 안엔…
+    - 먹으로 덧그린 태극기, 그 주인은 스님이었다
+  description: |-
+    🇰🇷 만세 운동이 번지던 1919년, 일본 경찰이 태극기를 샅샅이 빼앗던 시절… 태극기를 어떻게 지킬 수 있었을까요?
+
+    서울 북쪽 산사의 한 스님이 펼친 건 뜻밖에도 일장기 한 장 🎌
+    그 위에 먹으로 태극과 네 괘를 그려 태극기로 바꿔 버렸죠 🖌️
+    그리고 비밀 신문들을 그 태극기로 싸서 법당 벽 속에 꼭꼭!
+
+    그 뒤 90년 동안 아무도 몰랐는데… 2009년 벽을 뜯자 나온 보자기 하나 😮 그 태극기와 스님의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 그 시절 태극기를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 태극기, 삼일절, 쇼츠]
