@@ -1,7 +1,7 @@
 # 036 조선말 큰사전 원고 — 사투리를 모아 우리말을 지킨 조선어학회 (독립운동가 편)
 id: "036"
 slug: keun-sajeon
-status: script_ok
+status: done
 working_title: 일제강점기 학자들은 어떻게 사라져 가는 우리말을 지켰을까?
 title_lines: ["사투리를 모아", "나라말을 지켰다고?"]
 hook: 발을 동동 굴렀습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "일제강점기 한 국어학자는 발을 동동 굴렀습니다."
         captions: ["일제강점기 한 국어학자는 / 발을 동동 굴렀습니다"]
       - text: "우리말을 못 쓰게 하는 바람에, 우리말이 하나둘 사라지고 있었거든요."
-        captions: ["우리말을 못 쓰게 하는 바람에", "우리말이 하나둘 / 사라지고 있었거든요"]
+        captions: ["우리말을 못 쓰게 / 하는 바람에", "우리말이 하나둘 / 사라지고 있었거든요"]
     visual: 1930년대 서울 골목, 원고 뭉치를 든 학자가 바람에 흩날려 날아가는 한글 낱장들을 붙잡으려 발을 구른다
     image_prompt: >-
       A 1930s Seoul alley with old tiled-roof houses under a grey sky, the scholar seen from the knees up in the middle of
@@ -59,7 +59,7 @@ scenes:
     beat: question
     lines:
       - text: "그런데 전국 방방곡곡의 말을, 어떻게 다 모을까요?"
-        captions: ["그런데 전국 방방곡곡의 말을", "어떻게 다 모을까요?"]
+        captions: ["그런데 전국 / 방방곡곡의 말을", "어떻게 다 모을까요?"]
     visual: 벽에 걸린 한반도 지도 앞에서 학자가 팔짱을 끼고 골똘히 생각한다
     image_prompt: >-
       The scholar seen from the waist up in the middle of the frame, standing in front of a large old map of the Korean
@@ -74,7 +74,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 학자는 방학에 고향 가는 학생들에게, 그 고장 사투리를 적어 오게 했습니다."
-        captions: ["그래서 학자는 / 방학에 고향 가는 학생들에게", "그 고장 사투리를 / 적어 오게 했습니다"]
+        captions: ["그래서 학자는 / 방학에 고향 가는", "학생들에게 / 그 고장 사투리를", "적어 오게 했습니다"]
     visual: 기차역 플랫폼에서 학자가 교복 입은 학생들에게 작은 수첩을 나눠 준다
     image_prompt: >-
       A 1930s railway station platform with an old steam train, the scholar in the middle of the frame handing out small
