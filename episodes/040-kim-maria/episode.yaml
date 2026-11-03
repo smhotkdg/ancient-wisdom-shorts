@@ -1,0 +1,224 @@
+# 040 김마리아 — 허리띠 속에 독립선언서를, 나무 구멍 속에 비밀 문서를 숨긴 여성 독립운동가 (독립운동가 편)
+id: "040"
+slug: kim-maria
+status: script_ok
+working_title: 일본 경찰 몰래 독립선언서를 어떻게 바다 건너 가져왔을까?
+title_lines: ["허리띠 속에", "독립선언서를?"]
+hook: 넋이 나갔습니다
+caption_keywords: [몰래, 샅샅이, 허리띠, 들이닥친다, 고목의 구멍]
+
+story:
+  hero: 여학생
+  reveal: [김마리아]
+
+characters:
+  - id: maria
+    name: 여학생
+    name_en: young Korean woman student of 1919
+    description: >-
+      a slender, graceful young Korean woman in her late 20s with a delicate oval face, calm intelligent dark eyes,
+      straight brows and a quietly brave expression, black hair parted in the middle and tied in a neat low bun, wearing
+      a white jeogori blouse and a long dark navy skirt with a wide plain cloth sash tied around her waist, black
+      leather shoes
+    note: 이야기 주인공. 1919년 도쿄 유학생이자 뒤에 정신여학교 교사가 된 여성 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "도쿄에서 공부하던 한 조선 여학생은 넋이 나갔습니다."
+        captions: ["도쿄에서 공부하던 / 한 조선 여학생은", "넋이 나갔습니다"]
+      - text: "유학생들이 쓴 독립선언서를, 일본 경찰 몰래 조선까지 가져가야 했거든요."
+        captions: ["유학생들이 쓴 독립선언서를", "일본 경찰 몰래 / 조선까지 가져가야 했거든요"]
+    visual: 겨울 도쿄의 하숙방, 여학생이 등잔불 아래 접힌 종이 몇 장을 쥐고 굳은 얼굴로 앉아 있다
+    image_prompt: >-
+      A small rented room in 1919 Tokyo in winter with a paper sliding door and a low desk lit by an oil lamp, the young
+      woman seen from the waist up in the middle of the frame, sitting at the desk holding a few folded paper sheets
+      tightly with a tense, stunned face. Plain paper wall above her. No readable writing. No other people.
+    characters: [maria]
+    motion_prompt: >-
+      The lamp flickers; she grips the folded papers, takes a slow breath and looks toward the door.
+    camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "배에서도 항구에서도, 짐은 샅샅이 뒤져지는 판이었죠."
+        captions: ["배에서도 항구에서도", "짐은 샅샅이 / 뒤져지는 판이었죠"]
+    visual: 항구 검문대 위에 열린 가방들과 흩어진 옷가지 (사람 없이)
+    image_prompt: >-
+      A 1919 harbor inspection counter at a ferry terminal, several suitcases and cloth bundles opened and their clothes
+      and books pulled out and scattered, a peaked police cap resting on the counter. Tense mood. No people visible.
+    motion_prompt: >-
+      A ferry horn sounds in the distance; a scattered sheet of paper slides off the inspection counter.
+    camera: slow pan
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "들키지 않고 종이를 옮길 방법, 없을까요?"
+        captions: ["들키지 않고 / 종이를 옮길 방법", "없을까요?"]
+    visual: 여학생이 거울 앞에 서서 자기 허리의 넓은 천 허리띠를 내려다본다
+    image_prompt: >-
+      The young woman seen from the knees up in the middle of the frame, standing in front of a tall mirror in the small
+      room, looking down thoughtfully at the wide cloth sash tied around her waist, a sudden idea dawning on her face.
+      Plain wall above her. No other people.
+    characters: [maria]
+    motion_prompt: >-
+      She looks at the sash, touches it with her fingertips and her eyes light up.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 여학생은 선언서를 얇게 접어, 허리띠 속에 감춰 넣었습니다."
+        captions: ["그래서 여학생은 / 선언서를 얇게 접어", "허리띠 속에 / 감춰 넣었습니다"]
+    visual: 여학생의 손이 얇게 접은 종이를 허리띠 안쪽 틈으로 밀어 넣고 바늘로 여민다
+    image_prompt: >-
+      Close-up of the young woman's slender hands slipping thinly folded paper sheets into an inner fold of the wide cloth
+      sash at her waist and stitching it closed with a needle and thread. No readable writing.
+    characters: [maria]
+    motion_prompt: >-
+      Her fingers slide the papers into the sash, then pull the needle through and tie a small knot.
+    camera: macro static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그렇게 무사히 바다를 건너, 국내 지도자들에게 소식을 알렸죠."
+        captions: ["그렇게 무사히 바다를 건너", "국내 지도자들에게 / 소식을 알렸죠"]
+    visual: 연락선 갑판 난간에 선 여학생이 허리띠에 손을 얹은 채 다가오는 부산 항구를 바라본다
+    image_prompt: >-
+      On the deck of a 1919 ferry steamship crossing a grey sea, the young woman seen from the knees up in the middle of
+      the frame, standing by the railing with one hand resting calmly on her sash, looking ahead at a harbor coming into
+      view. Wide grey sky above her. No other people.
+    characters: [maria]
+    motion_prompt: >-
+      The wind moves her skirt; she keeps her hand on the sash and watches the harbor come closer.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A quiet traditional Korean room, the young woman in the middle of the frame handing an unfolded paper sheet to
+          the people seated before her, speaking earnestly. No readable writing.
+        characters: [maria]
+        extras: "two older Korean men in hanbok and horsehair hats seated across from her, reading with serious faces, small and out of focus"
+        motion_prompt: >-
+          She hands over the paper and speaks earnestly; the two men lean in and nod gravely.
+        camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그리고 모교로 돌아와, 여성들의 비밀 독립 단체를 이끌었습니다."
+        captions: ["그리고 모교로 돌아와", "여성들의 비밀 독립 단체를 / 이끌었습니다"]
+    visual: 학교 교실, 등불 아래 여학생이 탁자 앞에 서서 이야기하고 뒤로 젊은 여성 몇이 귀 기울인다
+    image_prompt: >-
+      A 1919 girls' school classroom at night lit by a single lamp, the young woman standing in the middle of the frame
+      beside a table, speaking with quiet determination, one hand resting on a small stack of papers.
+    characters: [maria]
+    extras: "two or three young women in white jeogori sitting behind her, listening closely, small and out of focus"
+    motion_prompt: >-
+      She speaks firmly and taps the papers; the young women behind her nod together.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 어느 날, 일본 경찰이 학교로 들이닥친다는 소식이 왔습니다. 비밀 문서는 어떡하죠?"
+        captions: ["그런데 어느 날 / 일본 경찰이 학교로", "들이닥친다는 / 소식이 왔습니다", "비밀 문서는 어떡하죠?"]
+    visual: 교실 창밖으로 경찰 그림자가 다가오고, 여학생이 서류 뭉치와 태극기를 끌어안고 돌아본다
+    image_prompt: >-
+      The young woman seen from the waist up in the middle of the frame inside the classroom, hugging a bundle of papers
+      and a folded Korean flag to her chest, turning anxiously toward the window where long dark shadows of policemen
+      fall across the glass. No faces of the police visible. No readable writing.
+    characters: [maria]
+    motion_prompt: >-
+      The shadows on the window grow longer; she clutches the bundle and turns quickly toward the back door.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그는 문서와 태극기를, 교정 고목의 구멍 속에 쏙 숨겼죠."
+        captions: ["그는 문서와 태극기를", "교정 고목의 구멍 속에 / 쏙 숨겼죠"]
+    visual: 학교 마당 굵은 고목 앞, 여학생이 줄기에 난 구멍 속으로 꾸러미를 밀어 넣는다
+    image_prompt: >-
+      A huge old tree with a thick gnarled trunk in a school courtyard at dusk, the young woman seen from the waist up in
+      the middle of the frame, pushing a cloth-wrapped bundle into a dark hollow in the trunk at chest height and
+      glancing over her shoulder. No other people.
+    characters: [maria]
+    motion_prompt: >-
+      She pushes the bundle deep into the hollow, covers it with dry leaves and glances back.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이 나무는 지금도 독립운동나무라고 불린다고 합니다."
+        captions: ["이 나무는 지금도", "독립운동나무라고 불린다고 합니다"]
+    visual: 햇살 아래 푸른 잎이 무성한 고목, 줄기의 구멍이 그대로 남아 있다 (사람 없이)
+    image_prompt: >-
+      The same huge old tree in the courtyard today on a bright sunny day, full of green leaves, the dark hollow still
+      visible in its trunk, peaceful and dignified. No text, no people.
+    motion_prompt: >-
+      Leaves rustle in the breeze and sunlight flickers through the branches onto the old trunk.
+    camera: slow tilt down to the hollow
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "허리띠와 나무 구멍으로 독립을 지킨 이 사람이 바로, 김마리아입니다."
+        captions: ["허리띠와 나무 구멍으로 / 독립을 지킨 이 사람이", "바로, 김마리아입니다"]
+      - text: "여러분이라면 비밀 문서를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 비밀 문서를", "어디에 숨기셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 봄 햇살 드는 교정의 고목 앞에서 여학생이 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young woman seen from the knees up in the middle of the frame, standing in front of the old tree in the sunny
+      school courtyard in spring, hands folded in front of her sash, a calm brave smile. Wide clear sky above her. No
+      other people.
+    characters: [maria]
+    motion_prompt: >-
+      A breeze moves her skirt; she smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the young woman in the sunny courtyard, looking straight at the viewer with a warm curious smile,
+          one hand open toward the viewer as if asking a question. No other people.
+        characters: [maria]
+        motion_prompt: >-
+          She looks at the camera, tilts her head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "서울특별시 내 손안에 서울 — 3·1운동의 잔다르크 김마리아를 아시나요? (1919년 2월 8일 도쿄 조선기독교청년회관 2·8독립선언 자리에 있었음, 2·8독립선언문 10여 장을 복사해 국내로 들여와 교육·종교계 지도자들에게 알림, 3·1운동 배후로 체포, 정신여학교 교사로 대한민국애국부인회 결성·임시정부에 독립자금, 일본 경찰이 들이닥치기 직전 비밀 문서와 태극기를 교정 고목 구멍에 숨겨 발각을 피함 — '독립운동나무', 1944년 별세) — https://mediahub.seoul.go.kr/archives/1208572"
+  - "서울신문 2020 손성진의 우리가 잘 모르는 독립운동가 — 김마리아 (2·8독립선언서를 허리띠에 숨기고 국내로 들어옴, 3·1운동 뒤 체포·고문, 1919년 10월 대한애국부인회 회장, 1921년 중국·1922년 임시의정원 의원, 1944년 원산에서 별세, 1962년 건국훈장 독립장) — https://m.seoul.co.kr/news/2020/02/25/20200225027018"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 김마리아(1892~1944). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s02 '배와 항구에서 짐을 샅샅이 뒤짐'은 위험한 상황을 이야기로 푼 재구성이다."
+  - "s04 '허리띠 속에 숨김'은 서울신문 기준. 일본 옷(기모노 오비)으로 변장했다는 이야기도 있지만 확인한 출처에 없어 쓰지 않고, 옷도 한복 차림의 넓은 천 허리띠로 그린다. 바늘로 여미는 장면은 연출."
+  - "s05 '국내 지도자들에게 소식을 알림'은 서울시(교육·종교계 지도자) 기준. 부산 입항 장면은 화면 연출이다."
+  - "s06 '여성들의 비밀 독립 단체'는 대한민국애국부인회(1919년 10월). 대본은 단체 이름을 쓰지 않는다."
+  - "s07~s08 고목 구멍에 비밀 문서와 태극기를 숨긴 일은 서울시 기준. 정확한 날짜는 쓰지 않는다."
+  - "s09 '독립운동나무'는 서울시 기사 표현 기준이며 '불린다고 합니다'로 쓴다."
+  - "김마리아가 겪은 체포·고문은 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 김마리아 한 명 중심, s05-2에 지도자 2명, s06에 단체 여성 2~3명. 경찰은 그림자로만 표현."
+
+youtube:
+  titles:
+    - 허리띠 속에 독립선언서를? 일본 경찰을 따돌린 여학생
+    - 경찰이 들이닥치기 직전, 나무 구멍 속에 숨긴 비밀
+    - 바다 건너 독립선언서를 몰래 가져온 방법
+  description: |-
+    🌊 도쿄 유학생들이 쓴 독립선언서… 배에서도 항구에서도 짐을 샅샅이 뒤지는데, 어떻게 조선까지 가져가죠?
+
+    한 조선 여학생의 선택은 '허리띠' 🎀
+    선언서를 얇게 접어 허리띠 속에 감추고 무사히 바다를 건넜어요!
+    그런데 어느 날, 일본 경찰이 학교로 들이닥친다는 소식이… 😱
+
+    이번엔 교정 고목의 구멍 속으로 쏙 🌳 그 나무는 지금도 '독립운동나무'라 불린답니다. 그녀의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 비밀 문서를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 여성독립운동가, 삼일절, 독립선언서, 쇼츠]
