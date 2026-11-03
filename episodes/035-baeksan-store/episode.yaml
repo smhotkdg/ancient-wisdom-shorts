@@ -1,7 +1,7 @@
 # 035 백산상회 — 장사하는 척 독립운동 자금을 보낸 부산의 가게 (안희제)
 id: "035"
 slug: baeksan-store
-status: script_ok
+status: done
 working_title: 일제 감시 속에서 독립운동 자금을 어떻게 보냈을까?
 title_lines: ["장사하는 척", "독립자금을 보냈다고?"]
 hook: 속이 터졌습니다
@@ -124,7 +124,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 경찰이 장부를 뒤져도, 증거가 나오지 않았습니다. 왜일까요?"
-        captions: ["그런데 경찰이 장부를 뒤져도", "증거가 나오지 않았습니다", "왜일까요?"]
+        captions: ["그런데 경찰이 / 장부를 뒤져도", "증거가 나오지 않았습니다", "왜일까요?"]
     visual: 가게 계산대 앞, 차분하게 선 상인 뒤로 제복 경찰들이 장부를 뒤적이며 고개를 갸웃한다
     image_prompt: >-
       The store counter scattered with open account ledgers, the merchant in the middle of the frame standing perfectly
@@ -153,7 +153,7 @@ scenes:
     beat: info
     lines:
       - text: "가게는 대구, 서울, 만주까지 지점을 두고, 독립운동가들의 연락처가 되었죠."
-        captions: ["가게는 대구, 서울, 만주까지 / 지점을 두고", "독립운동가들의 / 연락처가 되었죠"]
+        captions: ["가게는 대구, 서울, / 만주까지 지점을 두고", "독립운동가들의 / 연락처가 되었죠"]
     visual: 지도 위로 부산에서 대구·서울·만주로 불빛이 하나씩 켜진다
     image_prompt: >-
       An old parchment map of the Korean peninsula and Manchuria with small warm lights appearing one by one, starting
@@ -167,9 +167,9 @@ scenes:
     beat: info
     lines:
       - text: "장사로 독립을 도운 이 가게가 바로 백산상회, 그 주인은 독립운동가 안희제입니다."
-        captions: ["장사로 독립을 도운 이 가게가", "바로 백산상회", "그 주인은 / 독립운동가 안희제입니다"]
+        captions: ["장사로 독립을 도운 / 이 가게가", "바로 백산상회", "그 주인은 / 독립운동가 안희제입니다"]
       - text: "여러분이라면 감시 속에서 어떻게 독립을 도우셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 감시 속에서", "어떻게 독립을 도우셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 감시 속에서", "어떻게 독립을 / 도우셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 항구를 배경으로 가게 앞에 선 상인이 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
