@@ -1,0 +1,221 @@
+# 037 조지 루이스 쇼 — 일본 경찰도 손 못 댄 무역회사로 독립운동을 도운 영국인 (독립운동가 편)
+id: "037"
+slug: george-shaw
+status: script_ok
+working_title: 일본 경찰은 왜 이 외국인의 무역회사를 뒤지지 못했을까?
+title_lines: ["일본 경찰도", "손 못 댄 무역회사?"]
+hook: 머리를 쥐어뜯었습니다
+caption_keywords: [붙잡히고, 길이 다 막혀, 회사 배, 영국 사람, 못 본 척]
+
+story:
+  hero: 사장
+  reveal: [조지 루이스 쇼]
+
+characters:
+  - id: shaw
+    name: 사장
+    name_en: British trading company owner of the 1910s
+    description: >-
+      a tall, lean British man around 40 with short wavy light-brown hair, a neat moustache, kind steady blue-grey eyes
+      and a calm, quietly brave face, wearing a three-piece grey tweed suit with a white high-collared shirt and a dark
+      tie, a pocket watch chain on his waistcoat
+    note: 이야기 주인공. 1919년 중국 안둥(지금의 단둥)에서 무역·선박 회사를 운영한 아일랜드계 영국인 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "압록강 건너 국경 도시의 한 영국인 사장은 머리를 쥐어뜯었습니다."
+        captions: ["압록강 건너 국경 도시의 / 한 영국인 사장은", "머리를 쥐어뜯었습니다"]
+      - text: "독립운동가들이 일본 경찰의 눈을 피하지 못하고, 자꾸 붙잡히고 있었거든요."
+        captions: ["독립운동가들이 / 일본 경찰의 눈을", "피하지 못하고 / 자꾸 붙잡히고 있었거든요"]
+    visual: 강가 부두의 회사 사무실 창가, 사장이 신문을 구기며 이마를 짚는다
+    image_prompt: >-
+      A 1919 riverside trading office with big windows overlooking a wide river and wooden docks with cargo ships, the
+      company owner seen from the waist up in the middle of the frame, crumpling a newspaper in one hand and pressing the
+      other hand to his forehead in frustration. Plain office wall above him. No readable text. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He crumples the newspaper, presses his hand to his forehead and shakes his head.
+    camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "편지도, 돈도, 사람도, 오갈 길이 다 막혀 있었죠."
+        captions: ["편지도, 돈도, 사람도", "오갈 길이 다 막혀 있었죠"]
+    visual: 국경 다리 위에 놓인 바리케이드와 검문소, 강물 위로 뻗은 다리가 막혀 있다 (사람 없이)
+    image_prompt: >-
+      An iron railway bridge across a wide river at dusk, blocked by a striped wooden barricade and a small guard booth
+      with a lantern, crates and envelopes scattered on the ground before it. Tense, quiet mood. No people.
+    motion_prompt: >-
+      The lantern on the guard booth sways in the wind; a loose envelope flutters against the barricade.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "일본 경찰이 손댈 수 없는 길, 어디 없을까요?"
+        captions: ["일본 경찰이 / 손댈 수 없는 길", "어디 없을까요?"]
+    visual: 사장이 책상 위 지도를 내려다보다 창밖에 정박한 자기 회사 배를 바라본다
+    image_prompt: >-
+      The company owner seen from the waist up in the middle of the frame, standing at his desk with a sea chart spread
+      on it, turning to look out of the window at his own cargo steamship moored at the dock, a spark of an idea in his
+      eyes. Plain wall above the window. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He looks from the chart to the ship outside, and a slow determined smile appears.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 사장은 자기 회사 건물의 방을, 독립운동가들에게 내주었습니다."
+        captions: ["그래서 사장은 / 자기 회사 건물의 방을", "독립운동가들에게 / 내주었습니다"]
+    visual: 회사 건물 2층 복도, 사장이 열쇠로 방문을 열어 주며 안쪽을 손짓한다
+    image_prompt: >-
+      A wooden upstairs corridor of the trading company building, the company owner in the middle of the frame unlocking
+      a door with a brass key and holding it open, gesturing inside with a welcoming nod.
+    characters: [shaw]
+    extras: "two young Korean independence activists in dark coats behind him, nodding gratefully, small and slightly out of focus"
+    motion_prompt: >-
+      He turns the key, pushes the door open and gestures them in; the two activists behind him bow slightly.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 회사 배에, 사람과 비밀 문서를 몰래 실어 날랐죠."
+        captions: ["그리고 회사 배에", "사람과 비밀 문서를 / 몰래 실어 날랐죠"]
+    visual: 밤의 부두, 사장이 화물 상자 사이에 봉인된 서류 꾸러미를 숨겨 배에 싣는다
+    image_prompt: >-
+      A dark dock at night beside a cargo steamship, lit by a single lantern, the company owner in the middle of the frame
+      carefully tucking a sealed bundle of documents into a wooden cargo crate, glancing over his shoulder. No readable
+      text. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He slides the bundle into the crate, closes the lid and glances over his shoulder.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A cargo steamship quietly leaving the dock at night, smoke rising from its funnel, its lights reflected on the
+          dark river. No people visible.
+        motion_prompt: >-
+          The ship slowly pulls away from the dock, smoke drifting from the funnel.
+        camera: static
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 일본 경찰은, 이 회사를 함부로 뒤질 수 없었습니다. 왜일까요?"
+        captions: ["그런데 일본 경찰은", "이 회사를 함부로 / 뒤질 수 없었습니다", "왜일까요?"]
+    visual: 회사 정문 앞에서 사장이 팔짱을 끼고 서 있고, 뒤에서 제복 경찰 둘이 머뭇거리며 돌아선다
+    image_prompt: >-
+      The front entrance of the trading company building with a small flagpole, the company owner in the middle of the
+      frame standing calmly with arms folded, a polite but firm expression.
+    characters: [shaw]
+    extras: "two uniformed Japanese policemen behind him hesitating at the gate and turning away, small and out of focus"
+    motion_prompt: >-
+      He stands firm with arms folded; the policemen behind him hesitate, exchange looks and turn away.
+    camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "사장이 영국 사람이라, 일본 법이 미치지 못했거든요."
+        captions: ["사장이 영국 사람이라", "일본 법이 / 미치지 못했거든요"]
+    visual: 사장이 책상 위에 영국 여권을 올려놓고 살짝 미소 짓는다 (글자 없이)
+    image_prompt: >-
+      Close view of the company owner seated at his desk in the middle of the frame, calmly placing a dark blue British
+      passport booklet on the desk and giving a small confident smile. No readable text. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He sets the passport down, taps it once with his finger and smiles.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "한번은 일본 경비선이 배를 세우려 했지만, 영국인 선장은 못 본 척 그대로 달렸죠."
+        captions: ["한번은 일본 경비선이 / 배를 세우려 했지만", "영국인 선장은 / 못 본 척 그대로 달렸죠"]
+    visual: 넓은 강 하구, 작은 경비선이 깃발을 흔들며 다가오지만 큰 증기선이 연기를 뿜으며 그대로 지나간다
+    image_prompt: >-
+      A wide river mouth opening to the sea, a large cargo steamship ploughing forward with smoke pouring from its
+      funnel, a small patrol boat in the distance trying to signal it to stop, the steamship not slowing down. No people
+      visible.
+    motion_prompt: >-
+      The patrol boat signals from a distance while the big steamship keeps going full speed and leaves it behind.
+    camera: slow tracking alongside the ship
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그렇게 이 배를 타고 상하이로 간 독립운동가 중엔, 김구도 있었다고 합니다."
+        captions: ["그렇게 이 배를 타고 / 상하이로 간 독립운동가 중엔", "김구도 있었다고 합니다"]
+    visual: 부두에서 사장이 멀어지는 배를 향해 모자를 들어 조용히 인사한다
+    image_prompt: >-
+      The company owner seen from the knees up in the middle of the frame, standing on the dock at dawn, holding his hat
+      at chest height in a quiet farewell as a steamship sails away into the misty river behind him. Wide misty sky above
+      him. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He holds his hat to his chest and nods as the ship fades into the mist.
+    camera: slow pull back at eye level
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "한국의 독립을 도운 이 외국인이 바로, 조지 루이스 쇼입니다."
+        captions: ["한국의 독립을 도운 / 이 외국인이", "바로, 조지 루이스 쇼입니다"]
+      - text: "여러분이라면 남의 나라를 위해 위험을 감수하셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 남의 나라를 위해", "위험을 감수하셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 강가 사무실 앞에서 사장이 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The company owner seen from the knees up in the middle of the frame, standing in front of his riverside trading
+      office at golden sunset, ships on the river behind him, hands in his pockets, a quiet warm smile. Wide sunset sky
+      above him. No readable text. No other people.
+    characters: [shaw]
+    motion_prompt: >-
+      He looks out at the river with a quiet smile; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the company owner by the sunset river, looking straight at the viewer with a warm curious smile,
+          one hand open toward the viewer as if asking a question. No other people.
+        characters: [shaw]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "해외문화홍보원(KOCIS, 문화체육관광부) 웹진 2019년 5월 — George Lewis Shaw (1880~1943, 아일랜드인 아버지를 둔 영국 사업가, 안둥(지금의 단둥)의 무역회사 이륭양행 건물에 임시정부 안동 교통국이 함께 있음, 무기 운반·정부 자금 전달·독립운동가 연락·은신처, 『백범일지』에 따르면 회사 배가 김구 일행 15명을 상하이로 실어 나름 — 일본 경비선이 세우려 했지만 영국인 선장이 무시하고 달림, 쇼와 회사가 치외법권을 가져 일본이 직접 손대지 못함, 여권 문제를 핑계로 체포돼 서대문형무소에 4개월 갇혔다 보석, 1963년 3월 1일 건국훈장 독립장 추서, 2012년 손녀에게 전달) — https://www.korean-culture.org/eng/webzine/201905/sub05.html"
+  - "세계일보 (2016) — 조지 루이스 쇼와 이륭양행 (보조: 아일랜드계 영국인, 1919년 5월 중국 단둥에 무역선박회사 이륭양행 설립, 임시정부 교통국 역할을 비밀리에 수행, 독립운동가 망명·독립자금 모집·무기 반입·연통제 운영, 김구가 3·1운동 직후 이륭양행 배 계림호로 상하이로 망명) — https://www.segye.com/newsView/20160310003331"
+
+accuracy_notes:
+  - "주인공은 실존 인물 조지 루이스 쇼(1880~1943), 1963년 건국훈장 독립장을 받은 독립유공자. 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'머리를 쥐어뜯었습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 '독립운동가들이 자꾸 붙잡힘', '오갈 길이 막힘'은 그가 돕게 된 상황을 이야기로 푼 재구성. 그가 돕기 시작한 정확한 동기에 대한 인용은 쓰지 않는다."
+  - "s04 '회사 건물의 방을 내줌'은 KOCIS의 '쇼가 소유한 건물에 회사와 임시정부 안동 교통국이 함께 있었다' 기준."
+  - "s05 회사 배로 사람·문서를 실어 날랐다는 것은 KOCIS(무기·자금·연락)·세계일보(망명·무기 반입) 기준. '무기'는 화면·대본에 넣지 않는다."
+  - "s06~s07 '일본 법이 미치지 못했다'는 KOCIS의 '치외법권을 가져 일본이 직접 행동할 수 없었다'를 쉽게 쓴 것. 그래도 뒤에 여권 문제를 핑계로 4개월 갇힌 일이 있었다 (대본에는 넣지 않음)."
+  - "s08 경비선 일화는 KOCIS가 전하는 『백범일지』 내용 기준."
+  - "s09 김구가 이륭양행 배로 상하이에 간 것은 KOCIS·세계일보 공통. '있었다고 합니다'로 쓴다. 김구는 화면에 그리지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 사장 한 명 중심, s04에 독립운동가 2명, s06에 경찰 2명. 선장·김구 일행은 그리지 않는다."
+
+youtube:
+  titles:
+    - 일본 경찰도 손 못 댄 무역회사? 독립운동을 도운 영국인
+    - 김구를 태우고 달린 배, 그 배의 주인은 외국인이었다
+    - 경비선도 무시하고 달린 배의 비밀
+  description: |-
+    🚢 독립운동가들이 국경을 넘다 자꾸 붙잡히던 시절… 일본 경찰이 손댈 수 없는 길이 있었다면?
+
+    압록강 건너 국경 도시의 한 영국인 사장은 회사 건물의 방을 독립운동가들에게 내주고 🏢
+    회사 배에는 사람과 비밀 문서를 몰래 실어 날랐어요 📦
+    그런데 일본 경찰은 이 회사를 함부로 뒤질 수 없었다는데요? 🤔
+
+    정답은 '영국 국적' 🇬🇧 경비선이 세우려 해도 선장은 못 본 척 그대로 달렸답니다. 한국의 독립을 도운 이 외국인, 이름은 영상 끝에서!
+  comment_question: 여러분이라면 남의 나라를 위해 위험을 감수하셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 임시정부, 김구, 쇼츠]
