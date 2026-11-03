@@ -1,7 +1,7 @@
 # 037 조지 루이스 쇼 — 일본 경찰도 손 못 댄 무역회사로 독립운동을 도운 영국인 (독립운동가 편)
 id: "037"
 slug: george-shaw
-status: script_ok
+status: done
 working_title: 일본 경찰은 왜 이 외국인의 무역회사를 뒤지지 못했을까?
 title_lines: ["일본 경찰도", "손 못 댄 무역회사?"]
 hook: 머리를 쥐어뜯었습니다
@@ -151,7 +151,7 @@ scenes:
     beat: info
     lines:
       - text: "그렇게 이 배를 타고 상하이로 간 독립운동가 중엔, 김구도 있었다고 합니다."
-        captions: ["그렇게 이 배를 타고 / 상하이로 간 독립운동가 중엔", "김구도 있었다고 합니다"]
+        captions: ["그렇게 이 배를 타고 / 상하이로 간", "독립운동가 중엔 / 김구도 있었다고 합니다"]
     visual: 부두에서 사장이 멀어지는 배를 향해 모자를 들어 조용히 인사한다
     image_prompt: >-
       The company owner seen from the knees up in the middle of the frame, standing on the dock at dawn, holding his hat
@@ -166,7 +166,7 @@ scenes:
     beat: info
     lines:
       - text: "한국의 독립을 도운 이 외국인이 바로, 조지 루이스 쇼입니다."
-        captions: ["한국의 독립을 도운 / 이 외국인이", "바로, 조지 루이스 쇼입니다"]
+        captions: ["한국의 독립을 도운 / 이 외국인이", "바로, / 조지 루이스 쇼입니다"]
       - text: "여러분이라면 남의 나라를 위해 위험을 감수하셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 남의 나라를 위해", "위험을 감수하셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
