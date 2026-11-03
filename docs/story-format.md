@@ -90,3 +90,13 @@ lines:
 - `youtube.comment_question`도 같은 질문으로 맞춘다.
 - 공백 제외 40자 이하 (약 4~5초). 대본 전체 350자 이하로 맞추려고 본문을 조금 줄인다.
 - 정답 이름은 다시 쓰지 않아도 된다 (방금 공개했으므로).
+
+
+### CTA 컷(s10-2) 이미지 프롬프트 (2026-11-03)
+
+"Close-up … looking straight at the viewer"에 실존 인물(연도가 붙은 인물 설명)이 겹치면 ChatGPT가 정책 위반으로 막는 일이 있었다 (039·040).
+CTA 컷은 아래 틀로 쓴다:
+
+> Friendly medium shot of the cartoon <인물> character from the reference image, seen from the waist up in the middle of the frame, <장소>. He/She smiles warmly toward the viewer and holds one open palm out at chest height in a gentle "what do you think?" gesture. Cheerful, calm, family-friendly mood. No other people.
+
+실존 인물 편은 `name_en`에 연도를 넣지 않는다 (예: "young Korean woman student of 1919" → "young Korean woman student").

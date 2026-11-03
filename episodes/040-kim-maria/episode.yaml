@@ -183,8 +183,10 @@ scenes:
     camera: slow pull back at eye level
     extra_clips:
       - image_prompt: >-
-          Close-up of the young woman in the sunny courtyard, looking straight at the viewer with a warm curious smile,
-          one hand open toward the viewer as if asking a question. No other people.
+          Friendly medium shot of the cartoon young woman character from the reference image, seen from the waist up in
+          the middle of the frame, standing in a sunny school courtyard in spring with the big old tree behind her. She
+          smiles warmly toward the viewer and holds one open palm out at chest height in a gentle "what do you think?"
+          gesture. Cheerful, calm, family-friendly mood. No other people.
         characters: [maria]
         motion_prompt: >-
           She looks at the camera, tilts her head with a curious smile and opens one hand toward the viewer as if asking.
@@ -205,6 +207,7 @@ accuracy_notes:
   - "s09 '독립운동나무'는 서울시 기사 표현 기준이며 '불린다고 합니다'로 쓴다."
   - "김마리아가 겪은 체포·고문은 사실이지만 대본·화면에 넣지 않는다."
   - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "s10-2는 ChatGPT 정책 위반으로 생성이 막혀(2026-11-03) '클로즈업·정면 응시' 대신 허리 위 미디엄 샷·부드러운 손짓으로 바꿨다."
   - "화면 인물은 김마리아 한 명 중심, s05-2에 지도자 2명, s06에 단체 여성 2~3명. 경찰은 그림자로만 표현."
 
 youtube:
