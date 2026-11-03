@@ -155,7 +155,7 @@ scenes:
     beat: info
     lines:
       - text: "이 나무는 지금도 독립운동나무라고 불린다고 합니다."
-        captions: ["이 나무는 지금도", "독립운동나무라고 불린다고 합니다"]
+        captions: ["이 나무는 지금도 / 독립운동나무라고", "불린다고 합니다"]
     visual: 햇살 아래 푸른 잎이 무성한 고목, 줄기의 구멍이 그대로 남아 있다 (사람 없이)
     image_prompt: >-
       The same huge old tree in the courtyard today on a bright sunny day, full of green leaves, the dark hollow still
