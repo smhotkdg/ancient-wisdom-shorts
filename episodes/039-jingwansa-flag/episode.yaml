@@ -1,7 +1,7 @@
 # 039 진관사 태극기 — 일장기 위에 먹으로 그려 벽 속에 숨긴 태극기 (백초월, 독립운동가 편)
 id: "039"
 slug: jingwansa-flag
-status: script_ok
+status: done
 working_title: 일장기 위에 그린 태극기는 왜 90년 동안 벽 속에 있었을까?
 title_lines: ["일장기 위에", "태극기를 그렸다고?"]
 hook: 혼이 쏙 빠졌습니다
@@ -26,7 +26,7 @@ scenes:
     beat: hook
     lines:
       - text: "서울 북쪽 산사의 한 스님은 혼이 쏙 빠졌습니다."
-        captions: ["서울 북쪽 산사의 한 스님은 / 혼이 쏙 빠졌습니다"]
+        captions: ["서울 북쪽 산사의 / 한 스님은", "혼이 쏙 빠졌습니다"]
       - text: "만세 운동이 번지자, 일본 경찰이 태극기와 비밀 신문을 샅샅이 빼앗고 있었거든요."
         captions: ["만세 운동이 번지자", "일본 경찰이 / 태극기와 비밀 신문을", "샅샅이 빼앗고 있었거든요"]
     visual: 산사 마당, 스님이 산 아래 마을 쪽을 내려다보며 걱정스럽게 손을 모은다
@@ -125,7 +125,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 그 뒤로 무려 90년 동안, 아무도 이 사실을 몰랐습니다. 어떻게 다시 나왔을까요?"
-        captions: ["그런데 그 뒤로 / 무려 90년 동안", "아무도 이 사실을 몰랐습니다", "어떻게 다시 나왔을까요?"]
+        captions: ["그런데 그 뒤로 / 무려 90년 동안", "아무도 이 사실을 / 몰랐습니다", "어떻게 다시 나왔을까요?"]
     visual: 같은 전각의 벽 — 계절이 바뀌며 눈이 쌓였다 녹고, 단청이 바래 간다 (사람 없이)
     image_prompt: >-
       The outside of a small old temple shrine with a closed wooden door and faded painted eaves, snow lying on its roof
@@ -138,7 +138,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 2009년, 낡은 전각을 고치려 벽을 뜯자 보자기 하나가 나왔죠."
-        captions: ["결국 2009년 / 낡은 전각을 고치려 벽을 뜯자", "보자기 하나가 나왔죠"]
+        captions: ["결국 2009년 / 낡은 전각을 고치려", "벽을 뜯자 / 보자기 하나가 나왔죠"]
     visual: 보수 공사로 뜯긴 흙벽 틈에서 먼지 쌓인 천 꾸러미가 드러난다 (사람 없이, 손만)
     image_prompt: >-
       Close-up of an old earthen wall partly opened during restoration work, dust falling, and a faded cloth bundle
@@ -164,7 +164,7 @@ scenes:
     beat: info
     lines:
       - text: "일장기 위에 그린 이 태극기가 바로 진관사 태극기, 숨긴 이는 백초월 스님입니다."
-        captions: ["일장기 위에 그린 이 태극기가", "바로 진관사 태극기", "숨긴 이는 / 백초월 스님입니다"]
+        captions: ["일장기 위에 그린 / 이 태극기가", "바로 진관사 태극기", "숨긴 이는 / 백초월 스님입니다"]
       - text: "여러분이라면 그 시절 태극기를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 그 시절 / 태극기를", "어디에 숨기셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
