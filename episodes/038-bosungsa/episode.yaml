@@ -1,0 +1,226 @@
+# 038 보성사 — 족보 찍는 척 하룻밤에 독립선언서를 찍어 낸 인쇄소 (이종일, 독립운동가 편)
+id: "038"
+slug: bosungsa
+status: script_ok
+working_title: 일본 경찰의 감시 속에서 어떻게 하룻밤에 수만 장을 몰래 찍었을까?
+title_lines: ["하룻밤에 몰래", "수만 장을 찍었다고?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [이틀 뒤, 눈치챌 판, 족보, 형사, 눈감아]
+
+story:
+  hero: 사장
+  reveal: [독립선언서, 이종일]
+
+characters:
+  - id: printer
+    name: 인쇄소 사장
+    name_en: elderly Korean print shop owner of 1919
+    description: >-
+      a slim, dignified Korean man around 60 with short grey hair, a neat white mustache and short white beard, deep-set
+      warm and resolute eyes behind small round spectacles, wearing a plain white hanbok with a dark grey vest and rolled
+      sleeves, an ink-stained cloth apron over it
+    note: 이야기 주인공. 1919년 서울 천도교 인쇄소 보성사의 사장 (마지막 대사 전까지 이름과 인쇄물 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "서울의 한 인쇄소 사장은 진땀을 뺐습니다."
+        captions: ["서울의 한 인쇄소 사장은 / 진땀을 뺐습니다"]
+      - text: "단 이틀 뒤, 온 나라에 뿌릴 종이를 몰래 찍어야 했거든요."
+        captions: ["단 이틀 뒤", "온 나라에 뿌릴 종이를 / 몰래 찍어야 했거든요"]
+    visual: 등잔불 켠 낡은 인쇄소, 사장이 이마의 땀을 닦으며 원고 한 장을 꽉 쥔다
+    image_prompt: >-
+      An old 1919 print shop at night with a heavy cast-iron printing press and stacks of blank paper, lit by oil lamps,
+      the print shop owner seen from the waist up in the middle of the frame, holding one handwritten manuscript sheet
+      tightly and wiping sweat from his brow with his sleeve. Plain dark wall above him. No readable writing. No other
+      people.
+    characters: [printer]
+    motion_prompt: >-
+      The lamp flame flickers; he wipes his brow, looks at the manuscript and takes a deep breath.
+    camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "그런데 밤늦게 기계가 돌면, 일본 경찰이 곧바로 눈치챌 판이었죠."
+        captions: ["그런데 밤늦게 기계가 돌면", "일본 경찰이 곧바로 / 눈치챌 판이었죠"]
+    visual: 인쇄소 창밖 골목, 가로등 아래 경찰 그림자가 길게 드리운다 (얼굴 없이)
+    image_prompt: >-
+      A narrow 1919 Seoul alley outside the print shop window at night, a single street lamp, and the long dark shadow of
+      a uniformed policeman with a peaked cap stretching across the wall; only the shadow is visible. Tense, quiet mood.
+      No faces, no people visible.
+    motion_prompt: >-
+      The policeman's shadow slowly moves along the wall and pauses near the print shop window.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "감시 속에서, 수만 장을 어떻게 몰래 찍을까요?"
+        captions: ["감시 속에서", "수만 장을 / 어떻게 몰래 찍을까요?"]
+    visual: 인쇄기 옆에 선 사장이 창문 쪽을 힐끗 보며 턱을 쓰다듬는다
+    image_prompt: >-
+      The print shop owner seen from the waist up in the middle of the frame, standing beside the printing press,
+      glancing warily toward the window while stroking his white beard, deep in thought. Plain dark wall above him. No
+      other people.
+    characters: [printer]
+    motion_prompt: >-
+      He glances at the window, strokes his beard, and slowly narrows his eyes with an idea.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 사장은, 집안 족보를 찍는 척하기로 했습니다."
+        captions: ["그래서 사장은", "집안 족보를 / 찍는 척하기로 했습니다"]
+    visual: 사장이 두꺼운 옛 족보 책들을 인쇄기 옆에 보란 듯이 쌓아 둔다
+    image_prompt: >-
+      The print shop owner in the middle of the frame stacking several thick old bound genealogy books with plain
+      brown covers in plain view beside the printing press, giving a sly little nod. No readable writing. No other people.
+    characters: [printer]
+    motion_prompt: >-
+      He sets the last thick book on the stack, pats it and gives a small sly nod.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 직원들과 밤새 기계를 돌려, 종이 수만 장을 찍어 냈죠."
+        captions: ["그리고 직원들과 / 밤새 기계를 돌려", "종이 수만 장을 / 찍어 냈죠"]
+    visual: 인쇄기가 쉴 새 없이 돌고, 사장이 갓 찍힌 종이를 한 장씩 받아 쌓는다
+    image_prompt: >-
+      The heavy printing press running at night, freshly printed sheets coming out, the print shop owner in the middle of
+      the frame catching the sheets and stacking them neatly into tall piles. No readable writing.
+    characters: [printer]
+    extras: "two young print workers in rolled-up sleeves operating the press behind him, small and slightly out of focus"
+    motion_prompt: >-
+      The press clanks steadily and sheets slide out; he stacks them quickly while the workers keep the press running.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of freshly printed sheets sliding off the printing press one after another onto a growing stack, ink
+          glistening, the characters blurred and unreadable. No people.
+        motion_prompt: >-
+          Sheet after sheet slides onto the stack, which grows taller and taller.
+        camera: macro static
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 그때, 기계 소리를 들은 형사가 문을 열고 들이닥쳤습니다. 이제 다 끝난 걸까요?"
+        captions: ["그런데 그때 / 기계 소리를 들은 형사가", "문을 열고 들이닥쳤습니다", "이제 다 끝난 걸까요?"]
+    visual: 문이 벌컥 열리고 문간에 형사 실루엣, 사장이 종이 더미 앞에서 얼어붙는다
+    image_prompt: >-
+      Inside the print shop, the print shop owner in the middle of the frame frozen in shock in front of the tall stacks of
+      printed sheets, turning toward the door that has just burst open.
+    characters: [printer]
+    extras: "one detective in a dark coat and hat standing in the doorway behind him, mostly in shadow, smaller and out of focus"
+    motion_prompt: >-
+      The door bangs open and lamplight flickers; he freezes and slowly turns toward the doorway.
+    camera: slow push in
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "사장은 무릎을 꿇고, 같은 조선 사람끼리 한 번만 눈감아 달라고 사정했습니다."
+        captions: ["사장은 무릎을 꿇고", "같은 조선 사람끼리 / 한 번만 눈감아 달라고", "사정했습니다"]
+    visual: 등잔불 아래 사장이 무릎을 꿇고 두 손을 모아 간절히 부탁한다
+    image_prompt: >-
+      The print shop owner kneeling on the wooden floor in the middle of the frame under lamp light, hands clasped
+      together, looking up with a pleading, earnest face, his head at the middle of the frame.
+    characters: [printer]
+    extras: "the detective standing a few steps behind him in shadow, only his coat and hat visible, small and out of focus"
+    motion_prompt: >-
+      He kneels and clasps his hands, pleading earnestly; the shadowed figure behind him stays still.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 형사는 큰돈을 받고, 아무 말 없이 돌아섰다고 전해집니다."
+        captions: ["결국 형사는 큰돈을 받고", "아무 말 없이 / 돌아섰다고 전해집니다"]
+    visual: 문간에서 사라지는 코트 자락, 사장이 털썩 주저앉아 긴 숨을 내쉰다
+    image_prompt: >-
+      The print shop owner seen from the waist up in the middle of the frame, sitting down on a stool by the press and
+      letting out a long breath of relief, the doorway behind him empty with the door left ajar. No other people.
+    characters: [printer]
+    motion_prompt: >-
+      He sinks onto the stool, closes his eyes and lets out a long breath of relief.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그리고 이틀 뒤, 이 종이는 전국 곳곳에서 함께 읽혔죠."
+        captions: ["그리고 이틀 뒤", "이 종이는 / 전국 곳곳에서 함께 읽혔죠"]
+    visual: 이른 봄 아침 햇살 속, 사장이 종이 한 장을 들고 창밖을 보며 조용히 미소 짓는다
+    image_prompt: >-
+      Early spring morning light pouring through the print shop window, the print shop owner seen from the waist up in
+      the middle of the frame, holding one printed sheet against his chest and looking out of the window with a quiet,
+      moved smile. Bright plain window light above him. No readable writing. No other people.
+    characters: [printer]
+    motion_prompt: >-
+      Sunlight grows brighter; he holds the sheet to his chest and smiles with tears in his eyes.
+    camera: slow push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "그 밤에 찍은 종이가 바로 3·1 독립선언서, 사장의 이름은 이종일입니다."
+        captions: ["그 밤에 찍은 종이가", "바로 3·1 독립선언서", "사장의 이름은 / 이종일입니다"]
+      - text: "여러분이라면 그 밤, 형사를 어떻게 돌려보내셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 그 밤", "형사를 어떻게 / 돌려보내셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 햇살 드는 인쇄소 앞에서 사장이 뿌듯하게 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The print shop owner seen from the knees up in the middle of the frame, standing in front of the old print shop on a
+      bright spring morning, hands folded in front of his apron, a calm proud smile. Wide clear sky above him. No readable
+      text anywhere. No other people.
+    characters: [printer]
+    motion_prompt: >-
+      He bows his head slightly with a calm smile; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the print shop owner in the bright spring morning, looking straight at the viewer with a warm
+          curious smile, one hand open toward the viewer as if asking a question. No other people.
+        characters: [printer]
+        motion_prompt: >-
+          He looks at the camera, tilts his head with a curious smile and opens one hand toward the viewer as if asking.
+        camera: slow push in
+
+sources:
+  - "서울신문 1995 '이달의 독립운동가' — 이종일 선생 (1919년 2월 27일 밤 천도교 인쇄소 보성사 사장으로 독립선언서 약 3만5천 장을 인쇄하던 중 종로경찰서 조선인 형사(신철)가 들이닥쳐 압수하려 하자 무릎 꿇고 사정, 손병희 집에서 받아 온 5천 원을 건네자 형사가 말없이 돌아감, 1925년 고문 후유증·영양실조로 순국) — https://m.seoul.co.kr/news/1995/03/02/19950302021002"
+  - "서울특별시 내 손안에 서울 — 3.1독립선언서 길 따라 '100년의 시간여행' (보성사 사장 이종일이 1919년 2월 27일 밤 선언서 3만5천 장 인쇄, 일본 측 형사에게 발각될 뻔했으나 족보 책으로 위장해 위기를 넘김, 일경이 보성사를 폐쇄하고 6월 28일 밤 불태움) — https://mediahub.seoul.go.kr/archives/1099815"
+  - "서울신문 2019 — 3·1 독립선언서 (보조: 1919년 2월 27일 오후 5시~11시 보성사에서 약 2만 1천 장 인쇄, 인쇄 직후 서울과 전국 각지로 배포, 이종일·김홍규가 허가 없는 인쇄로 징역) — https://www.seoul.co.kr/news/2019/03/01/20190301010008"
+  - "메트로서울 2019 — 보성사 (보조: 일본 경찰 감시를 피해 족보를 인쇄하는 것으로 위장, 밤늦은 기계 소리에 종로경찰서 신승희 형사가 찾아옴, 이종일이 '같은 조선 사람끼리 눈감아 달라'고 사정, 손병희가 5천 원을 건넸다는 설) — https://www.metroseoul.co.kr/article/2019022600214"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 이종일(1858~1925), 보성사 사장. 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름과 '독립선언서'를 밝히지 않는다."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "인쇄 매수는 출처마다 약 2만 1천 장(서울신문 2019)·3만 5천 장(서울신문 1995·서울시)으로 달라 대본은 '수만 장'으로 쓴다."
+  - "s04 '족보를 찍는 척'은 서울시·메트로서울 기준. 서울시는 '운반 중 족보 책으로 위장', 메트로서울은 '족보 인쇄로 위장'이라 적어 시점이 조금 다르다."
+  - "s06 형사 이름은 출처마다 신철(서울신문 1995)·신승희(메트로서울)로 달라 대본에 쓰지 않는다."
+  - "s07 '같은 조선 사람끼리 눈감아 달라'는 메트로서울이 전하는 말을 풀어 쓴 것이며, 정확한 원문 인용으로 쓰지 않는다."
+  - "s08 형사가 돈(5천 원)을 받고 돌아갔다는 이야기는 서울신문 1995에는 사실로, 메트로서울에는 '설'로 나와 '전해집니다'로 쓴다. 금액·돈을 준 사람(손병희)은 대본에 쓰지 않는다."
+  - "s09 '이틀 뒤 전국 곳곳에서 함께 읽혔다'는 3월 1일 서울·각지 배포와 낭독(서울신문 2019, 서울시) 기준."
+  - "이종일이 겪은 투옥·고문과 보성사 방화는 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷."
+  - "화면 인물은 사장 한 명 중심, s05에 인쇄공 2명, s06·s07에 형사(그림자 속 작게). s02 경찰은 그림자로만 표현."
+
+youtube:
+  titles:
+    - 하룻밤에 몰래 수만 장을 찍었다고? 3월 1일 이틀 전의 밤
+    - 족보 찍는 척! 일본 경찰을 속인 인쇄소의 비밀
+    - 들이닥친 형사, 그날 밤 인쇄소에서 무슨 일이?
+  description: |-
+    🖨️ 이틀 뒤면 온 나라에 뿌려야 할 종이… 그런데 밤에 기계가 돌면 일본 경찰이 바로 눈치챈다면?
+
+    서울의 한 인쇄소 사장이 꺼낸 작전은 "족보 찍는 척하기" 📚
+    직원들과 밤새 기계를 돌려 수만 장을 찍었는데…
+    그때! 기계 소리를 들은 형사가 문을 열고 들이닥쳤습니다 😱
+
+    무릎을 꿇고 "같은 조선 사람끼리 한 번만…" 그날 밤 찍은 종이의 정체와 사장의 이름은 영상 끝에서 🇰🇷
+  comment_question: 여러분이라면 그 밤, 형사를 어떻게 돌려보내셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 삼일절, 독립선언서, 쇼츠]
