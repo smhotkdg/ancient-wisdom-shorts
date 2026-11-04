@@ -17,7 +17,7 @@ LIST_WORDS = ["첫째", "둘째", "셋째", "먼저,", "다음으로"]
 # 화면 인물 = 주인공 중심 (2026-10-16 사용자: 008처럼 인물이 너무 많으면 집중도↓. 007 s08처럼 주인공이 가운데이고
 # 장면에 어울리는 배경 인물 몇 명은 좋다) → 여러 사람이 나오는 장면이 MAX_CROWD 개를 넘으면 실패
 MAX_CROWD = 3
-CROWD_EN = re.compile(r"\b(villagers|crowd|crowds|workers|townspeople|farmers|families|family|children|everyone|"
+CROWD_EN = re.compile(r"\b(villagers|crowd|crowds|workers|townspeople|farmers|families|family(?!-friendly)|children|everyone|"
                       r"group of|lines of|many hands|people)\b", re.I)
 CROWD_KO = re.compile(r"사람들|마을 사람|일꾼|군중|가족|농부들|아이들|여럿")
 NO_PEOPLE = re.compile(r"\bno (other |visible )?(people|crews?)\b", re.I)

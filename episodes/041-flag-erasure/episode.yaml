@@ -1,0 +1,232 @@
+# 041 일장기 말소 사건 — 우승 사진 속 일장기를 지워 신문에 실은 기자들 (이길용, 독립운동 편)
+id: "041"
+slug: flag-erasure
+status: script_ok
+working_title: 1936년 신문 기자들은 왜 우승 사진 속 일장기를 지웠을까?
+title_lines: ["사진 속 일장기를", "지워 버렸다고?"]
+hook: 골머리를 앓았습니다
+caption_keywords: [일장기, 일본의 우승, 흐릿하게, 찾아내고, 9개월]
+
+story:
+  hero: 기자
+  reveal: [일장기 말소, 이길용]
+
+characters:
+  - id: reporter
+    name: 체육 기자
+    name_en: Korean newspaper sports reporter
+    description: >-
+      a lean, energetic Korean man in his late 30s with short side-parted black hair, sharp determined eyes, a small
+      mustache and a warm face, wearing a 1930s white shirt with rolled-up sleeves, a loosened dark tie, suspenders and
+      grey trousers, a pencil tucked behind his ear and a reporter's notebook in his shirt pocket
+    note: 이야기 주인공. 1936년 서울 신문사의 체육 담당 기자 (마지막 대사 전까지 이름과 사건 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1936년, 신문사의 한 체육 기자는 골머리를 앓았습니다."
+        captions: ["1936년 신문사의 / 한 체육 기자는", "골머리를 앓았습니다"]
+      - text: "조선 청년이 올림픽 마라톤에서 우승했는데, 가슴엔 일장기가 붙어 있었거든요."
+        captions: ["조선 청년이 / 올림픽 마라톤에서", "우승했는데 가슴엔 / 일장기가 붙어 있었거든요"]
+    visual: 1930년대 신문사 편집국, 기자가 책상 위 우승 사진을 내려다보며 머리를 감싼다
+    image_prompt: >-
+      A busy 1930s newspaper newsroom with wooden desks, typewriters and stacks of paper, the reporter seen from the
+      waist up in the middle of the frame, sitting at his desk and holding his head in both hands at the temples while
+      staring down at a black-and-white photo print on the desk. Plain wall above him. No readable text. No other
+      people.
+    characters: [reporter]
+    motion_prompt: >-
+      He stares at the photo, rubs his temples and lets out a heavy sigh.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a black-and-white newspaper photo print on a desk showing the small blurred silhouette of a
+          marathon runner crossing a finish line, a small dark round emblem visible on the chest of his white running
+          shirt. No faces in detail, no readable text.
+        motion_prompt: >-
+          The camera slowly pushes in toward the small round emblem on the runner's shirt.
+        camera: macro slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "이 사진을 그대로 실으면, 마치 일본의 우승처럼 보일 판이었죠."
+        captions: ["이 사진을 그대로 실으면", "마치 일본의 우승처럼 / 보일 판이었죠"]
+    visual: 인쇄기에서 막 찍혀 나오는 신문 더미 (사람 없이)
+    image_prompt: >-
+      A large 1930s rotary printing press in a dim print room, a stack of freshly printed newspapers sliding out, the top
+      page showing a blurred photo of a runner. No readable text. No people.
+    motion_prompt: >-
+      The press rolls and newspapers pile up one after another.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "우승의 기쁨은 살리고, 일장기만 없앨 방법은 없을까요?"
+        captions: ["우승의 기쁨은 살리고", "일장기만 없앨 방법은 / 없을까요?"]
+    visual: 창가에 선 기자가 사진을 빛에 비춰 보며 골똘히 생각한다
+    image_prompt: >-
+      The reporter seen from the waist up in the middle of the frame, standing by the newsroom window and holding the
+      photo print up against the light at chest height, studying it closely with narrowed eyes. Plain window light above
+      him. No readable text. No other people.
+    characters: [reporter]
+    motion_prompt: >-
+      He tilts the photo in the light, narrows his eyes and slowly nods to himself.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 기자는 동료들에게, 사진 속 가슴 쪽을 흐릿하게 지우자고 했습니다."
+        captions: ["그래서 기자는 동료들에게", "사진 속 가슴 쪽을 / 흐릿하게 지우자고 했습니다"]
+    visual: 편집국 책상에 사진을 내려놓은 기자가 손가락으로 가슴 부분을 짚으며 동료들에게 말한다
+    image_prompt: >-
+      The reporter in the middle of the frame leaning over a desk, tapping his finger on the chest area of the runner in
+      the photo print while speaking earnestly. No readable text.
+    characters: [reporter]
+    extras: "two newspaper colleagues in shirts and ties behind him, leaning in and nodding in agreement, small and out of focus"
+    motion_prompt: >-
+      He taps the photo and speaks; the colleagues behind him lean in and nod.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그렇게 일장기가 사라진 우승 사진이, 신문에 실렸습니다."
+        captions: ["그렇게 일장기가 사라진 / 우승 사진이", "신문에 실렸습니다"]
+    visual: 기자가 갓 나온 신문을 펼쳐 들고 사진을 보며 뿌듯하게 웃는다
+    image_prompt: >-
+      The reporter seen from the waist up in the middle of the frame, holding open a freshly printed newspaper at chest
+      height, looking at a photo of a runner in a plain white shirt with no emblem, a quiet proud smile. No readable text.
+      No other people.
+    characters: [reporter]
+    motion_prompt: >-
+      He opens the newspaper, looks at the photo and smiles quietly.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the printed newspaper photo: the blurred silhouette of a marathon runner in a plain white running
+          shirt with nothing on the chest. No faces in detail, no readable text, no people besides the photo.
+        motion_prompt: >-
+          The camera slowly glides over the clean white shirt in the newspaper photo.
+        camera: macro slow pan
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 일본 경찰이, 이 사진을 찾아내고 말았습니다. 어떻게 됐을까요?"
+        captions: ["그런데 일본 경찰이", "이 사진을 찾아내고 말았습니다", "어떻게 됐을까요?"]
+    visual: 편집국 문 유리에 제복 경찰들의 그림자가 비치고, 기자가 신문을 쥔 채 굳어 선다
+    image_prompt: >-
+      The reporter seen from the waist up in the middle of the frame inside the newsroom, freezing with the newspaper in
+      his hand, turning toward the frosted glass door where long dark shadows of uniformed policemen appear. No faces of
+      the police visible. No readable text.
+    characters: [reporter]
+    motion_prompt: >-
+      The shadows on the glass door grow larger; he freezes and slowly lowers the newspaper.
+    camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 신문은 무기한 발행을 멈춰야 했고, 기자들은 붙잡혀 갔습니다."
+        captions: ["결국 신문은 무기한 / 발행을 멈춰야 했고", "기자들은 붙잡혀 갔습니다"]
+    visual: 불 꺼진 편집국, 빈 책상들 위로 신문 한 장만 놓여 있다 (사람 없이)
+    image_prompt: >-
+      A dark, empty 1930s newsroom at night with chairs pushed back and typewriters covered, a single newspaper left on
+      one desk under a beam of moonlight. Quiet, heavy mood. No readable text. No people.
+    motion_prompt: >-
+      Moonlight slowly moves across the empty desks and the single newspaper.
+    camera: slow pan
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "신문은 9개월이 지나서야, 겨우 다시 나올 수 있었죠."
+        captions: ["신문은 9개월이 지나서야", "겨우 다시 나올 수 있었죠"]
+    visual: 다시 불이 켜진 편집국, 기자가 창문을 열고 들어오는 햇살을 맞는다
+    image_prompt: >-
+      The newsroom lit again on a bright morning, the reporter seen from the knees up in the middle of the frame, opening
+      a window and letting in the sunlight, a tired but hopeful smile. Bright window light above him. No other people.
+    characters: [reporter]
+    motion_prompt: >-
+      He pushes the window open; sunlight floods in and he takes a deep breath with a hopeful smile.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그런데 사실 다른 신문도, 일장기를 지운 사진을 실었다고 합니다."
+        captions: ["그런데 사실 다른 신문도", "일장기를 지운 사진을 / 실었다고 합니다"]
+    visual: 책상 위에 두 신문을 나란히 펼쳐 놓고 기자가 마주 보며 미소 짓는다
+    image_prompt: >-
+      Two different old newspapers laid side by side on a desk, each with a blurred photo of a runner in a plain white
+      shirt, the reporter's hand resting between them. No readable text. No people besides the hand.
+    characters: [reporter]
+    motion_prompt: >-
+      His hand slides one newspaper next to the other, lining them up.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "사진 속 일장기를 지운 이 일이 바로 일장기 말소 사건, 제안한 기자는 이길용입니다."
+        captions: ["사진 속 일장기를 지운 이 일이", "바로 일장기 말소 사건", "제안한 기자는 / 이길용입니다"]
+      - text: "여러분이라면 그 사진을 어떻게 실으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 그 사진을", "어떻게 실으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 햇살 드는 편집국에서 기자가 신문을 겨드랑이에 끼고 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The reporter seen from the knees up in the middle of the frame, standing in the sunlit newsroom with a folded
+      newspaper under his arm, a calm proud smile. Bright plain window light above him. No readable text. No other
+      people.
+    characters: [reporter]
+    motion_prompt: >-
+      He tucks the newspaper under his arm and smiles; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the cartoon reporter character from the reference image, seen from the waist up in the
+          middle of the frame, standing in the sunlit newsroom. He smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Cheerful, calm, family-friendly mood. No
+          other people.
+        characters: [reporter]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "한국민족문화대백과사전 — 일장기말소사건 (1936년 베를린올림픽 마라톤 손기정 우승 뒤 『조선중앙일보』와 『동아일보』가 사진 속 유니폼의 일장기를 지워 게재 — 8월 13일자, 동아일보는 8월 25일자 2면에도, 일본 관헌이 8월 25일자를 문제 삼음, 동아일보 8월 29일자로 무기정간·조선중앙일보 9월 5일 자진 휴간, 동아일보 약 9개월 뒤 1937년 6월 3일 속간, 현진건·이길용·이상범 등 8명 구속 40여 일 뒤 석방) — https://encykorea.aks.ac.kr/Article/E0047311"
+  - "채백 (2007), 동아일보 일장기 말소 사건에 관한 연구, 한국언론정보학보 39 (8월 13일자 지방판에도 동아일보가 비슷한 사진을 실었음을 밝힘, 9개월이 넘는 가장 긴 정간, 1937년 6월 3일 속간) — https://koreascience.or.kr/article/JAKO200705812535218.page?lang=en"
+  - "서울특별시 내 손안에 서울 — 일장기 말소 사건 (보조: 동아일보 사회부 체육주임 기자 이길용이 사회부장 현진건에게 손기정 선수의 가슴 쪽을 엷게 잘 보이지 않게 보도하자고 제안, 무기한 정간, 관련자 8명 고초) — https://mediahub.seoul.go.kr/archives/2015216"
+
+accuracy_notes:
+  - "주인공은 실존 언론인 이길용(동아일보 체육 기자). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 실제로는 사회부장 현진건, 화백 이상범 등 여러 사람이 함께했다. 마지막 대사 전까지 이름과 사건 이름을 밝히지 않는다."
+  - "'골머리를 앓았습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 손기정 선수는 화면에 얼굴을 그리지 않고, 신문 사진 속 작고 흐릿한 달리는 사람 실루엣으로만 보여 준다."
+  - "s04 '가슴 쪽을 흐릿하게 지우자고 제안'은 서울시(이길용이 현진건에게 '가슴 쪽을 엷게 잘 보이지 않게' 제안) 기준. 실제로 누가 어떤 기법으로 사진을 고쳤는지는 확인한 출처에 없어 대본·화면에서 다루지 않는다."
+  - "s05~s06 문제가 된 것은 동아일보 8월 25일자 (한국민족문화대백과). 그 전 8월 13일자에도 지운 사진이 실렸다."
+  - "s07 '무기한 발행 중단', '기자들이 붙잡혀 감'은 한국민족문화대백과(무기정간, 8명 구속) 기준. 고문 장면은 넣지 않는다."
+  - "s08 '9개월 뒤 다시 나옴'은 한국민족문화대백과·한국언론정보학보 공통 (1937년 6월 3일 속간)."
+  - "s09 '다른 신문도 지운 사진을 실음'은 『조선중앙일보』 8월 13일자 (한국민족문화대백과)."
+  - "s10 정답 '일장기 말소 사건'. '제안한 기자는 이길용'은 서울시 기준."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (2026-11-03 CTA 미디엄 샷 틀)."
+  - "화면 인물은 기자 한 명 중심, s04에 동료 2명. 경찰은 그림자로만 표현."
+
+youtube:
+  titles:
+    - 사진 속 일장기를 지워 버렸다고? 1936년 신문사의 결심
+    - 올림픽 금메달 사진에서 사라진 것
+    - 신문이 9개월 동안 멈춘 이유
+  description: |-
+    🏃 1936년, 조선 청년이 올림픽 마라톤에서 우승! 그런데 가슴엔 일장기가… 이 사진을 그대로 실어야 할까요?
+
+    신문사의 한 체육 기자는 동료들에게 말했습니다. "가슴 쪽을 흐릿하게 지웁시다" 📰
+    그렇게 일장기가 사라진 우승 사진이 신문에 실렸는데…
+    일본 경찰이 이 사진을 찾아내고 말았습니다 😱
+
+    신문은 무려 9개월 동안 멈췄고 기자들은 붙잡혀 갔죠. 사진 한 장에 담긴 용기, 그 기자의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 그 사진을 어떻게 실으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 손기정, 일장기말소, 한국사, 쇼츠]
