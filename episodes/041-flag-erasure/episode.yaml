@@ -1,7 +1,7 @@
 # 041 일장기 말소 사건 — 우승 사진 속 일장기를 지워 신문에 실은 기자들 (이길용, 독립운동 편)
 id: "041"
 slug: flag-erasure
-status: script_ok
+status: done
 working_title: 1936년 신문 기자들은 왜 우승 사진 속 일장기를 지웠을까?
 title_lines: ["사진 속 일장기를", "지워 버렸다고?"]
 hook: 골머리를 앓았습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "1936년, 신문사의 한 체육 기자는 골머리를 앓았습니다."
         captions: ["1936년 신문사의 / 한 체육 기자는", "골머리를 앓았습니다"]
       - text: "조선 청년이 올림픽 마라톤에서 우승했는데, 가슴엔 일장기가 붙어 있었거든요."
-        captions: ["조선 청년이 / 올림픽 마라톤에서", "우승했는데 가슴엔 / 일장기가 붙어 있었거든요"]
+        captions: ["조선 청년이 / 올림픽 마라톤에서", "우승했는데 가슴엔 / 일장기가", "붙어 있었거든요"]
     visual: 1930년대 신문사 편집국, 기자가 책상 위 우승 사진을 내려다보며 머리를 감싼다
     image_prompt: >-
       A busy 1930s newspaper newsroom with wooden desks, typewriters and stacks of paper, the reporter seen from the
@@ -80,7 +80,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 기자는 동료들에게, 사진 속 가슴 쪽을 흐릿하게 지우자고 했습니다."
-        captions: ["그래서 기자는 동료들에게", "사진 속 가슴 쪽을 / 흐릿하게 지우자고 했습니다"]
+        captions: ["그래서 기자는 동료들에게", "사진 속 가슴 쪽을 / 흐릿하게", "지우자고 했습니다"]
     visual: 편집국 책상에 사진을 내려놓은 기자가 손가락으로 가슴 부분을 짚으며 동료들에게 말한다
     image_prompt: >-
       The reporter in the middle of the frame leaning over a desk, tapping his finger on the chest area of the runner in
@@ -173,7 +173,7 @@ scenes:
     beat: info
     lines:
       - text: "사진 속 일장기를 지운 이 일이 바로 일장기 말소 사건, 제안한 기자는 이길용입니다."
-        captions: ["사진 속 일장기를 지운 이 일이", "바로 일장기 말소 사건", "제안한 기자는 / 이길용입니다"]
+        captions: ["사진 속 일장기를 / 지운 이 일이", "바로 일장기 말소 사건", "제안한 기자는 / 이길용입니다"]
       - text: "여러분이라면 그 사진을 어떻게 실으셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 그 사진을", "어떻게 실으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
