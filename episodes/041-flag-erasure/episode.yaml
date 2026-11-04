@@ -117,7 +117,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 일본 경찰이, 이 사진을 찾아내고 말았습니다. 어떻게 됐을까요?"
-        captions: ["그런데 일본 경찰이", "이 사진을 찾아내고 말았습니다", "어떻게 됐을까요?"]
+        captions: ["그런데 일본 경찰이 / 이 사진을", "찾아내고 말았습니다", "어떻게 됐을까요?"]
     visual: 편집국 문 유리에 제복 경찰들의 그림자가 비치고, 기자가 신문을 쥔 채 굳어 선다
     image_prompt: >-
       The reporter seen from the waist up in the middle of the frame inside the newsroom, freezing with the newspaper in
