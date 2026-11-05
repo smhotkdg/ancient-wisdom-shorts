@@ -1,0 +1,223 @@
+# 044 이육사 — 감옥 번호 264를 이름으로 삼아 시로 싸운 시인 (독립운동가 편)
+id: "044"
+slug: yi-yuksa
+status: script_ok
+working_title: 한 시인은 왜 감옥 번호를 자기 이름으로 삼았을까?
+title_lines: ["감옥 번호를", "이름으로 삼았다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [번호로만, 264, 육사, 총이 아니었습니다, 열일곱 번]
+
+story:
+  hero: 청년
+  reveal: [이육사]
+
+characters:
+  - id: poet
+    name: 청년
+    name_en: young Korean poet
+    description: >-
+      a slender, quiet young Korean man in his early 20s with short black hair, a lean face with high cheekbones, deep
+      thoughtful eyes and a firm, gentle mouth, wearing a plain dark 1920s Western suit jacket over a white collarless
+      shirt, a thin fountain pen in his breast pocket
+    note: 이야기 주인공. 1927년 대구에서 처음 투옥된 안동 출신 청년, 뒤의 시인 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1927년, 안동 출신의 한 청년은 말문이 막혔습니다."
+        captions: ["1927년 안동 출신의 / 한 청년은", "말문이 막혔습니다"]
+      - text: "폭탄 사건에 엮여, 형제들과 함께 감옥에 갇히고 말았거든요."
+        captions: ["폭탄 사건에 엮여", "형제들과 함께 / 감옥에 갇히고 말았거든요"]
+    visual: 어둑한 감옥 복도, 쇠창살 너머 청년이 창살을 쥐고 망연자실한 얼굴로 서 있다
+    image_prompt: >-
+      A dim old prison corridor with iron bars and a small high window letting in a beam of grey light, the young man seen
+      from the waist up in the middle of the frame behind the bars, holding two bars with both hands at chest height,
+      stunned and speechless. Plain dark stone wall above him. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      Dust floats in the grey light; he grips the bars, slowly lowers his head and closes his eyes.
+    camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "감옥에선 이름 대신, 번호로만 불렸죠."
+        captions: ["감옥에선 이름 대신", "번호로만 불렸죠"]
+    visual: 거친 죄수복 가슴에 꿰매진 작은 천 번호표를 가까이서 (숫자만 보이고 다른 글자 없음)
+    image_prompt: >-
+      Close-up of a rough grey prison uniform with a small white cloth tag sewn on the chest showing only the number 264
+      in plain black digits, coarse fabric texture, dim light. No other text, no faces.
+    motion_prompt: >-
+      The camera slowly pushes in on the number tag as the fabric rises with a slow breath.
+    camera: macro slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그 번호는 264. 이 치욕스러운 숫자를, 그는 어떻게 했을까요?"
+        captions: ["그 번호는 264", "이 치욕스러운 숫자를 / 그는 어떻게 했을까요?"]
+    visual: 감방 벽에 기대앉은 청년이 손가락으로 가슴의 번호표를 만지며 생각에 잠긴다
+    image_prompt: >-
+      Inside a small bare prison cell, the young man seen from the waist up in the middle of the frame, sitting against
+      the stone wall in a grey prison uniform, touching the number tag on his chest with one finger, lost in deep thought.
+      Plain stone wall above him. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      He traces the number on his chest with a finger, then lifts his eyes with a quiet resolve.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그런데 청년은 그 번호를 잊지 않았습니다. 오히려 자기 이름으로 삼았죠."
+        captions: ["그런데 청년은 / 그 번호를 잊지 않았습니다", "오히려 자기 이름으로 / 삼았죠"]
+    visual: 감옥에서 나온 청년이 햇빛 속 철문 앞에서 앞을 똑바로 본다
+    image_prompt: >-
+      Outside a heavy prison gate on a bright day, the young man in his dark suit seen from the knees up in the middle of
+      the frame, standing tall and looking straight ahead with firm eyes, the gate closing behind him. Wide plain sky
+      above him. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      The gate closes behind him; he straightens his jacket and looks straight ahead with determination.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "이, 육, 사. 그래서 그는 스스로를 '육사'라 불렀습니다."
+        captions: ["이, 육, 사", "그래서 그는 / 스스로를 '육사'라 불렀습니다"]
+    visual: 책상 위 원고지에 청년이 붓으로 두 글자 호를 천천히 쓴다 (글자는 흐릿하게)
+    image_prompt: >-
+      The young man seated at a wooden desk by a window, seen from the waist up in the middle of the frame, slowly writing
+      two large brush characters on a sheet of paper with a calm, solemn face; the characters are soft and blurred,
+      not readable. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      The brush moves in two slow, deliberate strokes; he lifts it and looks at the paper quietly.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "치욕의 숫자를, 싸움의 다짐으로 바꾼 거죠."
+        captions: ["치욕의 숫자를", "싸움의 다짐으로 바꾼 거죠"]
+    visual: 종이 위의 숫자 264가 불빛 속에서 천천히 붓글씨 두 글자로 바뀌어 간다
+    image_prompt: >-
+      Close-up of an old sheet of paper on a desk: the digits 264 written in pencil slowly fading while two flowing brush
+      strokes appear beside them in warm lamp light. No other text, no people.
+    motion_prompt: >-
+      The pencil digits fade while the brush strokes darken and grow clearer.
+    camera: macro static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "하지만 그가 싸운 무기는, 총이 아니었습니다. 무엇이었을까요?"
+        captions: ["하지만 그가 싸운 무기는", "총이 아니었습니다", "무엇이었을까요?"]
+    visual: 등잔불 아래 청년이 주머니에서 무언가를 꺼내려다 멈추고 미소 짓는다
+    image_prompt: >-
+      The young man seen from the waist up in the middle of the frame at night under an oil lamp, reaching into his breast
+      pocket and pausing with a small knowing smile, as if about to reveal something. Plain dark wall above him. No other
+      people.
+    characters: [poet]
+    motion_prompt: >-
+      He reaches into his pocket, pauses with a small smile and slowly begins to pull something out.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "바로 시였습니다. 그는 일제의 감시 속에서도, 시를 써 내려갔죠."
+        captions: ["바로 시였습니다", "그는 일제의 감시 속에서도 / 시를 써 내려갔죠"]
+    visual: 청년이 만년필을 꺼내 원고지에 시를 써 내려가고, 창밖엔 넓은 들판과 먼 산이 보인다
+    image_prompt: >-
+      The young man seated at a desk by an open window, seen from the waist up in the middle of the frame, writing on a
+      manuscript page with his fountain pen, a vast open plain and distant mountains visible outside the window. No
+      readable writing. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      His pen flows across the page; a breeze from the window lifts the corner of the paper.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a manuscript page beside a small bunch of green grapes on the desk, the pen resting on the paper,
+          warm window light. No readable writing, no people.
+        motion_prompt: >-
+          Light shifts over the green grapes and the manuscript as the curtain sways.
+        camera: macro slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그 뒤로도 열일곱 번이나 갇혔지만, 펜을 놓지 않았다고 합니다."
+        captions: ["그 뒤로도 / 열일곱 번이나 갇혔지만", "펜을 놓지 않았다고 합니다"]
+    visual: 청년이 만년필을 손에 꼭 쥐고 창밖의 넓은 광야를 바라본다
+    image_prompt: >-
+      The young man seen from the knees up in the middle of the frame, standing at the edge of a vast open wilderness at
+      dawn, holding his fountain pen tightly in one hand at his side and gazing far ahead. Wide calm dawn sky above him.
+      No other people.
+    characters: [poet]
+    motion_prompt: >-
+      Wind sweeps across the wilderness; he grips the pen and gazes steadily ahead.
+    camera: slow pull back at eye level
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "광야와 청포도를 쓴 이 시인이 바로, 이육사입니다."
+        captions: ["광야와 청포도를 쓴 / 이 시인이", "바로, 이육사입니다"]
+      - text: "여러분이라면 그 번호를 이름으로 삼으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 그 번호를", "이름으로 삼으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 청포도 넝쿨이 드리운 마당에서 청년이 원고를 들고 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young man seen from the knees up in the middle of the frame, standing under a grapevine trellis heavy with green
+      grapes in a quiet courtyard in early summer, holding a manuscript to his chest with a calm smile. Wide clear sky
+      above the trellis. No other people.
+    characters: [poet]
+    motion_prompt: >-
+      Grape leaves sway in the breeze; he smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the cartoon young poet character from the reference image, seen from the waist up in
+          the middle of the frame, standing under the green grapevine trellis. He smiles warmly toward the viewer and holds
+          one open palm out at chest height in a gentle "what do you think?" gesture. Cheerful, calm, family-friendly
+          mood. No other people.
+        characters: [poet]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "한국문학번역원(LTI Korea) 작가 정보 — Yi Yuksa (본명 이원록, 1904년 안동 도산면 출생, 첫 투옥 때 수인번호 264(이·육·사)를 받아 뒤에 필명으로 삼음, 1927년 의열단원의 조선은행 대구지점 폭탄 사건 뒤 체포돼 약 1년 6개월 수감, 1930년 첫 시 「말」, 1939년 「청포도」, 약 40편의 시, 1943년 체포돼 베이징으로 압송, 1944년 1월 16일 베이징 감옥에서 순국) — https://library.ltikorea.or.kr/writer/200893"
+  - "매일신문 2014 — 이육사 (첫 투옥 때 수인번호 264에서 음을 따 '육사'라 했다는 설이 널리 알려짐, '역사를 찢겠다'는 뜻이라는 일설도 있음, 대구지점 폭탄투척 사건으로 형·동생과 함께 투옥, 모두 17차례 투옥, 대표 시 「청포도」「광야」「절정」, 2004년 이육사문학관 개관) — https://www.imaeil.com/page/view/2014020711033577572"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가·시인 이육사(본명 이원록, 1904~1944). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다 (s05의 '육사'는 수인번호 읽기로만 나온다)."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '폭탄 사건에 엮여 형제들과 함께 갇힘'은 1927년 조선은행 대구지점 폭탄 사건 연루 투옥(LTI Korea·매일신문) 기준. 그가 사건에 직접 가담했는지는 단정하지 않는다."
+  - "s03~s05 수인번호 264에서 '육사'를 땄다는 것은 LTI Korea 기준이며, 매일신문은 '널리 알려진 설'로 소개한다. 한자 표기 변천(戮史 등)은 대본에 쓰지 않는다."
+  - "s06 '치욕의 숫자를 싸움의 다짐으로'는 필명의 뜻을 쉽게 풀어 쓴 해석이며, 매일신문이 전하는 '역사를 찢겠다는 뜻'이라는 일설과 통한다."
+  - "s09 '열일곱 번 투옥'은 매일신문 기준이며 '했다고 합니다'로 쓴다."
+  - "s02 죄수복 번호표 화면은 연출이다 (번호 264만 보이게)."
+  - "1944년 베이징 감옥에서의 순국은 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 청년 한 명. 배경 인물 장면 없음."
+
+youtube:
+  titles:
+    - 감옥 번호를 이름으로 삼았다고? 264에 담긴 비밀
+    - 이름 대신 번호로 불린 청년, 그 번호로 시인이 되다
+    - 총 대신 펜으로 싸운 독립운동가
+  description: |-
+    🔢 감옥에선 이름 대신 번호로만 불렸습니다. 그 번호는 264… 여러분이라면 이 치욕스러운 숫자를 어떻게 하시겠어요?
+
+    1927년, 폭탄 사건에 엮여 감옥에 갇힌 안동의 한 청년 ⛓️
+    그런데 그는 그 번호를 잊지 않고, 오히려 자기 이름으로 삼았습니다. 이, 육, 사!
+    그리고 그가 싸운 무기는 총이 아니라 '시'였죠 ✒️
+
+    열일곱 번이나 갇혀도 펜을 놓지 않은 그 시인 🍇 교과서에서 만난 바로 그분, 이름은 영상 끝에서!
+  comment_question: 여러분이라면 그 번호를 이름으로 삼으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 시인, 한국사, 쇼츠]
