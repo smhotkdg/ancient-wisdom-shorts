@@ -1,0 +1,227 @@
+# 043 헤이그 특사 이위종 — 회의장 문이 닫히자 세계 기자들 앞에 선 스무 살 청년 (독립운동가 편)
+id: "043"
+slug: hague-envoy
+status: script_ok
+working_title: 회의장에 들어가지 못한 조선 청년은 어떻게 세계에 호소했을까?
+title_lines: ["회의장 문이 닫히자", "기자들 앞에 섰다?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [비밀 편지, 외교권, 기자들 앞에, 프랑스어, 박수]
+
+story:
+  hero: 청년
+  reveal: [헤이그 특사, 이위종]
+
+characters:
+  - id: envoy
+    name: 청년
+    name_en: young Korean diplomat
+    description: >-
+      a slim, bright-eyed young Korean man around 20 with short neatly combed black hair, a smooth earnest face and a
+      confident, intelligent gaze, wearing a dark 1900s Western frock coat with a high white collar and a dark cravat,
+      a small leather document case under his arm
+    note: 이야기 주인공. 1907년 헤이그 만국평화회의에 파견된 세 특사 가운데 가장 젊은 외교관 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1907년, 스무 살 조선 청년 외교관은 눈앞이 캄캄했습니다."
+        captions: ["1907년 스무 살 / 조선 청년 외교관은", "눈앞이 캄캄했습니다"]
+      - text: "황제의 비밀 편지를 들고 지구 반 바퀴를 왔는데, 회의장 문이 닫혀 버렸거든요."
+        captions: ["황제의 비밀 편지를 들고 / 지구 반 바퀴를 왔는데", "회의장 문이 / 닫혀 버렸거든요"]
+    visual: 유럽식 큰 건물의 닫힌 나무 문 앞, 청년이 서류 가방을 꼭 안고 멍하니 서 있다
+    image_prompt: >-
+      The tall closed wooden double doors of a grand old European conference hall with stone columns, the young diplomat
+      seen from the knees up in the middle of the frame, standing in front of the doors and clutching his document case
+      to his chest, stunned and disappointed. Plain stone wall above the doors. No other people.
+    characters: [envoy]
+    motion_prompt: >-
+      He reaches for the door handle, stops, lowers his hand and stares at the closed doors.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A long steam train crossing a vast snowy Siberian plain under a pale sky, smoke trailing behind it. No people
+          visible.
+        motion_prompt: >-
+          The train crosses the snowy plain from left to right, smoke streaming behind.
+        camera: slow pan
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "나라에 외교권이 없다며, 아무도 만나 주지 않았죠."
+        captions: ["나라에 외교권이 없다며", "아무도 만나 주지 않았죠"]
+    visual: 화려한 복도에서 청년 앞으로 문이 하나씩 닫히고, 청년이 고개를 떨군다
+    image_prompt: >-
+      A grand marble corridor lined with tall doors, all of them shut, the young diplomat in the middle of the frame
+      standing alone with his document case, head lowered, a long shadow on the polished floor. No other people.
+    characters: [envoy]
+    motion_prompt: >-
+      Doors along the corridor close one after another; he lowers his head.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "회의장에 못 들어가면, 세계에 어떻게 알릴까요?"
+        captions: ["회의장에 못 들어가면", "세계에 어떻게 알릴까요?"]
+    visual: 호텔 방 창가, 청년이 창밖 거리의 신문 가판대를 내려다보며 골똘히 생각한다
+    image_prompt: >-
+      A small European hotel room in 1907, the young diplomat seen from the waist up in the middle of the frame, standing
+      by the window and looking down at a newspaper stand on the street below, deep in thought. Plain wall above the
+      window. No readable text. No other people.
+    characters: [envoy]
+    motion_prompt: >-
+      He looks down at the newspaper stand, narrows his eyes, and a spark of an idea crosses his face.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그때 청년은 생각했습니다. 회의장 대신, 세계의 기자들 앞에 서자고요."
+        captions: ["그때 청년은 생각했습니다", "회의장 대신 / 세계의 기자들 앞에 서자고요"]
+    visual: 청년이 책상에 앉아 펜으로 연설문을 빠르게 써 내려간다
+    image_prompt: >-
+      The young diplomat seated at a hotel desk under lamp light, seen from the waist up in the middle of the frame,
+      writing quickly with a fountain pen on sheets of paper, determined. No readable text. No other people.
+    characters: [envoy]
+    motion_prompt: >-
+      His pen moves quickly across the page; he finishes a line, nods and turns to a new sheet.
+    camera: slow push in
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그래서 각국 기자들이 모인 자리에서, 프랑스어로 연설을 했습니다."
+        captions: ["그래서 각국 기자들이 / 모인 자리에서", "프랑스어로 연설을 했습니다"]
+    visual: 기자 모임 단상에 선 청년이 원고를 들고 힘 있게 말한다
+    image_prompt: >-
+      A wood-paneled meeting room of an international press club in 1907, the young diplomat standing at a small podium in
+      the middle of the frame, holding his speech papers and speaking with passion, one hand on his chest. No readable
+      text. Plain paneled wall above him. No other people.
+    characters: [envoy]
+    motion_prompt: >-
+      He speaks firmly, looks up from his notes and places a hand on his chest.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "제목은 한국을 위한 호소, 나라를 빼앗기는 사정을 세계에 털어놓았죠."
+        captions: ["제목은 / 한국을 위한 호소", "나라를 빼앗기는 사정을 / 세계에 털어놓았죠"]
+    visual: 단상 위 청년의 옆모습, 창으로 들어온 빛 속에서 원고를 내려놓고 청중을 똑바로 본다
+    image_prompt: >-
+      Side view of the young diplomat at the podium in the middle of the frame, setting his papers down and looking
+      straight out at the audience with earnest, moving conviction, soft light streaming through a tall window. No
+      readable text. No other people visible.
+    characters: [envoy]
+    motion_prompt: >-
+      He sets the papers down and speaks from the heart, his voice steady.
+    camera: slow orbit at eye level
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "연설이 끝나자, 기자들은 어떻게 했을까요?"
+        captions: ["연설이 끝나자", "기자들은 어떻게 했을까요?"]
+    visual: 조용해진 강당, 청년이 숨을 고르며 앞을 바라보고, 뒤로 기자 몇이 서로 마주 본다
+    image_prompt: >-
+      The young diplomat in the middle of the frame at the podium after finishing his speech, catching his breath and
+      looking out anxiously into the quiet room.
+    characters: [envoy]
+    extras: "two or three journalists in 1900s suits and bowler hats seated behind him at the side, looking at each other in silence, small and out of focus"
+    motion_prompt: >-
+      The room is silent; he breathes deeply while the journalists exchange glances.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그러자 한국 편에 서자는 결의를, 모두 박수로 통과시켰습니다."
+        captions: ["그러자 한국 편에 / 서자는 결의를", "모두 박수로 통과시켰습니다"]
+    visual: 청년 뒤로 기자들이 일어나 박수를 치고, 청년이 감격한 얼굴로 고개를 숙인다
+    image_prompt: >-
+      The young diplomat in the middle of the frame at the podium, bowing his head with a moved, grateful face.
+    characters: [envoy]
+    extras: "two or three journalists behind him standing up and applauding warmly, small and out of focus"
+    motion_prompt: >-
+      The journalists behind him stand and applaud; he bows his head, deeply moved.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그리고 연설문은 현지 신문에 실려, 한국의 사정이 세계에 알려졌죠."
+        captions: ["그리고 연설문은 / 현지 신문에 실려", "한국의 사정이 / 세계에 알려졌죠"]
+    visual: 인쇄기에서 신문이 쏟아져 나오고, 청년이 갓 나온 신문을 펼쳐 든다
+    image_prompt: >-
+      A 1907 European print shop with newspapers pouring off a press, the young diplomat seen from the waist up in the
+      middle of the frame, holding up a freshly printed newspaper with a hopeful smile. No readable text. No other
+      people.
+    characters: [envoy]
+    motion_prompt: >-
+      Newspapers stack up beside him; he opens one and smiles with hope.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "닫힌 문 앞에서 세계를 향해 외친 이 청년이 바로, 헤이그 특사 이위종입니다."
+        captions: ["닫힌 문 앞에서 / 세계를 향해 외친 이 청년이", "바로, 헤이그 특사 / 이위종입니다"]
+      - text: "여러분이라면 닫힌 문 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 닫힌 문 앞에서", "어떻게 하셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 운하 옆 거리, 청년이 신문을 겨드랑이에 끼고 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young diplomat seen from the knees up in the middle of the frame, standing beside a canal lined with old Dutch
+      brick houses at golden sunset, a newspaper under his arm, a calm determined smile. Wide sunset sky above him. No
+      other people.
+    characters: [envoy]
+    motion_prompt: >-
+      He looks along the canal with a calm smile; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the cartoon young diplomat character from the reference image, seen from the waist up in
+          the middle of the frame, standing by the sunset canal. He smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Cheerful, calm, family-friendly mood. No
+          other people.
+        characters: [envoy]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "한국민족문화대백과사전 — 이위종 (1887년 서울 출생, 프랑스어·영어·러시아어에 능통, 아버지 이범진, 일본·영국 대표의 방해로 회의 참석 실패, 1907년 7월 9일 각국 신문기자단의 국제협회에서 프랑스어로 '한국을 위한 호소' 강연, 연설문이 헤이그 신문 『Haagsche Courant』에 실림, 참석자들이 한국을 동정하는 결의안을 만장의 박수로 의결, 1962년 건국훈장 대통령장) — https://encykorea.aks.ac.kr/Article/E0045403"
+  - "서울특별시 내 손안에 서울 — 헤이그 특사 (1907년 4월 20일 고종이 이준·이상설·이위종을 특사로 임명, 신임장·친서 비밀리에 받음, 이위종은 6월 4일 상트페테르부르크에서 합류, 65일 걸려 6월 25일 헤이그 도착, 회의 참석 거부, 이위종이 각국 기자단 국제협회에서 '한국의 호소', 7월 14일 이준 순국) — https://mediahub.seoul.go.kr/archives/2008780"
+  - "Korea Times (2008, Andrei Lankov) — 1907 and Dashing Korean Hopes (보조: 외국어를 할 줄 아는 근대 교육을 받은 사람들로 특사를 고름, 시베리아 횡단 철도로 이동, 회의 의장·각국 대표가 만나 주지 않음, 집회 연설·신문 기고로 한국 입장을 알림) — https://www.koreatimes.co.kr/amp/opinion/20081127/507-1907-and-dashing-korean-hopes"
+  - "세계일보 (2025) — 헤이그 특사 (보조: 참석 거부 이유 '조선은 외교권이 없다') — https://www.segye.com/view/20250111507630"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 이위종(1887~?). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 실제로는 이상설·이준과 셋이 함께한 특사단이다. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '스무 살'은 1887년 출생 기준(만 나이 약 20세). '황제의 비밀 편지'는 고종의 신임장·친서(서울시)."
+  - "s02 '외교권이 없다며'는 세계일보 기준. 한국민족문화대백과는 '일본·영국 대표의 방해'로 적는다."
+  - "s04 '기자들 앞에 서자고 생각했다'는 이야기를 위한 재구성이다. 실제로는 특사들이 집회 연설·신문 기고 등 여러 방법을 썼다 (Korea Times)."
+  - "s05~s06 1907년 7월 9일 국제협회 프랑스어 연설, 제목 '한국을 위한 호소'는 한국민족문화대백과 기준 (서울시는 '한국의 호소'로 적음)."
+  - "s08 '한국 편에 서자는 결의를 박수로 통과'는 한국민족문화대백과의 '한국의 입장을 동정하는 결의안을 만장의 박수로 의결'을 쉽게 쓴 것."
+  - "s09 '현지 신문'은 『Haagsche Courant』 (한국민족문화대백과)."
+  - "이준의 순국(7월 14일), 고종 강제 퇴위, 특사들의 궐석재판은 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 청년 한 명 중심, s07·s08에 기자 2~3명."
+
+youtube:
+  titles:
+    - 회의장 문이 닫히자 기자들 앞에 섰다? 스무 살 외교관의 반전
+    - 지구 반 바퀴를 달려갔는데 문전박대… 그다음 한 일
+    - 프랑스어 연설 하나로 세계에 알린 조선의 사정
+  description: |-
+    🚂 황제의 비밀 편지를 들고 시베리아를 건너 지구 반 바퀴! 그런데 도착하자 회의장 문이 쾅…
+
+    "나라에 외교권이 없다"며 아무도 만나 주지 않았습니다 🚪
+    스무 살 조선 청년 외교관이 떠올린 방법은 '회의장 대신 세계의 기자들 앞에 서자!' 🎤
+    프랑스어로 '한국을 위한 호소'를 외치자, 기자들은 어떻게 했을까요?
+
+    한국 편에 서자는 결의를 박수로 통과시켰답니다 👏 닫힌 문 앞에서 세계를 향해 외친 그 청년의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 닫힌 문 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 헤이그특사, 한국사, 쇼츠]
