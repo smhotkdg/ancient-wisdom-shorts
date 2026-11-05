@@ -1,0 +1,117 @@
+{
+  "characters": {
+    "poet": "Character reference sheet of a slender, quiet young Korean man in his early 20s with short black hair, a lean face with high cheekbones, deep thoughtful eyes and a firm, gentle mouth, wearing a plain dark 1920s Western suit jacket over a white collarless shirt, a thin fountain pen in his breast pocket. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A dim old prison corridor with iron bars and a small high window letting in a beam of grey light, the young man seen from the waist up in the middle of the frame behind the bars, holding two bars with both hands at chest height, stunned and speechless. Plain dark stone wall above him. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "Dust floats in the grey light; he grips the bars, slowly lowers his head and closes his eyes. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "Close-up of a rough grey prison uniform with a small white cloth tag sewn on the chest showing only the number 264 in plain black digits, coarse fabric texture, dim light. No other text, no faces. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly pushes in on the number tag as the fabric rises with a slow breath. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: macro slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "Inside a small bare prison cell, the young man seen from the waist up in the middle of the frame, sitting against the stone wall in a grey prison uniform, touching the number tag on his chest with one finger, lost in deep thought. Plain stone wall above him. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He traces the number on his chest with a finger, then lifts his eyes with a quiet resolve. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "Outside a heavy prison gate on a bright day, the young man in his dark suit seen from the knees up in the middle of the frame, standing tall and looking straight ahead with firm eyes, the gate closing behind him. Wide plain sky above him. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "The gate closes behind him; he straightens his jacket and looks straight ahead with determination. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The young man seated at a wooden desk by a window, seen from the waist up in the middle of the frame, slowly writing two large brush characters on a sheet of paper with a calm, solemn face; the characters are soft and blurred, not readable. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "The brush moves in two slow, deliberate strokes; he lifts it and looks at the paper quietly. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "Close-up of an old sheet of paper on a desk: the digits 264 written in pencil slowly fading while two flowing brush strokes appear beside them in warm lamp light. No other text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "The pencil digits fade while the brush strokes darken and grow clearer. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: macro static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The young man seen from the waist up in the middle of the frame at night under an oil lamp, reaching into his breast pocket and pausing with a small knowing smile, as if about to reveal something. Plain dark wall above him. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He reaches into his pocket, pauses with a small smile and slowly begins to pull something out. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "The young man seated at a desk by an open window, seen from the waist up in the middle of the frame, writing on a manuscript page with his fountain pen, a vast open plain and distant mountains visible outside the window. No readable writing. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "His pen flows across the page; a breeze from the window lifts the corner of the paper. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s08-2.mp4",
+          "seconds": 6,
+          "motion": "Light shifts over the green grapes and the manuscript as the curtain sways. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: macro slow pan. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "The young man seen from the knees up in the middle of the frame, standing at the edge of a vast open wilderness at dawn, holding his fountain pen tightly in one hand at his side and gazing far ahead. Wide calm dawn sky above him. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "Wind sweeps across the wilderness; he grips the pen and gazes steadily ahead. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The young man seen from the knees up in the middle of the frame, standing under a grapevine trellis heavy with green grapes in a quiet courtyard in early summer, holding a manuscript to his chest with a calm smile. Wide clear sky above the trellis. No other people. Characters: young Korean poet (attached reference image char_poet.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the young Korean poet in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "Grape leaves sway in the breeze; he smiles calmly as the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He smiles toward the camera and opens one hand at chest height in a friendly asking gesture. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

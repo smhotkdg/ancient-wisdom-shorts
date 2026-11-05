@@ -101,7 +101,7 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
     n_chars = len(ep.script_text())
     chars = ep.data.get("characters") or []
     n_img = len(chars) + len(ep.scenes) + sum(1 for g in grok_items if g["upload"] != f"images/{g['scene']}.png")
-    focus = ", ".join(ep.data.get("caption_keywords") or []) or "핵심 동작"
+    focus = ", ".join(str(k) for k in ep.data.get("caption_keywords") or []) or "핵심 동작"
     return f"""{rel} 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 진행 방식: 중간에 묻지 말고 끝까지 한 번에 진행한다 (이미지·클립이 빠졌거나 네트워크 오류로 음성 결과가 불명확할 때만 멈춤).
 셸에서는 python aw.py … 와 git 명령만 쓴다. PowerShell 스크립트·.NET 한 줄 명령([IO.File], New-Object 등)·여러 줄 python -c 는 쓰지 않는다
