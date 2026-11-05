@@ -1,7 +1,7 @@
 # 043 헤이그 특사 이위종 — 회의장 문이 닫히자 세계 기자들 앞에 선 스무 살 청년 (독립운동가 편)
 id: "043"
 slug: hague-envoy
-status: script_ok
+status: done
 working_title: 회의장에 들어가지 못한 조선 청년은 어떻게 세계에 호소했을까?
 title_lines: ["회의장 문이 닫히자", "기자들 앞에 섰다?"]
 hook: 눈앞이 캄캄했습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "1907년, 스무 살 조선 청년 외교관은 눈앞이 캄캄했습니다."
         captions: ["1907년 스무 살 / 조선 청년 외교관은", "눈앞이 캄캄했습니다"]
       - text: "황제의 비밀 편지를 들고 지구 반 바퀴를 왔는데, 회의장 문이 닫혀 버렸거든요."
-        captions: ["황제의 비밀 편지를 들고 / 지구 반 바퀴를 왔는데", "회의장 문이 / 닫혀 버렸거든요"]
+        captions: ["황제의 비밀 편지를 / 들고", "지구 반 바퀴를 왔는데", "회의장 문이 / 닫혀 버렸거든요"]
     visual: 유럽식 큰 건물의 닫힌 나무 문 앞, 청년이 서류 가방을 꼭 안고 멍하니 서 있다
     image_prompt: >-
       The tall closed wooden double doors of a grand old European conference hall with stone columns, the young diplomat
@@ -79,7 +79,7 @@ scenes:
     beat: solution
     lines:
       - text: "그때 청년은 생각했습니다. 회의장 대신, 세계의 기자들 앞에 서자고요."
-        captions: ["그때 청년은 생각했습니다", "회의장 대신 / 세계의 기자들 앞에 서자고요"]
+        captions: ["그때 청년은 생각했습니다", "회의장 대신 / 세계의 기자들", "앞에 서자고요"]
     visual: 청년이 책상에 앉아 펜으로 연설문을 빠르게 써 내려간다
     image_prompt: >-
       The young diplomat seated at a hotel desk under lamp light, seen from the waist up in the middle of the frame,
@@ -93,7 +93,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 각국 기자들이 모인 자리에서, 프랑스어로 연설을 했습니다."
-        captions: ["그래서 각국 기자들이 / 모인 자리에서", "프랑스어로 연설을 했습니다"]
+        captions: ["그래서 각국 기자들이 / 모인 자리에서", "프랑스어로 / 연설을 했습니다"]
     visual: 기자 모임 단상에 선 청년이 원고를 들고 힘 있게 말한다
     image_prompt: >-
       A wood-paneled meeting room of an international press club in 1907, the young diplomat standing at a small podium in
@@ -138,7 +138,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그러자 한국 편에 서자는 결의를, 모두 박수로 통과시켰습니다."
-        captions: ["그러자 한국 편에 / 서자는 결의를", "모두 박수로 통과시켰습니다"]
+        captions: ["그러자 한국 편에 / 서자는 결의를", "모두 박수로 / 통과시켰습니다"]
     visual: 청년 뒤로 기자들이 일어나 박수를 치고, 청년이 감격한 얼굴로 고개를 숙인다
     image_prompt: >-
       The young diplomat in the middle of the frame at the podium, bowing his head with a moved, grateful face.
@@ -167,7 +167,7 @@ scenes:
     beat: info
     lines:
       - text: "닫힌 문 앞에서 세계를 향해 외친 이 청년이 바로, 헤이그 특사 이위종입니다."
-        captions: ["닫힌 문 앞에서 / 세계를 향해 외친 이 청년이", "바로, 헤이그 특사 / 이위종입니다"]
+        captions: ["닫힌 문 앞에서 / 세계를 향해", "외친 이 청년이", "바로, 헤이그 특사 / 이위종입니다"]
       - text: "여러분이라면 닫힌 문 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 닫힌 문 앞에서", "어떻게 하셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
