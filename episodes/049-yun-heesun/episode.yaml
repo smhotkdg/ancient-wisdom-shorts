@@ -1,0 +1,238 @@
+# 049 윤희순 — 총 대신 한글 노래로 여인들을 일으킨 최초의 여성 의병장 (독립운동가 편, 실사)
+id: "049"
+style: photoreal
+slug: yun-heesun
+status: script_ok
+working_title: 여자라서 싸울 수 없던 시절, 한 며느리는 어떻게 의병을 일으켰을까?
+show_title: true
+title_lines: ["총 대신 노래로", "의병을 모았다고?"]
+hook: 속이 터졌습니다
+caption_keywords: [여자라는 이유로, 남장, 한글로 노래, 여덟 편, 여성 의병대]
+
+story:
+  hero: 며느리
+  reveal: [윤희순]
+
+characters:
+  - id: heesun
+    name: 며느리
+    name_en: Korean village woman of the 1890s
+    description: >-
+      a slim, dignified Korean woman in her mid-30s with a calm, strong face, determined dark eyes, black hair parted in
+      the middle and pinned in a low bun with a plain wooden binyeo hairpin, wearing a plain white cotton jeogori and a
+      long dark indigo skirt, natural skin with no makeup, slightly work-worn hands
+    note: 이야기 주인공. 1890년대 강원도 춘천의 의병장 집안 며느리, 뒤에 여성 의병을 이끈 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1895년, 춘천의 한 며느리는 속이 터졌습니다."
+        captions: ["1895년 춘천의 / 한 며느리는", "속이 터졌습니다"]
+      - text: "나라가 위태로운데, 여자라는 이유로 아무것도 할 수 없었거든요."
+        captions: ["나라가 위태로운데", "여자라는 이유로 / 아무것도 할 수 없었거든요"]
+    visual: 초가 마당, 며느리가 빨래 방망이를 쥔 채 산 너머로 떠나는 의병 행렬 쪽을 바라보며 주먹을 쥔다
+    image_prompt: >-
+      The yard of a thatched-roof farmhouse in the Korean countryside in late autumn, the woman seen from the waist up
+      in the middle of the frame, gripping a wooden laundry paddle and staring toward a distant mountain path, her jaw
+      tight with frustration. Plain overcast sky above her. No other people nearby.
+    characters: [heesun]
+    motion_prompt: >-
+      Wind moves her skirt; she grips the paddle tighter, looking toward the mountains, and lets out a frustrated breath.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A narrow mountain path in late autumn with fallen leaves, a few tiny distant figures in white clothes walking
+          away over the ridge carrying bundles, seen from far away. No faces visible.
+        motion_prompt: >-
+          The distant figures disappear one by one over the ridge as leaves blow across the path.
+        camera: static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "남장을 하고 의병을 따라나서려 했지만, 그마저 쉽지 않았죠."
+        captions: ["남장을 하고 / 의병을 따라나서려 했지만", "그마저 쉽지 않았죠"]
+    visual: 방 안, 남자 두루마기를 걸쳐 보던 며느리가 잠든 아이를 돌아보고 천천히 옷을 내려놓는다
+    image_prompt: >-
+      Inside a dim traditional room, the woman seen from the waist up in the middle of the frame, holding a man's plain
+      grey coat against herself, then glancing back at a sleeping small child under a quilt beside her, her face torn.
+      Plain paper wall above her. No other adults.
+    characters: [heesun]
+    motion_prompt: >-
+      She looks at the coat, then at the sleeping child, and slowly lowers the coat with a sad sigh.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "총 대신, 여자가 할 수 있는 싸움은 없을까요?"
+        captions: ["총 대신", "여자가 할 수 있는 싸움은 / 없을까요?"]
+    visual: 등잔불 아래 며느리가 앉아 손을 모으고 깊이 생각에 잠긴다
+    image_prompt: >-
+      The woman seen from the waist up in the middle of the frame, sitting on the floor of the room at night under an
+      oil lamp, hands folded on her knees, eyes lowered in deep thought, then slowly lifting her gaze. Plain dark wall
+      above her. No other people.
+    characters: [heesun]
+    motion_prompt: >-
+      The lamp flickers; she sits still in thought, then slowly lifts her eyes with resolve.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 며느리는 붓을 들어, 한글로 노래를 지었습니다."
+        captions: ["그래서 며느리는 붓을 들어", "한글로 노래를 지었습니다"]
+    visual: 낮은 상 위 한지에 며느리가 붓으로 한글을 써 내려간다 (글자는 흐릿하게)
+    image_prompt: >-
+      The woman seated at a low wooden table, seen from the waist up in the middle of the frame, writing on a sheet of
+      hanji paper with a brush, her expression focused and firm, lamp light warm on her face; the handwritten Korean
+      script is soft and unreadable. No other people.
+    characters: [heesun]
+    motion_prompt: >-
+      The brush moves steadily down the paper; she pauses, rereads the line and continues.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a brush writing vertical rows of Korean script on hanji paper, ink glistening, the characters
+          blurred and unreadable. Only the hand is visible.
+        characters: [heesun]
+        motion_prompt: >-
+          The brush draws another vertical line of script and lifts away.
+        camera: macro static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "아낙들도 나라를 지키자는 노래, 무려 여덟 편이 넘었죠."
+        captions: ["아낙들도 나라를 / 지키자는 노래", "무려 여덟 편이 넘었죠"]
+    visual: 며느리가 다 쓴 노래 종이 여러 장을 가지런히 모아 들고 조용히 읽어 본다
+    image_prompt: >-
+      The woman seen from the waist up in the middle of the frame, holding a neat stack of several handwritten song
+      sheets on hanji paper, reading the top one quietly with a determined look. No readable text. Plain wall above her.
+      No other people.
+    characters: [heesun]
+    motion_prompt: >-
+      She straightens the stack, reads softly to herself and nods.
+    camera: static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그러자 이 노래를 따라 부르던 여인들이, 하나둘 모여들었습니다."
+        captions: ["그러자 이 노래를 / 따라 부르던 여인들이", "하나둘 모여들었습니다"]
+    visual: 개울가 빨래터, 며느리가 노래를 부르고 뒤로 여인 몇이 빨래하다 고개를 들어 따라 부른다
+    image_prompt: >-
+      A stream-side washing place in the countryside, the woman in the middle of the frame kneeling by the water and
+      singing with a calm, strong face.
+    characters: [heesun]
+    extras: "two or three village women in white jeogori washing clothes behind her, lifting their heads to sing along, small and out of focus"
+    motion_prompt: >-
+      She sings while beating the laundry; the women behind her look up and begin to sing along.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 노래만 부른 게 아니었습니다. 여인들은 무엇을 했을까요?"
+        captions: ["그런데 노래만 / 부른 게 아니었습니다", "여인들은 무엇을 했을까요?"]
+    visual: 밤, 며느리가 등잔불 아래 작은 엽전 꾸러미를 두 손에 받아 든다
+    image_prompt: >-
+      At night under an oil lamp, the woman seen from the waist up in the middle of the frame, receiving a small cloth
+      bundle of old brass coins in both hands, looking down at it with quiet gratitude. Plain dark wall above her. No
+      other faces visible.
+    characters: [heesun]
+    motion_prompt: >-
+      She receives the bundle with both hands, feels its weight and bows her head slightly.
+    camera: slow push in
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "군자금을 모으고, 군복을 짓고, 다친 의병을 돌보는 여성 의병대가 된 거죠."
+        captions: ["군자금을 모으고 / 군복을 짓고", "다친 의병을 돌보는 / 여성 의병대가 된 거죠"]
+    visual: 넓은 대청, 며느리가 군복 천을 바느질하고 뒤로 여인들이 함께 천을 자르고 꿰맨다
+    image_prompt: >-
+      A wide wooden-floored hall of a farmhouse, the woman in the middle of the frame sewing a plain grey-brown uniform
+      jacket with quick, determined stitches, rolls of rough cotton cloth around her.
+    characters: [heesun]
+    extras: "two or three women behind her cutting and sewing cloth together, small and out of focus"
+    motion_prompt: >-
+      She pulls the needle through quickly; the women behind her cut and sew in a steady rhythm.
+    camera: static
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그 뒤 만주로 건너가서도, 학교를 세워 독립운동가를 길러 냈다고 합니다."
+        captions: ["그 뒤 만주로 건너가서도", "학교를 세워 독립운동가를 / 길러 냈다고 합니다"]
+    visual: 만주 들판의 소박한 흙벽 교실, 며느리가 칠판 앞에 서서 조용히 미소 짓는다
+    image_prompt: >-
+      A simple earthen-walled classroom on a wide Manchurian plain with low wooden benches, the woman, now older with a
+      few grey strands in her hair, standing in the middle of the frame at the front beside a small blackboard, a quiet
+      warm smile. No readable text. Plain wall above her. No other people visible.
+    characters: [heesun]
+    motion_prompt: >-
+      Dust floats in the light from the window; she looks over the empty benches with a warm smile.
+    camera: slow pull back at eye level
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "노래로 여인들을 일으킨 이 사람이 바로, 최초의 여성 의병장 윤희순입니다."
+        captions: ["노래로 여인들을 일으킨 / 이 사람이", "바로, 최초의 여성 의병장 / 윤희순입니다"]
+      - text: "여러분이라면 어떤 노래로 사람들의 마음을 모으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 어떤 노래로 / 사람들의 마음을", "모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 들판에서 며느리가 노래 종이를 가슴에 안고 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The woman seen from the knees up in the middle of the frame, standing in a golden autumn field at sunset, holding
+      the handwritten song sheets to her chest, a calm, strong smile. Wide sunset sky above her. No other people.
+    characters: [heesun]
+    motion_prompt: >-
+      Wind moves the grass and her skirt; she smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same woman from the reference image, seen from the waist up in the middle of the
+          frame, standing in the sunset field. She smiles warmly toward the viewer and holds one open palm out at chest
+          height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [heesun]
+        motion_prompt: >-
+          She smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "한국교육신문 [라이프&역사] 우리나라 최초의 여성 의병장, 윤희순 (1860~1935, 1875년 춘천 의병장 유홍석의 장남 유제원과 혼인, 한글로 된 의병가 8편 이상 — 여성에게 항일운동에 나서라고 촉구, 1907년 정미의병 때 여성 76명에게서 군자금 355냥, 30여 명의 춘천 여성 의병부대 — 군량 모집·식사·군복 제작·부상병 구호, 1912년 만주로 건너가 환인현에 노학당을 세워 독립운동가를 기름, 1983년 대통령 표창·1990년 건국훈장 애족장) — https://hangyo.com/mobile/article.html?no=103090"
+  - "아주경제 [아주스페셜-여자의병장 윤희순④] 춘천의 잔다르크 (1896년 을미의병 때 남장을 하고 시아버지를 따라 의병에 참가하려 했으나 자식 부양 때문에 포기, 마을에 찾아든 의병들을 돌봄, 「안사람 의병가」를 친필로 남김, 「병정가」「의병군가」, 1990년 건국훈장 애족장) — https://www.ajunews.com/view/20180314144656023"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 윤희순(1860~1935), 1990년 건국훈장 애족장. 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'속이 터졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 연도는 을미의병 시기 기준 1895년(한국교육신문). 아주경제는 남장 일화를 1896년으로 적는다."
+  - "s01 '여자라는 이유로 아무것도 할 수 없었다'는 당시 상황을 이야기로 푼 재구성이다."
+  - "s02 남장하고 따라나서려다 포기한 일은 아주경제 기준 (이유는 자식 부양). 화면의 잠든 아이는 그 뜻을 보여 주는 연출."
+  - "s04~s05 한글 의병가 8편 이상은 한국교육신문 기준. 「안사람 의병가」 등 노래 가사는 대본에 옮기지 않는다."
+  - "s06 빨래터에서 여인들이 따라 부르는 장면은 연출이다."
+  - "s08 군자금 모금(여성 76명, 355냥), 군복 제작, 부상병 구호는 한국교육신문 기준. 탄환·화약 제조도 했지만 대본·화면에는 넣지 않는다."
+  - "s09 만주 노학당 설립은 한국교육신문 기준이며 '했다고 합니다'로 쓴다."
+  - "s10 '최초의 여성 의병장'은 한국교육신문 제목 표현 기준."
+  - "아들의 옥사와 곡기를 끊은 최후는 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 며느리 한 명 중심, s06·s08에 여인 2~3명, s01-2는 멀리 작은 실루엣. 실사 편, 화면 제목 있음."
+
+youtube:
+  titles:
+    - 총 대신 노래로 의병을 모았다고? 춘천의 한 며느리 이야기
+    - 여자라서 싸울 수 없던 시절, 그녀가 붓을 든 이유
+    - 빨래터에서 시작된 여성 의병대
+  description: |-
+    🎶 나라가 위태로운데 여자라는 이유로 아무것도 할 수 없다면… 여러분은 어떻게 하시겠어요?
+
+    1895년 춘천의 한 며느리는 남장을 하고 의병을 따라나서려다 포기했습니다 😢
+    대신 붓을 들어 한글로 노래를 지었죠. "아낙들도 나라를 지키자!" 무려 여덟 편이 넘게 ✍️
+    그런데 노래만 부른 게 아니었다는데요?
+
+    군자금을 모으고, 군복을 짓고, 다친 의병을 돌보는 여성 의병대가 탄생! 💪 그녀의 이름은 영상 끝에서.
+  comment_question: 여러분이라면 어떤 노래로 사람들의 마음을 모으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 여성독립운동가, 의병, 한국사, 쇼츠]
