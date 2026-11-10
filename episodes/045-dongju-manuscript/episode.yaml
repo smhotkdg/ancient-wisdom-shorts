@@ -1,7 +1,7 @@
 # 045 윤동주 유고 — 마루 밑 항아리에 숨겨 지켜 낸 '하늘과 바람과 별과 시' (독립운동가 편)
 id: "045"
 slug: dongju-manuscript
-status: script_ok
+status: done
 working_title: 독립운동가 시인의 원고는 어떻게 마루 밑에서 살아남았을까?
 title_lines: ["마루 밑 항아리에", "시집을 숨겼다고?"]
 hook: 발을 동동 굴렀습니다
@@ -28,7 +28,7 @@ scenes:
       - text: "1943년, 한 대학생은 발을 동동 굴렀습니다."
         captions: ["1943년 한 대학생은", "발을 동동 굴렀습니다"]
       - text: "존경하는 선배가 맡긴 시 원고를 두고, 전쟁터로 끌려가게 됐거든요."
-        captions: ["존경하는 선배가 맡긴 / 시 원고를 두고", "전쟁터로 끌려가게 됐거든요"]
+        captions: ["존경하는 선배가 맡긴 / 시 원고를 두고", "전쟁터로 끌려가게 / 됐거든요"]
     visual: 기숙사 방, 대학생이 보자기에 싼 원고를 끌어안고 입영 통지서를 내려다보며 안절부절못한다
     image_prompt: >-
       A small 1940s dormitory room with a wooden desk and a window, the student seen from the waist up in the middle of
@@ -63,7 +63,7 @@ scenes:
     beat: question
     lines:
       - text: "원고를 어디에 숨겨야, 무사히 지킬 수 있을까요?"
-        captions: ["원고를 어디에 숨겨야", "무사히 지킬 수 있을까요?"]
+        captions: ["원고를 어디에 숨겨야", "무사히 지킬 수 / 있을까요?"]
     visual: 고향 한옥 대청에 선 대학생이 원고 꾸러미를 든 채 집 안 구석구석을 둘러본다
     image_prompt: >-
       The wooden-floored main hall of an old Korean countryside house, the student seen from the knees up in the middle
@@ -119,7 +119,7 @@ scenes:
     beat: twist
     lines:
       - text: "하지만 원고를 맡긴 선배는, 끝내 돌아오지 못했습니다. 원고는 어떻게 됐을까요?"
-        captions: ["하지만 원고를 맡긴 선배는", "끝내 돌아오지 못했습니다", "원고는 어떻게 됐을까요?"]
+        captions: ["하지만 원고를 / 맡긴 선배는", "끝내 돌아오지 / 못했습니다", "원고는 어떻게 됐을까요?"]
     visual: 텅 빈 기숙사 책상 위에 펜 하나만 놓여 있고, 창밖으로 별이 뜬 밤하늘 (사람 없이)
     image_prompt: >-
       An empty 1940s student desk by a window at night, a single fountain pen resting on it, and outside the window a
@@ -132,7 +132,7 @@ scenes:
     beat: resolve
     lines:
       - text: "광복 뒤, 무사히 돌아온 대학생은 마루 밑 항아리를 열었죠."
-        captions: ["광복 뒤 무사히 돌아온 / 대학생은", "마루 밑 항아리를 열었죠"]
+        captions: ["광복 뒤 무사히 돌아온 / 대학생은", "마루 밑 항아리를 / 열었죠"]
     visual: 대학생이 마루 널을 들어 올리고 항아리에서 보자기 꾸러미를 꺼내 두 손으로 감싸 안는다
     image_prompt: >-
       The student seen from the waist up in the middle of the frame, kneeling on the old wooden floor with the planks
@@ -147,7 +147,7 @@ scenes:
     beat: info
     lines:
       - text: "선배가 만든 세 부 가운데, 남은 건 이 한 부뿐이었다고 합니다."
-        captions: ["선배가 만든 세 부 가운데", "남은 건 / 이 한 부뿐이었다고 합니다"]
+        captions: ["선배가 만든 / 세 부 가운데", "남은 건 / 이 한 부뿐이었다고", "합니다"]
     visual: 책상 위에 펼친 얇은 손글씨 시집, 옆에 놓인 빈자리 두 개 (사람 없이)
     image_prompt: >-
       A single thin hand-bound booklet of handwritten poems open on a desk in soft morning light, and beside it two empty
@@ -160,7 +160,7 @@ scenes:
     beat: info
     lines:
       - text: "마루 밑에서 지켜 낸 이 시집이 바로, 윤동주의 하늘과 바람과 별과 시입니다."
-        captions: ["마루 밑에서 지켜 낸 / 이 시집이", "바로, 윤동주의 / 하늘과 바람과 별과 시입니다"]
+        captions: ["마루 밑에서 지켜 낸 / 이 시집이", "바로, 윤동주의 / 하늘과 바람과", "별과 시입니다"]
       - text: "여러분이라면 소중한 원고를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 소중한 원고를", "어디에 숨기셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
