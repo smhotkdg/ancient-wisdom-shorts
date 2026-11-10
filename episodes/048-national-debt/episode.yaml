@@ -4,10 +4,10 @@ style: photoreal
 slug: national-debt
 status: script_ok
 working_title: 1907년 대구의 상인은 어떻게 나랏빚 1,300만 원을 갚으려 했을까?
-show_title: false        # 화면 제목 텍스트 없음 (2026-11-10 사용자). title_lines 는 콘티·목록용
+show_title: true         # 048부터 화면 제목 다시 넣음 (2026-11-10 사용자, 047만 제목 없음)
 title_lines: ["담배를 끊어서", "나랏빚을 갚자고?"]
 hook: 골머리를 앓았습니다
-caption_keywords: [1,300만 원, 빼앗길 판, 담배를 끊고, 20전씩, 은반지]
+caption_keywords: ["1,300만 원", 빼앗길 판, 담배를 끊고, 20전씩, 은반지]
 
 story:
   hero: 상인
