@@ -4,6 +4,7 @@ style: photoreal
 slug: kwon-giok
 status: script_ok
 working_title: 나라를 빼앗긴 조선의 여학생은 어떻게 비행사가 되었을까?
+show_title: false        # 화면 제목 텍스트 없음 (2026-11-10 사용자). title_lines 는 콘티·목록용으로만 쓴다
 title_lines: ["하늘을 날아", "독립운동을 했다고?"]
 hook: 혼이 쏙 빠졌습니다
 caption_keywords: [비행기, 배울 곳이, 조종사, 단 한 명도, 1,300시간]

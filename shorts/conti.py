@@ -102,7 +102,7 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
     chars = ep.data.get("characters") or []
     n_img = len(chars) + len(ep.scenes) + sum(1 for g in grok_items if g["upload"] != f"images/{g['scene']}.png")
     focus = ", ".join(str(k) for k in ep.data.get("caption_keywords") or []) or "핵심 동작"
-    return f"""{rel} 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
+    txt = f"""{rel} 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 진행 방식: 중간에 묻지 말고 끝까지 한 번에 진행한다 (이미지·클립이 빠졌거나 네트워크 오류로 음성 결과가 불명확할 때만 멈춤).
 셸에서는 python aw.py … 와 git 명령만 쓴다. PowerShell 스크립트·.NET 한 줄 명령([IO.File], New-Object 등)·여러 줄 python -c 는 쓰지 않는다
 (권한 확인 창이 뜬다). 파일 고치기는 Edit 도구로, 상태 바꾸기는 python aw.py done, 커밋·푸시는 python aw.py publish 로 한다.
@@ -144,6 +144,14 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
     — 텍스트 파일(episode.yaml·콘티·프롬프트·youtube.txt)·conti/·docs/topics.md 만 커밋·푸시 (이미지·영상·음성은 제외).
     코드를 고쳤다면 --also shorts/파일.py 로 함께 올린다.
 """
+    if not ep.data.get("show_title", ep.project["layout"]["title"]["enabled"]):
+        # 047부터 화면 제목 없음 (2026-11-10 사용자)
+        txt = txt.replace("6. output/check/final-sheet.jpg 를 직접 보고 확인:\n",
+                          "6. output/check/final-sheet.jpg 를 직접 보고 확인:\n"
+                          "   - 이 편은 화면 제목 텍스트가 없다 (show_title: false). 화면 텍스트는 대사 자막뿐인지 확인\n")
+        txt = txt.replace("그 장면은 실패 — 제목에 얼굴이 가린다 (2026-11-02 사용자 규칙)",
+                          "참고로만 보고한다 — 이 편은 제목이 없어 실패로 보지 않는다")
+    return txt
 
 
 def _e(s) -> str:

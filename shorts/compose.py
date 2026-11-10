@@ -246,7 +246,9 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     overlays = []
     total = float(timing["video_duration"])
     title_lines = ep.data.get("title_lines")
-    if ep.project["layout"]["title"]["enabled"] and title_lines:
+    # episode.yaml 의 show_title: false 면 화면 제목을 넣지 않는다 (2026-11-10 사용자: 047부터 제목 텍스트 제외)
+    show_title = ep.data.get("show_title", ep.project["layout"]["title"]["enabled"])
+    if show_title and title_lines:
         blk = render_block(list(title_lines), project=ep.project, kind="title", canvas=(W, H))
         p = ov_dir / "title.png"
         blk.image.save(p)
