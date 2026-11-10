@@ -7,7 +7,7 @@ title_lines: ["", ""]    # 화면 고정 제목 두 줄 (첫 줄 흰색, 둘째 
 hook: ""                 # 첫 문장의 반응어 (topics.md 에 기록)
 caption_keywords: []     # 자막에서 노란색으로 강조할 단어 3~6개
 
-# style: 3d-cartoon      # 이번 편만 화풍을 바꿀 때
+# style: photoreal       # 기본은 실사(config). 이번 편만 화풍을 바꿀 때 3d-cartoon 등으로
 # sfx_volume: 0.12       # 이번 편 Grok 효과음 크기 (0 = 제거)
 # extra_tail_seconds: 0  # 마지막 여운 추가
 

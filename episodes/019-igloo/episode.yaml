@@ -1,5 +1,6 @@
 # 019 이글루 — 눈으로 지었는데 안은 따뜻한 북극의 집
 id: "019"
+style: 3d-cartoon
 slug: igloo
 status: script_ok   # 2026-10-22 마무리 CTA 추가 → 음성 다시 생성 필요
 working_title: 북극 사람들은 어떻게 눈으로 따뜻한 집을 지었을까?

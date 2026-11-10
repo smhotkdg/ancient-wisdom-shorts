@@ -1,0 +1,32 @@
+# 화풍 프리셋: 실사 (2026-11-10 사용자: "다음 주제부터 완전 실사 느낌으로, 최대한 실사로") — 047부터 기본값
+# 주의: 실존 인물을 사진처럼 그리면 ChatGPT가 막을 수 있다. 인물은 '창작 인물(실존 인물의 초상 아님)'로 쓴다.
+
+name: photoreal
+label: 실사
+image_prefix: >-
+  Photorealistic cinematic film still, looks like a real photograph from a high-budget historical drama,
+  shot on a full-frame camera with a 35mm lens, natural motivated lighting, realistic skin texture and pores,
+  real fabric, wood, stone and metal textures, historically accurate costume and setting, shallow depth of field,
+  subtle film grain, true-to-life colors, vertical 9:16 composition. Not a cartoon, not an illustration,
+  not 3D render, not anime, not painting.
+image_suffix: >-
+  Main action in the middle of the frame, key subjects inside the central 80% of the width,
+  keep the top 30% of the image empty and simple (plain sky, plain wall or soft out-of-focus background) for a title:
+  no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be
+  at least 30% down from the top edge; place the main character's face about 40-55% down from the top
+  (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the
+  whole face in the middle of the frame, never in the upper third.
+  All people are original fictional characters, not portraits of real or famous people.
+  No text, no letters, no captions, no logos, no watermark, no modern objects.
+character_sheet_template: >-
+  Photorealistic character reference photo of an original fictional person: {description}. Full body,
+  front view and three-quarter view side by side, neutral pose, plain light grey studio backdrop, soft
+  studio lighting, same outfit in both views, looks like a real costume-fitting photo for a historical drama.
+motion_suffix: >-
+  Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent
+  with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound
+  effects only: no speech, no voices, no music, no text on screen.
+  The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame;
+  the character does not stand up, jump or raise their head toward the top; keep every face in the
+  middle of the frame for the whole clip.
+palette_note: "실제 촬영 같은 자연광, 차분한 시대극 색감"

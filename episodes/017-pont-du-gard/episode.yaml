@@ -1,5 +1,6 @@
 # 017 퐁뒤가르 — 50km 물길을 펌프 없이 끌어온 로마의 물다리
 id: "017"
+style: 3d-cartoon
 slug: pont-du-gard
 status: script_ok
 working_title: 로마 사람들은 어떻게 50km 밖의 물을 펌프 없이 끌어왔을까?

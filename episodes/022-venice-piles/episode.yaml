@@ -1,5 +1,6 @@
 # 022 베네치아 — 진흙 갯벌에 나무 기둥 숲을 박아 세운 도시
 id: "022"
+style: 3d-cartoon
 slug: venice-piles
 status: script_ok
 working_title: 베네치아 사람들은 어떻게 진흙 갯벌 위에 도시를 세웠을까?

@@ -1,5 +1,6 @@
 # 007 나일로미터 — 강물 높이를 재서 한 해를 준비한 이집트의 우물
 id: "007"
+style: 3d-cartoon
 slug: nilometer
 status: done
 working_title: 이집트 사람들은 왜 강가에 깊은 우물을 팠을까?

@@ -10,7 +10,7 @@ canvas:
   audio_bitrate: 192k
 
 style:
-  default: 3d-cartoon         # styles/<이름>.yaml — 에피소드에서 바꿀 수 있음
+  default: photoreal          # styles/<이름>.yaml — 2026-11-10부터 실사 (001~046은 episode.yaml 에 style: 3d-cartoon 고정)
 
 voice:
   provider: typecast

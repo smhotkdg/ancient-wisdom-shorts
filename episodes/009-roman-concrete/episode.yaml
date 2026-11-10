@@ -1,5 +1,6 @@
 # 009 로마 콘크리트 — 바닷물을 만나 더 단단해지는 방파제
 id: "009"
+style: 3d-cartoon
 slug: roman-concrete
 status: done
 working_title: 로마 사람들은 왜 일부러 바닷물로 반죽했을까?

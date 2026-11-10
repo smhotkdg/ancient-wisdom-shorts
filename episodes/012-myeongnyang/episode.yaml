@@ -1,5 +1,6 @@
 # 012 명량해전 — 배 13척으로 133척을 막은 좁은 바닷길
 id: "012"
+style: 3d-cartoon
 slug: myeongnyang
 status: script_ok
 working_title: 이순신은 어떻게 배 13척으로 133척을 막았을까?

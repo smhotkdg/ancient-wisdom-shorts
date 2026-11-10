@@ -1,5 +1,6 @@
 # 027 라구사 검역 — 병이 도는 곳에서 온 배를 바다에 세워 둔 항구 도시
 id: "027"
+style: 3d-cartoon
 slug: ragusa-quarantine
 status: script_ok
 working_title: 라구사 사람들은 왜 배를 30일이나 바다에 세워 뒀을까?

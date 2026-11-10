@@ -1,0 +1,237 @@
+# 047 권기옥 — 하늘에서 싸우려고 조종사가 된 한국 최초의 여성 비행사 (독립운동가 편, 첫 실사 편)
+id: "047"
+style: photoreal
+slug: kwon-giok
+status: script_ok
+working_title: 나라를 빼앗긴 조선의 여학생은 어떻게 비행사가 되었을까?
+title_lines: ["하늘을 날아", "독립운동을 했다고?"]
+hook: 혼이 쏙 빠졌습니다
+caption_keywords: [비행기, 배울 곳이, 조종사, 단 한 명도, 1,300시간]
+
+story:
+  hero: 여학생
+  reveal: [권기옥]
+
+characters:
+  - id: giok
+    name: 여학생
+    name_en: young Korean woman
+    description: >-
+      a slender young Korean woman around 20 with a calm, determined face, bright intelligent dark eyes, straight black
+      hair tied in a neat low bun, natural skin with no heavy makeup; in early scenes she wears a white jeogori blouse and
+      a long black skirt (1910s Korean schoolgirl clothes), later a 1920s khaki flight jacket with a leather flying cap
+      and goggles hanging around her neck
+    note: 이야기 주인공. 1917년 평양 숭의여학교 학생, 뒤에 한국 최초의 여성 비행사가 된 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1917년, 평양의 한 여학생은 혼이 쏙 빠졌습니다."
+        captions: ["1917년 평양의 / 한 여학생은", "혼이 쏙 빠졌습니다"]
+      - text: "하늘을 빙글빙글 도는 비행기를, 난생처음 봤거든요."
+        captions: ["하늘을 빙글빙글 도는 / 비행기를", "난생처음 봤거든요"]
+    visual: 넓은 들판, 교복 차림의 여학생이 손으로 햇빛을 가리며 멀리 날아가는 옛 복엽기를 넋을 잃고 바라본다
+    image_prompt: >-
+      A wide open field on a bright autumn day in 1917, the young woman in her white jeogori and long black skirt seen
+      from the waist up in the middle of the frame, one hand shading her eyes at forehead level, mouth slightly open in
+      awe, watching an early biplane doing a loop far away in the lower part of the sky behind her. Soft plain sky in the
+      top part of the image.
+    characters: [giok]
+    motion_prompt: >-
+      The distant biplane loops in the background; her eyes follow it, and a slow amazed smile spreads on her face.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          An early 1910s wooden biplane with fabric wings flying low over an open field, trailing a thin wisp of smoke,
+          shot from the ground like a vintage newsreel but in color. No people visible.
+        motion_prompt: >-
+          The biplane banks and sweeps across the frame, its engine buzzing.
+        camera: slow pan following the plane
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "하지만 나라를 빼앗긴 조선에선, 비행기를 배울 곳이 없었죠."
+        captions: ["하지만 나라를 빼앗긴 / 조선에선", "비행기를 배울 곳이 / 없었죠"]
+    visual: 텅 빈 교실 창가에 앉은 여학생이 종이비행기를 손에 쥔 채 고개를 떨군다
+    image_prompt: >-
+      A plain 1910s classroom with wooden desks, the young woman seen from the waist up in the middle of the frame, sitting
+      by the window holding a small folded paper airplane in her hands, looking down at it with a sad, quiet face. Plain
+      wall above her. No other people.
+    characters: [giok]
+    motion_prompt: >-
+      She turns the paper airplane slowly in her fingers and lets out a quiet sigh.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그렇다면 이 꿈, 그냥 접어야 할까요?"
+        captions: ["그렇다면 이 꿈", "그냥 접어야 할까요?"]
+    visual: 여학생이 종이비행기를 접으려다 멈추고, 결심한 눈빛으로 고개를 든다
+    image_prompt: >-
+      Close view of the young woman in the middle of the frame by the classroom window, starting to crumple the paper
+      airplane, then stopping and raising her eyes with a firm, determined look. Plain wall above her. No other people.
+    characters: [giok]
+    motion_prompt: >-
+      Her fingers begin to crush the paper plane, then stop; she smooths it out and lifts her determined eyes.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 여학생은 만세 운동에 나섰다가, 일본 경찰을 피해 상하이로 건너갔습니다."
+        captions: ["그래서 여학생은 / 만세 운동에 나섰다가", "일본 경찰을 피해 / 상하이로 건너갔습니다"]
+    visual: 안개 낀 밤 부두, 보따리를 든 여학생이 작은 배에 오르며 뒤를 한 번 돌아본다
+    image_prompt: >-
+      A foggy harbor at night lit by a few lanterns, the young woman seen from the knees up in the middle of the frame,
+      holding a small cloth bundle and stepping onto a wooden boat, glancing back over her shoulder with a tense, brave
+      face. No other people visible.
+    characters: [giok]
+    motion_prompt: >-
+      The boat rocks gently; she steps aboard, glances back once, then turns forward.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그때 상하이의 임시정부는, 하늘에서 싸울 조종사를 길러 내려 했죠."
+        captions: ["그때 상하이의 임시정부는", "하늘에서 싸울 조종사를 / 길러 내려 했죠"]
+    visual: 소박한 사무실에서 여학생이 탁자 위 비행기 사진을 보며 눈을 반짝이고, 뒤로 정장 차림 남자 둘이 이야기한다
+    image_prompt: >-
+      A modest 1920s office in Shanghai with a wooden table, the young woman in the middle of the frame leaning over a
+      black-and-white photograph of a biplane on the table, eyes shining with hope.
+    characters: [giok]
+    extras: "two men in 1920s dark suits standing behind her, discussing quietly, small and out of focus"
+    motion_prompt: >-
+      She touches the photograph with her fingertips; the two men behind her nod to each other.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그래서 그녀를, 중국의 비행학교에 추천했습니다."
+        captions: ["그래서 그녀를", "중국의 비행학교에 / 추천했습니다"]
+    visual: 여학생이 추천서가 든 봉투를 두 손으로 받아 가슴에 꼭 안는다
+    image_prompt: >-
+      The young woman seen from the waist up in the middle of the frame, holding a sealed envelope with both hands
+      against her chest, eyes closed with a quiet, emotional smile. Soft window light. No readable text. No other
+      people.
+    characters: [giok]
+    motion_prompt: >-
+      She presses the envelope to her chest, closes her eyes and smiles softly.
+    camera: slow push in
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 그 학교엔, 여자 입학생이 단 한 명도 없었습니다. 어떻게 됐을까요?"
+        captions: ["그런데 그 학교엔", "여자 입학생이 / 단 한 명도 없었습니다", "어떻게 됐을까요?"]
+    visual: 비행학교 마당, 비행복을 입은 여학생이 앞에 서 있고 뒤로 남자 생도 몇이 놀란 얼굴로 쳐다본다
+    image_prompt: >-
+      The yard of a 1920s military flight school with an old biplane parked behind, the young woman now in a khaki
+      flight jacket standing in the middle of the frame, chin up and calm, holding her leather flying cap.
+    characters: [giok]
+    extras: "three young male cadets in khaki uniforms behind her, staring at her in surprise, small and out of focus"
+    motion_prompt: >-
+      The cadets behind her exchange surprised looks; she stands steady and calm.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그녀는 첫 여성 입학생이 되어, 끝내 조종사 자격을 따냈죠."
+        captions: ["그녀는 첫 여성 입학생이 되어", "끝내 조종사 자격을 / 따냈죠"]
+    visual: 복엽기 조종석에 앉은 여학생이 고글을 내려 쓰고 엄지를 들어 올린다
+    image_prompt: >-
+      The young woman in her khaki flight jacket and leather flying cap seated in the open cockpit of an old biplane on a
+      grass airfield, seen from the chest up in the middle of the frame, pulling her goggles down over her eyes with a
+      confident smile. Plain sky behind her lower down. No other people.
+    characters: [giok]
+    motion_prompt: >-
+      She pulls the goggles down, grips the edge of the cockpit and gives a confident nod as the propeller starts.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          An old biplane taking off from a grass airfield in the early morning, wheels just leaving the ground, mist over
+          the field. No people visible besides the tiny pilot in the cockpit.
+        motion_prompt: >-
+          The biplane rolls forward, lifts off the grass and climbs gently into the morning air.
+        camera: slow pan following the plane
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그 뒤 약 1,300시간을 날며, 하늘에서 일본과 맞섰다고 합니다."
+        captions: ["그 뒤 약 1,300시간을 날며", "하늘에서 일본과 / 맞섰다고 합니다"]
+    visual: 활주로 옆에 선 비행복 차림의 그녀가 하늘을 보지 않고 앞을 굳게 바라본다
+    image_prompt: >-
+      The young woman in her flight jacket seen from the knees up in the middle of the frame, standing beside a biplane on
+      an airfield at dusk, holding her flying cap at her side and looking straight ahead with calm resolve. Wide plain
+      dusk sky above her. No other people.
+    characters: [giok]
+    motion_prompt: >-
+      Wind ruffles her jacket; she stands steady beside the plane, looking ahead.
+    camera: slow pull back at eye level
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "한국 최초의 여성 비행사가 된 이 사람이 바로, 권기옥입니다."
+        captions: ["한국 최초의 여성 비행사가 된 / 이 사람이", "바로, 권기옥입니다"]
+      - text: "여러분이라면 막힌 꿈 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 막힌 꿈 앞에서", "어떻게 하셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 비행장에서 비행복 차림의 그녀가 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young woman in her khaki flight jacket seen from the knees up in the middle of the frame, standing on a grass
+      airfield at golden sunset with an old biplane behind her, holding her leather flying cap, a calm proud smile. Wide
+      sunset sky above her. No other people.
+    characters: [giok]
+    motion_prompt: >-
+      She smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young woman from the reference image, seen from the waist up in the middle of
+          the frame, standing on the sunset airfield. She smiles warmly toward the viewer and holds one open palm out at
+          chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [giok]
+        motion_prompt: >-
+          She smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "국가기록원 기록 이야기 2016 — 권기옥 지사 기록 복원 (평양 출생, 숭의여학교 재학 중 3·1운동 참여, 일본 경찰에 쫓겨 중국으로 망명, 운남육군항공학교 1기로 입교해 1925년 2월 졸업 — 우리나라 최초의 여류비행사, 이후 10여 년간 중국 공군에서 활약, 1928년 남경에서 체포, 1977년 건국훈장 독립장, 1988년 별세) — https://theme.archives.go.kr/next/pages/new_newsletter/2016/02/sub03_1.html"
+  - "서울신문 2015 — 창공에 조국 광복 염원 띄운 '공중 여왕' (1901~1988, 1917년 숭의여학교 재학 중 미국인 아트 스미스의 곡예비행을 보고 비행사의 꿈, 송죽회 활동, 1919년 평양 만세 시위, 임시정부 연락책으로 활동하다 상하이로 밀항, 임시정부가 항공대 창설을 구상하며 조종사로 양성 — 1923년 12월 안창호가 운남항공학교 1기생으로 추천, 중국 항공학교 4곳 중 여성 입학생은 처음, 1925년 비행 자격, 1932년 상하이사변 때 일본군과 전투, 비행 약 1,300시간) — https://m.seoul.co.kr/news/life/2015/07/25/20150725021031"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 권기옥(1901~1988), 1977년 건국훈장 독립장. 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것 (실사 화풍이지만 실제 인물의 초상이 아닌 창작 인물로 생성). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'혼이 쏙 빠졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 1917년 미국인 아트 스미스의 곡예비행을 보고 꿈을 키움은 서울신문 기준. 비행 장소를 들판으로 그린 것은 연출."
+  - "s02 '조선에선 비행기를 배울 곳이 없었다'는 이야기를 위한 재구성이다."
+  - "s04 만세 운동 참여와 상하이 망명은 두 출처 공통 (서울신문: 임시정부 연락책 활동 뒤 밀항). 평남도청 폭파 사건 관련 혐의(국가기록원)는 대본에 넣지 않는다."
+  - "s05~s06 임시정부의 조종사 양성 구상과 추천은 서울신문 기준 (추천한 사람은 안창호, 1923년 12월). 대본은 '임시정부가 추천'으로 줄였다."
+  - "s07~s08 '여자 입학생이 단 한 명도 없었다', '첫 여성 입학생'은 서울신문의 '중국 항공학교 4곳 중 여성 입학생은 처음' 기준. 1925년 졸업·자격은 두 출처 공통."
+  - "s09 '약 1,300시간', '하늘에서 일본과 맞섬'은 서울신문(비행 약 1,300시간, 1932년 상하이사변 때 일본군과 전투) 기준이며 '했다고 합니다'로 쓴다. 전투 장면은 넣지 않는다."
+  - "s10 '한국 최초의 여성 비행사'는 국가기록원('우리나라 최초의 여류비행사') 기준."
+  - "1928년 체포·옥고는 사실이지만 대본·화면에 넣지 않는다."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 주인공 한 명 중심, s05에 임시정부 남자 2명, s07에 남자 생도 3명."
+
+youtube:
+  titles:
+    - 하늘을 날아 독립운동을 했다고? 한국 최초의 여성 비행사
+    - 여자 입학생이 단 한 명도 없던 비행학교에 들어간 여학생
+    - 종이비행기를 접던 소녀, 진짜 조종사가 되다
+  description: |-
+    ✈️ 1917년, 하늘을 빙글빙글 도는 비행기를 처음 본 평양의 한 여학생… 그런데 나라를 빼앗긴 조선엔 비행기를 배울 곳이 없었습니다.
+
+    꿈을 접어야 할까요? 그녀는 만세 운동에 나섰다가 상하이로 건너갔어요 🚢
+    마침 임시정부는 하늘에서 싸울 조종사를 기르려 했고, 그녀를 중국 비행학교에 추천했죠!
+    그런데 그 학교엔 여자 입학생이 단 한 명도 없었다는데… 🤔
+
+    첫 여성 입학생, 그리고 조종사 자격까지! 하늘에서 일본과 맞선 그녀의 이름은 영상 끝에서 🇰🇷
+  comment_question: 여러분이라면 막힌 꿈 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 여성독립운동가, 비행사, 한국사, 쇼츠]

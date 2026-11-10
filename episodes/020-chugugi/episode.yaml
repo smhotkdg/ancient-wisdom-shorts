@@ -1,5 +1,6 @@
 # 020 측우기 — 흙 대신 그릇으로 비를 잰 조선의 세자
 id: "020"
+style: 3d-cartoon
 slug: chugugi
 status: done
 working_title: 조선은 어떻게 비의 양을 정확하게 쟀을까?

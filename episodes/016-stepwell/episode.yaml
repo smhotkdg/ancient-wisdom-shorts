@@ -1,5 +1,6 @@
 # 016 바브 — 땅속으로 거꾸로 지은 신전 같은 인도의 계단 우물
 id: "016"
+style: 3d-cartoon
 slug: stepwell
 status: script_ok
 working_title: 인도 사람들은 왜 땅속으로 계단을 수백 개나 냈을까?

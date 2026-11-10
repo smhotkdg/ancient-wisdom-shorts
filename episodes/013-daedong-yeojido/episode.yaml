@@ -1,5 +1,6 @@
 # 013 대동여지도 — 책처럼 접어 들고 다닌 6.7m 조선 지도
 id: "013"
+style: 3d-cartoon
 slug: daedong-yeojido
 status: done
 working_title: 김정호는 어떻게 커다란 나라 지도를 들고 다니게 했을까?

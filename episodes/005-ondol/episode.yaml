@@ -1,5 +1,6 @@
 # 005 온돌 — 불은 방 밖에서, 온기는 방바닥으로
 id: "005"
+style: 3d-cartoon
 slug: ondol
 status: done
 working_title: 옛사람들은 왜 불을 방 밖에서 피웠을까?
