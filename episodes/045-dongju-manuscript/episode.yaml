@@ -1,0 +1,218 @@
+# 045 윤동주 유고 — 마루 밑 항아리에 숨겨 지켜 낸 '하늘과 바람과 별과 시' (독립운동가 편)
+id: "045"
+slug: dongju-manuscript
+status: script_ok
+working_title: 독립운동가 시인의 원고는 어떻게 마루 밑에서 살아남았을까?
+title_lines: ["마루 밑 항아리에", "시집을 숨겼다고?"]
+hook: 발을 동동 굴렀습니다
+caption_keywords: [선배가 맡긴, 우리말, 마루 널, 항아리, 한 부뿐]
+
+story:
+  hero: 대학생
+  reveal: [윤동주, 하늘과 바람과 별과 시]
+
+characters:
+  - id: student
+    name: 대학생
+    name_en: young Korean college student
+    description: >-
+      a slim, gentle young Korean man around 21 with short neatly combed black hair, round wire-rimmed glasses, a kind
+      thoughtful face and earnest dark eyes, wearing a dark 1940s school uniform jacket with a stand-up collar over a
+      white shirt, carrying a cloth-wrapped bundle of handwritten pages
+    note: 이야기 주인공. 1940년대 연희전문 학생으로, 존경하는 선배 시인의 원고를 맡아 지킨 후배 (정병욱, 이름은 대본에 쓰지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1943년, 한 대학생은 발을 동동 굴렀습니다."
+        captions: ["1943년 한 대학생은", "발을 동동 굴렀습니다"]
+      - text: "존경하는 선배가 맡긴 시 원고를 두고, 전쟁터로 끌려가게 됐거든요."
+        captions: ["존경하는 선배가 맡긴 / 시 원고를 두고", "전쟁터로 끌려가게 됐거든요"]
+    visual: 기숙사 방, 대학생이 보자기에 싼 원고를 끌어안고 입영 통지서를 내려다보며 안절부절못한다
+    image_prompt: >-
+      A small 1940s dormitory room with a wooden desk and a window, the student seen from the waist up in the middle of
+      the frame, hugging a cloth-wrapped bundle of handwritten pages to his chest while looking down at a stamped
+      official notice on the desk, anxious and restless. Plain wall above him. No readable text. No other people.
+    characters: [student]
+    motion_prompt: >-
+      He looks from the notice to the bundle in his arms and shifts anxiously from foot to foot.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a thin hand-bound booklet of handwritten poems with a plain paper cover lying on a wooden desk, a
+          fountain pen beside it, soft window light. The handwriting is soft and unreadable. No people.
+        motion_prompt: >-
+          A breeze from the window gently lifts the cover of the booklet.
+        camera: macro slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "우리말로 쓴 시라, 일본 경찰에게 들키면 그대로 빼앗길 판이었죠."
+        captions: ["우리말로 쓴 시라", "일본 경찰에게 들키면 / 그대로 빼앗길 판이었죠"]
+    visual: 골목 담벼락에 비친 순찰 경찰의 긴 그림자 (얼굴 없이)
+    image_prompt: >-
+      A quiet 1940s alley of tiled-roof houses at dusk, the long dark shadow of a patrolling policeman with a peaked cap
+      stretching across a wall and a wooden gate. Tense, quiet mood. No faces, no people visible.
+    motion_prompt: >-
+      The policeman's shadow slides slowly along the wall and pauses at the gate.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "원고를 어디에 숨겨야, 무사히 지킬 수 있을까요?"
+        captions: ["원고를 어디에 숨겨야", "무사히 지킬 수 있을까요?"]
+    visual: 고향 한옥 대청에 선 대학생이 원고 꾸러미를 든 채 집 안 구석구석을 둘러본다
+    image_prompt: >-
+      The wooden-floored main hall of an old Korean countryside house, the student seen from the knees up in the middle
+      of the frame, holding the cloth bundle and looking around the room thoughtfully for a hiding place. Plain paper
+      doors and wooden beams behind him. No other people.
+    characters: [student]
+    motion_prompt: >-
+      He looks left at the cupboard, right at the doors, then slowly down at the wooden floor.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 대학생은 고향 집 어머니께, 원고를 맡기며 간곡히 부탁했습니다."
+        captions: ["그래서 대학생은 / 고향 집 어머니께", "원고를 맡기며 / 간곡히 부탁했습니다"]
+    visual: 대청마루에서 대학생이 두 손으로 원고 꾸러미를 건네고, 맞은편 어머니가 받아 든다
+    image_prompt: >-
+      The student kneeling on the wooden floor of the main hall in the middle of the frame, holding out the cloth-wrapped
+      bundle with both hands and bowing his head earnestly.
+    characters: [student]
+    extras: "his mother in a plain white hanbok kneeling across from him, receiving the bundle with both hands, seen from behind and slightly out of focus"
+    motion_prompt: >-
+      He offers the bundle with both hands and bows; his mother gently takes it and nods.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 어머니는 마루 널을 뜯고, 그 아래 항아리 속에 원고를 숨겼죠."
+        captions: ["그러자 어머니는 / 마루 널을 뜯고", "그 아래 항아리 속에 / 원고를 숨겼죠"]
+    visual: 들어 올린 마루 널 아래 흙바닥에 묻힌 옹기 항아리, 거친 손이 꾸러미를 그 안으로 내린다 (손만)
+    image_prompt: >-
+      Close-up of an old wooden floor with two planks lifted up, revealing dark earth below and a brown clay pottery jar
+      buried in it, a pair of weathered hands carefully lowering a silk-wrapped bundle into the jar. No faces, only hands.
+    motion_prompt: >-
+      The hands lower the bundle into the jar and press it gently down.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "명주 보자기에 싸서, 짚과 함께 꼭꼭 눌러 두었습니다."
+        captions: ["명주 보자기에 싸서", "짚과 함께 꼭꼭 / 눌러 두었습니다"]
+    visual: 항아리 안, 명주 보자기 위로 마른 짚이 덮이고 뚜껑이 닫힌다 (손만)
+    image_prompt: >-
+      Close-up looking into the clay jar: a bundle wrapped in pale silk cloth being covered with dry straw, a pair of hands
+      placing the lid on top. Warm dim light. No faces, only hands.
+    motion_prompt: >-
+      Dry straw is tucked around the silk bundle and the lid slowly closes.
+    camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "하지만 원고를 맡긴 선배는, 끝내 돌아오지 못했습니다. 원고는 어떻게 됐을까요?"
+        captions: ["하지만 원고를 맡긴 선배는", "끝내 돌아오지 못했습니다", "원고는 어떻게 됐을까요?"]
+    visual: 텅 빈 기숙사 책상 위에 펜 하나만 놓여 있고, 창밖으로 별이 뜬 밤하늘 (사람 없이)
+    image_prompt: >-
+      An empty 1940s student desk by a window at night, a single fountain pen resting on it, and outside the window a
+      quiet dark blue sky full of stars and a gentle breeze moving the curtain. Melancholy, peaceful mood. No people.
+    motion_prompt: >-
+      The curtain sways gently and the stars twinkle in the night sky.
+    camera: slow push toward the window
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "광복 뒤, 무사히 돌아온 대학생은 마루 밑 항아리를 열었죠."
+        captions: ["광복 뒤 무사히 돌아온 / 대학생은", "마루 밑 항아리를 열었죠"]
+    visual: 대학생이 마루 널을 들어 올리고 항아리에서 보자기 꾸러미를 꺼내 두 손으로 감싸 안는다
+    image_prompt: >-
+      The student seen from the waist up in the middle of the frame, kneeling on the old wooden floor with the planks
+      lifted, holding the silk-wrapped bundle he has just taken out of the clay jar against his chest, eyes filled with
+      tears of relief. No other people.
+    characters: [student]
+    motion_prompt: >-
+      He lifts the bundle out of the jar, holds it close and closes his eyes with a trembling smile.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "선배가 만든 세 부 가운데, 남은 건 이 한 부뿐이었다고 합니다."
+        captions: ["선배가 만든 세 부 가운데", "남은 건 / 이 한 부뿐이었다고 합니다"]
+    visual: 책상 위에 펼친 얇은 손글씨 시집, 옆에 놓인 빈자리 두 개 (사람 없이)
+    image_prompt: >-
+      A single thin hand-bound booklet of handwritten poems open on a desk in soft morning light, and beside it two empty
+      faint outlines where two other booklets would have been. Handwriting soft and unreadable. No people.
+    motion_prompt: >-
+      Morning light slowly brightens over the single open booklet.
+    camera: slow overhead push in
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "마루 밑에서 지켜 낸 이 시집이 바로, 윤동주의 하늘과 바람과 별과 시입니다."
+        captions: ["마루 밑에서 지켜 낸 / 이 시집이", "바로, 윤동주의 / 하늘과 바람과 별과 시입니다"]
+      - text: "여러분이라면 소중한 원고를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 소중한 원고를", "어디에 숨기셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 별이 뜬 밤, 고향 집 마당에서 대학생이 시집을 가슴에 안고 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The student seen from the knees up in the middle of the frame, standing in the courtyard of the old countryside
+      house on a calm starry night, holding the booklet of poems to his chest with a gentle smile, a soft breeze in the
+      grass. Wide starry sky above him. No other people.
+    characters: [student]
+    motion_prompt: >-
+      A breeze moves the grass; he smiles gently as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the cartoon student character from the reference image, seen from the waist up in the
+          middle of the frame, standing in the starlit courtyard. He smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other
+          people.
+        characters: [student]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "서울신문 2025 — 윤동주 순국 80주기, 친필 유고 보존한 광양 '정병욱 가옥' (1941년 겨울 연희전문 졸업을 앞두고 시 18편에 서시를 더해 『하늘과 바람과 별과 시』 필사본 3부 — 본인·이양하 교수·후배 정병욱이 한 부씩, 정병욱이 학도병으로 징집되며 광양의 어머니에게 맡김, 어머니가 명주 보자기에 싸 마루 밑 항아리에 보관, 이양하 교수의 시고는 행방불명, 1948년 1월 출간, 윤동주는 1943년 독립운동 혐의로 체포돼 1945년 2월 16일 후쿠오카 형무소에서 순국, 정병욱 가옥은 2007년 국가등록문화유산 제341호) — https://m.go.seoul.co.kr/news/2025/02/14/20250214500057"
+  - "서울신문 2018 [유성호의 문학의 길목] 윤동주와 정병욱과 광양시 (1943년 정병욱이 학병으로 끌려가며 원고를 어머니께 맡김, 일제의 감시를 피하려고 마루 널을 뜯어 그 아래 보관 — 마루 밑 땅속 독 안에 짚과 함께, 윤동주와 이양하가 가졌던 원고는 일실, 해방 후 알려져 1948년 1월 출간, 원본은 연세대 윤동주기념관 전시) — https://m.seoul.co.kr/news/2018/01/30/20180130030003"
+
+accuracy_notes:
+  - "주인공 '대학생'은 윤동주의 후배 정병욱(1922~1982). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 대본에는 정병욱의 이름을 쓰지 않고, 정답으로 윤동주와 시집 이름을 마지막에 밝힌다."
+  - "윤동주(1917~1945)는 독립운동 혐의로 체포돼 1945년 후쿠오카 형무소에서 순국했다 (서울신문 2025)."
+  - "'발을 동동 굴렀습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '1943년, 전쟁터로 끌려가게 됨'은 정병욱의 학병 징집(서울신문 2018) 기준."
+  - "s02 '일본 경찰에게 들키면 빼앗길 판'은 '일제의 감시를 피하려고'(서울신문 2018)를 이야기로 푼 것."
+  - "s05~s06 마루 널을 뜯고 항아리(독)에 명주 보자기·짚과 함께 보관은 두 출처 공통. 실제로 숨긴 사람은 어머니라 화면은 손만 보여 준다."
+  - "s07 선배(윤동주)가 돌아오지 못했다는 것은 1945년 2월 후쿠오카 형무소 순국을 뜻한다. 감옥·죽음 장면은 화면에 넣지 않는다."
+  - "s08 '광복 뒤 돌아와 항아리를 엶'은 '해방 후 정병욱이 보관한 원고가 알려졌다'(서울신문 2018)를 장면으로 푼 것. 정확한 날짜는 쓰지 않는다."
+  - "s09 '세 부 가운데 한 부만 남음'은 두 출처 공통 (윤동주·이양하 소장본은 일실)."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 대학생 한 명 중심, s04에 어머니(뒷모습), s05·s06은 손만."
+
+youtube:
+  titles:
+    - 마루 밑 항아리에 시집을 숨겼다고? 기적처럼 살아남은 원고
+    - 세 부 중 단 한 부만 남은 시집의 비밀
+    - 전쟁터로 끌려가며 어머니께 맡긴 원고 한 묶음
+  description: |-
+    📜 존경하는 선배가 맡긴 시 원고… 그런데 나는 전쟁터로 끌려가야 한다면?
+
+    1943년, 한 대학생은 고향 집 어머니께 원고를 맡기며 간곡히 부탁했습니다 🙏
+    어머니는 마루 널을 뜯고, 그 아래 항아리 속에 명주 보자기로 싸서 꼭꼭!
+    하지만 원고를 맡긴 선배는 끝내 돌아오지 못했죠… 🌌
+
+    광복 뒤 다시 연 항아리 속에서 살아남은 단 한 부의 시집 ✨ 우리가 아는 바로 그 시집, 제목은 영상 끝에서!
+  comment_question: 여러분이라면 소중한 원고를 어디에 숨기셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 시인, 한국사, 쇼츠]
