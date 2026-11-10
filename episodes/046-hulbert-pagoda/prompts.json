@@ -1,0 +1,122 @@
+{
+  "characters": {
+    "teacher": "Character reference sheet of a tall, lean American man in his 40s with short wavy brown hair, a neat brown mustache, round wire-rimmed glasses and kind, sharp blue eyes, wearing a 1900s dark three-piece suit with a white high-collared shirt and a dark tie, a small folding camera on a strap over his shoulder and a notebook in his hand. Full body, front view and three-quarter view side by side, neutral pose, plain light background, same outfit in both views. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. No text, no letters, no watermark."
+  },
+  "scenes": {
+    "s01": {
+      "image": "A 1900s study with bookshelves and a window, the teacher seen from the waist up in the middle of the frame, holding an opened letter in one hand and pressing his other hand to the side of his head in shock and frustration. Plain wall above him. No readable text. No other people. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s01.mp4",
+          "seconds": 6,
+          "motion": "He reads the letter, his eyes widen, and he presses his hand to the side of his head. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s01-2.mp4",
+          "seconds": 6,
+          "motion": "Cold wind blows dry leaves across the empty stone platform and the cart tracks. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s02": {
+      "image": "A dark winter country road at night, a line of ox carts loaded with large stone pieces covered by straw mats moving away into the distance, lit by a few lanterns. The drivers are tiny dark silhouettes with no visible faces. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s02.mp4",
+          "seconds": 6,
+          "motion": "The loaded carts creak slowly away down the dark road, lanterns swaying. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s03": {
+      "image": "The teacher seen from the waist up in the middle of the frame, sitting at his desk, looking from his small folding camera to his notebook and tapping his pen, deep in thought. Plain wall above him. No other people. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s03.mp4",
+          "seconds": 6,
+          "motion": "He taps the pen on the notebook, looks at the camera and slowly nods with a plan. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s04": {
+      "image": "At the empty stone platform of the old temple site, the teacher in the middle of the frame holding up his folding camera at chest height to photograph the broken stones, listening intently. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center foreground, large and clearly the focus; in the background, smaller and slightly out of focus: two Korean villagers in white hanbok behind him, pointing toward the empty platform and explaining, small and out of focus (only 2-4 people, never blocking the American teacher in Korea). Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s04.mp4",
+          "seconds": 6,
+          "motion": "He clicks the camera shutter and writes a note; the villagers behind him point and explain. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s05": {
+      "image": "The teacher at his desk at night under an oil lamp, seen from the waist up in the middle of the frame, typing quickly on an old typewriter, developed black-and-white photos of the empty temple site spread beside it. No readable text. No other people. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s05.mp4",
+          "seconds": 6,
+          "motion": "He types rapidly, pulls the page out of the typewriter and lays it beside the photos. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s06": {
+      "image": "An old world map on parchment with glowing lines and small flying envelopes traveling from Korea to Japan and across the Pacific to America. No text, no labels, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s06.mp4",
+          "seconds": 6,
+          "motion": "Small envelopes fly along the glowing lines from Korea to Japan and across the ocean to America. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s06-2.mp4",
+          "seconds": 6,
+          "motion": "More newspapers drop onto the pile one after another. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s07": {
+      "image": "The teacher seen from the knees up in the middle of the frame, standing by a window holding a folded newspaper, looking out toward a distant grey sea with a worried, hopeful expression. Plain sky above him through the window. No readable text. No other people. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s07.mp4",
+          "seconds": 6,
+          "motion": "He grips the newspaper, looks out at the sea and lets out a slow, uncertain breath. Camera: static. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s08": {
+      "image": "A harbor dock with many large wooden crates being unloaded, some lids open showing carved grey marble pieces of an old pagoda wrapped in straw. Morning light. No people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s08.mp4",
+          "seconds": 6,
+          "motion": "A crate lid slides open, revealing the carved marble pieces in the morning light. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s09": {
+      "image": "A tall, ornately carved grey marble ten-story pagoda standing in the center of a vast bright modern museum hall under a high skylight, its base with intricate Buddhist carvings. Calm, majestic mood. No text, no people. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s09.mp4",
+          "seconds": 6,
+          "motion": "The camera slowly glides around the base of the tall carved pagoda under the skylight. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow orbit. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    },
+    "s10": {
+      "image": "The teacher seen from the knees up in the middle of the frame, standing on a gentle hill at golden sunset with traditional Korean tiled roofs below, his camera strap over his shoulder, a warm satisfied smile. Wide sunset sky above him. No other people. Characters: American teacher in Korea (attached reference image char_teacher.png) — keep their faces, proportions and outfits exactly as in the references. Composition: the American teacher in Korea in the center as the only person in the scene. Stylized 3D cartoon render, soft rounded shapes, slightly chunky friendly proportions, large expressive eyes, clean readable silhouettes, soft global illumination, warm sunlight, tactile materials (sandstone, linen, wood, clay, bronze), shallow depth of field, simple uncluttered background, vertical 9:16 composition. Main action in the middle of the frame, key subjects inside the central 80% of the width, keep the top 30% of the image empty and simple (plain sky or plain wall) for a title: no heads, faces, raised hands, hats or key objects in the top 30%. The top of every person's head must be at least 30% down from the top edge; place the main character's face about 40-55% down from the top (framed from the knees or waist up, with clear empty space above the head); even in close-ups keep the whole face in the middle of the frame, never in the upper third. No text, no letters, no captions, no logos, no watermark, no modern objects.",
+      "clips": [
+        {
+          "file": "clips/s10.mp4",
+          "seconds": 6,
+          "motion": "He looks over the roofs with a warm smile; the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        },
+        {
+          "file": "clips/s10-2.mp4",
+          "seconds": 6,
+          "motion": "He smiles toward the camera and opens one hand at chest height in a friendly asking gesture. Camera: slow push in. Keep the character's face, outfit and the background consistent with the image. Smooth natural motion, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip."
+        }
+      ]
+    }
+  }
+}

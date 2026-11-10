@@ -1,0 +1,225 @@
+# 046 헐버트와 경천사 십층석탑 — 몰래 뜯어 간 석탑을 신문 기사로 되찾은 미국인 (독립운동가 편)
+id: "046"
+slug: hulbert-pagoda
+status: script_ok
+working_title: 일본으로 실려 간 석탑을 한 미국인은 어떻게 되찾았을까?
+title_lines: ["사라진 10층 석탑을", "신문으로 되찾았다?"]
+hook: 머리를 쥐어뜯었습니다
+caption_keywords: [통째로 사라졌다, 몰래 뜯어, 사진을 찍었습니다, 신문, 11년 뒤]
+
+story:
+  hero: 선생
+  reveal: [헐버트]
+
+characters:
+  - id: teacher
+    name: 선생
+    name_en: American teacher in Korea
+    description: >-
+      a tall, lean American man in his 40s with short wavy brown hair, a neat brown mustache, round wire-rimmed glasses
+      and kind, sharp blue eyes, wearing a 1900s dark three-piece suit with a white high-collared shirt and a dark tie, a
+      small folding camera on a strap over his shoulder and a notebook in his hand
+    note: 이야기 주인공. 1886년부터 한국에서 가르치며 한국 독립을 도운 미국인 선교사·교육자 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1907년, 서울의 한 미국인 선생은 머리를 쥐어뜯었습니다."
+        captions: ["1907년 서울의 / 한 미국인 선생은", "머리를 쥐어뜯었습니다"]
+      - text: "고려 시대 십층 석탑이 하룻밤 새, 통째로 사라졌다는 소식을 들었거든요."
+        captions: ["고려 시대 십층 석탑이 / 하룻밤 새", "통째로 사라졌다는 / 소식을 들었거든요"]
+    visual: 서재에서 편지를 읽던 선생이 깜짝 놀라 머리 옆을 감싸 쥔다
+    image_prompt: >-
+      A 1900s study with bookshelves and a window, the teacher seen from the waist up in the middle of the frame, holding
+      an opened letter in one hand and pressing his other hand to the side of his head in shock and frustration. Plain
+      wall above him. No readable text. No other people.
+    characters: [teacher]
+    motion_prompt: >-
+      He reads the letter, his eyes widen, and he presses his hand to the side of his head.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          An empty old temple site on a hill in late winter, a bare stone platform where a tall pagoda once stood,
+          scattered broken stone pieces and cart tracks in the frozen mud leading away. No people.
+        motion_prompt: >-
+          Cold wind blows dry leaves across the empty stone platform and the cart tracks.
+        camera: slow push in
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "일본의 높은 관리가 몰래 뜯어, 일본으로 실어 갔다는 거죠."
+        captions: ["일본의 높은 관리가 몰래 뜯어", "일본으로 실어 갔다는 거죠"]
+    visual: 밤길에 달구지 여러 대가 거적에 덮인 돌덩이를 싣고 멀어진다 (사람은 작고 흐릿하게, 얼굴 없이)
+    image_prompt: >-
+      A dark winter country road at night, a line of ox carts loaded with large stone pieces covered by straw mats moving
+      away into the distance, lit by a few lanterns. The drivers are tiny dark silhouettes with no visible faces.
+    motion_prompt: >-
+      The loaded carts creak slowly away down the dark road, lanterns swaying.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "힘없는 나라에서, 빼앗긴 탑을 어떻게 되찾을까요?"
+        captions: ["힘없는 나라에서 / 빼앗긴 탑을", "어떻게 되찾을까요?"]
+    visual: 책상 앞 선생이 접이식 카메라와 수첩을 번갈아 보며 골똘히 생각한다
+    image_prompt: >-
+      The teacher seen from the waist up in the middle of the frame, sitting at his desk, looking from his small folding
+      camera to his notebook and tapping his pen, deep in thought. Plain wall above him. No other people.
+    characters: [teacher]
+    motion_prompt: >-
+      He taps the pen on the notebook, looks at the camera and slowly nods with a plan.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 선생은 그 절터로 달려가, 마을 사람들 이야기를 듣고 사진을 찍었습니다."
+        captions: ["그래서 선생은 / 그 절터로 달려가", "마을 사람들 이야기를 듣고 / 사진을 찍었습니다"]
+    visual: 텅 빈 탑 자리에서 선생이 카메라를 들고 찍고, 뒤에서 마을 사람 둘이 손짓하며 설명한다
+    image_prompt: >-
+      At the empty stone platform of the old temple site, the teacher in the middle of the frame holding up his folding
+      camera at chest height to photograph the broken stones, listening intently.
+    characters: [teacher]
+    extras: "two Korean villagers in white hanbok behind him, pointing toward the empty platform and explaining, small and out of focus"
+    motion_prompt: >-
+      He clicks the camera shutter and writes a note; the villagers behind him point and explain.
+    camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그리고 그 증거를, 신문에 낱낱이 알렸죠."
+        captions: ["그리고 그 증거를", "신문에 낱낱이 알렸죠"]
+    visual: 등잔불 아래 선생이 타자기를 두드리고, 옆에 현상한 사진들이 놓여 있다
+    image_prompt: >-
+      The teacher at his desk at night under an oil lamp, seen from the waist up in the middle of the frame, typing
+      quickly on an old typewriter, developed black-and-white photos of the empty temple site spread beside it. No
+      readable text. No other people.
+    characters: [teacher]
+    motion_prompt: >-
+      He types rapidly, pulls the page out of the typewriter and lays it beside the photos.
+    camera: slow push in
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "한국 신문은 물론, 일본과 미국 신문에까지 글을 보냈습니다."
+        captions: ["한국 신문은 물론", "일본과 미국 신문에까지 / 글을 보냈습니다"]
+    visual: 세계 지도 위로 편지 봉투들이 서울에서 일본, 미국으로 날아가는 선이 그려진다
+    image_prompt: >-
+      An old world map on parchment with glowing lines and small flying envelopes traveling from Korea to Japan and
+      across the Pacific to America. No text, no labels, no people.
+    motion_prompt: >-
+      Small envelopes fly along the glowing lines from Korea to Japan and across the ocean to America.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          A pile of old 1900s newspapers from different countries stacked on a desk, each with a blurred photo of an
+          empty temple site on the front. No readable text, no people.
+        motion_prompt: >-
+          More newspapers drop onto the pile one after another.
+        camera: static
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 신문 기사 몇 줄로, 정말 탑이 돌아왔을까요?"
+        captions: ["그런데 신문 기사 몇 줄로", "정말 탑이 돌아왔을까요?"]
+    visual: 창가에 선 선생이 신문을 접어 들고 바다 쪽 하늘을 걱정스럽게 바라본다
+    image_prompt: >-
+      The teacher seen from the knees up in the middle of the frame, standing by a window holding a folded newspaper,
+      looking out toward a distant grey sea with a worried, hopeful expression. Plain sky above him through the window.
+      No readable text. No other people.
+    characters: [teacher]
+    motion_prompt: >-
+      He grips the newspaper, looks out at the sea and lets out a slow, uncertain breath.
+    camera: static
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 세계의 비난이 쏟아지자, 11년 뒤 탑은 마침내 돌아왔습니다."
+        captions: ["결국 세계의 비난이 쏟아지자", "11년 뒤 탑은 / 마침내 돌아왔습니다"]
+    visual: 항구에 내려진 나무 상자들 속에 탑의 조각들이 보인다 (사람 없이)
+    image_prompt: >-
+      A harbor dock with many large wooden crates being unloaded, some lids open showing carved grey marble pieces of an
+      old pagoda wrapped in straw. Morning light. No people.
+    motion_prompt: >-
+      A crate lid slides open, revealing the carved marble pieces in the morning light.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그 탑은 지금, 국립중앙박물관 한가운데에 우뚝 서 있죠."
+        captions: ["그 탑은 지금", "국립중앙박물관 한가운데에 / 우뚝 서 있죠"]
+    visual: 넓은 박물관 홀 한가운데 서 있는 화려한 회색 대리석 십층 석탑 (사람 없이)
+    image_prompt: >-
+      A tall, ornately carved grey marble ten-story pagoda standing in the center of a vast bright modern museum hall
+      under a high skylight, its base with intricate Buddhist carvings. Calm, majestic mood. No text, no people.
+    motion_prompt: >-
+      The camera slowly glides around the base of the tall carved pagoda under the skylight.
+    camera: slow orbit
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "펜과 사진으로 석탑을 되찾은 이 미국인이 바로, 호머 헐버트입니다."
+        captions: ["펜과 사진으로 / 석탑을 되찾은 이 미국인이", "바로, 호머 헐버트입니다"]
+      - text: "여러분이라면 빼앗긴 문화재를 어떻게 되찾으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 빼앗긴 문화재를", "어떻게 되찾으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 언덕 위 선생이 카메라를 어깨에 메고 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The teacher seen from the knees up in the middle of the frame, standing on a gentle hill at golden sunset with
+      traditional Korean tiled roofs below, his camera strap over his shoulder, a warm satisfied smile. Wide sunset sky
+      above him. No other people.
+    characters: [teacher]
+    motion_prompt: >-
+      He looks over the roofs with a warm smile; the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the cartoon teacher character from the reference image, seen from the waist up in the
+          middle of the frame, standing on the sunset hill. He smiles warmly toward the viewer and holds one open palm out
+          at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [teacher]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "주간경향 2023 (이기환) — 일본인의 석탑 반출, 총독부가 막은 까닭 (1907년 1월 궁내대신 다나카 미쓰아키가 계획, 2월 4일 일본인과 인부들이 탑을 약 140조각으로 해체해 10여 대의 달구지로 반출 — 하루 밤낮, 헐버트가 현장에 가서 주민 이야기를 듣고 사진을 찍어 대한매일신보에 제보·고베 『저팬 크로니클』(1907년 4월 4일)에 기고·뉴욕포스트에 글을 보냄, 1907년 7월 헤이그 연설에서도 거론, 대한매일신보 1907년 3월 7일 특종 뒤 3개월 집중 보도, 1918년 11월 15일 11년 9개월 만에 반환, 지금 국립중앙박물관 중앙홀) — https://weekly.khan.co.kr/article/202308111503551"
+  - "Korea Times 2021 — Unique pagoda with memorable history (1348년 고려 경천사, 1907년 다나카 미쓰아키가 정원을 꾸미려고 무단 반출, 베델과 헐버트가 기사로 고발해 대한매일신보·저팬 메일·뉴욕포스트에 실림, 국제적 비난 끝에 1918년 반환, 국립중앙박물관 로비에 전시) — https://www.koreatimes.co.kr/opinion/20210119/unique-pagoda-with-memorable-history"
+  - "서울특별시 내 손안에 서울 — '호머 헐버트' 우리가 광복절에 기억해야 할 이름 (1886년 육영공원 교사로 파견, 1905년 고종의 밀서로 워싱턴에 호소, 헤이그 특사 후원, 1907년 경천사십층석탑 무단 반출을 언론과 헤이그에서 폭로해 1918년 돌려받음, 1949년 별세 '웨스트민스터 사원보다 한국 땅에 묻히길', 1950년 건국훈장 독립장) — https://mediahub.seoul.go.kr/archives/1104064"
+
+accuracy_notes:
+  - "주인공은 실존 인물 호머 헐버트(1863~1949), 1950년 건국훈장 독립장을 받은 독립유공자. 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 것. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'머리를 쥐어뜯었습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '하룻밤 새 통째로 사라짐'은 주간경향의 '하루 밤낮에 걸쳐 해체·반출' 기준을 줄인 표현."
+  - "s02 '일본의 높은 관리'는 궁내대신 다나카 미쓰아키. 대본에는 이름을 쓰지 않는다. 반출 때 총·칼로 위협한 일은 화면에 넣지 않는다."
+  - "s04~s06 현장 조사·사진·한국·일본·미국 신문 기고는 주간경향 기준. 대한매일신보 보도는 영국인 베델의 신문이 크게 다뤘고(주간경향·Korea Times), 대본은 헐버트 한 사람의 이야기로 줄였다."
+  - "s07~s08 반환 이유는 주간경향이 '국제적 비난과 함께 총독부 고위층의 압박, 식민 통치 정당화 의도'로 해석한다. 대본은 '세계의 비난이 쏟아지자'로 쓰고, 신문 기사만으로 돌아왔다고 단정하지 않는다 (Korea Times: 국제적 비난 끝에 반환)."
+  - "s08 '11년 뒤'는 1907년 2월 → 1918년 11월(11년 9개월) 기준."
+  - "s09 지금 국립중앙박물관 중앙홀에 있음은 두 출처 공통."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 선생 한 명 중심, s04에 마을 사람 2명. s02 달구지 행렬은 얼굴 없는 작은 실루엣."
+
+youtube:
+  titles:
+    - 사라진 10층 석탑을 신문으로 되찾았다? 한 미국인의 반격
+    - 하룻밤 새 통째로 뜯겨 간 고려 석탑의 운명
+    - 카메라와 펜으로 싸운 외국인 독립운동가
+  description: |-
+    🏯 1907년, 고려 시대 십층 석탑이 하룻밤 새 통째로 사라졌습니다! 일본의 높은 관리가 몰래 뜯어 실어 갔다는데…
+
+    힘없는 나라, 어떻게 되찾을 수 있을까요? 🤔
+    한 미국인 선생은 카메라를 들고 절터로 달려가 증거를 모았어요 📷
+    그리고 한국은 물론 일본·미국 신문에까지 낱낱이 알렸죠 📰
+
+    11년 뒤, 세계의 비난 속에 석탑은 마침내 돌아왔답니다 🙌 지금 국립중앙박물관 한가운데 서 있는 바로 그 탑! 그 미국인의 이름은 영상 끝에서.
+  comment_question: 여러분이라면 빼앗긴 문화재를 어떻게 되찾으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 문화재, 한국사, 쇼츠]
