@@ -23,7 +23,14 @@ def image_prompt(ep: Episode, scene: dict) -> str:
         parts.append(f"Characters: {names} — keep their faces, proportions and outfits exactly as in the references.")
     parts.append(composition_line(scene, used))
     parts += [st["image_prefix"].strip(), st["image_suffix"].strip()]
+    if _title_on(ep):   # 제목 자리(위쪽 30%) 비우기 — 제목 있는 편만 (2026-11-10 사용자)
+        parts.append(str(st.get("title_safe_suffix", "")).strip())
     return " ".join(p for p in parts if p)
+
+
+def _title_on(ep: Episode) -> bool:
+    from .common import show_title
+    return show_title(ep)
 
 
 def composition_line(scene: dict, used: list[dict]) -> str:
@@ -58,6 +65,8 @@ def motion_prompt(ep: Episode, scene: dict) -> str:
     if scene.get("camera"):
         parts.append(f"Camera: {scene['camera']}.")
     parts.append(ep.style["motion_suffix"].strip())
+    if _title_on(ep):
+        parts.append(str(ep.style.get("title_safe_motion", "")).strip())
     return " ".join(p for p in parts if p)
 
 
@@ -149,8 +158,9 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
         txt = txt.replace("6. output/check/final-sheet.jpg 를 직접 보고 확인:\n",
                           "6. output/check/final-sheet.jpg 를 직접 보고 확인:\n"
                           "   - 이 편은 화면 제목 텍스트가 없다 (show_title: false). 화면 텍스트는 대사 자막뿐인지 확인\n")
-        txt = txt.replace("그 장면은 실패 — 제목에 얼굴이 가린다 (2026-11-02 사용자 규칙)",
-                          "참고로만 보고한다 — 이 편은 제목이 없어 실패로 보지 않는다")
+        # 제목이 없으니 얼굴 위치(위쪽 30%) 검사 단계는 뺀다 (2026-11-10 사용자: 구도 제약 제거)
+        import re as _re
+        txt = _re.sub(r"6-1\. output/check/final-face-zone\.jpg.*?\(이미지·클립 재생성은 사용자 몫\)\n", "", txt, flags=_re.S)
     return txt
 
 

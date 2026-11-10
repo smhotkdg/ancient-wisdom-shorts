@@ -3,7 +3,7 @@ id: "{{ID}}"
 slug: {{SLUG}}
 status: draft            # draft → script_ok → voice_ok → conti_ok → assets_in → done
 working_title: ""        # 예: 폼페이는 왜 길 한가운데 커다란 돌을 놓았을까?
-show_title: true         # 화면 제목 넣음 (047만 예외로 제목 없음, 2026-11-10 사용자)
+show_title: false        # 049부터 화면 제목 없음 + 얼굴 위쪽 30% 구도 제약 없음 (2026-11-10 사용자)
 title_lines: ["", ""]    # 화면 고정 제목 두 줄 (첫 줄 흰색, 둘째 줄 노란색)
 hook: ""                 # 첫 문장의 반응어 (topics.md 에 기록)
 caption_keywords: []     # 자막에서 노란색으로 강조할 단어 3~6개

@@ -220,3 +220,8 @@ def say(msg: str) -> None:
 def fail(msg: str) -> None:
     print(f"[오류] {msg}", file=sys.stderr, flush=True)
     sys.exit(2)
+
+
+def show_title(ep) -> bool:
+    """화면 제목을 넣는 편인지. episode.yaml show_title 이 없으면 config layout.title.enabled."""
+    return bool(ep.data.get("show_title", ep.project["layout"]["title"]["enabled"]))

@@ -122,8 +122,10 @@ def check(ep: Episode) -> dict:
             blob = " ".join(str(p.get(k) or "") for k in ("image_prompt", "motion_prompt", "camera"))
             if risky.search(blob):
                 face_risk.append(sc["id"] if i == 1 else f"{sc['id']}-{i}")
-    item(not face_risk, "얼굴이 위쪽 30%로 갈 위험 동작 없음 (tilt up·rise·팔 들기·높은 곳)",
-         ", ".join(face_risk) if face_risk else "없음")
+    from .common import show_title
+    if show_title(ep):   # 제목 없는 편은 구도 제약 없음 (2026-11-10 사용자)
+        item(not face_risk, "얼굴이 위쪽 30%로 갈 위험 동작 없음 (tilt up·rise·팔 들기·높은 곳)",
+             ", ".join(face_risk) if face_risk else "없음")
 
     notes = " ".join(ep.data.get("accuracy_notes") or [])
     item("재구성" in notes, "정확성 메모에 '재구성' 명시", "있음" if "재구성" in notes else "없음")
