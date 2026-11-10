@@ -1,38 +1,38 @@
-[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–4.0초
+[S01-1] 6초 · 업로드: images/s01.png · 저장: clips/s01.mp4 · 구간 0.0–3.7초
 The distant biplane loops in the background; her eyes follow it, and a slow amazed smile spreads on her face. Camera: static. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 4.0–7.9초
+[S01-2] 6초 · 업로드: images/s01-2.png · 저장: clips/s01-2.mp4 · 구간 3.7–6.8초
 The biplane banks and sweeps across the frame, its engine buzzing. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow pan following the plane. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 7.9–12.4초
+[S02] 6초 · 업로드: images/s02.png · 저장: clips/s02.mp4 · 구간 6.8–10.5초
 She turns the paper airplane slowly in her fingers and lets out a quiet sigh. Camera: slow push in. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 12.4–15.3초
+[S03] 6초 · 업로드: images/s03.png · 저장: clips/s03.mp4 · 구간 10.5–13.7초
 Her fingers begin to crush the paper plane, then stop; she smooths it out and lifts her determined eyes. Camera: static. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 15.3–21.2초
+[S04] 6초 · 업로드: images/s04.png · 저장: clips/s04.mp4 · 구간 13.7–18.9초
 The boat rocks gently; she steps aboard, glances back once, then turns forward. Camera: static. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 21.2–26.2초
+[S05] 6초 · 업로드: images/s05.png · 저장: clips/s05.mp4 · 구간 18.9–23.2초
 She touches the photograph with her fingertips; the two men behind her nod to each other. Background people stay small and move only a little; keep the focus on the main character. Camera: slow push in. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 26.2–30.0초
+[S06] 6초 · 업로드: images/s06.png · 저장: clips/s06.mp4 · 구간 23.2–26.2초
 She presses the envelope to her chest, closes her eyes and smiles softly. Camera: slow push in. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 30.0–35.4초
+[S07] 6초 · 업로드: images/s07.png · 저장: clips/s07.mp4 · 구간 26.2–32.2초
 The cadets behind her exchange surprised looks; she stands steady and calm. Background people stay small and move only a little; keep the focus on the main character. Camera: static. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 35.4–37.6초
+[S08-1] 6초 · 업로드: images/s08.png · 저장: clips/s08.mp4 · 구간 32.2–34.1초
 She pulls the goggles down, grips the edge of the cockpit and gives a confident nod as the propeller starts. Camera: static. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 37.6–39.7초
+[S08-2] 6초 · 업로드: images/s08-2.png · 저장: clips/s08-2.mp4 · 구간 34.1–36.1초
 The biplane rolls forward, lifts off the grass and climbs gently into the morning air. No people, hands or faces appear at any point in the clip; only the objects and scenery shown move. Camera: slow pan following the plane. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 39.7–44.7초
+[S09] 6초 · 업로드: images/s09.png · 저장: clips/s09.mp4 · 구간 36.1–40.3초
 Wind ruffles her jacket; she stands steady beside the plane, looking ahead. Camera: slow pull back at eye level. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 44.7–49.2초
+[S10-1] 6초 · 업로드: images/s10.png · 저장: clips/s10.mp4 · 구간 40.3–44.0초
 She smiles calmly as the camera slowly pulls back at eye level. Camera: slow pull back at eye level. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.
 
-[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 49.2–55.7초
+[S10-2] 6초 · 업로드: images/s10-2.png · 저장: clips/s10-2.mp4 · 구간 44.0–49.5초
 She smiles toward the camera and opens one hand at chest height in a friendly asking gesture. Camera: slow push in. Photorealistic live-action footage. Keep the person's face, outfit and the background exactly consistent with the image. Smooth, natural, realistic human motion, no morphing, no sudden cuts. Natural ambient sound effects only: no speech, no voices, no music, no text on screen. The camera never tilts, rises or pushes in so that anyone's head moves into the top 30% of the frame; the character does not stand up, jump or raise their head toward the top; keep every face in the middle of the frame for the whole clip.

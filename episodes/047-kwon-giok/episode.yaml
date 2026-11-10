@@ -2,12 +2,12 @@
 id: "047"
 style: photoreal
 slug: kwon-giok
-status: script_ok
+status: done
 working_title: 나라를 빼앗긴 조선의 여학생은 어떻게 비행사가 되었을까?
 show_title: false        # 화면 제목 텍스트 없음 (2026-11-10 사용자). title_lines 는 콘티·목록용으로만 쓴다
 title_lines: ["하늘을 날아", "독립운동을 했다고?"]
 hook: 혼이 쏙 빠졌습니다
-caption_keywords: [비행기, 배울 곳이, 조종사, 단 한 명도, 1,300시간]
+caption_keywords: [비행기, 배울 곳이, 조종사, 단 한 명도, "1,300시간"]
 
 story:
   hero: 여학생
@@ -98,7 +98,7 @@ scenes:
     beat: solution
     lines:
       - text: "그때 상하이의 임시정부는, 하늘에서 싸울 조종사를 길러 내려 했죠."
-        captions: ["그때 상하이의 임시정부는", "하늘에서 싸울 조종사를 / 길러 내려 했죠"]
+        captions: ["그때 상하이의 / 임시정부는", "하늘에서 싸울 조종사를 / 길러 내려 했죠"]
     visual: 소박한 사무실에서 여학생이 탁자 위 비행기 사진을 보며 눈을 반짝이고, 뒤로 정장 차림 남자 둘이 이야기한다
     image_prompt: >-
       A modest 1920s office in Shanghai with a wooden table, the young woman in the middle of the frame leaning over a
@@ -143,7 +143,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그녀는 첫 여성 입학생이 되어, 끝내 조종사 자격을 따냈죠."
-        captions: ["그녀는 첫 여성 입학생이 되어", "끝내 조종사 자격을 / 따냈죠"]
+        captions: ["그녀는 첫 / 여성 입학생이 되어", "끝내 조종사 자격을 / 따냈죠"]
     visual: 복엽기 조종석에 앉은 여학생이 고글을 내려 쓰고 엄지를 들어 올린다
     image_prompt: >-
       The young woman in her khaki flight jacket and leather flying cap seated in the open cockpit of an old biplane on a
@@ -165,7 +165,7 @@ scenes:
     beat: info
     lines:
       - text: "그 뒤 약 1,300시간을 날며, 하늘에서 일본과 맞섰다고 합니다."
-        captions: ["그 뒤 약 1,300시간을 날며", "하늘에서 일본과 / 맞섰다고 합니다"]
+        captions: ["그 뒤 약 / 1,300시간을 날며", "하늘에서 일본과 / 맞섰다고 합니다"]
     visual: 활주로 옆에 선 비행복 차림의 그녀가 하늘을 보지 않고 앞을 굳게 바라본다
     image_prompt: >-
       The young woman in her flight jacket seen from the knees up in the middle of the frame, standing beside a biplane on
@@ -180,7 +180,7 @@ scenes:
     beat: info
     lines:
       - text: "한국 최초의 여성 비행사가 된 이 사람이 바로, 권기옥입니다."
-        captions: ["한국 최초의 여성 비행사가 된 / 이 사람이", "바로, 권기옥입니다"]
+        captions: ["한국 최초의 / 여성 비행사가 된", "이 사람이", "바로, 권기옥입니다"]
       - text: "여러분이라면 막힌 꿈 앞에서 어떻게 하셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 / 막힌 꿈 앞에서", "어떻게 하셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
