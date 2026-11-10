@@ -2,7 +2,7 @@
 id: "048"
 style: photoreal
 slug: national-debt
-status: script_ok
+status: done
 working_title: 1907년 대구의 상인은 어떻게 나랏빚 1,300만 원을 갚으려 했을까?
 show_title: true         # 048부터 화면 제목 다시 넣음 (2026-11-10 사용자, 047만 제목 없음)
 title_lines: ["담배를 끊어서", "나랏빚을 갚자고?"]
@@ -124,7 +124,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 담배를 안 피우는 사람들까지, 앞다퉈 나섰습니다. 누구였을까요?"
-        captions: ["그런데 담배를 안 피우는 / 사람들까지", "앞다퉈 나섰습니다", "누구였을까요?"]
+        captions: ["그런데 담배를 / 안 피우는", "사람들까지", "앞다퉈 나섰습니다", "누구였을까요?"]
     visual: 상점 앞 탁자에 놓인 모금함 앞에 선 상인이 놀라 눈을 크게 뜨고, 뒤로 사람 몇이 줄지어 다가온다
     image_prompt: >-
       A wooden collection box on a small table in front of the shop, the merchant standing beside it in the middle of the
@@ -139,7 +139,7 @@ scenes:
     beat: resolve
     lines:
       - text: "여인들은 은반지와 은장도를 내놓았고, 인력거꾼과 걸인도 동전을 보탰죠."
-        captions: ["여인들은 / 은반지와 은장도를 내놓았고", "인력거꾼과 걸인도 / 동전을 보탰죠"]
+        captions: ["여인들은 / 은반지와 은장도를", "내놓았고", "인력거꾼과 걸인도 / 동전을 보탰죠"]
     visual: 모금함 위로 은반지·은장도·동전이 쌓이고, 상인이 감격해 손을 모은다
     image_prompt: >-
       Close-up of the wooden collection box filling with silver rings, small silver ornamental knives and copper coins,
@@ -162,7 +162,7 @@ scenes:
     beat: info
     lines:
       - text: "이 운동의 기록은, 2017년 유네스코 세계기록유산이 되었습니다."
-        captions: ["이 운동의 기록은", "2017년 유네스코 / 세계기록유산이 되었습니다"]
+        captions: ["이 운동의 기록은", "2017년 유네스코 / 세계기록유산이", "되었습니다"]
     visual: 박물관 유리 진열장 속 누렇게 바랜 옛 신문과 모금 기록 (사람 없이)
     image_prompt: >-
       A quiet museum display case with yellowed old Korean newspapers and handwritten donation ledgers from 1907 under
@@ -175,7 +175,7 @@ scenes:
     beat: info
     lines:
       - text: "담배를 끊어 나랏빚을 갚자던 이 운동이 바로 국채보상운동, 제안한 상인은 서상돈입니다."
-        captions: ["담배를 끊어 나랏빚을 갚자던 / 이 운동이", "바로 국채보상운동", "제안한 상인은 / 서상돈입니다"]
+        captions: ["담배를 끊어 / 나랏빚을 갚자던", "이 운동이", "바로 국채보상운동", "제안한 상인은 / 서상돈입니다"]
       - text: "여러분이라면 나라를 위해 무엇을 끊으셨을까요? 여러분의 생각이 궁금합니다."
         captions: ["여러분이라면 나라를 위해", "무엇을 끊으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
