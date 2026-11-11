@@ -2,7 +2,7 @@
 id: "050"
 style: photoreal
 slug: bang-junghwan
-status: script_ok
+status: done
 working_title: 총도 돈도 없는 청년은 어떻게 나라의 내일을 지켰을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["총도 돈도 없이", "나라의 내일을 지켰다고?"]
@@ -83,14 +83,15 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 청년은 아이들에게 새 이름을 붙여 주었습니다."
-        captions: ["그래서 청년은 아이들에게", "새 이름을 붙여 주었습니다"]
+        captions: ["그래서 청년은 / 아이들에게", "새 이름을 / 붙여 주었습니다"]
       - text: "늙은이, 젊은이처럼 높여 부르는 말, '어린이'였죠."
         captions: ["늙은이, 젊은이처럼 / 높여 부르는 말", "'어린이'였죠"]
     visual: 골목에서 청년이 무릎을 굽혀 사내아이와 눈높이를 맞추고 다정하게 웃으며 말을 건넨다
     image_prompt: >-
       The young man in the middle of the frame, crouching down to eye level with a small boy in patched clothes in
       the alley, smiling warmly and speaking to him gently with one hand on his own knee; the boy looks back at him in
-      shy surprise. Soft morning light. No other people.
+      shy surprise. Soft morning light. One continuous photograph filling the whole vertical frame, no pasted or
+      extended borders. No other people.
     characters: [youth]
     motion_prompt: >-
       He smiles and speaks gently; the boy's shy face slowly breaks into a small smile.
@@ -98,7 +99,8 @@ scenes:
     extra_clips:
       - image_prompt: >-
           Close-up at eye level of the young man's warm smiling face, crouching and looking kindly at someone just
-          below the camera, soft morning light on his round face. No other people.
+          below the camera, soft morning light on his round face. One continuous photograph filling the whole
+          vertical frame, no pasted or extended borders. No other people.
         characters: [youth]
         motion_prompt: >-
           He nods kindly and his smile grows warmer.
@@ -108,7 +110,7 @@ scenes:
     beat: solution
     lines:
       - text: "그러자 이번엔 어린이 잡지에, 재미와 우리 얼을 담았습니다."
-        captions: ["그러자 이번엔 / 어린이 잡지에", "재미와 우리 얼을 담았습니다"]
+        captions: ["그러자 이번엔 / 어린이 잡지에", "재미와 우리 얼을 / 담았습니다"]
     visual: 1920년대 인쇄소, 청년이 갓 찍은 얇은 잡지를 들고 넘겨 보며 뿌듯하게 웃는다 (글자는 흐릿)
     image_prompt: >-
       A small 1920s print shop with an old iron printing press and stacks of paper behind him, the young man seen from
@@ -124,7 +126,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 일제는 그의 글 속 '모두가 봄이다' 한 줄도 지웠습니다."
-        captions: ["그런데 일제는 그의 글 속", "'모두가 봄이다' / 한 줄도 지웠습니다"]
+        captions: ["그런데 일제는 / 그의 글 속", "'모두가 봄이다' / 한 줄도 지웠습니다"]
       - text: "왜일까요? 봄을 독립으로 본 거죠."
         captions: ["왜일까요?", "봄을 독립으로 본 거죠"]
     visual: 붉은 먹을 묻힌 붓이 원고 위 한 줄을 굵게 그어 지운다 / 돌려받은 원고를 보던 청년이 쓴웃음을 짓는다
@@ -164,7 +166,7 @@ scenes:
     beat: info
     lines:
       - text: "일제는 결국 이 날을 막았지만, 해방 이듬해 5월 5일로 돌아왔죠."
-        captions: ["일제는 결국 이 날을 막았지만", "해방 이듬해 / 5월 5일로 돌아왔죠"]
+        captions: ["일제는 결국 / 이 날을 막았지만", "해방 이듬해 / 5월 5일로 돌아왔죠"]
     visual: 사람 없는 봄날 골목, 줄에 매단 색종이 띠가 바람에 나부낀다
     image_prompt: >-
       An empty old Seoul alley on a sunny spring morning, a rope strung between two tiled-roof houses with colorful
@@ -179,7 +181,7 @@ scenes:
       - text: "아이를 '어린이'라 부른 이 청년이 바로 방정환, 그 날이 오늘의 어린이날입니다."
         captions: ["아이를 '어린이'라 / 부른 이 청년이", "바로 방정환", "그 날이 오늘의 / 어린이날입니다"]
       - text: "여러분이라면 아이들에게 어떤 이름을 붙여 주셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 아이들에게", "어떤 이름을 붙여 주셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 아이들에게", "어떤 이름을 / 붙여 주셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 봄날 꽃나무 아래 청년이 잡지를 가슴에 안고 환하게 웃는다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
@@ -198,6 +200,10 @@ scenes:
         motion_prompt: >-
           He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
         camera: slow push in
+
+redo:
+  reason: "s04·s04-2 이미지 위쪽 약 38%가 덧붙인 빈 하늘이라 사진과의 경계선(가로·세로 이음매)이 영상에 그대로 보임 — 한 장으로 이어진 세로 사진으로 다시 만들기"
+  images: [s04, s04-2]
 
 sources:
   - "서울시 미디어허브, 최초의 어린이날은 5월 1일...어쩌다 그날로 정해졌을까? (1922년 5월 1일 천도교소년회 어린이날 선창, 1923년 5월 1일 조선소년운동협회 주최 첫 기념식, '어린이'는 방정환이 1920년 『개벽』에 「어린이 노래」를 번역 소개하며 사용 — 늙은이·젊은이와 대등한 뜻, 1937년 일제 탄압으로 금지, 해방 뒤 1946년 5월 5일로 부활) — https://mediahub.seoul.go.kr/archives/2011049"
