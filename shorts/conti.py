@@ -25,7 +25,22 @@ def image_prompt(ep: Episode, scene: dict) -> str:
     parts += [st["image_prefix"].strip(), st["image_suffix"].strip()]
     if _title_on(ep):   # 제목 자리(위쪽 30%) 비우기 — 제목 있는 편만 (2026-11-10 사용자)
         parts.append(str(st.get("title_safe_suffix", "")).strip())
+    else:               # 제목 없는 편: 폰 세이프 에어리어만 지킨다 (2026-11-11 사용자)
+        parts.append(MOBILE_SAFE_IMAGE)
     return " ".join(p for p in parts if p)
+
+
+# 제목 없는 편(049~)의 모바일 세이프 에어리어 (2026-11-11 사용자: "카메라가 가리는 위치 정도는 고려")
+# 위 10% = 폰 카메라·상태 표시줄·쇼츠 상단 아이콘, 아래 1/3 = 자막(중심 y 1360)·채널명·설명 UI,
+# 오른쪽 아래 = 좋아요·댓글·공유 버튼 열 (config layout.safe_zones.right_column).
+MOBILE_SAFE_IMAGE = (
+    "Phone-screen safe area: keep every face and the key action away from the very top edge (top 10% of the "
+    "image, where the phone camera and status bar sit) and out of the bottom third (subtitles and app buttons); "
+    "place the main character's face roughly 15-55% down from the top, and keep nothing important at the far "
+    "right edge of the lower half.")
+MOBILE_SAFE_MOTION = (
+    "For the whole clip keep the main face and the key action in the middle of the frame: never in the top 10%, "
+    "never down in the bottom third, never at the far right edge.")
 
 
 def _title_on(ep: Episode) -> bool:
@@ -67,6 +82,8 @@ def motion_prompt(ep: Episode, scene: dict) -> str:
     parts.append(ep.style["motion_suffix"].strip())
     if _title_on(ep):
         parts.append(str(ep.style.get("title_safe_motion", "")).strip())
+    else:
+        parts.append(MOBILE_SAFE_MOTION)
     return " ".join(p for p in parts if p)
 
 
@@ -158,9 +175,16 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
         txt = txt.replace("6. output/check/final-sheet.jpg 를 직접 보고 확인:\n",
                           "6. output/check/final-sheet.jpg 를 직접 보고 확인:\n"
                           "   - 이 편은 화면 제목 텍스트가 없다 (show_title: false). 화면 텍스트는 대사 자막뿐인지 확인\n")
-        # 제목이 없으니 얼굴 위치(위쪽 30%) 검사 단계는 뺀다 (2026-11-10 사용자: 구도 제약 제거)
+        # 제목이 없으니 위쪽 30% 검사 대신 모바일 세이프 에어리어 검사 (2026-11-11 사용자)
         import re as _re
-        txt = _re.sub(r"6-1\. output/check/final-face-zone\.jpg.*?\(이미지·클립 재생성은 사용자 몫\)\n", "", txt, flags=_re.S)
+        txt = _re.sub(r"6-1\. output/check/final-face-zone\.jpg.*?\(이미지·클립 재생성은 사용자 몫\)\n",
+                      "6-1. output/check/final-face-zone.jpg (장면마다 앞·가운데·끝 3프레임) 를 직접 보고 모바일 세이프 에어리어 확인:\n"
+                      "   - 빨간 점선 위(위쪽 10% — 폰 카메라·상태 표시줄)에 주인공 얼굴·눈이 걸린 프레임\n"
+                      "   - 노란 점선 아래(자막·쇼츠 설명 UI)로 얼굴이나 핵심 동작이 내려간 프레임\n"
+                      "   - 주황 상자(오른쪽 아래 좋아요·댓글 버튼 열) 안에 얼굴·핵심 물건이 들어간 프레임\n"
+                      "   - 걸린 장면은: ① 클립 앞·뒤만 걸리면 trim_start 로 피한다 ② 안 되면 그 컷을 episode.yaml redo: images 에 적고\n"
+                      "     python aw.py conti 로 다시 만들기 탭을 만든 뒤 보고한다 (이미지·클립 재생성은 사용자 몫)\n",
+                      txt, flags=_re.S)
     return txt
 
 

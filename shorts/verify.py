@@ -140,12 +140,18 @@ def _contact_sheet(ep: Episode, video: Path, report: dict, tag: str) -> Path:
 
 
 FACE_ZONE = 0.30   # 2026-11-02 사용자: 인물 얼굴이 위쪽 30%(제목 자리)에 들어오면 안 된다
+# 제목 없는 편(049~): 모바일 세이프 에어리어 (2026-11-11 사용자) — 위 10% 폰 카메라·상태 표시줄,
+# 자막 블록 위쪽(중심 1360 - 두 줄 절반 ≈ 1280px ≈ 66%) 아래는 자막·쇼츠 UI, 오른쪽 아래는 버튼 열
+MOBILE_TOP = 0.10
+MOBILE_BOTTOM = 0.66
 
 
 def _face_zone_sheet(ep: Episode, video: Path, report: dict, tag: str) -> Path:
     """얼굴 금지 구역 확인용 — 장면마다 앞·가운데·끝 3프레임, 위쪽 30% 경계에 빨간 선.
     Grok 클립은 움직이며 얼굴이 올라가는 일이 많아 가운데 한 장(final-sheet)만으로는 놓친다."""
     from PIL import ImageDraw
+    from .common import show_title
+    title_on = show_title(ep)
     out_dir = ep.output_dir / "check"
     out_dir.mkdir(parents=True, exist_ok=True)
     t, frames = 0.0, []
@@ -156,9 +162,17 @@ def _face_zone_sheet(ep: Episode, video: Path, report: dict, tag: str) -> Path:
                  "-vf", "scale=240:-2", "-q:v", "4", p])
             im = Image.open(p).convert("RGB")
             d = ImageDraw.Draw(im)
-            y = int(im.height * FACE_ZONE)
-            for x in range(0, im.width, 8):
-                d.line([(x, y), (x + 4, y)], fill=(255, 40, 40), width=2)
+            if title_on:
+                lines = [(FACE_ZONE, (255, 40, 40))]
+            else:
+                lines = [(MOBILE_TOP, (255, 40, 40)), (MOBILE_BOTTOM, (255, 220, 0))]
+                x0, y0, x1, y1 = ep.project["layout"]["safe_zones"]["right_column"]
+                sx, sy = im.width / 1080, im.height / 1920
+                d.rectangle([x0 * sx, y0 * sy, x1 * sx - 1, y1 * sy - 1], outline=(255, 140, 0), width=2)
+            for frac, col in lines:
+                y = int(im.height * frac)
+                for x in range(0, im.width, 8):
+                    d.line([(x, y), (x + 4, y)], fill=col, width=2)
             d.text((4, 4), f"{sc['id']}-{k + 1}", fill=(255, 255, 0))
             frames.append(im)
         t += sc["duration"]
