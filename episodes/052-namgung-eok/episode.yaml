@@ -1,0 +1,222 @@
+# 052 남궁억 — 학교 뒤뜰에서 무궁화 묘목을 길러 몰래 전국에 퍼뜨린 선비 (독립운동가 편, 실사)
+id: "052"
+style: photoreal
+slug: namgung-eok
+status: script_ok
+working_title: 일제가 뽑아내던 꽃, 시골 선비는 어떻게 지켰을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["뽑아내던 꽃을", "몰래 퍼뜨렸다고?"]
+hook: 기가 막혔습니다
+caption_keywords: [기가 막혔습니다, 무궁화, 눈병 나는 꽃, 학교, 뒤뜰, 칠만 그루, 사쿠라, 끝없이 핀다]
+
+story:
+  hero: 선비
+  reveal: [남궁억]
+
+characters:
+  - id: seonbi
+    name: 선비
+    name_en: Korean village schoolmaster of the 1920s
+    description: >-
+      a lean Korean man in his early 60s with a kind but firm face, deep-set calm eyes, short-cropped grey hair and a
+      short neat white beard, wearing a plain white cotton hanbok jacket and trousers with a dark grey vest, simple
+      straw sandals, weathered gardener's hands
+    note: 이야기 주인공. 1910년 뒤 강원도 홍천 보리울(모곡)로 내려가 학교를 세우고 무궁화를 보급한 독립운동가·교육자 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1910년 나라를 빼앗기던 날, 서울의 한 선비는 기가 막혔습니다."
+        captions: ["1910년 나라를 빼앗기던 날", "서울의 한 선비는 / 기가 막혔습니다"]
+      - text: "그 뒤 그는 서울을 떠나, 강원도 홍천의 고향 마을로 내려갔죠."
+        captions: ["그 뒤 그는 서울을 떠나", "강원도 홍천의 / 고향 마을로 내려갔죠"]
+    visual: 서울 기와집 마루에서 선비가 신문을 쥔 채 굳은 얼굴로 하늘을 본다 / 산골 길을 홀로 걸어 고향으로 향한다
+    image_prompt: >-
+      The wooden veranda of an old tiled-roof house in Seoul in 1910, the man seen from the waist up in the middle of
+      the frame, holding a folded newspaper with blurred unreadable print, staring ahead in stunned disbelief, his jaw
+      tight. Grey overcast sky. No other people.
+    characters: [seonbi]
+    motion_prompt: >-
+      The newspaper trembles slightly in his hand; he slowly lowers it and closes his eyes in silent anger.
+    camera: slow push in at eye level
+    extra_clips:
+      - image_prompt: >-
+          A narrow dirt road winding through green mountain valleys of rural Gangwon, the man in the middle of the
+          frame seen from the knees up, walking alone with a small cloth bundle on his back, looking ahead with a
+          quiet, determined face. No other people.
+        characters: [seonbi]
+        motion_prompt: >-
+          He walks steadily along the mountain road as the wind moves the grass beside him.
+        camera: slow tracking backward at eye level
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "일제는 우리 꽃 무궁화를 '눈병 나는 꽃'이라 헐뜯으며 뽑아냈습니다."
+        captions: ["일제는 우리 꽃 무궁화를", "'눈병 나는 꽃'이라 / 헐뜯으며 뽑아냈습니다"]
+    visual: 길가 흙바닥에 뿌리째 뽑힌 무궁화 가지가 아무렇게나 버려져 있다 (사람 없음)
+    image_prompt: >-
+      A dusty roadside in 1920s rural Korea, several hibiscus syriacus shrubs with pale pink-purple flowers torn out by
+      the roots and thrown carelessly on the dirt, crushed petals scattered around, a sad, cold mood. No people.
+    motion_prompt: >-
+      A cold wind stirs the scattered petals and the uprooted branches tremble on the dirt.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "총도 없는 시골 선비가, 이 꽃을 어떻게 지킬 수 있을까요?"
+        captions: ["총도 없는 시골 선비가", "이 꽃을 어떻게 / 지킬 수 있을까요?"]
+    visual: 시골 초가 마루, 선비가 손바닥에 무궁화 씨앗 몇 알을 올려놓고 깊이 생각한다
+    image_prompt: >-
+      The veranda of a thatched-roof farmhouse in a mountain village, the man seen from the waist up in the middle of
+      the frame, sitting and looking down at a few small hibiscus seeds in his open palm, deep in thought, then a quiet
+      light of resolve in his eyes. No other people.
+    characters: [seonbi]
+    motion_prompt: >-
+      He rolls the seeds gently in his palm, thinking, then closes his hand around them with resolve.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 선비는 예순 무렵 학교를 세우고, 그 뒤뜰에 무궁화 묘목을 길렀습니다."
+        captions: ["그래서 선비는 / 예순 무렵 학교를 세우고", "그 뒤뜰에 / 무궁화 묘목을 길렀습니다"]
+    visual: 작은 시골 학교 뒤뜰 묘포, 선비가 무릎을 꿇고 어린 무궁화 묘목에 물을 준다
+    image_prompt: >-
+      The backyard nursery of a small rural village school with a simple wooden building behind, neat rows of young
+      hibiscus seedlings in dark soil, the man kneeling in the middle of the frame, seen from the waist up, gently
+      watering a seedling from a tin can with a warm, patient face. No other people.
+    characters: [seonbi]
+    motion_prompt: >-
+      Water pours softly from the can onto the seedling; he pats the soil around it with his hand.
+    camera: static at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of an old man's weathered hands pressing dark soil around the stem of a young hibiscus seedling in
+          a nursery row. Only the hands are visible.
+        characters: [seonbi]
+        motion_prompt: >-
+          The hands press the soil firmly around the seedling and smooth it flat.
+        camera: macro static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 아이들과 기른 묘목이 무려 칠만 그루, 몰래 전국으로 보내졌죠."
+        captions: ["그러자 아이들과 기른 묘목이 / 무려 칠만 그루", "몰래 전국으로 보내졌죠"]
+    visual: 묘포에서 선비가 묘목 뿌리를 젖은 짚과 천으로 감싸 묶고, 뒤에서 학생 몇이 묘목을 나른다
+    image_prompt: >-
+      The school nursery in early spring, the man in the middle of the frame seen from the waist up, carefully wrapping
+      the roots of a bundle of young hibiscus seedlings in damp straw and cloth and tying it with twine, his face calm
+      and focused.
+    characters: [seonbi]
+    extras: "two or three schoolchildren in simple white hanbok behind him carrying small bundles of seedlings, small and slightly out of focus"
+    motion_prompt: >-
+      He ties the twine around the wrapped roots with a firm pull; the children behind him carry seedlings along the rows.
+    camera: static
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 1933년, 조사원인 척 찾아온 일본 경찰에게 선비는 당당히 말했습니다."
+        captions: ["그런데 1933년", "조사원인 척 찾아온 / 일본 경찰에게", "선비는 당당히 말했습니다"]
+      - text: "사쿠라는 금방 지지만, 무궁화는 끝없이 핀다고 말이죠."
+        captions: ["사쿠라는 금방 지지만", "무궁화는 / 끝없이 핀다고 말이죠"]
+    visual: 묘포 앞, 선비가 무궁화 가지를 가리키며 당당하게 말하고, 뒤에 양복 차림 남자가 수첩을 들고 있다
+    image_prompt: >-
+      The school nursery with blooming hibiscus shrubs, the man in the middle of the frame seen from the waist up,
+      standing tall and pointing to a blooming hibiscus branch, speaking with calm, proud dignity.
+    characters: [seonbi]
+    extras: "one man in a dark 1930s western suit and hat behind him, holding a small notebook, partly turned away, slightly out of focus"
+    motion_prompt: >-
+      He points to the flowers and speaks calmly and proudly; the man behind him stops writing and looks up.
+    camera: static at eye level
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 선비는 붙잡혀 가고, 무궁화 동산은 불에 탔습니다."
+        captions: ["결국 선비는 붙잡혀 가고", "무궁화 동산은 / 불에 탔습니다"]
+    visual: 해 질 녘 학교 뒤뜰 묘포에서 연기가 피어오르고 작은 불길이 남아 있다 (사람 없음)
+    image_prompt: >-
+      The rural school nursery at dusk, rows of young hibiscus shrubs blackened, thin grey smoke rising and a few small
+      dying embers glowing on the ground, a quiet, sorrowful mood. No people.
+    motion_prompt: >-
+      Thin smoke drifts slowly upward and the last embers fade on the ground.
+    camera: slow pan
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "하지만 무궁화는 사라졌을까요? 이미 전국 곳곳에 심어진 뒤였죠."
+        captions: ["하지만 무궁화는 / 사라졌을까요?", "이미 전국 곳곳에 / 심어진 뒤였죠"]
+    visual: 여름 아침 시골 담장 너머로 무궁화가 활짝 피어 있다 (사람 없음)
+    image_prompt: >-
+      A low stone wall of a rural Korean village on a bright summer morning, tall hibiscus shrubs behind it in full
+      bloom with many pale pink-purple flowers, dew on the petals, warm hopeful sunlight. No people.
+    motion_prompt: >-
+      A soft breeze sways the blooming branches and sunlight glints on the dewy petals.
+    camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "무궁화를 몰래 퍼뜨린 이 선비가 바로, 한서 남궁억입니다."
+        captions: ["무궁화를 몰래 퍼뜨린 / 이 선비가", "바로, 한서 남궁억입니다"]
+      - text: "여러분이라면 무엇으로 우리 것을 지키셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 무엇으로", "우리 것을 지키셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 활짝 핀 무궁화 덤불 옆에 선비가 서서 꽃을 바라보며 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The man seen from the knees up in the middle of the frame, standing beside a tall hibiscus shrub in full bloom on
+      a summer afternoon, gently touching one flower and smiling with quiet pride. Soft blue sky. No other people.
+    characters: [seonbi]
+    motion_prompt: >-
+      The flowers sway in the breeze; he smiles at the blossom as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same man from the reference image, seen from the waist up in the middle of the
+          frame, standing beside the blooming hibiscus shrub. He smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other
+          people.
+        characters: [seonbi]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "한국민족문화대백과사전, 무궁화사건 (남궁억 1863~1939, 독립운동가·교육자·언론인, 무궁화 보급과 한글서체 보급, 홍천에 모곡학교 설립, 학생실습지에서 무궁화 묘목을 길러 전국 각지에 보냄, 1933년 일제가 불온사상 고취로 보고 교직원·목사·친척까지 체포하고 묘목 8만 주를 불태움, 1935년 병보석으로 풀려날 때까지 옥고) — https://encykorea.aks.ac.kr/Article/E0018951"
+  - "국가기록원 기록으로 만나는 대한민국 — 무궁화 (경술국치 뒤 고향 홍천 모곡리 보리울로 내려감, 60세에 초등학교 설립, 학교 뒤뜰에서 무궁화 묘목 약 7만 그루를 길러 몰래 나누어 줌, 무궁화 노래, 1933년 11월 2일 홍천경찰서 사법주임이 조사원을 가장해 찾아오자 무궁화가 국화임을 설명하다 체포, 학교 폐쇄·무궁화동산 소각, 일제가 무궁화를 뽑아 불태우고 '눈병 나는 꽃'·'부스럼꽃'이라 악선전, '사쿠라는 활짝 피었다가 곧 지지만 무궁화는 면연이 피어나는 것처럼 한국의 역사가 영원할 것') — https://theme.archives.go.kr/next/koreaOfRecord/mugunghwa.do"
+  - "국가기록원 e-기록속으로 제92호 (60세에 초등학교 설립, 학교 뒤뜰 7만 그루 무궁화 묘목을 몰래 나누어 줌, 체포·보리울학교 폐쇄·무궁화동산 소각) — https://theme.archives.go.kr/next/pages/new_newsletter/2017/html/vol_92/sub01.html"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가·교육자 남궁억(1863~1939, 호 한서). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'기가 막혔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 1910년 경술국치 뒤 고향 홍천으로 내려간 일은 국가기록원 기준. 실제로 내려간 해는 이보다 몇 해 늦다는 자료도 있어 대본은 '그 뒤'로만 쓴다. 화면의 신문은 연출."
+  - "s02 '눈병 나는 꽃' 악선전과 뽑아 불태운 일은 국가기록원 기준. 화면의 뽑힌 무궁화는 연출."
+  - "s04 '예순 무렵 학교'는 국가기록원 '60세에 초등학교 설립' 기준. 학교 이름(모곡학교·보리울학교)은 대본에 넣지 않는다."
+  - "s05 묘목 수: 국가기록원은 약 7만 그루를 길러 나누어 줌, 백과사전은 1933년 불태운 묘목 8만 주로 적는다. 대본은 국가기록원의 '칠만 그루'를 쓴다. '아이들과'는 학생실습지에서 길렀다는 백과사전 서술 기준."
+  - "s06 1933년(11월 2일) 홍천경찰서 사법주임이 조사원을 가장해 찾아온 일은 국가기록원 기준. '사쿠라는 금방 지지만 무궁화는 끝없이 핀다'는 국가기록원이 전하는 말(원문 '사쿠라는 활짝 피었다가 곧 지지만 무궁화는 면연이 피어나는…')을 줄여 옮긴 것이다."
+  - "s07 체포·무궁화동산 소각은 국가기록원·백과사전 기준. 옥고(1935년 병보석)는 사실이지만 고문 등은 대본·화면에 넣지 않는다. 화면은 사람 없는 연기만."
+  - "s08 '이미 전국 곳곳에 심어진 뒤였다'는 묘목을 전국 각지에 보냈다는 기록(백과사전·국가기록원)을 바탕으로 한 이야기 표현이다. 화면의 무궁화 담장은 연출."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 선비 한 명 중심, s05에 학생 2~3명, s06에 양복 차림 남자 한 명(뒤쪽). 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 일제가 뽑아내던 꽃, 시골 선비가 몰래 퍼뜨린 방법
+    - 학교 뒤뜰에서 칠만 그루가 자랐다
+    - "\"사쿠라는 금방 진다\" 일본 경찰 앞에서 한 말"
+  description: |-
+    🌸 나라꽃을 '눈병 나는 꽃'이라 헐뜯으며 뽑아낸다면… 여러분은 어떻게 하시겠어요?
+
+    1910년 나라를 빼앗긴 날, 서울의 한 선비는 고향 시골로 내려갑니다 🏞️
+    그리고 예순 무렵 학교를 세우더니… 그 뒤뜰에 몰래 꽃을 키우기 시작하죠 🌱
+    아이들과 기른 묘목이 무려 칠만 그루! 그런데 어느 날 '조사원'이 찾아오는데요? 🕵️
+
+    "사쿠라는 금방 지지만, 무궁화는 끝없이 핀다" 💜 이 선비의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 무엇으로 우리 것을 지키셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 무궁화, 한국사, 쇼츠]
