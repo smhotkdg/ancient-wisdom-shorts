@@ -2,7 +2,7 @@
 id: "051"
 style: photoreal
 slug: jeong-jeonghwa
-status: script_ok
+status: done
 working_title: 쌀 살 돈도 없던 임시정부, 스물한 살 며느리는 어떻게 돈을 구했을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["국경을 여섯 번", "넘은 며느리?"]
@@ -30,7 +30,7 @@ scenes:
       - text: "1920년 상하이, 스물한 살 며느리는 진땀을 뺐습니다."
         captions: ["1920년 상하이", "스물한 살 며느리는 / 진땀을 뺐습니다"]
       - text: "임시정부에 쌀 살 돈조차 없었거든요."
-        captions: ["임시정부에", "쌀 살 돈조차 없었거든요"]
+        captions: ["임시정부에", "쌀 살 돈조차 / 없었거든요"]
     visual: 상하이 셋방 부엌, 며느리가 텅 빈 쌀독 안을 들여다보고 굳은 얼굴로 숨을 고른다
     image_prompt: >-
       A small, bare rented kitchen in 1920s Shanghai with a brick stove and a large clay rice jar, the young woman seen
@@ -66,7 +66,7 @@ scenes:
     beat: question
     lines:
       - text: "총 한 자루 없는 며느리가, 이 국경을 어떻게 넘을까요?"
-        captions: ["총 한 자루 없는 며느리가", "이 국경을 어떻게 넘을까요?"]
+        captions: ["총 한 자루 / 없는 며느리가", "이 국경을 / 어떻게 넘을까요?"]
     visual: 밤, 작은 방 창가에서 며느리가 두 손을 모으고 결심한 눈빛으로 생각에 잠긴다
     image_prompt: >-
       A small rented room in Shanghai at night, the young woman seen from the waist up in the middle of the frame,
@@ -96,7 +96,7 @@ scenes:
     beat: solution
     lines:
       - text: "품속엔 아무것도 안 쓰인 듯한 하얀 종이 한 장, 백반물로 쓴 비밀 편지였죠."
-        captions: ["품속엔 아무것도 / 안 쓰인 듯한 하얀 종이 한 장", "백반물로 쓴 / 비밀 편지였죠"]
+        captions: ["품속엔 아무것도 / 안 쓰인 듯한", "하얀 종이 한 장", "백반물로 쓴 / 비밀 편지였죠"]
     visual: 며느리가 저고리 안쪽에서 아무 글씨도 없는 하얀 종이를 꺼내 살짝 펴 보고 다시 숨긴다
     image_prompt: >-
       A close medium shot of the young woman in the middle of the frame, seen from the chest up, carefully drawing a
@@ -172,7 +172,7 @@ scenes:
     beat: info
     lines:
       - text: "그렇게 국경을 넘나든 게 무려 여섯 번, 임시정부 살림까지 도맡았다고 합니다."
-        captions: ["그렇게 국경을 넘나든 게 / 무려 여섯 번", "임시정부 살림까지 / 도맡았다고 합니다"]
+        captions: ["그렇게 국경을 / 넘나든 게", "무려 여섯 번", "임시정부 살림까지 / 도맡았다고 합니다"]
     visual: 소박한 부엌 겸 방, 며느리가 김이 나는 밥그릇을 상에 올리고, 뒤에 나이 든 독립운동가 두 명이 앉아 있다
     image_prompt: >-
       A plain room with a small kitchen corner in a 1930s Chinese town, the woman, a few years older now, in the middle
@@ -189,7 +189,7 @@ scenes:
       - text: "임시정부의 안주인이라 불린 이 며느리가 바로, 독립운동가 정정화입니다."
         captions: ["임시정부의 안주인이라 / 불린 이 며느리가", "바로, 독립운동가 / 정정화입니다"]
       - text: "여러분이라면 검문에서 뭐라고 둘러대셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 검문에서", "뭐라고 둘러대셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 검문에서", "뭐라고 / 둘러대셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 강가 노을 속 며느리가 보따리를 들고 서서 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
