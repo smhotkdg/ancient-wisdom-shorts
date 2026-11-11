@@ -2,7 +2,7 @@
 id: "052"
 style: photoreal
 slug: namgung-eok
-status: script_ok
+status: done
 working_title: 일제가 뽑아내던 꽃, 시골 선비는 어떻게 지켰을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["뽑아내던 꽃을", "몰래 퍼뜨렸다고?"]
@@ -28,7 +28,7 @@ scenes:
     beat: hook
     lines:
       - text: "1910년 나라를 빼앗기던 날, 서울의 한 선비는 기가 막혔습니다."
-        captions: ["1910년 나라를 빼앗기던 날", "서울의 한 선비는 / 기가 막혔습니다"]
+        captions: ["1910년 나라를 / 빼앗기던 날", "서울의 한 선비는 / 기가 막혔습니다"]
       - text: "그 뒤 그는 서울을 떠나, 강원도 홍천의 고향 마을로 내려갔죠."
         captions: ["그 뒤 그는 서울을 떠나", "강원도 홍천의 / 고향 마을로 내려갔죠"]
     visual: 서울 기와집 마루에서 선비가 신문을 쥔 채 굳은 얼굴로 하늘을 본다 / 산골 길을 홀로 걸어 고향으로 향한다
@@ -54,7 +54,7 @@ scenes:
     beat: problem
     lines:
       - text: "일제는 우리 꽃 무궁화를 '눈병 나는 꽃'이라 헐뜯으며 뽑아냈습니다."
-        captions: ["일제는 우리 꽃 무궁화를", "'눈병 나는 꽃'이라 / 헐뜯으며 뽑아냈습니다"]
+        captions: ["일제는 우리 꽃 / 무궁화를", "'눈병 나는 꽃'이라 / 헐뜯으며 뽑아냈습니다"]
     visual: 길가 흙바닥에 뿌리째 뽑힌 무궁화 가지가 아무렇게나 버려져 있다 (사람 없음)
     image_prompt: >-
       A dusty roadside in 1920s rural Korea, several hibiscus syriacus shrubs with pale pink-purple flowers torn out by
@@ -82,7 +82,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 선비는 예순 무렵 학교를 세우고, 그 뒤뜰에 무궁화 묘목을 길렀습니다."
-        captions: ["그래서 선비는 / 예순 무렵 학교를 세우고", "그 뒤뜰에 / 무궁화 묘목을 길렀습니다"]
+        captions: ["그래서 선비는 / 예순 무렵", "학교를 세우고", "그 뒤뜰에 무궁화 / 묘목을 길렀습니다"]
     visual: 작은 시골 학교 뒤뜰 묘포, 선비가 무릎을 꿇고 어린 무궁화 묘목에 물을 준다
     image_prompt: >-
       The backyard nursery of a small rural village school with a simple wooden building behind, neat rows of young
@@ -105,7 +105,7 @@ scenes:
     beat: solution
     lines:
       - text: "그러자 아이들과 기른 묘목이 무려 칠만 그루, 몰래 전국으로 보내졌죠."
-        captions: ["그러자 아이들과 기른 묘목이 / 무려 칠만 그루", "몰래 전국으로 보내졌죠"]
+        captions: ["그러자 아이들과 / 기른 묘목이", "무려 칠만 그루", "몰래 전국으로 보내졌죠"]
     visual: 묘포에서 선비가 묘목 뿌리를 젖은 짚과 천으로 감싸 묶고, 뒤에서 학생 몇이 묘목을 나른다
     image_prompt: >-
       The school nursery in early spring, the man in the middle of the frame seen from the waist up, carefully wrapping
@@ -121,7 +121,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 1933년, 조사원인 척 찾아온 일본 경찰에게 선비는 당당히 말했습니다."
-        captions: ["그런데 1933년", "조사원인 척 찾아온 / 일본 경찰에게", "선비는 당당히 말했습니다"]
+        captions: ["그런데 1933년", "조사원인 척 찾아온 / 일본 경찰에게", "선비는 / 당당히 말했습니다"]
       - text: "사쿠라는 금방 지지만, 무궁화는 끝없이 핀다고 말이죠."
         captions: ["사쿠라는 금방 지지만", "무궁화는 / 끝없이 핀다고 말이죠"]
     visual: 묘포 앞, 선비가 무궁화 가지를 가리키며 당당하게 말하고, 뒤에 양복 차림 남자가 수첩을 들고 있다
@@ -138,7 +138,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 선비는 붙잡혀 가고, 무궁화 동산은 불에 탔습니다."
-        captions: ["결국 선비는 붙잡혀 가고", "무궁화 동산은 / 불에 탔습니다"]
+        captions: ["결국 선비는 / 붙잡혀 가고", "무궁화 동산은 / 불에 탔습니다"]
     visual: 해 질 녘 학교 뒤뜰 묘포에서 연기가 피어오르고 작은 불길이 남아 있다 (사람 없음)
     image_prompt: >-
       The rural school nursery at dusk, rows of young hibiscus shrubs blackened, thin grey smoke rising and a few small
@@ -166,7 +166,7 @@ scenes:
       - text: "무궁화를 몰래 퍼뜨린 이 선비가 바로, 한서 남궁억입니다."
         captions: ["무궁화를 몰래 퍼뜨린 / 이 선비가", "바로, 한서 남궁억입니다"]
       - text: "여러분이라면 무엇으로 우리 것을 지키셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 무엇으로", "우리 것을 지키셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 무엇으로", "우리 것을 / 지키셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 활짝 핀 무궁화 덤불 옆에 선비가 서서 꽃을 바라보며 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
