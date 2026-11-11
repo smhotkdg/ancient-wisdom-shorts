@@ -1,0 +1,239 @@
+# 053 주시경 — 보따리를 들고 학교를 뛰어다니며 우리 글에 '한글'이라는 이름을 붙인 청년 (독립운동가 편, 실사)
+id: "053"
+style: photoreal
+slug: ju-sigyeong
+status: script_ok
+working_title: "'나라 글'이라 부를 수도 없게 된 우리 글, 한 청년은 어떻게 지켰을까?"
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["이름을 빼앗긴 글에", "새 이름을 붙였다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [말문이 막혔습니다, 언문, 제각각, 교정, 책 보따리, 나라 글, 새 이름, 하나뿐인 글]
+
+story:
+  hero: 청년
+  reveal: [한글, 주시경, 주보따리]
+
+characters:
+  - id: youth
+    name: 청년
+    name_en: young Korean scholar of the 1900s
+    description: >-
+      a thin Korean man in his late 20s with an earnest, gentle face, bright intense eyes, short cropped black hair and
+      a faint thin moustache, wearing a plain white cotton durumagi coat over white hanbok, simple black cloth shoes,
+      ink stains on his fingertips, often carrying a bulging cloth bundle of books tied with a knot
+    note: 이야기 주인공. 1890년대~1914년 서울의 국어 연구자·교사, 우리 글에 '한글'이라는 이름을 붙인 것으로 알려진 인물 (마지막 대사 전까지 이름과 '한글'이라는 말을 쓰지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1896년 서울, 신문사의 한 청년은 말문이 막혔습니다."
+        captions: ["1896년 서울", "신문사의 한 청년은 / 말문이 막혔습니다"]
+      - text: "우리 글은 '언문'이라 낮춰 불리고, 적는 법도 사람마다 제각각이었거든요."
+        captions: ["우리 글은 '언문'이라 / 낮춰 불리고", "적는 법도 / 사람마다 제각각이었거든요"]
+    visual: 1890년대 신문사 작업실, 청년이 원고 여러 장을 비교하며 어이없다는 듯 이마를 짚는다
+    image_prompt: >-
+      A cramped 1890s newspaper office in Seoul with a wooden desk piled with handwritten manuscript sheets and proof
+      pages, the young man seen from the waist up in the middle of the frame, holding two sheets side by side and
+      pressing his other hand to his forehead in speechless frustration. All writing blurred and unreadable. No other
+      people.
+    characters: [youth]
+    motion_prompt: >-
+      He looks from one sheet to the other, shakes his head in disbelief and sets them down with a sigh.
+    camera: slow push in at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of two handwritten manuscript sheets side by side on a wooden desk, a finger pointing back and forth
+          between two blurred, unreadable words written differently. Only the hand is visible.
+        characters: [youth]
+        motion_prompt: >-
+          The finger moves back and forth between the two sheets and then taps the desk.
+        camera: macro static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "같은 말도 제멋대로 적으니, 신문 읽기도 쉽지 않았죠."
+        captions: ["같은 말도 제멋대로 적으니", "신문 읽기도 쉽지 않았죠"]
+    visual: 신문 한 장을 펼쳐 든 청년이 눈을 가늘게 뜨고 한 줄을 손가락으로 따라가며 갸웃한다
+    image_prompt: >-
+      The young man seen from the waist up in the middle of the frame, standing by a window in the newspaper office and
+      holding an open sheet of newsprint, squinting and tracing one line with his finger, tilting his head in
+      confusion. All print blurred and unreadable. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      His finger traces along a line, stops, goes back, and he tilts his head with a puzzled frown.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "가난한 청년 하나가, 이 글을 어떻게 바로 세울 수 있을까요?"
+        captions: ["가난한 청년 하나가", "이 글을 어떻게 / 바로 세울 수 있을까요?"]
+    visual: 밤, 작은 셋방에서 청년이 등잔불 아래 빈 종이를 앞에 두고 붓을 쥔 채 생각에 잠긴다
+    image_prompt: >-
+      A tiny rented room at night, the young man seen from the waist up in the middle of the frame, sitting at a low
+      desk under an oil lamp with a blank sheet of paper in front of him, a brush in his hand, deep in thought, then
+      his eyes lighting up. Plain paper wall behind him. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      The lamp flickers; he sits still, thinking, then dips the brush with sudden resolve.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 청년은 신문을 고치며, 적는 법을 맞추는 모임을 꾸렸습니다."
+        captions: ["그래서 청년은 신문을 고치며", "적는 법을 맞추는 / 모임을 꾸렸습니다"]
+    visual: 신문사 작은 방, 청년이 붓으로 원고에 고칠 표시를 하며 열심히 설명하고 뒤에 동료 두 명이 고개를 끄덕인다
+    image_prompt: >-
+      A small back room of the 1890s newspaper office, the young man in the middle of the frame seen from the waist up,
+      marking corrections on a manuscript sheet with a brush and explaining eagerly with his free hand, lamp light on
+      his face. All writing blurred and unreadable.
+    characters: [youth]
+    extras: "two young men in white hanbok sitting behind him, listening and nodding, small and slightly out of focus"
+    motion_prompt: >-
+      He marks a correction and explains with lively gestures; the two men behind him lean in and nod.
+    camera: static at eye level
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 이번엔 책 보따리를 들고, 이 학교 저 학교를 뛰며 가르쳤죠."
+        captions: ["그러자 이번엔 / 책 보따리를 들고", "이 학교 저 학교를 / 뛰며 가르쳤죠"]
+    visual: 1900년대 서울 골목, 청년이 불룩한 책 보따리를 옆구리에 끼고 바삐 걸어간다 / 교실 칠판 앞에서 열정적으로 가르친다
+    image_prompt: >-
+      A narrow street of old Seoul in the 1900s with tiled-roof houses, the young man in the middle of the frame seen
+      from the knees up, hurrying along with a bulging cloth bundle of books tucked under his arm, his coat flapping, an
+      eager, determined face. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      He strides quickly down the street, shifting the heavy book bundle under his arm and checking the sky.
+    camera: slow tracking backward at eye level
+    extra_clips:
+      - image_prompt: >-
+          A simple 1900s classroom with a small blackboard, the young man standing in the middle of the frame seen from
+          the waist up, a chalk in his hand, explaining with bright, passionate eyes, his book bundle open on the desk
+          beside him. The writing on the board is blurred and unreadable.
+        characters: [youth]
+        extras: "two or three students in white hanbok seated in the front row with their backs to the camera, small and out of focus"
+        motion_prompt: >-
+          He taps the blackboard with the chalk and turns toward the class with an excited smile.
+        camera: static
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 1910년 나라를 빼앗기자, 이제 '나라 글'이라 부를 수도 없게 됐습니다."
+        captions: ["그런데 1910년 / 나라를 빼앗기자", "이제 '나라 글'이라 / 부를 수도 없게 됐습니다"]
+    visual: 텅 빈 교실, 청년이 칠판 앞에 서서 굳은 얼굴로 분필을 내려놓는다
+    image_prompt: >-
+      An empty classroom in late afternoon light, the young man, a few years older, seen from the waist up in the middle
+      of the frame, standing before the blackboard and slowly putting down a piece of chalk, his face tight with quiet
+      grief. The board is blank. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      He sets the chalk down slowly and stares at the blank board in heavy silence.
+    camera: slow push in
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그래서 청년은 새 이름을 붙였습니다. 어떤 이름이었을까요?"
+        captions: ["그래서 청년은 / 새 이름을 붙였습니다", "어떤 이름이었을까요?"]
+      - text: "크고, 하나뿐인 글이라는 뜻을 담은 이름이었죠."
+        captions: ["크고, 하나뿐인 글이라는", "뜻을 담은 이름이었죠"]
+    visual: 등잔불 아래 청년이 붓으로 한지에 두 글자를 천천히 쓰고 (글자는 흐릿), 미소 지으며 종이를 들어 본다
+    image_prompt: >-
+      At night under an oil lamp, the young man seen from the waist up in the middle of the frame, holding up a sheet of
+      hanji paper he has just written on with a brush, looking at it with a slow, proud smile. The brush writing is soft
+      and unreadable. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      He lifts the sheet into the lamp light, studies it, and a slow proud smile spreads across his face.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a brush writing two large characters on hanji paper in lamp light, ink glistening, the strokes
+          soft and unreadable. Only the hand is visible.
+        characters: [youth]
+        motion_prompt: >-
+          The brush draws the last stroke slowly and lifts away.
+        camera: macro static
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "그는 이듬해 젊은 나이로 떠났지만, 제자들이 뜻을 이어 갔다고 합니다."
+        captions: ["그는 이듬해 / 젊은 나이로 떠났지만", "제자들이 뜻을 / 이어 갔다고 합니다"]
+    visual: 사람 없는 방, 낡은 책상 위에 책 보따리와 붓, 원고 더미가 놓여 있고 창으로 햇살이 든다
+    image_prompt: >-
+      A quiet empty study room in morning sunlight, an old wooden desk with a neatly tied cloth bundle of books, a brush
+      resting on an ink stone and a tall stack of handwritten manuscripts, dust floating in the light from the window.
+      All writing unreadable. No people.
+    motion_prompt: >-
+      Dust drifts slowly through the sunbeam and a corner of the top manuscript page lifts gently in a breeze.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "이것이 바로 '한글', 그 이름을 붙인 사람이 주보따리 주시경입니다."
+        captions: ["이것이 바로 '한글'", "그 이름을 붙인 사람이 / 주보따리 주시경입니다"]
+      - text: "여러분이 가장 좋아하는 한글 단어는 무엇인가요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이 가장 좋아하는 / 한글 단어는", "무엇인가요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 봄날 골목에서 청년이 책 보따리를 들고 서서 환하게 웃는다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young man seen from the knees up in the middle of the frame, standing in a sunny old Seoul street in spring
+      with his bulging book bundle under his arm, smiling brightly and warmly. Soft blue sky. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      A light breeze moves his coat; he smiles warmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young man from the reference image, seen from the waist up in the middle of
+          the frame, standing in the sunny street with his book bundle. He smiles warmly toward the viewer and holds one
+          open palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No
+          other people.
+        characters: [youth]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "국립국어원, '한글'이라는 이름 (한글이라는 이름을 처음 붙여 사용한 사람은 주시경인 듯함, 양반 사대부는 한글을 '언문'이라 낮잡아 부름, 개화기에는 '정음'·'국문', 주시경이 '배달말글 몯음'·'조선어 강습원'을 '한글모'·'한글배곧'으로 고침, 1913년 9월 『아이들보이』에 '한글풀이' 난) — https://www.korean.go.kr/hangeul/another/001.html"
+  - "주간경향 [우정 이야기] 우리말 체계화 '주시경 발자취' 우표 (1914년 7월 27일 만 37세 별세, 서울 여러 학교·강습소를 오가며 가르쳐 '주보따리' 별명, 1896년 독립신문 교정을 맡고 그해 신문사 안에 국문동식회를 꾸려 한글 표기 통일 연구, 『대한국어문법』 1906·『국어문법』 1910·『말의 소리』 1914, 『말모이』 편찬 참여) — https://weekly.khan.co.kr/article/202610140600051"
+  - "경향신문 (''한글'이란 명칭은 주시경 선생이 지은 것으로 알려져 있다', '한글'이란 단어가 처음 나온 것은 1913년 3월 23일 배달말글몯음(조선언문회) 창립총회 기록 「한글모 죽보기」) — https://www.khan.co.kr/article/201406162121475/amp"
+  - "서울시 미디어허브 (주시경은 한글을 '오직 하나뿐인 큰 글'이라고 말함) — https://mediahub.seoul.go.kr/archives/2012271"
+
+accuracy_notes:
+  - "주인공은 국어학자·교육자 주시경(1876~1914). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름과 '한글'이라는 말을 쓰지 않는다."
+  - "독립유공자 서훈 내역은 이번에 확인하지 못해 대본에 '독립운동가'라는 말을 넣지 않았다."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 1896년 독립신문 교정은 주간경향 기준. '언문'이라 낮춰 부른 것은 국립국어원 기준. '적는 법이 제각각'은 그가 표기 통일 연구 모임(국문동식회)을 꾸린 까닭을 이야기로 푼 표현이다."
+  - "s02 '신문 읽기도 쉽지 않았다'는 재구성이다."
+  - "s04 '적는 법을 맞추는 모임'은 국문동식회(1896, 주간경향). 이름은 대본에 넣지 않는다."
+  - "s05 여러 학교·강습소를 오가며 가르쳐 '주보따리'라 불렸다는 것은 주간경향 기준. 별명은 이름이 드러나므로 마지막 대사에서만 쓴다."
+  - "s06 1910년 뒤 '국어·국문'이 일본어·일본 글을 가리키게 된 당시 상황을 '나라 글이라 부를 수도 없게 됐다'로 쓴 이야기 표현이다."
+  - "s07 '한글' 이름: 국립국어원은 '처음 붙여 사용한 사람은 주시경인 듯하다', 경향신문은 '주시경이 지은 것으로 알려져 있다'고 적는다. 첫 기록은 1913년(「한글모 죽보기」·『아이들보이』). '크고 하나뿐인 글'은 서울시 미디어허브가 전하는 주시경의 말 '오직 하나뿐인 큰 글'을 바탕으로 한다. 이름의 정확한 어원 풀이는 여러 설이 있어 대본은 이 뜻만 쓴다."
+  - "s08 1914년 만 37세 별세(주간경향)를 '젊은 나이'로 쓴다. '제자들이 뜻을 이어 갔다'는 『말모이』 편찬과 뒤의 조선어학회 활동을 이야기로 줄인 표현이며 '했다고 합니다'로 쓴다. 화면은 사람 없는 방."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 청년 한 명 중심, s04에 동료 두 명, s05-2에 학생 2~3명(뒷모습). 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 이름을 빼앗긴 우리 글에, 한 청년이 붙인 새 이름
+    - 보따리 하나 들고 서울을 뛰어다닌 선생님
+    - 우리가 매일 쓰는 이 이름, 누가 지었을까?
+  description: |-
+    ✍️ 우리가 날마다 쓰는 이 글, 원래 이름은 뭐였을까요?
+
+    1896년 서울, 신문사의 한 청년은 말문이 막혔습니다 😵 같은 말도 사람마다 제멋대로 적었거든요!
+    그래서 책 보따리를 들고 이 학교 저 학교를 뛰어다니기 시작합니다 🎒💨
+    그런데 1910년, 나라를 빼앗기자 '나라 글'이라 부를 수도 없게 되는데요…?
+
+    그가 우리 글에 붙여 준 새 이름, 지금 여러분이 읽고 있는 바로 그 이름입니다 😉 정답은 영상 끝에서!
+  comment_question: 여러분이 가장 좋아하는 한글 단어는 무엇인가요? 여러분의 생각이 궁금합니다.
+  hashtags: [한글, 독립운동, 우리말, 한국사, 쇼츠]
