@@ -1,0 +1,235 @@
+# 050 방정환 — 아이를 '어린이'라 높여 부르고 어린이날을 연 청년 (독립운동가 편, 실사)
+id: "050"
+style: photoreal
+slug: bang-junghwan
+status: script_ok
+working_title: 총도 돈도 없는 청년은 어떻게 나라의 내일을 지켰을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["총도 돈도 없이", "나라의 내일을 지켰다고?"]
+hook: 넋이 나갔습니다
+caption_keywords: [넋이 나갔습니다, 새 이름, 어린이, 잡지, 모두가 봄이다, "1923년 5월 1일", "5월 5일"]
+
+story:
+  hero: 청년
+  reveal: [방정환, 어린이날]
+
+characters:
+  - id: youth
+    name: 청년
+    name_en: young Korean man of the 1920s
+    description: >-
+      a slightly stout Korean man in his early 20s with a round, friendly face, warm smiling eyes, short neatly combed
+      black hair, wearing a dark grey wool three-piece suit with a white shirt and a small dark bow tie, simple black
+      leather shoes
+    note: 이야기 주인공. 1919년 만세운동 뒤의 서울 청년, 뒤에 어린이 운동을 이끈 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1919년 만세 뒤, 서울의 한 청년은 넋이 나갔습니다."
+        captions: ["1919년 만세 뒤", "서울의 한 청년은 / 넋이 나갔습니다"]
+      - text: "신문을 몰래 찍다 붙잡혔지만, 세상은 그대로였거든요."
+        captions: ["신문을 몰래 찍다 / 붙잡혔지만", "세상은 그대로였거든요"]
+    visual: 1919년 서울 골목 돌계단에 청년이 힘없이 앉아 멍하니 앞을 본다 / 잉크 묻은 손가락으로 구겨진 인쇄 종이를 펴 본다
+    image_prompt: >-
+      A narrow alley of old Seoul in 1919 with tiled roofs and earthen walls, the young man sitting alone on a worn
+      stone step in the middle of the frame, seen from the knees up, shoulders slumped, staring blankly ahead with a
+      dazed, empty look, his suit slightly rumpled. Grey overcast sky. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      A cold wind moves dry leaves along the alley; he sits still, then slowly lowers his head and lets out a long breath.
+    camera: slow push in at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a young man's ink-stained fingers smoothing out a crumpled, roughly printed sheet of paper on his
+          knee, the printed characters blurred and unreadable. Only the hands are visible.
+        characters: [youth]
+        motion_prompt: >-
+          The fingers slowly smooth the crumpled paper flat, then stop and rest on it.
+        camera: macro static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "어른은 감시당하고, 아이는 '애'라며 낮춰 불리던 때였죠."
+        captions: ["어른은 감시당하고", "아이는 '애'라며 / 낮춰 불리던 때였죠"]
+    visual: 골목에서 청년이 무거운 짐을 지고 고개 숙여 지나가는 남루한 사내아이 하나를 안쓰럽게 바라본다
+    image_prompt: >-
+      The same 1920s Seoul alley, the young man standing in the middle of the frame seen from the waist up, turning to
+      watch with sad, gentle eyes as a small boy in shabby patched clothes walks past in front of him carrying a heavy
+      bundle of firewood on his back, the boy's head bowed. No other adults.
+    characters: [youth]
+    motion_prompt: >-
+      The small boy trudges past with the heavy bundle; the young man watches him go with a pained, gentle look.
+    camera: static
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "총도 돈도 없는 청년이, 나라의 내일을 지킬 방법은 없을까요?"
+        captions: ["총도 돈도 없는 청년이", "나라의 내일을 / 지킬 방법은 없을까요?"]
+    visual: 밤, 작은 방 등잔불 아래 청년이 책상에 팔을 괴고 깊이 생각에 잠긴다
+    image_prompt: >-
+      A small traditional room at night, the young man seen from the waist up in the middle of the frame, sitting at
+      a low wooden desk under an oil lamp, chin resting on his hand, lost in deep thought, then his eyes slowly
+      brightening. Plain paper wall behind him. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      The lamp flame flickers; he sits in thought, then slowly lifts his head as an idea comes to him.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 청년은 아이들에게 새 이름을 붙여 주었습니다."
+        captions: ["그래서 청년은 아이들에게", "새 이름을 붙여 주었습니다"]
+      - text: "늙은이, 젊은이처럼 높여 부르는 말, '어린이'였죠."
+        captions: ["늙은이, 젊은이처럼 / 높여 부르는 말", "'어린이'였죠"]
+    visual: 골목에서 청년이 무릎을 굽혀 사내아이와 눈높이를 맞추고 다정하게 웃으며 말을 건넨다
+    image_prompt: >-
+      The young man in the middle of the frame, crouching down to eye level with a small boy in patched clothes in
+      the alley, smiling warmly and speaking to him gently with one hand on his own knee; the boy looks back at him in
+      shy surprise. Soft morning light. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      He smiles and speaks gently; the boy's shy face slowly breaks into a small smile.
+    camera: static at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up at eye level of the young man's warm smiling face, crouching and looking kindly at someone just
+          below the camera, soft morning light on his round face. No other people.
+        characters: [youth]
+        motion_prompt: >-
+          He nods kindly and his smile grows warmer.
+        camera: static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 이번엔 어린이 잡지에, 재미와 우리 얼을 담았습니다."
+        captions: ["그러자 이번엔 / 어린이 잡지에", "재미와 우리 얼을 담았습니다"]
+    visual: 1920년대 인쇄소, 청년이 갓 찍은 얇은 잡지를 들고 넘겨 보며 뿌듯하게 웃는다 (글자는 흐릿)
+    image_prompt: >-
+      A small 1920s print shop with an old iron printing press and stacks of paper behind him, the young man seen from
+      the waist up in the middle of the frame, holding a freshly printed thin illustrated magazine with a simple
+      colorful cover and turning its pages with a proud, delighted smile; all printed text soft and unreadable. No
+      other people.
+    characters: [youth]
+    motion_prompt: >-
+      He turns a page, smiles at an illustration and gently taps it with his finger.
+    camera: slow push in
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 일제는 그의 글 속 '모두가 봄이다' 한 줄도 지웠습니다."
+        captions: ["그런데 일제는 그의 글 속", "'모두가 봄이다' / 한 줄도 지웠습니다"]
+      - text: "왜일까요? 봄을 독립으로 본 거죠."
+        captions: ["왜일까요?", "봄을 독립으로 본 거죠"]
+    visual: 붉은 먹을 묻힌 붓이 원고 위 한 줄을 굵게 그어 지운다 / 돌려받은 원고를 보던 청년이 쓴웃음을 짓는다
+    image_prompt: >-
+      Close-up of a handwritten manuscript page on a wooden desk, a brush loaded with red ink drawing a thick line
+      through one row of writing, the handwriting blurred and unreadable. Only the hand holding the brush is visible,
+      in a dark official sleeve.
+    motion_prompt: >-
+      The red brush slowly drags a thick line across the row of writing and lifts away, leaving the red mark.
+    camera: macro static
+    extra_clips:
+      - image_prompt: >-
+          The young man seen from the waist up in the middle of the frame, sitting at his desk holding a returned
+          manuscript page marked with thick red lines, looking at it with a wry, bitter half-smile. Plain wall behind
+          him. No other people.
+        characters: [youth]
+        motion_prompt: >-
+          He looks at the red-lined page, shakes his head slightly and gives a wry half-smile.
+        camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그래도 청년은 1923년 5월 1일, 어린이를 위한 날을 열었습니다."
+        captions: ["그래도 청년은 / 1923년 5월 1일", "어린이를 위한 날을 / 열었습니다"]
+    visual: 봄날 거리, 청년이 환하게 웃으며 아이들에게 작은 종이 전단을 나눠 준다
+    image_prompt: >-
+      A bright spring street of 1920s Seoul with blossoming trees, the young man in the middle of the frame, seen from
+      the knees up, beaming and handing out small printed paper leaflets with blurred unreadable text.
+    characters: [youth]
+    extras: "two or three small children in simple hanbok behind him reaching for the leaflets and smiling"
+    motion_prompt: >-
+      He hands a leaflet to a child with a big smile; petals drift through the warm spring air.
+    camera: static at eye level
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "일제는 결국 이 날을 막았지만, 해방 이듬해 5월 5일로 돌아왔죠."
+        captions: ["일제는 결국 이 날을 막았지만", "해방 이듬해 / 5월 5일로 돌아왔죠"]
+    visual: 사람 없는 봄날 골목, 줄에 매단 색종이 띠가 바람에 나부낀다
+    image_prompt: >-
+      An empty old Seoul alley on a sunny spring morning, a rope strung between two tiled-roof houses with colorful
+      paper streamers fluttering in the breeze, petals on the ground, warm hopeful light. No people.
+    motion_prompt: >-
+      The paper streamers flutter in the breeze and a few petals drift down through the sunlight.
+    camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "아이를 '어린이'라 부른 이 청년이 바로 방정환, 그 날이 오늘의 어린이날입니다."
+        captions: ["아이를 '어린이'라 / 부른 이 청년이", "바로 방정환", "그 날이 오늘의 / 어린이날입니다"]
+      - text: "여러분이라면 아이들에게 어떤 이름을 붙여 주셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 아이들에게", "어떤 이름을 붙여 주셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 봄날 꽃나무 아래 청년이 잡지를 가슴에 안고 환하게 웃는다 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young man seen from the knees up in the middle of the frame, standing under a blossoming tree on a spring
+      afternoon, holding the thin magazine to his chest with a warm, bright smile. Soft blue sky. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      Petals drift down around him; he smiles warmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young man from the reference image, seen from the waist up in the middle of
+          the frame, standing under the blossoming tree. He smiles warmly toward the viewer and holds one open palm out
+          at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [youth]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "서울시 미디어허브, 최초의 어린이날은 5월 1일...어쩌다 그날로 정해졌을까? (1922년 5월 1일 천도교소년회 어린이날 선창, 1923년 5월 1일 조선소년운동협회 주최 첫 기념식, '어린이'는 방정환이 1920년 『개벽』에 「어린이 노래」를 번역 소개하며 사용 — 늙은이·젊은이와 대등한 뜻, 1937년 일제 탄압으로 금지, 해방 뒤 1946년 5월 5일로 부활) — https://mediahub.seoul.go.kr/archives/2011049"
+  - "국가기록원 '사진! 대한민국' 어린이 (1922 천도교소년회 선포, 1923 조선소년운동협회 제정, 메이데이와 겹쳐 1928년부터 5월 첫째 일요일, 1937년 소년단체 해산으로 중단, 1946년 5월 첫째 일요일이 5월 5일이어서 5월 5일로 정함, 1975년 공휴일) — https://theme.archives.go.kr//next/photo/child.do"
+  - "문화체육관광부 대학생기자단, 방정환 (3·1운동 때 '조선독립신문'을 인쇄·배포, 잡지 『어린이』에 재미와 민족정신을 담음, 일제가 소설 「유범」의 '모도가 봄이다' 구절을 독립을 암시한다며 삭제) — https://www.mcst.go.kr/site/s_policy/comm/studentNews/studentNewsView.jsp?pSeq=5011"
+  - "한국학중앙연구원 디지털인문학 교육 위키, 방정환 (1919년 3·1운동 때 배포하다 체포, 일주일 만에 풀려남, 1923년 3월 『어린이』 창간) — https://dh.aks.ac.kr/Edu/wiki/index.php/%EB%B0%A9%EC%A0%95%ED%99%98"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 방정환(1899~1931). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '신문을 몰래 찍다 붙잡혔다'는 문체부(조선독립신문 인쇄·배포)와 한국학중앙연구원 위키(배포하다 체포, 일주일 만에 석방) 기준. 고문 서술은 대본·화면에 넣지 않는다."
+  - "s02 '아이들을 낮춰 부르던 시절'은 '어린이'가 늙은이·젊은이와 대등한 높임의 뜻이었다는 서울시 설명을 바탕으로 한 재구성. 무거운 짐을 진 아이는 연출이다."
+  - "s04 '어린이'라는 말: 서울시 미디어허브는 방정환이 1920년 처음 사용했다고 적지만 그 전 용례가 있다는 견해도 있어, 대본은 '처음 만들었다' 대신 '새 이름을 붙여 주었다·높여 부른'으로 쓴다."
+  - "s05 잡지 『어린이』(1923년 3월 창간)는 대본에서 '어린이 잡지'로만 쓴다."
+  - "s06 삭제된 구절은 문체부 기사 기준으로 소설 「유범」의 '모도가 봄이다'(대본은 현대어 '모두가 봄이다'). 『어린이』에 실린 글인지는 확인하지 않았으므로 '그의 글'로 쓴다. 붉은 먹으로 긋는 화면은 검열을 보여 주는 연출."
+  - "s07 1923년 5월 1일 첫 기념식은 조선소년운동협회 주최(방정환 등). '청년이 열었다'는 그 중심 인물이라는 뜻으로 쓴 이야기 표현이며, accuracy 상 단독 행사가 아니다. 전단을 나누는 화면은 당시 전단 배포(서울시 기사: 「어린이날의 약속」 12만 장)를 바탕으로 한 연출."
+  - "s08 1937년 금지, 1946년 5월 5일 부활은 서울시·국가기록원 기준. 방정환은 1931년에 세상을 떠났으므로 1946년 화면에 등장시키지 않는다."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 청년 한 명 중심, s02·s04에 아이 한 명, s07에 아이 2~3명. 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 총도 돈도 없는 청년이 나라의 내일을 지킨 방법
+    - 일제가 '봄'이라는 한 줄까지 지운 이유
+    - 아이들에게 새 이름을 붙여 준 청년, 누구일까?
+  description: |-
+    🌸 총도 돈도 없는 청년이 나라를 지킬 수 있을까요?
+
+    1919년, 몰래 신문을 찍다 붙잡혔다 풀려난 서울의 한 청년 😶
+    그가 고른 무기는 뜻밖에도… 아이들에게 붙여 준 '새 이름'이었습니다 ✨
+    그런데 일제는 그의 글에서 "모두가 봄이다" 한 줄까지 지워 버렸다는데요? 🖌️
+
+    우리가 해마다 쉬는 그 날, 사실 이 청년이 시작했습니다 🎈 그의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 아이들에게 어떤 이름을 붙여 주셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 어린이날, 한국사, 쇼츠]
