@@ -2,7 +2,7 @@
 id: "049"
 style: photoreal
 slug: yun-heesun
-status: script_ok
+status: done
 working_title: 여자라서 싸울 수 없던 시절, 한 며느리는 어떻게 의병을 일으켰을까?
 show_title: false        # 049부터 화면 제목 없음 + 위쪽 30% 구도 제약 없음 (2026-11-10 사용자)
 title_lines: ["총 대신 노래로", "의병을 모았다고?"]
@@ -30,7 +30,7 @@ scenes:
       - text: "1895년, 춘천의 한 며느리는 속이 터졌습니다."
         captions: ["1895년 춘천의 / 한 며느리는", "속이 터졌습니다"]
       - text: "나라가 위태로운데, 여자라는 이유로 아무것도 할 수 없었거든요."
-        captions: ["나라가 위태로운데", "여자라는 이유로 / 아무것도 할 수 없었거든요"]
+        captions: ["나라가 위태로운데", "여자라는 이유로 / 아무것도", "할 수 없었거든요"]
     visual: 초가 마당, 며느리가 빨래 방망이를 쥔 채 산 너머로 떠나는 의병 행렬 쪽을 바라보며 주먹을 쥔다
     image_prompt: >-
       The yard of a thatched-roof farmhouse in the Korean countryside in late autumn, the woman seen from the waist up
@@ -52,7 +52,7 @@ scenes:
     beat: problem
     lines:
       - text: "남장을 하고 의병을 따라나서려 했지만, 그마저 쉽지 않았죠."
-        captions: ["남장을 하고 / 의병을 따라나서려 했지만", "그마저 쉽지 않았죠"]
+        captions: ["남장을 하고 / 의병을 따라나서려", "했지만", "그마저 쉽지 않았죠"]
     visual: 방 안, 남자 두루마기를 걸쳐 보던 며느리가 잠든 아이를 돌아보고 천천히 옷을 내려놓는다
     image_prompt: >-
       Inside a dim traditional room, the woman seen from the waist up in the middle of the frame, holding a man's plain
@@ -67,7 +67,7 @@ scenes:
     beat: question
     lines:
       - text: "총 대신, 여자가 할 수 있는 싸움은 없을까요?"
-        captions: ["총 대신", "여자가 할 수 있는 싸움은 / 없을까요?"]
+        captions: ["총 대신", "여자가 할 수 있는 / 싸움은 없을까요?"]
     visual: 등잔불 아래 며느리가 앉아 손을 모으고 깊이 생각에 잠긴다
     image_prompt: >-
       The woman seen from the waist up in the middle of the frame, sitting on the floor of the room at night under an
@@ -82,7 +82,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 며느리는 붓을 들어, 한글로 노래를 지었습니다."
-        captions: ["그래서 며느리는 붓을 들어", "한글로 노래를 지었습니다"]
+        captions: ["그래서 며느리는 / 붓을 들어", "한글로 노래를 / 지었습니다"]
     visual: 낮은 상 위 한지에 며느리가 붓으로 한글을 써 내려간다 (글자는 흐릿하게)
     image_prompt: >-
       The woman seated at a low wooden table, seen from the waist up in the middle of the frame, writing on a sheet of
@@ -108,8 +108,9 @@ scenes:
         captions: ["아낙들도 나라를 / 지키자는 노래", "무려 여덟 편이 넘었죠"]
     visual: 며느리가 다 쓴 노래 종이 여러 장을 가지런히 모아 들고 조용히 읽어 본다
     image_prompt: >-
-      The woman seen from the waist up in the middle of the frame, holding a neat stack of several handwritten song
-      sheets on hanji paper, reading the top one quietly with a determined look. No readable text. Plain wall above her.
+      The woman seen from the waist up in the middle of the frame, holding a fan of several handwritten song
+      sheets on hanji paper raised up at shoulder height beside her face, so the sheets sit in the upper half of the
+      frame, reading the top one quietly with a determined look. No readable text. Plain wall above her.
       No other people.
     characters: [heesun]
     motion_prompt: >-
@@ -135,7 +136,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 노래만 부른 게 아니었습니다. 여인들은 무엇을 했을까요?"
-        captions: ["그런데 노래만 / 부른 게 아니었습니다", "여인들은 무엇을 했을까요?"]
+        captions: ["그런데 노래만 / 부른 게 아니었습니다", "여인들은 / 무엇을 했을까요?"]
     visual: 밤, 며느리가 등잔불 아래 작은 엽전 꾸러미를 두 손에 받아 든다
     image_prompt: >-
       At night under an oil lamp, the woman seen from the waist up in the middle of the frame, receiving a small cloth
@@ -165,7 +166,7 @@ scenes:
     beat: info
     lines:
       - text: "그 뒤 만주로 건너가서도, 학교를 세워 독립운동가를 길러 냈다고 합니다."
-        captions: ["그 뒤 만주로 건너가서도", "학교를 세워 독립운동가를 / 길러 냈다고 합니다"]
+        captions: ["그 뒤 만주로 / 건너가서도", "학교를 세워 / 독립운동가를", "길러 냈다고 합니다"]
     visual: 만주 들판의 소박한 흙벽 교실, 며느리가 칠판 앞에 서서 조용히 미소 짓는다
     image_prompt: >-
       A simple earthen-walled classroom on a wide Manchurian plain with low wooden benches, the woman, now older with a
@@ -180,9 +181,9 @@ scenes:
     beat: info
     lines:
       - text: "노래로 여인들을 일으킨 이 사람이 바로, 최초의 여성 의병장 윤희순입니다."
-        captions: ["노래로 여인들을 일으킨 / 이 사람이", "바로, 최초의 여성 의병장 / 윤희순입니다"]
+        captions: ["노래로 여인들을 일으킨 / 이 사람이", "바로, 최초의 / 여성 의병장", "윤희순입니다"]
       - text: "여러분이라면 어떤 노래로 사람들의 마음을 모으셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 어떤 노래로 / 사람들의 마음을", "모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 어떤 노래로", "사람들의 마음을", "모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 들판에서 며느리가 노래 종이를 가슴에 안고 조용히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
@@ -201,6 +202,10 @@ scenes:
         motion_prompt: >-
           She smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
         camera: slow push in
+
+redo:
+  reason: "s05 노래 종이(여덟 편)가 노란 선 아래 자막 영역에 들어가 가려짐 — 종이를 어깨 높이로 올림"
+  images: [s05]
 
 sources:
   - "한국교육신문 [라이프&역사] 우리나라 최초의 여성 의병장, 윤희순 (1860~1935, 1875년 춘천 의병장 유홍석의 장남 유제원과 혼인, 한글로 된 의병가 8편 이상 — 여성에게 항일운동에 나서라고 촉구, 1907년 정미의병 때 여성 76명에게서 군자금 355냥, 30여 명의 춘천 여성 의병부대 — 군량 모집·식사·군복 제작·부상병 구호, 1912년 만주로 건너가 환인현에 노학당을 세워 독립운동가를 기름, 1983년 대통령 표창·1990년 건국훈장 애족장) — https://hangyo.com/mobile/article.html?no=103090"
