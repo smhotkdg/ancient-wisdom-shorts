@@ -1,0 +1,249 @@
+# 051 정정화 — 비밀 편지를 품고 국경을 여섯 번 넘은 임시정부의 며느리 (독립운동가 편, 실사)
+id: "051"
+style: photoreal
+slug: jeong-jeonghwa
+status: script_ok
+working_title: 쌀 살 돈도 없던 임시정부, 스물한 살 며느리는 어떻게 돈을 구했을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["국경을 여섯 번", "넘은 며느리?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [진땀을 뺐습니다, 쌀 살 돈, 하얀 편지, 백반물, 검문, 친정, 여섯 번]
+
+story:
+  hero: 며느리
+  reveal: [정정화, 안주인]
+
+characters:
+  - id: jj
+    name: 며느리
+    name_en: young Korean woman of the 1920s
+    description: >-
+      a slim young Korean woman of about 21 with a calm, intelligent face, bright alert eyes and a gentle closed-mouth
+      smile, black hair parted in the middle and pinned in a neat low bun, wearing a plain white cotton jeogori with a
+      long black skirt reaching the ankles, simple black cloth shoes, a small dark cloth bundle in hand
+    note: 이야기 주인공. 1920년 상하이 대한민국 임시정부로 망명한 김가진의 며느리, 뒤에 임시정부의 안살림을 맡은 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1920년 상하이, 스물한 살 며느리는 진땀을 뺐습니다."
+        captions: ["1920년 상하이", "스물한 살 며느리는 / 진땀을 뺐습니다"]
+      - text: "임시정부에 쌀 살 돈조차 없었거든요."
+        captions: ["임시정부에", "쌀 살 돈조차 없었거든요"]
+    visual: 상하이 셋방 부엌, 며느리가 텅 빈 쌀독 안을 들여다보고 굳은 얼굴로 숨을 고른다
+    image_prompt: >-
+      A small, bare rented kitchen in 1920s Shanghai with a brick stove and a large clay rice jar, the young woman seen
+      from the waist up in the middle of the frame, lifting the wooden lid and staring into the nearly empty jar with a
+      tense, worried face. Dim window light. No other people.
+    characters: [jj]
+    motion_prompt: >-
+      She lifts the lid, looks into the empty jar, swallows hard and slowly sets the lid back down.
+    camera: slow push in at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a clay rice jar seen from above, only a few grains of rice left at the bottom, a slender young
+          woman's hand holding a small wooden scoop over it. Only the hand is visible.
+        characters: [jj]
+        motion_prompt: >-
+          The scoop scrapes the bottom of the jar and lifts only a few grains.
+        camera: macro static
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "돈은 조선에 있었지만, 국경엔 일본 경찰이 지키고 있었죠."
+        captions: ["돈은 조선에 있었지만", "국경엔 일본 경찰이 / 지키고 있었죠"]
+    visual: 안개 낀 압록강 철교 입구, 검문소 등불만 켜진 쓸쓸한 풍경 (사람 없음)
+    image_prompt: >-
+      The entrance of a long iron railway bridge over a wide river at dusk in the 1920s, a small guard post with a
+      single lit lantern and a closed wooden barrier, mist over the water, a cold and tense mood. No people.
+    motion_prompt: >-
+      Mist drifts slowly over the river and the lantern light flickers by the barrier.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "총 한 자루 없는 며느리가, 이 국경을 어떻게 넘을까요?"
+        captions: ["총 한 자루 없는 며느리가", "이 국경을 어떻게 넘을까요?"]
+    visual: 밤, 작은 방 창가에서 며느리가 두 손을 모으고 결심한 눈빛으로 생각에 잠긴다
+    image_prompt: >-
+      A small rented room in Shanghai at night, the young woman seen from the waist up in the middle of the frame,
+      sitting by a window with her hands folded in her lap, thinking hard, then her eyes settling with quiet resolve.
+      Soft lamp light on her face. No other people.
+    characters: [jj]
+    motion_prompt: >-
+      She sits in thought by the window, then slowly lifts her chin with a determined look.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 며느리는 무역회사 배를 타고, 평범한 여인처럼 국경을 넘었습니다."
+        captions: ["그래서 며느리는 / 무역회사 배를 타고", "평범한 여인처럼 / 국경을 넘었습니다"]
+    visual: 1920년대 화물선 갑판, 며느리가 작은 보따리를 들고 난간 옆에 서서 수평선을 본다
+    image_prompt: >-
+      The deck of a small 1920s cargo steamship on a grey sea, the young woman standing at the rail in the middle of
+      the frame, seen from the knees up, holding a small dark cloth bundle, looking calmly toward the horizon, wind in
+      her skirt. No other people visible.
+    characters: [jj]
+    motion_prompt: >-
+      The ship rocks gently, smoke trails from the funnel, and wind moves her skirt as she gazes ahead.
+    camera: slow pull back at eye level
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "품속엔 아무것도 안 쓰인 듯한 하얀 종이 한 장, 백반물로 쓴 비밀 편지였죠."
+        captions: ["품속엔 아무것도 / 안 쓰인 듯한 하얀 종이 한 장", "백반물로 쓴 / 비밀 편지였죠"]
+    visual: 며느리가 저고리 안쪽에서 아무 글씨도 없는 하얀 종이를 꺼내 살짝 펴 보고 다시 숨긴다
+    image_prompt: >-
+      A close medium shot of the young woman in the middle of the frame, seen from the chest up, carefully drawing a
+      folded sheet of completely blank white paper from inside her jeogori, unfolding it slightly and glancing at it
+      with a secretive look. The paper shows no writing at all. No other people.
+    characters: [jj]
+    motion_prompt: >-
+      She glances around, unfolds the blank paper a little, then folds it and tucks it back inside her jeogori.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a sheet of completely blank white paper held in a young woman's fingers in warm lamp light, no
+          visible writing at all. Only the hands are visible.
+        characters: [jj]
+        motion_prompt: >-
+          The fingers tilt the blank paper slightly in the lamp light; nothing appears on it.
+        camera: macro static
+
+  - id: s06
+    beat: solution
+    lines:
+      - text: "그러자 서울에 숨어든 스무 날 남짓, 독립 자금이 모였습니다."
+        captions: ["그러자 서울에 숨어든 / 스무 날 남짓", "독립 자금이 모였습니다"]
+    visual: 서울의 한옥 방, 며느리가 등잔불 아래 지폐 묶음을 보자기에 단단히 싸 맨다
+    image_prompt: >-
+      A quiet room in a Seoul hanok at night, the young woman seen from the waist up in the middle of the frame,
+      kneeling on the floor under an oil lamp and tying a few bundles of old paper money tightly inside a dark cloth
+      wrapper, her face focused and quietly hopeful. Paper door behind her. No other people.
+    characters: [jj]
+    motion_prompt: >-
+      She places the last bundle of money, ties the cloth wrapper firmly and lets out a small relieved breath.
+    camera: slow push in
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "그런데 한번은 압록강 철교 검문에 딱 걸렸습니다. 이번엔 어떻게 빠져나갔을까요?"
+        captions: ["그런데 한번은 / 압록강 철교 검문에", "딱 걸렸습니다", "이번엔 어떻게 / 빠져나갔을까요?"]
+    visual: 철교 검문소, 며느리가 보따리를 든 채 멈춰 서고, 뒤쪽에 제복 경찰 한 명이 손을 들어 막는다
+    image_prompt: >-
+      At the guard post of an iron railway bridge in the 1920s, the young woman in the middle of the frame, seen from
+      the knees up, stopping still with her cloth bundle held close, her face calm on the surface but her eyes tense.
+    characters: [jj]
+    extras: "one police officer in a dark 1920s uniform and peaked cap behind her, partly turned away, raising a hand to stop her"
+    motion_prompt: >-
+      She stops at the barrier; the officer behind her raises his hand; she holds the bundle closer and steadies her breath.
+    camera: static at eye level
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "며느리는 상하이 살기가 힘들어 친정에 가는 길이라고, 태연하게 둘러댔죠."
+        captions: ["며느리는 / 상하이 살기가 힘들어", "친정에 가는 길이라고 / 태연하게 둘러댔죠"]
+    visual: 며느리가 지친 듯 한숨 쉬는 표정을 지어 보이며 차분하게 말하고, 이어 몰래 안도하는 얼굴
+    image_prompt: >-
+      The young woman in the middle of the frame, seen from the waist up at the bridge guard post, putting on a tired,
+      homesick expression and speaking calmly with a small sigh, one hand resting on her cloth bundle. Lantern light,
+      misty river in the soft background. No other faces visible.
+    characters: [jj]
+    motion_prompt: >-
+      She speaks calmly with a weary sigh, then gives a small polite bow, and a flicker of relief crosses her face.
+    camera: static
+    extra_clips:
+      - image_prompt: >-
+          The young woman walking across a long iron railway bridge in early morning mist, seen from the knees up in the
+          middle of the frame, holding her cloth bundle, a tiny relieved smile on her face. No other people.
+        characters: [jj]
+        motion_prompt: >-
+          She walks steadily forward across the bridge as the mist drifts around her, smiling slightly.
+        camera: slow tracking backward at eye level
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "그렇게 국경을 넘나든 게 무려 여섯 번, 임시정부 살림까지 도맡았다고 합니다."
+        captions: ["그렇게 국경을 넘나든 게 / 무려 여섯 번", "임시정부 살림까지 / 도맡았다고 합니다"]
+    visual: 소박한 부엌 겸 방, 며느리가 김이 나는 밥그릇을 상에 올리고, 뒤에 나이 든 독립운동가 두 명이 앉아 있다
+    image_prompt: >-
+      A plain room with a small kitchen corner in a 1930s Chinese town, the woman, a few years older now, in the middle
+      of the frame seen from the waist up, setting steaming bowls of rice on a low table with a warm, tired smile.
+    characters: [jj]
+    extras: "two elderly Korean men in simple worn suits sitting at the table behind her, small and slightly out of focus"
+    motion_prompt: >-
+      Steam rises from the bowls as she sets the last one down; the elderly men behind her nod in thanks.
+    camera: static
+
+  - id: s10
+    beat: info
+    lines:
+      - text: "임시정부의 안주인이라 불린 이 며느리가 바로, 독립운동가 정정화입니다."
+        captions: ["임시정부의 안주인이라 / 불린 이 며느리가", "바로, 독립운동가 / 정정화입니다"]
+      - text: "여러분이라면 검문에서 뭐라고 둘러대셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 검문에서", "뭐라고 둘러대셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 강가 노을 속 며느리가 보따리를 들고 서서 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young woman seen from the knees up in the middle of the frame, standing on a riverbank at sunset with her
+      cloth bundle in hand, a calm, quietly proud smile. Soft golden sky. No other people.
+    characters: [jj]
+    motion_prompt: >-
+      Wind moves her skirt; she smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young woman from the reference image, seen from the waist up in the middle
+          of the frame, standing on the riverbank at sunset. She smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other
+          people.
+        characters: [jj]
+        motion_prompt: >-
+          She smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "국립대한민국임시정부기념관 웹진, 회고록을 통해 본 여성 독립운동의 현황 (자금 모집을 위한 국내 잠입 1931년까지 6차례, 1920년 3월 첫 잠입은 법무총장 신규식의 지시, 연통제 이용, 백반물로 쓴 암호편지를 지니고 들어감, 3차 잠입 때 신의주에서 체포, 압록강 철교 검문에 걸렸으나 상하이 생활이 힘들어 친정으로 돌아가려던 길이라고 둘러대 위기를 넘김, 이동녕·김구 등 연로한 국무위원을 돌본 임시정부 '안주인') — https://www.nmkpg.go.kr/webzine/story/cn.do?rid=257"
+  - "월간 독립기념관 2020년 4월호, 대한민국 임시정부 안살림꾼 정정화와 이를 도운 김의한 (첫 잠입 때 이륭양행 배편으로 단둥 도착, 신의주를 거쳐 서울, 자산가들이 만남을 꺼려 모금이 쉽지 않았음, 2001년 '8월의 독립운동가', 회고록 『녹두꽃』·『장강일기』) — https://www.i815.or.kr/upload/kr/magazine/magazine/40/post-425.html"
+  - "매일노동뉴스 [독립운동가 열전 ⑯] 정정화 (여섯 차례 국내 잠입, 첫 잠입 때 이륭양행 배로 안동 도착, 서울에서 약 20일간 모금 뒤 4월 초 상하이 귀환, 3차 잠입 때 압록강 철교에서 체포) — https://www.labortoday.co.kr/news/articleView.html?idxno=158781"
+  - "경향신문 (1900~1991, 10여 년 동안 자금 모금책·연락책, 여성은 감시를 덜 받는다는 점을 이용, 1982년 건국훈장 애족장) — https://www.khan.co.kr/article/201902161523001"
+  - "아주경제 [임시정부의 맏며느리 수당 정정화②] (스물한 살 며느리, 상하이 도착 한 달쯤 뒤 임시정부 자금 부족을 알고 국내 잠입을 자청, 신규식이 밀사 임무를 줌) — https://www.ajunews.com/view/20180327080519601"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 정정화(1900~1991), 1982년 건국훈장 애족장(경향신문). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '스물한 살 며느리'는 아주경제 연재 제목 기준(1900년생, 1920년 망명). '쌀 살 돈조차 없었다'는 임시정부가 빈궁했다는 기념관 설명을 이야기로 푼 재구성이며, 빈 쌀독 화면은 연출이다."
+  - "s02 '일본 경찰이 지키고'는 국경 감시를 이야기로 푼 표현이다."
+  - "s04 '무역회사 배'는 첫 잠입 때의 이륭양행 배편(월간 독립기념관·매일노동뉴스). 매일노동뉴스는 압록강을 건널 때 최석순의 누이로 꾸몄다고 적는데, 대본은 '평범한 여인처럼'으로만 쓴다. 이륭양행 이름은 037편과 겹치지 않게 대본에 넣지 않는다."
+  - "s05 백반물로 쓴 암호편지는 임시정부기념관 웹진 기준. 글씨를 드러내는 방법은 대본·화면에 넣지 않는다 (화면은 아무것도 안 쓰인 종이만)."
+  - "s06 '스무 날 남짓' 모금은 매일노동뉴스(첫 잠입, 약 20일). 첫 잠입 때 모금이 쉽지 않아 일가의 도움을 받았다는 기록(월간 독립기념관)도 있어 '모였다'는 결과만 쓴다."
+  - "s07~s08 압록강 철교 검문에서 '상하이 생활이 힘들어 친정에 가는 길'이라고 둘러댄 일은 임시정부기념관 웹진 기준. 몇 번째 잠입 때인지는 쓰지 않고 '한번은'으로 쓴다. 실제 말은 간접 화법으로만 옮겼다."
+  - "3차 잠입 때 체포되어 고초를 겪은 일은 사실이지만 대본·화면에 넣지 않는다."
+  - "s09 국내 잠입 6차례(1931년까지)는 임시정부기념관 웹진·매일노동뉴스 기준. 월간 독립기념관은 횟수 표기가 엇갈린다. 임시정부 살림(연로한 국무위원 수발)은 '했다고 합니다'로 쓴다. 공식 직책은 없었다(기념관 웹진)."
+  - "s10 '임시정부의 안주인'은 임시정부기념관 웹진·경향신문 표현 기준."
+  - "s10 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s10-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 며느리 한 명 중심, s07에 경찰 한 명(뒤쪽), s09에 노인 두 명. 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 쌀 살 돈도 없던 임시정부, 스물한 살 며느리가 국경을 넘었다
+    - 하얀 종이 한 장으로 독립 자금을 모은 여인
+    - 검문에 딱 걸렸을 때, 그녀가 한 말
+  description: |-
+    🕵️‍♀️ 아무것도 안 쓰인 하얀 종이 한 장, 사실은 비밀 편지였다면?
+
+    1920년 상하이, 나라를 되찾겠다는 임시정부에 쌀 살 돈조차 없었습니다 🍚
+    스물한 살 며느리는 보따리 하나 들고 직접 국경을 넘기로 하죠 🚢
+    그런데 압록강 철교 검문에 딱 걸렸는데… 그녀의 대답이 기가 막힙니다 😏
+
+    그렇게 국경을 넘나든 게 무려 여섯 번! 임시정부의 '안주인', 그녀의 이름은 영상 끝에서.
+  comment_question: 여러분이라면 검문에서 뭐라고 둘러대셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 여성독립운동가, 임시정부, 한국사, 쇼츠]
