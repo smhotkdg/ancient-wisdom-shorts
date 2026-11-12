@@ -1,0 +1,220 @@
+# 055 안창호 — 오렌지 한 개를 정성껏 따는 것도 나라를 위하는 일이라 가르친 청년 (독립운동가 편, 실사)
+id: "055"
+style: photoreal
+slug: ahn-changho-orange
+status: script_ok
+working_title: 낯선 미국 땅에서 싸우던 동포들, 한 청년은 어떻게 하나로 묶었을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["오렌지 한 개로", "나라를 지켰다고?"]
+hook: 머리를 쥐어뜯었습니다
+caption_keywords: [머리를 쥐어뜯었습니다, 상투, 인삼, 아홉 명, 오렌지 한 개, 정성껏, 위대한 지도자, 코리아타운]
+
+story:
+  hero: 청년
+  reveal: [안창호, 도산]
+
+characters:
+  - id: youth
+    name: 청년
+    name_en: young Korean man in 1900s California
+    description: >-
+      a slim Korean man in his mid-20s with a calm, dignified face, warm thoughtful eyes, short neatly combed black hair
+      and a clean-shaven face, wearing a plain dark wool three-piece suit with a white high-collared shirt and a thin
+      dark tie, simple brown leather shoes
+    note: 이야기 주인공. 1902년 미국에 건너가 샌프란시스코·리버사이드에서 한인 공동체를 이끈 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1902년 샌프란시스코, 갓 도착한 한 청년은 머리를 쥐어뜯었습니다."
+        captions: ["1902년 샌프란시스코", "갓 도착한 한 청년은 / 머리를 쥐어뜯었습니다"]
+      - text: "길에서 동포 둘이 상투를 잡고 싸우고 있었거든요."
+        captions: ["길에서 동포 둘이", "상투를 잡고 / 싸우고 있었거든요"]
+    visual: 1900년대 샌프란시스코 거리, 청년이 가방을 든 채 놀라 멈춰 서고 뒤에서 한복 차림 두 사내가 엉겨 다툰다
+    image_prompt: >-
+      A busy street of 1900s San Francisco with wooden storefronts and a horse cart in the distance, the young man in
+      the middle of the frame seen from the waist up, holding a small leather travel bag and stopping short in shocked
+      dismay, one hand pressed to his head.
+    characters: [youth]
+    extras: "two Korean men in white hanbok with topknots behind him grappling and shoving each other over a basket, small and slightly out of focus"
+    motion_prompt: >-
+      He stops and stares in dismay; behind him the two men push and pull at each other over the basket.
+    camera: static at eye level
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "인삼 팔 자리 다툼이었죠. 낯선 땅에서 동포끼리요."
+        captions: ["인삼 팔 자리 다툼이었죠", "낯선 땅에서 동포끼리요"]
+    visual: 길바닥에 엎어진 바구니와 흩어진 인삼 뿌리 (사람 없음)
+    image_prompt: >-
+      Close view of a wooden sidewalk of 1900s San Francisco, an overturned woven basket with dried ginseng roots
+      scattered across the boards, a dropped straw hat beside it, a sad, quiet mood. No people.
+    motion_prompt: >-
+      A breeze rolls one ginseng root across the boards and the straw hat shifts slightly.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "공부하러 온 청년이, 흩어진 동포를 어떻게 하나로 묶을까요?"
+        captions: ["공부하러 온 청년이", "흩어진 동포를 어떻게 / 하나로 묶을까요?"]
+    visual: 밤, 작은 하숙방 창가에서 청년이 책을 덮고 생각에 잠긴다
+    image_prompt: >-
+      A small boarding-house room in 1900s San Francisco at night, the young man seen from the waist up in the middle of
+      the frame, sitting by the window and slowly closing a schoolbook on his lap, gazing out in deep thought, then a
+      quiet resolve in his eyes. Soft lamp light. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      He closes the book slowly, looks out at the city lights, and lifts his chin with resolve.
+    camera: slow push in
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 청년은 동포 아홉 명과 함께, 서로 돕는 모임부터 만들었습니다."
+        captions: ["그래서 청년은 / 동포 아홉 명과 함께", "서로 돕는 모임부터 / 만들었습니다"]
+    visual: 작은 셋방 마루, 청년이 가운데서 진지하게 이야기하고 뒤로 동포 몇이 둘러앉아 귀 기울인다
+    image_prompt: >-
+      A plain wooden room of a small rented house in 1900s San Francisco, the young man in the middle of the frame seen
+      from the waist up, sitting and speaking earnestly with an open hand, warm lamp light on his face.
+    characters: [youth]
+    extras: "three Korean men in simple western work clothes seated around him in the background, listening and nodding, small and slightly out of focus"
+    motion_prompt: >-
+      He speaks earnestly with a gentle gesture; the men behind him nod slowly.
+    camera: static at eye level
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 이번엔 오렌지 농장으로 가서, 동포들과 함께 땀 흘렸죠."
+        captions: ["그러자 이번엔 / 오렌지 농장으로 가서", "동포들과 함께 땀 흘렸죠"]
+    visual: 햇살 가득한 오렌지 과수원, 셔츠 소매를 걷은 청년이 사다리 옆에서 오렌지를 따 바구니에 담는다
+    image_prompt: >-
+      A sunny orange grove in 1900s Riverside, California with rows of green trees heavy with bright oranges, the young
+      man in the middle of the frame seen from the waist up, jacket off and white shirt sleeves rolled up, carefully
+      picking an orange and placing it in a canvas bag, sweat on his brow, a calm smile.
+    characters: [youth]
+    extras: "two or three Korean workers in straw hats picking oranges in the rows behind him, small and out of focus"
+    motion_prompt: >-
+      He twists an orange gently from the branch and lays it in the bag; the workers behind him keep picking.
+    camera: static
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 청년은 연설 대신 무엇을 가르쳤을까요?"
+        captions: ["그런데 청년은 연설 대신", "무엇을 가르쳤을까요?"]
+      - text: "오렌지 한 개를 정성껏 따는 것도, 나라를 위하는 일이라고 했죠."
+        captions: ["오렌지 한 개를 / 정성껏 따는 것도", "나라를 위하는 일이라고 했죠"]
+    visual: 청년이 오렌지 한 개를 두 손으로 조심스럽게 들어 보이며 차분히 웃는다 / 꼭지를 정성껏 자르는 손
+    image_prompt: >-
+      The young man seen from the chest up in the middle of the frame in the orange grove, holding one perfect orange
+      carefully in both hands at chest height, looking at it and then up with a calm, meaningful smile. Soft dappled
+      sunlight. No other people in focus.
+    characters: [youth]
+    motion_prompt: >-
+      He turns the orange gently in his hands, studies it, and looks up with a quiet, meaningful smile.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a young man's hands using small clippers to snip an orange stem cleanly, then laying the orange
+          gently into a wooden crate lined with neatly placed oranges. Only the hands are visible.
+        characters: [youth]
+        motion_prompt: >-
+          The clippers snip the stem and the hands lay the orange gently into the neat row.
+        camera: macro static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그러자 술과 도박을 끊은 동포들을 보고, 한 미국인이 말했다고 합니다."
+        captions: ["그러자 술과 도박을 끊은 / 동포들을 보고", "한 미국인이 / 말했다고 합니다"]
+      - text: "당신네 나라에서 위대한 지도자가 왔다고요."
+        captions: ["당신네 나라에서", "위대한 지도자가 왔다고요"]
+    visual: 과수원 길 끝, 청년이 오렌지 상자를 내려놓고 고개를 들어 누군가를 보며 겸손하게 웃는다
+    image_prompt: >-
+      The end of an orange-grove path in warm late-afternoon light, the young man in the middle of the frame seen from
+      the waist up, setting down a wooden crate of oranges and looking up toward someone just beside the camera with a
+      modest, slightly surprised smile. No other faces visible.
+    characters: [youth]
+    motion_prompt: >-
+      He sets the crate down, straightens up, and gives a modest little bow with a shy smile.
+    camera: static at eye level
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "그렇게 생긴 한인 마을은, 미국 땅의 첫 코리아타운으로 불린다고 합니다."
+        captions: ["그렇게 생긴 한인 마을은", "미국 땅의 첫 코리아타운으로 / 불린다고 합니다"]
+    visual: 철길 옆 소박한 목조 판잣집 마을, 빨랫줄과 작은 텃밭, 저녁 햇살 (사람 없음)
+    image_prompt: >-
+      A small row of simple one-story wooden cottages beside a railway track in 1900s Riverside, California, laundry
+      lines between the houses, a tidy vegetable patch and an orange tree, warm evening light and long shadows. No
+      people.
+    motion_prompt: >-
+      Laundry sways on the lines in the evening breeze and long shadows stretch across the yard.
+    camera: slow pan
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "오렌지 한 개에 나라를 담은 이 청년이 바로, 도산 안창호입니다."
+        captions: ["오렌지 한 개에 / 나라를 담은 이 청년이", "바로, 도산 안창호입니다"]
+      - text: "여러분에게 '오렌지 한 개'는 무엇인가요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분에게", "'오렌지 한 개'는 무엇인가요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 오렌지 과수원, 청년이 오렌지 한 개를 손에 들고 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young man seen from the knees up in the middle of the frame, standing between rows of orange trees at sunset
+      in his white shirt and vest, holding one orange in his hand, a calm, warm smile. Soft golden sky. No other people.
+    characters: [youth]
+    motion_prompt: >-
+      Leaves rustle in the warm breeze; he smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young man from the reference image, seen from the waist up in the middle of
+          the frame, standing in the orange grove at sunset with an orange in one hand. He smiles warmly toward the
+          viewer and holds his other open palm out at chest height in a gentle "what do you think?" gesture. Calm,
+          warm, family-friendly mood. No other people.
+        characters: [youth]
+        motion_prompt: >-
+          He smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "미주중앙일보 (1902년 샌프란시스코에 도착한 안창호가 인삼 판매 구역을 두고 동포들이 상투를 부여잡고 싸우는 모습을 봄, 1903년 9월 23일 아홉 명의 한인과 친목회 조직, 1904년 리버사이드로 옮겨 오렌지 농장 한인들을 이끎, '오렌지 한 개를 정성껏 따는 것도 나라를 위하는 것', 한인들이 술과 도박을 끊자 한 미국인이 '당신네 나라에서 위대한 지도자가 왔소'라고 했다고 전함) — https://www.koreadaily.com/article/20260310201713956"
+  - "주간경향 (1) 안창호가 세운 미주 최초의 코리아타운 (1902년 결혼 뒤 서양을 배우러 미국에 옴, 1905년 리버사이드 파차파 캠프 — 미주 최초의 코리아타운, 술·도박·아편 금지 자치, '오렌지 하나도 정성껏 따는 것이 나라를 위하는 길이다') — https://weekly.khan.co.kr/article/202412271540021"
+  - "한국교육신문 (1902년 10월 14일 샌프란시스코 도착, 1904년 리버사이드 이주, 1904~1907·1911~1914년 오렌지 농장에서 일함) — https://hangyo.com/news/article.html?no=46098"
+  - "위키백과(영문) Ahn Chang Ho (리버사이드 Alta Cresta Groves 오렌지 농장, 파차파 캠프 'Dosan's Republic', 미국 첫 한인 정착촌으로 여겨짐) — https://en.wikipedia.org/wiki/Ahn_Chang_Ho"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 안창호(1878~1938, 호 도산). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'머리를 쥐어뜯었습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 상투를 잡고 싸운 일과 인삼 판매 구역 다툼은 미주중앙일보 기준.  화면의 바구니·인삼은 연출."
+  - "s03 '공부하러 온'은 서양을 배우러 미국에 왔다는 주간경향 서술과 '미국에서 배우고 돌아가 교사가 되는 게 꿈'이라는 1902년 인터뷰(한국교육신문) 기준."
+  - "s04 1903년 9월 23일 아홉 명과 만든 친목회는 미주중앙일보 기준. 대본은 '서로 돕는 모임'으로 쓴다."
+  - "s05 1904년 리버사이드 이주와 오렌지 농장 노동(대본은 지명 없이 '오렌지 농장')은 한국교육신문·미주중앙일보 기준."
+  - "s06 '오렌지 한 개를 정성껏 따는 것도 나라를 위하는 일'은 그의 말로 전해지는 표현(미주중앙일보·주간경향, 문구가 조금씩 다름)을 줄여 옮긴 것."
+  - "s07 술·도박을 끊은 한인들을 보고 미국인이 '위대한 지도자가 왔다'고 했다는 일화는 미주중앙일보가 전하는 이야기이며 '했다고 합니다'로 쓴다. 화면에 미국인은 넣지 않는다."
+  - "s08 파차파 캠프(1905)가 미주 최초의 코리아타운·첫 한인 정착촌으로 불리는 것은 주간경향·위키백과 기준이며 '불린다고 합니다'로 쓴다. 이름은 대본에 넣지 않는다."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 청년 한 명 중심, s01에 다투는 두 사내, s04에 동포 셋, s05에 일꾼 2~3명. 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 오렌지 한 개로 나라를 지킨 청년이 있다?
+    - 미국 길 한복판, 상투 잡고 싸우던 동포들을 바꾼 한마디
+    - "\"당신네 나라에서 위대한 지도자가 왔소\" 미국인이 놀란 이유"
+  description: |-
+    🍊 오렌지 하나 따는 게 나라를 위하는 일이라고요?
+
+    1902년 샌프란시스코, 갓 도착한 청년 눈앞에서 동포 둘이 상투를 잡고 싸웁니다 😱
+    인삼 팔 자리 때문에… 낯선 땅에서 동포끼리 말이죠.
+    청년은 연설 대신 오렌지 농장으로 가서 함께 땀을 흘리는데요 💦
+
+    결국 미국인이 놀라 이렇게 말했답니다. "당신네 나라에서 위대한 지도자가 왔소!" 👏 이 청년의 이름은 영상 끝에서!
+  comment_question: 여러분에게 '오렌지 한 개'는 무엇인가요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 오렌지, 한국사, 쇼츠]
