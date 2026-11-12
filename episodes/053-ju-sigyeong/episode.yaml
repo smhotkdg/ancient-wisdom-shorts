@@ -2,7 +2,7 @@
 id: "053"
 style: photoreal
 slug: ju-sigyeong
-status: script_ok
+status: done
 working_title: "'나라 글'이라 부를 수도 없게 된 우리 글, 한 청년은 어떻게 지켰을까?"
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["이름을 빼앗긴 글에", "새 이름을 붙였다고?"]
@@ -30,7 +30,7 @@ scenes:
       - text: "1896년 서울, 신문사의 한 청년은 말문이 막혔습니다."
         captions: ["1896년 서울", "신문사의 한 청년은 / 말문이 막혔습니다"]
       - text: "우리 글은 '언문'이라 낮춰 불리고, 적는 법도 사람마다 제각각이었거든요."
-        captions: ["우리 글은 '언문'이라 / 낮춰 불리고", "적는 법도 / 사람마다 제각각이었거든요"]
+        captions: ["우리 글은 '언문'이라 / 낮춰 불리고", "적는 법도 사람마다 / 제각각이었거든요"]
     visual: 1890년대 신문사 작업실, 청년이 원고 여러 장을 비교하며 어이없다는 듯 이마를 짚는다
     image_prompt: >-
       A cramped 1890s newspaper office in Seoul with a wooden desk piled with handwritten manuscript sheets and proof
@@ -84,7 +84,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 청년은 신문을 고치며, 적는 법을 맞추는 모임을 꾸렸습니다."
-        captions: ["그래서 청년은 신문을 고치며", "적는 법을 맞추는 / 모임을 꾸렸습니다"]
+        captions: ["그래서 청년은 / 신문을 고치며", "적는 법을 맞추는 / 모임을 꾸렸습니다"]
     visual: 신문사 작은 방, 청년이 붓으로 원고에 고칠 표시를 하며 열심히 설명하고 뒤에 동료 두 명이 고개를 끄덕인다
     image_prompt: >-
       A small back room of the 1890s newspaper office, the young man in the middle of the frame seen from the waist up,
