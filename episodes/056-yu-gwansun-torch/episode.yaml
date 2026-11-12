@@ -2,7 +2,7 @@
 id: "056"
 style: photoreal
 slug: yu-gwansun-torch
-status: script_ok
+status: done
 working_title: 전화도 없던 시골, 여학생은 어떻게 여러 마을을 한날한시에 모았을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["횃불 하나로", "마을을 깨웠다고?"]
@@ -30,7 +30,7 @@ scenes:
       - text: "1919년 3월, 학교가 문을 닫자 서울의 한 여학생은 속이 터졌습니다."
         captions: ["1919년 3월 / 학교가 문을 닫자", "서울의 한 여학생은 / 속이 터졌습니다"]
       - text: "그녀는 고향으로 내려갔지만, 시골 마을은 아직 조용했거든요."
-        captions: ["그녀는 고향으로 내려갔지만", "시골 마을은 / 아직 조용했거든요"]
+        captions: ["그녀는 고향으로 / 내려갔지만", "시골 마을은 / 아직 조용했거든요"]
     visual: 닫힌 학교 나무 대문 앞, 여학생이 보따리를 든 채 문을 돌아보며 입술을 깨문다 / 고요한 시골 마을 풍경
     image_prompt: >-
       In front of the closed wooden gate of a girls' school in 1919 Seoul with a brick wall, the girl seen from the waist
@@ -52,7 +52,7 @@ scenes:
     beat: problem
     lines:
       - text: "전화도 없는 시골에서, 경찰 눈을 피해 사람을 모으기란 쉽지 않았죠."
-        captions: ["전화도 없는 시골에서", "경찰 눈을 피해 / 사람을 모으기란 쉽지 않았죠"]
+        captions: ["전화도 없는 시골에서", "경찰 눈을 피해 / 사람을 모으기란", "쉽지 않았죠"]
     visual: 갈림길 이정표 앞, 여러 갈래 산길이 멀리 흩어진 마을들로 이어진다 (사람 없음)
     image_prompt: >-
       A crossroads of narrow dirt paths in the hills of rural Korea in early spring, a weathered wooden signpost with
@@ -65,7 +65,7 @@ scenes:
     beat: question
     lines:
       - text: "열여섯 살 소녀가, 여러 마을을 어떻게 한날한시에 모을 수 있을까요?"
-        captions: ["열여섯 살 소녀가", "여러 마을을 어떻게 / 한날한시에 모을 수 있을까요?"]
+        captions: ["열여섯 살 소녀가", "여러 마을을 어떻게 / 한날한시에", "모을 수 있을까요?"]
     visual: 밤, 초가 방 등잔불 아래 여학생이 무릎을 모으고 앉아 깊이 생각한다
     image_prompt: >-
       Inside a thatched farmhouse room at night, the girl seen from the waist up in the middle of the frame, sitting on
@@ -154,7 +154,7 @@ scenes:
     beat: info
     lines:
       - text: "그 뒤 붙잡혀 감옥에 갇혀서도, 그녀는 만세를 멈추지 않았다고 합니다."
-        captions: ["그 뒤 붙잡혀 감옥에 갇혀서도", "그녀는 만세를 / 멈추지 않았다고 합니다"]
+        captions: ["그 뒤 붙잡혀 / 감옥에 갇혀서도", "그녀는 만세를 / 멈추지 않았다고 합니다"]
     visual: 붉은 벽돌 감옥 담장과 작은 창살 창문 사이로 아침 햇살이 비친다 (사람 없음)
     image_prompt: >-
       The outside of an old red-brick prison wall with a small barred window high up, a single beam of morning sunlight
@@ -169,7 +169,7 @@ scenes:
       - text: "횃불 하나로 마을을 깨운 이 여학생이 바로, 유관순입니다."
         captions: ["횃불 하나로 마을을 깨운 / 이 여학생이", "바로, 유관순입니다"]
       - text: "여러분이라면 어떤 신호로 사람들을 모으셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 어떤 신호로", "사람들을 모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 어떤 신호로", "사람들을 모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 봄날 아침 언덕, 여학생이 보따리를 들고 서서 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
