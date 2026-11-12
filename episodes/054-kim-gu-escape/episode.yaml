@@ -52,7 +52,7 @@ scenes:
     beat: problem
     lines:
       - text: "거리마다 일본 경찰과 밀정이 눈을 번뜩이고 있었죠."
-        captions: ["거리마다 일본 경찰과 밀정이", "눈을 번뜩이고 있었죠"]
+        captions: ["거리마다 / 일본 경찰과 밀정이", "눈을 번뜩이고 있었죠"]
     visual: 비 젖은 상하이 골목 입구, 가로등 아래 경찰 실루엣 하나가 멀리 서 있다 (얼굴 안 보임)
     image_prompt: >-
       The entrance of a rain-wet 1930s Shanghai lane at night with shuttered shopfronts and a single street lamp, one
@@ -133,7 +133,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그렇게 외국인 부부가 탄 차는, 유유히 상하이를 빠져나갔죠."
-        captions: ["그렇게 외국인 부부가 탄 차는", "유유히 상하이를 빠져나갔죠"]
+        captions: ["그렇게 외국인 / 부부가 탄 차는", "유유히 상하이를 / 빠져나갔죠"]
     visual: 상하이 외곽 시골길, 먼지를 날리며 달리는 검은 자동차 (사람 안 보임)
     image_prompt: >-
       A dusty country road outside Shanghai in the 1930s with flat green fields and willow trees, a black 1930s
@@ -165,7 +165,7 @@ scenes:
       - text: "현상금 60만 원의 이 사내가 바로, 백범 김구입니다."
         captions: ["현상금 60만 원의 / 이 사내가", "바로, 백범 김구입니다"]
       - text: "여러분이라면 어떤 변장으로 빠져나가셨을까요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분이라면 어떤 변장으로", "빠져나가셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분이라면 / 어떤 변장으로", "빠져나가셨을까요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 물가 마을, 사내가 다리 위에 서서 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
