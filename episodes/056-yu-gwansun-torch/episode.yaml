@@ -1,0 +1,225 @@
+# 056 유관순 — 아주머니처럼 꾸미고 마을을 돌아 장날·횃불 신호로 만세를 모은 여학생 (독립운동가 편, 실사)
+id: "056"
+style: photoreal
+slug: yu-gwansun-torch
+status: script_ok
+working_title: 전화도 없던 시골, 여학생은 어떻게 여러 마을을 한날한시에 모았을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["횃불 하나로", "마을을 깨웠다고?"]
+hook: 속이 터졌습니다
+caption_keywords: [속이 터졌습니다, 수건, 아주머니처럼, 몇십 리, 장날, "4월 1일", 횃불, 태극기]
+
+story:
+  hero: 여학생
+  reveal: [유관순]
+
+characters:
+  - id: girl
+    name: 여학생
+    name_en: Korean schoolgirl of 1919
+    description: >-
+      a Korean teenage schoolgirl of about 17 with a round, bright, determined face, clear dark eyes, black hair parted
+      in the middle and worn in a single long braid down her back tied with a dark red ribbon, wearing a plain white
+      cotton jeogori and a long black school skirt, simple black cloth shoes
+    note: 이야기 주인공. 1919년 이화학당 학생, 고향 천안으로 내려가 아우내 장터 만세운동을 준비한 독립운동가 (마지막 대사 전까지 이름을 밝히지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1919년 3월, 학교가 문을 닫자 서울의 한 여학생은 속이 터졌습니다."
+        captions: ["1919년 3월 / 학교가 문을 닫자", "서울의 한 여학생은 / 속이 터졌습니다"]
+      - text: "그녀는 고향으로 내려갔지만, 시골 마을은 아직 조용했거든요."
+        captions: ["그녀는 고향으로 내려갔지만", "시골 마을은 / 아직 조용했거든요"]
+    visual: 닫힌 학교 나무 대문 앞, 여학생이 보따리를 든 채 문을 돌아보며 입술을 깨문다 / 고요한 시골 마을 풍경
+    image_prompt: >-
+      In front of the closed wooden gate of a girls' school in 1919 Seoul with a brick wall, the girl seen from the waist
+      up in the middle of the frame, holding a small cloth bundle and looking back at the shut gate, biting her lip in
+      frustration. Overcast early-spring sky. No other people.
+    characters: [girl]
+    motion_prompt: >-
+      She looks back at the closed gate, grips her bundle tighter and turns away with a determined breath.
+    camera: slow push in at eye level
+    extra_clips:
+      - image_prompt: >-
+          A quiet farming village of thatched-roof houses in a valley in early spring 1919, bare fields, thin smoke
+          rising from a chimney, a calm, silent morning. No people.
+        motion_prompt: >-
+          Thin chimney smoke drifts slowly upward over the silent village.
+        camera: slow pan
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "전화도 없는 시골에서, 경찰 눈을 피해 사람을 모으기란 쉽지 않았죠."
+        captions: ["전화도 없는 시골에서", "경찰 눈을 피해 / 사람을 모으기란 쉽지 않았죠"]
+    visual: 갈림길 이정표 앞, 여러 갈래 산길이 멀리 흩어진 마을들로 이어진다 (사람 없음)
+    image_prompt: >-
+      A crossroads of narrow dirt paths in the hills of rural Korea in early spring, a weathered wooden signpost with
+      blank boards, several paths winding away toward small distant villages scattered across the valleys. No people.
+    motion_prompt: >-
+      Wind moves the dry grass along the paths and clouds drift slowly over the distant villages.
+    camera: slow push in
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "열여섯 살 소녀가, 여러 마을을 어떻게 한날한시에 모을 수 있을까요?"
+        captions: ["열여섯 살 소녀가", "여러 마을을 어떻게 / 한날한시에 모을 수 있을까요?"]
+    visual: 밤, 초가 방 등잔불 아래 여학생이 무릎을 모으고 앉아 깊이 생각한다
+    image_prompt: >-
+      Inside a thatched farmhouse room at night, the girl seen from the waist up in the middle of the frame, sitting on
+      the floor under an oil lamp with her knees drawn up, deep in thought, then her eyes brightening with an idea.
+      Plain paper wall behind her. No other people.
+    characters: [girl]
+    motion_prompt: >-
+      The lamp flickers; she sits in thought, then slowly lifts her head as an idea comes to her.
+    camera: static
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 여학생은 머리에 수건을 쓰고 아주머니처럼 꾸민 채, 몇십 리 길을 혼자 걸어 마을을 돌았습니다."
+        captions: ["그래서 여학생은 / 머리에 수건을 쓰고", "아주머니처럼 꾸민 채", "몇십 리 길을 혼자 걸어 / 마을을 돌았습니다"]
+    visual: 흙먼지 산길, 머리에 흰 수건을 쓴 여학생이 허리를 조금 숙인 채 바삐 걸어간다
+    image_prompt: >-
+      A dusty mountain path in early spring, the girl in the middle of the frame seen from the knees up, a plain white
+      cotton towel tied over her head like an older village woman, a faded work apron over her skirt, walking quickly
+      with her shoulders slightly hunched, eyes alert. No other people.
+    characters: [girl]
+    motion_prompt: >-
+      She walks briskly along the path, adjusting the towel on her head and glancing around carefully.
+    camera: slow tracking backward at eye level
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a girl's hands tying a plain white cotton towel under her braid at the back of her head, in a
+          dim room. Only the hands and the back of the head are visible.
+        characters: [girl]
+        motion_prompt: >-
+          The hands pull the towel snug and tie a quick knot.
+        camera: macro static
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그런데 날짜는 언제로 했을까요? 사람이 절로 모이는 장날, 4월 1일이었죠."
+        captions: ["그런데 날짜는 / 언제로 했을까요?", "사람이 절로 모이는 장날", "4월 1일이었죠"]
+    visual: 장터 입구 빈 좌판과 소쿠리들이 이른 아침 햇살 속에 놓여 있다 (사람 없음)
+    image_prompt: >-
+      The entrance of a rural Korean market square at dawn in 1919, empty wooden stalls, stacked baskets, clay jars and
+      rolled straw mats waiting for market day, soft early sunlight. No people.
+    motion_prompt: >-
+      Morning light slowly spreads across the empty stalls and a few sparrows hop between the baskets.
+    camera: slow pan
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "드디어 전날 밤, 여학생은 산에 올라 신호 횃불을 밝혔습니다."
+        captions: ["드디어 전날 밤", "여학생은 산에 올라 / 신호 횃불을 밝혔습니다"]
+    visual: 밤 산마루, 여학생이 두 손으로 횃불을 높이 들지 않고 가슴 앞에 든 채 먼 마을들을 바라본다
+    image_prompt: >-
+      A dark hilltop at night overlooking a wide valley, the girl in the middle of the frame seen from the waist up,
+      holding a burning pine torch in both hands at chest height, the warm firelight on her determined face, a few tiny
+      faint lights of distant villages in the dark valley behind her. No other people.
+    characters: [girl]
+    motion_prompt: >-
+      The torch flame flickers in the wind; she gazes at the distant valley as one faint light answers far away.
+    camera: slow push in
+    extra_clips:
+      - image_prompt: >-
+          A wide night view of dark hills and valleys in rural Korea, a single small torch flame burning on a distant
+          ridge, and far away on other hilltops tiny points of firelight beginning to glow. No faces visible.
+        motion_prompt: >-
+          One by one, tiny lights appear on the distant hilltops.
+        camera: static
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그러자 다음 날 장터 사람들 손에는, 그녀가 만든 태극기가 들려 있었다고 합니다."
+        captions: ["그러자 다음 날 / 장터 사람들 손에는", "그녀가 만든 태극기가 / 들려 있었다고 합니다"]
+    visual: 장터, 여학생이 가운데서 작은 태극기를 품에서 꺼내 들고, 뒤로 장꾼 몇이 놀라 고개를 든다
+    image_prompt: >-
+      A rural market square on market day in 1919 with wooden stalls and baskets, the girl in the middle of the frame
+      seen from the waist up, drawing a small hand-made Korean national flag from inside her jeogori and holding it at
+      chest height, her face shining with courage.
+    characters: [girl]
+    extras: "two or three villagers in white hanbok behind her turning to look, one of them holding a small flag too, small and slightly out of focus"
+    motion_prompt: >-
+      She unfolds the small flag at chest height; the villagers behind her turn and lift their own small flags.
+    camera: static at eye level
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "그 뒤 붙잡혀 감옥에 갇혀서도, 그녀는 만세를 멈추지 않았다고 합니다."
+        captions: ["그 뒤 붙잡혀 감옥에 갇혀서도", "그녀는 만세를 / 멈추지 않았다고 합니다"]
+    visual: 붉은 벽돌 감옥 담장과 작은 창살 창문 사이로 아침 햇살이 비친다 (사람 없음)
+    image_prompt: >-
+      The outside of an old red-brick prison wall with a small barred window high up, a single beam of morning sunlight
+      shining through the bars, a quiet, dignified and hopeful mood. No people.
+    motion_prompt: >-
+      The beam of sunlight slowly brightens through the bars and dust glitters in the light.
+    camera: slow push in
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "횃불 하나로 마을을 깨운 이 여학생이 바로, 유관순입니다."
+        captions: ["횃불 하나로 마을을 깨운 / 이 여학생이", "바로, 유관순입니다"]
+      - text: "여러분이라면 어떤 신호로 사람들을 모으셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 어떤 신호로", "사람들을 모으셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 봄날 아침 언덕, 여학생이 보따리를 들고 서서 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The girl seen from the knees up in the middle of the frame, standing on a grassy hillside on a bright spring
+      morning with the village valley below, her braid moving in the breeze, a calm, brave smile. Soft blue sky. No
+      other people.
+    characters: [girl]
+    motion_prompt: >-
+      The breeze moves her braid and skirt; she smiles calmly as the camera slowly pulls back at eye level.
+    camera: slow pull back at eye level
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same schoolgirl from the reference image, seen from the waist up in the middle of
+          the frame, standing on the spring hillside. She smiles warmly toward the viewer and holds one open palm out at
+          chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [girl]
+        motion_prompt: >-
+          She smiles toward the camera and opens one hand at chest height in a friendly asking gesture.
+        camera: slow push in
+
+sources:
+  - "서울신문, 머문 곳마다, 주위 사람들과 함께… 유관순 열사는 일상이 독립운동이었다 (3월 10일 학교 휴교 뒤 고향에서 만세를 하기로 함, 3월 13일 천안으로 내려감, 장날인 4월 1일을 거사일로 정함, 안성·진천·청주·연기·목천 등에 연락, 혼자 다니며 수건을 써 나이 든 여인처럼 꾸밈, 3월 31일 밤 매봉산 봉화에 횃불, 서대문형무소에서도 만세 투쟁) — https://www.seoul.co.kr/news/newsView.php?id=20190307010001"
+  - "뉴시스 (박인덕 증언 — 독립운동 전갈을 전하려 몇십 리 길을 마다하지 않음, 유관순이 태극기를 만들었음, 장날을 기해 조직, 4월 1일(음력 3월 1일) 아우내 장터(병천시장)) — https://www.newsis.com/view/NISX20190228_0000572361"
+
+accuracy_notes:
+  - "주인공은 실존 독립운동가 유관순(1902~1920). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'속이 터졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 3월 10일 휴교·3월 13일 귀향은 서울신문 기준. '시골 마을은 아직 조용했다'는 그녀가 서울 소식을 고향에 전했다는 서술(서울신문·뉴시스)을 이야기로 푼 표현이다."
+  - "s02 '전화도 없는 시골'은 재구성이다."
+  - "s03 '열여섯 살'은 1902년 12월생 기준 1919년 4월의 만 나이."
+  - "s04 수건을 써 나이 든 여인처럼 꾸미고 혼자 다닌 일은 서울신문, '몇십 리 길'은 뉴시스(박인덕 증언) 기준. 화면의 앞치마는 연출."
+  - "s05 장날인 4월 1일을 거사일로 정한 일은 서울신문·뉴시스 기준. '사람이 절로 모이는'은 장날을 고른 뜻을 풀어 쓴 이야기 표현이다."
+  - "s06 3월 31일 밤 매봉산 봉화 횃불은 서울신문 기준. 산 이름은 대본에 넣지 않는다. s06-2의 다른 산의 불빛은 신호를 보여 주는 연출."
+  - "s07 태극기를 만든 일은 뉴시스(박인덕 증언) 기준이며 '했다고 합니다'로 쓴다. 장터에서 일어난 일본 헌병의 발포와 부모의 죽음은 사실이지만 대본·화면에 넣지 않는다."
+  - "s08 서대문형무소에서도 만세를 멈추지 않은 일은 서울신문 기준. 고문과 옥중 순국은 대본·화면에 넣지 않는다. 화면은 사람 없는 감옥 담장."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 여학생 한 명 중심, s07에 장꾼 2~3명. 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 전화도 없던 시골, 여학생이 여러 마을을 한날한시에 모은 방법
+    - 아주머니로 변장하고 몇십 리를 걸은 여학생
+    - 횃불 하나로 마을을 깨운 열여섯 살 소녀
+  description: |-
+    🔥 전화도, 문자도 없던 시절… 여러 마을 사람을 같은 날 같은 시각에 모으려면 어떻게 해야 할까요?
+
+    1919년 3월, 학교가 문을 닫자 서울의 한 여학생은 고향으로 내려갑니다 🎒
+    머리에 수건을 쓰고 '아주머니'로 변장해서, 몇십 리 길을 혼자 걸어 마을마다 소식을 전하죠 👣
+    날짜는 사람이 절로 모이는 장날! 그리고 전날 밤, 산 위에 신호 횃불이 타오릅니다 ✨
+
+    우리 모두가 아는 그 이름, 영상 끝에서 공개됩니다 🇰🇷
+  comment_question: 여러분이라면 어떤 신호로 사람들을 모으셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [독립운동, 독립운동가, 삼일운동, 한국사, 쇼츠]
