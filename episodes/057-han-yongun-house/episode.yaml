@@ -2,7 +2,7 @@
 id: "057"
 style: photoreal
 slug: han-yongun-house
-status: script_ok
+status: done
 working_title: 따뜻한 남향을 버리고 차가운 집을 고른 스님, 왜 그랬을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["일부러 추운 집을", "지었다고?"]
@@ -59,7 +59,7 @@ scenes:
     beat: question
     lines:
       - text: "따뜻한 남향이냐, 총독부를 등진 차가운 집이냐. 스님은 무엇을 골랐을까요?"
-        captions: ["따뜻한 남향이냐", "총독부를 등진 차가운 집이냐", "스님은 무엇을 골랐을까요?"]
+        captions: ["따뜻한 남향이냐", "총독부를 등진 / 차가운 집이냐", "스님은 무엇을 골랐을까요?"]
     visual: 스님이 언덕 아래 시내를 한참 바라보다 천천히 몸을 돌린다
     image_prompt: >-
       The monk seen from the waist up in the middle of the frame, standing on the hillside with the hazy city far
@@ -134,7 +134,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 스님은 광복 한 해 전인 1944년까지, 이 차가운 집을 떠나지 않았습니다."
-        captions: ["결국 스님은 / 광복 한 해 전인 1944년까지", "이 차가운 집을 / 떠나지 않았습니다"]
+        captions: ["결국 스님은 광복 / 한 해 전인 1944년까지", "이 차가운 집을 / 떠나지 않았습니다"]
     visual: 눈 덮인 기와집 마당, 스님이 마루 끝에 앉아 고요히 먼 산을 바라본다
     image_prompt: >-
       The small tiled-roof house in deep winter with snow on the roof and yard, the monk, a little older and thinner, in
