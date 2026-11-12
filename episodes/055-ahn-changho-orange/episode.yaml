@@ -2,7 +2,7 @@
 id: "055"
 style: photoreal
 slug: ahn-changho-orange
-status: script_ok
+status: done
 working_title: 낯선 미국 땅에서 싸우던 동포들, 한 청년은 어떻게 하나로 묶었을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["오렌지 한 개로", "나라를 지켰다고?"]
@@ -107,7 +107,7 @@ scenes:
       - text: "그런데 청년은 연설 대신 무엇을 가르쳤을까요?"
         captions: ["그런데 청년은 연설 대신", "무엇을 가르쳤을까요?"]
       - text: "오렌지 한 개를 정성껏 따는 것도, 나라를 위하는 일이라고 했죠."
-        captions: ["오렌지 한 개를 / 정성껏 따는 것도", "나라를 위하는 일이라고 했죠"]
+        captions: ["오렌지 한 개를 / 정성껏 따는 것도", "나라를 위하는 / 일이라고 했죠"]
     visual: 청년이 오렌지 한 개를 두 손으로 조심스럽게 들어 보이며 차분히 웃는다 / 꼭지를 정성껏 자르는 손
     image_prompt: >-
       The young man seen from the chest up in the middle of the frame in the orange grove, holding one perfect orange
@@ -147,7 +147,7 @@ scenes:
     beat: info
     lines:
       - text: "그렇게 생긴 한인 마을은, 미국 땅의 첫 코리아타운으로 불린다고 합니다."
-        captions: ["그렇게 생긴 한인 마을은", "미국 땅의 첫 코리아타운으로 / 불린다고 합니다"]
+        captions: ["그렇게 생긴 한인 마을은", "미국 땅의 첫 / 코리아타운으로", "불린다고 합니다"]
     visual: 철길 옆 소박한 목조 판잣집 마을, 빨랫줄과 작은 텃밭, 저녁 햇살 (사람 없음)
     image_prompt: >-
       A small row of simple one-story wooden cottages beside a railway track in 1900s Riverside, California, laundry
@@ -163,7 +163,7 @@ scenes:
       - text: "오렌지 한 개에 나라를 담은 이 청년이 바로, 도산 안창호입니다."
         captions: ["오렌지 한 개에 / 나라를 담은 이 청년이", "바로, 도산 안창호입니다"]
       - text: "여러분에게 '오렌지 한 개'는 무엇인가요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분에게", "'오렌지 한 개'는 무엇인가요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분에게 / '오렌지 한 개'는", "무엇인가요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 오렌지 과수원, 청년이 오렌지 한 개를 손에 들고 잔잔히 미소 / 이어서 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
