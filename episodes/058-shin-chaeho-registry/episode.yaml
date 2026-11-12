@@ -2,7 +2,7 @@
 id: "058"
 style: photoreal
 slug: shin-chaeho-registry
-status: script_ok
+status: done
 working_title: 이름 한 줄 올리기를 거부한 선비, 73년 뒤 무슨 일이 일어났을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["이름 한 줄을", "끝까지 거부했다고?"]
@@ -30,7 +30,7 @@ scenes:
       - text: "1910년 나라를 빼앗기자, 한 선비는 혼이 쏙 빠졌습니다."
         captions: ["1910년 나라를 빼앗기자", "한 선비는 / 혼이 쏙 빠졌습니다"]
       - text: "곧 일제는 조선 사람을 모두 자기네 호적에 올렸거든요."
-        captions: ["곧 일제는 조선 사람을 모두", "자기네 호적에 올렸거든요"]
+        captions: ["곧 일제는 / 조선 사람을 모두", "자기네 호적에 올렸거든요"]
     visual: 1910년 항구, 선비가 작은 짐을 들고 배에 오르기 전 뒤를 돌아본다 / 관청 책상 위 두꺼운 호적 장부에 붓으로 이름이 적혀 나간다
     image_prompt: >-
       A grey harbor pier in 1910 with an old steamship behind, the man in the middle of the frame seen from the waist up,
@@ -52,7 +52,7 @@ scenes:
     beat: problem
     lines:
       - text: "호적에 오르면 일본의 백성, 오르지 않으면 나라 없는 사람이 되는 거였죠."
-        captions: ["호적에 오르면 일본의 백성", "오르지 않으면 / 나라 없는 사람이 되는 거였죠"]
+        captions: ["호적에 오르면 / 일본의 백성", "오르지 않으면 / 나라 없는 사람이", "되는 거였죠"]
     visual: 갈림길에 선 선비, 한쪽은 밝은 관청 문, 다른 쪽은 어두운 들길
     image_prompt: >-
       The man seen from the waist up in the middle of the frame, standing at a fork in a dirt road at dusk, on one side a
@@ -82,7 +82,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 선비는 끝내 호적에 오르지 않았습니다. 일본의 백성이 될 순 없었으니까요."
-        captions: ["그래서 선비는 끝내 / 호적에 오르지 않았습니다", "일본의 백성이 / 될 순 없었으니까요"]
+        captions: ["그래서 선비는 / 끝내 호적에", "오르지 않았습니다", "일본의 백성이 / 될 순 없었으니까요"]
     visual: 선비가 어두운 들길 쪽으로 망설임 없이 걸어간다
     image_prompt: >-
       The man in the middle of the frame seen from the knees up, walking steadily down the dark country path at dusk with
@@ -120,7 +120,7 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 이 선비, 세수도 허리를 굽히지 않고 선 채로 했다고 합니다. 얼마나 꼿꼿했을까요?"
-        captions: ["그런데 이 선비", "세수도 허리를 굽히지 않고 / 선 채로 했다고 합니다", "얼마나 꼿꼿했을까요?"]
+        captions: ["그런데 이 선비", "세수도 허리를 / 굽히지 않고", "선 채로 했다고 합니다", "얼마나 꼿꼿했을까요?"]
     visual: 이른 아침 마당, 선비가 허리를 꼿꼿이 편 채 선 자세로 놋대야 물을 두 손으로 떠 얼굴에 끼얹는다
     image_prompt: >-
       An early-morning courtyard, the man in the middle of the frame seen from the waist up, standing perfectly upright
@@ -135,7 +135,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 그는 1936년, 나라 없는 사람인 채로 먼 땅에서 눈을 감았습니다."
-        captions: ["결국 그는 1936년", "나라 없는 사람인 채로 / 먼 땅에서 눈을 감았습니다"]
+        captions: ["결국 그는 1936년", "나라 없는 사람인 채로", "먼 땅에서 / 눈을 감았습니다"]
     visual: 사람 없는 빈 방, 작은 창으로 겨울 햇살이 들고 책상 위에 붓과 원고 더미만 남아 있다
     image_prompt: >-
       A bare, quiet room with a small high window, pale winter sunlight falling across an empty wooden desk with a
