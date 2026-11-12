@@ -158,7 +158,7 @@ scenes:
     beat: info
     lines:
       - text: "헌병은 고향에 돌아가 평생 그를 기렸고, 1980년 그 가족이 이 글씨를 한국에 보냈다고 합니다."
-        captions: ["헌병은 고향에 돌아가 / 평생 그를 기렸고", "1980년 그 가족이 / 이 글씨를 한국에 보냈다고 합니다"]
+        captions: ["헌병은 고향에 돌아가 / 평생 그를 기렸고", "1980년 그 가족이 / 이 글씨를 한국에", "보냈다고 합니다"]
     visual: 일본 시골 집 다다미방, 나이 든 헌병(민간 옷)이 족자 앞에 조용히 합장하고 앉아 있다 (글씨 흐릿)
     image_prompt: >-
       A quiet tatami room of a rural Japanese house, the same man now middle-aged in a plain dark kimono, seen from the
