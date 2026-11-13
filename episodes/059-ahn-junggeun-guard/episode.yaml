@@ -2,7 +2,7 @@
 id: "059"
 style: photoreal
 slug: ahn-junggeun-guard
-status: script_ok
+status: done
 working_title: 사형수를 지키던 일본 헌병은 왜 평생 그를 기렸을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["일본 헌병이", "평생 모신 글씨?"]
@@ -135,7 +135,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그러자 단숨에 써 내려간 여덟 글자, 나라를 위해 몸 바침은 군인의 본분이라는 뜻이었죠."
-        captions: ["그러자 단숨에 써 내려간 / 여덟 글자", "나라를 위해 몸 바침은 / 군인의 본분이라는 뜻이었죠"]
+        captions: ["그러자 단숨에 써 내려간 / 여덟 글자", "나라를 위해 몸 바침은", "군인의 본분이라는 / 뜻이었죠"]
     visual: 사형수가 비단천에 단숨에 붓글씨를 쓰고, 헌병이 두 손으로 받아 든다 (글자 흐릿)
     image_prompt: >-
       The young military policeman seen from the waist up in the middle of the frame, receiving a long strip of silk
