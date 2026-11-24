@@ -1,0 +1,249 @@
+# 062 정주영 — 500원 지폐 속 거북선과 백사장 사진 한 장으로 조선소를 세운 사장 (이미지 + 음성만, 실사)
+# 2026-11-24 사용자: 40~60대가 공감할, '국뽕'이 느껴지는 주제
+id: "062"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: turtle-ship-banknote
+status: script_ok
+working_title: 배 한 척 못 만들어 본 나라, 지폐 한 장으로 영국 은행을 설득하다
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["지폐 한 장으로", "조선소를 세웠다고?"]
+hook: 진땀을 뺐습니다
+caption_keywords: [진땀을 뺐습니다, 영국 은행, 500원, 거북선, 300년, 백사장 사진, 두 척, 세계 1위]
+
+story:
+  hero: 사장
+  reveal: [정주영]
+
+characters:
+  - id: boss
+    name: 사장
+    name_en: Korean businessman of 1971
+    description: >-
+      a sturdy Korean man in his mid-50s with a strong square jaw, bold confident eyes, short neatly combed black hair
+      with a little grey, a warm but stubborn smile, wearing a dark charcoal 1970s business suit with a white shirt and
+      a plain dark tie, a worn leather wallet in his inside pocket
+    note: 이야기 주인공. 1971년 영국에서 조선소 차관을 얻으러 다닌 한국 기업가 (마지막 대사 전까지 이름을 밝히지 않는다, 실제 인물의 초상이 아닌 창작 인물)
+  - id: brit
+    name: 영국 회장
+    name_en: British shipbuilding consultant of 1971
+    description: >-
+      a tall, slim British gentleman in his early 60s with neatly parted silver hair, a long serious face, reading
+      glasses, wearing a grey three-piece tweed suit with a pocket square
+    note: 영국 조선 컨설팅 회사 회장 (창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1971년 영국 런던, 한 한국 사장은 진땀을 뺐습니다."
+        captions: ["1971년 영국 런던", "한 한국 사장은 / 진땀을 뺐습니다"]
+      - text: "조선소를 짓겠다는데, 배를 만들어 본 적도 돈도 없었거든요."
+        captions: ["조선소를 짓겠다는데", "배를 만들어 본 적도 / 돈도 없었거든요"]
+    visual: 비 내리는 런던 거리, 서류 가방을 든 사장이 은행 건물 앞에 서서 숨을 고른다 / 손수건으로 이마의 땀을 닦는다
+    image_prompt: >-
+      A rainy street in 1971 London in front of a grand old stone bank building, the Korean businessman in the middle of
+      the frame seen from the knees up, holding a leather briefcase under a black umbrella, taking a deep breath with a
+      tense, determined face. No other people nearby.
+    characters: [boss]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the Korean businessman's face and hand as he wipes sweat from his forehead with a folded white
+          handkerchief, rain-soft light, tense eyes. No other people.
+        characters: [boss]
+        still_motion: zoom_in
+        focus: [0.5, 0.4]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "영국 은행은 고개를 저었죠. 배 한 척 못 만들어 본 나라엔 돈을 못 빌려준다고요."
+        captions: ["영국 은행은 고개를 저었죠", "배 한 척 못 만들어 본 나라엔 / 돈을 못 빌려준다고요"]
+    visual: 고풍스러운 은행 회의실, 서류를 덮는 은행가의 손 / 사장이 굳은 얼굴로 앉아 있다
+    image_prompt: >-
+      Close-up of a polished mahogany desk in a 1970s London bank office, a banker's hand in a dark pinstriped sleeve
+      firmly closing a folder of documents and sliding it back across the desk, cold grey window light. Only the hand is
+      visible.
+    still_motion: pan_left
+    extra_clips:
+      - image_prompt: >-
+          The Korean businessman seen from the waist up in the middle of the frame, sitting alone in a grand wood-paneled
+          bank meeting room, jaw clenched, staring at the closed folder in front of him with frustrated but unbroken eyes.
+          No other people.
+        characters: [boss]
+        still_motion: zoom_in
+        focus: [0.5, 0.4]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "가진 거라곤 패기뿐인 사장이, 깐깐한 영국인을 어떻게 설득했을까요?"
+        captions: ["가진 거라곤 / 패기뿐인 사장이", "깐깐한 영국인을 / 어떻게 설득했을까요?"]
+    visual: 영국 회장의 사무실, 안경 너머로 의심스럽게 바라보는 영국 신사
+    image_prompt: >-
+      A classic 1970s British office with bookshelves and ship models, the British gentleman seen from the waist up in
+      the middle of the frame, seated behind a desk, looking over his reading glasses with a skeptical, unimpressed
+      expression, fingers steepled. No other people.
+    characters: [brit]
+    still_motion: zoom_out
+    focus: [0.5, 0.4]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 사장은 지갑에서 500원짜리 지폐 한 장을 꺼냈습니다."
+        captions: ["그래서 사장은 지갑에서", "500원짜리 지폐 한 장을 / 꺼냈습니다"]
+    visual: 낡은 가죽 지갑에서 지폐를 꺼내는 손 / 지폐 속 거북선 그림 클로즈업
+    image_prompt: >-
+      Close-up of a man's hands in a charcoal suit sleeve pulling an old Korean banknote out of a worn leather wallet
+      over a desk, warm office light. The banknote shows an engraved illustration of a Korean turtle ship; no readable
+      text or numbers. Only the hands are visible.
+    still_motion: drift
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          Extreme close-up of an engraved illustration of a Korean turtle ship (geobukseon) with a dragon head and
+          spiked armored roof on an old banknote held between two fingers, fine engraving lines, warm light. No readable
+          text or numbers.
+        still_motion: push
+        focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "이 거북선 보이시죠? 우린 영국보다 300년 먼저 철갑선을 만든 나라입니다."
+        captions: ["이 거북선 보이시죠?", "우린 영국보다 300년 먼저 / 철갑선을 만든 나라입니다"]
+    visual: 사장이 지폐를 책상 위에 펼쳐 보이며 자신만만하게 말한다 / 영국 회장이 안경을 벗고 몸을 앞으로 기울인다
+    image_prompt: >-
+      The Korean businessman seen from the waist up in the middle of the frame, leaning forward over the desk and
+      holding up the old banknote toward the viewer's side, speaking with a bold, proud, confident smile, warm office
+      light.
+    characters: [boss]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          The British gentleman seen from the waist up in the middle of the frame, taking off his reading glasses and
+          leaning forward with sudden interest, a slow smile of surprise spreading on his face. No other people.
+        characters: [brit]
+        still_motion: zoom_in
+        focus: [0.5, 0.4]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 마지막 관문은 배를 살 사람이었습니다. 손에 쥔 건 바닷가 백사장 사진 한 장뿐이었죠."
+        captions: ["그런데 마지막 관문은 / 배를 살 사람이었습니다", "손에 쥔 건 바닷가 / 백사장 사진 한 장뿐이었죠"]
+    visual: 소나무 몇 그루와 초가 몇 채뿐인 텅 빈 백사장 흑백 사진을 든 손 / 사진 속 바닷가
+    image_prompt: >-
+      Close-up of a man's hands holding an old black-and-white photograph of an empty sandy beach with a few pine trees
+      and a couple of small fishing huts on a Korean coast, beside a folded map on a desk. Only the hands are visible.
+    still_motion: push
+    focus: [0.5, 0.48]
+    extra_clips:
+      - image_prompt: >-
+          A wide view of an empty quiet sandy beach on the Korean coast in 1971 with a few pine trees, small fishing
+          boats pulled up on the sand and gentle waves, soft grey morning light. No people.
+        still_motion: pan_right
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 그 사진 한 장으로, 그리스 선박왕에게 초대형 유조선 두 척을 따냈습니다."
+        captions: ["결국 그 사진 한 장으로", "그리스 선박왕에게", "초대형 유조선 두 척을 / 따냈습니다"]
+    visual: 알프스 산장 응접실, 사장이 계약서에 서명하고 환하게 웃는다
+    image_prompt: >-
+      A cozy alpine villa living room with a view of snowy mountains through the window, the Korean businessman in the
+      middle of the frame seen from the waist up, signing a contract with a fountain pen and breaking into a huge
+      triumphant smile. The contract text is blurred and unreadable.
+    characters: [boss]
+    still_motion: zoom_in
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of two men's hands in a firm handshake over a signed contract on a wooden table, one in a charcoal
+          suit sleeve and one in a navy blazer sleeve with a gold cufflink, warm alpine window light. The contract text
+          is blurred and unreadable. Only the hands are visible.
+        still_motion: push
+        focus: [0.5, 0.5]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "그리고 그 백사장 위에, 조선소와 배가 함께 섰죠. 11년 뒤엔 세계 1위였습니다."
+        captions: ["그리고 그 백사장 위에", "조선소와 배가 함께 섰죠", "11년 뒤엔 세계 1위였습니다"]
+    visual: 같은 바닷가에 거대한 골리앗 크레인과 초대형 유조선이 서 있다 / 진수하는 배 앞에서 사장이 뿌듯하게 바라본다
+    image_prompt: >-
+      The same coastline transformed into a huge shipyard in the 1970s, giant gantry cranes towering over an enormous
+      new oil tanker in a dry dock at golden sunset, sparks and lights glowing, a powerful, proud scene. No readable
+      text or logos. No people in focus.
+    still_motion: zoom_out
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          The Korean businessman seen from the waist up in the middle of the frame, wearing a white hard hat over his
+          suit, standing at the shipyard and gazing up at the giant tanker with moist, proud eyes and a quiet smile,
+          golden sunset light.
+        characters: [boss]
+        still_motion: push
+        focus: [0.5, 0.4]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "거북선 지폐 한 장으로 조선소를 세운 이 사장이 바로, 정주영 회장입니다."
+        captions: ["거북선 지폐 한 장으로 / 조선소를 세운 이 사장이", "바로, 정주영 회장입니다"]
+      - text: "여러분이라면 무엇을 보여 주며 설득하셨을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 무엇을 / 보여 주며 설득하셨을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 해 질 녘 바다를 내려다보는 사장의 옆모습 / 이어서 사장이 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The Korean businessman seen from the knees up in the middle of the frame, standing on the shore at sunset with the
+      shipyard cranes far behind him, holding the old banknote in one hand, a calm, proud smile. Soft golden sky. No
+      other people.
+    characters: [boss]
+    still_motion: push
+    focus: [0.5, 0.38]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same businessman from the reference image, seen from the waist up in the middle of
+          the frame, standing on the shore at sunset. He smiles warmly toward the viewer and holds one open palm out at
+          chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [boss]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "아주경제 [위기가 기회다-⑨현대중공업] 정주영의 '500원권 신화' (1971년 애플도어 롱바톰 회장에게 거북선이 그려진 500원권을 보이며 '한국은 16세기에 철갑선을 만들었다. 영국보다 300년이나 빠르다', 바클레이즈은행이 조선 능력 부족으로 거절 → 롱바톰 추천서로 차관, 영국 수출신용보증국 승인에 선주 증빙 필요, 울산 미포만 백사장 사진 한 장·지도·26만t급 유조선 도면, 그리스 리바노스 회장의 스위스 별장에서 대형 유조선 2척 계약, 1972.3.23 기공, 1974.6.28 준공·1·2호선 명명, 1983년 일본 다이아몬드지가 세계 1위 조선 기업으로 선정 — 기공 11년) — https://www.ajunews.com/view/20200614133259034"
+  - "한국민족문화대백과사전, 울산조선소 (1971년 10월 그리스 리바노스로부터 25만 9천 톤급 초대형 유조선 2척 수주, 1972년 3월 23일 기공, 착수 2년 3개월 만에 준공, 1974년 6월 28일 준공식과 1·2호선 명명식) — https://encykorea.aks.ac.kr/Article/E0081025"
+
+accuracy_notes:
+  - "주인공은 실존 기업가 정주영(1915~2001, 현대그룹 창업자). 영국 회장은 애플도어의 롱바톰 회장을 바탕으로 한 인물. 감정·장면은 설명용 재구성이며, 두 사람의 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'진땀을 뺐습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '런던'은 영국 은행·컨설턴트를 만나러 다닌 상황을 쉽게 쓴 배경. '배를 만들어 본 적도 돈도 없었다'는 조선 실적이 없고 자금이 없었다는 아주경제 서술 기준."
+  - "s02 바클레이즈은행이 조선 능력·기술 부족을 이유로 거절한 것은 아주경제 기준. 대사는 그 뜻을 풀어 쓴 것."
+  - "s04~s05 거북선 500원권과 '영국보다 300년 먼저 철갑선' 이야기는 정주영 본인이 전한 것으로 널리 알려진 일화(아주경제)이며 대본은 그 뜻을 옮긴 말이다. 거북선을 '철갑선'으로 보는 것은 그가 한 말 그대로 옮긴 것이며 학계에는 철갑 여부에 이견이 있다. 일화 속 상대는 은행이 아니라 롱바톰 회장이고, 그의 추천서로 차관을 얻었다."
+  - "s06 선주 증빙이 필요했고 백사장 사진·지도·유조선 도면뿐이었다는 것은 아주경제 기준. 대본은 사진만 말한다."
+  - "s07 그리스 리바노스로부터 초대형 유조선 2척 수주(1971년 10월)는 백과사전·아주경제 공통. 계약 장소(스위스 별장)는 아주경제 기준이며 화면은 연출."
+  - "s08 1972년 기공 → 1974년 준공·1·2호선 명명(백과사전). '11년 뒤 세계 1위'는 1983년 일본 다이아몬드지 선정(아주경제, 기공 11년) 기준."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면의 지폐는 거북선 그림이 있는 옛 지폐를 글자·숫자 없이 그린 연출이며 실제 지폐를 그대로 그리지 않는다. 회사 이름·로고는 화면에 넣지 않는다."
+  - "이미지 + 음성만인 편 (media: images): 컷마다 확대·축소·이동(still_motion, focus) + 컷 사이 디졸브. 화면 인물은 사장 중심, s03·s05-2에 영국 회장. 배경 인물 없음. 실사 편, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 배 한 척 못 만들어 본 나라가 지폐 한 장으로 조선소를 세운 법
+    - "\"이 거북선 보이시죠?\" 영국인을 설득한 한마디"
+    - 백사장 사진 한 장으로 유조선 두 척을 팔았다고?
+  description: |-
+    🚢 배를 만들어 본 적도, 돈도 없는데 조선소를 짓겠다고요?
+
+    1971년 영국, 은행은 고개를 저었습니다 🙅‍♂️ "배 한 척 못 만들어 본 나라에 돈을 빌려줄 순 없소"
+    그때 한국 사장이 지갑에서 꺼낸 건… 500원짜리 지폐 한 장! 💵
+    "이 거북선 보이시죠? 우린 영국보다 300년 먼저 철갑선을 만든 나라입니다" 🐢🔥
+
+    백사장 사진 한 장으로 유조선 두 척을 따내고, 11년 뒤엔 세계 1위까지! 🇰🇷 이 사장의 이름은 영상 끝에서!
+  comment_question: 여러분이라면 무엇을 보여 주며 설득하셨을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [거북선, 조선업, 한국경제, 국뽕, 쇼츠]
