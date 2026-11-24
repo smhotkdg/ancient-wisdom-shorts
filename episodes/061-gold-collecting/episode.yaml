@@ -1,0 +1,233 @@
+# 061 금 모으기 운동 — 장롱 속 돌반지 하나가 나라를 일으킨 1998년 겨울 (이미지 + 음성만, 실사)
+# 2026-11-24 사용자: 더 직관적인 이야기, 한국 사람이면 누구나 아는 내용
+id: "061"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: gold-collecting
+status: script_ok
+working_title: 나라 곳간이 텅 빈 겨울, 한 엄마는 장롱에서 무엇을 꺼냈을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["돌반지 하나로", "나라를 살렸다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [말문이 막혔습니다, 달러, 돌반지, 줄, 결혼반지, 금메달, 351만 명, 227톤, 3년 일찍]
+
+story:
+  hero: 엄마
+  reveal: [금 모으기 운동]
+
+characters:
+  - id: mom
+    name: 엄마
+    name_en: Korean mother of the late 1990s
+    description: >-
+      a Korean woman in her mid-30s with a warm, kind, slightly tired face, shoulder-length black hair loosely tied
+      back, wearing a beige knitted cardigan over a plain light blouse, dark slacks, a thin padded winter coat when
+      outdoors, 1990s ordinary-family style
+    note: 이야기 주인공. 1997~98년 외환위기 때 금 모으기에 참여한 평범한 엄마 — 수많은 참여자의 모습을 한 사람으로 엮은 창작 인물
+  - id: kid
+    name: 아이
+    name_en: Korean child of the late 1990s
+    description: >-
+      a cheerful Korean boy about 5 years old with a round face, short bowl-cut black hair and bright eyes, wearing a
+      red knitted sweater and blue corduroy trousers, 1990s style
+    note: 엄마의 아이 (창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1997년 겨울, 저녁 뉴스를 보던 한 엄마는 말문이 막혔습니다."
+        captions: ["1997년 겨울", "저녁 뉴스를 보던 한 엄마는 / 말문이 막혔습니다"]
+      - text: "나라에 빚 갚을 달러가 바닥나, 결국 남에게 손을 벌린다는 소식이었거든요."
+        captions: ["나라에 빚 갚을 달러가 바닥나", "결국 남에게 손을 벌린다는 / 소식이었거든요"]
+    visual: 1990년대 거실, 브라운관 TV 불빛 앞에서 엄마가 굳은 얼굴로 앉아 있다 / 식탁 위 식어 가는 밥
+    image_prompt: >-
+      A modest Korean apartment living room in winter 1997 lit by the bluish glow of an old CRT television, the mother
+      seen from the waist up in the middle of the frame, sitting on the floor cushion and staring at the screen in
+      stunned silence, one hand over her mouth. The TV screen shows only blurred unreadable light. No other people.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a small low dinner table in a 1990s Korean home with a bowl of rice and a pot of soup slowly going
+          cold, a pair of steel chopsticks resting untouched, bluish TV light falling across it. No people.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "남편 회사는 흔들리고, 동네 가게엔 하나둘 셔터가 내려갔죠."
+        captions: ["남편 회사는 흔들리고", "동네 가게엔 / 하나둘 셔터가 내려갔죠"]
+    visual: 겨울 저녁 1990년대 동네 상가, 셔터가 내려간 가게들 앞을 엄마가 장바구니를 들고 지나간다
+    image_prompt: >-
+      A quiet 1990s Korean neighborhood shopping street on a grey winter evening, several small shops with their metal
+      shutters pulled down, the mother in the middle of the frame seen from the knees up, walking past in her thin
+      winter coat with a nearly empty shopping bag, her face heavy with worry. No other people.
+    characters: [mom]
+    still_motion: pan_left
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "평범한 엄마 한 사람이, 나라를 위해 할 수 있는 게 있을까요?"
+        captions: ["평범한 엄마 한 사람이", "나라를 위해 / 할 수 있는 게 있을까요?"]
+    visual: 밤, 잠든 아이 곁에서 엄마가 아이 머리를 쓰다듬으며 생각에 잠긴다
+    image_prompt: >-
+      A small dim bedroom at night, the mother seen from the waist up in the middle of the frame, sitting beside her
+      sleeping little boy on a floor mattress and gently stroking his hair, lost in deep thought, soft lamp light on
+      her face.
+    characters: [mom, kid]
+    still_motion: zoom_out
+    focus: [0.5, 0.45]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 엄마는 장롱 깊숙한 곳에서, 작은 빨간 상자 하나를 꺼냈습니다."
+        captions: ["그래서 엄마는 / 장롱 깊숙한 곳에서", "작은 빨간 상자 하나를 / 꺼냈습니다"]
+    visual: 장롱 앞에 무릎 꿇은 엄마가 이불 사이에서 작은 빨간 벨벳 상자를 꺼낸다
+    image_prompt: >-
+      The mother kneeling in front of an open old wooden wardrobe stacked with folded quilts, seen from the waist up in
+      the middle of the frame, carefully drawing out a small red velvet ring box from deep inside, her face tender and
+      hesitant. Warm lamp light. No other people.
+    characters: [mom]
+    still_motion: drift
+    focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "아이 첫 생일에 받은 돌반지였죠. 반지를 쥔 손이 한참을 떨렸습니다."
+        captions: ["아이 첫 생일에 받은 / 돌반지였죠", "반지를 쥔 손이 / 한참을 떨렸습니다"]
+    visual: 상자 안 작은 금 돌반지 클로즈업 / 반지를 꼭 쥔 엄마의 손과 붉어진 눈
+    image_prompt: >-
+      Extreme close-up of a small open red velvet box holding a tiny gold baby ring, held in a woman's palm, warm lamp
+      light glinting on the gold. Only the hands are visible.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          The mother seen from the chest up in the middle of the frame, holding the tiny gold ring tightly against her
+          chest with both hands, eyes red and glistening, a small brave smile. Soft warm lamp light. No other people.
+        characters: [mom]
+        still_motion: zoom_in
+        focus: [0.5, 0.4]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 다음 날 은행 앞엔 줄이 끝도 없었습니다. 다들 손에 무엇을 들고 있었을까요?"
+        captions: ["그런데 다음 날 은행 앞엔", "줄이 끝도 없었습니다", "다들 손에 / 무엇을 들고 있었을까요?"]
+    visual: 겨울 아침 은행 앞, 아이 손을 잡은 엄마 뒤로 두꺼운 외투 차림 사람들의 줄이 길게 이어진다
+    image_prompt: >-
+      A cold winter morning outside a 1990s Korean bank branch, the mother in the middle of the frame seen from the
+      knees up, holding her little boy's hand and clutching the red ring box, looking back along the line with wide,
+      moved eyes, breath visible in the cold air.
+    characters: [mom, kid]
+    extras: "a long line of a few ordinary people in thick winter coats waiting behind her, small and out of focus, stretching down the street"
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of an elderly woman's wrinkled hands in a thick winter coat sleeve, holding an old gold ring wrapped in
+          a folded handkerchief while waiting in line in the cold. Only the hands are visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결혼반지, 금메달, 금 십자가까지. 그렇게 몇 달 만에 무려 351만 명이 모였죠."
+        captions: ["결혼반지, 금메달 / 금 십자가까지", "그렇게 몇 달 만에 / 무려 351만 명이 모였죠"]
+    visual: 은행 창구 쟁반 위로 결혼반지·금메달·금 십자가·돌반지가 차례로 놓인다 / 쌓여 가는 금붙이
+    image_prompt: >-
+      Close-up of a bank counter tray in the 1990s with gold items being placed on it one by one: a pair of wedding
+      rings, a gold medal on a ribbon, a small gold cross, and a tiny baby ring, warm light glinting on the gold. Only
+      hands are visible, no faces.
+    still_motion: pan_right
+    extra_clips:
+      - image_prompt: >-
+          A large transparent box on a bank table filled high with countless gold rings, necklaces and small gold items,
+          glowing warmly under the bank lights. No people.
+        still_motion: zoom_out
+        focus: [0.5, 0.5]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "모인 금은 약 227톤. 그리고 2001년, 우리는 빚을 예정보다 3년이나 일찍 갚았습니다."
+        captions: ["모인 금은 약 227톤", "그리고 2001년, 우리는 / 빚을 예정보다", "3년이나 일찍 갚았습니다"]
+    visual: 금괴가 가지런히 쌓인 금고 / 봄날 아파트 놀이터, 엄마가 아이와 손을 잡고 웃으며 걷는다
+    image_prompt: >-
+      Rows of shining gold bars stacked neatly on a pallet in a dim vault, warm light glinting on the gold, a sense of
+      great value gathered from many small pieces. No people, no text or markings.
+    still_motion: drift
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          A sunny spring day at a 2000s Korean apartment playground with cherry blossoms, the mother in the middle of
+          the frame seen from the knees up, walking hand in hand with her little boy, both laughing, petals drifting in
+          the air.
+        characters: [mom, kid]
+        still_motion: zoom_out
+        focus: [0.5, 0.45]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "작은 돌반지들이 나라를 일으킨 이 일이 바로, 금 모으기 운동입니다."
+        captions: ["작은 돌반지들이 / 나라를 일으킨 이 일이", "바로, 금 모으기 운동입니다"]
+      - text: "여러분 집에도 그때의 이야기가 있나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분 집에도 / 그때의 이야기가 있나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 빈 빨간 반지 상자가 창가 햇살 속에 놓여 있다 / 이어서 엄마가 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      An empty small red velvet ring box sitting open on a sunny windowsill of a Korean apartment, soft morning light,
+      a child's drawing pinned beside it with blurred unreadable crayon marks, a quiet, proud, hopeful mood. No people.
+    still_motion: push
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same mother from the reference image, seen from the waist up in the middle of the
+          frame, standing in her sunny living room. She smiles warmly toward the viewer and holds one open palm out at
+          chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [mom]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "국가기록원 '기록으로 만나는 대한민국 — IMF 외환위기' (1997.11.21 IMF 자금 지원 요청 발표, 1997.12.3 IMF 210억 달러 구제금융 승인, 1998년 1월 KBS 금 모으기 캠페인으로 전국 확산, 3개월 동안 약 351만 명이 금 227톤 — 당시 18억 달러, 결혼반지·돌반지, 운동선수들의 금메달, 김수환 추기경의 금 십자가, 2004년 5월까지 갚기로 한 195억 달러를 2001.8.23 모두 갚아 약 3년 앞당김) — https://theme.archives.go.kr/next/koreaOfRecord/imf.do"
+  - "한국민족문화대백과사전, 금모으기운동 (1997년 12월 새마을부녀회 '애국가락지 모으기' 제안, 1998년 1월 5일 KBS 방송으로 본격화, 4월 종결, 351만 명 참여, 약 227톤, 수출액 약 22억 달러, '제2의 국채보상운동') — https://encykorea.aks.ac.kr/Article/E0080908"
+  - "뉴시스 2025-02-21 (1998년 1~4월, 약 227톤, 22억 달러 — 1997년 11월 가용 외환보유액 20억 달러보다 많았음) — https://www.newsis.com/view/NISX20250221_0003074649"
+
+accuracy_notes:
+  - "엄마·아이는 수많은 참여자의 모습을 한 가족으로 엮은 창작 인물이다. 감정·속마음·장면(뉴스, 식은 밥, 셔터 내린 가게, 장롱 속 빨간 상자, 떨리는 손, 은행 앞 줄)은 몰입을 위한 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물."
+  - "'말문이 막혔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 1997년 11월 IMF 자금 지원 요청·12월 구제금융 승인은 국가기록원 기준. '빚 갚을 달러가 바닥나'는 가용 외환보유액이 20억 달러 수준이었다는 뉴시스 서술을 쉽게 쓴 표현."
+  - "s02 회사·가게가 어려워진 모습은 외환위기 시기의 일반적인 상황을 이야기로 푼 재구성이며 특정 통계를 말하지 않는다."
+  - "s05 돌반지·결혼반지가 나온 것은 국가기록원 기준. '아이 첫 생일에 받은'은 돌반지의 뜻을 쉽게 쓴 것."
+  - "s06 은행 앞 긴 줄은 '어린아이부터 노인까지 수백만 명이 줄을 서서 참여'(국가기록원)를 바탕으로 한 장면. 금을 받은 곳은 주택은행·농협 등 여러 은행."
+  - "s07 결혼반지·금메달(운동선수)·금 십자가(김수환 추기경)는 국가기록원 기준. '몇 달 만에 351만 명'은 국가기록원(3개월)·백과사전(1월~4월) 기준."
+  - "s08 약 227톤은 국가기록원·백과사전 공통. '2001년 예정보다 3년 일찍 갚았다'는 국가기록원(2004년 5월 예정 → 2001년 8월 23일 상환 완료, 약 3년 앞당김) 기준. 빚을 금으로 갚은 것이 아니라 온 나라의 노력으로 갚았다는 뜻으로 쓴다."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "이미지 + 음성만인 편 (media: images): 컷마다 확대·축소·이동(still_motion, focus) + 컷 사이 디졸브."
+  - "화면 인물은 엄마 중심, s03·s06·s08에 아이, s06에 뒤쪽 줄 선 사람들(배경). 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 장롱 속 돌반지 하나가 나라를 살렸다
+    - 1998년 겨울, 은행 앞에 끝없이 늘어선 줄의 정체
+    - 엄마가 아이 돌반지를 꺼낸 날
+  description: |-
+    💍 아이 첫 생일에 받은 돌반지… 여러분이라면 내놓을 수 있으셨을까요?
+
+    1997년 겨울, 저녁 뉴스에서 들려온 충격적인 소식 📺 "나라에 빚 갚을 달러가 바닥났다"
+    한 엄마는 장롱 깊숙한 곳에서 작은 빨간 상자 하나를 꺼냅니다 🥹
+    그런데 다음 날 은행 앞엔… 끝이 안 보이는 줄이 서 있었는데요!
+
+    결혼반지, 금메달, 금 십자가까지 ✨ 우리 모두가 아는 그 이야기, 영상 끝에서 이름이 공개됩니다 🇰🇷
+  comment_question: 여러분 집에도 그때의 이야기가 있나요? 여러분의 생각이 궁금합니다.
+  hashtags: [IMF, 외환위기, 돌반지, 한국사, 쇼츠]
