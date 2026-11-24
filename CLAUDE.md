@@ -60,6 +60,7 @@ python aw.py publish <ep> -m M # 텍스트 파일만 골라 커밋·푸시 (--al
 9. **자막은 대본의 모든 단어를** 의미 단위로 보여 준다. 자동 나눔이 어색하면 `episode.yaml`의 `captions`로 직접 쓴다.
 10. **매 영상마다 유튜브 추천 제목·설명 문구**를 함께 낸다 (`episode.yaml`의 `youtube` → `output/youtube.txt`, `aw.py youtube`). 설명은 재미있게: 이모지+궁금증 첫 줄 → 맛보기 → 오늘과 연결 + 댓글 질문. 재구성 안내는 자동으로 붙는다.
 10-1. **콘티를 줄 때 로컬 Claude Code 합성 지시문도 함께** 준다. `aw.py conti`가 콘티의 "Claude Code" 탭과 `claude-code.txt`로 자동 생성한다 (가로 중앙 정렬 검수 포함).
+10-2. **이미지 + 음성만인 편** (2026-11-24 사용자): `episode.yaml`에 `media: images`. Grok 영상 없이 장면 이미지와 추가 이미지 컷(`extra_clips`의 `image_prompt`, 필요하면 `still_motion: slow_zoom|pan_left|pan_right`)을 천천히 확대·이동해 잇는다. 콘티에 Grok 탭이 생기지 않고, Claude Code 지시문도 이미지 기준으로 바뀐다. 한 컷이 5초를 넘지 않게 장면마다 이미지 1~2장.
 11. **Grok 클립 원음은 효과음으로만 작게** 남긴다 (기본 `audio.sfx_volume: 0.12`, 에피소드·장면별로 바꿀 수 있음). 말소리·음악이 섞인 클립은 그 장면만 `sfx_volume: 0`.
 12. **화풍은 프리셋으로** 바꾼다 (`styles/*.yaml`). **047부터 기본은 실사(`photoreal`)** (2026-11-10 사용자: "최대한 실사로"), 001~046은 `episode.yaml`에 `style: 3d-cartoon`으로 고정. 프롬프트에 화풍 문구를 직접 박아 넣지 않는다. 실사 편은 인물을 '실존 인물의 초상이 아닌 창작 인물'로 쓴다 (프리셋이 자동으로 붙임) — 실존 인물 사진처럼 만들면 ChatGPT가 막을 수 있다.
 13. **Git에는 텍스트만**: 이미지·영상·음성·빌드 결과·키는 올리지 않는다(.gitignore). 에피소드 폴더의 `episode.yaml`, `conti.html`, `prompts.json`, `prompts-chatgpt.txt`, `prompts-grok.txt`, `claude-code.txt`, `output/youtube.txt`는 올린다. `images/`, `clips/`는 빈 폴더(`.gitkeep`)만 올려서 pull 하면 폴더가 바로 생긴다. 콘티는 레포 루트 `conti/`에도 복사본(`conti/NNN-slug.html`)과 목록(`conti/index.html`)이 생겨 함께 올린다 (`aw.py conti`가 자동 갱신).

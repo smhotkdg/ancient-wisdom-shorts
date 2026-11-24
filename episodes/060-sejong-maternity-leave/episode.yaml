@@ -1,0 +1,223 @@
+# 060 세종 — 노비 엄마에게 100일, 아빠에게도 한 달: 600년 전 출산휴가 (이미지 + 음성만, 실사)
+id: "060"
+style: photoreal
+media: images            # 2026-11-24 사용자: Grok 영상 없이 이미지와 TTS 만으로 만든다
+slug: sejong-maternity-leave
+status: script_ok
+working_title: 600년 전 조선에도 출산휴가가 있었다? 그것도 노비에게, 아빠에게까지
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
+title_lines: ["600년 전에", "아빠 출산휴가가?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [눈앞이 캄캄했습니다, 갓난아기, 백 일, 한 달, 남편, 아빠 출산휴가, 600년]
+
+story:
+  hero: 여종
+  reveal: [세종대왕]
+
+characters:
+  - id: mom
+    name: 여종
+    name_en: young Korean servant woman of the 1420s
+    description: >-
+      a slim Korean woman in her mid-20s with a gentle, tired but warm face, soft dark eyes, black hair pinned in a
+      simple low bun with a plain wooden pin, wearing a faded off-white cotton jeogori and a long dark grey cotton
+      skirt with a plain apron, straw sandals, work-roughened hands
+    note: 이야기 주인공. 1420~30년대 관청에서 일하던 관비(여종) — 실록의 여러 기사를 한 사람의 이야기로 엮은 창작 인물
+  - id: dad
+    name: 남편
+    name_en: young Korean laborer husband of the 1420s
+    description: >-
+      a sturdy Korean man in his late 20s with a kind, shy face, sun-tanned skin, short black hair tied in a small
+      topknot under a plain cloth headband, wearing a plain undyed cotton jacket and trousers with straw sandals
+    note: 여종의 남편 (창작 인물)
+  - id: king
+    name: 임금
+    name_en: Joseon king of the 1420s
+    description: >-
+      a Korean man in his early 30s with a calm, thoughtful, kind face, gentle intelligent eyes and a short neat beard,
+      wearing a deep red royal dragon robe with a round gold embroidered emblem on the chest and a black winged royal
+      hat, seated or standing with quiet dignity
+    note: 조선의 임금 (마지막 대사 전까지 이름을 밝히지 않는다, 실제 인물의 초상이 아닌 창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1420년대 조선, 한 관청 여종은 눈앞이 캄캄했습니다."
+        captions: ["1420년대 조선", "한 관청 여종은 / 눈앞이 캄캄했습니다"]
+      - text: "갓난아기를 낳고, 몸도 추스르기 전에 다시 일하러 나가야 했거든요."
+        captions: ["갓난아기를 낳고 / 몸도 추스르기 전에", "다시 일하러 / 나가야 했거든요"]
+    visual: 새벽 초가 방, 여종이 잠든 갓난아기를 내려다보며 지친 얼굴로 일어선다 / 아기를 두고 문을 나서며 뒤돌아본다
+    image_prompt: >-
+      A small dim thatched-roof room at dawn, the young servant woman seen from the waist up in the middle of the frame,
+      kneeling beside a tiny newborn baby sleeping on a folded cotton blanket, looking down at the baby with an
+      exhausted, worried, loving face, one hand resting on her own aching back. Soft blue dawn light from a paper door.
+      No other people.
+    characters: [mom]
+    extra_clips:
+      - image_prompt: >-
+          The young servant woman standing at the open paper door of the small room at dawn, seen from the waist up in
+          the middle of the frame, tying her apron and looking back over her shoulder toward the sleeping baby inside
+          with tearful eyes. Cold blue morning light outside. No other people.
+        characters: [mom]
+        still_motion: slow_zoom
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "물동이를 이고 가면서도, 우리 아기 지금 울고 있진 않을까?"
+        captions: ["물동이를 이고 가면서도", "우리 아기 지금 / 울고 있진 않을까?"]
+    visual: 관청 마당 우물가, 여종이 물동이를 들고 멍하니 멈춰 선 채 집 쪽을 바라본다
+    image_prompt: >-
+      The courtyard of a Joseon government office with a stone well and tiled-roof buildings, the young servant woman
+      seen from the waist up in the middle of the frame, holding a heavy clay water jar against her hip, pausing and
+      staring blankly into the distance toward home, her eyes wet with worry. No other people.
+    characters: [mom]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그런데 이 이야기가 궁궐까지 닿았습니다. 임금은 어떻게 했을까요?"
+        captions: ["그런데 이 이야기가 / 궁궐까지 닿았습니다", "임금은 어떻게 했을까요?"]
+    visual: 궁궐 편전, 붉은 곤룡포의 임금이 상소문을 읽다 멈추고 깊이 생각에 잠긴다 (글자 흐릿)
+    image_prompt: >-
+      Inside a quiet Joseon palace hall with wooden pillars and paper windows, the king seen from the waist up in the
+      middle of the frame, seated at a low lacquered desk and holding an unfolded report, pausing with a troubled,
+      compassionate expression. All writing blurred and unreadable. No other people.
+    characters: [king]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 임금은 명을 내렸습니다. 아이를 낳은 여종에게, 백 일을 쉬게 하라."
+        captions: ["그래서 임금은 / 명을 내렸습니다", "아이를 낳은 여종에게 / 백 일을 쉬게 하라"]
+    visual: 임금이 붓을 들어 단호하게 명을 적는다 / 여종이 아기를 안고 햇살 드는 방에서 처음으로 웃는다
+    image_prompt: >-
+      The king seen from the waist up in the middle of the frame, seated at the low desk in the palace hall, writing a
+      royal order with a brush on a long sheet of paper, his face kind and resolute. The brush writing is soft and
+      unreadable. No other people.
+    characters: [king]
+    extra_clips:
+      - image_prompt: >-
+          The small thatched-roof room filled with warm morning sunlight, the young servant woman seen from the waist up
+          in the middle of the frame, sitting and holding her newborn baby close to her chest, smiling with tearful
+          relief for the first time. No other adults.
+        characters: [mom]
+        still_motion: slow_zoom
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 이번엔 만삭의 몸으로 일하는 모습까지 살펴, 낳기 전에도 한 달을 쉬게 했죠."
+        captions: ["그러자 이번엔 만삭의 몸으로 / 일하는 모습까지 살펴", "낳기 전에도 / 한 달을 쉬게 했죠"]
+    visual: 밭에서 배가 부른 여종이 허리를 짚고 일어선다 / 툇마루에 앉아 부른 배를 쓰다듬으며 편히 쉰다
+    image_prompt: >-
+      A green vegetable field near the village on a hot summer day, the servant woman, now heavily pregnant, seen from
+      the waist up in the middle of the frame, straightening up from field work with one hand on her lower back and
+      the other on her round belly, wiping sweat from her brow. No other people.
+    characters: [mom]
+    extra_clips:
+      - image_prompt: >-
+          The servant woman, heavily pregnant, seen from the waist up in the middle of the frame, resting on the shaded
+          wooden veranda of her thatched house, gently stroking her round belly with a peaceful smile, a cool breeze
+          and green leaves around. No other people.
+        characters: [mom]
+        still_motion: pan_right
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "하지만 남편은 쉴 수 없어, 홀로 아이를 돌보던 산모가 위험해지는 일이 생겼습니다."
+        captions: ["하지만 남편은 쉴 수 없어", "홀로 아이를 돌보던 산모가 / 위험해지는 일이 생겼습니다"]
+    visual: 밤, 열이 오른 여종이 아기를 안은 채 지쳐 벽에 기대 있고 등잔불만 깜빡인다
+    image_prompt: >-
+      A dim thatched-roof room at night lit by a single oil lamp, the young mother seen from the waist up in the middle
+      of the frame, pale and feverish, leaning weakly against the wall while holding her newborn baby, struggling to
+      stay awake, a bowl of water beside her. No other people.
+    characters: [mom]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 1434년, 임금은 남편에게도 한 달의 휴가를 줬습니다. 아빠 출산휴가였죠."
+        captions: ["결국 1434년, 임금은", "남편에게도 / 한 달의 휴가를 줬습니다", "아빠 출산휴가였죠"]
+    visual: 아침 햇살, 남편이 서툰 손으로 갓난아기를 안고 웃고, 곁에서 여종이 누워 미소 짓는다 / 남편이 미역국을 끓여 건넨다
+    image_prompt: >-
+      A small thatched-roof room in warm morning sunlight, the young husband seen from the waist up in the middle of the
+      frame, holding the tiny newborn baby clumsily but tenderly in his big hands and grinning with shy joy, the mother
+      resting on a sleeping mat beside him and smiling at them.
+    characters: [dad, mom]
+    extra_clips:
+      - image_prompt: >-
+          The young husband in the middle of the frame seen from the waist up, kneeling beside the resting mother and
+          carefully handing her a steaming bowl of seaweed soup with both hands, his face full of care; she smiles
+          warmly as she reaches for it. Warm morning light.
+        characters: [dad, mom]
+        still_motion: pan_left
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "지금으로부터 약 600년 전, 그것도 노비에게 준 휴가였다고 합니다."
+        captions: ["지금으로부터 약 600년 전", "그것도 노비에게 / 준 휴가였다고 합니다"]
+    visual: 초가 마당 빨랫줄에 작은 아기 옷이 햇살 속에 나부낀다 (사람 없음)
+    image_prompt: >-
+      A small sunny yard of a thatched-roof house in Joseon, a straw rope line with tiny white cotton baby clothes and a
+      little quilt fluttering gently in the breeze, wildflowers by the fence, a warm, peaceful afternoon. No people.
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "노비의 아기까지 챙긴 이 임금이 바로, 세종대왕입니다."
+        captions: ["노비의 아기까지 챙긴 / 이 임금이", "바로, 세종대왕입니다"]
+      - text: "여러분이라면 아기와 함께할 휴가, 며칠이면 좋을까요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이라면 / 아기와 함께할 휴가", "며칠이면 좋을까요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 궁궐 뜰에서 임금이 잔잔히 미소 짓는다 / 이어서 여종이 아기를 안고 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The king seen from the knees up in the middle of the frame, standing in a quiet palace courtyard under a
+      blossoming tree on a bright spring day, hands folded in his sleeves, a gentle, warm smile. Soft blue sky. No other
+      people.
+    characters: [king]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young mother from the reference image, seen from the waist up in the middle
+          of the frame, standing in the sunny yard holding her baby wrapped in a cotton blanket. She smiles warmly
+          toward the viewer and holds one open palm out at chest height in a gentle "what do you think?" gesture. Calm,
+          warm, family-friendly mood. No other adults.
+        characters: [mom]
+        still_motion: slow_zoom
+
+sources:
+  - "국가기록원 '기록으로 보는 조선왕조실록' (세종 16년(1434) 4월 26일, 『세종실록』 64권: 서울·지방 여종이 아이를 배어 산달이 된 때와 산후 100일 안에는 일을 시키지 말라는 것은 이미 법으로 정했으나, 남편에게는 휴가를 주지 않아 산모를 돌보지 못해 목숨을 잃는 일까지 생김 → 이제부터 역에 종사하는 사람의 아내가 아이를 낳으면 남편도 30일 뒤에 일을 시키라 — 원문 '自今有役人之妻産兒, 則其夫滿三十日後役使') — https://theme.archives.go.kr/next/silloc/history.do?submenu=1"
+  - "여성가족부 어린이 누리집 (출처 『조선왕조실록』: 1426년 세종이 여자 노비가 아이를 낳으면 100일 휴가를 주라고 명함, 만삭의 여종이 밭에서 일하는 모습을 보고 출산 전에도 한 달 휴가, 돌봐 줄 사람이 없어 갓난아이가 죽게 되자 아이를 낳은 여종의 남편에게도 한 달 휴가) — https://www.mogef.go.kr/kids/new/html/gap04.html"
+
+accuracy_notes:
+  - "여종·남편은 실록의 여러 기사를 한 가족의 이야기로 엮은 창작 인물이다. 임금은 세종(재위 1418~1450). 감정·대사·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 세종의 이름을 밝히지 않는다."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 '몸도 추스르기 전에 다시 일하러'는 100일 휴가가 새로 생기기 전의 처지를 이야기로 푼 것. 그 전 휴가 일수(흔히 7일로 소개됨)는 이번에 공공기관 자료로 확인하지 못해 대본에 넣지 않는다."
+  - "s03 '이야기가 궁궐까지 닿았다'는 이야기 표현이다."
+  - "s04 1426년 산후 100일 휴가 명은 여성가족부(실록 출처) 기준. '백 일을 쉬게 하라'는 명의 뜻을 옮긴 표현이며 실록 원문 인용이 아니다."
+  - "s05 만삭의 여종이 일하는 것을 보고 출산 전 한 달 휴가를 준 일은 여성가족부 기준. 1434년 실록 기사도 '산달'과 '산후 100일'에 일을 시키지 말라고 적는다."
+  - "s06 남편이 쉬지 못해 산모를 돌보지 못하고 목숨을 잃는 일까지 생겼다는 것은 1434년 실록(국가기록원)·여성가족부 기준. 대본은 '위험해지는 일'로 부드럽게 쓴다."
+  - "s07 1434년 남편 30일(한 달) 휴가는 국가기록원 실록 원문 기준. 대상은 '역에 종사하는 사람의 아내'가 아이를 낳은 경우. '아빠 출산휴가'는 오늘날 말로 쉽게 쓴 표현. 미역국 화면은 연출."
+  - "s08 '약 600년 전'은 1426~1434년 기준 대략값."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀, 여종이 묻는다)."
+  - "이미지 + 음성만인 편 (media: images): Grok 영상 없이 장면 이미지와 추가 이미지 컷(extra_clips 의 image_prompt)을 천천히 확대·이동해 잇는다."
+  - "화면 인물은 여종 중심, s03·s04·s09는 임금, s07은 남편과 여종 두 사람. 배경 인물 없음. 실사 편, 화면 제목 없음 (모바일 세이프 에어리어 적용)."
+
+youtube:
+  titles:
+    - 600년 전 조선에 '아빠 출산휴가'가 있었다고?
+    - 노비 엄마에게 백 일, 아빠에게 한 달을 준 임금
+    - 갓난아기를 두고 일하러 가던 여종에게 생긴 일
+  description: |-
+    👶 아기를 낳고 며칠 만에 다시 출근해야 한다면… 상상만 해도 눈앞이 캄캄하죠?
+
+    1420년대 조선, 한 관청 여종이 딱 그랬습니다 😢
+    그런데 이 이야기를 들은 임금이 내린 명령! "아이를 낳은 여종에게 백 일을 쉬게 하라" 🍼
+    낳기 전에도 한 달, 그리고 1434년엔… 무려 남편에게도 한 달 휴가를 줍니다 👨‍🍼
+
+    그것도 600년 전, 노비에게 말이죠 ✨ 우리가 모두 아는 그 임금, 정답은 영상 끝에서!
+  comment_question: 여러분이라면 아기와 함께할 휴가, 며칠이면 좋을까요? 여러분의 생각이 궁금합니다.
+  hashtags: [조선, 출산휴가, 육아, 한국사, 쇼츠]

@@ -207,11 +207,16 @@ def cmd_status(a):
     say(f"  {mark(ep.raw_voice)} 음성   {mark(ep.timing_path)} 타이밍   {mark(ep.dir / 'conti.html')} 콘티")
     for c in ep.data.get("characters") or []:
         say(f"  {mark(ep.images_dir / ('char_' + c['id'] + '.png'))} 캐릭터 char_{c['id']}.png")
-    from shorts.common import clip_parts
+    from shorts.common import clip_parts, images_only
     for sc in ep.scenes:
         sid = sc["id"]
         img = any((ep.images_dir / f"{sid}{e}").exists() for e in (".png", ".jpg", ".jpeg", ".webp"))
         parts = clip_parts(sc)
+        if images_only(ep):   # 이미지 + 음성만: 추가 이미지 컷을 보여 준다
+            extra = [p for p in parts if p["own_image"]]
+            clips = "  ".join(f"{p['image']}.png {'✓' if (ep.images_dir / (p['image'] + '.png')).exists() else '·'}" for p in extra)
+            say(f"  {sid}  이미지 {'✓' if img else '·'}  " + (clips or "(이미지 한 장)"))
+            continue
         clips = "  ".join(f"{p['file']} {'✓' if (ep.clips_dir / p['file']).exists() else '·'}" for p in parts)
         say(f"  {sid}  이미지 {'✓' if img else '·'}  " + (clips if parts else "(정지 장면)"))
     say(f"  {mark(ep.output_dir / 'animatic.mp4')} 애니매틱   {mark(ep.output_dir / 'final.mp4')} 최종")

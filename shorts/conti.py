@@ -103,6 +103,9 @@ def grok_length(ep: Episode, seconds: float) -> tuple[int, str]:
 
 def grok_plan(ep: Episode, timing: dict) -> list[dict]:
     """Grok 클립마다 구간·길이·파일명·프롬프트."""
+    from .common import images_only
+    if images_only(ep):   # 이미지 + 음성만인 편은 Grok 영상이 없다
+        return []
     out = []
     for sc in ep.scenes:
         parts = clip_parts(sc)
@@ -126,7 +129,10 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
     rel = f"episodes/{ep.dir.name}"
     n_chars = len(ep.script_text())
     chars = ep.data.get("characters") or []
+    from .common import images_only
     n_img = len(chars) + len(ep.scenes) + sum(1 for g in grok_items if g["upload"] != f"images/{g['scene']}.png")
+    if images_only(ep):
+        n_img = len(chars) + sum(len([p for p in clip_parts(sc) if p["own_image"]]) + 1 for sc in ep.scenes)
     focus = ", ".join(str(k) for k in ep.data.get("caption_keywords") or []) or "핵심 동작"
     txt = f"""{rel} 를 최종 합성해줘. CLAUDE.md 규칙을 따른다.
 진행 방식: 중간에 묻지 말고 끝까지 한 번에 진행한다 (이미지·클립이 빠졌거나 네트워크 오류로 음성 결과가 불명확할 때만 멈춤).
@@ -185,6 +191,17 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
                       "   - 걸린 장면은: ① 클립 앞·뒤만 걸리면 trim_start 로 피한다 ② 안 되면 그 컷을 episode.yaml redo: images 에 적고\n"
                       "     python aw.py conti 로 다시 만들기 탭을 만든 뒤 보고한다 (이미지·클립 재생성은 사용자 몫)\n",
                       txt, flags=_re.S)
+    if images_only(ep):
+        # 이미지 + 음성만인 편 (2026-11-24 사용자): Grok 클립 관련 단계를 이미지 기준으로 바꾼다
+        txt = txt.replace(f"이미지 {n_img}장, Grok 클립 {len(grok_items)}개, 음성이 있는지 확인. 이미지·클립이 빠졌으면",
+                          f"이미지 {n_img}장(이 편은 Grok 영상 없음 — 이미지 + 음성만), 음성이 있는지 확인. 이미지가 빠졌으면")
+        txt = txt.replace(" 6초를 넘는 클립 구간 알림이 있으면 보고.", "")
+        txt = txt.replace("Grok 이 사람을 더 만들어 넣어 주인공을 가리지 않는지", "배경 인물이 주인공을 가리지 않는지")
+        txt = txt.replace("   - 클립에 말소리·사람 소리(웃음·외침)·음악이 섞였는지 → 그 장면(또는 extra_clips 항목) sfx_volume: 0\n", "")
+        txt = txt.replace("   - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start\n",
+                          "   - 이미지 컷이 너무 길어 지루한 곳(한 컷 5초 넘게)이 있으면 보고 — 컷 추가는 사용자와 상의\n")
+        txt = txt.replace("① 클립 앞·뒤만 걸리면 trim_start 로 피한다 ② 안 되면 그 컷을", "그 컷을")
+        txt = txt.replace("감속·정지 보정된 클립, ", "")
     return txt
 
 
@@ -393,7 +410,7 @@ def build(ep: Episode) -> str:
     out.append("<nav class='tabs' role='tablist'>"
                "<button class='tab' role='tab' data-tab='scenes' onclick=\"showTab('scenes')\">장면별 보기</button>"
                f"<button class='tab' role='tab' data-tab='gpt' onclick=\"showTab('gpt')\">GPT 이미지 모음<span class='n'>{len(gpt_items)}</span></button>"
-               f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button>"
+               + (f"<button class='tab' role='tab' data-tab='grok' onclick=\"showTab('grok')\">Grok 영상 모음<span class='n'>{len(grok_items)}</span></button>" if grok_items else "")
                + (f"<button class='tab' role='tab' data-tab='redo' onclick=\"showTab('redo')\">다시 만들기<span class='n'>{len(r_gpt)}</span></button>" if r_gpt else "")
                + "<button class='tab' role='tab' data-tab='cc' onclick=\"showTab('cc')\">Claude Code</button></nav>")
     out.append("<div class='panel' data-panel='cc' hidden><div class='bulk'><p><b>로컬 Claude Code 합성 지시문</b> · "
@@ -402,7 +419,7 @@ def build(ep: Episode) -> str:
                f"<div class='p'><pre id='cc-src' style='max-height:none'>{_e(cc)}</pre></div></div>")
     out.append(_collection("gpt", "ChatGPT 이미지 프롬프트", "'전체 복사'를 그대로 붙여 넣으면 캐릭터 → 장면 순서로 묻지 않고 바로 생성합니다 (10장씩 나눠서).",
                            gpt_items, gpt_header, gpt_preamble(gpt_items)))
-    out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
+    if grok_items: out.append(_collection("grok", "Grok 영상 프롬프트", f"장면 이미지를 올리고 {max_clip}초로 생성하세요. -2 클립은 같은 이미지에서 다른 동작으로 만듭니다.",
                            grok_items, grok_header))
     if r_gpt:
         out.append(_collection("redo", "다시 만들 ChatGPT 이미지", f"{r_why} — 이 이미지들만 다시 만듭니다. 아래에 같은 장면의 Grok 클립도 있습니다.",

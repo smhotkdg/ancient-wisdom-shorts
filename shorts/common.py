@@ -117,7 +117,7 @@ def clip_parts(scene: dict) -> list[dict]:
     """
     if (scene.get("source") or "grok") != "grok":
         return []
-    keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in", "extras")
+    keys = ("motion_prompt", "camera", "trim_start", "sfx_volume", "punch_in", "extras", "still_motion")
     sid = scene["id"]
     parts = [{"n": 1, "file": f"{sid}.mp4", "image": sid, "own_image": False,
               "characters": scene.get("characters"), **{k: scene.get(k) for k in keys}}]
@@ -220,6 +220,12 @@ def say(msg: str) -> None:
 def fail(msg: str) -> None:
     print(f"[오류] {msg}", file=sys.stderr, flush=True)
     sys.exit(2)
+
+
+def images_only(ep) -> bool:
+    """media: images — Grok 영상 없이 이미지 + 음성만으로 만드는 편 (2026-11-24 사용자).
+    extra_clips 의 image_prompt 는 같은 장면 안에서 이어지는 '추가 이미지 컷'이 된다."""
+    return str(ep.data.get("media") or "").lower() in ("images", "image", "images_only")
 
 
 def show_title(ep) -> bool:

@@ -42,20 +42,33 @@ def _scene_image(ep: Episode, sid: str) -> Path | None:
     return None
 
 
+# 이미지 + 음성만인 편: 컷마다 움직임을 번갈아 단조로움을 줄인다 (확대 상한은 still_zoom_max 그대로)
+STILL_CYCLE = ["slow_zoom", "pan_right", "slow_zoom", "pan_left"]
+
+
 def plan_segments(ep: Episode, timing: dict, animatic: bool) -> tuple[list[dict], list[str]]:
     """장면을 렌더 단위(세그먼트)로 나눈다. Grok 장면은 클립 수만큼, 나머지는 하나."""
+    from .common import images_only
+    img_only = images_only(ep)
     segs, notes = [], []
     for sc in ep.scenes:
         sid = sc["id"]
         img = _scene_image(ep, sid)
         parts = clip_parts(sc)
-        if parts and not animatic:
+        if parts and (not animatic or img_only):
             bounds = part_bounds(ep, timing, sc, len(parts))
             for part, (a, b) in zip(parts, bounds):
                 clip = ep.clips_dir / part["file"]
                 img = _scene_image(ep, part["image"]) or _scene_image(ep, sid)
                 tag = f"{sid}-{part['n']}" if len(parts) > 1 else sid
-                if clip.exists():
+                if img_only:   # 이미지 + 음성만: 클립을 찾지 않고 컷마다 정지 이미지
+                    if img is not None:
+                        segs.append({"scene": sc, "tag": tag, "kind": "still", "path": img, "part": part, "start": a, "end": b})
+                    elif animatic:
+                        segs.append({"scene": sc, "tag": tag, "kind": "card", "path": None, "part": part, "start": a, "end": b})
+                    else:
+                        notes.append(f"{tag}: images/{part['image']}.png 가 없습니다 (모두 없습니다)")
+                elif clip.exists():
                     segs.append({"scene": sc, "tag": tag, "kind": "clip", "path": clip, "part": part, "start": a, "end": b})
                 elif img is not None:
                     segs.append({"scene": sc, "tag": tag, "kind": "still", "path": img, "part": part, "start": a, "end": b})
@@ -189,6 +202,8 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
         timing = estimate(ep)
         say("  (음성이 없어 추정 타이밍으로 애니매틱을 만듭니다 — 내레이션 없음)")
 
+    from .common import images_only
+    img_only = images_only(ep)
     segs, notes = plan_segments(ep, timing, animatic)
     bad = [n for n in notes if "모두 없습니다" in n]
     if bad:
@@ -225,7 +240,9 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
         else:
             if g["kind"] == "still":
                 base = Image.open(g["path"]).convert("RGB")
-                motion = sc.get("still_motion") or ep.project["clips"]["still_motion"]
+                motion = ((g["part"] or {}).get("still_motion") or sc.get("still_motion")
+                          or (STILL_CYCLE[k % len(STILL_CYCLE)] if img_only else None)
+                          or ep.project["clips"]["still_motion"])
             else:
                 base = _placeholder(ep, sc, lines_by_scene[sid])
                 motion = "none"
