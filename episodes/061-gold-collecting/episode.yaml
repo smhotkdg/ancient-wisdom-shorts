@@ -4,7 +4,7 @@ id: "061"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: gold-collecting
-status: script_ok
+status: done
 working_title: 나라 곳간이 텅 빈 겨울, 한 엄마는 장롱에서 무엇을 꺼냈을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["돌반지 하나로", "나라를 살렸다고?"]
@@ -37,9 +37,9 @@ scenes:
     beat: hook
     lines:
       - text: "1997년 겨울, 저녁 뉴스를 보던 한 엄마는 말문이 막혔습니다."
-        captions: ["1997년 겨울", "저녁 뉴스를 보던 한 엄마는 / 말문이 막혔습니다"]
+        captions: ["1997년 겨울", "저녁 뉴스를 보던 / 한 엄마는", "말문이 막혔습니다"]
       - text: "나라에 빚 갚을 달러가 바닥나, 결국 남에게 손을 벌린다는 소식이었거든요."
-        captions: ["나라에 빚 갚을 달러가 바닥나", "결국 남에게 손을 벌린다는 / 소식이었거든요"]
+        captions: ["나라에 빚 갚을 / 달러가 바닥나", "결국 남에게 / 손을 벌린다는", "소식이었거든요"]
     visual: 1990년대 거실, 브라운관 TV 불빛 앞에서 엄마가 굳은 얼굴로 앉아 있다 / 식탁 위 식어 가는 밥
     image_prompt: >-
       A modest Korean apartment living room in winter 1997 lit by the bluish glow of an old CRT television, the mother
@@ -179,7 +179,7 @@ scenes:
     beat: info
     lines:
       - text: "작은 돌반지들이 나라를 일으킨 이 일이 바로, 금 모으기 운동입니다."
-        captions: ["작은 돌반지들이 / 나라를 일으킨 이 일이", "바로, 금 모으기 운동입니다"]
+        captions: ["작은 돌반지들이 / 나라를 일으킨 이 일이", "바로, / 금 모으기 운동입니다"]
       - text: "여러분 집에도 그때의 이야기가 있나요? 여러분의 생각이 궁금합니다."
         captions: ["여러분 집에도 / 그때의 이야기가 있나요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
@@ -197,6 +197,10 @@ scenes:
         characters: [mom]
         still_motion: zoom_in
         focus: [0.5, 0.42]
+
+redo:
+  reason: "s07 쟁반 위 결혼반지·금메달이 화면 아래 70% 높이(노란 선 아래)에 있어 자막 '결혼반지, 금메달'에 가려짐 — 쟁반과 금붙이를 화면 가운데(높이 35~55%)로 올림"
+  images: [s07]
 
 sources:
   - "국가기록원 '기록으로 만나는 대한민국 — IMF 외환위기' (1997.11.21 IMF 자금 지원 요청 발표, 1997.12.3 IMF 210억 달러 구제금융 승인, 1998년 1월 KBS 금 모으기 캠페인으로 전국 확산, 3개월 동안 약 351만 명이 금 227톤 — 당시 18억 달러, 결혼반지·돌반지, 운동선수들의 금메달, 김수환 추기경의 금 십자가, 2004년 5월까지 갚기로 한 195억 달러를 2001.8.23 모두 갚아 약 3년 앞당김) — https://theme.archives.go.kr/next/koreaOfRecord/imf.do"
