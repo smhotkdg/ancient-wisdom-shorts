@@ -1,0 +1,245 @@
+# 063 박세리 — IMF로 지친 새벽, 연못에 맨발로 들어간 스무 살 골퍼 (40~60대 공감·국뽕, 이미지 + 음성만, 실사)
+id: "063"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: barefoot-golfer
+status: script_ok
+working_title: 우승이 걸린 마지막 홀, 공이 연못가에 빠졌다면?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["연못에 맨발로", "들어간 이유?"]
+hook: 두 손 두 발 다 들 뻔했습니다
+caption_keywords: [두 손 두 발, 연못, 새벽 2시, 양말, 하얀 맨발, 92번째 홀, 첫 동양인, 최연소]
+
+story:
+  hero: 골퍼
+  reveal: [박세리]
+
+characters:
+  - id: golfer
+    name: 골퍼
+    name_en: young Korean woman golfer of 1998
+    description: >-
+      a 20-year-old Korean woman golfer with a determined, sun-tanned round face, sharp focused eyes, short black hair
+      under a white golf visor, wearing a white polo shirt, beige golf trousers, a white golf glove on her left hand and
+      white golf shoes, strong athletic build
+    note: 이야기 주인공. 1998년 US여자오픈에 나선 스무 살 한국 골퍼 (마지막 대사 전까지 이름을 밝히지 않는다, 실제 인물의 초상이 아닌 창작 인물)
+  - id: dad
+    name: 아버지
+    name_en: Korean father of 1998
+    description: >-
+      a Korean man in his mid-40s with a tired but kind face, short black hair, wearing a grey knitted vest over a white
+      undershirt, 1990s ordinary-family style
+    note: 새벽에 TV를 보던 한국의 가장 (시청자 대신 등장하는 창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1998년 여름 미국, 한 스무 살 골퍼는 두 손 두 발 다 들 뻔했습니다."
+        captions: ["1998년 여름 미국", "한 스무 살 골퍼는 / 두 손 두 발 다 들 뻔했습니다"]
+      - text: "우승이 걸린 연장 마지막 홀, 공이 연못가 비탈에 걸려 버렸거든요."
+        captions: ["우승이 걸린 연장 마지막 홀", "공이 연못가 비탈에 / 걸려 버렸거든요"]
+    visual: 넓은 골프장, 골퍼가 굳은 얼굴로 연못 쪽을 바라본다 / 물가 비탈 풀숲에 걸린 하얀 골프공 클로즈업
+    image_prompt: >-
+      A wide green championship golf course in summer 1998, the young Korean woman golfer in the middle of the frame
+      seen from the waist up, standing still with a club in hand and staring toward a pond with a stunned, tense face,
+      bright sunlight. No other people in focus.
+    characters: [golfer]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a white golf ball sitting in thick grass on a steep muddy bank right at the edge of a pond, the
+          water lapping just below it, sunlight glinting on the water. No people.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "같은 시각 한국은 새벽 2시. IMF에 지친 사람들이 TV 앞에 모여 있었죠."
+        captions: ["같은 시각 한국은 새벽 2시", "IMF에 지친 사람들이 / TV 앞에 모여 있었죠"]
+    visual: 1990년대 아파트 거실, 새벽 TV 불빛 앞에 지친 아버지가 앉아 있다 / 식탁 위 쌓인 고지서
+    image_prompt: >-
+      A modest Korean apartment living room at 2 a.m. in 1998, lit only by the glow of an old CRT television, the tired
+      father seen from the waist up in the middle of the frame, sitting on the floor and leaning toward the screen with
+      worried, hopeful eyes. The TV shows only blurred green light. No other people.
+    characters: [dad]
+    still_motion: zoom_in
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a small pile of unopened bill envelopes and a calculator on a low table in a dim 1990s Korean
+          apartment, bluish TV light falling across them. No readable text. No people.
+        still_motion: pan_right
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "공을 포기하면 우승도 끝. 골퍼는 어떻게 했을까요?"
+        captions: ["공을 포기하면 우승도 끝", "골퍼는 어떻게 했을까요?"]
+    visual: 연못가에 선 골퍼가 물과 공을 번갈아 보며 결심한다
+    image_prompt: >-
+      The young golfer seen from the waist up in the middle of the frame, standing at the edge of the pond and looking
+      down at the water and the ball on the bank, jaw set, a decision forming in her eyes. No other people in focus.
+    characters: [golfer]
+    still_motion: zoom_out
+    focus: [0.5, 0.4]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 골퍼는 망설임 없이 골프화와 양말을 벗었습니다."
+        captions: ["그래서 골퍼는 망설임 없이", "골프화와 양말을 벗었습니다"]
+    visual: 잔디 위에 벗어 둔 하얀 골프화와 양말 / 신발 끈을 푸는 손
+    image_prompt: >-
+      Close-up of a young woman golfer's hands quickly untying the laces of white golf shoes while sitting on the grass
+      by a pond, a white golf glove on one hand, bright summer light. Only the hands and shoes are visible.
+    still_motion: drift
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          A pair of white golf shoes with white socks tucked inside, set neatly side by side on green grass at the edge
+          of a pond, sunlight sparkling on the water behind. No people.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 하얀 맨발로 물에 들어가, 있는 힘껏 공을 쳐 올렸죠."
+        captions: ["그러자 하얀 맨발로 / 물에 들어가", "있는 힘껏 공을 쳐 올렸죠"]
+    visual: 바지를 걷은 골퍼가 맨발로 연못에 들어가 자세를 잡는다 / 클럽에 맞은 공과 물보라
+    image_prompt: >-
+      The young golfer in the middle of the frame seen from the knees up, trousers rolled up, standing barefoot in
+      shallow pond water at the bank with pale white bare feet and ankles below her tanned legs, gripping a club and
+      focusing hard on the ball above her on the slope. Bright sunlight.
+    characters: [golfer]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a golf club striking a white ball out of thick grass on a muddy pond bank, a spray of water and
+          grass flying up, the ball lifting into the bright sky. Only the club and a glimpse of hands are visible.
+        still_motion: pan_up
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 승부는 거기서 끝나지 않았습니다. 과연 몇 번째 홀까지 갔을까요?"
+        captions: ["그런데 승부는 / 거기서 끝나지 않았습니다", "과연 몇 번째 홀까지 / 갔을까요?"]
+      - text: "무려 92번째 홀이었죠."
+        captions: ["무려 92번째 홀이었죠"]
+    visual: 해가 기우는 그린, 골퍼가 퍼터를 들고 깊게 숨을 고른다
+    image_prompt: >-
+      A golf green in late afternoon light with long shadows, the young golfer in the middle of the frame seen from the
+      waist up, holding a putter and taking a slow deep breath with her eyes closed, sweat on her brow, total focus. No
+      other people in focus.
+    characters: [golfer]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a golfer's gloved hands gripping a putter tightly over a green in long late-afternoon shadows, a
+          white ball a short distance from the cup in soft focus. Only the hands are visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 마지막 퍼트가 들어간 순간, 새벽의 한국도 함께 울고 웃었습니다."
+        captions: ["결국 마지막 퍼트가 / 들어간 순간", "새벽의 한국도 / 함께 울고 웃었습니다"]
+    visual: 홀컵으로 굴러 들어가는 공 / 두 팔을 번쩍 들고 환호하는 골퍼 / 새벽 거실에서 눈물 훔치며 웃는 아버지
+    image_prompt: >-
+      Extreme close-up of a white golf ball rolling into the cup on a green, the flagstick shadow across the grass,
+      golden light. No people.
+    still_motion: zoom_in
+    focus: [0.5, 0.55]
+    extra_clips:
+      - image_prompt: >-
+          The young golfer seen from the waist up in the middle of the frame, on the green in golden light, raising both
+          fists at chest height in joy and shouting with tears of happiness in her eyes. No other people in focus.
+        characters: [golfer]
+        still_motion: push
+        focus: [0.5, 0.4]
+      - image_prompt: >-
+          The tired father seen from the waist up in the middle of the frame in the dark living room lit by the TV
+          glow, wiping tears from his eyes with the back of his hand while laughing with joy. No other people.
+        characters: [dad]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "US여자오픈 첫 동양인 우승이자, 역대 최연소 우승이었죠."
+        captions: ["US여자오픈 / 첫 동양인 우승이자", "역대 최연소 우승이었죠"]
+    visual: 우승 트로피를 두 손으로 들어 올린 골퍼 (가슴 높이)
+    image_prompt: >-
+      The young golfer seen from the waist up in the middle of the frame, holding a large silver championship trophy at
+      chest height with both hands, smiling broadly with tired, shining eyes, soft evening light on the course behind
+      her. No readable text or logos.
+    characters: [golfer]
+    still_motion: zoom_out
+    focus: [0.5, 0.42]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "IMF에 지친 국민에게 맨발로 희망을 준 이 선수가 바로, 박세리입니다."
+        captions: ["IMF에 지친 국민에게 / 맨발로 희망을 준 이 선수가", "바로, 박세리입니다"]
+      - text: "여러분은 그날 새벽, 어디서 이 장면을 보셨나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분은 그날 새벽", "어디서 이 장면을 보셨나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 연못가에 놓인 골프화와 골퍼의 뒷모습 / 이어서 골퍼가 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young golfer seen from the knees up in the middle of the frame, standing barefoot on the grass by the pond at
+      sunset with her golf shoes in one hand and her club over her shoulder, looking back with a calm, proud smile.
+      Golden sky reflected in the water. No other people.
+    characters: [golfer]
+    still_motion: push
+    focus: [0.5, 0.38]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young golfer from the reference image, seen from the waist up in the middle
+          of the frame, standing on the golf course at sunset. She smiles warmly toward the viewer and holds one open
+          palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other
+          people.
+        characters: [golfer]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "스포츠경향 2008-12-21 '어려울 때 힘이 되는 스포츠' (1998년 7월 7일 IMF 외환위기 때, 위스콘신 블랙울프런 US여자오픈 연장에서 태국 아마추어 제니 추아시리폰과 17번홀까지 동률, 18번홀 티샷이 왼쪽으로 감겨 개울가 경사면 러프에 떨어짐, 신발과 양말을 벗고 물에 발을 담가 볼을 페어웨이로 보냄, 서든데스 재연장 두 번째 홀 버디로 우승, 총 92홀, 온 국민이 새벽부터 TV 중계를 지켜봄, US오픈 첫 동양인·최연소(20세 9개월) 우승) — https://sports.khan.co.kr/article/200812212007436"
+  - "USGA 'Deconstructing Se Ri Pak' (2020: 20세, 블랙울프런 92번째 홀 15피트 퍼트로 우승, 연장전은 한국 시간 화요일 새벽 2시에 생중계) — https://www.usga.org/content/usga/home-page/articles/2020/se-ri-pak/deconstructing-se-ri-pak.html"
+  - "아시아경제 2025-05-01 (골프다이제스트가 꼽은 여자 골프 역사상 가장 중요한 순간 20개 중 4위 — 박세리의 '하얀 맨발', 양말과 골프화를 벗고 연못에 들어가 트러블샷) — https://view.asiae.co.kr/en/article/2025050111032657918"
+  - "경향신문 2018-07-06 (1998년 7월 블랙울프런 US여자오픈 최종일 연장전 18번 홀 트러블샷, '맨발 투혼', IMF로 어려움을 겪던 한국에 큰 자랑) — https://www.khan.co.kr/article/201807062229001"
+
+accuracy_notes:
+  - "주인공은 실존 골프 선수 박세리(1977~). 아버지는 새벽에 중계를 본 국민의 모습을 대신하는 창작 인물. 감정·장면은 설명용 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'두 손 두 발 다 들 뻔했습니다'는 현대 화자의 연출(맨발 장면과 이어지는 말놀이)이며 당시 기록이나 발언이 아니다."
+  - "s01 '연장 마지막 홀'은 18홀 연장전의 18번 홀(스포츠경향). 대본은 '연못가'로 쓰지만 스포츠경향은 '개울가 경사면 러프', 아시아경제는 '연못(pond)'으로 적는다."
+  - "s02 한국 시간 새벽 2시 생중계는 USGA 기준. 'IMF에 지친 사람들이 TV 앞에'는 온 국민이 새벽부터 중계를 지켜봤다는 스포츠경향 서술을 이야기로 쓴 것. 고지서 화면은 연출."
+  - "s04~s05 신발·양말을 벗고 물에 들어가 친 장면은 스포츠경향·아시아경제 공통. '하얀 맨발'은 골프다이제스트 선정을 다룬 아시아경제 제목 표현. 화면의 그을린 다리는 연출."
+  - "s06 총 92홀(정규 72 + 연장 18 + 서든데스 2)은 스포츠경향·USGA 기준."
+  - "s07 '새벽의 한국도 함께 울고 웃었다'는 재구성이다. 우승 퍼트는 92번째 홀 버디(스포츠경향·USGA)."
+  - "s08 US오픈 첫 동양인·최연소 우승은 스포츠경향 기준(20세 9개월)."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면에는 대회 이름·로고·스폰서를 넣지 않는다. 화면 인물은 골퍼 중심, s02·s07-3에 아버지. 배경 인물 없음. 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - IMF로 지친 새벽, 연못에 맨발로 들어간 스무 살
+    - 우승이 걸린 마지막 홀, 공이 연못가에 빠졌다면?
+    - 하얀 맨발 하나로 온 국민을 울린 그날
+  description: |-
+    ⛳ 우승이 걸린 마지막 홀, 공이 연못가 비탈에 걸렸습니다… 여러분이라면 포기하셨을까요?
+
+    1998년 여름, 한국은 새벽 2시 🌙 IMF에 지친 사람들이 TV 앞에 모여 있었습니다.
+    그때 스무 살 골퍼가 골프화와 양말을 벗더니… 하얀 맨발로 물속으로! 👣💦
+    그런데 승부는 끝나지 않았는데요? 무려 92번째 홀까지! 😱
+
+    마지막 퍼트가 들어간 순간, 새벽의 한국이 함께 울고 웃었습니다 🇰🇷 그 이름은 영상 끝에서!
+  comment_question: 여러분은 그날 새벽, 어디서 이 장면을 보셨나요? 여러분의 생각이 궁금합니다.
+  hashtags: [맨발투혼, IMF, 골프, 국뽕, 쇼츠]
