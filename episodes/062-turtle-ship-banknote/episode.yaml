@@ -4,7 +4,7 @@ id: "062"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: turtle-ship-banknote
-status: script_ok
+status: done
 working_title: 배 한 척 못 만들어 본 나라, 지폐 한 장으로 영국 은행을 설득하다
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["지폐 한 장으로", "조선소를 세웠다고?"]
@@ -60,7 +60,7 @@ scenes:
     beat: problem
     lines:
       - text: "영국 은행은 고개를 저었죠. 배 한 척 못 만들어 본 나라엔 돈을 못 빌려준다고요."
-        captions: ["영국 은행은 고개를 저었죠", "배 한 척 못 만들어 본 나라엔 / 돈을 못 빌려준다고요"]
+        captions: ["영국 은행은 고개를 저었죠", "배 한 척 못 만들어 본 / 나라엔", "돈을 못 빌려준다고요"]
     visual: 고풍스러운 은행 회의실, 서류를 덮는 은행가의 손 / 사장이 굳은 얼굴로 앉아 있다
     image_prompt: >-
       Close-up of a polished mahogany desk in a 1970s London bank office, a banker's hand in a dark pinstriped sleeve
@@ -173,7 +173,7 @@ scenes:
     beat: info
     lines:
       - text: "그리고 그 백사장 위에, 조선소와 배가 함께 섰죠. 11년 뒤엔 세계 1위였습니다."
-        captions: ["그리고 그 백사장 위에", "조선소와 배가 함께 섰죠", "11년 뒤엔 세계 1위였습니다"]
+        captions: ["그리고 그 백사장 위에", "조선소와 배가 함께 섰죠", "11년 뒤엔 / 세계 1위였습니다"]
     visual: 같은 바닷가에 거대한 골리앗 크레인과 초대형 유조선이 서 있다 / 진수하는 배 앞에서 사장이 뿌듯하게 바라본다
     image_prompt: >-
       The same coastline transformed into a huge shipyard in the 1970s, giant gantry cranes towering over an enormous
@@ -214,6 +214,10 @@ scenes:
         characters: [boss]
         still_motion: zoom_in
         focus: [0.5, 0.42]
+
+redo:
+  reason: "s05 사장이 내민 거북선 지폐가 화면 높이 약 63~75%(노란 선 아래)에 있어 자막 '이 거북선 보이시죠?'에 가려짐 — 지폐를 가슴~어깨 높이(화면 40~55%)로 올려 카메라 쪽으로 내밀게"
+  images: [s05]
 
 sources:
   - "아주경제 [위기가 기회다-⑨현대중공업] 정주영의 '500원권 신화' (1971년 애플도어 롱바톰 회장에게 거북선이 그려진 500원권을 보이며 '한국은 16세기에 철갑선을 만들었다. 영국보다 300년이나 빠르다', 바클레이즈은행이 조선 능력 부족으로 거절 → 롱바톰 추천서로 차관, 영국 수출신용보증국 승인에 선주 증빙 필요, 울산 미포만 백사장 사진 한 장·지도·26만t급 유조선 도면, 그리스 리바노스 회장의 스위스 별장에서 대형 유조선 2척 계약, 1972.3.23 기공, 1974.6.28 준공·1·2호선 명명, 1983년 일본 다이아몬드지가 세계 1위 조선 기업으로 선정 — 기공 11년) — https://www.ajunews.com/view/20200614133259034"
