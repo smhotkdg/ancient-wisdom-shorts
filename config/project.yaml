@@ -59,8 +59,10 @@ audio:
 clips:
   # Grok/이미지 소스를 장면 길이에 맞추는 규칙
   max_slowdown: 1.35          # 클립이 짧으면 최대 이만큼 느리게 늘림
-  still_motion: slow_zoom     # 이미지만 있는 장면: slow_zoom | pan_left | pan_right | none
+  still_motion: slow_zoom     # 이미지만 있는 장면: zoom_in(=slow_zoom) | zoom_out | push | pan_left | pan_right | pan_up | pan_down | drift | none
   still_zoom_max: 1.08        # 정지 이미지 확대 상한 (강한 줌 금지)
+  images_zoom_max: 1.16       # 이미지 + 음성만인 편(media: images)의 확대 상한 — 움직임을 더 또렷하게 (push 는 1.24)
+  images_dissolve: 0.35       # 이미지만인 편 컷 사이 디졸브(초)
   upscale_sharpen: 0.3        # 720p → 1080p 확대 후 약한 선명화 (0이면 끔)
   speed_up: 1.0               # 클립 재생 배속 (2026-10-15 사용자: 클립 속도는 유지 → 1.0)
   grok_lengths: [6]           # Grok 클립 길이(초) — 클립 하나는 최대 6초 (2026-10-14 사용자)

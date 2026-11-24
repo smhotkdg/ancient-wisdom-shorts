@@ -201,7 +201,20 @@ def claude_code_prompt(ep: Episode, timing: dict, grok_items: list[dict]) -> str
         txt = txt.replace("   - 클립 앞부분이 어색하거나 컷이 되감기처럼 튀는지 → trim_start\n",
                           "   - 이미지 컷이 너무 길어 지루한 곳(한 컷 5초 넘게)이 있으면 보고 — 컷 추가는 사용자와 상의\n")
         txt = txt.replace("① 클립 앞·뒤만 걸리면 trim_start 로 피한다 ② 안 되면 그 컷을", "그 컷을")
-        txt = txt.replace("감속·정지 보정된 클립, ", "")
+        txt = txt.replace("   - 영상 소스는 가운데 기준 대칭 크롭 (좌우 여백 동일)\n",
+                          "   - 영상 소스는 가운데 기준 대칭 크롭 (좌우 여백 동일) — 단, 이미지 움직임 효과(pan·focus 쪽 확대)로 생기는 이동은 의도한 것\n")
+        txt = txt.replace("감속·정지 보정된 클립, ", "컷별 움직임(build/final/report.json 의 motion), ")
+        txt = txt.replace("4. python aw.py compose {eid}\n".format(eid=eid),
+                          f"4. python aw.py compose {eid}\n"
+                          "   이 편은 이미지마다 움직임 효과를 넣어 합성한다 (Grok 영상 대신, 2026-11-24 사용자):\n"
+                          "   - zoom_in 천천히 다가감 · zoom_out 물러남 · push 감정 장면에서 깊게 다가감 · pan_left/right/up/down 가로지름 · drift 다가가며 옆으로 흐름\n"
+                          "   - episode.yaml 의 still_motion(컷별 움직임)·focus([x, y] 0~1, 다가갈 지점 — 보통 얼굴·손)를 따른다. 없으면 이야기 단계에 맞춰 자동\n"
+                          "   - 컷 사이 0.35초 디졸브, 확대 상한 1.16배(push 1.24배) — config clips.images_zoom_max / images_dissolve\n")
+        txt = txt.replace("   - 이미지 컷이 너무 길어 지루한 곳(한 컷 5초 넘게)이 있으면 보고 — 컷 추가는 사용자와 상의\n",
+                          "   - 이미지 컷이 너무 길어 지루한 곳(한 컷 5초 넘게)이 있으면 보고 — 컷 추가는 사용자와 상의\n"
+                          "   - 확대·이동하다 얼굴·손이 화면 밖으로 잘리거나 자막에 가리는 컷 → 그 컷의 focus 를 얼굴 위치로 고치거나\n"
+                          "     still_motion 을 zoom_out·pan 으로 바꾸고 다시 compose (Edit 도구로 episode.yaml 수정)\n"
+                          "   - 같은 움직임이 세 컷 넘게 이어져 단조로우면 still_motion 을 바꿔 다시 compose\n")
     return txt
 
 

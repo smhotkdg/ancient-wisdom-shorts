@@ -6,6 +6,7 @@
   장면보다 짧으면 최대 max_slowdown 배까지 느리게, 그래도 모자라면 마지막 프레임을 유지한다.
   클립 원음은 효과음으로 sfx_volume(기본 0.12) 만큼만 남긴다.
 - 이미지만 있는 장면: 부드러운 느린 줌(상한 1.08배) — 강한 줌 금지.
+- 이미지 + 음성만인 편(media: images): 컷마다 확대·축소·이동(상한 images_zoom_max) + 컷 사이 짧은 디졸브.
 - 애니매틱: 클립을 쓰지 않고 이미지(없으면 장면 설명 카드)로 템포만 확인한다.
 """
 from __future__ import annotations
@@ -42,8 +43,16 @@ def _scene_image(ep: Episode, sid: str) -> Path | None:
     return None
 
 
-# 이미지 + 음성만인 편: 컷마다 움직임을 번갈아 단조로움을 줄인다 (확대 상한은 still_zoom_max 그대로)
-STILL_CYCLE = ["slow_zoom", "pan_right", "slow_zoom", "pan_left"]
+# 이미지 + 음성만인 편: 컷마다 움직임을 번갈아 단조로움을 줄인다 (episode.yaml 의 still_motion 이 먼저)
+STILL_CYCLE = ["zoom_in", "pan_right", "zoom_out", "pan_left", "drift", "pan_up"]
+BEAT_MOTION = {"hook": "push", "twist": "push", "question": "zoom_out", "resolve": "zoom_out"}
+
+
+def _auto_motion(sc: dict, part: dict, k: int) -> str:
+    """장면 첫 컷은 이야기 단계(beat)에 맞춰, 나머지는 순환."""
+    if (part.get("n") or 1) == 1 and sc.get("beat") in BEAT_MOTION:
+        return BEAT_MOTION[sc["beat"]]
+    return STILL_CYCLE[k % len(STILL_CYCLE)]
 
 
 def plan_segments(ep: Episode, timing: dict, animatic: bool) -> tuple[list[dict], list[str]]:
@@ -108,38 +117,94 @@ def _placeholder(ep: Episode, sc: dict, lines: list[str]) -> Image.Image:
     return img
 
 
-def _render_frames(base: Image.Image, out: Path, duration: float, ep: Episode, motion: str) -> None:
-    """정지 이미지를 부드럽게 움직여 장면 파일로 만든다 (Pillow 서브픽셀 변환 → ffmpeg)."""
+# ── 이미지 움직임 (2026-11-24 사용자: 이미지만인 편은 확대·축소·이동 효과로 몰입감을 준다) ──
+# zoom_in(=slow_zoom) 천천히 다가감 · zoom_out 물러남 · push 감정 장면에서 조금 더 깊게 다가감
+# pan_left / pan_right / pan_up / pan_down 화면을 가로지름 · drift 다가가며 살짝 옆으로 흐름 · none 고정
+MOTIONS = ("zoom_in", "zoom_out", "push", "pan_left", "pan_right", "pan_up", "pan_down", "drift", "none")
+ALIASES = {"slow_zoom": "zoom_in"}
+
+
+def _ease(t: float) -> float:
+    """처음·끝을 부드럽게 (smoothstep) — 기계적으로 일정한 속도보다 사진을 '보는' 느낌이 난다."""
+    return t * t * (3 - 2 * t)
+
+
+def _view(motion: str, t: float, zmax: float, bw: float, bh: float, vw: float, vh: float,
+          focus: tuple[float, float]) -> tuple[float, float, float]:
+    """t(0~1) 시점의 (확대 배율, 중심 x, 중심 y) — 원본 이미지 좌표."""
+    e = _ease(t)
+    fx, fy = bw * focus[0], bh * focus[1]
+    mid = (1 + zmax) / 2
+
+    def clamp(z, cx, cy):   # 이미지 밖(검은 테두리)이 보이지 않게 중심을 안쪽으로
+        hw, hh = vw / z / 2, vh / z / 2
+        return z, min(max(cx, hw), bw - hw), min(max(cy, hh), bh - hh)
+
+    if motion == "zoom_in":
+        z = 1 + (zmax - 1) * e
+        return clamp(z, bw / 2 + (fx - bw / 2) * e, bh / 2 + (fy - bh / 2) * e)
+    if motion == "push":
+        zp = 1 + (zmax - 1) * 1.5
+        z = 1 + (zp - 1) * e
+        return clamp(z, bw / 2 + (fx - bw / 2) * e, bh / 2 + (fy - bh / 2) * e)
+    if motion == "zoom_out":
+        z = zmax - (zmax - 1) * e
+        return clamp(z, fx + (bw / 2 - fx) * e, fy + (bh / 2 - fy) * e)
+    if motion in ("pan_left", "pan_right", "pan_up", "pan_down"):
+        z = mid
+        sx, sy = (bw - vw / z) / 2, (bh - vh / z) / 2
+        d = (e - 0.5) * 2 * 0.9
+        if motion == "pan_left":
+            return clamp(z, bw / 2 + sx * d, bh / 2)
+        if motion == "pan_right":
+            return clamp(z, bw / 2 - sx * d, bh / 2)
+        if motion == "pan_up":
+            return clamp(z, bw / 2, bh / 2 + sy * d)
+        return clamp(z, bw / 2, bh / 2 - sy * d)
+    if motion == "drift":
+        z = 1.02 + (zmax - 1.02) * e
+        sx = (bw - vw / z) / 2
+        return clamp(z, bw / 2 - sx * 0.6 + sx * 1.2 * e, bh / 2 + (fy - bh / 2) * e * 0.5)
+    return 1.0, bw / 2, bh / 2
+
+
+def _render_frames(base: Image.Image, out: Path, duration: float, ep: Episode, motion: str,
+                   focus: tuple[float, float] = (0.5, 0.45), zmax: float | None = None,
+                   fade_to: Image.Image | None = None, fade_s: float = 0.0,
+                   fade_from: Image.Image | None = None) -> Image.Image:
+    """정지 이미지를 부드럽게 움직여 장면 파일로 만든다 (Pillow 서브픽셀 변환 → ffmpeg).
+    fade_from: 앞 컷 마지막 프레임 — 첫 fade_s 초 동안 이 화면에서 서서히 넘어온다 (디졸브).
+    돌려주는 값: 이 컷의 마지막 프레임 (다음 컷 디졸브용)."""
     need_tool("ffmpeg")
     W, H, fps = _canvas(ep)
-    zmax = float(ep.project["clips"]["still_zoom_max"]) if motion != "none" else 1.0
+    motion = ALIASES.get(motion, motion)
+    if motion not in MOTIONS:
+        motion = "zoom_in"
+    if zmax is None:
+        zmax = float(ep.project["clips"]["still_zoom_max"])
+    if motion == "none":
+        zmax = 1.0
     bw, bh = base.size
-    # 화면을 꽉 채우는 배율 (cover)
     cover = max(W / bw, H / bh)
     vw, vh = W / cover, H / cover            # 원본 좌표계에서 z=1 일 때 보이는 영역
     n = max(1, int(round(duration * fps)))
-    # 로그를 오류만 남긴다: stderr 를 끝에서야 읽으므로 진행 로그가 파이프를 채우면 ffmpeg·python 이 서로 기다리며 멈춘다
+    nf = min(n - 1, int(round(fade_s * fps))) if fade_from is not None else 0
     cmd = ["ffmpeg", "-y", "-nostats", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps),
            "-i", "-", "-f", "lavfi", "-t", f"{duration:.3f}", "-i", "anullsrc=r=48000:cl=stereo",
            "-map", "0:v", "-map", "1:a", "-t", f"{duration:.3f}", *ENC_MID, str(out)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+    last = None
     try:
         for i in range(n):
             t = i / max(1, n - 1)
-            if motion == "slow_zoom":
-                z = 1 + (zmax - 1) * t
-                cx, cy = bw / 2, bh / 2
-            elif motion in ("pan_left", "pan_right"):
-                z = (1 + zmax) / 2
-                slack = (bw - vw / z) / 2
-                dirn = -1 if motion == "pan_left" else 1
-                cx, cy = bw / 2 + dirn * slack * (t - 0.5) * 2 * 0.9, bh / 2
-            else:
-                z, cx, cy = 1.0, bw / 2, bh / 2
+            z, cx, cy = _view(motion, t, zmax, bw, bh, vw, vh, focus)
             ww, hh = vw / z, vh / z
             box = (cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2)
             frame = base.transform((W, H), Image.EXTENT, box, resample=Image.BICUBIC)
+            if i < nf:   # 앞 컷에서 부드럽게 넘어오기
+                frame = Image.blend(fade_from, frame, _ease((i + 1) / (nf + 1)))
             proc.stdin.write(frame.tobytes())
+            last = frame
         proc.stdin.close()
         err = proc.stderr.read()
         if proc.wait() != 0:
@@ -147,6 +212,7 @@ def _render_frames(base: Image.Image, out: Path, duration: float, ep: Episode, m
     finally:
         if proc.poll() is None:
             proc.kill()
+    return last
 
 
 def _render_clip(ep: Episode, sc: dict, clip: Path, duration: float, out: Path) -> dict:
@@ -226,6 +292,7 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
     total_frames = int(round(float(timing["video_duration"]) * fps))
     fb = [int(round(g["start"] * fps)) for g in segs] + [total_frames]
     by_scene: dict[str, dict] = {}
+    last_frame = None
     for k, g in enumerate(segs):
         sc, sid = g["scene"], g["scene"]["id"]
         dur = (fb[k + 1] - fb[k]) / fps
@@ -238,16 +305,24 @@ def compose(ep: Episode, animatic: bool = False) -> dict:
                         **{k2: v for k2, v in (g["part"] or {}).items() if v is not None}}
             info.update(_render_clip(ep, settings, g["path"], dur, out))
         else:
+            part = g["part"] or {}
+            focus = tuple(part.get("focus") or sc.get("focus") or (0.5, 0.45))
+            zmax, fade_s, prev = None, 0.0, None
             if g["kind"] == "still":
                 base = Image.open(g["path"]).convert("RGB")
-                motion = ((g["part"] or {}).get("still_motion") or sc.get("still_motion")
-                          or (STILL_CYCLE[k % len(STILL_CYCLE)] if img_only else None)
+                motion = (part.get("still_motion") or sc.get("still_motion")
+                          or (_auto_motion(sc, part, k) if img_only else None)
                           or ep.project["clips"]["still_motion"])
+                if img_only:   # 이미지만인 편: 움직임을 더 또렷하게 + 컷 사이 디졸브
+                    zmax = float(ep.project["clips"].get("images_zoom_max", 1.16))
+                    fade_s = float(ep.project["clips"].get("images_dissolve", 0.35))
+                    prev = last_frame if (k > 0 and segs[k - 1]["kind"] == "still") else None
             else:
                 base = _placeholder(ep, sc, lines_by_scene[sid])
                 motion = "none"
-            _render_frames(base, out, dur, ep, motion)
-            info["motion"] = motion
+            last_frame = _render_frames(base, out, dur, ep, motion, focus=focus, zmax=zmax,
+                                        fade_s=fade_s, fade_from=prev)
+            info["motion"] = ALIASES.get(motion, motion)
         parts.append(out)
         entry = by_scene.setdefault(sid, {"id": sid, "duration": 0.0, "segments": []})
         entry["duration"] = round(entry["duration"] + dur, 3)
