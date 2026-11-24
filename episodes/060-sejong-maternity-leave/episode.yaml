@@ -4,7 +4,7 @@ id: "060"
 style: photoreal
 media: images            # 2026-11-24 사용자: Grok 영상 없이 이미지와 TTS 만으로 만든다 (컷마다 확대·이동 효과)
 slug: sejong-maternity-leave
-status: script_ok
+status: done
 working_title: 600년 전 조선에도 출산휴가가 있었다? 그것도 노비에게, 아빠에게까지
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴, 2026-11-11 사용자)
 title_lines: ["600년 전에", "아빠 출산휴가가?"]
