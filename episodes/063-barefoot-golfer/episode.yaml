@@ -3,7 +3,7 @@ id: "063"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: barefoot-golfer
-status: script_ok
+status: done
 working_title: 우승이 걸린 마지막 홀, 공이 연못가에 빠졌다면?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["연못에 맨발로", "들어간 이유?"]
@@ -36,9 +36,9 @@ scenes:
     beat: hook
     lines:
       - text: "1998년 여름 미국, 한 스무 살 골퍼는 두 손 두 발 다 들 뻔했습니다."
-        captions: ["1998년 여름 미국", "한 스무 살 골퍼는 / 두 손 두 발 다 들 뻔했습니다"]
+        captions: ["1998년 여름 미국", "한 스무 살 골퍼는", "두 손 두 발 / 다 들 뻔했습니다"]
       - text: "우승이 걸린 연장 마지막 홀, 공이 연못가 비탈에 걸려 버렸거든요."
-        captions: ["우승이 걸린 연장 마지막 홀", "공이 연못가 비탈에 / 걸려 버렸거든요"]
+        captions: ["우승이 걸린 / 연장 마지막 홀", "공이 연못가 비탈에 / 걸려 버렸거든요"]
     visual: 넓은 골프장, 골퍼가 굳은 얼굴로 연못 쪽을 바라본다 / 물가 비탈 풀숲에 걸린 하얀 골프공 클로즈업
     image_prompt: >-
       A wide green championship golf course in summer 1998, the young Korean woman golfer in the middle of the frame
@@ -58,7 +58,7 @@ scenes:
     beat: problem
     lines:
       - text: "같은 시각 한국은 새벽 2시. IMF에 지친 사람들이 TV 앞에 모여 있었죠."
-        captions: ["같은 시각 한국은 새벽 2시", "IMF에 지친 사람들이 / TV 앞에 모여 있었죠"]
+        captions: ["같은 시각 한국은 / 새벽 2시", "IMF에 지친 사람들이 / TV 앞에 모여 있었죠"]
     visual: 1990년대 아파트 거실, 새벽 TV 불빛 앞에 지친 아버지가 앉아 있다 / 식탁 위 쌓인 고지서
     image_prompt: >-
       A modest Korean apartment living room at 2 a.m. in 1998, lit only by the glow of an old CRT television, the tired
@@ -90,7 +90,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 골퍼는 망설임 없이 골프화와 양말을 벗었습니다."
-        captions: ["그래서 골퍼는 망설임 없이", "골프화와 양말을 벗었습니다"]
+        captions: ["그래서 골퍼는 / 망설임 없이", "골프화와 양말을 / 벗었습니다"]
     visual: 잔디 위에 벗어 둔 하얀 골프화와 양말 / 신발 끈을 푸는 손
     image_prompt: >-
       Close-up of a young woman golfer's hands quickly untying the laces of white golf shoes while sitting on the grass
@@ -108,15 +108,15 @@ scenes:
     beat: solution
     lines:
       - text: "그러자 하얀 맨발로 물에 들어가, 있는 힘껏 공을 쳐 올렸죠."
-        captions: ["그러자 하얀 맨발로 / 물에 들어가", "있는 힘껏 공을 쳐 올렸죠"]
+        captions: ["그러자 하얀 맨발로 / 물에 들어가", "있는 힘껏 / 공을 쳐 올렸죠"]
     visual: 바지를 걷은 골퍼가 맨발로 연못에 들어가 자세를 잡는다 / 클럽에 맞은 공과 물보라
     image_prompt: >-
       The young golfer in the middle of the frame seen from the knees up, trousers rolled up, standing barefoot in
       shallow pond water at the bank with pale white bare feet and ankles below her tanned legs, gripping a club and
       focusing hard on the ball above her on the slope. Bright sunlight.
     characters: [golfer]
-    still_motion: push
-    focus: [0.5, 0.42]
+    still_motion: zoom_out
+    focus: [0.5, 0.6]
     extra_clips:
       - image_prompt: >-
           Close-up of a golf club striking a white ball out of thick grass on a muddy pond bank, a spray of water and
@@ -188,9 +188,9 @@ scenes:
     beat: info
     lines:
       - text: "IMF에 지친 국민에게 맨발로 희망을 준 이 선수가 바로, 박세리입니다."
-        captions: ["IMF에 지친 국민에게 / 맨발로 희망을 준 이 선수가", "바로, 박세리입니다"]
+        captions: ["IMF에 지친 국민에게 / 맨발로 희망을 준", "이 선수가 바로, / 박세리입니다"]
       - text: "여러분은 그날 새벽, 어디서 이 장면을 보셨나요? 여러분의 생각이 궁금합니다."
-        captions: ["여러분은 그날 새벽", "어디서 이 장면을 보셨나요?", "여러분의 생각이 / 궁금합니다"]
+        captions: ["여러분은 그날 새벽", "어디서 이 장면을 / 보셨나요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
     visual: 노을 진 연못가에 놓인 골프화와 골퍼의 뒷모습 / 이어서 골퍼가 시청자를 보며 궁금한 표정으로 묻는다
     image_prompt: >-
