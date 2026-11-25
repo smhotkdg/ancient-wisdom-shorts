@@ -4,7 +4,7 @@ id: "064"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: family-reunion-tv
-status: script_ok
+status: done
 working_title: 30년 전 피란길에서 놓친 아들, 어머니는 어떻게 찾았을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["두 시간 방송이", "138일이 됐다고?"]
@@ -37,7 +37,7 @@ scenes:
     beat: hook
     lines:
       - text: "1983년 여름, 여의도로 달려간 한 어머니는 발을 동동 굴렀습니다."
-        captions: ["1983년 여름", "여의도로 달려간 한 어머니는 / 발을 동동 굴렀습니다"]
+        captions: ["1983년 여름", "여의도로 달려간 / 한 어머니는", "발을 동동 굴렀습니다"]
       - text: "30년 전 피란길에서 놓친 아들, 이번엔 찾을 것 같았거든요."
         captions: ["30년 전 피란길에서 / 놓친 아들", "이번엔 찾을 것 같았거든요"]
     visual: 한여름 방송국 앞 광장, 어머니가 종이를 꼭 쥐고 서서 숨을 몰아쉰다 / 흑백 피란길 기억 — 작은 손을 놓치는 장면
