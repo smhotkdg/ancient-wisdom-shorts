@@ -1,0 +1,227 @@
+# 064 KBS 이산가족 찾기 — 종이 한 장 들고 여의도로 달려간 어머니, 138일 동안 꺼지지 않은 방송 (이미지 + 음성만, 실사)
+# 40~60대 공감·감동·국뽕 (유네스코 세계기록유산)
+id: "064"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: family-reunion-tv
+status: script_ok
+working_title: 30년 전 피란길에서 놓친 아들, 어머니는 어떻게 찾았을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["두 시간 방송이", "138일이 됐다고?"]
+hook: 발을 동동 굴렀습니다
+caption_keywords: [발을 동동, 피란길, 흉터, 종이, 두 시간, 138일, 만 명, 유네스코]
+
+story:
+  hero: 어머니
+  reveal: [이산가족 찾기, KBS]
+
+characters:
+  - id: mom
+    name: 어머니
+    name_en: Korean mother in her 60s in 1983
+    description: >-
+      a small, thin Korean woman in her early 60s with a deeply lined, gentle face, worried tearful eyes, grey hair
+      pinned in a low bun, wearing a plain light grey hanbok jeogori and dark skirt with a cardigan over it, simple
+      rubber shoes, holding a folded sheet of paper
+    note: 이야기 주인공. 6·25 피란길에 아들과 헤어진 어머니 — 수많은 이산가족의 모습을 한 사람으로 엮은 창작 인물
+  - id: son
+    name: 아들
+    name_en: Korean man in his late 30s in 1983
+    description: >-
+      a Korean man in his late 30s with a kind, weathered face, short black hair, a small pale scar on his left
+      forehead, wearing a short-sleeved light blue work shirt, 1980s ordinary style
+    note: 어머니가 찾는 아들 (창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1983년 여름, 여의도로 달려간 한 어머니는 발을 동동 굴렀습니다."
+        captions: ["1983년 여름", "여의도로 달려간 한 어머니는 / 발을 동동 굴렀습니다"]
+      - text: "30년 전 피란길에서 놓친 아들, 이번엔 찾을 것 같았거든요."
+        captions: ["30년 전 피란길에서 / 놓친 아들", "이번엔 찾을 것 같았거든요"]
+    visual: 한여름 방송국 앞 광장, 어머니가 종이를 꼭 쥐고 서서 숨을 몰아쉰다 / 흑백 피란길 기억 — 작은 손을 놓치는 장면
+    image_prompt: >-
+      A hot summer day in 1983 in front of a large broadcasting station building in Seoul, the elderly mother in the
+      middle of the frame seen from the waist up, clutching a folded sheet of paper to her chest, out of breath and
+      anxious, sweat on her brow, looking up at the building with desperate hope. No other faces in focus.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          A faded black-and-white memory scene of a snowy refugee road in 1951 Korea, close-up of a young mother's hand
+          and a small child's hand slipping apart in the cold, blurred bundles and footprints in the snow. Only the
+          hands are visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "하지만 기억나는 건 어릴 적 이름과, 이마의 작은 흉터뿐이었죠."
+        captions: ["하지만 기억나는 건 / 어릴 적 이름과", "이마의 작은 흉터뿐이었죠"]
+    visual: 어머니가 낡은 흑백 사진 한 장(어린 아이)을 들여다본다
+    image_prompt: >-
+      Close-up of an elderly woman's wrinkled hands holding a small, creased, faded black-and-white photograph of a
+      little boy of about five, the edges worn soft. Only the hands are visible.
+    still_motion: push
+    focus: [0.5, 0.5]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "얼굴도 모르게 자란 아들을, 어떻게 찾을 수 있을까요?"
+        captions: ["얼굴도 모르게 자란 아들을", "어떻게 찾을 수 있을까요?"]
+    visual: 붐비는 거리 한가운데서 어머니가 지나가는 중년 남자들의 얼굴을 하나하나 바라본다
+    image_prompt: >-
+      A busy 1983 Seoul street, the elderly mother in the middle of the frame seen from the waist up, standing still and
+      searching the faces passing by with lost, tearful eyes.
+    characters: [mom]
+    extras: "two or three blurred middle-aged men walking past behind her, faces out of focus"
+    still_motion: zoom_out
+    focus: [0.5, 0.42]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 어머니는 종이에 아들 이름과 헤어진 곳을, 꾹꾹 눌러 썼습니다."
+        captions: ["그래서 어머니는 종이에", "아들 이름과 헤어진 곳을 / 꾹꾹 눌러 썼습니다"]
+    visual: 길바닥에 쪼그려 앉아 매직으로 종이에 글을 쓰는 어머니의 떨리는 손 (글자 흐릿)
+    image_prompt: >-
+      Close-up of an elderly woman's trembling hand writing with a thick black marker on a large sheet of white paper
+      spread on the pavement, the handwriting blurred and unreadable, a teardrop fallen on the paper. Only the hand is
+      visible.
+    still_motion: drift
+    focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 방송국 벽이며 길바닥까지, 같은 사연의 종이가 겹겹이 붙어 있었죠."
+        captions: ["그러자 방송국 벽이며 / 길바닥까지", "같은 사연의 종이가 / 겹겹이 붙어 있었죠"]
+    visual: 방송국 건물 벽과 바닥을 빼곡히 덮은 손글씨 벽보들 (글자 흐릿) / 그 앞에 자기 종이를 붙이는 어머니
+    image_prompt: >-
+      A wall of a broadcasting building in 1983 completely covered from top to bottom with hundreds of overlapping
+      handwritten paper posters, more posters laid on the pavement below, all writing blurred and unreadable, late
+      afternoon light. No people.
+    still_motion: pan_up
+    extra_clips:
+      - image_prompt: >-
+          The elderly mother in the middle of the frame seen from the waist up, carefully pressing her own handwritten
+          paper onto the crowded poster wall with both palms, her eyes closed as if praying. The writing is blurred and
+          unreadable. No other faces in focus.
+        characters: [mom]
+        still_motion: push
+        focus: [0.5, 0.4]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "원래 두 시간이던 방송은 무려 138일이나 이어졌습니다. 왜 끝낼 수 없었을까요?"
+        captions: ["원래 두 시간이던 방송은", "무려 138일이나 이어졌습니다", "왜 끝낼 수 없었을까요?"]
+    visual: 밤새 불이 켜진 방송 스튜디오, 수많은 전화기와 모니터 (사람 얼굴 흐릿) / 새벽까지 TV 앞을 지키는 어머니
+    image_prompt: >-
+      A 1983 television studio at night with bright lights still on, rows of ringing telephones on long tables and a
+      wall of small monitors showing blurred faces, a sense of nonstop urgency. No readable text, no faces in focus.
+    still_motion: pan_right
+    extra_clips:
+      - image_prompt: >-
+          A small 1980s Korean living room late at night, the elderly mother seen from the waist up in the middle of the
+          frame, sitting very close to a glowing television set, hands clasped, eyes fixed on the screen without
+          blinking. The screen shows only blurred light. No other people.
+        characters: [mom]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그리고 드디어 화면 너머, 이마에 작은 흉터가 있는 남자가 울고 있었습니다."
+        captions: ["그리고 드디어 화면 너머", "이마에 작은 흉터가 있는 남자가 / 울고 있었습니다"]
+      - text: "결국 만 명이 넘는 가족이, 이렇게 다시 만났죠."
+        captions: ["결국 만 명이 넘는 가족이", "이렇게 다시 만났죠"]
+    visual: 이마에 흉터가 있는 중년 아들이 눈물을 흘린다 / 어머니와 아들이 서로를 끌어안고 오열한다
+    image_prompt: >-
+      The middle-aged son seen from the chest up in the middle of the frame, a small pale scar on his left forehead,
+      tears streaming down his face as he looks toward the viewer's side in disbelief, bright studio light.
+    characters: [son]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          The elderly mother and her middle-aged son in the middle of the frame seen from the waist up, holding each
+          other tightly and sobbing, her small hands clutching his shirt, his face buried on her shoulder, warm light.
+        characters: [mom, son]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "이 방송 기록은 2015년, 유네스코 세계기록유산이 됐습니다."
+        captions: ["이 방송 기록은 2015년", "유네스코 세계기록유산이 / 됐습니다"]
+    visual: 기록 보관실 선반에 가지런히 놓인 낡은 비디오테이프와 손글씨 신청서 묶음 (글자 흐릿)
+    image_prompt: >-
+      A quiet archive room with metal shelves holding neatly labeled old videotapes and bundles of yellowed handwritten
+      application forms tied with string, soft light falling across them, a dignified, precious mood. All labels and
+      writing blurred and unreadable. No people.
+    still_motion: drift
+    focus: [0.5, 0.5]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "온 국민을 울린 이 방송이 바로, KBS 이산가족 찾기입니다."
+        captions: ["온 국민을 울린 이 방송이", "바로, KBS 이산가족 찾기입니다"]
+      - text: "여러분은 그해 여름, 이 방송을 기억하시나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분은 그해 여름", "이 방송을 기억하시나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 강변, 어머니와 아들이 손을 잡고 나란히 걷는 뒷모습 / 이어서 어머니가 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      A riverside path in Seoul at golden sunset, the elderly mother and her middle-aged son in the middle of the frame
+      seen from the knees up, walking side by side holding hands, she looks up at him with a peaceful smile. Warm golden
+      sky.
+    characters: [mom, son]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same elderly mother from the reference image, seen from the waist up in the middle
+          of the frame, standing on the riverside at sunset. She smiles warmly toward the viewer and holds one open palm
+          out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other
+          people.
+        characters: [mom]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "한국민족문화대백과사전, 이산가족찾기 특별생방송 (1983년 6월 30일 밤 10시 15분 시작 — 2시간 예정, 첫날부터 2시간 30분 연장, 11월 14일까지 138일·453시간 45분, 신청 100,952건, 상봉 10,189건(본문 다른 곳 10,180), KBS 건물 주변 벽보, 최고 시청률 78%, 2015년 10월 9일 유네스코 세계기록유산 등재) — https://encykorea.aks.ac.kr/Article/E0068362"
+  - "국가기록원 '기록으로 만나는 대한민국 — 이산가족 찾기' (예상 못 한 반응에 정규방송을 모두 취소하고 철야 특별생방송, KBS 건물 벽을 넘어 길바닥까지 벽보가 겹쳐 붙음, 1983.6.30~11.14 138일·453시간 45분 — 기네스북, 참여 이산가족 약 10만 명, 소개된 사연 53,536명, 상봉 10,189명, 여의도 KBS 주변 방문 약 20만 명 추산) — https://theme.archives.go.kr/next/koreaOfRecord/reunion.do"
+
+accuracy_notes:
+  - "어머니·아들은 수많은 이산가족의 모습을 한 가족으로 엮은 창작 인물이다. 피란길 이별, 흉터, 사진, 화면 속 만남은 몰입을 위한 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물."
+  - "'발을 동동 굴렀습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '30년 전 피란길'은 6·25 전쟁(1950~53)부터 1983년까지를 어림한 이야기 표현. '여의도'는 KBS 본사가 있던 곳(국가기록원 '여의도 KBS 주변')."
+  - "s05 KBS 건물 벽을 넘어 길바닥까지 벽보가 겹쳐 붙은 모습은 국가기록원·백과사전 기준."
+  - "s06 '원래 두 시간'은 백과사전(2시간 예정) 기준. 138일은 1983.6.30~11.14 (국가기록원·백과사전)."
+  - "s07 '만 명이 넘는 가족'은 상봉 10,189건(국가기록원·백과사전) 기준. 흉터로 알아보는 장면은 재구성."
+  - "s08 2015년 10월 9일 유네스코 세계기록유산 등재는 백과사전 기준."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀). 방송 노래 가사는 대본·화면에 넣지 않는다."
+  - "화면에는 방송사 로고·글자를 넣지 않는다. 화면 인물은 어머니 중심, s07·s09에 아들, s03에 뒤쪽 행인 2~3명. 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 두 시간짜리 방송이 138일 동안 꺼지지 않은 이유
+    - 30년 전 피란길에서 놓친 아들, 어머니는 어떻게 찾았을까?
+    - 온 국민이 밤새 TV 앞에서 울었던 그해 여름
+  description: |-
+    📺 원래 두 시간이던 방송이… 138일 동안 꺼지지 않았다면 믿으시겠어요?
+
+    1983년 여름, 종이 한 장을 꼭 쥔 어머니가 여의도로 달려갑니다 🏃‍♀️
+    30년 전 피란길에서 놓친 아들, 기억나는 건 어릴 적 이름과 이마의 작은 흉터뿐 😢
+    방송국 벽도, 길바닥도 같은 사연의 종이로 뒤덮였는데요…
+
+    만 명이 넘는 가족이 다시 만난 기적 🫂 그리고 지금은 유네스코 세계기록유산! 🇰🇷 그 방송의 이름은 영상 끝에서.
+  comment_question: 여러분은 그해 여름, 이 방송을 기억하시나요? 여러분의 생각이 궁금합니다.
+  hashtags: [1983, 가족, 감동, 국뽕, 쇼츠]
