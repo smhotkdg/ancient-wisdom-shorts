@@ -119,7 +119,7 @@ scenes:
     beat: twist
     lines:
       - text: "원래 두 시간이던 방송은 무려 138일이나 이어졌습니다. 왜 끝낼 수 없었을까요?"
-        captions: ["원래 두 시간이던 방송은", "무려 138일이나 이어졌습니다", "왜 끝낼 수 없었을까요?"]
+        captions: ["원래 두 시간이던 방송은", "무려 138일이나 / 이어졌습니다", "왜 끝낼 수 없었을까요?"]
     visual: 밤새 불이 켜진 방송 스튜디오, 수많은 전화기와 모니터 (사람 얼굴 흐릿) / 새벽까지 TV 앞을 지키는 어머니
     image_prompt: >-
       A 1983 television studio at night with bright lights still on, rows of ringing telephones on long tables and a
@@ -224,4 +224,4 @@ youtube:
 
     만 명이 넘는 가족이 다시 만난 기적 🫂 그리고 지금은 유네스코 세계기록유산! 🇰🇷 그 방송의 이름은 영상 끝에서.
   comment_question: 여러분은 그해 여름, 이 방송을 기억하시나요? 여러분의 생각이 궁금합니다.
-  hashtags: [1983, 가족, 감동, 국뽕, 쇼츠]
+  hashtags: ["1983", 가족, 감동, 국뽕, 쇼츠]

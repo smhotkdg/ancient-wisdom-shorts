@@ -468,7 +468,7 @@ def youtube_text(ep: Episode) -> str:
         body.append(disc)
     tags = yt.get("hashtags") or []
     if tags:
-        body.append(" ".join(t if t.startswith("#") else "#" + t for t in tags))
+        body.append(" ".join(str(t) if str(t).startswith("#") else "#" + str(t) for t in tags))
     lines += ["", "[설명] (아래를 그대로 붙여 넣기)", "\n\n".join(b for b in body if b)]
     return "\n".join(lines).strip() + "\n"
 
