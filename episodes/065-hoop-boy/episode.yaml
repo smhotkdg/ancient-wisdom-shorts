@@ -1,0 +1,221 @@
+# 065 서울올림픽 굴렁쇠 소년 — 정적 속 텅 빈 운동장을 가로지른 여덟 살, 그는 올림픽을 따낸 날 태어났다 (이미지 + 음성만, 실사)
+# 40~60대 공감·국뽕
+id: "065"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: hoop-boy
+status: script_ok
+working_title: 10만 관중이 숨죽인 그 순간, 운동장 한가운데로 굴러 들어온 것은?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["10만 관중이", "숨죽인 순간?"]
+hook: 넋이 나갔습니다
+caption_keywords: [넋이 나갔습니다, 정적, 여덟 살, 굴렁쇠, 넘어지면, "1981년 9월 30일", 52대 27, 기립 박수]
+
+story:
+  hero: 소년
+  reveal: [굴렁쇠 소년]
+
+characters:
+  - id: boy
+    name: 소년
+    name_en: Korean boy of 1988
+    description: >-
+      a slim Korean boy about 7 years old with a bright, innocent round face, short black hair and calm shining eyes,
+      wearing a plain white short-sleeved T-shirt, white shorts, a red baseball cap and white sneakers, holding a thin
+      metal hoop and a short guiding stick
+    note: 이야기 주인공. 1988년 서울올림픽 개회식의 여덟 살 소년 — 실제 인물의 초상이 아닌 창작 인물 (마지막 대사 전까지 '굴렁쇠 소년'이라는 말을 쓰지 않는다)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1988년 9월 17일, 잠실 주경기장의 10만 관중은 넋이 나갔습니다."
+        captions: ["1988년 9월 17일", "잠실 주경기장의 10만 관중은 / 넋이 나갔습니다"]
+      - text: "화려한 공연이 끝나자, 텅 빈 운동장에 정적만 흘렀거든요."
+        captions: ["화려한 공연이 끝나자", "텅 빈 운동장에 / 정적만 흘렀거든요"]
+    visual: 가을 햇살 아래 가득 찬 거대한 경기장 관중석 / 텅 빈 초록 잔디 운동장
+    image_prompt: >-
+      A huge packed stadium in Seoul in autumn 1988 seen from high in the stands, tens of thousands of spectators in the
+      seats under bright afternoon sunlight, colorful but no readable banners or logos, a vast open green field in the
+      middle. No faces in focus.
+    still_motion: zoom_out
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          A vast, completely empty green grass field in the middle of a stadium in bright afternoon light, long soft
+          shadows, an eerie, breathless silence. No people on the field, no logos or text.
+        still_motion: push
+        focus: [0.5, 0.55]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "세계가 지켜보는 개회식 한가운데, 누구도 숨소리 하나 내지 않았죠."
+        captions: ["세계가 지켜보는 / 개회식 한가운데", "누구도 숨소리 하나 / 내지 않았죠"]
+    visual: 난간을 꼭 쥔 관중의 두 손 / 1980년대 거실 TV 앞에서 숨죽인 할머니
+    image_prompt: >-
+      Close-up of a single spectator's hands clasped tightly together on a 1988 stadium seat railing, knuckles pale,
+      frozen in suspense, soft autumn light, the field blurred far below. Only the hands are visible.
+    still_motion: pan_right
+    extra_clips:
+      - image_prompt: >-
+          A 1980s Korean living room with an elderly grandmother sitting alone very close to a wooden-cabinet
+          television, seen from behind, leaning forward in silence, the screen showing only blurred green light. No
+          faces visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.45]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "그때 저 멀리서, 무언가 천천히 굴러 들어왔습니다. 무엇이었을까요?"
+        captions: ["그때 저 멀리서", "무언가 천천히 / 굴러 들어왔습니다", "무엇이었을까요?"]
+    visual: 운동장 가장자리, 잔디 위로 굴러 들어오는 가느다란 쇠바퀴 클로즈업
+    image_prompt: >-
+      Low-angle close-up at grass level of a thin metal hoop rolling slowly across the green stadium grass toward the
+      camera, sunlight glinting on the metal, the empty stands blurred far behind. No faces visible.
+    still_motion: push
+    focus: [0.5, 0.55]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "흰 셔츠를 입은 여덟 살 소년이, 굴렁쇠 하나를 굴리며 걸어 나왔습니다."
+        captions: ["흰 셔츠를 입은 여덟 살 소년이", "굴렁쇠 하나를 굴리며 / 걸어 나왔습니다"]
+    visual: 넓은 운동장 위 작은 소년이 굴렁쇠를 굴리며 걷는다 / 굴렁쇠를 밀고 가는 작은 손과 막대
+    image_prompt: >-
+      The little boy in the middle of the frame seen from the knees up, walking across the vast green stadium field
+      while rolling a thin metal hoop with a short stick, calm and focused, bright afternoon sunlight, the huge empty
+      field around him. No other people on the field.
+    characters: [boy]
+    still_motion: pan_left
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a small boy's hand guiding a thin metal hoop with a short wooden stick as it rolls on green grass,
+          sunlight sparkling on the hoop. Only the hand and hoop are visible.
+        characters: [boy]
+        still_motion: drift
+        focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "넘어지면 다시 세워서 굴리면 된다. 소년은 그 말 하나만 믿고 걸었죠."
+        captions: ["넘어지면 다시 세워서 / 굴리면 된다", "소년은 그 말 하나만 믿고 / 걸었죠"]
+    visual: 연습장에서 어른의 손이 소년의 어깨를 다독인다 / 굴렁쇠를 바라보며 침착하게 걷는 소년의 얼굴
+    image_prompt: >-
+      A practice field before the ceremony, the little boy in the middle of the frame seen from the waist up, looking up
+      and nodding seriously while an adult's kind hand rests on his small shoulder from the side, gentle light. No other
+      faces visible.
+    characters: [boy]
+    still_motion: zoom_in
+    focus: [0.5, 0.42]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 이 소년은 아주 특별한 날 태어났습니다. 언제였을까요?"
+        captions: ["그런데 이 소년은 / 아주 특별한 날 태어났습니다", "언제였을까요?"]
+    visual: 운동장 한가운데 홀로 선 소년의 얼굴 클로즈업, 햇살
+    image_prompt: >-
+      Close-up of the little boy's face in the middle of the frame under his red cap, standing alone in the center of
+      the vast field, calm innocent eyes looking ahead, warm sunlight on his cheeks, the stands blurred far behind.
+    characters: [boy]
+    still_motion: push
+    focus: [0.5, 0.45]
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "1981년 9월 30일, 모두가 질 거라던 나고야를 52대 27로 꺾고 서울이 올림픽을 따낸 날이었죠."
+        captions: ["1981년 9월 30일", "모두가 질 거라던 나고야를 / 52대 27로 꺾고", "서울이 올림픽을 따낸 / 날이었죠"]
+    visual: 1981년 국제회의장, 발표 순간 환호하며 서로 끌어안는 한국 대표단 / 같은 날 병원 신생아실의 갓난아기
+    image_prompt: >-
+      A grand European conference hall in 1981, a small group of Korean delegates in dark suits leaping up and hugging
+      each other in joyful disbelief at the moment of an announcement, papers flying, warm chandelier light. No readable
+      text or logos, faces partly turned.
+    still_motion: push
+    focus: [0.5, 0.45]
+    extra_clips:
+      - image_prompt: >-
+          A quiet 1981 hospital nursery, a newborn baby sleeping peacefully in a small bassinet wrapped in a white
+          blanket, soft autumn light through the window. No adults visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "그러자 한가운데 멈춘 소년이 손을 흔들었고, 10만 관중이 일어나 박수를 쳤습니다."
+        captions: ["그러자 한가운데 멈춘 소년이 / 손을 흔들었고", "10만 관중이 일어나 / 박수를 쳤습니다"]
+    visual: 굴렁쇠를 세워 든 소년이 해맑게 웃으며 손을 흔든다 / 일어나 박수 치는 관중석
+    image_prompt: >-
+      The little boy in the middle of the frame seen from the knees up, standing in the center of the vast green field
+      holding his hoop upright in one hand and waving the other hand at chest height with a bright, innocent smile,
+      golden sunlight. No other people on the field.
+    characters: [boy]
+    still_motion: zoom_out
+    focus: [0.5, 0.45]
+    extra_clips:
+      - image_prompt: >-
+          A huge stadium crowd rising to their feet in a standing ovation, thousands of hands clapping, warm golden
+          sunlight over the stands, joyful emotion. Faces out of focus, no readable banners or logos.
+        still_motion: pan_up
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "온 세계를 숨죽이게 한 이 장면이 바로, 서울올림픽 굴렁쇠 소년입니다."
+        captions: ["온 세계를 숨죽이게 한 / 이 장면이", "바로, 서울올림픽 / 굴렁쇠 소년입니다"]
+      - text: "여러분이 기억하는 88올림픽 장면은 무엇인가요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분이 기억하는 / 88올림픽 장면은", "무엇인가요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 운동장 위 굴렁쇠를 굴리며 멀어져 가는 소년의 뒷모습 / 이어서 소년이 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The little boy seen from behind in the middle of the frame, rolling his hoop away across the green field toward
+      the far side of the stadium at golden sunset, his long shadow stretching on the grass, a poetic, hopeful mood. No
+      other people on the field.
+    characters: [boy]
+    still_motion: push
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same little boy from the reference image, seen from the waist up in the middle of
+          the frame, standing on the green field holding his hoop. He smiles brightly toward the viewer and holds one
+          open palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No
+          other people.
+        characters: [boy]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "서울신문 2011-04-01 [김문이 만난사람] 서울올림픽 '굴렁쇠 소년' 윤태웅 (1981년 9월 30일 — 서울올림픽 개최지 확정일 — 출생, 그날 태어난 2400명 가운데 '호돌이'로 뽑힘, 1988년 9월 17일 잠실 주경기장 개막식 당시 8살, 태권도 시범 뒤 흰 반팔 티셔츠·빨간 챙 모자 차림으로 굴렁쇠를 굴리며 운동장 한가운데로, 10만 관중과 시청자가 숨죽임, 가운데에 멈춰 손을 흔들자 기립 박수, 총연출 이어령 — '쓰러지면 자연스럽게 다시 세워서 계속 굴리라') — https://m.seoul.co.kr/news/2011/04/01/20110401027001"
+  - "국가기록원 '88서울올림픽 — 기적의 유치' (1981년 9월 30일 바덴바덴 IOC 총회에서 서울을 제24회 올림픽 개최지로 선정, 나고야와 경쟁) — https://theme.archives.go.kr/next/88olympic/bid/seoul.do"
+  - "전자신문 [과학기술이 미래다] 88서울올림픽 유치 (서울 52표·나고야 27표, 현지 여론·기자단 모의투표에서는 나고야가 앞섬) — https://www.etnews.com/20240403000176"
+
+accuracy_notes:
+  - "주인공은 실존 인물 윤태웅(1981~)을 바탕으로 하지만 얼굴·옷은 상상으로 그린 창작 인물(실사 화풍이지만 실제 인물의 초상이 아님). 이름은 대본에 쓰지 않는다. 감정·장면은 설명용 재구성."
+  - "'넋이 나갔습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 1988년 9월 17일 잠실 개막식, 10만 관중이 숨죽인 장면은 서울신문 기준. '텅 비고 정적만'은 태권도 시범이 끝난 뒤 굴렁쇠 장면의 연출 의도를 이야기로 쓴 것."
+  - "s04 '여덟 살'은 서울신문(개막식 당시 8살, 한국 나이) 기준. 흰 셔츠·빨간 모자는 서울신문 묘사 기준."
+  - "s05 '넘어지면 다시 세워서 굴리면 된다'는 총연출 이어령의 말을 윤태웅이 전한 것(서울신문)을 줄여 옮김. 화면의 어른 손은 연출이며 특정 인물을 그리지 않는다."
+  - "s07 1981년 9월 30일 바덴바덴 개최지 결정(국가기록원), 52대 27과 '나고야가 앞선다는 전망'(전자신문). 윤태웅의 생일이 같은 날이라는 것은 서울신문 기준. 회의장·신생아실 화면은 연출."
+  - "s08 가운데에 멈춰 손을 흔들자 기립 박수를 받은 것은 서울신문 기준."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면에는 오륜 마크·대회 로고·마스코트·글자를 넣지 않는다. 화면 인물은 소년 중심, 관중·대표단·가족은 얼굴이 흐린 배경. 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 10만 관중이 숨죽인 순간, 운동장으로 굴러 들어온 것은?
+    - 올림픽을 따낸 바로 그날 태어난 아이
+    - 텅 빈 운동장을 가로지른 여덟 살, 그날의 정적
+  description: |-
+    🌕 화려한 공연이 끝나고… 10만 관중이 갑자기 숨을 죽였습니다. 왜였을까요?
+
+    1988년 9월 17일, 텅 빈 잠실 운동장에 정적만 흐르던 그 순간 🤫
+    저 멀리서 무언가 천천히 굴러 들어옵니다… 흰 셔츠의 여덟 살 소년! ⭕
+    "넘어지면 다시 세워서 굴리면 된다" 그 말 하나만 믿고 걸었다는데요.
+
+    그런데 이 소년, 서울이 올림픽을 따낸 바로 그날 태어났다고요? 🇰🇷 정답은 영상 끝에서!
+  comment_question: 여러분이 기억하는 88올림픽 장면은 무엇인가요? 여러분의 생각이 궁금합니다.
+  hashtags: [88올림픽, 서울올림픽, 추억, 국뽕, 쇼츠]
