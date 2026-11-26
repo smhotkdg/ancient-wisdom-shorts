@@ -4,7 +4,7 @@ id: "067"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: germany-nurse
-status: script_ok
+status: done
 working_title: 말도 안 통하는 낯선 나라, 스물두 살 간호사는 어떻게 버텼을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["말도 안 통하는 땅에서", "가족을 지켰다고?"]
@@ -132,8 +132,8 @@ scenes:
       waist up, handing over a money transfer form and an envelope with both hands, a small proud, tired smile. The
       papers' text is blurred and unreadable. No other faces in focus.
     characters: [nurse]
-    still_motion: push
-    focus: [0.5, 0.42]
+    still_motion: zoom_out
+    focus: [0.5, 0.4]
     extra_clips:
       - image_prompt: >-
           Close-up of a young woman's hand writing a letter in Korean on thin airmail paper by lamp light, a teardrop
@@ -145,7 +145,7 @@ scenes:
     beat: resolve
     lines:
       - text: "결국 만 명이 넘는 간호사와 광부들이 보낸 돈은, 가난한 나라의 귀한 외화가 됐죠."
-        captions: ["결국 만 명이 넘는 / 간호사와 광부들이 보낸 돈은", "가난한 나라의 / 귀한 외화가 됐죠"]
+        captions: ["결국 만 명이 넘는 / 간호사와 광부들이", "보낸 돈은", "가난한 나라의 / 귀한 외화가 됐죠"]
     visual: 1960년대 한국 시골집 마루, 어머니가 독일에서 온 항공 우편 봉투를 두 손으로 받아 든다
     image_prompt: >-
       The wooden veranda of a 1960s Korean countryside house, an elderly mother in hanbok in the middle of the frame seen
@@ -158,7 +158,7 @@ scenes:
     beat: info
     lines:
       - text: "그 돈은 동생들 학비가 되고, 부모님 집이 되고, 나라가 일어서는 밑거름이 됐다고 합니다."
-        captions: ["그 돈은 동생들 학비가 되고 / 부모님 집이 되고", "나라가 일어서는 / 밑거름이 됐다고 합니다"]
+        captions: ["그 돈은 / 동생들 학비가 되고", "부모님 집이 되고", "나라가 일어서는 / 밑거름이 됐다고 합니다"]
     visual: 교복을 입고 웃으며 학교로 뛰어가는 남동생 / 새 지붕을 올린 시골집
     image_prompt: >-
       A 1960s Korean country road in the morning, a teenage boy in a black school uniform and cap running happily toward
@@ -176,7 +176,7 @@ scenes:
     beat: info
     lines:
       - text: "낯선 땅에서 가족과 나라를 일으킨 이들이 바로, 파독 간호사입니다."
-        captions: ["낯선 땅에서 / 가족과 나라를 일으킨 이들이", "바로, 파독 간호사입니다"]
+        captions: ["낯선 땅에서 / 가족과 나라를", "일으킨 이들이", "바로, 파독 간호사입니다"]
       - text: "여러분 가족 중에도 그때 떠난 분이 계셨나요? 여러분의 생각이 궁금합니다."
         captions: ["여러분 가족 중에도", "그때 떠난 분이 계셨나요?", "여러분의 생각이 / 궁금합니다"]
         cta: true
@@ -195,6 +195,10 @@ scenes:
         characters: [nurse]
         still_motion: zoom_in
         focus: [0.5, 0.42]
+
+redo:
+  reason: "s06 송금 서류·봉투(월급)를 내미는 손이 화면 아래 75~85% 높이(노란 선 아래)에 있어 자막·쇼츠 설명 영역에 묻힘 — 손과 봉투를 가슴 높이(화면 45~60%)로 올림"
+  images: [s06]
 
 sources:
   - "국가기록원 '기록으로 만나는 대한민국 — 이민: 유럽' (광부 1963년 247명을 시작으로 1977년까지 8,395명, 간호사 1965년 18명을 시작으로 1977년까지 10,371명, 처음엔 3년 계약, 간호사는 초기에 언어 장벽·문화 차이로 허드렛일을 맡는 어려움, 독일어를 익히며 성실성과 간호 능력을 인정받음, 두 집단의 임금은 한국으로 외화가 들어오는 주요 통로) — https://theme.archives.go.kr/next/immigration/Europe.do"
