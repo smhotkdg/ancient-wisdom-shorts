@@ -4,7 +4,7 @@ id: "066"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: worldcup-cleanup
-status: script_ok
+status: done
 working_title: 응원이 끝난 새벽 광장, 쓰레기 98톤은 누가 치웠을까?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["쓰레기 98톤,", "누가 치웠을까?"]
@@ -61,7 +61,7 @@ scenes:
     beat: problem
     lines:
       - text: "4강을 앞둔 그날 밤, 시청 앞에서만 나온 쓰레기가 무려 98톤이었죠."
-        captions: ["4강을 앞둔 그날 밤", "시청 앞에서만 나온 쓰레기가 / 무려 98톤이었죠"]
+        captions: ["4강을 앞둔 그날 밤", "시청 앞에서만 / 나온 쓰레기가", "무려 98톤이었죠"]
     visual: 가로등 아래 산더미처럼 쌓인 쓰레기 봉투와 응원 도구 더미
     image_prompt: >-
       Close view of a mountain of overflowing trash bags, crushed plastic bottles, flattened newspapers and red
@@ -72,7 +72,7 @@ scenes:
     beat: question
     lines:
       - text: "날이 밝기 전에, 이 많은 쓰레기를 어떻게 다 치울 수 있을까요?"
-        captions: ["날이 밝기 전에", "이 많은 쓰레기를 / 어떻게 다 치울 수 있을까요?"]
+        captions: ["날이 밝기 전에", "이 많은 쓰레기를", "어떻게 다 / 치울 수 있을까요?"]
     visual: 미화원이 허리를 펴며 끝없는 광장을 바라본다
     image_prompt: >-
       The street sweeper in the middle of the frame seen from the waist up, straightening his aching back with one hand
@@ -86,7 +86,7 @@ scenes:
     beat: solution
     lines:
       - text: "그래서 미화원은 동료들과 함께, 묵묵히 빗자루를 들었습니다."
-        captions: ["그래서 미화원은 / 동료들과 함께", "묵묵히 빗자루를 들었습니다"]
+        captions: ["그래서 미화원은 / 동료들과 함께", "묵묵히 / 빗자루를 들었습니다"]
     visual: 빗자루가 아스팔트 위 쓰레기를 쓸어 모은다 / 미화원이 땀을 닦으며 계속 쓴다
     image_prompt: >-
       Close-up of a long straw broom sweeping paper cups and newspapers across the asphalt of a city plaza at night,
@@ -126,7 +126,7 @@ scenes:
     beat: twist
     lines:
       - text: "아저씨, 저희도 같이 치울게요! 빈 봉지를 들고 다시 광장으로 돌아온 거였죠."
-        captions: ["아저씨 / 저희도 같이 치울게요!", "빈 봉지를 들고 / 다시 광장으로 돌아온 거였죠"]
+        captions: ["아저씨 / 저희도 같이 치울게요!", "빈 봉지를 들고 / 다시 광장으로", "돌아온 거였죠"]
     visual: 젊은이가 쭈그려 앉아 페트병을 봉지에 담으며 미화원에게 웃는다
     image_prompt: >-
       The young woman with the flag cape in the middle of the frame seen from the waist up, crouching on the plaza and
@@ -147,8 +147,8 @@ scenes:
       the flag cape in the middle of the frame seen from the waist up, smiling and giving each other a tired high-five,
       a row of tied trash bags neatly lined up behind them.
     characters: [cleaner, student]
-    still_motion: push
-    focus: [0.5, 0.42]
+    still_motion: zoom_out
+    focus: [0.5, 0.35]
 
   - id: s08
     beat: info
