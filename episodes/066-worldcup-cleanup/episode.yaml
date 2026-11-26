@@ -1,0 +1,222 @@
+# 066 2002 월드컵 거리응원 — 98톤 쓰레기 앞의 환경미화원, 자정 넘어 돌아온 붉은 셔츠 젊은이들 (이미지 + 음성만, 실사)
+# 40~60대 공감·국뽕
+id: "066"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: worldcup-cleanup
+status: script_ok
+working_title: 응원이 끝난 새벽 광장, 쓰레기 98톤은 누가 치웠을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["쓰레기 98톤,", "누가 치웠을까?"]
+hook: 골머리를 앓았습니다
+caption_keywords: [골머리, 쓰레기 바다, 98톤, 빗자루, 자정, 태극기, 700만 명, 질서]
+
+story:
+  hero: 미화원
+  reveal: [2002 월드컵 거리응원]
+
+characters:
+  - id: cleaner
+    name: 미화원
+    name_en: Korean street sweeper of 2002
+    description: >-
+      a Korean man about 50 with a lean, sun-browned, kind face, short greying hair, deep smile lines, wearing a bright
+      orange street-cleaner work uniform with reflective stripes, a matching cap and cotton work gloves, holding a long
+      straw broom
+    note: 이야기 주인공. 2002년 6월 시청 앞 광장을 맡은 구청 환경미화원 — 기사 속 인물을 바탕으로 한 창작 인물 (이름은 쓰지 않는다)
+  - id: student
+    name: 젊은이
+    name_en: young Korean football fan of 2002
+    description: >-
+      a cheerful Korean woman in her early 20s with a bright smile, shoulder-length black hair in a ponytail, wearing a
+      plain bright red T-shirt with no text or logo and a Korean flag (taegeukgi) tied around her shoulders like a cape,
+      holding a large empty trash bag
+    note: 청소를 도우러 돌아온 젊은이들 중 한 명 (창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "2002년 6월, 서울 시청 앞의 한 환경미화원은 골머리를 앓았습니다."
+        captions: ["2002년 6월", "서울 시청 앞의 / 한 환경미화원은", "골머리를 앓았습니다"]
+      - text: "경기가 끝날 때마다, 광장이 쓰레기 바다가 됐거든요."
+        captions: ["경기가 끝날 때마다", "광장이 / 쓰레기 바다가 됐거든요"]
+    visual: 붉은 물결로 가득 찬 밤의 광장 / 응원이 끝난 뒤 신문지·페트병으로 뒤덮인 텅 빈 광장 앞에 선 미화원
+    image_prompt: >-
+      A huge plaza in front of Seoul City Hall at night in June 2002 filled with a sea of people in plain red T-shirts
+      cheering toward a giant glowing screen, seen from above, red light everywhere. No readable text, logos or banners;
+      faces not in focus.
+    still_motion: zoom_out
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          The same plaza after midnight, nearly empty, the ground covered with scattered newspapers, plastic bottles,
+          paper cups and cheering sticks under street lights, the street sweeper in the middle of the frame seen from the
+          knees up, standing with his broom and staring at it all with a heavy sigh. No other people nearby.
+        characters: [cleaner]
+        still_motion: push
+        focus: [0.5, 0.45]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "4강을 앞둔 그날 밤, 시청 앞에서만 나온 쓰레기가 무려 98톤이었죠."
+        captions: ["4강을 앞둔 그날 밤", "시청 앞에서만 나온 쓰레기가 / 무려 98톤이었죠"]
+    visual: 가로등 아래 산더미처럼 쌓인 쓰레기 봉투와 응원 도구 더미
+    image_prompt: >-
+      Close view of a mountain of overflowing trash bags, crushed plastic bottles, flattened newspapers and red
+      cheering sticks piled high beside a street lamp on a city plaza at night. No readable text, no people.
+    still_motion: pan_up
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "날이 밝기 전에, 이 많은 쓰레기를 어떻게 다 치울 수 있을까요?"
+        captions: ["날이 밝기 전에", "이 많은 쓰레기를 / 어떻게 다 치울 수 있을까요?"]
+    visual: 미화원이 허리를 펴며 끝없는 광장을 바라본다
+    image_prompt: >-
+      The street sweeper in the middle of the frame seen from the waist up, straightening his aching back with one hand
+      and looking out over the endless littered plaza under the street lights, his face tired but determined. No other
+      people nearby.
+    characters: [cleaner]
+    still_motion: zoom_out
+    focus: [0.5, 0.42]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 미화원은 동료들과 함께, 묵묵히 빗자루를 들었습니다."
+        captions: ["그래서 미화원은 / 동료들과 함께", "묵묵히 빗자루를 들었습니다"]
+    visual: 빗자루가 아스팔트 위 쓰레기를 쓸어 모은다 / 미화원이 땀을 닦으며 계속 쓴다
+    image_prompt: >-
+      Close-up of a long straw broom sweeping paper cups and newspapers across the asphalt of a city plaza at night,
+      work-gloved hands on the handle, street lights reflecting. Only the hands and broom are visible.
+    still_motion: drift
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          The street sweeper in the middle of the frame seen from the waist up, wiping sweat from his forehead with the
+          back of his glove and continuing to sweep, the empty littered plaza around him under orange street lights.
+        characters: [cleaner]
+        still_motion: pan_left
+
+  - id: s05
+    beat: twist
+    lines:
+      - text: "그런데 자정이 넘자, 태극기를 두른 젊은이들이 우르르 몰려왔습니다. 왜였을까요?"
+        captions: ["그런데 자정이 넘자", "태극기를 두른 젊은이들이 / 우르르 몰려왔습니다", "왜였을까요?"]
+    visual: 광장 저편에서 붉은 티셔츠·태극기 망토의 젊은이들이 달려온다 / 놀란 미화원의 얼굴
+    image_prompt: >-
+      The young woman in a plain red T-shirt with a Korean flag tied around her shoulders like a cape in the middle of
+      the frame seen from the knees up, running across the night plaza toward the camera with a bright smile, holding an
+      empty trash bag.
+    characters: [student]
+    extras: "three or four other young people in plain red T-shirts running behind her, small and out of focus"
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of the street sweeper's surprised face in the middle of the frame, eyebrows raised, broom paused in
+          his hands, orange street light on his face. No other faces in focus.
+        characters: [cleaner]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "아저씨, 저희도 같이 치울게요! 빈 봉지를 들고 다시 광장으로 돌아온 거였죠."
+        captions: ["아저씨 / 저희도 같이 치울게요!", "빈 봉지를 들고 / 다시 광장으로 돌아온 거였죠"]
+    visual: 젊은이가 쭈그려 앉아 페트병을 봉지에 담으며 미화원에게 웃는다
+    image_prompt: >-
+      The young woman with the flag cape in the middle of the frame seen from the waist up, crouching on the plaza and
+      dropping plastic bottles into a big trash bag, looking up toward the viewer's side with a cheerful grin, street
+      lights glowing.
+    characters: [student]
+    still_motion: zoom_in
+    focus: [0.5, 0.42]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "그러자 쓰레기 바다였던 광장이, 새벽빛과 함께 조금씩 제 얼굴을 되찾았습니다."
+        captions: ["그러자 / 쓰레기 바다였던 광장이", "새벽빛과 함께 조금씩 / 제 얼굴을 되찾았습니다"]
+    visual: 동이 트는 깨끗한 광장, 미화원과 젊은이가 나란히 서서 웃으며 손바닥을 마주친다
+    image_prompt: >-
+      A clean, nearly empty city plaza at dawn with soft pink and gold light, the street sweeper and the young woman with
+      the flag cape in the middle of the frame seen from the waist up, smiling and giving each other a tired high-five,
+      a row of tied trash bags neatly lined up behind them.
+    characters: [cleaner, student]
+    still_motion: push
+    focus: [0.5, 0.42]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "700만 명이 거리로 나와도 큰 사고 하나 없었고, 세계는 그 질서에 놀랐다고 합니다."
+        captions: ["700만 명이 거리로 나와도 / 큰 사고 하나 없었고", "세계는 그 질서에 / 놀랐다고 합니다"]
+    visual: 낮의 광장에 가지런히 놓인 분리수거 봉투들과 깨끗한 바닥 / 붉은 물결이 질서 있게 빠져나가는 거리
+    image_prompt: >-
+      A wide city avenue in June 2002 seen from above, an enormous crowd in plain red T-shirts walking home in calm,
+      orderly lines along the sidewalks under evening light. No readable text, logos or banners; faces not in focus.
+    still_motion: pan_right
+    extra_clips:
+      - image_prompt: >-
+          Close view of neatly tied trash bags lined up in a tidy row on a clean plaza in the morning sun, a folded Korean
+          flag resting on top of one bag. No people.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "응원도 청소도 함께였던 그 여름이 바로, 2002 월드컵 거리응원입니다."
+        captions: ["응원도 청소도 함께였던 / 그 여름이", "바로, 2002 월드컵 / 거리응원입니다"]
+      - text: "여러분은 그해 여름, 어디서 응원하셨나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분은 그해 여름", "어디서 응원하셨나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 아침 햇살 속 깨끗한 광장에서 미화원이 빗자루를 어깨에 메고 웃는다 / 이어서 미화원이 시청자를 보며 묻는다
+    image_prompt: >-
+      The street sweeper seen from the knees up in the middle of the frame, standing on the clean plaza in bright
+      morning sunlight with his broom over his shoulder, a proud, warm smile. Clear blue sky. No other people nearby.
+    characters: [cleaner]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same street sweeper from the reference image, seen from the waist up in the middle
+          of the frame, standing on the sunny plaza. He smiles warmly toward the viewer and holds one open palm out at
+          chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [cleaner]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "서울신문 2002-06-27 '또 쓰레기 바다가 됐구만' (6월 25일 밤 시청 앞 광장 약 80만 인파, 경기 뒤 시청 앞에서만 쓰레기 98톤 — 중구 하루 평균 수거량 260톤 안팎, 중구청 환경미화원과 동료 200여 명이 경기 때마다 광장 정리, 자정 무렵 태극기를 두른 젊은이 수십 명이 청소를 돕겠다고 나섬) — https://www.seoul.co.kr/news/2002/06/27/20020627030001"
+  - "국가기록원 '2002 월드컵 — 화해와 질서의 월드컵' (폴란드전 약 50만 명 → 독일과의 준결승 약 700만 명 거리응원 — 인구의 약 20%, 질서와 청결로 세계를 놀라게 함, 수십만 명이 모여도 별다른 안전사고 없음, 외신 평가) — https://theme.archives.go.kr/next/worldCup2009/orderAndTogether.do"
+
+accuracy_notes:
+  - "미화원은 서울신문 기사 속 중구청 환경미화원을 바탕으로 한 창작 인물(이름을 쓰지 않음), 젊은이도 창작 인물. 감정·대사·장면은 몰입을 위한 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물."
+  - "'골머리를 앓았습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s02 '4강을 앞둔 그날 밤'은 독일과의 준결승이 열린 2002년 6월 25일 밤. 98톤은 서울신문 기준."
+  - "s05~s06 자정 무렵 태극기를 두른 젊은이 수십 명이 청소를 돕겠다고 나선 것은 서울신문 기준. '아저씨, 저희도 같이 치울게요!'는 그 뜻을 옮긴 재구성 대사다."
+  - "s07 '새벽빛과 함께 제 얼굴을 되찾았다'는 재구성 표현이며, 그날 청소를 끝낸 시각은 기록으로 확인하지 않았다."
+  - "s08 700만 명(준결승)·큰 안전사고 없음·질서와 청결로 세계를 놀라게 함은 국가기록원 기준."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면에는 대회·FIFA 로고, 응원 문구, 선수, 상표를 넣지 않는다(붉은 티셔츠는 글자 없음). 화면 인물은 미화원 중심, 군중 장면은 얼굴이 흐린 배경. 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 응원이 끝난 새벽 광장, 쓰레기 98톤은 누가 치웠을까?
+    - 자정 넘어 다시 돌아온 붉은 셔츠 젊은이들
+    - 700만 명이 모여도 사고 하나 없던 그 여름
+  description: |-
+    🔴 경기가 끝날 때마다 광장은 쓰레기 바다… 하룻밤에 무려 98톤!
+
+    2002년 6월, 시청 앞 광장을 맡은 한 환경미화원은 골머리를 앓습니다 🧹
+    날이 밝기 전에 이걸 어떻게 다 치우지…?
+    그런데 자정이 넘자, 태극기를 두른 젊은이들이 우르르 몰려오는데요! 🇰🇷
+
+    "아저씨, 저희도 같이 치울게요!" 😭 세계가 놀란 그해 여름의 이야기, 정답은 영상 끝에서!
+  comment_question: 여러분은 그해 여름, 어디서 응원하셨나요? 여러분의 생각이 궁금합니다.
+  hashtags: [2002년, 대한민국, 응원, 국뽕, 쇼츠]
