@@ -4,7 +4,7 @@ id: "068"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: four-down-five-up
-status: script_ok
+status: done
 working_title: 한 라운드에 네 번 쓰러진 청년, 그다음에 무슨 일이?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["네 번 쓰러지고", "다섯 번 일어났다?"]
@@ -109,7 +109,7 @@ scenes:
       - text: "무엇이 그를 일으켜 세웠을까요?"
         captions: ["무엇이 그를 / 일으켜 세웠을까요?"]
       - text: "열네 살에 아버지를 잃고, 어머니 혼자 일곱 남매를 키운 집의 아들이었죠."
-        captions: ["열네 살에 아버지를 잃고", "어머니 혼자 일곱 남매를 키운 / 집의 아들이었죠"]
+        captions: ["열네 살에 아버지를 잃고", "어머니 혼자 / 일곱 남매를 키운", "집의 아들이었죠"]
     visual: 1960년대 작은 가게에서 밤늦게 일하는 어머니 / 새벽, 아들을 깨워 운동을 보내는 어머니
     image_prompt: >-
       A tiny 1960s snack bar counter late at night, the tired mother in the middle of the frame seen from the waist up,
