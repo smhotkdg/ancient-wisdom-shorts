@@ -1,0 +1,232 @@
+# 067 파독 간호사 — 말 한마디 안 통하는 독일 병원, 월급을 고향에 보낸 스물두 살 (이미지 + 음성만, 실사)
+# 40~60대 공감(부모 세대 이야기)·감동·국뽕
+id: "067"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: germany-nurse
+status: script_ok
+working_title: 말도 안 통하는 낯선 나라, 스물두 살 간호사는 어떻게 버텼을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["말도 안 통하는 땅에서", "가족을 지켰다고?"]
+hook: 말문이 막혔습니다
+caption_keywords: [말문이 막혔습니다, 독일어, 허드렛일, 손바닥, 성실하게, 월급, 외화, 학비]
+
+story:
+  hero: 간호사
+  reveal: [파독 간호사]
+
+characters:
+  - id: nurse
+    name: 간호사
+    name_en: young Korean nurse in 1960s West Germany
+    description: >-
+      a slim Korean woman of about 22 with a gentle, earnest round face, kind dark eyes, black hair pinned neatly under
+      a small white nurse's cap, wearing a white 1960s nurse's uniform dress with a white apron and white shoes, a
+      small plain watch pinned to her chest
+    note: 이야기 주인공. 1960~70년대 서독 병원에서 일한 한국 간호사 — 1만 명이 넘는 파독 간호사의 모습을 한 사람으로 엮은 창작 인물
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1966년 독일, 스물두 살 한국 간호사는 말문이 막혔습니다."
+        captions: ["1966년 독일", "스물두 살 한국 간호사는 / 말문이 막혔습니다"]
+      - text: "독일어 한마디 못 하는데, 낯선 병원에 홀로 떨어졌거든요."
+        captions: ["독일어 한마디 못 하는데", "낯선 병원에 / 홀로 떨어졌거든요"]
+    visual: 1960년대 독일 병원 복도, 작은 가방을 든 간호사가 낯선 표지판 앞에서 굳어 선다 / 공항에서 손 흔드는 가족을 떠올리는 흑백 기억
+    image_prompt: >-
+      A long, clean 1960s West German hospital corridor with tall windows, the young Korean nurse in the middle of the
+      frame seen from the knees up, holding a small suitcase and standing frozen, looking around with lost, frightened
+      eyes. Signs on the wall are blurred and unreadable. No other faces in focus.
+    characters: [nurse]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          A faded black-and-white memory of a 1960s Korean airport gate, an elderly mother in hanbok and a little brother
+          waving goodbye with tearful faces, seen softly from a distance. Faces gentle and slightly blurred, no readable
+          text.
+        still_motion: zoom_in
+        focus: [0.5, 0.45]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "말이 안 통하니 처음엔 허드렛일만 맡았고, 밤마다 이불 속에서 울었죠."
+        captions: ["말이 안 통하니 / 처음엔 허드렛일만 맡았고", "밤마다 이불 속에서 울었죠"]
+    visual: 무거운 빨래 바구니를 나르는 간호사 / 밤, 기숙사 좁은 침대에서 이불을 덮고 소리 없이 우는 간호사
+    image_prompt: >-
+      The young nurse in the middle of the frame seen from the waist up, carrying a heavy basket of hospital laundry
+      down a back corridor, sleeves rolled up, exhausted and lonely. No other faces in focus.
+    characters: [nurse]
+    still_motion: pan_left
+    extra_clips:
+      - image_prompt: >-
+          A tiny dormitory room at night lit only by moonlight, the young nurse lying in a narrow bed with the blanket
+          pulled up to her eyes, silently crying, a small family photo on the bedside table. No other people.
+        characters: [nurse]
+        still_motion: zoom_in
+        focus: [0.5, 0.45]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "말도 안 통하는 이 땅에서, 그녀는 어떻게 버텼을까요?"
+        captions: ["말도 안 통하는 이 땅에서", "그녀는 어떻게 버텼을까요?"]
+    visual: 창가에 기대 고향 쪽 하늘을 바라보는 간호사
+    image_prompt: >-
+      The young nurse in the middle of the frame seen from the waist up, leaning against a hospital window at dusk and
+      gazing out at the grey sky toward the east, holding a small letter to her chest. No other people.
+    characters: [nurse]
+    still_motion: zoom_out
+    focus: [0.5, 0.42]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 간호사는 손바닥에 독일어 단어를 적어 가며, 밤마다 외웠습니다."
+        captions: ["그래서 간호사는 손바닥에 / 독일어 단어를 적어 가며", "밤마다 외웠습니다"]
+    visual: 볼펜으로 단어가 빼곡히 적힌 손바닥 클로즈업 (글자 흐릿) / 스탠드 불빛 아래 작은 사전을 펴고 중얼거리는 간호사
+    image_prompt: >-
+      Extreme close-up of a young woman's open palm covered with small handwritten words in blue ballpoint ink, the
+      writing blurred and unreadable, a hospital corridor softly out of focus behind. Only the hand is visible.
+    still_motion: push
+    focus: [0.5, 0.5]
+    extra_clips:
+      - image_prompt: >-
+          The young nurse in the middle of the frame seen from the waist up, sitting at a small desk under a desk lamp
+          late at night with a thick pocket dictionary open, whispering words to herself with tired but determined eyes.
+          The text is blurred and unreadable. No other people.
+        characters: [nurse]
+        still_motion: drift
+        focus: [0.5, 0.42]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "그러자 환자들이 먼저 알아봤죠. 늘 웃으며 성실하게 돌보는 작은 동양 간호사를요."
+        captions: ["그러자 환자들이 / 먼저 알아봤죠", "늘 웃으며 성실하게 돌보는 / 작은 동양 간호사를요"]
+    visual: 병실에서 간호사가 독일인 할머니 환자의 이불을 덮어 주며 웃는다 / 할머니가 간호사의 손을 꼭 잡는다
+    image_prompt: >-
+      A bright 1960s hospital ward, the young Korean nurse in the middle of the frame seen from the waist up, gently
+      tucking a blanket around an elderly German woman patient in bed and smiling warmly at her.
+    characters: [nurse]
+    extras: "the elderly patient lying in the bed beside her, smiling back, slightly out of focus"
+    still_motion: zoom_in
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of an elderly woman's wrinkled hand holding a young nurse's hand tightly on a white hospital blanket,
+          warm window light. Only the hands are visible.
+        still_motion: push
+        focus: [0.5, 0.5]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 그녀가 받은 월급은 어디로 갔을까요? 대부분 고향의 가족에게 보내졌습니다."
+        captions: ["그런데 그녀가 받은 월급은 / 어디로 갔을까요?", "대부분 고향의 가족에게 / 보내졌습니다"]
+    visual: 우체국 창구에서 송금 서류를 내미는 간호사 / 편지 봉투에 꾹꾹 눌러 쓰는 손 (글자 흐릿)
+    image_prompt: >-
+      A small 1960s German post office counter, the young nurse in her coat in the middle of the frame seen from the
+      waist up, handing over a money transfer form and an envelope with both hands, a small proud, tired smile. The
+      papers' text is blurred and unreadable. No other faces in focus.
+    characters: [nurse]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a young woman's hand writing a letter in Korean on thin airmail paper by lamp light, a teardrop
+          blotting the ink, the writing blurred and unreadable. Only the hand is visible.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 만 명이 넘는 간호사와 광부들이 보낸 돈은, 가난한 나라의 귀한 외화가 됐죠."
+        captions: ["결국 만 명이 넘는 / 간호사와 광부들이 보낸 돈은", "가난한 나라의 / 귀한 외화가 됐죠"]
+    visual: 1960년대 한국 시골집 마루, 어머니가 독일에서 온 항공 우편 봉투를 두 손으로 받아 든다
+    image_prompt: >-
+      The wooden veranda of a 1960s Korean countryside house, an elderly mother in hanbok in the middle of the frame seen
+      from the waist up, holding an airmail envelope from abroad in both hands against her chest, tears of gratitude in
+      her eyes, soft afternoon light. The envelope text is blurred and unreadable. No other people.
+    still_motion: zoom_in
+    focus: [0.5, 0.42]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "그 돈은 동생들 학비가 되고, 부모님 집이 되고, 나라가 일어서는 밑거름이 됐다고 합니다."
+        captions: ["그 돈은 동생들 학비가 되고 / 부모님 집이 되고", "나라가 일어서는 / 밑거름이 됐다고 합니다"]
+    visual: 교복을 입고 웃으며 학교로 뛰어가는 남동생 / 새 지붕을 올린 시골집
+    image_prompt: >-
+      A 1960s Korean country road in the morning, a teenage boy in a black school uniform and cap running happily toward
+      a school with a cloth book bag, seen from behind in the middle of the frame, sunlight and green rice fields. No
+      faces in focus.
+    still_motion: pan_right
+    extra_clips:
+      - image_prompt: >-
+          A small Korean countryside house in the 1970s with a bright new tiled roof replacing the old thatch, a
+          persimmon tree in the yard, warm golden evening light, a peaceful, hopeful mood. No people.
+        still_motion: zoom_out
+        focus: [0.5, 0.5]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "낯선 땅에서 가족과 나라를 일으킨 이들이 바로, 파독 간호사입니다."
+        captions: ["낯선 땅에서 / 가족과 나라를 일으킨 이들이", "바로, 파독 간호사입니다"]
+      - text: "여러분 가족 중에도 그때 떠난 분이 계셨나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분 가족 중에도", "그때 떠난 분이 계셨나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 병원 창가에서 간호사가 고향 하늘을 보며 잔잔히 웃는다 / 이어서 간호사가 시청자를 보며 궁금한 표정으로 묻는다
+    image_prompt: >-
+      The young nurse seen from the knees up in the middle of the frame, standing by a tall hospital window at golden
+      sunset in her white uniform, holding a letter from home and smiling peacefully. Warm golden light. No other people.
+    characters: [nurse]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young nurse from the reference image, seen from the waist up in the middle of
+          the frame, standing in the warm hospital corridor. She smiles warmly toward the viewer and holds one open palm
+          out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No other people.
+        characters: [nurse]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "국가기록원 '기록으로 만나는 대한민국 — 이민: 유럽' (광부 1963년 247명을 시작으로 1977년까지 8,395명, 간호사 1965년 18명을 시작으로 1977년까지 10,371명, 처음엔 3년 계약, 간호사는 초기에 언어 장벽·문화 차이로 허드렛일을 맡는 어려움, 독일어를 익히며 성실성과 간호 능력을 인정받음, 두 집단의 임금은 한국으로 외화가 들어오는 주요 통로) — https://theme.archives.go.kr/next/immigration/Europe.do"
+  - "국가기록원 '여성' (파독 간호사 1966~1977년, 총 1만 2천여 명, 실업난 해소와 경제개발 재원 마련) — https://theme.archives.go.kr//next/woman/sub03.do"
+  - "국가기록원 이달의 기록 2015년 3월 (광부와 간호사는 숯검댕이 된 얼굴을 씻고 환자의 피고름을 닦으면서도 고향 가족에게 보낼 월급을 생각하며 희망을 잃지 않음) — https://theme.archives.go.kr/next/pages/new_newsletter/2015/03/sub1.html"
+  - "경향신문 2013-05-05 (광부 1963년 123명 첫 출발 ~1977년 7,983명, 간호사 11,057명, 3년 계약) — https://www.khan.co.kr/article/20130505214110A/"
+
+accuracy_notes:
+  - "간호사는 1만 명이 넘는 파독 간호사의 모습을 한 사람으로 엮은 창작 인물이다. 감정·장면(손바닥 단어, 이불 속 울음, 할머니 환자, 우체국, 어머니의 편지, 동생 학비, 새 지붕)은 몰입을 위한 재구성이며, 얼굴·옷은 상상으로 그린 창작 인물."
+  - "'말문이 막혔습니다'는 현대 화자의 연출(말이 안 통하는 상황과 이어지는 말놀이)이며 당시 기록이나 발언이 아니다."
+  - "s01 1966년은 국가기록원 '여성'(1966~1977) 기준. '스물두 살'은 이야기 속 인물의 나이(창작)."
+  - "s02 언어 장벽으로 허드렛일을 맡은 것은 국가기록원(유럽 이민) 기준. 밤에 운 장면은 재구성."
+  - "s04 '손바닥에 단어를 적어 외웠다'는 재구성이며, 독일어를 익혔다는 것은 국가기록원 기준."
+  - "s05 성실성과 간호 능력을 인정받은 것은 국가기록원 기준. 환자들이 먼저 알아봤다는 장면은 재구성."
+  - "s06 월급을 고향 가족에게 보낸 것은 국가기록원(이달의 기록·유럽 이민) 서술을 바탕으로 한 표현. '대부분'은 이야기 표현이며 송금 비율 통계는 확인하지 않았다."
+  - "s07 인원은 자료마다 다르다(간호사 10,371명·약 1만 2천 명·11,057명, 광부 8,395명·7,983명). 대본은 '만 명이 넘는'으로 쓴다. 임금이 외화의 주요 통로였다는 것은 국가기록원 기준."
+  - "s08 학비·집·나라의 밑거름은 송금이 가족과 경제에 보탬이 된 것을 이야기로 쓴 재구성이며 '했다고 합니다'로 쓴다."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면 인물은 간호사 중심, s05에 환자 한 명(배경), s01-2·s07은 가족(창작). 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 말 한마디 안 통하는 독일 병원, 스물두 살 간호사가 버틴 방법
+    - 그녀의 월급은 어디로 갔을까?
+    - 우리 부모님 세대가 낯선 땅에서 보낸 편지
+  description: |-
+    ✉️ 1966년, 말 한마디 안 통하는 나라의 병원에 홀로 떨어진 스물두 살 간호사.
+
+    처음엔 허드렛일만 맡고, 밤마다 이불 속에서 울었습니다 😢
+    손바닥에 독일어 단어를 적어 가며 외우고, 늘 웃으며 환자를 돌봤죠 💪
+    그런데 그녀가 받은 월급은 어디로 갔을까요? 🤔
+
+    그 돈은 동생 학비가 되고, 부모님 집이 되고, 나라의 밑거름이 됐습니다 🇰🇷 그녀들의 이름은 영상 끝에서!
+  comment_question: 여러분 가족 중에도 그때 떠난 분이 계셨나요? 여러분의 생각이 궁금합니다.
+  hashtags: [간호사, 1960년대, 감동, 국뽕, 쇼츠]
