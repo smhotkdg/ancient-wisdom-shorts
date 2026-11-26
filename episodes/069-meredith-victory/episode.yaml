@@ -1,0 +1,227 @@
+# 069 메러디스 빅토리호 — 승객 12명짜리 화물선에 1만 4천 명, 크리스마스에 태어난 아기 '김치' (이미지 + 음성만, 실사)
+# 40~60대 공감(부모·조부모 세대 피란 이야기)·감동
+id: "069"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: meredith-victory
+status: script_ok
+working_title: 승객 열두 명짜리 배는 과연 몇 명을 태웠을까?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["열두 명짜리 배에", "1만 4천 명?"]
+hook: 혼이 쏙 빠졌습니다
+caption_keywords: [혼이 쏙 빠졌습니다, 흥남, 열두 명, 1만 4천 명, 항공유, 크리스마스, 김치, 기네스북]
+
+story:
+  hero: 어머니
+  reveal: [메러디스 빅토리호]
+
+characters:
+  - id: mom
+    name: 어머니
+    name_en: pregnant Korean refugee woman of 1950
+    description: >-
+      a young Korean woman in her mid-20s, heavily pregnant, with a frightened but determined face, cheeks red from the
+      cold, black hair under a plain white cotton headscarf, wearing a thick quilted grey winter jacket over a dark
+      hanbok skirt, a small cloth bundle tied on her back
+    note: 이야기 주인공. 1950년 흥남에서 피란선에 오른 만삭의 어머니 — 수많은 피란민의 모습을 한 사람으로 엮은 창작 인물
+  - id: captain
+    name: 선장
+    name_en: American merchant ship captain of 1950
+    description: >-
+      a lean American man in his late 30s with a calm, kind, serious face, short brown hair, wearing a dark navy
+      merchant marine officer's peaked cap and a heavy dark pea coat, binoculars around his neck
+    note: 미국 화물선 선장 (실존 인물을 바탕으로 한 창작 인물, 얼굴은 상상)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1950년 겨울 흥남 부두, 만삭의 한 어머니는 혼이 쏙 빠졌습니다."
+        captions: ["1950년 겨울 흥남 부두", "만삭의 한 어머니는 / 혼이 쏙 빠졌습니다"]
+      - text: "뒤로는 전쟁이 밀려오는데, 배는 턱없이 모자랐거든요."
+        captions: ["뒤로는 전쟁이 밀려오는데", "배는 턱없이 모자랐거든요"]
+    visual: 눈 내리는 부두, 보따리를 멘 만삭의 어머니가 배를 바라보며 숨을 몰아쉰다 / 부두를 가득 메운 피란민 행렬
+    image_prompt: >-
+      A freezing snowy harbor pier in December 1950, the pregnant young refugee woman in the middle of the frame seen
+      from the waist up, one hand on her round belly and a cloth bundle on her back, breath steaming in the cold,
+      staring out at the grey sea with terrified, desperate eyes. No other faces in focus.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          A wide view of a snowy harbor in December 1950 crowded with thousands of refugees in dark winter clothes and
+          bundles, stretching along the pier toward a few distant ships, smoke rising in the background, a bleak grey
+          sky. Faces not in focus, no text.
+        still_motion: pan_right
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "그때 부두에 닿은 건, 승객 열두 명만 태우게 만든 화물선 한 척."
+        captions: ["그때 부두에 닿은 건", "승객 열두 명만 태우게 만든 / 화물선 한 척"]
+    visual: 잿빛 바다 위 회색 화물선 한 척이 부두로 다가온다
+    image_prompt: >-
+      A grey 1950s cargo ship slowly approaching a snowy pier through cold, choppy grey water, cargo cranes on its deck,
+      snow falling, a lonely, tense mood. No readable name or text on the hull, no people in focus.
+    still_motion: zoom_in
+    focus: [0.5, 0.5]
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이 배는 과연, 몇 명을 태울 수 있었을까요?"
+        captions: ["이 배는 과연", "몇 명을 태울 수 / 있었을까요?"]
+    visual: 갑판 난간에서 쌍안경으로 부두의 인파를 내려다보는 선장
+    image_prompt: >-
+      The American ship captain in the middle of the frame seen from the waist up, standing at the ship's rail in the
+      falling snow, lowering his binoculars and looking down at the crowded pier with a grave, moved expression. No
+      other faces in focus.
+    characters: [captain]
+    still_motion: zoom_out
+    focus: [0.5, 0.4]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 서른일곱 살 미국인 선장은, 망설임 없이 피란민을 태우라고 했습니다."
+        captions: ["그래서 서른일곱 살 / 미국인 선장은", "망설임 없이 피란민을 / 태우라고 했습니다"]
+    visual: 선장이 단호하게 손짓하며 명령한다 / 내려지는 승선 사다리
+    image_prompt: >-
+      The captain in the middle of the frame seen from the waist up on the snowy deck, pointing firmly toward the pier
+      and giving an order with calm determination, snow on his cap and shoulders. No other faces in focus.
+    characters: [captain]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a rope boarding ladder and cargo net being lowered over the side of a grey ship toward a snowy pier,
+          many hands reaching up from below, snow falling. Only hands are visible.
+        still_motion: pan_up
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "어머니도 사람들 틈에 겨우 몸을 실었죠. 발밑엔 항공유 300톤이 실려 있었고요."
+        captions: ["어머니도 사람들 틈에 / 겨우 몸을 실었죠", "발밑엔 항공유 300톤이 / 실려 있었고요"]
+    visual: 빽빽한 갑판 위에서 배를 감싸 안고 웅크린 어머니 / 어두운 짐칸에 쌓인 드럼통들
+    image_prompt: >-
+      The crowded open deck of a cargo ship at sea in winter, the pregnant mother in the middle of the frame seen from
+      the waist up, crouched tightly among other refugees, shielding her belly with both arms against the cold wind,
+      eyes closed in prayer.
+    characters: [mom]
+    extras: "other refugees huddled close around her in dark winter clothes, faces out of focus"
+    still_motion: zoom_in
+    focus: [0.5, 0.45]
+    extra_clips:
+      - image_prompt: >-
+          A dim cargo hold of a 1950s ship packed with rows of steel fuel drums, a single bulb swinging, a sense of
+          danger and quiet tension. No readable text or markings, no people.
+        still_motion: drift
+        focus: [0.5, 0.5]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 크리스마스 무렵, 어머니의 품에서 아기 울음소리가 터졌습니다."
+        captions: ["그런데 크리스마스 무렵", "어머니의 품에서 / 아기 울음소리가 터졌습니다"]
+    visual: 담요에 싸인 갓난아기를 품에 안고 눈물 흘리며 웃는 어머니
+    image_prompt: >-
+      The young mother in the middle of the frame seen from the waist up, sitting on the cold ship deck wrapped in a
+      grey blanket, holding her newborn baby close to her chest, tears of relief and joy on her face, soft dawn light
+      breaking through the clouds.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.42]
+
+  - id: s07
+    beat: twist
+    lines:
+      - text: "미국 선원들은 그 아기에게 이름을 붙여 줬죠. 무엇이었을까요? 바로, 김치!"
+        captions: ["미국 선원들은 그 아기에게 / 이름을 붙여 줬죠", "무엇이었을까요?", "바로, 김치!"]
+    visual: 거친 손의 선원이 갓난아기를 조심스레 들여다보며 웃는다 / 아기의 작은 손 클로즈업
+    image_prompt: >-
+      A friendly American sailor in a knit cap seen from the chest up in the middle of the frame, leaning in to look at
+      a tiny newborn wrapped in a blanket with a big tender grin, snow and grey sky behind. The baby's face is soft and
+      peaceful.
+    still_motion: zoom_in
+    focus: [0.5, 0.45]
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a newborn baby's tiny hand curled around the rough finger of a sailor's weathered hand, a grey wool
+          blanket around them, soft morning light. Only the hands are visible.
+        still_motion: push
+        focus: [0.5, 0.5]
+
+  - id: s08
+    beat: resolve
+    lines:
+      - text: "결국 이 배는 1만 4천 명을 태우고 거제도에 닿았습니다."
+        captions: ["결국 이 배는 / 1만 4천 명을 태우고", "거제도에 닿았습니다"]
+    visual: 맑은 남쪽 바다 위, 사람들로 가득한 화물선이 섬 항구로 들어선다
+    image_prompt: >-
+      A grey cargo ship packed with thousands of refugees on its decks arriving at a calm southern island harbor under
+      a clear winter sky, green hills around the bay, a hopeful, peaceful mood. No readable name or text, faces not in
+      focus.
+    still_motion: zoom_out
+    focus: [0.5, 0.5]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "지금도 배 한 척으로 가장 많은 생명을 구한 배로, 기네스북에 올라 있죠."
+        captions: ["지금도 배 한 척으로", "가장 많은 생명을 구한 배로", "기네스북에 올라 있죠"]
+      - text: "크리스마스의 기적이라 불린 이 배가 바로, 메러디스 빅토리호입니다."
+        captions: ["크리스마스의 기적이라 / 불린 이 배가", "바로, 메러디스 / 빅토리호입니다"]
+      - text: "여러분 가족에게도 피란길 이야기가 있나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분 가족에게도", "피란길 이야기가 있나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 노을 진 거제 바닷가에서 아기를 안은 어머니가 수평선을 바라본다 / 이어서 어머니가 시청자를 보며 묻는다
+    image_prompt: >-
+      The young mother seen from the knees up in the middle of the frame, standing on a quiet island beach at golden
+      sunset holding her baby wrapped in a blanket, looking out at the calm sea with a peaceful, grateful smile. Warm
+      golden sky. No other people.
+    characters: [mom]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young mother from the reference image, no longer pregnant, seen from the
+          waist up in the middle of the frame, standing on the sunset beach holding her baby in a blanket. She smiles
+          warmly toward the viewer and holds one open palm out at chest height in a gentle "what do you think?"
+          gesture. Calm, warm, family-friendly mood. No other adults.
+        characters: [mom]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "뉴데일리 2015-02-02 '국제시장' 등장한 '기적의 배' 메러디스 빅토리호 (1950년 12월 22일 밤 승선 시작·23일 아침 흥남 출항, 1만 4천 명 승선, 상급 선원·승무원 외 승객 12명만 태우도록 설계, 항공유 300톤(라루 선장 기록), 호위·무장 없음, 피란민용 구명보트 없음, 항해 중 아기 5명 출생 — 첫 아기에게 '김치', 거제도에서 태어난 아기 '김치 5', 2004년 9월 21일 '한 척의 배로 가장 많은 생명을 구한 배'로 기네스북 등재, 37세 레너드 라루 선장은 망설이지 않고 응함) — https://www.newdaily.co.kr/site/data/html/2015/02/02/2015020200080.html"
+  - "서울신문 2019-12-24 '69년 전 성탄의 기적으로 태어난 김치들' (약 1만 4천 명의 피난민을 태우고 흥남을 떠나 성탄 전야 부산항, 다음 날 거제항 입항, 배에서 태어난 '김치 5' 이경필씨) — https://m.seoul.co.kr/news/2019/12/24/20191224500094"
+
+accuracy_notes:
+  - "어머니는 수많은 피란민의 모습을 한 사람으로 엮은 창작 인물(배에서 태어난 아기들의 어머니를 바탕으로 함). 선장은 실존 인물 레너드 라루를 바탕으로 했지만 얼굴은 상상으로 그린 창작 인물. 감정·장면은 몰입을 위한 재구성."
+  - "'혼이 쏙 빠졌습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01 '전쟁이 밀려오는데 배가 모자랐다'는 흥남 철수 당시 상황을 이야기로 푼 재구성이며 특정 숫자를 말하지 않는다."
+  - "s02 '승객 12명만 태우도록 설계'는 뉴데일리가 전하는 해군 대령들의 말 기준(같은 기사에 '최대 3,000명'이라는 다른 수치도 있음)."
+  - "s04 37세 라루 선장이 망설이지 않고 응한 것은 뉴데일리 기준. 대본의 '태우라고 했다'는 그 뜻을 쉽게 쓴 것."
+  - "s05 항공유 300톤은 라루 선장의 기록(뉴데일리). '발밑 짐칸'은 이야기 표현."
+  - "s06~s07 항해 중 아기 5명이 태어났고 첫 아기에게 '김치'라는 이름이 붙은 것(뉴데일리), '김치 5'(뉴데일리·서울신문). '크리스마스 무렵'은 12월 23~25일 항해 기간 기준. 이름을 붙인 사람이 '미국 선원들'이라는 것은 널리 전해지는 이야기이며 기록 원문은 확인하지 않았다."
+  - "s08 1만 4천 명(뉴데일리·서울신문), 거제도 도착(서울신문: 부산항을 거쳐 다음 날 거제항). '무사히' 같은 사상자 수 표현은 쓰지 않는다."
+  - "s09 2004년 기네스북 등재(뉴데일리). 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면에는 배 이름·글자·국기를 넣지 않는다. 화면 인물은 어머니 중심, s03·s04는 선장, s07은 선원, s05에 주변 피란민(배경). 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 승객 열두 명짜리 배에 1만 4천 명이 탔다고?
+    - 피란선에서 태어난 아기, 미국 선원들이 붙여 준 이름은?
+    - 1950년 크리스마스, 흥남 부두의 기적
+  description: |-
+    🚢 승객 열두 명만 태우게 만든 화물선… 이 배는 과연 몇 명을 태웠을까요?
+
+    1950년 겨울 흥남 부두, 만삭의 피란민은 혼이 쏙 빠졌습니다 😰
+    서른일곱 살 미국인 선장은 망설임 없이 "피란민을 태워라!"
+    발밑 짐칸엔 항공유 300톤… 그리고 크리스마스 무렵, 배 위에서 아기 울음소리가! 👶
+
+    미국 선원들이 붙여 준 이름은… "김치"! 🥹 기네스북에 오른 기적의 배, 이름은 영상 끝에서!
+  comment_question: 여러분 가족에게도 피란길 이야기가 있나요? 여러분의 생각이 궁금합니다.
+  hashtags: [흥남철수, 크리스마스, 감동, 국뽕, 쇼츠]
