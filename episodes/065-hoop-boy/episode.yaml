@@ -4,7 +4,7 @@ id: "065"
 style: photoreal
 media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
 slug: hoop-boy
-status: script_ok
+status: done
 working_title: 10만 관중이 숨죽인 그 순간, 운동장 한가운데로 굴러 들어온 것은?
 show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
 title_lines: ["10만 관중이", "숨죽인 순간?"]
@@ -30,7 +30,7 @@ scenes:
     beat: hook
     lines:
       - text: "1988년 9월 17일, 잠실 주경기장의 10만 관중은 넋이 나갔습니다."
-        captions: ["1988년 9월 17일", "잠실 주경기장의 10만 관중은 / 넋이 나갔습니다"]
+        captions: ["1988년 9월 17일", "잠실 주경기장의 / 10만 관중은", "넋이 나갔습니다"]
       - text: "화려한 공연이 끝나자, 텅 빈 운동장에 정적만 흘렀거든요."
         captions: ["화려한 공연이 끝나자", "텅 빈 운동장에 / 정적만 흘렀거든요"]
     visual: 가을 햇살 아래 가득 찬 거대한 경기장 관중석 / 텅 빈 초록 잔디 운동장
@@ -81,7 +81,7 @@ scenes:
     beat: solution
     lines:
       - text: "흰 셔츠를 입은 여덟 살 소년이, 굴렁쇠 하나를 굴리며 걸어 나왔습니다."
-        captions: ["흰 셔츠를 입은 여덟 살 소년이", "굴렁쇠 하나를 굴리며 / 걸어 나왔습니다"]
+        captions: ["흰 셔츠를 입은 / 여덟 살 소년이", "굴렁쇠 하나를 굴리며 / 걸어 나왔습니다"]
     visual: 넓은 운동장 위 작은 소년이 굴렁쇠를 굴리며 걷는다 / 굴렁쇠를 밀고 가는 작은 손과 막대
     image_prompt: >-
       The little boy in the middle of the frame seen from the knees up, walking across the vast green stadium field
@@ -115,14 +115,14 @@ scenes:
     beat: twist
     lines:
       - text: "그런데 이 소년은 아주 특별한 날 태어났습니다. 언제였을까요?"
-        captions: ["그런데 이 소년은 / 아주 특별한 날 태어났습니다", "언제였을까요?"]
+        captions: ["그런데 이 소년은 / 아주 특별한 날", "태어났습니다", "언제였을까요?"]
     visual: 운동장 한가운데 홀로 선 소년의 얼굴 클로즈업, 햇살
     image_prompt: >-
       Close-up of the little boy's face in the middle of the frame under his red cap, standing alone in the center of
       the vast field, calm innocent eyes looking ahead, warm sunlight on his cheeks, the stands blurred far behind.
     characters: [boy]
-    still_motion: push
-    focus: [0.5, 0.45]
+    still_motion: zoom_out
+    focus: [0.5, 0.4]
 
   - id: s07
     beat: twist
@@ -147,7 +147,7 @@ scenes:
     beat: resolve
     lines:
       - text: "그러자 한가운데 멈춘 소년이 손을 흔들었고, 10만 관중이 일어나 박수를 쳤습니다."
-        captions: ["그러자 한가운데 멈춘 소년이 / 손을 흔들었고", "10만 관중이 일어나 / 박수를 쳤습니다"]
+        captions: ["그러자 한가운데 / 멈춘 소년이", "손을 흔들었고", "10만 관중이 일어나 / 박수를 쳤습니다"]
     visual: 굴렁쇠를 세워 든 소년이 해맑게 웃으며 손을 흔든다 / 일어나 박수 치는 관중석
     image_prompt: >-
       The little boy in the middle of the frame seen from the knees up, standing in the center of the vast green field
