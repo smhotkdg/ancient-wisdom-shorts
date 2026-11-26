@@ -1,0 +1,231 @@
+# 068 홍수환 4전 5기 — 적지 파나마에서 네 번 쓰러지고 다섯 번 일어난 청년 복서 (이미지 + 음성만, 실사)
+# 40~60대 공감·국뽕
+id: "068"
+style: photoreal
+media: images            # 이미지 + TTS 만 (컷마다 확대·이동 효과, CLAUDE.md 10-2)
+slug: four-down-five-up
+status: script_ok
+working_title: 한 라운드에 네 번 쓰러진 청년, 그다음에 무슨 일이?
+show_title: false        # 049부터 화면 제목 없음 (모바일 세이프 에어리어만 지킴)
+title_lines: ["네 번 쓰러지고", "다섯 번 일어났다?"]
+hook: 눈앞이 캄캄했습니다
+caption_keywords: [눈앞이 캄캄했습니다, 네 번, 11전 11KO, 열일곱 살, 일곱 남매, 3라운드, 챔피언, 엄마]
+
+story:
+  hero: 청년
+  reveal: [홍수환, 4전 5기]
+
+characters:
+  - id: boxer
+    name: 청년
+    name_en: young Korean boxer of 1977
+    description: >-
+      a lean, muscular Korean man in his late 20s with a determined angular face, short black hair, intense dark eyes,
+      wearing plain dark blue boxing trunks with a white waistband, red boxing gloves and white boxing shoes, no logos
+      or text anywhere
+    note: 이야기 주인공. 1977년 파나마에서 싸운 한국 복서 (마지막 대사 전까지 이름을 밝히지 않는다, 실제 인물의 초상이 아닌 창작 인물)
+  - id: mother
+    name: 어머니
+    name_en: Korean mother of the 1970s
+    description: >-
+      a Korean woman in her mid-50s with a strong, warm, work-worn face, grey-streaked hair pinned in a low bun, wearing a
+      plain grey cardigan over a simple blouse, 1970s style
+    note: 청년의 어머니 (창작 인물)
+
+scenes:
+  - id: s01
+    beat: hook
+    lines:
+      - text: "1977년 파나마, 한 한국 청년 복서는 눈앞이 캄캄했습니다."
+        captions: ["1977년 파나마", "한 한국 청년 복서는 / 눈앞이 캄캄했습니다"]
+      - text: "2라운드에만, 무려 네 번이나 링 바닥에 쓰러졌거든요."
+        captions: ["2라운드에만", "무려 네 번이나 / 링 바닥에 쓰러졌거든요"]
+    visual: 뜨거운 조명 아래 링 바닥에 무릎 꿇은 청년 / 흐릿하게 번지는 링 조명 (쓰러진 시점)
+    image_prompt: >-
+      A boxing ring under hot, harsh spotlights in 1977, the young Korean boxer in the middle of the frame seen from the
+      waist up, down on one knee on the canvas, one glove touching the floor, gasping, sweat flying, dazed eyes. No
+      blood, no logos or text. No other faces in focus.
+    characters: [boxer]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          A dizzy point-of-view shot looking up from a boxing ring canvas at blurred, glaring spotlights and ropes, the
+          lights smeared and doubled as if vision is fading. No people in focus, no text.
+        still_motion: zoom_out
+        focus: [0.5, 0.45]
+
+  - id: s02
+    beat: problem
+    lines:
+      - text: "상대는 11전 11KO의 열일곱 살 괴물, 관중석은 온통 상대 편이었죠."
+        captions: ["상대는 11전 11KO의 / 열일곱 살 괴물", "관중석은 / 온통 상대 편이었죠"]
+    visual: 링 건너편 코너에서 주먹을 부딪치는 젊은 상대 선수의 실루엣 / 열광하는 관중석
+    image_prompt: >-
+      The opposite corner of a boxing ring under spotlights, the silhouette of a young, tall opponent boxer pounding his
+      gloves together, backlit so his face is not visible, smoke and light rays around him. No logos or text.
+    still_motion: zoom_in
+    focus: [0.5, 0.45]
+    extra_clips:
+      - image_prompt: >-
+          A packed, roaring arena crowd in 1977 seen from the ring, fists raised and waving, cheering wildly against the
+          visiting fighter, warm haze and spotlights. Faces out of focus, no readable banners or text.
+        still_motion: pan_right
+
+  - id: s03
+    beat: question
+    lines:
+      - text: "이대로 쓰러지면 끝. 청년은 어떻게 했을까요?"
+        captions: ["이대로 쓰러지면 끝", "청년은 어떻게 했을까요?"]
+    visual: 링 바닥에서 고개를 드는 청년의 얼굴 클로즈업, 땀과 숨
+    image_prompt: >-
+      Close-up of the young boxer's face in the middle of the frame, lifting his head from the canvas, sweat dripping,
+      jaw clenched, eyes slowly regaining focus with fierce determination, harsh ring light. No blood. No other faces.
+    characters: [boxer]
+    still_motion: push
+    focus: [0.5, 0.45]
+
+  - id: s04
+    beat: solution
+    lines:
+      - text: "그래서 청년은 쓰러질 때마다, 이를 악물고 다시 일어섰습니다."
+        captions: ["그래서 청년은 / 쓰러질 때마다", "이를 악물고 / 다시 일어섰습니다"]
+    visual: 로프를 붙잡고 일어서는 청년 / 링 바닥을 짚는 글러브 클로즈업
+    image_prompt: >-
+      The young boxer in the middle of the frame seen from the knees up, gripping the ring rope with one glove and
+      pushing himself back up to his feet, teeth clenched, muscles straining, spotlights behind him. No blood, no logos.
+    characters: [boxer]
+    still_motion: pan_up
+    extra_clips:
+      - image_prompt: >-
+          Close-up of a red boxing glove pressing down hard on the canvas of a ring floor as the fighter pushes himself
+          up, sweat drops on the mat, harsh light. Only the glove is visible, no text.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s05
+    beat: solution
+    lines:
+      - text: "무엇이 그를 일으켜 세웠을까요?"
+        captions: ["무엇이 그를 / 일으켜 세웠을까요?"]
+      - text: "열네 살에 아버지를 잃고, 어머니 혼자 일곱 남매를 키운 집의 아들이었죠."
+        captions: ["열네 살에 아버지를 잃고", "어머니 혼자 일곱 남매를 키운 / 집의 아들이었죠"]
+    visual: 1960년대 작은 가게에서 밤늦게 일하는 어머니 / 새벽, 아들을 깨워 운동을 보내는 어머니
+    image_prompt: >-
+      A tiny 1960s snack bar counter late at night, the tired mother in the middle of the frame seen from the waist up,
+      wiping the counter under a single bulb, her face weary but strong. No readable text. No other people.
+    characters: [mother]
+    still_motion: drift
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          A small 1960s Korean house at dawn, the mother in the middle of the frame seen from the waist up, gently shaking
+          the shoulder of her teenage son asleep under a quilt to wake him for training, soft blue dawn light.
+        characters: [mother]
+        still_motion: zoom_in
+        focus: [0.5, 0.45]
+
+  - id: s06
+    beat: twist
+    lines:
+      - text: "그런데 3라운드, 다시 일어선 청년의 주먹이 번쩍였습니다. 단 한 방에, 괴물이 쓰러졌죠."
+        captions: ["그런데 3라운드", "다시 일어선 청년의 / 주먹이 번쩍였습니다", "단 한 방에 / 괴물이 쓰러졌죠"]
+    visual: 청년이 온몸을 실어 오른손 훅을 뻗는다 / 링 바닥에 쓰러진 상대의 실루엣
+    image_prompt: >-
+      The young boxer in the middle of the frame seen from the waist up, throwing a powerful right hook with his whole
+      body, face fierce, sweat spraying in the spotlight, motion blur on the glove. No blood, no logos or text.
+    characters: [boxer]
+    still_motion: push
+    focus: [0.5, 0.42]
+    extra_clips:
+      - image_prompt: >-
+          A low view across a boxing ring canvas, the blurred silhouette of a fallen opponent lying on the mat in the
+          background, a referee's arm counting in the foreground, dramatic spotlight. No faces visible, no text.
+        still_motion: zoom_in
+        focus: [0.5, 0.5]
+
+  - id: s07
+    beat: resolve
+    lines:
+      - text: "결국 네 번 쓰러지고 다섯 번 일어나, 세계 챔피언 벨트를 거머쥔 거죠."
+        captions: ["결국 네 번 쓰러지고 / 다섯 번 일어나", "세계 챔피언 벨트를 / 거머쥔 거죠"]
+    visual: 링 위에서 두 팔을 들어 올리는 대신 챔피언 벨트를 가슴에 안고 포효하는 청년
+    image_prompt: >-
+      The young boxer in the middle of the frame seen from the waist up, standing in the ring under a shower of light,
+      clutching a shining gold championship belt to his chest with both gloves, roaring with joy and tears in his eyes.
+      No readable text or logos on the belt.
+    characters: [boxer]
+    still_motion: zoom_out
+    focus: [0.5, 0.42]
+
+  - id: s08
+    beat: info
+    lines:
+      - text: "3년 전 처음 챔피언이 됐을 땐, 중계 너머 어머니에게 이렇게 외쳤었죠. 엄마, 나 챔피언 먹었어!"
+        captions: ["3년 전 처음 / 챔피언이 됐을 땐", "중계 너머 어머니에게 / 이렇게 외쳤었죠", "엄마, 나 챔피언 먹었어!"]
+    visual: 1970년대 거실, 라디오 앞에서 두 손을 모으고 눈물 흘리며 웃는 어머니
+    image_prompt: >-
+      A small 1970s Korean living room, the mother in the middle of the frame seen from the waist up, sitting close to
+      an old radio with both hands pressed to her mouth, tears of joy streaming down as she laughs. No readable text. No
+      other people.
+    characters: [mother]
+    still_motion: push
+    focus: [0.5, 0.42]
+
+  - id: s09
+    beat: info
+    lines:
+      - text: "4전 5기의 신화, 이 청년이 바로 복서 홍수환입니다."
+        captions: ["4전 5기의 신화", "이 청년이 바로 / 복서 홍수환입니다"]
+      - text: "여러분에게도 다시 일어선 순간이 있었나요? 여러분의 생각이 궁금합니다."
+        captions: ["여러분에게도", "다시 일어선 순간이 / 있었나요?", "여러분의 생각이 / 궁금합니다"]
+        cta: true
+    visual: 텅 빈 링 위, 수건을 어깨에 걸친 청년이 링 로프에 기대 잔잔히 웃는다 / 이어서 청년이 시청자를 보며 묻는다
+    image_prompt: >-
+      The young boxer seen from the knees up in the middle of the frame, standing in an empty ring after the fight with
+      a towel over his shoulders and the belt over one shoulder, leaning on the ropes with a calm, tired, proud smile,
+      soft spotlight. No logos or text.
+    characters: [boxer]
+    still_motion: push
+    focus: [0.5, 0.4]
+    extra_clips:
+      - image_prompt: >-
+          Friendly medium shot of the same young boxer from the reference image, wearing a plain white T-shirt, seen
+          from the waist up in the middle of the frame in a quiet gym. He smiles warmly toward the viewer and holds one
+          open palm out at chest height in a gentle "what do you think?" gesture. Calm, warm, family-friendly mood. No
+          other people, no logos.
+        characters: [boxer]
+        still_motion: zoom_in
+        focus: [0.5, 0.42]
+
+sources:
+  - "Korea Times 2024-07-11 (1977년 11월 파나마, 11연속 KO의 17세 엑토르 카라스키야와 WBA 슈퍼밴텀급 타이틀전, 2라운드에 네 번 다운되고 매번 일어남, 3라운드 KO승, 1974년 WBA·더 링 밴텀급 타이틀) — https://www.koreatimes.co.kr/amp/foreignaffairs/20240711/interview-boxers-epic-win-lays-groundwork-for-korea-panama-ties"
+  - "브라보마이라이프(이투데이) (1977년 11월 27일 파나마 WBA 슈퍼밴텀급 초대 챔피언 결정전 — 상대 홈, 카라스키야 17세 11전 11KO승, 2라운드 네 차례 다운 뒤 3라운드 KO승, 무제한 다운제, 1974년 7월 3일 남아공 더반 아놀드 테일러에게 판정승, 중계 이어폰으로 어머니 목소리에 '엄마, 나 챔피언 먹었어') — https://bravo.etoday.co.kr/view/atc_view/6350"
+  - "이투데이 2015-06-02 [나의 어머니] 홍수환이 말하는 '엄마' 황농선 (1964년 아버지 별세, 어머니가 44세에 7남매를 홀로 키움, 부평 미군 부대 안 스낵바, 아침마다 운동 가라고 깨움) — https://www.etoday.co.kr/news/view/1135371"
+
+accuracy_notes:
+  - "주인공은 실존 복서 홍수환(1950~). 어머니는 실존 인물 황농선을 바탕으로 했지만 얼굴·옷은 상상으로 그린 창작 인물. 상대 선수는 얼굴을 보이지 않는 실루엣으로만 그린다. 감정·장면은 설명용 재구성. 마지막 대사 전까지 이름을 밝히지 않는다."
+  - "'눈앞이 캄캄했습니다'는 현대 화자의 연출이며 당시 기록이나 발언이 아니다."
+  - "s01~s02 1977년 11월 파나마, 2라운드 네 번 다운, 17세·11전 11KO, 상대 홈 경기는 Korea Times·브라보마이라이프 기준. '괴물'은 이야기 표현."
+  - "s03 '이대로 쓰러지면 끝'은 이야기 표현이며, 당시 무제한 다운제(브라보마이라이프)였다."
+  - "s05 '무엇이 그를 일으켜 세웠을까요?'는 이야기의 질문이며, 어머니가 그 이유였다는 본인 발언은 확인하지 않았다(어머니와 가족사를 보여 주는 재구성). 1964년 아버지 별세(당시 열네 살 — 1950년생 기준 한국 나이 어림), 어머니가 7남매를 홀로 키움, 스낵바, 아침마다 깨운 일은 이투데이 기준. 화면은 연출."
+  - "s06~s07 3라운드 KO승·챔피언 등극은 Korea Times·브라보마이라이프 기준. 'WBA 슈퍼밴텀급 초대 챔피언'을 대본은 '세계 챔피언'으로 쓴다."
+  - "s08 '엄마, 나 챔피언 먹었어'는 1974년 7월 3일 더반 타이틀전 뒤 중계 이어폰으로 어머니 목소리를 듣고 한 말(브라보마이라이프·이투데이). '3년 전'은 1974→1977."
+  - "s09 마지막 줄(cta: true)은 시청자에게 건네는 질문이며 이야기 대사가 아니다. s09-2는 그 줄을 위한 컷 (CTA 미디엄 샷 틀)."
+  - "화면에는 피·부상, 대회·방송사 로고, 글자를 넣지 않는다. 화면 인물은 청년 중심, s05·s08은 어머니, 관중은 얼굴이 흐린 배경. 이미지 + 음성만인 편, 실사, 화면 제목 없음."
+
+youtube:
+  titles:
+    - 한 라운드에 네 번 쓰러진 청년, 그다음에 일어난 일
+    - 11전 11KO 열일곱 살 괴물을 쓰러뜨린 한 방
+    - "\"엄마, 나 챔피언 먹었어!\" 그 청년의 두 번째 기적"
+  description: |-
+    🥊 한 라운드에 무려 네 번이나 링 바닥에 쓰러졌다면… 여러분이라면 다시 일어나실 건가요?
+
+    1977년 파나마, 관중석은 온통 상대 편 😱 상대는 11전 11KO의 열일곱 살 괴물!
+    그런데 이 한국 청년, 쓰러질 때마다 이를 악물고 다시 일어섭니다 💪
+    열네 살에 아버지를 잃고 어머니 혼자 일곱 남매를 키운 집의 아들이었죠.
+
+    그리고 3라운드… 단 한 방! 🔥 "엄마, 나 챔피언 먹었어!"의 주인공, 이름은 영상 끝에서!
+  comment_question: 여러분에게도 다시 일어선 순간이 있었나요? 여러분의 생각이 궁금합니다.
+  hashtags: [권투, 챔피언, "1977", 국뽕, 쇼츠]
